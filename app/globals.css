@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #06060a;
+  --bg-secondary: #0b0b12;
+  --card: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.1);
+  --violet: #8b5cf6;
+  --violet-bright: #a855f7;
+  --rose: #ec4899;
+  --text: #f8fafc;
+  --text-muted: #a1a1aa;
+  --text-soft: #d4d4d8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-card: var(--card);
+  --color-border-subtle: var(--border);
+  --color-brand: var(--violet);
+  --color-brand-bright: var(--violet-bright);
+  --color-accent-rose: var(--rose);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-soft: var(--text-soft);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: var(--text);
+}
+
+.radial-glow {
+  background:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(139, 92, 246, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      rgba(168, 85, 247, 0.08),
+      transparent 50%
+    ),
+    var(--bg-primary);
+}
+
+.radial-glow-soft {
+  background:
+    radial-gradient(
+      ellipse 70% 45% at 20% 10%,
+      rgba(139, 92, 246, 0.12),
+      transparent 55%
+    ),
+    var(--bg-secondary);
+}
+
+.prose-blog a {
+  color: var(--violet-bright);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-blog a:hover {
+  color: var(--rose);
 }

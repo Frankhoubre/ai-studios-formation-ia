@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Studios Blog
 
-## Getting Started
+Blog premium francophone pour **AI Studios** (Frank Houbre) : IA créative, images, vidéos, publicités, contenus cinématiques et workflows professionnels. Construit avec **Next.js (App Router)**, **TypeScript** et **Tailwind CSS**. Contenu statique local, sans CMS ni base de données.
 
-First, run the development server:
+Domaine de production : `https://blog.ai-studios.fr`
+
+## Prérequis
+
+- Node.js 20+ recommandé
+- npm
+
+## Installation
+
+```bash
+npm install
+```
+
+## Développement local
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Lint
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement sur Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Importez le dépôt GitHub dans Vercel.
+2. Framework : Next.js (détecté automatiquement).
+3. Définissez le domaine personnalisé `blog.ai-studios.fr` dans les paramètres du projet.
+4. Les routes `robots.txt` et `sitemap.xml` sont générées automatiquement.
 
-## Deploy on Vercel
+Les URLs canoniques et Open Graph utilisent la constante `SITE_URL` dans `lib/constants.ts`. Adaptez-la si vous déployez sur un domaine de preview temporaire.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Ajouter un article
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Créez un fichier dans `content/articles/posts/` qui exporte un objet `Article` typé (voir les exemples existants).
+2. Importez et ajoutez l’article au tableau `articles` dans `content/articles/articles.ts`.
+3. Ajoutez une image hero SVG (ratio 16:9 recommandé) dans `public/images/articles/{slug}.svg`.
+4. Mettez à jour `image` et `imageAlt` dans l’article.
+5. Vérifiez `relatedSlugs` et les liens internes `[texte](/blog/slug)`.
+
+Structure attendue : voir `lib/types/article.ts` (titres, slug, SEO, blocs de contenu, FAQ, etc.).
+
+## Modifier les catégories
+
+Éditez `lib/categories.ts` (nom, slug, description). Les pages `/categories/[slug]` et les filtres du blog se basent sur ce fichier.
+
+## Structure utile
+
+- `app/` : routes, `layout.tsx`, `robots.ts`, `sitemap.ts`
+- `components/` : UI réutilisable (header, cartes, SEO JSON-LD, etc.)
+- `content/articles/` : données éditoriales
+- `lib/` : helpers SEO, articles, catégories
+
+## GitHub
+
+Remote prévu :
+
+```text
+https://github.com/Frankhoubre/ai-studios-formation-ia.git
+```
+
+Initialisation et push :
+
+```bash
+git init
+git remote add origin https://github.com/Frankhoubre/ai-studios-formation-ia.git
+# ou si le remote existe déjà :
+# git remote set-url origin https://github.com/Frankhoubre/ai-studios-formation-ia.git
+
+git add .
+git commit -m "Create AI Studios SEO blog"
+git branch -M main
+git push -u origin main
+```
+
+Si GitHub demande une authentification (2FA, token, SSO), connectez-vous comme d’habitude puis relancez :
+
+```bash
+git remote set-url origin https://github.com/Frankhoubre/ai-studios-formation-ia.git
+git branch -M main
+git push -u origin main
+```
+
+## Licence
+
+Projet privé AI Studios. Tous droits réservés sauf mention contraire.
