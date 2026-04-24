@@ -147,7 +147,7 @@ export const workflowIaCreatif: Article = {
     },
     {
       type: "p",
-      text: "Si vous ajoutez de la vitesse sans critères, vous ajoutez du bruit. Si vous ajoutez des critères, la vitesse devient utile. Pour l’outilage, [meilleurs outils IA vidéo](/blog/meilleurs-outils-ia-video) donne un cadre stable. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Exercice : une session, un livrable, trois critères écrits avant la première génération. Si vous tenez la ligne, vous avez déjà gagné.",
+      text: "Si vous ajoutez de la vitesse sans critères, vous ajoutez du bruit. Si vous ajoutez des critères, la vitesse devient utile. Pour l’outilage, [meilleurs outils IA vidéo](/blog/meilleurs-outils-ia-video) donne un cadre stable. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Exercice : une session, un livrable, trois critères écrits avant la première génération. Si vous tenez la ligne, vous avez déjà gagné.",
     },
   ],
 };

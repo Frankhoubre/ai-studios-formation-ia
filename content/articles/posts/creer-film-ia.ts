@@ -157,7 +157,7 @@ export const creerFilmIa: Article = {
     },
     {
       type: "p",
-      text: "Les belles images sont le dessert. Le plat, c’est la causalité, le rythme, le regard du spectateur. Si vous voulez une base workflow pour produire sans vous perdre, [workflow IA créatif](/blog/workflow-ia-creatif) complète ce guide. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Prochaine étape : un film de soixante secondes avec trois bascules nettes. Si vous y arrivez, vous avez appris plus qu’avec dix minutes de générique aléatoire.",
+      text: "Les belles images sont le dessert. Le plat, c’est la causalité, le rythme, le regard du spectateur. Si vous voulez une base workflow pour produire sans vous perdre, [workflow IA créatif](/blog/workflow-ia-creatif) complète ce guide. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Prochaine étape : un film de soixante secondes avec trois bascules nettes. Si vous y arrivez, vous avez appris plus qu’avec dix minutes de générique aléatoire.",
     },
   ],
 };

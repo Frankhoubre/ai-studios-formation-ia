@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { categories } from "@/lib/categories";
-import { FORMATION_FREE_URL } from "@/lib/constants";
+import { FORMATION_FREE_URL, SKOOL_COMMUNITY_URL } from "@/lib/constants";
 
 const navCategories = categories.filter((c) =>
   ["ia-video", "ia-image", "prompting"].includes(c.slug),
@@ -44,6 +44,14 @@ export function Header() {
           >
             Formation gratuite
           </a>
+          <a
+            href={SKOOL_COMMUNITY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full px-3 py-2 text-sm text-text-soft transition hover:bg-white/[0.06] hover:text-text"
+          >
+            Skool
+          </a>
         </nav>
         <a
           href={FORMATION_FREE_URL}
@@ -77,6 +85,14 @@ export function Header() {
           className="shrink-0 rounded-full border border-brand/40 bg-brand/15 px-3 py-1.5 text-xs text-text"
         >
           Formation gratuite
+        </a>
+        <a
+          href={SKOOL_COMMUNITY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 rounded-full border border-border-subtle bg-card px-3 py-1.5 text-xs text-text-soft"
+        >
+          Skool
         </a>
       </div>
     </header>

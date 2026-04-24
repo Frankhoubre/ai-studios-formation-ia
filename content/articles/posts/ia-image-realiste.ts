@@ -148,7 +148,7 @@ export const iaImageRealiste: Article = {
     },
     {
       type: "p",
-      text: "Si votre prompt ressemble à un catalogue d’adjectifs, vous produirez une moyenne glossy. Si votre prompt ressemble à une scène avec des causes, vous produirez des images discutables mais directionnelles, et c’est mieux. Pour industrialiser sans dégrader, lisez [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Test final : réduisez votre prompt de moitié. Si l’image devient plus crédible, vous aviez trop de bruit.",
+      text: "Si votre prompt ressemble à un catalogue d’adjectifs, vous produirez une moyenne glossy. Si votre prompt ressemble à une scène avec des causes, vous produirez des images discutables mais directionnelles, et c’est mieux. Pour industrialiser sans dégrader, lisez [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Test final : réduisez votre prompt de moitié. Si l’image devient plus crédible, vous aviez trop de bruit.",
     },
   ],
 };

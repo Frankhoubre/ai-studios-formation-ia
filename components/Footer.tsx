@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { categories } from "@/lib/categories";
-import { FORMATION_FREE_URL, MAIN_SITE_URL } from "@/lib/constants";
+import {
+  FORMATION_FREE_URL,
+  MAIN_SITE_URL,
+  SKOOL_COMMUNITY_URL,
+} from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -53,6 +57,16 @@ export function Footer() {
                   className="transition hover:text-brand-bright"
                 >
                   Formation gratuite
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SKOOL_COMMUNITY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-brand-bright"
+                >
+                  Communauté Skool
                 </a>
               </li>
               <li>

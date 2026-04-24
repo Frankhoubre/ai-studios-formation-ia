@@ -171,7 +171,7 @@ export const promptImageIaCinema: Article = {
     },
     {
       type: "p",
-      text: "Un bon prompt image IA ne promet pas le chef d’œuvre. Il réduit l’espace des médiocres possibles et force le modèle à trancher avec vous. Si vous voulez une base plus large sur la chaîne complète, lisez [formation IA vidéo : par où commencer](/blog/formation-ia-video). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Ensuite, faites un exercice simple : trois prompts, même scène, un seul levier changé à chaque fois. Vous verrez vite ce qui compte vraiment.",
+      text: "Un bon prompt image IA ne promet pas le chef d’œuvre. Il réduit l’espace des médiocres possibles et force le modèle à trancher avec vous. Si vous voulez une base plus large sur la chaîne complète, lisez [formation IA vidéo : par où commencer](/blog/formation-ia-video). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Ensuite, faites un exercice simple : trois prompts, même scène, un seul levier changé à chaque fois. Vous verrez vite ce qui compte vraiment.",
     },
   ],
 };

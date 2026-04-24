@@ -152,7 +152,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autres. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
+      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autres. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
     },
   ],
 };

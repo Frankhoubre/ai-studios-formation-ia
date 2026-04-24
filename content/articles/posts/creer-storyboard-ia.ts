@@ -170,7 +170,7 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "p",
-      text: "L’IA rend la génération rapide. Le storyboard rend la génération moins stupide. Si vous démarrez un parcours plus large, [formation IA vidéo : par où commencer](/blog/formation-ia-video) replace le storyboard dans la chaîne complète. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Prochaine fois que vous avez envie de générer direct, faites une planche de six cases moche. Si la séquence tient, vous gagnerez du temps plus tard. Si elle ne tient pas, vous venez d’économiser trois heures de reroll.",
+      text: "L’IA rend la génération rapide. Le storyboard rend la génération moins stupide. Si vous démarrez un parcours plus large, [formation IA vidéo : par où commencer](/blog/formation-ia-video) replace le storyboard dans la chaîne complète. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Prochaine fois que vous avez envie de générer direct, faites une planche de six cases moche. Si la séquence tient, vous gagnerez du temps plus tard. Si elle ne tient pas, vous venez d’économiser trois heures de reroll.",
     },
   ],
 };

@@ -147,7 +147,7 @@ export const videosIaJoliesMaisVides: Article = {
     },
     {
       type: "p",
-      text: "Une vidéo IA réussie n’est pas celle qui fait le plus « waouh ». C’est celle qu’on peut résumer avec une phrase qui n’est pas technique. Si vous montez un film plus long, le problème devient encore plus clair : [créer un film avec l’IA](/blog/creer-film-ia) n’est pas multiplier les plans, c’est orchestrer le temps. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Ensuite, test brutal : montrez votre clip à quelqu’un, coupez le son, et demandez ce qui s’est passé. Si la réponse est « euh… il y a des effets », vous savez quoi corriger.",
+      text: "Une vidéo IA réussie n’est pas celle qui fait le plus « waouh ». C’est celle qu’on peut résumer avec une phrase qui n’est pas technique. Si vous montez un film plus long, le problème devient encore plus clair : [créer un film avec l’IA](/blog/creer-film-ia) n’est pas multiplier les plans, c’est orchestrer le temps. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Ensuite, test brutal : montrez votre clip à quelqu’un, coupez le son, et demandez ce qui s’est passé. Si la réponse est « euh… il y a des effets », vous savez quoi corriger.",
     },
   ],
 };

@@ -152,7 +152,7 @@ export const creerPubliciteIa: Article = {
     },
     {
       type: "p",
-      text: "Si vous maîtrisez la chaîne, l’IA devient un accélérateur. Si vous ne maîtrisez pas la chaîne, l’IA devient un amplificateur de chaos. Pour un socle plus large sur la vidéo, [formation IA vidéo](/blog/formation-ia-video) replace la pub dans un parcours cinéma et contenu. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Votre prochain brief mérite une planche avant un rendu final. Faites l’exercice une fois, vous ne reviendrez pas en arrière.",
+      text: "Si vous maîtrisez la chaîne, l’IA devient un accélérateur. Si vous ne maîtrisez pas la chaîne, l’IA devient un amplificateur de chaos. Pour un socle plus large sur la vidéo, [formation IA vidéo](/blog/formation-ia-video) replace la pub dans un parcours cinéma et contenu. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Votre prochain brief mérite une planche avant un rendu final. Faites l’exercice une fois, vous ne reviendrez pas en arrière.",
     },
   ],
 };

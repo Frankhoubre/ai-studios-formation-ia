@@ -146,7 +146,7 @@ export const personnageCoherentIa: Article = {
     },
     {
       type: "p",
-      text: "Si vous produisez une série, vous produisez une mémoire. Sans mémoire, vous produisez des variations. Les variations peuvent être belles, elles ne tiennent pas un récit. Pour une chaîne plus large, [workflow IA créatif](/blog/workflow-ia-creatif) aide à archiver et nommer correctement vos références. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Prochain test : générez trois images avec la même fiche. Si le troisième visage dérive, ce n’est pas « le modèle ». C’est un paramètre que vous avez bougé sans le voir.",
+      text: "Si vous produisez une série, vous produisez une mémoire. Sans mémoire, vous produisez des variations. Les variations peuvent être belles, elles ne tiennent pas un récit. Pour une chaîne plus large, [workflow IA créatif](/blog/workflow-ia-creatif) aide à archiver et nommer correctement vos références. Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Prochain test : générez trois images avec la même fiche. Si le troisième visage dérive, ce n’est pas « le modèle ». C’est un paramètre que vous avez bougé sans le voir.",
     },
   ],
 };

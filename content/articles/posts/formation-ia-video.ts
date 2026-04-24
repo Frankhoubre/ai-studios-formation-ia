@@ -208,7 +208,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "L’IA ne vous enlève pas la responsabilité du choix. Elle vous en donne plus par seconde. Une formation IA vidéo sérieuse vous apprend à transformer cette abondance en décisions, puis en habitudes. Si vous voulez un socle concret pour structurer un workflow image et vidéo sans vous perdre, j’ai préparé une formation gratuite qui montre comment bâtir une chaîne de production IA plus cinématographique, étape par étape, avec des critères de qualité réalistes. Le lien est ici : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-cours-cinema). Ensuite, votre mission est simple : refaire, mal, puis mieux, jusqu’à ce que la cohérence tienne sur plusieurs plans d’affilée. C’est là que le cinéma commence, avec ou sans IA.",
+      text: "L’IA ne vous enlève pas la responsabilité du choix. Elle vous en donne plus par seconde. Une formation IA vidéo sérieuse vous apprend à transformer cette abondance en décisions, puis en habitudes. Si vous voulez un socle concret pour structurer un workflow image et vidéo sans vous perdre, j’ai préparé une formation gratuite qui montre comment bâtir une chaîne de production IA plus cinématographique, étape par étape, avec des critères de qualité réalistes. Le lien est ici : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Ensuite, votre mission est simple : refaire, mal, puis mieux, jusqu’à ce que la cohérence tienne sur plusieurs plans d’affilée. C’est là que le cinéma commence, avec ou sans IA.",
     },
   ],
 };
