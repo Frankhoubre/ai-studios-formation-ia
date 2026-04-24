@@ -38,12 +38,19 @@ npm run lint
 
 ## Déploiement sur Vercel
 
-1. Importez le dépôt GitHub dans Vercel.
-2. Framework : Next.js (détecté automatiquement).
-3. Définissez le domaine personnalisé `blog.ai-studios.fr` dans les paramètres du projet.
-4. Les routes `robots.txt` et `sitemap.xml` sont générées automatiquement.
+1. Créez ou ouvrez un projet Vercel **connecté au dépôt** `Frankhoubre/ai-studios-formation-ia` (branche `main`).
+2. **Root directory** : laissez la racine du repo (là où se trouvent `package.json` et `app/`).
+3. Framework : Next.js (détecté automatiquement), Node 20+.
+4. Vérifiez que le dernier déploiement **Production** est en statut **Ready** (icône verte).
+5. Ouvrez l’URL `https://<nom-du-projet>.vercel.app` : la home du blog doit s’afficher. Si cette URL est en **404**, le domaine personnalisé le sera aussi : corrigez d’abord le build ou le mauvais projet.
+6. **Settings → Domains** : ajoutez `blog.ai-studios.fr` sur **ce même projet**. DNS : enregistrement **CNAME** `blog` → `cname.vercel-dns.com` (ou les valeurs indiquées par Vercel).
+7. Les routes `robots.txt` et `sitemap.xml` sont générées automatiquement.
 
 Les URLs canoniques et Open Graph utilisent la constante `SITE_URL` dans `lib/constants.ts`. Adaptez-la si vous déployez sur un domaine de preview temporaire.
+
+### 404 sur `blog.ai-studios.fr` alors que Vercel « a déployé »
+
+Si les en-têtes de réponse contiennent `server: Vercel` et `x-vercel-error: NOT_FOUND`, le nom de domaine pointe vers Vercel mais **aucune application valide** ne sert ce projet (souvent : mauvais projet Vercel, déploiement production en échec, ou domaine attaché à un projet vide). Vérifiez l’URL `.vercel.app` du **même** projet que le repo du blog : tant qu’elle est en 404, corrigez le build ou reconnectez le bon repo avant le DNS.
 
 ## Ajouter un article
 
