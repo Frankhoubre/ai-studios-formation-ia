@@ -65,7 +65,7 @@ export default async function BlogPage({
 
       {active ? (
         <p className="mt-6 text-sm text-text-muted">
-          Filtre : <span className="text-text">{active.name}</span> —{" "}
+          Filtre : <span className="text-text">{active.name}</span>.{" "}
           {active.description}
         </p>
       ) : null}
