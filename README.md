@@ -48,9 +48,31 @@ npm run lint
 
 Les URLs canoniques et Open Graph utilisent la constante `SITE_URL` dans `lib/constants.ts`. Adaptez-la si vous déployez sur un domaine de preview temporaire.
 
-### 404 sur `blog.ai-studios.fr` alors que Vercel « a déployé »
+### 404 sur `blog.ai-studios.fr` : diagnostic (le code build correctement)
 
-Si les en-têtes de réponse contiennent `server: Vercel` et `x-vercel-error: NOT_FOUND`, le nom de domaine pointe vers Vercel mais **aucune application valide** ne sert ce projet (souvent : mauvais projet Vercel, déploiement production en échec, ou domaine attaché à un projet vide). Vérifiez l’URL `.vercel.app` du **même** projet que le repo du blog : tant qu’elle est en 404, corrigez le build ou reconnectez le bon repo avant le DNS.
+Si la page affiche `The page could not be found` avec `server: Vercel`, ce n’est **pas** un bug Next.js dans ce dépôt : c’est que **Vercel ne sert aucun déploiement “Production” valide** pour le projet auquel le domaine est rattaché. Test : ouvrez **`https://ai-studios-formation-ia.vercel.app`** (ou le nom exact affiché sous **Settings → Domains**). Tant que cette URL est en **404**, `blog.ai-studios.fr` le sera aussi.
+
+À faire dans l’ordre sur Vercel :
+
+1. **Bon projet** : le projet doit être relié au repo GitHub **`Frankhoubre/ai-studios-formation-ia`**, pas à un autre dépôt ou à un projet vide.
+2. **Branche de production** : **Settings → Git → Production Branch** = **`main`** (si ton défaut est `master`, aucun déploiement prod ne part).
+3. **Réglages de build** : **Settings → General** : **Root Directory** = vide (racine du repo). **Settings → Build & Deployment** : **Framework Preset** = Next.js. **Output Directory** = **vide** (si tu y mets `out`, `dist`, `.next`, etc., le site casse).
+4. **Node** : **Settings → General → Node.js Version** = **20.x** (recommandé pour Next 16).
+5. **Dernier déploiement** : onglet **Deployments** → le déploiement marqué **Production** sur `main` doit être **Ready** (vert). S’il est en erreur, ouvrez les **logs** : la cause y est écrite (install, build, etc.).
+6. **Domaine** : **Settings → Domains** : `blog.ai-studios.fr` doit apparaître sur **ce** projet. Retirez-le de tout autre projet Vercel qui pourrait le réclamer.
+7. Après correction : **Deployments → … → Redeploy** (case “Use existing Build Cache” décochée une fois pour forcer un build propre).
+
+Vérification locale côté dépôt : le workflow GitHub **Build** (`.github/workflows/build.yml`) exécute `npm ci`, `lint` et `build` sur Ubuntu. S’il est vert sur `main`, le problème est uniquement la configuration ou le compte Vercel.
+
+Déploiement manuel (pour voir l’erreur dans le terminal) :
+
+```bash
+npm i -g vercel@latest
+cd /chemin/vers/ai-studios
+vercel login
+vercel link    # lier au bon projet
+vercel --prod
+```
 
 ## Ajouter un article
 
