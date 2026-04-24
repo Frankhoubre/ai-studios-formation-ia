@@ -49,7 +49,7 @@ Les URLs canoniques et Open Graph utilisent la constante `SITE_URL` dans `lib/co
 
 1. Créez un fichier dans `content/articles/posts/` qui exporte un objet `Article` typé (voir les exemples existants).
 2. Importez et ajoutez l’article au tableau `articles` dans `content/articles/articles.ts`.
-3. Ajoutez une image hero SVG (ratio 16:9 recommandé) dans `public/images/articles/{slug}.svg`.
+3. Ajoutez une image hero PNG ou WebP (ratio 16:9 recommandé) dans `public/images/articles/{slug}.png`.
 4. Mettez à jour `image` et `imageAlt` dans l’article.
 5. Vérifiez `relatedSlugs` et les liens internes `[texte](/blog/slug)`.
 

@@ -14,7 +14,7 @@ export const creerStoryboardIa: Article = {
   updatedAt: "2026-04-18",
   readingTime: 17,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/creer-storyboard-ia.svg",
+  image: "/images/articles/creer-storyboard-ia.png",
   imageAlt:
     "Illustration abstraite storyboard IA, formes cinématiques et glow violet",
   keywords: [

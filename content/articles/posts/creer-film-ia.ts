@@ -14,7 +14,7 @@ export const creerFilmIa: Article = {
   updatedAt: "2026-04-18",
   readingTime: 20,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/creer-film-ia.svg",
+  image: "/images/articles/creer-film-ia.png",
   imageAlt:
     "Visuel abstrait cinéma et film IA, ambiance studio et narration",
   keywords: [

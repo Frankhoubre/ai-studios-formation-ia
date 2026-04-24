@@ -13,7 +13,7 @@ export const meilleursOutilsIaVideo: Article = {
   updatedAt: "2026-04-18",
   readingTime: 16,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/meilleurs-outils-ia-video.svg",
+  image: "/images/articles/meilleurs-outils-ia-video.png",
   imageAlt:
     "Visuel abstrait pour panorama des outils IA vidéo et workflow créatif",
   keywords: [

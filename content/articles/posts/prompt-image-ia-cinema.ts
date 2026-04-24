@@ -13,7 +13,7 @@ export const promptImageIaCinema: Article = {
   updatedAt: "2026-04-18",
   readingTime: 17,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/prompt-image-ia-cinema.svg",
+  image: "/images/articles/prompt-image-ia-cinema.png",
   imageAlt:
     "Illustration abstraite premium pour le guide prompt image IA cinéma",
   keywords: [

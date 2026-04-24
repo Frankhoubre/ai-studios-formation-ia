@@ -14,7 +14,7 @@ export const workflowIaCreatif: Article = {
   updatedAt: "2026-04-18",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/workflow-ia-creatif.svg",
+  image: "/images/articles/workflow-ia-creatif.png",
   imageAlt:
     "Visuel abstrait workflow IA créatif, organisation et production",
   keywords: [

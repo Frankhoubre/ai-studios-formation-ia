@@ -14,7 +14,7 @@ export const iaImageRealiste: Article = {
   updatedAt: "2026-04-18",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/ia-image-realiste.svg",
+  image: "/images/articles/ia-image-realiste.png",
   imageAlt:
     "Visuel abstrait pour le guide IA image réaliste et texture photographique",
   keywords: [

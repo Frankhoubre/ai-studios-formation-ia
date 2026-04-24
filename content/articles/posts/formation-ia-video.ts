@@ -20,7 +20,7 @@ export const formationIaVideo: Article = {
   updatedAt: "2026-04-18",
   readingTime: 16,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/formation-ia-video.svg",
+  image: "/images/articles/formation-ia-video.png",
   imageAlt:
     "Visuel abstrait cinématique violet pour le guide formation IA vidéo sur AI Studios Blog",
   keywords: [

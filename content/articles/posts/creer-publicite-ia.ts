@@ -14,7 +14,7 @@ export const creerPubliciteIa: Article = {
   updatedAt: "2026-04-18",
   readingTime: 19,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/creer-publicite-ia.svg",
+  image: "/images/articles/creer-publicite-ia.png",
   imageAlt:
     "Visuel abstrait premium pour publicité IA et production créative",
   keywords: [

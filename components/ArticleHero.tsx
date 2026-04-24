@@ -14,7 +14,6 @@ export function ArticleHero({ article }: { article: Article }) {
           alt={article.imageAlt}
           fill
           priority
-          unoptimized
           className="object-cover"
           sizes="100vw"
         />
