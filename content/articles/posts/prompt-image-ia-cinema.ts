@@ -150,7 +150,7 @@ export const promptImageIaCinema: Article = {
       items: [
         "Mélanger trois films de référence contradictoires dans le même prompt.",
         "Demander « réalisme » sans accepter imperfections visibles.",
-        "Changer six paramètres entre deux générations et conclure que « le modèle est nul ».",
+        "Changer six paramètrès entre deux générations et conclure que « le modèle est nul ».",
         "Ignorer le cadrage : vous corrigez la texture alors que le plan est narrativement faux.",
         "Travailler sans sélection : vous gardez dix images moyennes au lieu de deux fortes.",
       ],

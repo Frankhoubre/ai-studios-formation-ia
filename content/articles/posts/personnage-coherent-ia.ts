@@ -100,7 +100,7 @@ export const personnageCoherentIa: Article = {
       headers: ["Erreur", "Pourquoi ça casse", "Correction"],
       rows: [
         [
-          "Changer six paramètres entre deux images",
+          "Changer six paramètrès entre deux images",
           "Le modèle moyenne et perd l’identité",
           "Un seul levier modifié par itération",
         ],

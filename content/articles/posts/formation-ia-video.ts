@@ -68,7 +68,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "h2",
-      id: "pourquoi-vous-bloquiez-deja",
+      id: "pourquoi-vous-bloquiez-déjà",
       text: "Pourquoi vous bloquez déjà, même si « tout est plus simple »",
     },
     {
@@ -109,7 +109,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Les références ne servent pas à copier une image connue. Elles servent à verrouiller des paramètres : lumière, grain, focale, palette, rythme de découpage, type de mouvement caméra. Vous construisez une mini bible visuelle, même légère. Deux captures de films, trois photos, une note sur la texture de peau ou la façon dont la ville respire la nuit. Cette bible devient votre filtre de sélection quand l’IA vous propose douze variations plausibles. Sans filtre, vous choisissez au feeling et vous perdez la cohérence. Avec filtre, vous choisissez au service de l’intention.",
+      text: "Les références ne servent pas à copier une image connue. Elles servent à verrouiller des paramètrès : lumière, grain, focale, palette, rythme de découpage, type de mouvement caméra. Vous construisez une mini bible visuelle, même légère. Deux captures de films, trois photos, une note sur la texture de peau ou la façon dont la ville respire la nuit. Cette bible devient votre filtre de sélection quand l’IA vous propose douze variations plausibles. Sans filtre, vous choisissez au feeling et vous perdez la cohérence. Avec filtre, vous choisissez au service de l’intention.",
     },
     {
       type: "h3",
@@ -127,7 +127,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Quand l’image commence à bouger, le cerveau du spectateur change de critère. Une image fixe peut survivre à une petite incohérence. Une vidéo non. Le mouvement révèle la physique, la profondeur, la continuité du personnage, la stabilité de la lumière. C’est pourquoi beaucoup de débutants ont l’impression d’être « à deux centimètres du résultat » pendant des jours. Ils corrigent au pixel près un plan qui ne veut toujours pas tenir ensemble avec le suivant. La correction utile n’est pas toujours locale. Parfois, il faut remonter au storyboard, changer un cadrage, simplifier une action, réduire une ambition de mouvement pour sauver la lecture globale.",
+      text: "Quand l’image commence à bouger, le cerveau du spectateur change de critère. Une image fixe peut survivre à une petite incohérence. Une vidéo non. Le mouvement révèle la physique, la profondeur, la continuité du personnage, la stabilité de la lumière. C’est pourquoi beaucoup de débutants ont l’impression d’être « à deux centimètrès du résultat » pendant des jours. Ils corrigent au pixel près un plan qui ne veut toujours pas tenir ensemble avec le suivant. La correction utile n’est pas toujours locale. Parfois, il faut remonter au storyboard, changer un cadrage, simplifier une action, réduire une ambition de mouvement pour sauver la lecture globale.",
     },
     {
       type: "p",

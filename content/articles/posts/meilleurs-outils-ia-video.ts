@@ -84,7 +84,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le montage est où votre vidéo devient film ou pub. Les logiciels traditionnels restent centraux : timeline, layers audio, couleur, export. L’IA dans le montage progresse sur certaines tâches : transcription, sous titres, parfois suggestions de cuts. Mais la décision de couper tôt ou tard reste humaine si vous voulez du cinéma. Pourquoi ? Parce que le rythme est une lecture, pas un réglage automatique. Si votre montage sonne amateur, aucun générateur ne sauve l’ensemble. Pour la narration, reliez [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides).",
+      text: "Le montage est où votre vidéo devient film ou pub. Les logiciels traditionnels restent centraux : timeline, layers audio, couleur, export. L’IA dans le montage progresse sur certaines tâches : transcription, sous titrès, parfois suggestions de cuts. Mais la décision de couper tôt ou tard reste humaine si vous voulez du cinéma. Pourquoi ? Parce que le rythme est une lecture, pas un réglage automatique. Si votre montage sonne amateur, aucun générateur ne sauve l’ensemble. Pour la narration, reliez [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides).",
     },
     {
       type: "h2",
@@ -152,7 +152,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autres. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
+      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autrès. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
     },
   ],
 };

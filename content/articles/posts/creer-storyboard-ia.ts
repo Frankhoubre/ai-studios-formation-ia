@@ -47,7 +47,7 @@ export const creerStoryboardIa: Article = {
     {
       question: "Comment éviter les incohérences entre cases ?",
       answer:
-        "Verrouillez une fiche personnage et une bible lumière. Changez un seul paramètre entre deux cases si vous testez. Si vous changez six paramètres, vous ne saurez pas ce qui casse.",
+        "Verrouillez une fiche personnage et une bible lumière. Changez un seul paramètre entre deux cases si vous testez. Si vous changez six paramètrès, vous ne saurez pas ce qui casse.",
     },
     {
       question: "Le storyboard remplace-t-il le tournage traditionnel ?",
@@ -71,7 +71,7 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "h2",
-      id: "methode-en-sept-etapes",
+      id: "méthode-en-sept-etapes",
       text: "La méthode en sept étapes (terrain, pas théorie)",
     },
     {

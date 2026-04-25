@@ -134,7 +134,7 @@ export const creerPubliciteIa: Article = {
     },
     {
       type: "p",
-      text: "Préparez les masters et les dérivés : ratios, safe zones, loudness audio si nécessaire, sous-titres si la campagne le demande. Mieux vaut une check-list ennuyeuse qu’un fichier refusé par une régie. Pour une vue d’ensemble des standards vidéo numériques, l’article [résolution vidéo](https://en.wikipedia.org/wiki/Video_resolution) peut servir de point de départ pour comprendre pourquoi vos exports doivent être pensés par usage.",
+      text: "Préparez les masters et les dérivés : ratios, safe zones, loudness audio si nécessaire, sous-titrès si la campagne le demande. Mieux vaut une check-list ennuyeuse qu’un fichier refusé par une régie. Pour une vue d’ensemble des standards vidéo numériques, l’article [résolution vidéo](https://en.wikipedia.org/wiki/Video_resolution) peut servir de point de départ pour comprendre pourquoi vos exports doivent être pensés par usage.",
     },
     {
       type: "h2",
