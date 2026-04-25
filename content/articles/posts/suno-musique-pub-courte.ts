@@ -69,7 +69,7 @@ Tu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secon
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, intimate recording desk with analog mixer, headphones, notebook full of cue points, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, intimate recording desk with analog mixer, headphones, notebook full of cue points, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.
@@ -218,7 +218,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, music producer comparing waveform takes beside storyboard thumbnails and ad cut timings, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, music producer comparing waveform takes beside storyboard thumbnails and ad cut timings, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.
@@ -258,7 +258,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, close studio monitoring pass with beginner creator balancing voice-over and music on timeline markers, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, close studio monitoring pass with beginner creator balancing voice-over and music on timeline markers, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.

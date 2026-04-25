@@ -69,7 +69,7 @@ Tu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, p
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, real small business set at dawn with practical lights and natural imperfections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, real small business set at dawn with practical lights and natural imperfections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.
@@ -148,7 +148,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, beginner creator testing first calibrated shot in a practical local shop with real textures and imperfect reflections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, beginner creator testing first calibrated shot in a practical local shop with real textures and imperfect reflections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.
@@ -163,7 +163,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
       type: "ol",
       items: [
         "Lance 3 generations avec seed fixe, meme prompt, pour mesurer la stabilite du moteur.",
-        "Modifie seulement la ligne camera, passe de 35mm a 50mm, puis compare la sensation de proximite.",
+        "Modifie seulement la ligne camera, passe de 80mm a 100mm, puis compare la sensation de proximite.",
         "Modifie uniquement la ligne lumiere, passe de soft window light a hard side light et observe la peau.",
         "Conserve la meilleure base et duplique en variante safe, premium, audacieuse pour le client."
       ],
@@ -210,7 +210,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     {
       type: "p",
       text: "```text
-Prompt: Cinematic stills, wide shot, 35mm lens, anamorphic, editor reviewing calibrated shots on dual monitor with practical desk lamp and imperfect real-world textures, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
+Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, editor reviewing calibrated shots on dual monitor with practical desk lamp and imperfect real-world textures, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
 
 Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
 * 2× Contextual Body Images inserted organically within the workflow sections.
