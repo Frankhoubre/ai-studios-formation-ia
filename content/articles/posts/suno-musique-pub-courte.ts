@@ -65,9 +65,7 @@ export const sunoMusiquePubCourte: Article = {
       text: "slug: suno-musique-pub-courte\n\nTu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c est genial. Puis tu poses la piste sous une vraie pub, et tout s effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ca t arrive, respire. C est normal. J ai fait exactement cette erreur sur un spot local pour un artisan, et j ai compris une chose simple, en pub, la musique n est pas la star, c est l accelerateur de clarte.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, intimate recording desk with analog mixer, headphones, notebook full of cue points, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     {
       type: "p",
       text: "Tu n as pas besoin d etre ingenieur du son pour faire mieux que 90 pourcent des musiques IA publiees aujourd hui. Tu as besoin d une methode stricte, de reperes concrets, et d une logique de plateau. Pense comme en cinema analogique, chaque element sonore a une fonction, respiration, tension, relance, memorisation. Quand tu abordes Suno avec cette mentalite, la qualite grimpe tres vite.",
@@ -209,9 +207,7 @@ export const sunoMusiquePubCourte: Article = {
       text: "Quand tu identifies une bonne base, tu la verrouilles. Tu arretes de generer et tu passes en edition. C est le moment ou tu deviens pro, parce que tu privilegies la decision plutot que la nouveaute permanente.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, music producer comparing waveform takes beside storyboard thumbnails and ad cut timings, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     { type: "h3", id: "step3-mix", text: "Etape 3, mixage oriente voix-off et conversion" },
     {
       type: "p",
@@ -244,9 +240,7 @@ export const sunoMusiquePubCourte: Article = {
       text: "Je recommande aussi [Business Dynamite sur YouTube](https://www.youtube.com/@BusinessDynamite) pour voir des decompositions de hooks publicitaires et de structures de messages. Tu y verras concretement ce que le spectateur doit sentir dans les trois premieres secondes et comment une couche sonore propre peut multiplier l impact commercial.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, close studio monitoring pass with beginner creator balancing voice-over and music on timeline markers, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les debutants cassent en musique IA" },
     { type: "h3", id: "erreur1", text: "Erreur 1, empiler trop d idees musicales" },
     {

@@ -65,9 +65,7 @@ export const storyboardShotlistNotionIa: Article = {
       text: "slug: storyboard-shotlist-notion-ia\n\nTu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, puis devient faux des que tu le montres a un client reel. J ai vecu ca sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d un systeme de production concret pour organiser storyboard et shot list dans Notion pour une prod IA.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, real small business set at dawn with practical lights and natural imperfections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     {
       type: "p",
       text: "Voila la promesse, tu repars avec une methode debutant friendly, mais pro dans son execution. On parle vrais clics, vrais reglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
@@ -139,9 +137,7 @@ export const storyboardShotlistNotionIa: Article = {
       text: "Tu veux gagner une heure tout de suite, cree un template de prompt en quatre lignes, sujet, environnement, camera, texture. Tu ne changes que deux lignes par iteration. C est sec. C est efficace.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, beginner creator testing first calibrated shot in a practical local shop with real textures and imperfect reflections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     { type: "h3", id: "generation-et-iteration", text: "Etape 2, generer, comparer, corriger" },
     {
       type: "p",
@@ -196,9 +192,7 @@ export const storyboardShotlistNotionIa: Article = {
       text: "Je te recommande aussi une ressource video tres utile pour visualiser le raisonnement, [Business Dynamite sur YouTube](https://www.youtube.com/@BusinessDynamite). Tu verras des breakdowns de hooks visuels, de structure d offre, et de montage court orienté conversion, c est parfait pour comprendre comment relier ton rendu IA a un vrai objectif de vente.",
     },
     {
-      type: "p",
-      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, editor reviewing calibrated shots on dual monitor with practical desk lamp and imperfect real-world textures, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
-    },
+      type: "p",    },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les debutants cassent, et comment reparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },
     {
