@@ -31,32 +31,32 @@ export const sunoMusiquePubCourte: Article = {
     {
       question: "Comment choisir entre un jingle très court et une boucle de 20 secondes pour une pub locale ?",
       answer:
-        "Si ton offre repose sur une phrase simple et memorisable, commence par un jingle de 6 a 8 secondes. Si tu dois installer une ambiance avant la promesse, une boucle de 15 a 20 secondes fonctionne mieux. Le critere n'est pas la mode, c'est la clarte du message. Teste les deux versions sur mobile, puis regarde laquelle laisse le message respirer sans noyer la voix off. En production reelle, je vois souvent des débutants choisir trop long, alors que le bon choix est une forme courte, très lisible, avec une progression harmonique minimale.",
+        "Si ton offre repose sur une phrase simple et memorisable, commence par un jingle de 6 a 8 secondes. Si tu dois installer une ambiance avant la promesse, une boucle de 15 a 20 secondes fonctionne mieux. Le critere n'est pas la mode, c'est la clarte du message. Teste les deux versions sur mobile, puis regarde laquelle laisse le message respirer sans noyer la voix off. En production réelle, je vois souvent des débutants choisir trop long, alors que le bon choix est une forme courte, très lisible, avec une progression harmonique minimale.",
     },
     {
       question: "Quels réglages Suno faut il verrouiller en premier quand on debute ?",
       answer:
-        "Verrouille d'abord le tempo cible, la durée de sortie et le niveau d'energie global. Ensuite, garde une structure simple, intro courte, motif principal, sortie propre. Beaucoup de débutants changent tous les paramètres a chaque tentative, ce qui rend toute comparaison impossible. Tu veux apprendre vite, donc tu gardes un protocole stable. Trois generations avec la même base, un seul changement a la fois, puis comparaison au casque et sur haut parleur de smartphone. Cette rigueur donne des resultats plus pros que des heures d'experimentation aleatoire.",
+        "Verrouille d'abord le tempo cible, la durée de sortie et le niveau d'énergie global. Ensuite, garde une structure simple, intro courte, motif principal, sortie propre. Beaucoup de débutants changent tous les paramètres a chaque tentative, ce qui rend toute comparaison impossible. Tu veux apprendre vite, donc tu gardes un protocole stable. Trois generations avec la même base, un seul changement a la fois, puis comparaison au casque et sur haut parleur de smartphone. Cette rigueur donne des resultats plus pros que des heures d'expérimentation aleatoire.",
     },
     {
       question: "Comment éviter une musique IA qui sonne generique ou stock ?",
       answer:
-        "Tu dois injecter une intention narrative très concrete dans ton prompt. Au lieu d'ecrire upbeat commercial track, decris une situation, une energie, une texture, et un role precis pour la musique. Par exemple, tension douce avant reveal produit, puis relachement lumineux sur call to action. Ensuite, coupe les elements inutiles en post production, surtout les couches trop brillantes. Le rendu devient plus humain quand tu retires le superflu. Une musique publicitaire efficace n'est pas celle qui impressionne les musiciens, c'est celle qui laisse la promesse commerciale entrer sans friction.",
+        "Tu dois injecter une intention narrative très concrete dans ton prompt. Au lieu d'ecrire upbeat commercial track, decris une situation, une énergie, une texture, et un rôle precis pour la musique. Par exemple, tension douce avant reveal produit, puis relachement lumineux sur call to action. Ensuite, coupe les elements inutiles en post production, surtout les couches trop brillantes. Le rendu devient plus humain quand tu retires le superflu. Une musique publicitaire efficace n'est pas celle qui impressionne les musiciens, c'est celle qui laisse la promesse commerciale entrer sans friction.",
     },
     {
       question: "Comment faire tenir la musique avec une voix off sans conflit ?",
       answer:
-        "Pense en zones de frequence. La voix vit souvent dans le medium, donc ta musique doit lui laisser de la place. Dans ton DAW, applique un EQ doux sur l'instrumental, retire un peu autour des frequences dominantes de la voix, et controle les transients agressifs. Puis utilise un compresseur leger sur le bus musique pour stabiliser l'ensemble. Le plus important reste l'écoute contextuelle, pas l'écoute solo. Une musique parfaite seule peut ruiner une pub des que la voix entre. Tu mixes pour la scene finale, jamais pour la piste isolee.",
+        "Pense en zones de fréquence. La voix vit souvent dans le medium, donc ta musique doit lui laisser de la place. Dans ton DAW, applique un EQ doux sur l'instrumental, retire un peu autour des fréquences dominantes de la voix, et controle les transients agressifs. Puis utilise un compresseur leger sur le bus musique pour stabiliser l'ensemble. Le plus important reste l'écoute contextuelle, pas l'écoute solo. Une musique parfaite seule peut ruiner une pub dès que la voix entre. Tu mixes pour la scène finale, jamais pour la piste isolee.",
     },
     {
       question: "Combien de versions livrer a un client pour rester pro sans se noyer ?",
       answer:
-        "Livre trois versions, pas plus, version safe, version character, version premium. Chacune doit repondre a un angle clair de communication. Si tu livres huit versions, tu deplaces la decision sur le client et tu perds ton role de direction. Avant envoi, normalise les niveaux, aligne les points d'entree, et joins une note simple expliquant l'usage ideal de chaque version. Cette discipline renforce la confiance et reduit les allers retours. En freelance, ta credibilite vient autant de ton cadre de livraison que de la qualité sonore.",
+        "Livre trois versions, pas plus, version safe, version character, version premium. Chacune doit repondre a un angle clair de communication. Si tu livres huit versions, tu deplaces la décision sur le client et tu perds ton rôle de direction. Avant envoi, normalise les niveaux, aligne les points d'entree, et joins une note simple expliquant l'usage ideal de chaque version. Cette discipline renforce la confiance et reduit les allers retours. En freelance, ta credibilite vient autant de ton cadre de livraison que de la qualité sonore.",
     },
     {
       question: "Quel workflow suivre pour produire vite sans sacrifier la qualité sonore ?",
       answer:
-        "Le workflow le plus fiable tient en six etapes, brief, reference, generation, selection, edition, verification usage reel. Le piege classique est de passer trop de temps en generation et pas assez en edition contextuelle. Tu dois vite sortir trois candidats, puis consacrer ton energie a celui qui sert le mieux la promesse de la pub. Ensuite, tu testes en conditions reelles, smartphone, laptop, casque simple, et tu notes les points de fatigue ou de conflit avec la voix. Ce cycle court et repetable te rend operationnel très vite.",
+        "Le workflow le plus fiable tient en six étapes, brief, référence, generation, selection, edition, verification usage réel. Le piege classique est de passer trop de temps en generation et pas assez en edition contextuelle. Tu dois vite sortir trois candidats, puis consacrer ton énergie a celui qui sert le mieux la promesse de la pub. Ensuite, tu testes en conditions réelles, smartphone, laptop, casque simple, et tu notes les points de fatigue ou de conflit avec la voix. Ce cycle court et repetable te rend operationnel très vite.",
     },
   ],
   content: [
@@ -74,11 +74,11 @@ export const sunoMusiquePubCourte: Article = {
     { type: "h3", id: "fonction-avant-style", text: "La fonction avant le style" },
     {
       type: "p",
-      text: "Le débutant cherche souvent un style musical avant de definir le role exact du morceau. Mauvais ordre. En pub, tu dois d'abord repondre a trois questions, quel message doit rester en tete, a quel moment la voix parle, quel comportement tu veux provoquer juste apres visionnage. Cette logique change tout.",
+      text: "Le débutant cherche souvent un style musical avant de definir le rôle exact du morceau. Mauvais ordre. En pub, tu dois d'abord repondre a trois questions, quel message doit rester en tete, a quel moment la voix parle, quel comportement tu veux provoquer juste apres visionnage. Cette logique change tout.",
     },
     {
       type: "p",
-      text: "Here is why that matters, si ton morceau prend trop de place dans le medium, tu sacrifies l'intelligibilite de la voix. Si ton intro est trop dense, tu tues le hook visuel. Si ton climax arrive trop tard, tu perds l'energie commerciale. Une bonne musique publicitaire ne dit pas regarde moi, elle dit comprends le message plus vite.",
+      text: "Here is why that matters, si ton morceau prend trop de place dans le medium, tu sacrifies l'intelligibilite de la voix. Si ton intro est trop dense, tu tues le hook visuel. Si ton climax arrive trop tard, tu perds l'énergie commerciale. Une bonne musique publicitaire ne dit pas regarde moi, elle dit comprends le message plus vite.",
     },
     {
       type: "p",
@@ -86,9 +86,9 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "But there is a catch, trop de precision trop tot peut figer ta creativite. Garde une zone d'exploration au debut, mais limite la a dix minutes. Ensuite tu bascules en mode production, decisions claires, iterations courtes, validation contextuelle.",
+      text: "But there is a catch, trop de précision trop tot peut figer ta creativite. Garde une zone d'exploration au debut, mais limite la a dix minutes. Ensuite tu bascules en mode production, décisions claires, iterations courtes, validation contextuelle.",
     },
-    { type: "h3", id: "scenarios-terrain", text: "Trois scenarios reels qui te ressemblent" },
+    { type: "h3", id: "scenarios-terrain", text: "Trois scenarios réels qui te ressemblent" },
     {
       type: "p",
       text: "Scenario 1, tu dois sortir une pub de 12 secondes pour un salon de coiffure. Tu choisis une piste trop epique, le message local disparait. Correction, tempo plus simple, arrangement plus aere, accent rythmique sur le reveal offre. Tout devient lisible.",
@@ -105,8 +105,8 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "Think about it this way: un bon compositeur pub agit comme un monteur, il dose le temps, la tension et l espace. C'est exactement la même logique que [notre framework pour construire une publicite IA qui vend vraiment](/blog/creer-publicite-ia), chaque element sert un objectif concret.",
     },
-    { type: "h2", id: "workflow", text: "Practical Workflow: clicks, réglages et decisions a chaque etape" },
-    { type: "h3", id: "step1-brief", text: "Etape 1, cadrer le brief sonore en 6 lignes" },
+    { type: "h2", id: "workflow", text: "Practical Workflow: clicks, réglages et décisions a chaque étape" },
+    { type: "h3", id: "step1-brief", text: "Étape 1, cadrer le brief sonore en 6 lignes" },
     {
       type: "p",
       text: "Avant même Suno, ouvre un document simple et ecris six lignes, produit, cible, emotion principale, vitesse ressentie, moment de voix off, action finale attendue. Cette discipline evite les prompts flous. Tu sauras exactement ce que tu cherches.",
@@ -117,7 +117,7 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "Premiers réglages recommandes pour débutant, energie moyenne, instrumentation limitee, structure claire, pas d'empilement massif de couches. Tu cherches une base propre. Plus tard tu ajouteras du caractere. Si tu commences trop charge, tu passeras ton temps a retirer.",
+      text: "Premiers réglages recommandes pour débutant, énergie moyenne, instrumentation limitee, structure claire, pas d'empilement massif de couches. Tu cherches une base propre. Plus tard tu ajouteras du caractere. Si tu commences trop charge, tu passeras ton temps a retirer.",
     },
     {
       type: "p",
@@ -125,74 +125,74 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "p",
-      text: "Sur chaque projet, je garde un journal court de decisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce quil faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
+      text: "Sur chaque projet, je garde un journal court de décisions, ce que j'ai teste, ce qui a casse, ce qui a marche, et pourquoi. Cette habitude a l'air simple, pourtant elle accelere énormément ta progression. Tu construis ta propre grammaire sonore de production. Au bout de quelques semaines, tu ne demandes plus a l'outil ce qu'il faut faire. Tu sais déjà quoi demander, dans quel ordre, et avec quelle intention commerciale.",
     },
     {
       type: "table",
-      caption: "Comparatif de decisions Suno pour une pub courte",
-      headers: ["Decision", "Option A", "Option B", "Quand choisir A", "Quand choisir B"],
+      caption: "Comparatif de décisions Suno pour une pub courte",
+      headers: ["Décision", "Option A", "Option B", "Quand choisir A", "Quand choisir B"],
       rows: [
-        ["Tempo", "90-105 BPM", "115-130 BPM", "Message premium, pose, confiance", "Message promo, energie, urgence"],
+        ["Tempo", "90-105 BPM", "115-130 BPM", "Message premium, pose, confiance", "Message promo, énergie, urgence"],
         ["Arrangement", "Minimal 3 couches", "Dense 6 couches", "Voix off prioritaire", "Video sans voix dominante"],
         ["Structure", "Hook court puis motif", "Montee progressive", "Formats 6 a 12 secondes", "Formats 15 a 30 secondes"],
         ["Texture", "Organique, imparfaite", "Très clean numerique", "Marque humaine, locale", "Marque tech assumee"],
-        ["Niveau dynamique", "Modere", "Compresse fort", "Confort ecoute mobile", "Impact immediat en feed"],
+        ["Niveau dynamique", "Modere", "Compresse fort", "Confort ecoute mobile", "Impact immédiat en feed"],
       ],
     },
-    { type: "h3", id: "step2-generation", text: "Etape 2, generation controlee dans Suno" },
+    { type: "h3", id: "step2-generation", text: "Étape 2, generation controlee dans Suno" },
     {
       type: "p",
-      text: "Maintenant tu generes par lots de trois. Toujours trois. Même brief, même structure, un seul parametre qui change. Exemple concret, lot 1 variation de tempo, lot 2 variation d'instrumentation, lot 3 variation d'energie. Cette méthode te donne des comparaisons propres au lieu d'un chaos de versions.",
+      text: "Maintenant tu generes par lots de trois. Toujours trois. Même brief, même structure, un seul paramètre qui change. Exemple concret, lot 1 variation de tempo, lot 2 variation d'instrumentation, lot 3 variation d'énergie. Cette méthode te donne des comparaisons propres au lieu d'un chaos de versions.",
     },
     {
       type: "ol",
       items: [
         "Lance 3 generations avec le même prompt et note la meilleure en 20 secondes maximum.",
-        "Duplique cette meilleure base, puis change uniquement le tempo ou l'energie.",
+        "Duplique cette meilleure base, puis change uniquement le tempo ou l'énergie.",
         "Regarde la courbe de dynamique percue, est ce que la voix peut exister par dessus.",
         "Export rapide des 2 meilleures versions et pose les sous ton rough cut video.",
         "Elimine sans pitie toute version qui vole l'attention du message principal.",
@@ -200,15 +200,15 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "Beaucoup de débutants restent trop longtemps dans Suno. Mauvais reflexe. Une musique qui semble parfaite dans l'outil peut etre mediocre en contexte pub. Tu dois sortir vite vers ton DAW et juger avec image et voix. L'usage reel decide, pas l'impression en solo.",
+      text: "Beaucoup de débutants restent trop longtemps dans Suno. Mauvais reflexe. Une musique qui semble parfaite dans l'outil peut etre mediocre en contexte pub. Tu dois sortir vite vers ton DAW et juger avec image et voix. L'usage réel decide, pas l'impression en solo.",
     },
     {
       type: "p",
-      text: "Quand tu identifies une bonne base, tu la verrouilles. Tu arretes de generer et tu passes en edition. C'est le moment ou tu deviens pro, parce que tu privilegies la decision plutot que la nouveaute permanente.",
+      text: "Quand tu identifies une bonne base, tu la verrouilles. Tu arretes de generer et tu passes en edition. C'est le moment ou tu deviens pro, parce que tu privilegies la décision plutot que la nouveaute permanente.",
     },
     {
       type: "p",    },
-    { type: "h3", id: "step3-mix", text: "Etape 3, mixage oriente voix-off et conversion" },
+    { type: "h3", id: "step3-mix", text: "Étape 3, mixage oriente voix-off et conversion" },
     {
       type: "p",
       text: "Ouvre ton DAW, importe la piste Suno et la voix off. Premiere action, baisse le niveau musique de base, puis remonte jusqu au point ou la voix reste parfaitement claire. Tu mixes par fonction, pas par ego. La pub doit se comprendre a la premiere ecoute.",
@@ -228,7 +228,7 @@ export const sunoMusiquePubCourte: Article = {
         "Aucun element percussif agressif ne masque les mots cles.",
         "Le hook musical tombe avant la seconde 2 si format court.",
         "La sortie du morceau laisse place au call to action final.",
-        "Le niveau percu reste stable entre version 16:9 et 9:16.",
+        "Le niveau perçu reste stable entre version 16:9 et 9:16.",
       ],
     },
     {
@@ -245,7 +245,7 @@ export const sunoMusiquePubCourte: Article = {
     { type: "h3", id: "erreur1", text: "Erreur 1, empiler trop d'idees musicales" },
     {
       type: "p",
-      text: "Le reflexe débutant classique, tout mettre, basse lourde, batterie agressive, lead brillant, pads larges, effets partout. Resultat, confusion immediate. Fix technique, limite toi a trois couches principales au depart, rythmique, support harmonique, accent. Tu ajoutes ensuite seulement si le message respire encore.",
+      text: "Le reflexe débutant classique, tout mettre, basse lourde, batterie agressive, lead brillant, pads larges, effets partout. Resultat, confusion immédiate. Fix technique, limite toi a trois couches principales au depart, rythmique, support harmonique, accent. Tu ajoutes ensuite seulement si le message respire encore.",
     },
     {
       type: "p",
@@ -266,7 +266,7 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "Fix concret, marque des cue points sur ta timeline, puis ajuste les sections de la musique pour tomber sur ces reperes. Même un deplacement de 300 millisecondes peut transformer la perception globale.",
+      text: "Fix concret, marque des cue points sur ta timeline, puis ajuste les sections de la musique pour tomber sur ces reperes. Même un déplacement de 300 millisecondes peut transformer la perception globale.",
     },
     {
       type: "p",
@@ -276,10 +276,10 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "Sur des pubs courtes, je prefere souvent des fins nettes, pas des fades longs. Une fin franche renforce la memorisation du call to action.",
     },
-    { type: "h3", id: "erreur3", text: "Erreur 3, ne pas tester sur des systemes reels" },
+    { type: "h3", id: "erreur3", text: "Erreur 3, ne pas tester sur des systemes réels" },
     {
       type: "p",
-      text: "Tu mixes au casque studio, tout parait magnifique, puis sur smartphone la musique devient boueuse. C'est normal si tu ne testes pas en situation reelle. Ta pub sera majoritairement ecoutee sur des appareils imparfaits.",
+      text: "Tu mixes au casque studio, tout parait magnifique, puis sur smartphone la musique devient boueuse. C'est normal si tu ne testes pas en situation réelle. Ta pub sera majoritairement ecoutee sur des appareils imparfaits.",
     },
     {
       type: "p",
@@ -291,55 +291,55 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "> Pro Tip: exporte une version a volume percu legerement plus prudent que ton instinct. En diffusion, les compressions plateforme peuvent durcir ton signal.",
+      text: "> Pro Tip: exporte une version a volume perçu legerement plus prudent que ton instinct. En diffusion, les compressions plateforme peuvent durcir ton signal.",
     },
     { type: "h3", id: "erreur4", text: "Erreur 4, oublier l'objectif commercial" },
     {
       type: "p",
-      text: "Tu n'es pas en train de sortir un single. Tu construis un levier de conversion. Si la musique distrait du message, elle perd sa mission. Rappelle toi a chaque etape, que doit faire le spectateur apres avoir vu cette pub.",
+      text: "Tu n'es pas en train de sortir un single. Tu construis un levier de conversion. Si la musique distrait du message, elle perd sa mission. Rappelle toi a chaque étape, que doit faire le spectateur apres avoir vu cette pub.",
     },
     {
       type: "p",
-      text: "Fix concret, associe chaque segment musical a une intention business, debut attirer, milieu rassurer, fin pousser a l'action. Cette simple grille transforme tes choix artistiques en decisions utiles.",
+      text: "Fix concret, associe chaque segment musical a une intention business, debut attirer, milieu rassurer, fin pousser a l'action. Cette simple grille transforme tes choix artistiques en décisions utiles.",
     },
     {
       type: "p",
-      text: "Quand un client hesite, presente ta logique avec ce langage, role, timing, impact attendu. Tu deviens directeur, pas executant. Et tes retours deviennent plus rapides.",
+      text: "Quand un client hesite, presente ta logique avec ce langage, rôle, timing, impact attendu. Tu deviens directeur, pas executant. Et tes retours deviennent plus rapides.",
     },
     {
       type: "p",
-      text: "C'est la vraie difference entre une piste IA generee et une production credible. L'une est un fichier. L'autre est une decision strategique.",
+      text: "C'est la vraie difference entre une piste IA generee et une production credible. L'une est un fichier. L'autre est une décision strategique.",
     },
     { type: "h2", id: "faq", text: "Frequently Asked Questions (FAQ)" },
     { type: "h3", id: "faq-1", text: "Comment choisir entre un jingle très court et une boucle de 20 secondes pour une pub locale ?" },
     {
       type: "p",
-      text: "Si ton offre repose sur une phrase simple et memorisable, commence par un jingle de 6 a 8 secondes. Si tu dois installer une ambiance avant la promesse, une boucle de 15 a 20 secondes fonctionne mieux. Le critere n'est pas la mode, c'est la clarte du message. Teste les deux versions sur mobile, puis regarde laquelle laisse le message respirer sans noyer la voix off. En production reelle, je vois souvent des débutants choisir trop long, alors que le bon choix est une forme courte, très lisible, avec une progression harmonique minimale.",
+      text: "Si ton offre repose sur une phrase simple et memorisable, commence par un jingle de 6 a 8 secondes. Si tu dois installer une ambiance avant la promesse, une boucle de 15 a 20 secondes fonctionne mieux. Le critere n'est pas la mode, c'est la clarte du message. Teste les deux versions sur mobile, puis regarde laquelle laisse le message respirer sans noyer la voix off. En production réelle, je vois souvent des débutants choisir trop long, alors que le bon choix est une forme courte, très lisible, avec une progression harmonique minimale.",
     },
     { type: "h3", id: "faq-2", text: "Quels réglages Suno faut il verrouiller en premier quand on debute ?" },
     {
       type: "p",
-      text: "Verrouille d'abord le tempo cible, la durée de sortie et le niveau d'energie global. Ensuite, garde une structure simple, intro courte, motif principal, sortie propre. Beaucoup de débutants changent tous les paramètres a chaque tentative, ce qui rend toute comparaison impossible. Tu veux apprendre vite, donc tu gardes un protocole stable. Trois generations avec la même base, un seul changement a la fois, puis comparaison au casque et sur haut parleur de smartphone. Cette rigueur donne des resultats plus pros que des heures d'experimentation aleatoire.",
+      text: "Verrouille d'abord le tempo cible, la durée de sortie et le niveau d'énergie global. Ensuite, garde une structure simple, intro courte, motif principal, sortie propre. Beaucoup de débutants changent tous les paramètres a chaque tentative, ce qui rend toute comparaison impossible. Tu veux apprendre vite, donc tu gardes un protocole stable. Trois generations avec la même base, un seul changement a la fois, puis comparaison au casque et sur haut parleur de smartphone. Cette rigueur donne des resultats plus pros que des heures d'expérimentation aleatoire.",
     },
     { type: "h3", id: "faq-3", text: "Comment éviter une musique IA qui sonne generique ou stock ?" },
     {
       type: "p",
-      text: "Tu dois injecter une intention narrative très concrete dans ton prompt. Au lieu d'ecrire upbeat commercial track, decris une situation, une energie, une texture, et un role precis pour la musique. Par exemple, tension douce avant reveal produit, puis relachement lumineux sur call to action. Ensuite, coupe les elements inutiles en post production, surtout les couches trop brillantes. Le rendu devient plus humain quand tu retires le superflu. Une musique publicitaire efficace n'est pas celle qui impressionne les musiciens, c'est celle qui laisse la promesse commerciale entrer sans friction.",
+      text: "Tu dois injecter une intention narrative très concrete dans ton prompt. Au lieu d'ecrire upbeat commercial track, decris une situation, une énergie, une texture, et un rôle precis pour la musique. Par exemple, tension douce avant reveal produit, puis relachement lumineux sur call to action. Ensuite, coupe les elements inutiles en post production, surtout les couches trop brillantes. Le rendu devient plus humain quand tu retires le superflu. Une musique publicitaire efficace n'est pas celle qui impressionne les musiciens, c'est celle qui laisse la promesse commerciale entrer sans friction.",
     },
     { type: "h3", id: "faq-4", text: "Comment faire tenir la musique avec une voix off sans conflit ?" },
     {
       type: "p",
-      text: "Pense en zones de frequence. La voix vit souvent dans le medium, donc ta musique doit lui laisser de la place. Dans ton DAW, applique un EQ doux sur l'instrumental, retire un peu autour des frequences dominantes de la voix, et controle les transients agressifs. Puis utilise un compresseur leger sur le bus musique pour stabiliser l'ensemble. Le plus important reste l'écoute contextuelle, pas l'écoute solo. Une musique parfaite seule peut ruiner une pub des que la voix entre. Tu mixes pour la scene finale, jamais pour la piste isolee.",
+      text: "Pense en zones de fréquence. La voix vit souvent dans le medium, donc ta musique doit lui laisser de la place. Dans ton DAW, applique un EQ doux sur l'instrumental, retire un peu autour des fréquences dominantes de la voix, et controle les transients agressifs. Puis utilise un compresseur leger sur le bus musique pour stabiliser l'ensemble. Le plus important reste l'écoute contextuelle, pas l'écoute solo. Une musique parfaite seule peut ruiner une pub dès que la voix entre. Tu mixes pour la scène finale, jamais pour la piste isolee.",
     },
     { type: "h3", id: "faq-5", text: "Combien de versions livrer a un client pour rester pro sans se noyer ?" },
     {
       type: "p",
-      text: "Livre trois versions, pas plus, version safe, version character, version premium. Chacune doit repondre a un angle clair de communication. Si tu livres huit versions, tu deplaces la decision sur le client et tu perds ton role de direction. Avant envoi, normalise les niveaux, aligne les points d'entree, et joins une note simple expliquant l'usage ideal de chaque version. Cette discipline renforce la confiance et reduit les allers retours. En freelance, ta credibilite vient autant de ton cadre de livraison que de la qualité sonore.",
+      text: "Livre trois versions, pas plus, version safe, version character, version premium. Chacune doit repondre a un angle clair de communication. Si tu livres huit versions, tu deplaces la décision sur le client et tu perds ton rôle de direction. Avant envoi, normalise les niveaux, aligne les points d'entree, et joins une note simple expliquant l'usage ideal de chaque version. Cette discipline renforce la confiance et reduit les allers retours. En freelance, ta credibilite vient autant de ton cadre de livraison que de la qualité sonore.",
     },
     { type: "h3", id: "faq-6", text: "Quel workflow suivre pour produire vite sans sacrifier la qualité sonore ?" },
     {
       type: "p",
-      text: "Le workflow le plus fiable tient en six etapes, brief, reference, generation, selection, edition, verification usage reel. Le piege classique est de passer trop de temps en generation et pas assez en edition contextuelle. Tu dois vite sortir trois candidats, puis consacrer ton energie a celui qui sert le mieux la promesse de la pub. Ensuite, tu testes en conditions reelles, smartphone, laptop, casque simple, et tu notes les points de fatigue ou de conflit avec la voix. Ce cycle court et repetable te rend operationnel très vite.",
+      text: "Le workflow le plus fiable tient en six étapes, brief, référence, generation, selection, edition, verification usage réel. Le piege classique est de passer trop de temps en generation et pas assez en edition contextuelle. Tu dois vite sortir trois candidats, puis consacrer ton énergie a celui qui sert le mieux la promesse de la pub. Ensuite, tu testes en conditions réelles, smartphone, laptop, casque simple, et tu notes les points de fatigue ou de conflit avec la voix. Ce cycle court et repetable te rend operationnel très vite.",
     },
   ],
 };

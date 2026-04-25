@@ -71,7 +71,7 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "h2",
-      id: "méthode-en-sept-etapes",
+      id: "méthode-en-sept-étapes",
       text: "La méthode en sept étapes (terrain, pas théorie)",
     },
     {
