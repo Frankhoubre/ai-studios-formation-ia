@@ -62,7 +62,7 @@ export const sdxlEtalonnerPeauLumiere: Article = {
   content: [
     {
       type: "p",
-      text: "slug: sdxl-etalonner-peau-lumiere\n\nTu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, puis devient faux des que tu le montres a un client reel. J ai vecu ca sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d un systeme de production concret pour etalonner des portraits SDXL pour un rendu cinema naturel.",
+      text: "Tu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, puis devient faux des que tu le montres a un client reel. J ai vecu ca sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d un systeme de production concret pour etalonner des portraits SDXL pour un rendu cinema naturel.",
     },
     {
       type: "p",    },

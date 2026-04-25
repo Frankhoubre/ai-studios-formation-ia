@@ -62,7 +62,7 @@ export const sunoMusiquePubCourte: Article = {
   content: [
     {
       type: "p",
-      text: "slug: suno-musique-pub-courte\n\nTu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c est genial. Puis tu poses la piste sous une vraie pub, et tout s effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ca t arrive, respire. C est normal. J ai fait exactement cette erreur sur un spot local pour un artisan, et j ai compris une chose simple, en pub, la musique n est pas la star, c est l accelerateur de clarte.",
+      text: "Tu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c est genial. Puis tu poses la piste sous une vraie pub, et tout s effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ca t arrive, respire. C est normal. J ai fait exactement cette erreur sur un spot local pour un artisan, et j ai compris une chose simple, en pub, la musique n est pas la star, c est l accelerateur de clarte.",
     },
     {
       type: "p",    },
