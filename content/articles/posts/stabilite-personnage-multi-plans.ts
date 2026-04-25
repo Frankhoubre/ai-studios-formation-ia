@@ -65,7 +65,9 @@ export const stabilitePersonnageMultiPlans: Article = {
       text: "Tu sais ce moment ou ton rendu IA a l'air spectaculaire pendant cinq secondes, puis devient faux dès que tu le montrès a un client réel. J'ai vecu ça sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l'erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d'un systeme de production concret pour maintenir un personnage cohérent sur plusieurs plans IA.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Cette methode te donne un cadre clair pour decider plus vite, eviter les allers-retours inutiles et tenir une qualite stable du brief a la livraison finale.",
+    },
     {
       type: "p",
       text: "Voila la promesse, tu repars avec une méthode débutant friendly, mais pro dans son exécution. On parle vrais clics, vrais réglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
@@ -137,7 +139,9 @@ export const stabilitePersonnageMultiPlans: Article = {
       text: "Tu veux gagner une heure tout de suite, cree un template de prompt en quatre lignes, sujet, environnement, camera, texture. Tu ne changes que deux lignes par iteration. C'est sec. C'est efficace.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Travaille avec une logique simple, une hypothese, un test, une conclusion. Ce rythme court te fait gagner du temps et limite les erreurs de direction.",
+    },
     { type: "h3", id: "generation-et-iteration", text: "Étape 2, generer, comparer, corriger" },
     {
       type: "p",
@@ -192,7 +196,9 @@ export const stabilitePersonnageMultiPlans: Article = {
       text: "Je te recommande aussi une ressource video très utile pour visualiser le raisonnement, [Business Dynamite sur YouTube](https://www.youtube.com/@BusinessDynamite). Tu verras des breakdowns de hooks visuels, de structure d offre, et de montage court orienté conversion, c'est parfait pour comprendre comment relier ton rendu IA a un vrai objectif de vente.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Avant de passer a la suite, verifie toujours que chaque choix sert l'objectif client. Un rendu impressionnant sans intention claire reste une mauvaise livraison.",
+    },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent, et comment reparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },
     {

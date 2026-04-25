@@ -65,7 +65,9 @@ export const sunoMusiquePubCourte: Article = {
       text: "Tu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c'est genial. Puis tu poses la piste sous une vraie pub, et tout s'effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ça t'arrive, respire. C'est normal. J'ai fait exactement cette erreur sur un spot local pour un artisan, et j'ai compris une chose simple, en pub, la musique n'est pas la star, c'est l'accelerateur de clarte.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "L'objectif ici n'est pas de faire une musique qui brille seule, mais une musique qui rend ton message publicitaire plus clair, plus memorisable et plus credible.",
+    },
     {
       type: "p",
       text: "Tu n'as pas besoin d'être ingenieur du son pour faire mieux que 90 pourcent des musiques IA publiees aujourd hui. Tu as besoin d'une méthode stricte, de reperes concrets, et d'une logique de plateau. Pense comme en cinema analogique, chaque element sonore a une fonction, respiration, tension, relance, memorisation. Quand tu abordes Suno avec cette mentalite, la qualité grimpe très vite.",
@@ -207,7 +209,9 @@ export const sunoMusiquePubCourte: Article = {
       text: "Quand tu identifies une bonne base, tu la verrouilles. Tu arretes de generer et tu passes en edition. C'est le moment ou tu deviens pro, parce que tu privilegies la décision plutot que la nouveaute permanente.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Quand une version fonctionne, arrete de generer et passe en decisions de montage. La progression vient de la selection et du contexte, pas de la quantite.",
+    },
     { type: "h3", id: "step3-mix", text: "Étape 3, mixage oriente voix-off et conversion" },
     {
       type: "p",
@@ -240,7 +244,9 @@ export const sunoMusiquePubCourte: Article = {
       text: "Je recommande aussi [Business Dynamite sur YouTube](https://www.youtube.com/@BusinessDynamite) pour voir des decompositions de hooks publicitaires et de structures de messages. Tu y verras concretement ce que le spectateur doit sentir dans les trois premieres secondes et comment une couche sonore propre peut multiplier l impact commercial.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "A ce stade, tu dois deja entendre une intention nette. Si la piste distrait de la promesse commerciale, simplifie sans hesitation.",
+    },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent en musique IA" },
     { type: "h3", id: "erreur1", text: "Erreur 1, empiler trop d'idees musicales" },
     {
