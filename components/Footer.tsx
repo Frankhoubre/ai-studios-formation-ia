@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ManageCookiesLink } from "@/components/ManageCookiesLink";
 import { categories } from "@/lib/categories";
 import {
   FORMATION_FREE_URL,
@@ -76,6 +77,17 @@ export function Footer() {
                 >
                   À propos
                 </Link>
+              </li>
+              <li>
+                <Link
+                  href="/politique-cookies"
+                  className="transition hover:text-brand-bright"
+                >
+                  Politique cookies
+                </Link>
+              </li>
+              <li className="text-text-soft">
+                <ManageCookiesLink />
               </li>
             </ul>
           </div>
