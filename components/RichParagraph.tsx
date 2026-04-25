@@ -28,7 +28,7 @@ export function RichParagraph({ text }: { text: string }) {
           key={`a-${key++}`}
           href={href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="text-brand-bright underline decoration-white/20 underline-offset-[3px] transition hover:text-accent-rose"
         >
           {label}
