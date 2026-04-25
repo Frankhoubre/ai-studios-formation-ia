@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-/** Garde la config minimale pour un build Vercel fiable (évite turbopack.root / chemins locaux). */
-const nextConfig: NextConfig = {};
+const projectRoot = dirname(fileURLToPath(import.meta.url));
+
+const nextConfig: NextConfig = {
+  /** Evite d inferer une racine parente a cause d un pnpm-lock hors repo (dev local). */
+  turbopack: { root: projectRoot },
+};
 
 export default nextConfig;

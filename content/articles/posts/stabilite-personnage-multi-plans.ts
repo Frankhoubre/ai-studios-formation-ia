@@ -62,18 +62,11 @@ export const stabilitePersonnageMultiPlans: Article = {
   content: [
     {
       type: "p",
-      text: "slug: stabilite-personnage-multi-plans
-
-Tu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, puis devient faux des que tu le montres a un client reel. J ai vecu ca sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d un systeme de production concret pour maintenir un personnage coherent sur plusieurs plans IA.",
+      text: "slug: stabilite-personnage-multi-plans\n\nTu sais ce moment ou ton rendu IA a l air spectaculaire pendant cinq secondes, puis devient faux des que tu le montres a un client reel. J ai vecu ca sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d un systeme de production concret pour maintenir un personnage coherent sur plusieurs plans IA.",
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, real small business set at dawn with practical lights and natural imperfections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, real small business set at dawn with practical lights and natural imperfections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     {
       type: "p",
@@ -147,12 +140,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, beginner creator testing first calibrated shot in a practical local shop with real textures and imperfect reflections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, beginner creator testing first calibrated shot in a practical local shop with real textures and imperfect reflections, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     { type: "h3", id: "generation-et-iteration", text: "Etape 2, generer, comparer, corriger" },
     {
@@ -209,12 +197,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, editor reviewing calibrated shots on dual monitor with practical desk lamp and imperfect real-world textures, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, editor reviewing calibrated shots on dual monitor with practical desk lamp and imperfect real-world textures, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les debutants cassent, et comment reparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },

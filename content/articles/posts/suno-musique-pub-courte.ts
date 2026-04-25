@@ -62,18 +62,11 @@ export const sunoMusiquePubCourte: Article = {
   content: [
     {
       type: "p",
-      text: "slug: suno-musique-pub-courte
-
-Tu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c est genial. Puis tu poses la piste sous une vraie pub, et tout s effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ca t arrive, respire. C est normal. J ai fait exactement cette erreur sur un spot local pour un artisan, et j ai compris une chose simple, en pub, la musique n est pas la star, c est l accelerateur de clarte.",
+      text: "slug: suno-musique-pub-courte\n\nTu ouvres Suno, tu tapes un prompt, tu appuies sur generer, et pendant dix secondes tu te dis que c est genial. Puis tu poses la piste sous une vraie pub, et tout s effondre. La voix off disparait. Le rythme ne soutient rien. Le morceau sonne stock. Si ca t arrive, respire. C est normal. J ai fait exactement cette erreur sur un spot local pour un artisan, et j ai compris une chose simple, en pub, la musique n est pas la star, c est l accelerateur de clarte.",
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, intimate recording desk with analog mixer, headphones, notebook full of cue points, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, intimate recording desk with analog mixer, headphones, notebook full of cue points, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     {
       type: "p",
@@ -217,12 +210,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, music producer comparing waveform takes beside storyboard thumbnails and ad cut timings, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, music producer comparing waveform takes beside storyboard thumbnails and ad cut timings, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     { type: "h3", id: "step3-mix", text: "Etape 3, mixage oriente voix-off et conversion" },
     {
@@ -257,12 +245,7 @@ Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at th
     },
     {
       type: "p",
-      text: "```text
-Prompt: Cinematic stills, 80mm lens, wide shot, anamorphic, close studio monitoring pass with beginner creator balancing voice-over and music on timeline markers, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9
-
-Visual Assets Required For This Article: - 1× Main Thumbnail (Hero Image) at the very top.
-* 2× Contextual Body Images inserted organically within the workflow sections.
-```",
+      text: "```text\nPrompt: Cinematic stills, 80mm lens, wide shot, anamorphic, close studio monitoring pass with beginner creator balancing voice-over and music on timeline markers, natural film grain, professional cinema photography, moody volumetric lighting --ar 16:9\n\nVisual Assets Required For This Article: - 1\u00d7 Main Thumbnail (Hero Image) at the very top.\n* 2\u00d7 Contextual Body Images inserted organically within the workflow sections.\n```",
     },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les debutants cassent en musique IA" },
     { type: "h3", id: "erreur1", text: "Erreur 1, empiler trop d idees musicales" },
