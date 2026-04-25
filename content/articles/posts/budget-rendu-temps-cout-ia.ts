@@ -65,7 +65,9 @@ export const budgetRenduTempsCoutIa: Article = {
       text: "Tu sais ce moment ou ton rendu IA a l'air spectaculaire pendant cinq secondes, puis devient faux dès que tu le montrès a un client réel. J'ai vecu ça sur un spot local pour une boutique, deadline 48 heures, budget serre, et zero droit a l'erreur. Le resultat etait beau, mais sans ame, peau trop lisse, mouvement trop propre, ambiance de faux studio. La claque est venue la. Tu ne manques pas de talent, tu manques d'un systeme de production concret pour chiffrer une production IA avec budget, temps et rendu.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Dans ce guide, on va poser un cadre simple pour estimer ton temps, proteger ton budget, et maintenir un niveau de rendu qui tient face a un client exigeant.",
+    },
     {
       type: "p",
       text: "Voila la promesse, tu repars avec une méthode débutant friendly, mais pro dans son exécution. On parle vrais clics, vrais réglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
@@ -137,7 +139,9 @@ export const budgetRenduTempsCoutIa: Article = {
       text: "Tu veux gagner une heure tout de suite, cree un template de prompt en quatre lignes, sujet, environnement, camera, texture. Tu ne changes que deux lignes par iteration. C'est sec. C'est efficace.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "Retiens cette regle de production, si une iteration n'a pas de critere de comparaison clair, elle n'existe pas. Tu mesures, tu ajustes, tu avances.",
+    },
     { type: "h3", id: "generation-et-iteration", text: "Étape 2, generer, comparer, corriger" },
     {
       type: "p",
@@ -192,7 +196,9 @@ export const budgetRenduTempsCoutIa: Article = {
       text: "Je te recommande aussi une ressource video très utile pour visualiser le raisonnement, [Business Dynamite sur YouTube](https://www.youtube.com/@BusinessDynamite). Tu verras des breakdowns de hooks visuels, de structure d offre, et de montage court orienté conversion, c'est parfait pour comprendre comment relier ton rendu IA a un vrai objectif de vente.",
     },
     {
-      type: "p",    },
+      type: "p",
+      text: "A ce stade, ton rendu doit deja raconter quelque chose de concret. S'il est beau mais flou dans sa promesse, reviens au message avant d'ajouter des effets.",
+    },
     { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent, et comment reparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },
     {
