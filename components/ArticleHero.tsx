@@ -23,8 +23,8 @@ export function ArticleHero({ article }: { article: Article }) {
         <div className="mb-4 flex flex-wrap items-center gap-2">
           {cat ? <CategoryPill slug={cat.slug} label={cat.name} /> : null}
           <span className="text-sm text-text-muted">
-            {formatFrenchDate(article.date)} · {article.readingTime} min de
-            lecture
+            <time dateTime={article.date}>{formatFrenchDate(article.date)}</time>{" "}
+            · {article.readingTime} min de lecture
           </span>
         </div>
         <h1 className="font-display max-w-4xl text-3xl font-semibold leading-tight tracking-tight text-text md:text-4xl lg:text-5xl">

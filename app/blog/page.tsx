@@ -1,31 +1,66 @@
 import Link from "next/link";
 import { ArticleCard } from "@/components/ArticleCard";
+import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getAllArticles } from "@/lib/articles";
 import { categories, getCategoryBySlug } from "@/lib/categories";
-import { buildMetadata } from "@/lib/seo";
+import {
+  buildArticleItemListJsonLd,
+  buildCollectionPageJsonLd,
+  buildMetadata,
+  noIndexFollowRobots,
+} from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
-export const metadata = buildMetadata({
-  title: "Blog : guides IA créative, image, vidéo, cinéma",
-  description:
-    "Tous les guides AI Studios Blog : IA vidéo, IA image, prompting, storytelling, workflow et business créatif. Filtrez par catégorie.",
-  path: "/blog",
-});
+type BlogSearchParams = Promise<{ cat?: string }>;
+
+const blogDescription =
+  "Tous les guides AI Studios Blog : IA vidéo, IA image, prompting, storytelling, workflow et business créatif. Filtrez par catégorie.";
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: BlogSearchParams;
+}) {
+  const { cat } = await searchParams;
+  const active = cat ? getCategoryBySlug(cat) : undefined;
+
+  return buildMetadata({
+    title: active
+      ? `Blog ${active.name} : guides IA créative`
+      : "Blog : guides IA créative, image, vidéo, cinéma",
+    description: active
+      ? `${active.description} Retrouvez la page catégorie canonique dédiée pour explorer tous les guides.`
+      : blogDescription,
+    path: "/blog",
+    robots: cat ? noIndexFollowRobots() : undefined,
+  });
+}
 
 export default async function BlogPage({
   searchParams,
 }: {
-  searchParams: Promise<{ cat?: string }>;
+  searchParams: BlogSearchParams;
 }) {
   const { cat } = await searchParams;
   const all = getAllArticles();
   const filtered = cat ? all.filter((a) => a.category === cat) : all;
   const active = cat ? getCategoryBySlug(cat) : undefined;
+  const pageJsonLd = buildCollectionPageJsonLd({
+    name: active ? `Guides ${active.name}` : "Blog AI Studios",
+    description: active?.description ?? blogDescription,
+    path: "/blog",
+  });
+  const listJsonLd = buildArticleItemListJsonLd({
+    articles: filtered,
+    name: active ? `Articles ${active.name}` : "Tous les articles AI Studios",
+    path: "/blog",
+  });
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+      <SEOJsonLd data={[pageJsonLd, listJsonLd]} />
       <div className="max-w-3xl">
         <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
           Blog

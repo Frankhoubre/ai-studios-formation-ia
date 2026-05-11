@@ -13,11 +13,16 @@ import {
   getRelatedArticles,
 } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
-import { FORMATION_FREE_URL, SITE_URL } from "@/lib/constants";
-import { articleMetadata, getTocEntries } from "@/lib/seo";
+import { FORMATION_FREE_URL, MAIN_SITE_URL } from "@/lib/constants";
+import {
+  absoluteUrl,
+  articleMetadata,
+  buildBreadcrumbJsonLd,
+  getTocEntries,
+} from "@/lib/seo";
 import { formatFrenchDate } from "@/lib/utils";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -41,38 +46,24 @@ export default async function ArticlePage({ params }: Props) {
   const related = getRelatedArticles(article, 3);
   const toc = getTocEntries(article.content);
 
-  const url = `${SITE_URL}/blog/${article.slug}`;
-  const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Accueil",
-        item: SITE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: `${SITE_URL}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: article.title,
-        item: url,
-      },
-    ],
-  };
+  const url = absoluteUrl(`/blog/${article.slug}`);
+  const breadcrumbLd = buildBreadcrumbJsonLd([
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "Blog", url: absoluteUrl("/blog") },
+    { name: article.title, url },
+  ]);
 
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${url}#article`,
     headline: article.title,
     description: article.description,
-    image: `${SITE_URL}${article.image}`,
+    image: {
+      "@type": "ImageObject",
+      url: absoluteUrl(article.image),
+      caption: article.imageAlt,
+    },
     datePublished: article.date,
     dateModified: article.updatedAt,
     author: {
@@ -82,11 +73,15 @@ export default async function ArticlePage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${MAIN_SITE_URL}#organization`,
       name: "AI Studios",
-      url: "https://www.ai-studios.fr",
+      url: MAIN_SITE_URL,
     },
-    mainEntityOfPage: url,
-    keywords: article.keywords.join(", "),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    keywords: article.keywords,
     articleSection: category?.name,
     inLanguage: "fr-FR",
   };
@@ -103,7 +98,9 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <>
-      <SEOJsonLd data={[breadcrumbLd, articleLd, faqLd]} />
+      <SEOJsonLd
+        data={[breadcrumbLd, articleLd, ...(article.faq.length ? [faqLd] : [])]}
+      />
       <article className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <Breadcrumbs
           items={[
@@ -118,10 +115,16 @@ export default async function ArticlePage({ params }: Props) {
         </div>
 
         <p className="mt-6 text-sm text-text-muted">
-          Publié le {formatFrenchDate(article.date)}
-          {article.updatedAt !== article.date
-            ? ` · Mis à jour le ${formatFrenchDate(article.updatedAt)}`
-            : ""}
+          Publié le{" "}
+          <time dateTime={article.date}>{formatFrenchDate(article.date)}</time>
+          {article.updatedAt !== article.date ? (
+            <>
+              {" · "}Mis à jour le{" "}
+              <time dateTime={article.updatedAt}>
+                {formatFrenchDate(article.updatedAt)}
+              </time>
+            </>
+          ) : null}
           {" · "}
           {article.readingTime} min de lecture
         </p>

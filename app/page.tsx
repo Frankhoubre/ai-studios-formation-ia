@@ -3,17 +3,24 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { CTASection } from "@/components/CTASection";
 import { NewsletterBlock } from "@/components/NewsletterBlock";
 import { CategoryPill } from "@/components/CategoryPill";
+import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getAllArticles } from "@/lib/articles";
 import { categories } from "@/lib/categories";
 import { FORMATION_FREE_URL } from "@/lib/constants";
-import { buildMetadata } from "@/lib/seo";
+import {
+  buildArticleItemListJsonLd,
+  buildCollectionPageJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
+
+const homeDescription =
+  "Des guides concrets pour arrêter de produire des rendus IA jolis mais oubliables, et commencer à construire de vrais workflows visuels : prompts, images, vidéo, storyboard, montage, son, publicité et narration.";
 
 export const metadata = buildMetadata({
   absoluteTitle: "AI Studios Blog - Formation IA vidéo, image et cinéma",
-  description:
-    "Des guides concrets pour arrêter de produire des rendus IA jolis mais oubliables, et commencer à construire de vrais workflows visuels : prompts, images, vidéo, storyboard, montage, son, publicité et narration.",
+  description: homeDescription,
   path: "/",
 });
 
@@ -25,9 +32,20 @@ export default function HomePage() {
     articles.find((a) => a.slug === "prompt-image-ia-cinema"),
     articles.find((a) => a.slug === "creer-film-ia"),
   ].filter(Boolean);
+  const pageJsonLd = buildCollectionPageJsonLd({
+    name: "AI Studios Blog",
+    description: homeDescription,
+    path: "/",
+  });
+  const latestJsonLd = buildArticleItemListJsonLd({
+    articles: latest,
+    name: "Derniers guides IA créative",
+    path: "/",
+  });
 
   return (
     <div>
+      <SEOJsonLd data={[pageJsonLd, latestJsonLd]} />
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-12 md:px-6 md:pb-24 md:pt-16">
         <div className="max-w-4xl">
           <p className="text-sm font-medium uppercase tracking-wider text-brand-bright">

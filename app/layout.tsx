@@ -5,7 +5,12 @@ import { CookieConsent } from "@/components/CookieConsent";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
-import { MAIN_SITE_URL, SITE_NAME, SITE_URL } from "@/lib/constants";
+import {
+  DEFAULT_SOCIAL_IMAGE,
+  MAIN_SITE_URL,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,11 +35,16 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
   title: {
     default: defaultTitle,
     template: `%s | ${SITE_NAME}`,
   },
   description: defaultDescription,
+  alternates: { canonical: SITE_URL },
+  authors: [{ name: "Frank Houbre", url: MAIN_SITE_URL }],
+  creator: "Frank Houbre",
+  publisher: "AI Studios",
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -42,18 +52,38 @@ export const metadata: Metadata = {
     title: defaultTitle,
     description: defaultDescription,
     url: SITE_URL,
+    images: [
+      {
+        url: DEFAULT_SOCIAL_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "AI Studios Blog - guides IA image, vidéo et cinéma",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: defaultTitle,
     description: defaultDescription,
+    images: [DEFAULT_SOCIAL_IMAGE],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 const organizationLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${MAIN_SITE_URL}#organization`,
   name: "AI Studios",
   url: MAIN_SITE_URL,
   description:
@@ -63,10 +93,16 @@ const organizationLd = {
 const websiteLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${SITE_URL}#website`,
   name: "AI Studios Blog",
   url: SITE_URL,
   inLanguage: "fr-FR",
-  publisher: { "@type": "Organization", name: "AI Studios", url: MAIN_SITE_URL },
+  publisher: {
+    "@type": "Organization",
+    "@id": `${MAIN_SITE_URL}#organization`,
+    name: "AI Studios",
+    url: MAIN_SITE_URL,
+  },
 };
 
 export default function RootLayout({

@@ -26,7 +26,8 @@ export function ArticleCard({ article }: { article: Article }) {
             <CategoryPill slug={cat.slug} label={cat.name} />
           ) : null}
           <span className="text-xs text-text-muted">
-            {formatFrenchDate(article.date)} · {article.readingTime} min
+            <time dateTime={article.date}>{formatFrenchDate(article.date)}</time>{" "}
+            · {article.readingTime} min
           </span>
         </div>
         <h2 className="font-display text-xl font-semibold tracking-tight text-text md:text-[1.35rem]">

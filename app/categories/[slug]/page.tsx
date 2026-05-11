@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleCard } from "@/components/ArticleCard";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getArticlesByCategory } from "@/lib/articles";
 import { categories, getCategoryBySlug } from "@/lib/categories";
-import { buildMetadata } from "@/lib/seo";
+import {
+  absoluteUrl,
+  buildArticleItemListJsonLd,
+  buildBreadcrumbJsonLd,
+  buildCollectionPageJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,6 +39,7 @@ export default async function CategoryPage({ params }: Props) {
   if (!cat) notFound();
 
   const posts = getArticlesByCategory(slug);
+  const categoryPath = `/categories/${slug}`;
 
   const intro: Record<string, string> = {
     "ia-video":
@@ -46,20 +55,35 @@ export default async function CategoryPage({ params }: Props) {
     "business-creatif":
       "Le business créatif avec l’IA, c’est brief, validation, droits, livraison. Ces articles parlent pubs, process client, et qualité professionnelle sans bullshit.",
   };
+  const categoryIntro =
+    intro[slug] ??
+    "Guides AI Studios Blog pour progresser avec une méthode claire.";
+  const breadcrumbLd = buildBreadcrumbJsonLd([
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "Blog", url: absoluteUrl("/blog") },
+    { name: cat.name, url: absoluteUrl(categoryPath) },
+  ]);
+  const pageJsonLd = buildCollectionPageJsonLd({
+    name: `${cat.name} - guides IA créative`,
+    description: `${cat.description} ${categoryIntro}`,
+    path: categoryPath,
+  });
+  const listJsonLd = buildArticleItemListJsonLd({
+    articles: posts,
+    name: `Articles ${cat.name}`,
+    path: categoryPath,
+  });
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-      <nav aria-label="Fil d’Ariane" className="text-sm text-text-muted">
-        <Link href="/" className="hover:text-brand-bright">
-          Accueil
-        </Link>
-        <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:text-brand-bright">
-          Blog
-        </Link>
-        <span className="mx-2">/</span>
-        <span className="text-text-soft">{cat.name}</span>
-      </nav>
+      <SEOJsonLd data={[breadcrumbLd, pageJsonLd, listJsonLd]} />
+      <Breadcrumbs
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: cat.name },
+        ]}
+      />
 
       <header className="mt-8 max-w-3xl">
         <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
@@ -67,8 +91,7 @@ export default async function CategoryPage({ params }: Props) {
         </h1>
         <p className="mt-4 text-lg text-text-soft">{cat.description}</p>
         <p className="mt-6 leading-relaxed text-text-muted">
-          {intro[slug] ??
-            "Guides AI Studios Blog pour progresser avec une méthode claire."}
+          {categoryIntro}
         </p>
       </header>
 

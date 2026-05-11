@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ManageCookiesLink } from "@/components/ManageCookiesLink";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, noIndexFollowRobots } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Politique cookies et traceurs",
   description:
     "Informations sur les cookies utilisés sur le blog AI Studios, vos choix et vos droits (RGPD).",
   path: "/politique-cookies",
+  robots: noIndexFollowRobots(),
 });
 
 export default function PolitiqueCookiesPage() {
