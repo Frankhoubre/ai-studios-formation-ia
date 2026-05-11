@@ -5,6 +5,8 @@ import { getArticlesByCategory } from "@/lib/articles";
 import { categories, getCategoryBySlug } from "@/lib/categories";
 import { buildMetadata } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {

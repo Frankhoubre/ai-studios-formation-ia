@@ -3,6 +3,8 @@ import { SITE_URL } from "@/lib/constants";
 import { getAllArticles } from "@/lib/articles";
 import { categories } from "@/lib/categories";
 
+export const dynamic = "force-dynamic";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
   const staticRoutes: MetadataRoute.Sitemap = [

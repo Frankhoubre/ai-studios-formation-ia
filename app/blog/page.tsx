@@ -5,6 +5,8 @@ import { categories, getCategoryBySlug } from "@/lib/categories";
 import { buildMetadata } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = buildMetadata({
   title: "Blog : guides IA créative, image, vidéo, cinéma",
   description:

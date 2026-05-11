@@ -17,6 +17,8 @@ import { FORMATION_FREE_URL, SITE_URL } from "@/lib/constants";
 import { articleMetadata, getTocEntries } from "@/lib/seo";
 import { formatFrenchDate } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {

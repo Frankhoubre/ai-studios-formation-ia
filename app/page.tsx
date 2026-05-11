@@ -8,6 +8,8 @@ import { categories } from "@/lib/categories";
 import { FORMATION_FREE_URL } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = buildMetadata({
   absoluteTitle: "AI Studios Blog - Formation IA vidéo, image et cinéma",
   description:
