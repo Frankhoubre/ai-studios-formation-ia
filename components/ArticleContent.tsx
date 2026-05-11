@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ArticleBlock } from "@/lib/types/article";
 import { RichParagraph } from "@/components/RichParagraph";
 
@@ -102,6 +103,46 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                 </tbody>
               </table>
             </figure>
+          );
+        }
+        if (block.type === "image") {
+          return (
+            <figure
+              key={`${block.src}-${i}`}
+              className="my-10 overflow-hidden rounded-3xl border border-border-subtle bg-card/70"
+            >
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={block.src}
+                  alt={block.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 860px, 100vw"
+                />
+              </div>
+              {block.caption ? (
+                <figcaption className="border-t border-border-subtle px-5 py-3 text-sm leading-relaxed text-text-muted">
+                  <RichParagraph text={block.caption} />
+                </figcaption>
+              ) : null}
+            </figure>
+          );
+        }
+        if (block.type === "quote") {
+          return (
+            <blockquote
+              key={`${block.text.slice(0, 48)}-${i}`}
+              className="my-8 rounded-2xl border border-brand/25 bg-brand/10 px-5 py-4 text-text-soft"
+            >
+              <p className="leading-relaxed">
+                <RichParagraph text={block.text} />
+              </p>
+              {block.cite ? (
+                <cite className="mt-3 block text-sm not-italic text-text-muted">
+                  {block.cite}
+                </cite>
+              ) : null}
+            </blockquote>
           );
         }
         return null;

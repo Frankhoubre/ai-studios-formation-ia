@@ -11,6 +11,8 @@ export type ArticleBlock =
   | { type: "p"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
+  | { type: "image"; src: string; alt: string; caption?: string }
+  | { type: "quote"; text: string; cite?: string }
   | ArticleTable;
 
 export type ArticleFaqItem = {

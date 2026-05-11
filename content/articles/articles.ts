@@ -1,4 +1,6 @@
 import type { Article } from "@/lib/types/article";
+import fs from "node:fs";
+import path from "node:path";
 import { formationIaVideo } from "@/content/articles/posts/formation-ia-video";
 import { promptImageIaCinema } from "@/content/articles/posts/prompt-image-ia-cinema";
 import { videosIaJoliesMaisVides } from "@/content/articles/posts/videos-ia-jolies-mais-vides";
@@ -20,7 +22,15 @@ import { stabilitePersonnageMultiPlans } from "@/content/articles/posts/stabilit
 import { workflowClientBriefLivraisonIa } from "@/content/articles/posts/workflow-client-brief-livraison-ia";
 import { budgetRenduTempsCoutIa } from "@/content/articles/posts/budget-rendu-temps-cout-ia";
 
+const beginnerArticles = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "content/articles/beginner-articles.json"),
+    "utf8",
+  ),
+) as Article[];
+
 export const articles: Article[] = [
+  ...beginnerArticles,
   budgetRenduTempsCoutIa,
   workflowClientBriefLivraisonIa,
   stabilitePersonnageMultiPlans,
