@@ -46,7 +46,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/glossaire-ia-image-video-debutant-workflow-1.svg",
+        "src": "/images/articles/glossaire-ia-image-video-debutant-workflow-1.png",
         "alt": "Workflow de production IA pour débutants",
         "caption": "Un plan de travail structuré pour transformer une idée en un véritable projet visuel."
       },
@@ -375,7 +375,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/glossaire-ia-image-video-debutant-workflow-2.svg",
+        "src": "/images/articles/glossaire-ia-image-video-debutant-workflow-2.png",
         "alt": "Comparaison entre rendu brut et rendu dirigé",
         "caption": "Prendre le temps d'affiner ses réglages permet de passer d'une image générique à une création unique."
       },
@@ -570,7 +570,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/image-to-video-text-to-video-video-to-video-debutant-workflow-1.svg",
+        "src": "/images/articles/image-to-video-text-to-video-video-to-video-debutant-workflow-1.png",
         "alt": "Tableau comparatif des modes vidéo IA",
         "caption": "Un cadre de décision clair pour choisir la technologie adaptée à chaque plan de votre montage."
       },
@@ -719,7 +719,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/image-to-video-text-to-video-video-to-video-debutant-workflow-2.svg",
+        "src": "/images/articles/image-to-video-text-to-video-video-to-video-debutant-workflow-2.png",
         "alt": "Comparaison entre rendu brut et rendu dirigé",
         "caption": "Prendre le temps d'affiner ses réglages permet de passer d'une vidéo générique à une création unique."
       },
@@ -886,7 +886,7 @@
       "name": "Frank Houbre",
       "url": "https://www.ai-studios.fr"
     },
-    "image": "/images/articles/premier-projet-ia-video-10-secondes-5-plans.svg",
+    "image": "/images/articles/premier-projet-ia-video-10-secondes-5-plans.png",
     "imageAlt": "Réalisation d'un premier projet vidéo par IA",
     "keywords": [
       "premier projet vidéo IA",
@@ -913,7 +913,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/premier-projet-ia-video-10-secondes-5-plans-workflow-1.svg",
+        "src": "/images/articles/premier-projet-ia-video-10-secondes-5-plans-workflow-1.png",
         "alt": "Planification d'une séquence vidéo IA",
         "caption": "Une structure de production claire pour garantir la cohérence de votre premier projet vidéo."
       },
@@ -1075,7 +1075,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/premier-projet-ia-video-10-secondes-5-plans-workflow-2.svg",
+        "src": "/images/articles/premier-projet-ia-video-10-secondes-5-plans-workflow-2.png",
         "alt": "Comparaison de plans pour la continuité",
         "caption": "Vérifier la cohérence entre un plan large et un plan serré est crucial pour la crédibilité de votre séquence."
       },
@@ -1269,7 +1269,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/premier-projet-ia-image-6-visuels-coherents-workflow-1.svg",
+        "src": "/images/articles/premier-projet-ia-image-6-visuels-coherents-workflow-1.png",
         "alt": "Workflow pour une série d'images IA cohérentes",
         "caption": "Une approche structurée pour passer de la simple génération à une véritable production visuelle."
       },
@@ -1367,7 +1367,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/premier-projet-ia-image-6-visuels-coherents-workflow-2.svg",
+        "src": "/images/articles/premier-projet-ia-image-6-visuels-coherents-workflow-2.png",
         "alt": "Comparaison de styles et de cohérence",
         "caption": "Apprenez à repérer ce qui lie vos images entre elles pour renforcer l'identité de votre série."
       },
@@ -1482,7 +1482,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/erreurs-debutant-image-ia-avant-prompt-workflow-1.svg",
+        "src": "/images/articles/erreurs-debutant-image-ia-avant-prompt-workflow-1.png",
         "alt": "Workflow de préparation pour image IA",
         "caption": "Pensez votre projet comme une véritable production pour éviter les tâtonnements inutiles."
       },
@@ -1576,7 +1576,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/erreurs-debutant-image-ia-avant-prompt-workflow-2.svg",
+        "src": "/images/articles/erreurs-debutant-image-ia-avant-prompt-workflow-2.png",
         "alt": "Comparaison entre image brute et image dirigée",
         "caption": "Prenez le temps d'analyser vos échecs pour comprendre quel paramètre a fait défaut."
       },
@@ -1682,7 +1682,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/choisir-format-carre-vertical-horizontal-ia-workflow-1.svg",
+        "src": "/images/articles/choisir-format-carre-vertical-horizontal-ia-workflow-1.png",
         "alt": "Workflow de décision pour le format IA",
         "caption": "Le choix du format doit être votre première décision technique pour garantir la cohérence de votre projet."
       },
@@ -1772,7 +1772,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/choisir-format-carre-vertical-horizontal-ia-workflow-2.svg",
+        "src": "/images/articles/choisir-format-carre-vertical-horizontal-ia-workflow-2.png",
         "alt": "Comparaison de compositions selon le format",
         "caption": "Observez comment l'IA réorganise les éléments selon le cadre que vous lui imposez."
       },
@@ -1882,7 +1882,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/resolution-upscale-ratio-image-ia-workflow-1.svg",
+        "src": "/images/articles/resolution-upscale-ratio-image-ia-workflow-1.png",
         "alt": "Workflow technique pour l'exportation IA",
         "caption": "L'upscale doit servir votre intention artistique, pas tenter de masquer un manque de préparation."
       },
@@ -1972,7 +1972,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/resolution-upscale-ratio-image-ia-workflow-2.svg",
+        "src": "/images/articles/resolution-upscale-ratio-image-ia-workflow-2.png",
         "alt": "Comparaison avant/après upscale",
         "caption": "L'objectif est de gagner en définition tout en conservant le naturel de la prise de vue originale."
       },
@@ -2078,7 +2078,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/fps-duree-codec-export-video-ia-workflow-1.svg",
+        "src": "/images/articles/fps-duree-codec-export-video-ia-workflow-1.png",
         "alt": "Workflow technique pour l'exportation vidéo IA",
         "caption": "Le choix du FPS et du codec influence directement la sensation de réalisme de votre vidéo."
       },
@@ -2168,7 +2168,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/fps-duree-codec-export-video-ia-workflow-2.svg",
+        "src": "/images/articles/fps-duree-codec-export-video-ia-workflow-2.png",
         "alt": "Comparaison de fluidité selon le FPS",
         "caption": "Observez comment la cadence d'images transforme la perception du mouvement."
       },
@@ -2274,7 +2274,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/preparer-moodboard-ia-debutant-workflow-1.svg",
+        "src": "/images/articles/preparer-moodboard-ia-debutant-workflow-1.png",
         "alt": "Workflow de création de moodboard IA",
         "caption": "Le moodboard est l'étape intermédiaire indispensable entre votre idée et votre premier prompt."
       },
@@ -2368,7 +2368,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/preparer-moodboard-ia-debutant-workflow-2.svg",
+        "src": "/images/articles/preparer-moodboard-ia-debutant-workflow-2.png",
         "alt": "Exemple de moodboard structuré",
         "caption": "Un moodboard bien organisé facilite la communication avec l'IA et garantit des résultats plus proches de votre vision."
       },
@@ -2469,7 +2469,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-miniature-youtube-ia-debutant-workflow-1.svg",
+        "src": "/images/articles/creer-miniature-youtube-ia-debutant-workflow-1.png",
         "alt": "Workflow de création de miniature YouTube avec l'IA",
         "caption": "La miniature doit vendre une seule idée forte, immédiatement identifiable par le spectateur."
       },
@@ -2559,7 +2559,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-miniature-youtube-ia-debutant-workflow-2.svg",
+        "src": "/images/articles/creer-miniature-youtube-ia-debutant-workflow-2.png",
         "alt": "Comparaison de styles de miniatures",
         "caption": "Le choix du style visuel doit être en parfaite adéquation avec le titre de votre vidéo."
       },
@@ -2665,7 +2665,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-visuel-instagram-ia-sans-rendu-generique-workflow-1.svg",
+        "src": "/images/articles/creer-visuel-instagram-ia-sans-rendu-generique-workflow-1.png",
         "alt": "visuel Instagram IA workflow IA débutant avec rendu cinématique naturel",
         "caption": "Interface de travail pour la conception d'un visuel Instagram, pensée comme un véritable plan de production."
       },
@@ -2822,7 +2822,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-visuel-instagram-ia-sans-rendu-generique-workflow-2.svg",
+        "src": "/images/articles/creer-visuel-instagram-ia-sans-rendu-generique-workflow-2.png",
         "alt": "visuel Instagram IA comparaison avant après IA cinématique",
         "caption": "Point de contrôle : comparaison entre une version brute et une version dirigée."
       },
@@ -3021,7 +3021,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-reel-ia-video-courte-comprehensible-workflow-1.svg",
+        "src": "/images/articles/creer-reel-ia-video-courte-comprehensible-workflow-1.png",
         "alt": "Reel IA workflow IA débutant avec rendu cinématique naturel",
         "caption": "Interface de travail pour la conception d'un Reel IA, pensée comme un véritable plan de production."
       },
@@ -3178,7 +3178,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/creer-reel-ia-video-courte-comprehensible-workflow-2.svg",
+        "src": "/images/articles/creer-reel-ia-video-courte-comprehensible-workflow-2.png",
         "alt": "Reel IA comparaison avant après IA cinématique",
         "caption": "Point de contrôle : comparaison entre une version brute et une version dirigée."
       },
@@ -3377,7 +3377,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/idee-floue-brief-ia-exploitable-workflow-1.svg",
+        "src": "/images/articles/idee-floue-brief-ia-exploitable-workflow-1.png",
         "alt": "brief IA exploitable workflow IA débutant avec rendu cinématique naturel",
         "caption": "Interface de travail pour la conception d'un brief IA, pensée comme un véritable plan de production."
       },
@@ -3534,7 +3534,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/idee-floue-brief-ia-exploitable-workflow-2.svg",
+        "src": "/images/articles/idee-floue-brief-ia-exploitable-workflow-2.png",
         "alt": "brief IA exploitable comparaison avant après IA cinématique",
         "caption": "Point de contrôle : comparaison entre une version brute et une version dirigée."
       },
@@ -3733,7 +3733,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/checklist-qualite-image-ia-avant-publication-workflow-1.svg",
+        "src": "/images/articles/checklist-qualite-image-ia-avant-publication-workflow-1.png",
         "alt": "checklist qualité image IA workflow IA débutant avec rendu cinématique naturel",
         "caption": "Interface de travail pour le contrôle qualité, pensée comme un véritable plan de production."
       },
@@ -3890,7 +3890,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/checklist-qualite-image-ia-avant-publication-workflow-2.svg",
+        "src": "/images/articles/checklist-qualite-image-ia-avant-publication-workflow-2.png",
         "alt": "checklist qualité image IA comparaison avant après IA cinématique",
         "caption": "Point de contrôle : comparaison entre une version brute et une version dirigée."
       },
@@ -4089,7 +4089,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/checklist-qualite-video-ia-avant-publication-workflow-1.svg",
+        "src": "/images/articles/checklist-qualite-video-ia-avant-publication-workflow-1.png",
         "alt": "Workflow checklist qualité vidéo IA pour débutant avec rendu cinématique naturel",
         "caption": "Espace de travail local pour le contrôle qualité, pensé comme un véritable plan de production."
       },
@@ -4246,7 +4246,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/checklist-qualite-video-ia-avant-publication-workflow-2.svg",
+        "src": "/images/articles/checklist-qualite-video-ia-avant-publication-workflow-2.png",
         "alt": "Comparaison avant/après pour un rendu IA cinématique",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -4445,7 +4445,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/pourquoi-prompts-ia-ne-marchent-pas-workflow-1.svg",
+        "src": "/images/articles/pourquoi-prompts-ia-ne-marchent-pas-workflow-1.png",
         "alt": "Workflow de correction de prompt IA pour débutant",
         "caption": "Espace de travail local pour l'analyse des prompts, pensé comme un véritable plan de production."
       },
@@ -4602,7 +4602,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/pourquoi-prompts-ia-ne-marchent-pas-workflow-2.svg",
+        "src": "/images/articles/pourquoi-prompts-ia-ne-marchent-pas-workflow-2.png",
         "alt": "Comparaison avant/après pour un prompt IA optimisé",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -4801,7 +4801,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/prompt-court-ou-long-ia-image-workflow-1.svg",
+        "src": "/images/articles/prompt-court-ou-long-ia-image-workflow-1.png",
         "alt": "Workflow pour doser la longueur des prompts IA",
         "caption": "Espace de travail local pour le test des prompts, pensé comme un véritable plan de production."
       },
@@ -4958,7 +4958,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/prompt-court-ou-long-ia-image-workflow-2.svg",
+        "src": "/images/articles/prompt-court-ou-long-ia-image-workflow-2.png",
         "alt": "Comparaison avant/après pour un prompt IA structuré",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -5157,7 +5157,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/utiliser-images-reference-ia-sans-copier-style-workflow-1.svg",
+        "src": "/images/articles/utiliser-images-reference-ia-sans-copier-style-workflow-1.png",
         "alt": "Workflow d'utilisation des images de référence IA",
         "caption": "Espace de travail local pour l'analyse des références, pensé comme un véritable plan de production."
       },
@@ -5314,7 +5314,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/utiliser-images-reference-ia-sans-copier-style-workflow-2.svg",
+        "src": "/images/articles/utiliser-images-reference-ia-sans-copier-style-workflow-2.png",
         "alt": "Comparaison avant/après avec image de référence",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -5513,7 +5513,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/fiche-style-visuel-images-ia-workflow-1.svg",
+        "src": "/images/articles/fiche-style-visuel-images-ia-workflow-1.png",
         "alt": "Workflow de création d'une fiche de style IA",
         "caption": "Espace de travail local pour la définition du style, pensé comme un véritable plan de production."
       },
@@ -5670,7 +5670,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/fiche-style-visuel-images-ia-workflow-2.svg",
+        "src": "/images/articles/fiche-style-visuel-images-ia-workflow-2.png",
         "alt": "Comparaison avant/après avec fiche de style",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -5869,7 +5869,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/garder-meme-ambiance-visuelle-images-ia-workflow-1.svg",
+        "src": "/images/articles/garder-meme-ambiance-visuelle-images-ia-workflow-1.png",
         "alt": "Workflow de cohérence visuelle IA",
         "caption": "Espace de travail local pour la gestion de l'ambiance, pensé comme un véritable plan de production."
       },
@@ -6026,7 +6026,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/garder-meme-ambiance-visuelle-images-ia-workflow-2.svg",
+        "src": "/images/articles/garder-meme-ambiance-visuelle-images-ia-workflow-2.png",
         "alt": "Comparaison avant/après cohérence d'ambiance",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -6225,7 +6225,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/cadrages-utiles-ia-video-plan-large-gros-plan-detail-workflow-1.svg",
+        "src": "/images/articles/cadrages-utiles-ia-video-plan-large-gros-plan-detail-workflow-1.png",
         "alt": "Workflow des cadrages IA vidéo",
         "caption": "Espace de travail local pour la gestion des cadrages, pensé comme un véritable plan de production."
       },
@@ -6382,7 +6382,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/cadrages-utiles-ia-video-plan-large-gros-plan-detail-workflow-2.svg",
+        "src": "/images/articles/cadrages-utiles-ia-video-plan-large-gros-plan-detail-workflow-2.png",
         "alt": "Comparaison avant/après maîtrise du cadrage",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant d'investir plus de temps."
       },
@@ -6581,7 +6581,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/mouvement-camera-ia-video-termes-simples-workflow-1.svg",
+        "src": "/images/articles/mouvement-camera-ia-video-termes-simples-workflow-1.png",
         "alt": "workflow pour maîtriser les mouvements de caméra en IA vidéo",
         "caption": "Une interface de travail pensée comme un véritable plan de production pour un contrôle total du mouvement."
       },
@@ -6738,7 +6738,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/mouvement-camera-ia-video-termes-simples-workflow-2.svg",
+        "src": "/images/articles/mouvement-camera-ia-video-termes-simples-workflow-2.png",
         "alt": "comparaison de mouvements de caméra en IA vidéo",
         "caption": "Analyser la différence entre un mouvement brut et un mouvement dirigé est essentiel pour progresser."
       },
@@ -6937,7 +6937,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/ecrire-micro-scene-avant-generer-video-ia-workflow-1.svg",
+        "src": "/images/articles/ecrire-micro-scene-avant-generer-video-ia-workflow-1.png",
         "alt": "workflow de création vidéo IA pour débutant avec rendu cinématique",
         "caption": "Espace de travail structuré pour une production vidéo réfléchie, loin des simples démonstrations techniques."
       },
@@ -7094,7 +7094,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/ecrire-micro-scene-avant-generer-video-ia-workflow-2.svg",
+        "src": "/images/articles/ecrire-micro-scene-avant-generer-video-ia-workflow-2.png",
         "alt": "comparaison de rendus vidéo IA entre version brute et dirigée",
         "caption": "Analyse comparative : l'importance de la direction artistique sur le résultat brut de l'IA."
       },
@@ -7293,7 +7293,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/avant-apres-ameliorer-image-ia-5-decisions-workflow-1.svg",
+        "src": "/images/articles/avant-apres-ameliorer-image-ia-5-decisions-workflow-1.png",
         "alt": "workflow d'amélioration d'image IA pour débutant",
         "caption": "Méthode structurée pour transformer un premier jet IA en visuel professionnel."
       },
@@ -7455,7 +7455,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/avant-apres-ameliorer-image-ia-5-decisions-workflow-2.svg",
+        "src": "/images/articles/avant-apres-ameliorer-image-ia-5-decisions-workflow-2.png",
         "alt": "comparaison d'amélioration d'image IA avant et après méthode",
         "caption": "Analyse visuelle : l'impact d'une direction artistique maîtrisée sur le rendu final."
       },
@@ -7654,7 +7654,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/avant-apres-ameliorer-video-ia-confuse-5-decisions-workflow-1.svg",
+        "src": "/images/articles/avant-apres-ameliorer-video-ia-confuse-5-decisions-workflow-1.png",
         "alt": "workflow de clarification vidéo IA pour débutant",
         "caption": "Espace de travail structuré pour une production vidéo lisible et maîtrisée."
       },
@@ -7811,7 +7811,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/avant-apres-ameliorer-video-ia-confuse-5-decisions-workflow-2.svg",
+        "src": "/images/articles/avant-apres-ameliorer-video-ia-confuse-5-decisions-workflow-2.png",
         "alt": "comparaison avant-après d'une vidéo IA clarifiée",
         "caption": "Analyse de l'impact de la direction de caméra sur la compréhension d'une scène."
       },
@@ -8010,7 +8010,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/organiser-fichiers-ia-noms-versions-exports-archives-workflow-1.svg",
+        "src": "/images/articles/organiser-fichiers-ia-noms-versions-exports-archives-workflow-1.png",
         "alt": "workflow d'organisation de fichiers IA pour débutant",
         "caption": "Structure de travail optimisée pour une gestion de projet IA sans faille."
       },
@@ -8167,7 +8167,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/organiser-fichiers-ia-noms-versions-exports-archives-workflow-2.svg",
+        "src": "/images/articles/organiser-fichiers-ia-noms-versions-exports-archives-workflow-2.png",
         "alt": "comparaison d'organisation de fichiers IA avant et après méthode",
         "caption": "Analyse visuelle : l'impact d'une structure rigoureuse sur la lisibilité d'un projet."
       },
@@ -8366,7 +8366,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/cout-premier-mois-ia-image-video-workflow-1.svg",
+        "src": "/images/articles/cout-premier-mois-ia-image-video-workflow-1.png",
         "alt": "workflow budgétaire IA pour débutant",
         "caption": "Planification financière pour un premier mois d'apprentissage IA maîtrisé."
       },
@@ -8523,7 +8523,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/cout-premier-mois-ia-image-video-workflow-2.svg",
+        "src": "/images/articles/cout-premier-mois-ia-image-video-workflow-2.png",
         "alt": "comparaison de budgets IA entre approche dispersée et structurée",
         "caption": "Analyse comparative : l'impact d'une stratégie d'abonnement sur le coût final."
       },
@@ -8694,7 +8694,7 @@
       "name": "Frank Houbre",
       "url": "https://www.ai-studios.fr"
     },
-    "image": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier.svg",
+    "image": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier.png",
     "imageAlt": "droits d’auteur IA créative expliqué aux débutants avec rendu cinématique local et workflow AI Studios",
     "keywords": [
       "droits d’auteur IA créative",
@@ -8722,7 +8722,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier-workflow-1.svg",
+        "src": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier-workflow-1.png",
         "alt": "droits d’auteur IA créative workflow IA débutant avec rendu cinématique naturel",
         "caption": "Vue de travail locale pour droits d’auteur IA créative, pensée comme un vrai plan de production et pas comme une démo brillante."
       },
@@ -8879,7 +8879,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier-workflow-2.svg",
+        "src": "/images/articles/droits-auteur-ia-creative-verifier-avant-publier-workflow-2.png",
         "alt": "droits d’auteur IA créative comparaison avant après IA cinématique",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant de dépenser plus de temps."
       },
@@ -9050,7 +9050,7 @@
       "name": "Frank Houbre",
       "url": "https://www.ai-studios.fr"
     },
-    "image": "/images/articles/vendre-creations-ia-debutant-precautions.svg",
+    "image": "/images/articles/vendre-creations-ia-debutant-precautions.png",
     "imageAlt": "vendre ses créations IA expliqué aux débutants avec rendu cinématique local et workflow AI Studios",
     "keywords": [
       "vendre ses créations IA",
@@ -9078,7 +9078,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/vendre-creations-ia-debutant-precautions-workflow-1.svg",
+        "src": "/images/articles/vendre-creations-ia-debutant-precautions-workflow-1.png",
         "alt": "vendre ses créations IA workflow IA débutant avec rendu cinématique naturel",
         "caption": "Vue de travail locale pour vendre ses créations IA, pensée comme un vrai plan de production et pas comme une démo brillante."
       },
@@ -9235,7 +9235,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/vendre-creations-ia-debutant-precautions-workflow-2.svg",
+        "src": "/images/articles/vendre-creations-ia-debutant-precautions-workflow-2.png",
         "alt": "vendre ses créations IA comparaison avant après IA cinématique",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant de dépenser plus de temps."
       },
@@ -9406,7 +9406,7 @@
       "name": "Frank Houbre",
       "url": "https://www.ai-studios.fr"
     },
-    "image": "/images/articles/plan-apprentissage-ia-image-video-30-jours.svg",
+    "image": "/images/articles/plan-apprentissage-ia-image-video-30-jours.png",
     "imageAlt": "plan d’apprentissage IA image et vidéo expliqué aux débutants avec rendu cinématique local et workflow AI Studios",
     "keywords": [
       "plan d’apprentissage IA image et vidéo",
@@ -9434,7 +9434,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/plan-apprentissage-ia-image-video-30-jours-workflow-1.svg",
+        "src": "/images/articles/plan-apprentissage-ia-image-video-30-jours-workflow-1.png",
         "alt": "plan d’apprentissage IA image et vidéo workflow IA débutant avec rendu cinématique naturel",
         "caption": "Vue de travail locale pour plan d’apprentissage IA image et vidéo, pensée comme un vrai plan de production et pas comme une démo brillante."
       },
@@ -9591,7 +9591,7 @@
       },
       {
         "type": "image",
-        "src": "/images/articles/plan-apprentissage-ia-image-video-30-jours-workflow-2.svg",
+        "src": "/images/articles/plan-apprentissage-ia-image-video-30-jours-workflow-2.png",
         "alt": "plan d’apprentissage IA image et vidéo comparaison avant après IA cinématique",
         "caption": "Deuxième point de contrôle : comparer une version brute et une version dirigée avant de dépenser plus de temps."
       },
