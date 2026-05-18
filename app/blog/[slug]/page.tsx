@@ -13,11 +13,13 @@ import {
   getRelatedArticles,
 } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
-import { FORMATION_FREE_URL, MAIN_SITE_URL } from "@/lib/constants";
+import { FORMATION_FREE_URL } from "@/lib/constants";
 import {
-  absoluteUrl,
   articleMetadata,
-  buildBreadcrumbJsonLd,
+  buildArticleBreadcrumbItems,
+  buildArticleBreadcrumbJsonLd,
+  buildArticleJsonLd,
+  buildFaqJsonLd,
   getTocEntries,
 } from "@/lib/seo";
 import { formatFrenchDate } from "@/lib/utils";
@@ -46,69 +48,19 @@ export default async function ArticlePage({ params }: Props) {
   const related = getRelatedArticles(article, 3);
   const toc = getTocEntries(article.content);
 
-  const url = absoluteUrl(`/blog/${article.slug}`);
-  const breadcrumbLd = buildBreadcrumbJsonLd([
-    { name: "Accueil", url: absoluteUrl("/") },
-    { name: "Blog", url: absoluteUrl("/blog") },
-    { name: article.title, url },
-  ]);
+  const breadcrumbLd = buildArticleBreadcrumbJsonLd(article, category?.name);
+  const breadcrumbItems = buildArticleBreadcrumbItems(article, category?.name);
 
-  const articleLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "@id": `${url}#article`,
-    headline: article.title,
-    description: article.description,
-    image: {
-      "@type": "ImageObject",
-      url: absoluteUrl(article.image),
-      caption: article.imageAlt,
-    },
-    datePublished: article.date,
-    dateModified: article.updatedAt,
-    author: {
-      "@type": "Person",
-      name: article.author.name,
-      url: article.author.url,
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": `${MAIN_SITE_URL}#organization`,
-      name: "AI Studios",
-      url: MAIN_SITE_URL,
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": url,
-    },
-    keywords: article.keywords,
-    articleSection: category?.name,
-    inLanguage: "fr-FR",
-  };
-
-  const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: article.faq.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: { "@type": "Answer", text: f.answer },
-    })),
-  };
+  const articleLd = buildArticleJsonLd(article, category?.name);
+  const faqLd = article.faq.length ? buildFaqJsonLd(article.faq) : null;
 
   return (
     <>
       <SEOJsonLd
-        data={[breadcrumbLd, articleLd, ...(article.faq.length ? [faqLd] : [])]}
+        data={[breadcrumbLd, articleLd, ...(faqLd ? [faqLd] : [])]}
       />
       <article className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-        <Breadcrumbs
-          items={[
-            { label: "Accueil", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: article.title },
-          ]}
-        />
+        <Breadcrumbs items={breadcrumbItems} />
 
         <div className="mt-6">
           <ArticleHero article={article} />

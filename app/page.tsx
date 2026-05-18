@@ -9,19 +9,23 @@ import { categories } from "@/lib/categories";
 import { FORMATION_FREE_URL } from "@/lib/constants";
 import {
   buildArticleItemListJsonLd,
+  buildBlogJsonLd,
   buildCollectionPageJsonLd,
+  buildFormationServiceJsonLd,
   buildMetadata,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
 } from "@/lib/seo";
 
 export const revalidate = 3600;
 
-const homeDescription =
-  "Des guides concrets pour arrêter de produire des rendus IA jolis mais oubliables, et commencer à construire de vrais workflows visuels : prompts, images, vidéo, storyboard, montage, son, publicité et narration.";
+const homeDescription = DEFAULT_DESCRIPTION;
 
 export const metadata = buildMetadata({
-  absoluteTitle: "AI Studios Blog - Formation IA vidéo, image et cinéma",
+  absoluteTitle: DEFAULT_TITLE,
   description: homeDescription,
   path: "/",
+  appendCta: false,
 });
 
 export default function HomePage() {
@@ -37,6 +41,8 @@ export default function HomePage() {
     description: homeDescription,
     path: "/",
   });
+  const blogJsonLd = buildBlogJsonLd({ description: homeDescription });
+  const formationServiceLd = buildFormationServiceJsonLd();
   const latestJsonLd = buildArticleItemListJsonLd({
     articles: latest,
     name: "Derniers guides IA créative",
@@ -45,7 +51,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <SEOJsonLd data={[pageJsonLd, latestJsonLd]} />
+      <SEOJsonLd
+        data={[blogJsonLd, formationServiceLd, pageJsonLd, latestJsonLd]}
+      />
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-12 md:px-6 md:pb-24 md:pt-16">
         <div className="max-w-4xl">
           <p className="text-sm font-medium uppercase tracking-wider text-brand-bright">

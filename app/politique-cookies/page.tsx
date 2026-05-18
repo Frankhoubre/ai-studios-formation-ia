@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ManageCookiesLink } from "@/components/ManageCookiesLink";
-import { buildMetadata, noIndexFollowRobots } from "@/lib/seo";
+import { SEOJsonLd } from "@/components/SEOJsonLd";
+import {
+  absoluteUrl,
+  buildBreadcrumbJsonLd,
+  buildMetadata,
+  noIndexFollowRobots,
+} from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Politique cookies et traceurs",
@@ -8,12 +15,25 @@ export const metadata = buildMetadata({
     "Informations sur les cookies utilisés sur le blog AI Studios, vos choix et vos droits (RGPD).",
   path: "/politique-cookies",
   robots: noIndexFollowRobots(),
+  appendCta: false,
 });
 
 export default function PolitiqueCookiesPage() {
+  const breadcrumbLd = buildBreadcrumbJsonLd([
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "Politique cookies", url: absoluteUrl("/politique-cookies") },
+  ]);
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 md:px-6 md:py-16">
-      <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
+      <SEOJsonLd data={breadcrumbLd} />
+      <Breadcrumbs
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "Politique cookies" },
+        ]}
+      />
+      <h1 className="font-display mt-8 text-4xl font-semibold tracking-tight text-text md:text-5xl">
         Politique cookies
       </h1>
       <p className="mt-6 text-lg leading-relaxed text-text-soft">

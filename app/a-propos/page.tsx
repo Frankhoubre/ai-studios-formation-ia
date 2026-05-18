@@ -1,19 +1,41 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
-import { buildMetadata } from "@/lib/seo";
+import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { FORMATION_FREE_URL } from "@/lib/constants";
+import {
+  absoluteUrl,
+  buildAboutPageJsonLd,
+  buildBreadcrumbJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
+
+const aboutDescription =
+  "AI Studios forme les créateurs à l’IA image et vidéo : méthode, workflows et exigence qualité. Découvrez Frank Houbre et la communauté.";
 
 export const metadata = buildMetadata({
-  title: "À propos : AI Studios, formation IA créative",
-  description:
-    "AI Studios est une plateforme de formation pour créateurs qui veulent maîtriser l’IA image et vidéo avec une méthode, des workflows et une exigence de qualité.",
+  title: "À propos AI Studios - formation IA créative",
+  description: aboutDescription,
   path: "/a-propos",
 });
 
 export default function AboutPage() {
+  const breadcrumbLd = buildBreadcrumbJsonLd([
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "À propos", url: absoluteUrl("/a-propos") },
+  ]);
+  const aboutLd = buildAboutPageJsonLd({ description: aboutDescription });
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 md:px-6 md:py-16">
-      <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
+      <SEOJsonLd data={[breadcrumbLd, aboutLd]} />
+      <Breadcrumbs
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "À propos" },
+        ]}
+      />
+      <h1 className="font-display mt-8 text-4xl font-semibold tracking-tight text-text md:text-5xl">
         À propos
       </h1>
       <p className="mt-6 text-lg text-text-soft leading-relaxed">

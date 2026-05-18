@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
-import type { Article } from "@/lib/types/article";
+import type { Article, ArticleFaqItem } from "@/lib/types/article";
 import {
+  AUTHOR_NAME,
+  AUTHOR_URL,
   DEFAULT_SOCIAL_IMAGE,
+  FORMATION_FREE_URL,
   MAIN_SITE_URL,
+  ORG_LOGO,
+  ORG_NAME,
+  ORG_SAME_AS,
+  SEO_CTA,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/constants";
 
-const defaultTitle = "AI Studios Blog - Formation IA vidéo, image et cinéma";
-const defaultDescription =
-  "Guides concrets pour apprendre à créer des images, vidéos, pubs et films avec l’intelligence artificielle, sans rendu générique ni workflow au hasard.";
+export const TITLE_MAX = 60;
+export const DESCRIPTION_MAX = 160;
+
+export const DEFAULT_TITLE =
+  "AI Studios Blog - Formation IA vidéo, image et cinéma";
+
+export const DEFAULT_DESCRIPTION =
+  "Guides IA image, vidéo et cinéma pour des workflows pro, sans rendu générique. Méthode AI Studios, guides terrain. Accédez à la formation gratuite.";
 
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
@@ -17,19 +29,46 @@ export function absoluteUrl(path: string): string {
   return `${SITE_URL}${p}`;
 }
 
-type BuildMetadataInput = {
-  title?: string;
-  absoluteTitle?: string;
-  description?: string;
-  path?: string;
-  type?: "website" | "article";
-  publishedTime?: string;
-  modifiedTime?: string;
-  image?: string;
-  imageAlt?: string;
-  keywords?: string[];
-  robots?: Metadata["robots"];
-};
+export function truncateAtWord(text: string, max: number): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  const cut = normalized.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  const base =
+    lastSpace > Math.floor(max * 0.55) ? cut.slice(0, lastSpace) : cut;
+  return `${base.trimEnd()}…`;
+}
+
+export function withSeoCta(
+  description: string,
+  cta: string = SEO_CTA,
+): string {
+  const base = description.replace(/\s+/g, " ").trim();
+  const ctaFragment = cta.replace(/\s+/g, " ").trim();
+  if (!ctaFragment) return truncateAtWord(base, DESCRIPTION_MAX);
+  if (base.toLowerCase().includes(ctaFragment.toLowerCase().slice(0, 24))) {
+    return truncateAtWord(base, DESCRIPTION_MAX);
+  }
+  const spacer = base.endsWith(".") ? " " : ". ";
+  return truncateAtWord(`${base}${spacer}${ctaFragment}`, DESCRIPTION_MAX);
+}
+
+export function resolvePageTitle(
+  title: string,
+  options?: { includeBrand?: boolean },
+): string {
+  const includeBrand = options?.includeBrand ?? true;
+  const branded = includeBrand ? `${title} | ${SITE_NAME}` : title;
+  if (branded.length <= TITLE_MAX) return branded;
+  if (!includeBrand && title.length <= TITLE_MAX) return title;
+  const budget = includeBrand
+    ? TITLE_MAX - ` | ${SITE_NAME}`.length
+    : TITLE_MAX;
+  if (budget > 12) {
+    return `${truncateAtWord(title, budget)} | ${SITE_NAME}`;
+  }
+  return truncateAtWord(title, TITLE_MAX);
+}
 
 const indexableRobots: Metadata["robots"] = {
   index: true,
@@ -43,11 +82,61 @@ const indexableRobots: Metadata["robots"] = {
   },
 };
 
+function buildOpenGraphImages(
+  image: string,
+  alt: string,
+): NonNullable<Metadata["openGraph"]>["images"] {
+  const ogImage = absoluteUrl(image);
+  return [
+    {
+      url: ogImage,
+      secureUrl: ogImage,
+      width: 1200,
+      height: 630,
+      alt,
+    },
+  ];
+}
+
+function baseTwitter(
+  title: string,
+  description: string,
+  image: string,
+): NonNullable<Metadata["twitter"]> {
+  const ogImage = absoluteUrl(image);
+  return {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [ogImage],
+    creator: AUTHOR_NAME,
+  };
+}
+
+type BuildMetadataInput = {
+  title?: string;
+  absoluteTitle?: string;
+  description?: string;
+  path?: string;
+  /** URL canonique absolue (ex. redirection vers un domaine externe) */
+  canonical?: string;
+  type?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
+  image?: string;
+  imageAlt?: string;
+  keywords?: string[];
+  robots?: Metadata["robots"];
+  /** Ajoute le CTA SEO par défaut si absent (défaut: true) */
+  appendCta?: boolean;
+};
+
 export function buildMetadata({
   title,
   absoluteTitle,
-  description = defaultDescription,
+  description,
   path = "/",
+  canonical,
   type = "website",
   publishedTime,
   modifiedTime,
@@ -55,11 +144,19 @@ export function buildMetadata({
   imageAlt,
   keywords,
   robots = indexableRobots,
+  appendCta = true,
 }: BuildMetadataInput): Metadata {
   const resolvedTitle =
-    absoluteTitle ?? (title ? `${title} | ${SITE_NAME}` : defaultTitle);
-  const url = absoluteUrl(path);
-  const ogImage = absoluteUrl(image ?? DEFAULT_SOCIAL_IMAGE);
+    absoluteTitle ??
+    (title ? resolvePageTitle(title) : DEFAULT_TITLE);
+  const metaDescription = truncateAtWord(
+    appendCta
+      ? withSeoCta(description ?? DEFAULT_DESCRIPTION)
+      : (description ?? DEFAULT_DESCRIPTION),
+    DESCRIPTION_MAX,
+  );
+  const url = canonical ?? absoluteUrl(path);
+  const ogImage = image ?? DEFAULT_SOCIAL_IMAGE;
   const resolvedImageAlt = imageAlt ?? title ?? absoluteTitle ?? SITE_NAME;
 
   return {
@@ -68,79 +165,60 @@ export function buildMetadata({
       : title
         ? title
         : undefined,
-    description,
+    description: metaDescription,
     keywords: keywords?.length ? keywords : undefined,
     alternates: { canonical: url },
-    authors: [{ name: "Frank Houbre", url: MAIN_SITE_URL }],
-    creator: "Frank Houbre",
-    publisher: "AI Studios",
+    authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+    creator: AUTHOR_NAME,
+    publisher: ORG_NAME,
     openGraph: {
       type: type === "article" ? "article" : "website",
       locale: "fr_FR",
       siteName: SITE_NAME,
       url,
       title: resolvedTitle,
-      description,
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: resolvedImageAlt,
-        },
-      ],
-      ...(type === "article" && publishedTime
-        ? { publishedTime }
-        : {}),
+      description: metaDescription,
+      images: buildOpenGraphImages(ogImage, resolvedImageAlt),
+      ...(type === "article" && publishedTime ? { publishedTime } : {}),
       ...(type === "article" && modifiedTime ? { modifiedTime } : {}),
     },
-    twitter: {
-      card: "summary_large_image",
-      title: resolvedTitle,
-      description,
-      images: [ogImage],
-    },
+    twitter: baseTwitter(resolvedTitle, metaDescription, ogImage),
     robots,
   };
 }
 
 export function articleMetadata(article: Article): Metadata {
   const url = absoluteUrl(`/blog/${article.slug}`);
-  const ogImage = absoluteUrl(article.image);
-  const pageTitle = `${article.title} | ${SITE_NAME}`;
+  const ogTitle = resolvePageTitle(article.title);
+  const metaDescription = truncateAtWord(
+    withSeoCta(article.description),
+    DESCRIPTION_MAX,
+  );
+  const ogImage = article.image;
+
   return {
     title: article.title,
-    description: article.description,
+    description: metaDescription,
     keywords: article.keywords,
     alternates: { canonical: url },
     authors: [{ name: article.author.name, url: article.author.url }],
     creator: article.author.name,
-    publisher: "AI Studios",
+    publisher: ORG_NAME,
     category: article.category,
     openGraph: {
       type: "article",
       locale: "fr_FR",
       siteName: SITE_NAME,
       url,
-      title: pageTitle,
-      description: article.description,
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: article.imageAlt,
-        },
-      ],
+      title: ogTitle,
+      description: metaDescription,
+      images: buildOpenGraphImages(ogImage, article.imageAlt),
       publishedTime: article.date,
       modifiedTime: article.updatedAt,
+      authors: [article.author.name],
+      tags: article.tags,
     },
-    twitter: {
-      card: "summary_large_image",
-      title: pageTitle,
-      description: article.description,
-      images: [ogImage],
-    },
+    twitter: baseTwitter(ogTitle, metaDescription, ogImage),
     robots: indexableRobots,
   };
 }
@@ -156,6 +234,200 @@ export function noIndexFollowRobots(): Metadata["robots"] {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
+  };
+}
+
+export function buildRootMetadata(): Metadata {
+  return {
+    metadataBase: new URL(SITE_URL),
+    applicationName: SITE_NAME,
+    title: {
+      default: DEFAULT_TITLE,
+      template: `%s | ${SITE_NAME}`,
+    },
+    description: DEFAULT_DESCRIPTION,
+    alternates: {
+      canonical: SITE_URL,
+      languages: { "fr-FR": SITE_URL },
+    },
+    authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+    creator: AUTHOR_NAME,
+    publisher: ORG_NAME,
+    icons: {
+      icon: [{ url: absoluteUrl(ORG_LOGO), sizes: "512x512", type: "image/png" }],
+      apple: [{ url: absoluteUrl(ORG_LOGO), sizes: "512x512", type: "image/png" }],
+    },
+    formatDetection: {
+      telephone: false,
+      email: false,
+      address: false,
+    },
+    openGraph: {
+      type: "website",
+      locale: "fr_FR",
+      siteName: SITE_NAME,
+      title: DEFAULT_TITLE,
+      description: DEFAULT_DESCRIPTION,
+      url: SITE_URL,
+      images: buildOpenGraphImages(
+        DEFAULT_SOCIAL_IMAGE,
+        "AI Studios Blog - guides IA image, vidéo et cinéma",
+      ),
+    },
+    twitter: baseTwitter(DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_SOCIAL_IMAGE),
+    robots: indexableRobots,
+    other: {
+      "og:image:width": "1200",
+      "og:image:height": "630",
+    },
+  };
+}
+
+export function buildOrganizationJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": `${MAIN_SITE_URL}#organization`,
+    name: ORG_NAME,
+    url: MAIN_SITE_URL,
+    logo: absoluteUrl(ORG_LOGO),
+    image: absoluteUrl(DEFAULT_SOCIAL_IMAGE),
+    description:
+      "Formation et communauté pour maîtriser l’IA créative appliquée à l’image, la vidéo et le cinéma.",
+    founder: {
+      "@type": "Person",
+      name: AUTHOR_NAME,
+      url: AUTHOR_URL,
+    },
+    sameAs: [...ORG_SAME_AS],
+  };
+}
+
+export function buildWebsiteJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}#website`,
+    name: SITE_NAME,
+    url: SITE_URL,
+    inLanguage: "fr-FR",
+    publisher: {
+      "@type": "Organization",
+      "@id": `${MAIN_SITE_URL}#organization`,
+    },
+    about: { "@id": `${MAIN_SITE_URL}#organization` },
+  };
+}
+
+export function buildFormationServiceJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${FORMATION_FREE_URL}#service`,
+    name: "Formation IA créative gratuite",
+    description:
+      "Formation gratuite pour structurer un workflow IA image et vidéo, avec une exigence cinématographique.",
+    provider: {
+      "@type": "EducationalOrganization",
+      "@id": `${MAIN_SITE_URL}#organization`,
+      name: ORG_NAME,
+      url: MAIN_SITE_URL,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "France",
+    },
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: FORMATION_FREE_URL,
+      serviceType: "Formation en ligne",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+      url: FORMATION_FREE_URL,
+    },
+  };
+}
+
+export function buildArticleBreadcrumbJsonLd(
+  article: Article,
+  categoryName?: string,
+): Record<string, unknown> {
+  const items = [
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "Blog", url: absoluteUrl("/blog") },
+  ];
+  if (categoryName) {
+    items.push({
+      name: categoryName,
+      url: absoluteUrl(`/categories/${article.category}`),
+    });
+  }
+  items.push({
+    name: article.title,
+    url: absoluteUrl(`/blog/${article.slug}`),
+  });
+  return buildBreadcrumbJsonLd(items);
+}
+
+export function buildArticleBreadcrumbItems(
+  article: Article,
+  categoryName?: string,
+): { label: string; href?: string }[] {
+  const items: { label: string; href?: string }[] = [
+    { label: "Accueil", href: "/" },
+    { label: "Blog", href: "/blog" },
+  ];
+  if (categoryName) {
+    items.push({
+      label: categoryName,
+      href: `/categories/${article.category}`,
+    });
+  }
+  items.push({ label: article.title });
+  return items;
+}
+
+export function buildBlogJsonLd({
+  description,
+}: {
+  description: string;
+}): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${SITE_URL}#blog`,
+    name: SITE_NAME,
+    description,
+    url: SITE_URL,
+    inLanguage: "fr-FR",
+    publisher: {
+      "@type": "Organization",
+      "@id": `${MAIN_SITE_URL}#organization`,
+      name: ORG_NAME,
+      url: MAIN_SITE_URL,
+    },
+  };
+}
+
+export function buildAboutPageJsonLd({
+  description,
+}: {
+  description: string;
+}): Record<string, unknown> {
+  const url = absoluteUrl("/a-propos");
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${url}#about`,
+    name: `À propos de ${ORG_NAME}`,
+    description,
+    url,
+    isPartOf: { "@id": `${SITE_URL}#website` },
+    about: { "@id": `${MAIN_SITE_URL}#organization` },
+    inLanguage: "fr-FR",
   };
 }
 
@@ -200,7 +472,7 @@ export function buildCollectionPageJsonLd({
     publisher: {
       "@type": "Organization",
       "@id": `${MAIN_SITE_URL}#organization`,
-      name: "AI Studios",
+      name: ORG_NAME,
       url: MAIN_SITE_URL,
     },
     inLanguage: "fr-FR",
@@ -241,6 +513,66 @@ export function buildArticleItemListJsonLd({
           url: article.author.url,
         },
       },
+    })),
+  };
+}
+
+export function buildArticleJsonLd(
+  article: Article,
+  categoryName?: string,
+): Record<string, unknown> {
+  const url = absoluteUrl(`/blog/${article.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: article.title,
+    description: article.description,
+    url,
+    image: {
+      "@type": "ImageObject",
+      url: absoluteUrl(article.image),
+      caption: article.imageAlt,
+    },
+    datePublished: article.date,
+    dateModified: article.updatedAt,
+    author: {
+      "@type": "Person",
+      name: article.author.name,
+      url: article.author.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${MAIN_SITE_URL}#organization`,
+      name: ORG_NAME,
+      url: MAIN_SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl(ORG_LOGO),
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    keywords: article.keywords?.join(", "),
+    articleSection: categoryName,
+    wordCount: article.content
+      .filter((b) => b.type === "p")
+      .reduce((n, b) => n + (b.type === "p" ? b.text.split(/\s+/).length : 0), 0),
+    timeRequired: `PT${article.readingTime}M`,
+    inLanguage: "fr-FR",
+  };
+}
+
+export function buildFaqJsonLd(items: ArticleFaqItem[]): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
     })),
   };
 }

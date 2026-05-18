@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { ArticleCard } from "@/components/ArticleCard";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getAllArticles } from "@/lib/articles";
 import { categories, getCategoryBySlug } from "@/lib/categories";
 import {
+  absoluteUrl,
   buildArticleItemListJsonLd,
+  buildBreadcrumbJsonLd,
   buildCollectionPageJsonLd,
   buildMetadata,
   noIndexFollowRobots,
@@ -16,7 +19,7 @@ export const revalidate = 3600;
 type BlogSearchParams = Promise<{ cat?: string }>;
 
 const blogDescription =
-  "Tous les guides AI Studios Blog : IA vidéo, IA image, prompting, storytelling, workflow et business créatif. Filtrez par catégorie.";
+  "Tous les guides IA créative : vidéo, image, prompting, storytelling, workflow et business. Méthode terrain, sans rendu générique.";
 
 export async function generateMetadata({
   searchParams,
@@ -28,13 +31,14 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: active
-      ? `Blog ${active.name} : guides IA créative`
-      : "Blog : guides IA créative, image, vidéo, cinéma",
+      ? `Blog ${active.name} : guides IA`
+      : "Blog : guides IA image, vidéo et cinéma",
     description: active
-      ? `${active.description} Retrouvez la page catégorie canonique dédiée pour explorer tous les guides.`
+      ? `${active.description} Explorez tous les guides sur la page catégorie dédiée.`
       : blogDescription,
     path: "/blog",
     robots: cat ? noIndexFollowRobots() : undefined,
+    appendCta: !cat,
   });
 }
 
@@ -57,11 +61,21 @@ export default async function BlogPage({
     name: active ? `Articles ${active.name}` : "Tous les articles AI Studios",
     path: "/blog",
   });
+  const breadcrumbLd = buildBreadcrumbJsonLd([
+    { name: "Accueil", url: absoluteUrl("/") },
+    { name: "Blog", url: absoluteUrl("/blog") },
+  ]);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-      <SEOJsonLd data={[pageJsonLd, listJsonLd]} />
-      <div className="max-w-3xl">
+      <SEOJsonLd data={[breadcrumbLd, pageJsonLd, listJsonLd]} />
+      <Breadcrumbs
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "Blog" },
+        ]}
+      />
+      <div className="mt-8 max-w-3xl">
         <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
           Blog
         </h1>

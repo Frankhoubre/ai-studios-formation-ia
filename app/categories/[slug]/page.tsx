@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: Props) {
   const cat = getCategoryBySlug(slug);
   if (!cat) return {};
   return buildMetadata({
-    title: `${cat.name} : articles et guides IA créative`,
-    description: `${cat.description} Articles AI Studios Blog, orientés méthode et livrables.`,
+    title: `${cat.name} : guides IA créative`,
+    description: `${cat.description} Guides pratiques, workflows et méthode AI Studios.`,
     path: `/categories/${slug}`,
     keywords: [cat.name, "IA créative", "AI Studios"],
   });

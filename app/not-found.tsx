@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { noIndexFollowRobots } from "@/lib/seo";
+import { buildMetadata, noIndexFollowRobots } from "@/lib/seo";
 
-export const metadata = {
-  title: "Page introuvable",
+export const metadata = buildMetadata({
+  title: "Page introuvable (404)",
+  description:
+    "Cette page n’existe plus sur AI Studios Blog. Retrouvez nos guides IA image, vidéo et cinéma sur le blog.",
+  path: "/404",
   robots: noIndexFollowRobots(),
-};
+  appendCta: false,
+});
 
 export default function NotFound() {
   return (
