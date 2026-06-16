@@ -13,7 +13,7 @@ export const personnageCoherentIa: Article = {
   updatedAt: "2026-04-18",
   readingTime: 17,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/personnage-coherent-ia.png",
+  image: "/images/articles/personnage-coherent-ia.webp",
   imageAlt:
     "Illustration abstraite cohérence de personnage et identité visuelle IA",
   keywords: [

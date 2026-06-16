@@ -13,7 +13,7 @@ export const videosIaJoliesMaisVides: Article = {
   updatedAt: "2026-04-18",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/videos-ia-jolies-mais-vides.png",
+  image: "/images/articles/videos-ia-jolies-mais-vides.webp",
   imageAlt:
     "Visuel abstrait storytelling pour l’article vidéos IA esthétiques mais vides",
   keywords: [

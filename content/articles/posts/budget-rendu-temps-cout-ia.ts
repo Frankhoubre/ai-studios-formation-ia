@@ -13,7 +13,7 @@ export const budgetRenduTempsCoutIa: Article = {
   updatedAt: "2026-05-04",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/budget-rendu-temps-cout-ia.png",
+  image: "/images/articles/budget-rendu-temps-cout-ia.webp",
   imageAlt:
     "Budget, rendu, temps: chiffrer une production IA sans se tromper avec workflow cinema realiste et rendu naturel",
   keywords: [

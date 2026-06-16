@@ -13,7 +13,7 @@ export const klingRunwayMontageAds: Article = {
   updatedAt: "2026-04-26",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/kling-runway-montage-ads.png",
+  image: "/images/articles/kling-runway-montage-ads.webp",
   imageAlt:
     "Kling et Runway: monter un spot de 20 secondes qui vend vraiment avec workflow cinema realiste et rendu naturel",
   keywords: [

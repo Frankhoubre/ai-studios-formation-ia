@@ -13,7 +13,7 @@ export const fluxLoraPubliciteLocale: Article = {
   updatedAt: "2026-04-25",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/flux-lora-publicite-locale.png",
+  image: "/images/articles/flux-lora-publicite-locale.webp",
   imageAlt:
     "Flux + LoRA: creer une publicite locale credible sans rendu plastique avec workflow cinema realiste et rendu naturel",
   keywords: [

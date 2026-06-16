@@ -13,7 +13,7 @@ export const storyboardShotlistNotionIa: Article = {
   updatedAt: "2026-05-01",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/storyboard-shotlist-notion-ia.png",
+  image: "/images/articles/storyboard-shotlist-notion-ia.webp",
   imageAlt:
     "Storyboard + shot list: méthode Notion pour tourner vite avec l'IA avec workflow cinema realiste et rendu naturel",
   keywords: [

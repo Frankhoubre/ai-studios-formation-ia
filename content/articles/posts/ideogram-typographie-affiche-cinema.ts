@@ -13,7 +13,7 @@ export const ideogramTypographieAfficheCinema: Article = {
   updatedAt: "2026-04-28",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/ideogram-typographie-affiche-cinema.png",
+  image: "/images/articles/ideogram-typographie-affiche-cinema.webp",
   imageAlt:
     "Ideogram: designer une affiche cinema lisible et premium avec workflow cinema realiste et rendu naturel",
   keywords: [

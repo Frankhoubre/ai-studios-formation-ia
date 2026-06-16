@@ -13,7 +13,7 @@ export const stabilitePersonnageMultiPlans: Article = {
   updatedAt: "2026-05-02",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/stabilite-personnage-multi-plans.png",
+  image: "/images/articles/stabilite-personnage-multi-plans.webp",
   imageAlt:
     "Stabilite personnage multi-plans: éviter les derives de visage avec workflow cinema realiste et rendu naturel",
   keywords: [

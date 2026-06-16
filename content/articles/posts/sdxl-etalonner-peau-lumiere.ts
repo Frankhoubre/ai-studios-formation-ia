@@ -13,7 +13,7 @@ export const sdxlEtalonnerPeauLumiere: Article = {
   updatedAt: "2026-04-27",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/sdxl-etalonner-peau-lumiere.png",
+  image: "/images/articles/sdxl-etalonner-peau-lumiere.webp",
   imageAlt:
     "SDXL: etalonner peau et lumiere pour un rendu cinema exploitable avec workflow cinema realiste et rendu naturel",
   keywords: [

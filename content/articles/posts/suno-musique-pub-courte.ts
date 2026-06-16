@@ -13,7 +13,7 @@ export const sunoMusiquePubCourte: Article = {
   updatedAt: "2026-04-29",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/suno-musique-pub-courte.png",
+  image: "/images/articles/suno-musique-pub-courte.webp",
   imageAlt:
     "Suno musique publicitaire courte avec workflow pro et rendu audio naturel",
   keywords: [

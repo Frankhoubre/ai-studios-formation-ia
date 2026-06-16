@@ -13,7 +13,7 @@ export const workflowClientBriefLivraisonIa: Article = {
   updatedAt: "2026-05-03",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/workflow-client-brief-livraison-ia.png",
+  image: "/images/articles/workflow-client-brief-livraison-ia.webp",
   imageAlt:
     "Workflow client IA: du brief a la livraison sans chaos avec workflow cinema realiste et rendu naturel",
   keywords: [

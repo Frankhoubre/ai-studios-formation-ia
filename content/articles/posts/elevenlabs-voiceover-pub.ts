@@ -13,7 +13,7 @@ export const elevenlabsVoiceoverPub: Article = {
   updatedAt: "2026-04-30",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
-  image: "/images/articles/elevenlabs-voiceover-pub.png",
+  image: "/images/articles/elevenlabs-voiceover-pub.webp",
   imageAlt:
     "ElevenLabs: enregistrer une voix-off pub qui tient le mix avec workflow cinema realiste et rendu naturel",
   keywords: [
