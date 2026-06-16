@@ -3,9 +3,9 @@
 """
 Génère un visuel hero cinématique pour un article du blog AI Studios.
 
-Style imposé : film still photoréaliste, angle dynamique, 50mm, bokeh,
-lumière motivée, grain 35mm, palette teal/amber, anti-look-IA. Sortie en
-WebP ~1K, idéale pour un hero d'article.
+Style imposé : film still photoréaliste, angle dynamique, 50mm/80mm, bokeh,
+lumière motivée, grain 35mm, palette teal/amber, anti-look-IA. Génération en
+2K native (Imagen 4) puis export WebP ~2048px, idéal pour un hero d'article.
 
 Pré-requis :
   - pip install --user google-genai
@@ -20,7 +20,7 @@ Exemples :
     --prompt "A focused creative in a dark studio reviewing images on a monitor"
 
   python scripts/generate-hero.py --slug mon-article \
-    --prompt "..." --pro          # qualité supérieure (plus cher)
+    --prompt "..." --ultra        # Imagen 4 Ultra (rendu + abouti, plus cher)
 """
 
 import argparse
@@ -33,8 +33,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_DIR = REPO_ROOT / "public" / "images" / "articles"
 
-FLASH_MODEL = "gemini-2.5-flash-image"        # ~0,039 $/image (défaut)
-PRO_MODEL = "gemini-3-pro-image-preview"      # ~0,13 $/image
+# Imagen 4 : génération photographique 2K native.
+IMAGEN_MODEL = "imagen-4.0-generate-001"        # standard (défaut)
+IMAGEN_ULTRA = "imagen-4.0-ultra-generate-001"  # ultra (plus cher, + abouti)
 
 # Style cinématique appliqué à chaque génération (cohérence de marque).
 STYLE = (
@@ -59,7 +60,7 @@ def load_dotenv() -> None:
             os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
 
 
-def generate(prompt: str, model: str, ratio: str) -> bytes:
+def generate(prompt: str, model: str, ratio: str, image_size: str) -> bytes:
     from google import genai
     from google.genai import types
 
@@ -68,19 +69,20 @@ def generate(prompt: str, model: str, ratio: str) -> bytes:
         sys.exit("Erreur : GEMINI_API_KEY absente (env ou .env).")
 
     client = genai.Client(api_key=api_key)
-    resp = client.models.generate_content(
+    resp = client.models.generate_images(
         model=model,
-        contents=[f"{prompt}\n\nStyle: {STYLE}"],
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE", "TEXT"],
-            image_config=types.ImageConfig(aspect_ratio=ratio),
+        prompt=f"{prompt}. {STYLE}",
+        config=types.GenerateImagesConfig(
+            number_of_images=1,
+            aspect_ratio=ratio,
+            image_size=image_size,
+            person_generation="ALLOW_ADULT",
+            safety_filter_level="BLOCK_LOW_AND_ABOVE",
         ),
     )
-    for part in resp.candidates[0].content.parts:
-        data = getattr(part, "inline_data", None)
-        if data and data.mime_type.startswith("image/"):
-            return data.data
-    sys.exit("Erreur : aucune image renvoyée par le modèle.")
+    if not resp.generated_images:
+        sys.exit("Erreur : aucune image renvoyée (filtre de sécurité ?).")
+    return resp.generated_images[0].image.image_bytes
 
 
 def to_webp(raw: bytes, dest: Path, width: int, quality: int) -> None:
@@ -102,14 +104,15 @@ def to_webp(raw: bytes, dest: Path, width: int, quality: int) -> None:
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="Génère un hero cinématique WebP.")
+    p = argparse.ArgumentParser(description="Génère un hero cinématique WebP 2K.")
     p.add_argument("--slug", help="slug de l'article (=> <slug>.webp)")
     p.add_argument("--out", help="chemin de sortie explicite (sinon dérivé du slug)")
     p.add_argument("--prompt", required=True, help="description de la scène")
-    p.add_argument("--pro", action="store_true", help="modèle Pro (plus cher)")
+    p.add_argument("--ultra", action="store_true", help="Imagen 4 Ultra (plus cher)")
     p.add_argument("--ratio", default="16:9", help="ratio (défaut 16:9)")
-    p.add_argument("--width", type=int, default=1024, help="largeur 1K par défaut")
-    p.add_argument("--quality", type=int, default=82, help="qualité WebP")
+    p.add_argument("--image-size", default="2K", help="résolution native (1K ou 2K)")
+    p.add_argument("--width", type=int, default=2048, help="largeur d'export (défaut 2K)")
+    p.add_argument("--quality", type=int, default=88, help="qualité WebP")
     args = p.parse_args()
 
     if args.out:
@@ -120,9 +123,9 @@ def main() -> None:
         sys.exit("Erreur : fournis --slug ou --out.")
 
     load_dotenv()
-    model = PRO_MODEL if args.pro else FLASH_MODEL
-    print(f"Modèle : {model} | ratio {args.ratio} | {args.width}px")
-    raw = generate(args.prompt, model, args.ratio)
+    model = IMAGEN_ULTRA if args.ultra else IMAGEN_MODEL
+    print(f"Modèle : {model} | ratio {args.ratio} | natif {args.image_size} | export {args.width}px")
+    raw = generate(args.prompt, model, args.ratio, args.image_size)
     to_webp(raw, dest, args.width, args.quality)
     size_kb = dest.stat().st_size / 1024
     try:
