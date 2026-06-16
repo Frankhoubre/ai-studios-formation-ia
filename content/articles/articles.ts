@@ -23,6 +23,9 @@ import { workflowClientBriefLivraisonIa } from "@/content/articles/posts/workflo
 import { budgetRenduTempsCoutIa } from "@/content/articles/posts/budget-rendu-temps-cout-ia";
 import { promptNegatifIaImagesPropres } from "@/content/articles/posts/prompt-negatif-ia-images-propres";
 import { raccordContinuitePlansIa } from "@/content/articles/posts/raccord-continuite-plans-ia";
+import { promptStructure4BlocsIa } from "@/content/articles/posts/prompt-structure-4-blocs-ia";
+import { hook3SecondesVideoIa } from "@/content/articles/posts/hook-3-secondes-video-ia";
+import { compositionCadrageImageIa } from "@/content/articles/posts/composition-cadrage-image-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -33,6 +36,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  compositionCadrageImageIa,
+  hook3SecondesVideoIa,
+  promptStructure4BlocsIa,
   raccordContinuitePlansIa,
   promptNegatifIaImagesPropres,
   budgetRenduTempsCoutIa,
