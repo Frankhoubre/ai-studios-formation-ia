@@ -69,13 +69,12 @@ export default function MentionsLegalesPage() {
         <br />
         Contact :{" "}
         <a
-          href="mailto:contact@ai-studios.fr"
+          href="mailto:hello@businessdynamite.xyz"
           className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
         >
-          contact@ai-studios.fr
+          hello@businessdynamite.xyz
         </a>
-        {" "}
-        <span className="text-text-soft">(adresse e-mail à confirmer)</span>.
+        .
       </p>
 
       <h2 className="mt-10 font-display text-2xl font-semibold text-text">
