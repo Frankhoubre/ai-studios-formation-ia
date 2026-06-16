@@ -21,6 +21,7 @@ import { storyboardShotlistNotionIa } from "@/content/articles/posts/storyboard-
 import { stabilitePersonnageMultiPlans } from "@/content/articles/posts/stabilite-personnage-multi-plans";
 import { workflowClientBriefLivraisonIa } from "@/content/articles/posts/workflow-client-brief-livraison-ia";
 import { budgetRenduTempsCoutIa } from "@/content/articles/posts/budget-rendu-temps-cout-ia";
+import { promptNegatifIaImagesPropres } from "@/content/articles/posts/prompt-negatif-ia-images-propres";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -31,6 +32,7 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  promptNegatifIaImagesPropres,
   budgetRenduTempsCoutIa,
   workflowClientBriefLivraisonIa,
   stabilitePersonnageMultiPlans,
