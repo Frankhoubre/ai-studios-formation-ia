@@ -26,6 +26,9 @@ import { raccordContinuitePlansIa } from "@/content/articles/posts/raccord-conti
 import { promptStructure4BlocsIa } from "@/content/articles/posts/prompt-structure-4-blocs-ia";
 import { hook3SecondesVideoIa } from "@/content/articles/posts/hook-3-secondes-video-ia";
 import { compositionCadrageImageIa } from "@/content/articles/posts/composition-cadrage-image-ia";
+import { structure3ActesVideoIa } from "@/content/articles/posts/structure-3-actes-video-ia";
+import { decrireLumierePromptIa } from "@/content/articles/posts/decrire-lumiere-prompt-ia";
+import { portfolioCreationsIaQuiConvertit } from "@/content/articles/posts/portfolio-creations-ia-qui-convertit";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -36,6 +39,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  portfolioCreationsIaQuiConvertit,
+  decrireLumierePromptIa,
+  structure3ActesVideoIa,
   compositionCadrageImageIa,
   hook3SecondesVideoIa,
   promptStructure4BlocsIa,
