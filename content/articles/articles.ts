@@ -22,6 +22,7 @@ import { stabilitePersonnageMultiPlans } from "@/content/articles/posts/stabilit
 import { workflowClientBriefLivraisonIa } from "@/content/articles/posts/workflow-client-brief-livraison-ia";
 import { budgetRenduTempsCoutIa } from "@/content/articles/posts/budget-rendu-temps-cout-ia";
 import { promptNegatifIaImagesPropres } from "@/content/articles/posts/prompt-negatif-ia-images-propres";
+import { raccordContinuitePlansIa } from "@/content/articles/posts/raccord-continuite-plans-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -32,6 +33,7 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  raccordContinuitePlansIa,
   promptNegatifIaImagesPropres,
   budgetRenduTempsCoutIa,
   workflowClientBriefLivraisonIa,
