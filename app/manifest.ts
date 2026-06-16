@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import {
-  DEFAULT_SOCIAL_IMAGE,
+  ORG_LOGO,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/constants";
@@ -18,7 +18,7 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "fr",
     icons: [
       {
-        src: DEFAULT_SOCIAL_IMAGE,
+        src: ORG_LOGO,
         sizes: "512x512",
         type: "image/png",
         purpose: "any",

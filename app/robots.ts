@@ -7,7 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/formation-ia", "/politique-cookies"],
+        // Pas de disallow ici : les pages à désindexer (/formation-ia,
+        // /politique-cookies, /mentions-legales) portent une balise noindex.
+        // Bloquer leur crawl empêcherait Google de lire ce noindex.
+        disallow: ["/api/"],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

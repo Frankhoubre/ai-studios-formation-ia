@@ -1,7 +1,9 @@
 export const SITE_URL = "https://blog.ai-studios.fr";
 export const SITE_NAME = "AI Studios Blog";
-export const DEFAULT_SOCIAL_IMAGE = "/images/articles/formation-ia-video.png";
-export const ORG_LOGO = "/images/articles/formation-ia-video.png";
+/** Image sociale Open Graph / Twitter (ratio 1.91:1, 1200×630). */
+export const DEFAULT_SOCIAL_IMAGE = "/images/og-default.png";
+/** Logo carré pour les icônes et le JSON-LD Organization (512×512). */
+export const ORG_LOGO = "/images/logo.png";
 export const FORMATION_FREE_URL =
   "https://www.ai-studios.fr/formation-ia-gratuite-video";
 /** Communauté privée AI Studios sur Skool */
@@ -11,7 +13,8 @@ export const YOUTUBE_URL = "https://www.youtube.com/@BusinessDynamite";
 
 export const ORG_NAME = "AI Studios";
 export const AUTHOR_NAME = "Frank Houbre";
-export const AUTHOR_URL = MAIN_SITE_URL;
+/** Page auteur on-site (E-E-A-T) : référencée comme Person.url dans le JSON-LD. */
+export const AUTHOR_URL = `${SITE_URL}/a-propos`;
 
 /** CTA réutilisé en fin de meta descriptions indexables */
 export const SEO_CTA = "Accédez à la formation gratuite.";

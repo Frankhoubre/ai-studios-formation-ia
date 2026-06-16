@@ -50,7 +50,11 @@ export function withSeoCta(
     return truncateAtWord(base, DESCRIPTION_MAX);
   }
   const spacer = base.endsWith(".") ? " " : ". ";
-  return truncateAtWord(`${base}${spacer}${ctaFragment}`, DESCRIPTION_MAX);
+  const withCta = `${base}${spacer}${ctaFragment}`;
+  // N'ajoute le CTA que s'il tient entièrement : sinon on garde la
+  // description seule plutôt que de tronquer le CTA en plein milieu.
+  if (withCta.length <= DESCRIPTION_MAX) return withCta;
+  return truncateAtWord(base, DESCRIPTION_MAX);
 }
 
 export function resolvePageTitle(
@@ -197,7 +201,9 @@ export function articleMetadata(article: Article): Metadata {
   const ogImage = article.image;
 
   return {
-    title: article.title,
+    // Titre absolu déjà tronqué à 60 car. (marque incluse) pour éviter
+    // que le template racine "%s | AI Studios Blog" ne rallonge le <title>.
+    title: { absolute: ogTitle },
     description: metaDescription,
     keywords: article.keywords,
     alternates: { canonical: url },
@@ -276,10 +282,6 @@ export function buildRootMetadata(): Metadata {
     },
     twitter: baseTwitter(DEFAULT_TITLE, DEFAULT_DESCRIPTION, DEFAULT_SOCIAL_IMAGE),
     robots: indexableRobots,
-    other: {
-      "og:image:width": "1200",
-      "og:image:height": "630",
-    },
   };
 }
 
@@ -428,6 +430,22 @@ export function buildAboutPageJsonLd({
     isPartOf: { "@id": `${SITE_URL}#website` },
     about: { "@id": `${MAIN_SITE_URL}#organization` },
     inLanguage: "fr-FR",
+  };
+}
+
+export function buildPersonJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${AUTHOR_URL}#person`,
+    name: AUTHOR_NAME,
+    url: AUTHOR_URL,
+    image: absoluteUrl(ORG_LOGO),
+    jobTitle: "Formateur IA créative",
+    description:
+      "Fondateur d’AI Studios. Forme les créateurs à un usage exigeant de l’IA image et vidéo : méthode, workflows et qualité cinématographique.",
+    worksFor: { "@id": `${MAIN_SITE_URL}#organization` },
+    sameAs: [...ORG_SAME_AS],
   };
 }
 

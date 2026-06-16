@@ -86,6 +86,14 @@ export function Footer() {
                   Politique cookies
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/mentions-legales"
+                  className="transition hover:text-brand-bright"
+                >
+                  Mentions légales
+                </Link>
+              </li>
               <li className="text-text-soft">
                 <ManageCookiesLink />
               </li>

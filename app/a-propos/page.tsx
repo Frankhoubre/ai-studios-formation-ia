@@ -2,12 +2,19 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
-import { FORMATION_FREE_URL } from "@/lib/constants";
+import {
+  AUTHOR_NAME,
+  FORMATION_FREE_URL,
+  MAIN_SITE_URL,
+  SKOOL_COMMUNITY_URL,
+  YOUTUBE_URL,
+} from "@/lib/constants";
 import {
   absoluteUrl,
   buildAboutPageJsonLd,
   buildBreadcrumbJsonLd,
   buildMetadata,
+  buildPersonJsonLd,
 } from "@/lib/seo";
 
 const aboutDescription =
@@ -25,10 +32,11 @@ export default function AboutPage() {
     { name: "À propos", url: absoluteUrl("/a-propos") },
   ]);
   const aboutLd = buildAboutPageJsonLd({ description: aboutDescription });
+  const personLd = buildPersonJsonLd();
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 md:px-6 md:py-16">
-      <SEOJsonLd data={[breadcrumbLd, aboutLd]} />
+      <SEOJsonLd data={[breadcrumbLd, aboutLd, personLd]} />
       <Breadcrumbs
         items={[
           { label: "Accueil", href: "/" },
@@ -75,6 +83,50 @@ export default function AboutPage() {
           Formation gratuite
         </a>
       </div>
+      <section className="mt-16 rounded-2xl border border-border-subtle bg-card/50 p-6 md:p-8">
+        <h2 className="font-display text-2xl font-semibold text-text">
+          L’auteur : {AUTHOR_NAME}
+        </h2>
+        <p className="mt-4 text-text-muted leading-relaxed">
+          {AUTHOR_NAME} est le fondateur d’AI Studios. Il forme des créateurs à
+          un usage exigeant de l’IA image et vidéo, en partageant des workflows
+          testés sur de vrais projets plutôt que des « prompts magiques ». Les
+          guides de ce blog sont écrits depuis cette pratique de terrain.
+        </p>
+        <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          <li>
+            <a
+              href={MAIN_SITE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+            >
+              Site AI Studios
+            </a>
+          </li>
+          <li>
+            <a
+              href={YOUTUBE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+            >
+              Chaîne YouTube
+            </a>
+          </li>
+          <li>
+            <a
+              href={SKOOL_COMMUNITY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+            >
+              Communauté Skool
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <div className="mt-16">
         <CTASection />
       </div>
