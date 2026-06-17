@@ -132,8 +132,55 @@ export const midjourneyV81MiseAJour: Article = {
     },
     {
       type: "h2",
+      id: "tester-mise-a-jour",
+      text: "Comment tester une mise à jour sur ton propre workflow",
+    },
+    {
+      type: "p",
+      text: "Quel que soit le modèle du moment, la bonne réaction face à une nouvelle version n'est pas de tout changer ni de tout ignorer, mais de tester méthodiquement sur ce que tu produis vraiment. Les exemples spectaculaires montrés au lancement sont sélectionnés pour impressionner, ils ne disent rien de l'effet sur tes sujets, ton style, tes contraintes. La seule évaluation qui compte est la tienne, faite sur tes propres prompts.",
+    },
+    {
+      type: "p",
+      text: "Procède simplement : reprends trois à cinq de tes prompts les plus utilisés, ceux qui constituent le cœur de ta production, et génère-les sur la nouvelle version. Compare côte à côte avec tes anciens rendus archivés. Tu repères ainsi d'un coup d'œil ce qui s'améliore, ce qui dérive, et ce qui demande un ajustement de formulation. Cette petite batterie de tests personnels vaut mille démonstrations officielles, parce qu'elle répond à la seule question qui t'importe : est-ce que mes images, à moi, sont meilleures ?",
+    },
+    {
+      type: "p",
+      text: "Garde aussi tes versions archivées. Un changement de modèle peut, sur certains styles précis, te plaire moins que l'ancien rendu. Avoir une trace de ce qui marchait te permet de comparer honnêtement plutôt que de te fier à ton souvenir, qui embellit ou noircit selon l'humeur.",
+    },
+    {
+      type: "h2",
+      id: "vitesse-ou-definition",
+      text: "Vitesse ou définition : choisir selon le moment",
+    },
+    {
+      type: "p",
+      text: "Un mode rapide et un mode haute définition ne servent pas le même moment de ton travail, et vouloir tout faire en qualité maximale est une erreur de débutant qui coûte du temps pour rien. En phase d'exploration, quand tu cherches une direction, une idée, une composition, la vitesse prime largement sur la définition : tu veux voir beaucoup d'options vite, et la résolution n'a aucune importance puisque tu vas jeter la plupart de ces images. Réserver la haute définition à cette étape, c'est gaspiller du temps de calcul sur des brouillons.",
+    },
+    {
+      type: "p",
+      text: "À l'inverse, une fois la direction trouvée et le visuel validé, passe en haute définition pour la finalisation, là où la résolution se verra vraiment, à l'agrandissement, à l'impression, sur grand écran. Cette logique, explorer vite puis finaliser net, structure une production efficace quel que soit l'outil. Le bon réflexe n'est pas de choisir un mode une fois pour toutes, mais de basculer de l'un à l'autre selon l'étape où tu te trouves.",
+    },
+    {
+      type: "h2",
+      id: "ce-qui-ne-change-pas",
+      text: "Ce qu'une nouvelle version ne change jamais",
+    },
+    {
+      type: "p",
+      text: "Il est facile de croire qu'un modèle plus puissant va compenser un prompt faible ou une intention floue. C'est faux, et c'est le piège récurrent à chaque nouvelle version. Un meilleur modèle suit mieux tes instructions, mais si tes instructions sont vagues, il suivra mieux ton flou. La qualité d'une image dépend toujours d'abord de la clarté de ton intention, de la justesse de ton prompt, de ta capacité à décrire une scène plutôt qu'à empiler des adjectifs. Ces fondamentaux ne sont pas rendus obsolètes par une montée de version, ils en deviennent au contraire plus rentables.",
+    },
+    {
+      type: "p",
+      text: "De même, ta méthode de sélection, de cohérence sur une série, d'itération réglage par réglage, reste valable d'un modèle à l'autre. C'est une bonne nouvelle : l'essentiel de ton savoir-faire est transférable et ne se périme pas à chaque sortie. Investis dans ta méthode plutôt que dans la course au dernier modèle, et chaque nouvelle version devient un bonus qui amplifie un travail déjà solide, au lieu d'une béquille censée sauver un travail bâclé.",
+    },
+    {
+      type: "p",
+      text: "> Pro Tip : ne refonds pas toute ta bibliothèque de prompts le jour d'une mise à jour. Teste, note les écarts, ajuste seulement ce qui en a besoin. Une nouvelle version est une raison d'affiner, pas de tout recommencer.",
+    },
+    {
+      type: "h2",
       id: "faq",
-      text: "Frequently Asked Questions (FAQ)",
+      text: "Questions fréquentes",
     },
     {
       type: "h3",

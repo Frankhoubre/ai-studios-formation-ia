@@ -124,8 +124,55 @@ export const runwaySeedance2FastAleph2: Article = {
     },
     {
       type: "h2",
+      id: "keyframes-tendance",
+      text: "Le contrôle par keyframes, la vraie tendance de fond",
+    },
+    {
+      type: "p",
+      text: "Au-delà des noms de modèles et des numéros de version, la direction de fond de la vidéo IA est claire : on passe du prompt qui décrit à des points d'ancrage qui imposent. Un keyframe, c'est exactement ça, une image de référence placée à un moment précis de la séquence, qui dit à l'outil non plus seulement quoi montrer, mais à quel instant. C'est la différence entre demander vaguement un mouvement et dicter où la scène doit en être au début, au milieu et à la fin.",
+    },
+    {
+      type: "p",
+      text: "Cette tendance compte parce qu'elle répond au défaut historique de la vidéo IA, l'imprévisibilité. Tant que tu ne fais que décrire, l'outil interprète, et tu subis le résultat. Dès que tu poses des keyframes, tu reprends la main sur la trajectoire du plan. C'est ce qui rapproche la génération d'un vrai travail de réalisation, où l'on décide de la progression, plutôt que d'un tirage où l'on espère un bon résultat. Comprendre cette logique te servira quel que soit l'outil, car elle s'impose partout.",
+    },
+    {
+      type: "h2",
+      id: "generer-vs-editer",
+      text: "Générer vite et éditer : deux réflexes complémentaires",
+    },
+    {
+      type: "p",
+      text: "Un modèle qui génère vite et un modèle qui édite une vidéo existante ne s'opposent pas, ils se complètent dans une chaîne de production saine. Le premier sert l'exploration : tu produis beaucoup de plans courts, vite, pour trouver une direction sans te ruiner en temps de calcul. Le second sert le raffinement : une fois un plan presque bon, tu le corriges sans le régénérer entièrement, en gardant ce qui marche.",
+    },
+    {
+      type: "p",
+      text: "C'est un changement de mentalité important. Le réflexe du débutant face à un plan imparfait est de tout relancer en espérant mieux, ce qui fait perdre les bonnes parties au passage et transforme la production en loterie. Le réflexe mûr est d'éditer, de ne toucher qu'au défaut précis, comme on retouche un montage plutôt que de retourner toute une scène. Quand tu disposes des deux capacités, génération rapide pour explorer et édition ciblée pour finaliser, tu travailles enfin de façon itérative et maîtrisée, au lieu de subir le hasard à chaque tentative.",
+    },
+    {
+      type: "p",
+      text: "Un exemple concret rend la complémentarité évidente. Imagine que tu produises un plan de dix secondes : un personnage marche vers la caméra, mais à la fin son visage se déforme légèrement. Avec le seul réflexe de génération, tu relances tout le plan en espérant que, cette fois, le visage tienne, et tu perds au passage le début qui était parfait. Avec l'édition ciblée, tu gardes les huit premières secondes intactes et tu ne corriges que la fin problématique, en posant un keyframe propre à l'endroit qui dérape. Tu obtiens le même résultat en une fraction du temps, sans sacrifier ce qui marchait déjà. C'est exactement la différence entre subir le hasard et piloter une production, et c'est ce changement de réflexe, bien plus que la nouveauté technique, qui fait progresser un créateur.",
+    },
+    {
+      type: "h2",
+      id: "integrer-sans-dependre",
+      text: "Intégrer une nouveauté sans en devenir dépendant",
+    },
+    {
+      type: "p",
+      text: "Le rythme des sorties d'outils vidéo est étourdissant, et il est facile de passer son temps à courir après chaque nouveauté au lieu de produire. La bonne posture est d'adopter une nouveauté seulement quand elle résout un problème concret de ta chaîne, mieux que ce que tu as déjà. Si la génération rapide t'aide à explorer plus, intègre-la. Si l'édition par prompt te fait gagner un temps réel en correction, intègre-la. Sinon, note-la et continue avec tes outils éprouvés.",
+    },
+    {
+      type: "p",
+      text: "Surtout, ne mise jamais toute ta production sur une seule fonction d'un seul outil. Les modèles changent, les API évoluent, ce qui est exclusif aujourd'hui sera courant demain. Ce qui dure, c'est ta méthode : penser en keyframes, explorer puis finaliser, éditer plutôt que tout refaire. Ces réflexes sont transférables d'un outil à l'autre et te rendent indépendant du modèle du moment. Investis dedans, et chaque nouveauté devient un bonus que tu exploites, au lieu d'une dépendance qui te fragilise quand l'outil change ses conditions.",
+    },
+    {
+      type: "p",
+      text: "> Pro Tip : tiens une courte liste des problèmes récurrents de ta production, plans instables, corrections coûteuses, exploration lente. Quand une nouveauté sort, confronte-la à cette liste. Si elle coche une case, teste-la ; sinon, ignore-la sans culpabiliser. Ta liste de besoins doit piloter tes outils, pas l'inverse.",
+    },
+    {
+      type: "h2",
       id: "faq",
-      text: "Frequently Asked Questions (FAQ)",
+      text: "Questions fréquentes",
     },
     {
       type: "h3",
