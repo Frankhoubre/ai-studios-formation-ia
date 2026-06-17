@@ -39,6 +39,8 @@ import { stableDiffusionDebutantDemarrer } from "@/content/articles/posts/stable
 import { creerVideoIaGratuit } from "@/content/articles/posts/creer-video-ia-gratuit";
 import { veo3GenererVideosIa } from "@/content/articles/posts/veo-3-generer-videos-ia";
 import { klingAiVideosCinematiques } from "@/content/articles/posts/kling-ai-videos-cinematiques";
+import { videoCourteIaTiktokReelsShorts } from "@/content/articles/posts/video-courte-ia-tiktok-reels-shorts";
+import { filmIaGratuitCourtMetrage } from "@/content/articles/posts/film-ia-gratuit-court-metrage";
 import { runwayGuideVideoIa } from "@/content/articles/posts/runway-guide-video-ia";
 import { soraOpenaiCreerVideos } from "@/content/articles/posts/sora-openai-creer-videos";
 import { meilleursSitesVideoIaGratuits } from "@/content/articles/posts/meilleurs-sites-video-ia-gratuits";
@@ -56,6 +58,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  videoCourteIaTiktokReelsShorts,
+  filmIaGratuitCourtMetrage,
   klingAiVideosCinematiques,
   runwayGuideVideoIa,
   veo3GenererVideosIa,
