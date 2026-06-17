@@ -24,8 +24,8 @@ export const hook3SecondesVideoIa: Article = {
     "rétention vidéo courte",
   ],
   relatedSlugs: [
-    "creer-reel-ia-video-courte-comprehensible",
-    "ecrire-micro-scene-avant-generer-video-ia",
+    "video-courte-ia-tiktok-reels-shorts",
+    "creer-storyboard-ia",
     "raccord-continuite-plans-ia",
   ],
   faq: [
@@ -93,7 +93,7 @@ export const hook3SecondesVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Tout ça se décide avant la génération, dans l'écriture de ta scène. Pose ta micro-scène d'abord, avec [notre méthode pour écrire une micro-scène avant de générer une vidéo IA](/blog/ecrire-micro-scene-avant-generer-video-ia), c'est là que ton hook prend racine.",
+      text: "Tout ça se décide avant la génération, dans l'écriture de ta scène. Pose ta micro-scène d'abord, avec [notre méthode pour créer un storyboard IA](/blog/creer-storyboard-ia), c'est là que ton hook prend racine.",
     },
     {
       type: "h3",
@@ -180,7 +180,7 @@ export const hook3SecondesVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Si tu publies déjà, regarde ta courbe de rétention. La chute dans les toutes premières secondes est le diagnostic le plus clair qui soit. Une grosse perte immédiate signale un hook faible, pas un mauvais contenu. Pour comprendre la logique d'une vidéo courte compréhensible de bout en bout, croise ça avec [notre guide pour créer un reel IA clair](/blog/creer-reel-ia-video-courte-comprehensible).",
+      text: "Si tu publies déjà, regarde ta courbe de rétention. La chute dans les toutes premières secondes est le diagnostic le plus clair qui soit. Une grosse perte immédiate signale un hook faible, pas un mauvais contenu. Pour comprendre la logique d'une vidéo courte compréhensible de bout en bout, croise ça avec [notre guide de la vidéo courte IA pour TikTok, Reels et Shorts](/blog/video-courte-ia-tiktok-reels-shorts).",
     },
     {
       type: "p",

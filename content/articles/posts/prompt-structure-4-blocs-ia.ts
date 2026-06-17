@@ -25,8 +25,8 @@ export const promptStructure4BlocsIa: Article = {
   ],
   relatedSlugs: [
     "prompt-image-ia-cinema",
-    "prompt-court-ou-long-ia-image",
     "prompt-negatif-ia-images-propres",
+    "decrire-lumiere-prompt-ia",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const promptStructure4BlocsIa: Article = {
     },
     {
       type: "p",
-      text: "Si tu veux comprendre la mécanique fine derrière la longueur et le dosage des prompts, croise cette méthode avec [notre guide sur le prompt court ou long en image IA](/blog/prompt-court-ou-long-ia-image). La structure et la concision se renforcent.",
+      text: "Si tu veux comprendre la mécanique fine derrière la longueur et le dosage des prompts, croise cette méthode avec [notre guide du prompt négatif pour des images propres](/blog/prompt-negatif-ia-images-propres). La structure et la concision se renforcent.",
     },
     {
       type: "h3",

@@ -24,9 +24,9 @@ export const raccordContinuitePlansIa: Article = {
     "enchaîner deux plans IA",
   ],
   relatedSlugs: [
-    "ecrire-micro-scene-avant-generer-video-ia",
-    "stabilite-personnage-multi-plans",
     "creer-storyboard-ia",
+    "stabilite-personnage-multi-plans",
+    "prolonger-plan-ia-au-dela-5-secondes",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const raccordContinuitePlansIa: Article = {
     },
     {
       type: "p",
-      text: "Avant même de générer, pose ta micro-scène à plat. Cette étape est détaillée dans [notre méthode pour écrire une micro-scène avant de générer une vidéo IA](/blog/ecrire-micro-scene-avant-generer-video-ia), et c'est elle qui te dit où tes raccords vont se jouer.",
+      text: "Avant même de générer, pose ta micro-scène à plat. Cette étape est détaillée dans [notre méthode pour créer un storyboard IA](/blog/creer-storyboard-ia), et c'est elle qui te dit où tes raccords vont se jouer.",
     },
     {
       type: "h3",

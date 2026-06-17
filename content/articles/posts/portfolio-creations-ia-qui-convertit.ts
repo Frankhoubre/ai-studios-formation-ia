@@ -24,9 +24,9 @@ export const portfolioCreationsIaQuiConvertit: Article = {
     "portfolio qui convertit",
   ],
   relatedSlugs: [
-    "vendre-creations-ia-debutant-precautions",
     "workflow-client-brief-livraison-ia",
     "budget-rendu-temps-cout-ia",
+    "creer-publicite-ia",
   ],
   faq: [
     {
@@ -110,7 +110,7 @@ export const portfolioCreationsIaQuiConvertit: Article = {
     },
     {
       type: "p",
-      text: "Cette présentation par la preuve va de pair avec la transparence sur ta démarche. Sur ce que tu peux montrer et les précautions à prendre quand on vend des créations IA, appuie-toi sur [notre guide pour vendre ses créations IA en débutant](/blog/vendre-creations-ia-debutant-precautions).",
+      text: "Cette présentation par la preuve va de pair avec la transparence sur ta démarche. Sur ce que tu peux montrer et les précautions à prendre quand on vend des créations IA, appuie-toi sur [notre guide du workflow client, du brief à la livraison](/blog/workflow-client-brief-livraison-ia).",
     },
     {
       type: "h2",

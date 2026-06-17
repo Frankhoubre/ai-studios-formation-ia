@@ -25,8 +25,8 @@ export const corrigerMainsYeuxDefautsAnatomiquesIa: Article = {
   ],
   relatedSlugs: [
     "ia-image-realiste",
-    "erreurs-debutant-image-ia-avant-prompt",
     "prompt-negatif-ia-images-propres",
+    "inpainting-ia-retoucher-image",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const corrigerMainsYeuxDefautsAnatomiquesIa: Article = {
     },
     {
       type: "p",
-      text: "Ces défauts font partie des erreurs qui ruinent une image avant même qu'on en parle. Pour une vue d'ensemble des pièges du débutant, croise ce guide avec [nos erreurs de débutant qui ruinent les images IA](/blog/erreurs-debutant-image-ia-avant-prompt).",
+      text: "Ces défauts font partie des erreurs qui ruinent une image avant même qu'on en parle. Pour une vue d'ensemble des pièges du débutant, croise ce guide avec [notre guide du prompt négatif pour des images propres](/blog/prompt-negatif-ia-images-propres).",
     },
     {
       type: "h3",

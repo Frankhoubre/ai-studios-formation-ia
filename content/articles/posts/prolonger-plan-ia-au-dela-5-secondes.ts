@@ -25,8 +25,8 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
   ],
   relatedSlugs: [
     "raccord-continuite-plans-ia",
-    "mouvement-camera-ia-video-termes-simples",
-    "premier-projet-ia-video-10-secondes-5-plans",
+    "runway-guide-video-ia",
+    "structure-3-actes-video-ia",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
     },
     {
       type: "p",
-      text: "Avant même de prolonger, demande-toi si ton plan doit durer. Souvent, une coupe vers un autre angle sert mieux la scène. Cette logique de découpage est détaillée dans [notre exemple de séquence de 10 secondes en 5 plans](/blog/premier-projet-ia-video-10-secondes-5-plans).",
+      text: "Avant même de prolonger, demande-toi si ton plan doit durer. Souvent, une coupe vers un autre angle sert mieux la scène. Cette logique de découpage est détaillée dans [notre guide de la structure en 3 actes d'une vidéo IA](/blog/structure-3-actes-video-ia).",
     },
     {
       type: "h3",
@@ -162,7 +162,7 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
     },
     {
       type: "p",
-      text: "La maîtrise du mouvement est centrale dans cette lutte contre le morphing. Pour parler le bon langage de mouvement de caméra et le garder sous contrôle, croise cette méthode avec [notre guide des mouvements de caméra en termes simples](/blog/mouvement-camera-ia-video-termes-simples).",
+      text: "La maîtrise du mouvement est centrale dans cette lutte contre le morphing. Pour parler le bon langage de mouvement de caméra et le garder sous contrôle, croise cette méthode avec [notre guide vidéo IA avec Runway](/blog/runway-guide-video-ia).",
     },
     {
       type: "p",

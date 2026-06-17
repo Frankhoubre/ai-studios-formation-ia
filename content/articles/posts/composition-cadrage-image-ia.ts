@@ -26,7 +26,7 @@ export const compositionCadrageImageIa: Article = {
   relatedSlugs: [
     "ia-image-realiste",
     "prompt-image-ia-cinema",
-    "cadrages-utiles-ia-video-plan-large-gros-plan-detail",
+    "images-cinema-ia-scene-film",
   ],
   faq: [
     {
@@ -140,7 +140,7 @@ export const compositionCadrageImageIa: Article = {
     },
     {
       type: "p",
-      text: "Cette grille relie chaque cadrage à une intention. Tu ne choisis plus un plan parce qu'il est joli, mais parce qu'il fait ressentir ce que tu veux. C'est la même grammaire qu'en vidéo, détaillée dans [notre guide des cadrages utiles](/blog/cadrages-utiles-ia-video-plan-large-gros-plan-detail), et elle s'applique aussi bien à l'image fixe.",
+      text: "Cette grille relie chaque cadrage à une intention. Tu ne choisis plus un plan parce qu'il est joli, mais parce qu'il fait ressentir ce que tu veux. C'est la même grammaire qu'en vidéo, détaillée dans [notre guide des images de cinéma IA](/blog/images-cinema-ia-scene-film), et elle s'applique aussi bien à l'image fixe.",
     },
     {
       type: "h3",
