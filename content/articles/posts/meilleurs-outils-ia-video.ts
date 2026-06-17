@@ -60,6 +60,11 @@ export const meilleursOutilsIaVideo: Article = {
       text: "Vous voulez une liste, un classement, un gagnant. Je vous propose autre chose : une carte. Parce qu’en 2026, le bon outil dépend de votre chaîne, de votre budget, de votre tolérance au hasard, et du type de plan que vous essayez de tenir. Les articles « meilleur outil » vieillissent vite et mentent souvent par omission. Ici, on parle familles : à quoi ça sert, où ça se casse, comment ça s’insère entre [formation IA vidéo](/blog/formation-ia-video) et le montage final.",
     },
     {
+      type: "youtube",
+      videoId: "JeUdszUqRkE",
+      title: "VEO 3.1 GRATUIT & ILLIMITÉ (offert par Google)",
+    },
+    {
       type: "h2",
       id: "image-to-video",
       text: "Image vers vidéo : quand vous avez déjà une image qui tient",

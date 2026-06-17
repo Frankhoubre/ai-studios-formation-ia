@@ -1,6 +1,8 @@
 import Image from "next/image";
 import type { ArticleBlock } from "@/lib/types/article";
 import { RichParagraph } from "@/components/RichParagraph";
+import { LiteYouTube } from "@/components/LiteYouTube";
+import { YOUTUBE_URL } from "@/lib/constants";
 
 export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
   return (
@@ -125,6 +127,24 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
                   <RichParagraph text={block.caption} />
                 </figcaption>
               ) : null}
+            </figure>
+          );
+        }
+        if (block.type === "youtube") {
+          return (
+            <figure key={`${block.videoId}-${i}`} className="my-10">
+              <LiteYouTube videoId={block.videoId} title={block.title} />
+              <figcaption className="mt-3 text-sm leading-relaxed text-text-muted">
+                Vidéo : {block.title} —{" "}
+                <a
+                  href={YOUTUBE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-bright underline decoration-white/20 underline-offset-[3px] transition hover:text-accent-rose"
+                >
+                  chaîne Business Dynamite
+                </a>
+              </figcaption>
             </figure>
           );
         }

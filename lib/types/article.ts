@@ -12,6 +12,7 @@ export type ArticleBlock =
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string }
+  | { type: "youtube"; videoId: string; title: string }
   | { type: "quote"; text: string; cite?: string }
   | ArticleTable;
 

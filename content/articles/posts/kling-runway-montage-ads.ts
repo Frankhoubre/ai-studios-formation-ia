@@ -72,6 +72,11 @@ export const klingRunwayMontageAds: Article = {
       type: "p",
       text: "Voila la promesse, tu repars avec une méthode débutant friendly, mais pro dans son exécution. On parle vrais clics, vrais réglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
     },
+    {
+      type: "youtube",
+      videoId: "xE5ZXS53Akg",
+      title: "Google Omni change complètement le montage vidéo avec l'IA",
+    },
     { type: "h2", id: "core-concepts", text: "Core Concepts: ce qui se passe vraiment quand un rendu parait cinematographique" },
     { type: "h3", id: "intent-avant-style", text: "L'intention avant le style" },
     {

@@ -61,6 +61,11 @@ export const creerFilmIa: Article = {
       text: "Vous avez vu des extraits incroyables en ligne. Vous vous dites que le film est à portée de main. Puis vous essayez, et vous obtenez une succession de moments forts qui ne se soutiennent pas. Ce n’est pas parce que vous n’avez pas le bon modèle. C’est parce qu’un film n’est pas une pile de plans. C’est une orchestration du temps. Créer un film avec l’IA, aujourd’hui, c’est accepter une vérité simple : l’IA facilite la matière, pas la décision dramatique. Si vous voulez une œuvre, il vous faut une méthode derrière les belles images.",
     },
     {
+      type: "youtube",
+      videoId: "XYAqx1Y6aN4",
+      title: "95% des créateurs de films IA échouent pour cette raison",
+    },
+    {
       type: "h2",
       id: "film-vs-compilation",
       text: "Film et compilation : la frontière qui fait mal",

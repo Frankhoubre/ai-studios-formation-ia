@@ -61,6 +61,11 @@ export const creerStoryboardIa: Article = {
       text: "Vous avez une idée forte, vous ouvrez un outil, vous générez trois plans magnifiques, puis vous réalisez qu’ils n’habitent pas le même film. Ce n’est pas la faute du modèle. C’est le prix du saut direct vers la matière sans passer par la décision. Le storyboard, même fait avec l’IA, est un outil de pensée. Il vous force à répondre à des questions ennuyeuses avant de payer en temps de génération et en frustration. Voici ce que je ferais à la place : une méthode simple, répétable, orientée séquence plutôt que planche d’art.",
     },
     {
+      type: "youtube",
+      videoId: "YUhi_J0tNhQ",
+      title: "L'IA transforme mon scénario en storyboard en quelques secondes",
+    },
+    {
       type: "h2",
       id: "storyboard-pour-decider",
       text: "À quoi sert un storyboard quand l’IA « peut tout refaire »",

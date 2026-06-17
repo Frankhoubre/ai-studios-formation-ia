@@ -60,6 +60,11 @@ export const videosIaJoliesMaisVides: Article = {
       text: "Vous montrez votre clip. Les gens disent « c’est fou ce qu’on peut faire ». Personne ne dit ce que ça veut dire. Ce n’est pas parce qu’ils sont méchants. C’est parce que votre vidéo excite la curiosité technique plus que l’émotion narrative. Le rendu est joli, mais il ne raconte rien. Sur le papier, ça paraît simple : ajoutez une histoire. Dans un vrai workflow, ça casse vite, parce que l’IA vous pousse à produire des plans avant d’avoir tranché une intention. Le vrai blocage, c’est l’illusion que l’image remplace la décision.",
     },
     {
+      type: "youtube",
+      videoId: "g8LVEL3gigk",
+      title: "Les scènes d'action IA ne sont PAS une question de prompts",
+    },
+    {
       type: "h2",
       id: "spectacle-vs-cinema",
       text: "Spectacle et cinéma ne répondent pas à la même question",

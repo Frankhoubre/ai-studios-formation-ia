@@ -59,6 +59,11 @@ export const personnageCoherentIa: Article = {
       text: "Vous avez enfin un portrait fort. Vous générez le plan suivant, et ce n’est plus la même personne, juste un cousin au même âge. Ce n’est pas une malédiction technique. C’est le comportement normal d’un modèle qui n’a aucune raison de se souvenir pour vous. Si vous voulez garder le même personnage dans plusieurs images IA, vous devez fabriquer une mémoire artificielle avec des règles, des références, et une manière de changer un seul paramètre à la fois. Sinon vous jouez à la roulette.",
     },
     {
+      type: "youtube",
+      videoId: "wsZG3Xcm6tQ",
+      title: "J'ai créé un animé entier avec l'IA… et ça ressemble à un vrai studio",
+    },
+    {
       type: "h2",
       id: "fiche-minimum",
       text: "La fiche minimum : ce que vous devez écrire noir sur blanc",

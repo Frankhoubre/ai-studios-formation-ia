@@ -72,6 +72,11 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "Tu n'as pas besoin d'être ingenieur du son pour faire mieux que 90 pourcent des musiques IA publiees aujourd hui. Tu as besoin d'une méthode stricte, de reperes concrets, et d'une logique de plateau. Pense comme en cinema analogique, chaque element sonore a une fonction, respiration, tension, relance, memorisation. Quand tu abordes Suno avec cette mentalite, la qualité grimpe très vite.",
     },
+    {
+      type: "youtube",
+      videoId: "qcPbKGuiwEg",
+      title: "Cette IA vole mes mélodies pour en faire des musiques épiques",
+    },
     { type: "h2", id: "core-concepts", text: "Core Concepts: pourquoi la plupart des musiques IA publicitaires ratent" },
     { type: "h3", id: "fonction-avant-style", text: "La fonction avant le style" },
     {

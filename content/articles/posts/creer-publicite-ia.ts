@@ -60,6 +60,11 @@ export const creerPubliciteIa: Article = {
       text: "Un client ne vous paie pas pour que vous jouiez avec un modèle. Il vous paie pour qu’un message sorte dans le monde avec une forme qui ne lui fait pas honte. L’IA peut accélérer des étapes, mais elle ne remplace pas le brief, la validation, ni la responsabilité du montage final. Si vous voulez créer une publicité avec l’IA sans vous écraser au milieu, il vous faut une chaîne. Pas une collection de tutoriels. Une chaîne avec des livrables nommés et des seuils de validation.",
     },
     {
+      type: "youtube",
+      videoId: "HSngiz25nsI",
+      title: "Cette IA remplace les shootings photo e-commerce",
+    },
+    {
       type: "h2",
       id: "brief-qui-tient",
       text: "Le brief : ce qu’il doit contenir pour éviter dix allers retours",
