@@ -49,7 +49,7 @@
       "category": "ia-image",
       "kw": "chatgpt créer image",
       "hero": "A cinematic shot of a person chatting with an AI on a laptop while a beautiful generated image appears, cozy modern desk, soft window light",
-      "done": false
+      "done": true
     },
     {
       "n": 6,
@@ -59,7 +59,7 @@
       "category": "ia-image",
       "kw": "imagen google image",
       "hero": "A breathtaking hyper-photorealistic portrait emerging on a screen, indistinguishable from a real photograph, dramatic studio light",
-      "done": false
+      "done": true
     },
     {
       "n": 7,
