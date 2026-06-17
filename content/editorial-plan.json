@@ -411,7 +411,7 @@
       "category": "workflow-creatif",
       "kw": "modèle 3d ia",
       "hero": "A cinematic shot of a glowing 3D model rotating on a screen in a studio, wireframe to render, tech-creative mood",
-      "done": false,
+      "done": true,
       "video": "5XC6F4s0_js"
     },
     {
@@ -422,7 +422,7 @@
       "category": "ia-image",
       "kw": "inpainting ia",
       "hero": "A cinematic close-up of a creator masking and repairing a precise area of an image on screen, focused, warm light",
-      "done": false
+      "done": true
     },
     {
       "n": 43,
