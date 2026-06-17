@@ -4,7 +4,7 @@ export const creerLogoIaMethodeOutils: Article = {
   title: "Créer un logo avec l'IA : méthode et outils",
   slug: "creer-logo-ia-methode-outils",
   description:
-    "Créer un logo avec l'IA sans tomber dans le générique : cadrer l'identité, générer des pistes, choisir et finaliser un logo lisible et déclinable. Méthode complète.",
+    "Créer un logo avec l'IA sans tomber dans le générique : cadrer l'identité, générer des pistes, choisir et finaliser un logo lisible et déclinable.",
   excerpt:
     "L'IA génère mille logos en une minute, mais un bon logo demande de la méthode. Voici comment obtenir une identité lisible, pas un cliché.",
   category: "business-creatif",

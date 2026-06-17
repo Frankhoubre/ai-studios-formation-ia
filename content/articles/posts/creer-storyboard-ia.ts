@@ -54,6 +54,12 @@ export const creerStoryboardIa: Article = {
       answer:
         "Il remplace le hasard du premier jet. Il ne remplace pas le jugement. Vous validez une intention, pas une vérité absolue.",
     },
+    {
+      question: "Quel format utiliser pour partager un storyboard à un client ?",
+      answer:
+        "Un PDF simple, une case par plan, avec sous chaque image une ligne d'intention et la valeur de plan, suffit presque toujours. Le client veut comprendre l'histoire et le rythme, pas admirer des dessins. Notion ou des slides marchent aussi bien si tu veux commenter en direct. Garde-le lisible et annotable, c'est tout ce qui compte pour valider vite.",
+    },
+
   ],
   content: [
     {

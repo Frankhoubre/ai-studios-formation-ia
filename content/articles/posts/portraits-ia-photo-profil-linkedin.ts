@@ -4,7 +4,7 @@ export const portraitsIaPhotoProfilLinkedin: Article = {
   title: "Portraits IA pro : la photo de profil LinkedIn",
   slug: "portraits-ia-photo-profil-linkedin",
   description:
-    "Créer un portrait professionnel avec l'IA pour LinkedIn : ressemblance, lumière flatteuse et crédibilité, sans rendu plastique ni effet faux. La méthode complète.",
+    "Créer un portrait pro avec l'IA pour LinkedIn : ressemblance, lumière flatteuse et crédibilité, sans rendu plastique ni effet faux. La méthode complète.",
   excerpt:
     "Un portrait IA pro peut remplacer le photographe, à condition qu'il te ressemble et inspire confiance. Voici comment l'obtenir.",
   category: "business-creatif",

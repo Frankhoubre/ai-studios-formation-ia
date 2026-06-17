@@ -4,7 +4,7 @@ export const workflowClientBriefLivraisonIa: Article = {
   title: "Workflow client IA: du brief a la livraison sans chaos",
   slug: "workflow-client-brief-livraison-ia",
   description:
-    "Masterclass complète pour structurer un workflow client IA du brief a la livraison, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Structurer un workflow client IA du brief à la livraison : méthode pas à pas, erreurs fréquentes et corrections pour livrer sans accroc.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "workflow-creatif",

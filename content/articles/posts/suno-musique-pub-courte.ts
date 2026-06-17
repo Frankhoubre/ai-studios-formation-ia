@@ -4,7 +4,7 @@ export const sunoMusiquePubCourte: Article = {
   title: "Suno: composer une musique de pub courte sans sonner stock",
   slug: "suno-musique-pub-courte",
   description:
-    "Masterclass complète pour composer une musique publicitaire courte avec Suno, avec workflow débutant ultra detaille, mixage oriente voix-off, et méthode terrain pour livrer des pistes credibles.",
+    "Composer une musique de pub courte avec Suno : workflow pas à pas, mixage orienté voix off et méthode concrète pour livrer des pistes crédibles.",
   excerpt:
     "Tu veux des musiques IA qui soutiennent une pub au lieu de l'ecraser, voici la méthode de production complète pour debuter proprement avec Suno.",
   category: "ia-video",

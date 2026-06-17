@@ -4,7 +4,7 @@ export const budgetRenduTempsCoutIa: Article = {
   title: "Budget, rendu, temps: chiffrer une production IA sans se tromper",
   slug: "budget-rendu-temps-cout-ia",
   description:
-    "Masterclass complète pour chiffrer une production IA avec budget, temps et rendu, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Chiffrer une production IA : budget, temps et qualité de rendu, méthode pas à pas et erreurs fréquentes pour ne pas travailler à perte.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "business-creatif",

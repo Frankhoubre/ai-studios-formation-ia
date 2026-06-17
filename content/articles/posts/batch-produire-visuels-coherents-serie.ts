@@ -4,7 +4,7 @@ export const batchProduireVisuelsCoherentsSerie: Article = {
   title: "Batch : 50 visuels cohérents en série",
   slug: "batch-produire-visuels-coherents-serie",
   description:
-    "Produire 50 visuels cohérents en série avec l'IA : gabarit, paramètres fixes, variations contrôlées. La méthode pour un batch homogène sans tout générer à la main.",
+    "Produire 50 visuels cohérents en série avec l'IA : gabarit, paramètres fixes, variations contrôlées. Un batch homogène sans tout faire à la main.",
   excerpt:
     "Produire 50 visuels cohérents un par un est un cauchemar. Le batch change tout : un gabarit, des variations contrôlées, une série homogène. Voici la méthode.",
   category: "workflow-creatif",

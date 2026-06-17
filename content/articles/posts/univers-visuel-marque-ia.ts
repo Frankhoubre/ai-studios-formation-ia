@@ -4,7 +4,7 @@ export const universVisuelMarqueIa: Article = {
   title: "Créer un univers visuel de marque avec l'IA",
   slug: "univers-visuel-marque-ia",
   description:
-    "Construire un univers visuel de marque cohérent avec l'IA : direction artistique, déclinaison, cohérence dans le temps. La méthode pour une identité forte, pas une collection d'images.",
+    "Construire un univers visuel de marque cohérent avec l'IA : direction artistique, déclinaison, cohérence dans le temps. Une identité forte, pas un tas d'images.",
   excerpt:
     "L'IA peut générer mille belles images, mais une marque a besoin d'un univers cohérent, pas d'un patchwork. Voici comment construire une identité visuelle avec l'IA.",
   category: "business-creatif",

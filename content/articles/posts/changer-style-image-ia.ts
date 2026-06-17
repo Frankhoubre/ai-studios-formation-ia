@@ -4,7 +4,7 @@ export const changerStyleImageIa: Article = {
   title: "Changer le style d'une image avec l'IA",
   slug: "changer-style-image-ia",
   description:
-    "Transformer le style d'une image avec l'IA tout en gardant sa composition : transfert de style, intensité, cohérence. La méthode pour des transformations maîtrisées.",
+    "Transformer le style d'une image avec l'IA en gardant sa composition : transfert de style, intensité, cohérence. La méthode pour un résultat maîtrisé.",
   excerpt:
     "Transformer une photo en peinture, un croquis en rendu réaliste : le transfert de style IA est puissant, à condition de le doser. Voici comment.",
   category: "ia-image",

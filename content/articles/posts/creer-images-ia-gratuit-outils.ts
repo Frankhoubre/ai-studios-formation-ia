@@ -4,7 +4,7 @@ export const creerImagesIaGratuitOutils: Article = {
   title: "Créer des images IA gratuitement : 10 outils gratuits",
   slug: "creer-images-ia-gratuit-outils",
   description:
-    "Créer des images avec l'IA gratuitement, c'est possible. Tour d'horizon des meilleurs outils gratuits, leurs limites réelles et comment les exploiter sans payer.",
+    "Créer des images avec l'IA gratuitement, c'est possible. Tour d'horizon des meilleurs outils gratuits, leurs limites réelles et comment en profiter.",
   excerpt:
     "Pas besoin de sortir la carte bleue pour créer des images IA. Voici les meilleurs outils gratuits et comment contourner leurs limites.",
   category: "ia-image",

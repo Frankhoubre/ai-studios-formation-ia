@@ -4,7 +4,7 @@ export const lipSyncIaFaireParlerPersonnage: Article = {
   title: "Lip-sync IA : faire parler un personnage",
   slug: "lip-sync-ia-faire-parler-personnage",
   description:
-    "Faire parler un personnage avec l'IA : synchroniser les lèvres à une voix de façon crédible, choisir le bon plan et éviter le malaise du presque humain. Méthode.",
+    "Faire parler un personnage avec l'IA : synchroniser les lèvres à une voix de façon crédible, choisir le bon plan et éviter le malaise du presque humain.",
   excerpt:
     "Faire parler une image, c'est puissant mais piégeux. Voici comment réussir un lip-sync IA crédible, et où sont ses limites.",
   category: "ia-video",

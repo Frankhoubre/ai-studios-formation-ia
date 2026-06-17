@@ -4,7 +4,7 @@ export const restaurerColoriserPhotoIa: Article = {
   title: "Restaurer et coloriser une vieille photo par IA",
   slug: "restaurer-coloriser-photo-ia",
   description:
-    "Restaurer et coloriser une vieille photo avec l'IA, avec respect : rayures, flou, couleurs plausibles et fidélité au sujet. La méthode pour un résultat émouvant.",
+    "Restaurer et coloriser une vieille photo avec l'IA, avec respect : rayures, flou, couleurs plausibles et fidélité au sujet. Pour un résultat émouvant.",
   excerpt:
     "Redonner vie à une photo de famille abîmée, c'est ce que permet l'IA. À condition de restaurer avec retenue et de ne pas inventer. Voici comment.",
   category: "ia-image",

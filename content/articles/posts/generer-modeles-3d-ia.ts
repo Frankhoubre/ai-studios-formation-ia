@@ -4,7 +4,7 @@ export const genererModeles3dIa: Article = {
   title: "Générer des modèles 3D avec l'IA",
   slug: "generer-modeles-3d-ia",
   description:
-    "Générer des modèles 3D avec l'IA : du texte ou d'une image vers un objet 3D, usages, limites et workflow pour réutiliser tes assets partout. La méthode complète.",
+    "Générer des modèles 3D avec l'IA : du texte ou d'une image vers un objet 3D, usages, limites et workflow pour réutiliser tes assets partout.",
   excerpt:
     "L'IA génère désormais des modèles 3D à partir d'un texte ou d'une image. Voici ce que ça vaut, ses limites, et comment réutiliser tes assets.",
   category: "workflow-creatif",

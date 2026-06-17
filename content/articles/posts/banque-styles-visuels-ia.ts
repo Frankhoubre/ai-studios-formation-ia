@@ -4,7 +4,7 @@ export const banqueStylesVisuelsIa: Article = {
   title: "Banque de styles : 20 ambiances prêtes à l'emploi",
   slug: "banque-styles-visuels-ia",
   description:
-    "Une banque de styles visuels IA prêts à l'emploi : 20 ambiances décrites, comment les combiner et les adapter. La méthode pour ne plus jamais partir d'une page blanche.",
+    "Une banque de styles visuels IA prêts à l'emploi : 20 ambiances décrites, comment les combiner et les adapter pour ne plus partir d'une page blanche.",
   excerpt:
     "Partir d'une page blanche tue la créativité. Une banque de styles prêts à l'emploi te donne 20 points de départ pour tes images IA. Voici comment la bâtir et l'utiliser.",
   category: "prompting",

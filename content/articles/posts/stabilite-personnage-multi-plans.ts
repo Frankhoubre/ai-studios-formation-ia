@@ -4,7 +4,7 @@ export const stabilitePersonnageMultiPlans: Article = {
   title: "Stabilite personnage multi-plans: éviter les derives de visage",
   slug: "stabilite-personnage-multi-plans",
   description:
-    "Masterclass complète pour maintenir un personnage cohérent sur plusieurs plans IA, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Garder un personnage cohérent sur plusieurs plans IA : méthode pas à pas, erreurs fréquentes et corrections concrètes pour la stabilité.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "ia-image",

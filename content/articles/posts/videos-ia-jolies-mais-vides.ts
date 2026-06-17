@@ -53,6 +53,12 @@ export const videosIaJoliesMaisVides: Article = {
       answer:
         "Écrivez une phrase : ce que le spectateur doit croire à la fin. Puis coupez tout plan qui ne soutient pas cette phrase. C’est brutal, ça fait mal, et ça marche.",
     },
+    {
+      question: "Faut-il un scénario écrit pour une vidéo de quelques secondes ?",
+      answer:
+        "Même dix secondes ont besoin d'une intention claire : un début, une tension, une chute. Pas forcément un scénario formaté, mais une phrase qui dit ce que le spectateur doit ressentir. Sans ça, tu obtiens de jolis plans qui ne mènent nulle part. Écris ton intention avant de générer, c'est le geste qui sépare une vidéo qui marque d'un fond d'écran animé.",
+    },
+
   ],
   content: [
     {

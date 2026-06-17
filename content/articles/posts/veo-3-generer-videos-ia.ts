@@ -4,7 +4,7 @@ export const veo3GenererVideosIa: Article = {
   title: "Veo 3 : générer des vidéos IA réalistes",
   slug: "veo-3-generer-videos-ia",
   description:
-    "Veo, le modèle vidéo de Google, vise un réalisme et un son impressionnants. Forces, usages et méthode pour générer des plans crédibles sans tomber dans le piège.",
+    "Veo, le modèle vidéo de Google, vise un réalisme et un son impressionnants. Forces, usages et méthode pour générer des plans crédibles.",
   excerpt:
     "Veo a relevé la barre du réalisme en vidéo IA. Voici ce qu'il vaut vraiment et comment en tirer des plans qui tiennent.",
   category: "ia-video",

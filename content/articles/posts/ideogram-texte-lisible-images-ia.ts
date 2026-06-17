@@ -4,7 +4,7 @@ export const ideogramTexteLisibleImagesIa: Article = {
   title: "Ideogram : du texte lisible dans vos images IA",
   slug: "ideogram-texte-lisible-images-ia",
   description:
-    "Intégrer du texte lisible dans une image IA reste difficile. Ideogram excelle sur la typographie : méthode pour des affiches, logos et visuels avec un texte net.",
+    "Intégrer du texte lisible dans une image IA reste difficile. Ideogram excelle sur la typo : méthode pour des affiches et visuels au texte net.",
   excerpt:
     "Le texte dans les images IA est souvent illisible. Ideogram change la donne. Voici comment obtenir une typo nette et propre.",
   category: "ia-image",

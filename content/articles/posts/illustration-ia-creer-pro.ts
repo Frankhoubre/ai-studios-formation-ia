@@ -4,7 +4,7 @@ export const illustrationIaCreerPro: Article = {
   title: "Illustration IA : créer des illustrations pro",
   slug: "illustration-ia-creer-pro",
   description:
-    "Créer des illustrations professionnelles avec l'IA : trouver un style cohérent, soigner la composition et livrer des visuels exploitables, loin du rendu générique.",
+    "Créer des illustrations pro avec l'IA : trouver un style cohérent, soigner la composition et livrer des visuels exploitables, loin du générique.",
   excerpt:
     "L'IA peut produire de vraies illustrations pro, à condition de dépasser le style générique. Voici comment trouver et tenir une vraie patte visuelle.",
   category: "ia-image",

@@ -42,7 +42,7 @@ export const soraOpenaiCreerVideos: Article = {
     {
       question: "Sora est-il meilleur que Veo ou les autres ?",
       answer:
-        "Chacun a ses forces, et le meilleur dépend de ton usage. Sora est réputé pour la créativité et la cohérence de ses scènes, Veo pour son réalisme et son son intégré, d'autres pour la vitesse ou le contrôle. Plutôt que de chercher un vainqueur absolu, teste-les sur le même plan et juge selon tes critères. Le paysage évolue vite, et la position de tête change régulièrement, raisonne par usage.",
+        "Chacun a ses forces, et le meilleur dépend de ton usage. Sora est réputé pour la créativité et la cohérence de ses scènes, Veo pour son réalisme et son son intégré, d'autres pour la vitesse ou le contrôle. Plutôt que de chercher un vainqueur absolu, teste-les sur le même plan et juge selon tes critères. Le secteur évolue vite, et la position de tête change régulièrement, raisonne par usage.",
     },
     {
       question: "Quelle durée de vidéo peut générer Sora ?",
@@ -281,7 +281,7 @@ export const soraOpenaiCreerVideos: Article = {
     },
     {
       type: "p",
-      text: "Chacun a ses forces, et le meilleur dépend de ton usage. Sora est réputé pour la créativité et la cohérence de ses scènes, Veo pour son réalisme et son son intégré, d'autres pour la vitesse ou le contrôle. Plutôt que de chercher un vainqueur absolu, teste-les sur le même plan et juge selon tes critères. Le paysage évolue vite, et la position de tête change régulièrement, raisonne par usage.",
+      text: "Chacun a ses forces, et le meilleur dépend de ton usage. Sora est réputé pour la créativité et la cohérence de ses scènes, Veo pour son réalisme et son son intégré, d'autres pour la vitesse ou le contrôle. Plutôt que de chercher un vainqueur absolu, teste-les sur le même plan et juge selon tes critères. Le secteur évolue vite, et la position de tête change régulièrement, raisonne par usage.",
     },
     {
       type: "h3",

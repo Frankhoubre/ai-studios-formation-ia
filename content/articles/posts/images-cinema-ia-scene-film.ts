@@ -4,7 +4,7 @@ export const imagesCinemaIaSceneFilm: Article = {
   title: "Images cinéma IA : recréer une scène de film",
   slug: "images-cinema-ia-scene-film",
   description:
-    "Recréer une vraie image de cinéma avec l'IA : lumière motivée, composition, palette et grain. La méthode pour des images qui ressemblent à des photogrammes de film.",
+    "Recréer une vraie image de cinéma avec l'IA : lumière motivée, composition, palette et grain. Des images dignes de photogrammes de film.",
   excerpt:
     "Une image cinéma ne se résume pas à un beau rendu. Voici les ingrédients qui font qu'une image IA ressemble à un vrai photogramme de film.",
   category: "ia-image",

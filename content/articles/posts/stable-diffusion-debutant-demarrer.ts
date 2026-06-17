@@ -4,7 +4,7 @@ export const stableDiffusionDebutantDemarrer: Article = {
   title: "Stable Diffusion pour débutants : démarrer",
   slug: "stable-diffusion-debutant-demarrer",
   description:
-    "Démarrer avec Stable Diffusion sans se noyer : comprendre le modèle open source, choisir entre local et en ligne, et générer ta première image en gardant le contrôle.",
+    "Démarrer avec Stable Diffusion sans se noyer : comprendre le modèle open source, choisir entre local et en ligne, générer ta première image.",
   excerpt:
     "Stable Diffusion fait peur avec sa réputation technique. Voici le chemin simple pour démarrer sans installer une usine à gaz.",
   category: "ia-image",

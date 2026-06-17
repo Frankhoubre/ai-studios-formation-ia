@@ -4,7 +4,7 @@ export const doublageTraductionVideoIa: Article = {
   title: "Doublage et traduction vidéo par IA",
   slug: "doublage-traduction-video-ia",
   description:
-    "Doubler et traduire une vidéo avec l'IA : voix clonée, traduction, synchronisation labiale. La méthode pour toucher d'autres langues sans trahir le sens ni le ton.",
+    "Doubler et traduire une vidéo avec l'IA : voix clonée, traduction, synchronisation labiale. Toucher d'autres langues sans trahir le sens ni le ton.",
   excerpt:
     "Traduire et doubler une vidéo en quelques clics, l'IA le permet. Voici comment le faire sans trahir le sens, le ton, ni la crédibilité.",
   category: "ia-video",

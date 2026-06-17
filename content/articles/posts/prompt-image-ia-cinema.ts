@@ -4,7 +4,7 @@ export const promptImageIaCinema: Article = {
   title: "Comment écrire un prompt d’image IA qui donne un vrai rendu cinéma",
   slug: "prompt-image-ia-cinema",
   description:
-    "Une méthode de prompt image IA orientée cinéma : scène, sujet, intention, lumière, focale, texture, contraintes. Sans promesse miracle, avec des critères de sélection.",
+    "Une méthode de prompt image IA orientée cinéma : scène, sujet, intention, lumière, focale, texture, contraintes. Avec des critères de sélection.",
   excerpt:
     "Un prompt long n’est pas un prompt intelligent. Voici une structure qui évite le rendu « joli mais générique » et pousse l’image vers une lecture cinématographique.",
   category: "prompting",
@@ -53,6 +53,12 @@ export const promptImageIaCinema: Article = {
       answer:
         "Générez trois variations. Si elles sont toutes intéressantes mais incohérentes entre elles, votre prompt est trop large. Si elles sont proches et servent la même intention, vous tenez quelque chose d’exploitable.",
     },
+    {
+      question: "Combien de fois faut-il itérer un prompt avant un bon rendu ?",
+      answer:
+        "Souvent quelques essais suffisent si tu changes un seul élément à la fois. L'erreur classique, c'est de tout modifier d'un coup, tu ne sais plus ce qui a aidé. Génère, observe ce qui cloche, ajuste un paramètre, recommence. En une session méthodique tu passes du hasard au contrôle, ce qui vaut mieux que cent rendus pris au hasard.",
+    },
+
   ],
   content: [
     {

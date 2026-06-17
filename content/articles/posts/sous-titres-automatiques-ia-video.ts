@@ -4,7 +4,7 @@ export const sousTitresAutomatiquesIaVideo: Article = {
   title: "Sous-titres automatiques IA pour vos vidéos",
   slug: "sous-titres-automatiques-ia-video",
   description:
-    "Générer des sous-titres automatiques avec l'IA : transcription, correction, style et synchronisation. La méthode pour des sous-titres lisibles qui boostent la rétention.",
+    "Générer des sous-titres automatiques avec l'IA : transcription, correction, style et synchronisation. La méthode pour des sous-titres lisibles qui retiennent.",
   excerpt:
     "Les sous-titres ne sont plus optionnels. Voici comment générer avec l'IA des sous-titres lisibles, bien synchronisés et corrigés, en un temps record.",
   category: "ia-video",

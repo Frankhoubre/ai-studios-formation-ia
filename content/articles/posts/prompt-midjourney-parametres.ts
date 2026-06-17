@@ -4,7 +4,7 @@ export const promptMidjourneyParametres: Article = {
   title: "Prompt Midjourney : les paramètres essentiels",
   slug: "prompt-midjourney-parametres",
   description:
-    "Maîtriser les paramètres de prompt Midjourney : ratio, stylisation, chaos, version. Ce que chacun fait et comment les combiner. La méthode pour des images maîtrisées.",
+    "Maîtriser les paramètres Midjourney : ratio, stylisation, chaos, version. Ce que chacun fait et comment les combiner pour des images maîtrisées.",
   excerpt:
     "Les paramètres Midjourney transforment un prompt ordinaire en image maîtrisée. Ratio, stylisation, chaos : voici ce que chacun fait vraiment.",
   category: "prompting",

@@ -4,7 +4,7 @@ export const elevenlabsVoiceoverPub: Article = {
   title: "ElevenLabs: enregistrer une voix-off pub qui tient le mix",
   slug: "elevenlabs-voiceover-pub",
   description:
-    "Masterclass complète pour produire une voix off publicitaire avec ElevenLabs, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Produire une voix off publicitaire avec ElevenLabs : réglages, méthode pas à pas et erreurs fréquentes pour un rendu naturel et crédible.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "ia-video",

@@ -4,7 +4,7 @@ export const fluxLoraPubliciteLocale: Article = {
   title: "Flux + LoRA: creer une publicite locale credible sans rendu plastique",
   slug: "flux-lora-publicite-locale",
   description:
-    "Masterclass complète pour creer des visuels publicitaires locaux avec Flux et LoRA, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Créer des visuels publicitaires locaux avec Flux et LoRA : workflow pas à pas, erreurs fréquentes et corrections orientées résultat.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "business-creatif",

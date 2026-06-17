@@ -53,6 +53,12 @@ export const workflowIaCreatif: Article = {
       answer:
         "Décidez par paliers : d’abord cohérence, puis beauté, puis détail. Si vous mélangez les critères, chaque image devient un débat infini.",
     },
+    {
+      question: "À partir de quand vaut-il la peine de structurer un workflow ?",
+      answer:
+        "Dès que tu refais deux fois la même chose. Tant que tu bricoles un projet unique, l'instinct suffit. Mais à la première série, le premier client récurrent ou le premier batch, un workflow te fait gagner des heures et stabilise la qualité. Pas besoin d'une usine à gaz : un gabarit, des paramètres fixes et une checklist suffisent.",
+    },
+
   ],
   content: [
     {

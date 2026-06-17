@@ -4,7 +4,7 @@ export const detecterImageGenereeIa: Article = {
   title: "Détecter une image générée par IA : les indices",
   slug: "detecter-image-generee-ia",
   description:
-    "Détecter une image générée par IA : les indices visuels, les limites des détecteurs, l'esprit critique. La méthode pour repérer le faux sans tomber dans la paranoïa.",
+    "Détecter une image générée par IA : les indices visuels, les limites des détecteurs, l'esprit critique. Repérer le faux sans tomber dans la paranoïa.",
   excerpt:
     "Repérer une image IA était facile hier, ça l'est de moins en moins. Voici les indices qui restent, les limites des détecteurs, et le bon réflexe.",
   category: "ia-image",

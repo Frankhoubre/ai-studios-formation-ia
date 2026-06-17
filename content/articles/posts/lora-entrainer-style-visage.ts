@@ -4,7 +4,7 @@ export const loraEntrainerStyleVisage: Article = {
   title: "LoRA : entraîner un style ou un visage IA",
   slug: "lora-entrainer-style-visage",
   description:
-    "Entraîner un LoRA pour fixer un style ou un visage dans tes images IA : jeu de données, équilibre, sur-apprentissage. La méthode pour un modèle personnalisé fiable.",
+    "Entraîner un LoRA pour fixer un style ou un visage dans tes images IA : jeu de données, équilibre, sur-apprentissage. Pour un modèle fiable.",
   excerpt:
     "Un LoRA apprend ton visage ou ton style à l'IA, pour le reproduire à volonté. Mais tout se joue sur le jeu de données. Voici comment l'entraîner.",
   category: "prompting",

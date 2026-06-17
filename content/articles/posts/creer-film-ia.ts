@@ -5,7 +5,7 @@ export const creerFilmIa: Article = {
     "Créer un film avec l’IA : la vraie méthode derrière les belles images",
   slug: "creer-film-ia",
   description:
-    "Au-delà des plans générés : scénario, rythme, personnages, émotions, montage et son. Une approche pilier pour un film IA qui tient comme œuvre, pas comme compilation.",
+    "Au-delà des plans générés : scénario, rythme, personnages, émotions, montage et son. Une approche pilier pour un film IA qui tient comme œuvre.",
   excerpt:
     "Les belles images ne font pas un film. Un film est une suite de décisions dans le temps. Voici une méthode pour passer du clip à l’œuvre, sans promesse irréaliste.",
   category: "storytelling",
@@ -54,6 +54,12 @@ export const creerFilmIa: Article = {
       answer:
         "Plus que vous ne pensez si vous visez la cohérence. L’IA accélère certaines matières, pas la réécriture ni la direction d’acteurs, même virtuels.",
     },
+    {
+      question: "Faut-il un budget pour faire un film IA correct ?",
+      answer:
+        "Pas un gros budget, mais zéro euro reste rare si tu vises du sérieux. Les abonnements aux outils d'image, de vidéo et de voix s'additionnent vite, surtout si tu itères beaucoup. Commence avec un seul outil par poste, génère ton premier court, puis investis là où ça bloque vraiment. Le vrai coût n'est pas l'abonnement, c'est le temps que tu passes à diriger les rendus.",
+    },
+
   ],
   content: [
     {

@@ -4,7 +4,7 @@ export const promptStructure4BlocsIa: Article = {
   title: "Le prompt structuré : sujet, décor, lumière, caméra",
   slug: "prompt-structure-4-blocs-ia",
   description:
-    "Arrête d'empiler les mots-clés au hasard. La méthode des 4 blocs (sujet, décor, lumière, caméra) pour écrire un prompt image IA clair, testable et reproductible.",
+    "Arrête d'empiler les mots-clés au hasard. La méthode des 4 blocs (sujet, décor, lumière, caméra) pour un prompt image IA clair et reproductible.",
   excerpt:
     "Un bon prompt n'est pas une liste de mots magiques, c'est une structure. Voici la méthode des 4 blocs pour reprendre le contrôle.",
   category: "prompting",

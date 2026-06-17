@@ -4,7 +4,7 @@ export const ideogramTypographieAfficheCinema: Article = {
   title: "Ideogram: designer une affiche cinema lisible et premium",
   slug: "ideogram-typographie-affiche-cinema",
   description:
-    "Masterclass complète pour creer une affiche cinema lisible avec Ideogram, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Créer une affiche cinéma lisible avec Ideogram : typographie, méthode pas à pas et erreurs fréquentes pour un texte net et un visuel pro.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "prompting",

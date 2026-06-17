@@ -4,7 +4,7 @@ export const photosProduitIaShooting: Article = {
   title: "Photos de produit IA : remplacer le shooting",
   slug: "photos-produit-ia-shooting",
   description:
-    "Remplacer un shooting photo produit par l'IA : décors, lumière, mises en scène et cohérence. La méthode pour des visuels e-commerce crédibles, sans studio ni budget.",
+    "Remplacer un shooting photo produit par l'IA : décors, lumière, mises en scène et cohérence. Des visuels e-commerce crédibles, sans studio ni budget.",
   excerpt:
     "L'IA peut remplacer une bonne partie des shootings produit. Voici comment obtenir des visuels e-commerce crédibles, sans studio ni budget.",
   category: "business-creatif",

@@ -52,6 +52,12 @@ export const personnageCoherentIa: Article = {
       answer:
         "Même logique : silhouettes, proportions, palette, ligne de design. Le style change, le problème de cohérence reste.",
     },
+    {
+      question: "Un LoRA est-il obligatoire pour un personnage cohérent ?",
+      answer:
+        "Non, pas pour démarrer. Tu vas déjà loin avec une description verrouillée, une seed stable et des images de référence réutilisées. Le LoRA devient utile quand tu veux le même visage sur des dizaines de plans sans dériver. Vois-le comme une étape avancée, pas comme un prérequis. Entraîne un modèle seulement quand la cohérence manuelle ne suffit plus.",
+    },
+
   ],
   content: [
     {

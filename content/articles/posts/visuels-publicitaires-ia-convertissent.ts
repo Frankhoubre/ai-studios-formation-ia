@@ -4,7 +4,7 @@ export const visuelsPublicitairesIaConvertissent: Article = {
   title: "Visuels publicitaires IA qui convertissent",
   slug: "visuels-publicitaires-ia-convertissent",
   description:
-    "Créer des visuels publicitaires IA qui vendent : hiérarchie, bénéfice clair, format et test. La méthode pour des images de pub qui convertissent, pas juste belles.",
+    "Créer des visuels publicitaires IA qui vendent : hiérarchie, bénéfice clair, format et test. Des images de pub qui convertissent, pas juste belles.",
   excerpt:
     "Un beau visuel de pub ne vend pas forcément. Voici comment créer avec l'IA des images publicitaires pensées pour convertir.",
   category: "business-creatif",

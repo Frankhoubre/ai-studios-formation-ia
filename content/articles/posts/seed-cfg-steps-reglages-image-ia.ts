@@ -4,7 +4,7 @@ export const seedCfgStepsReglagesImageIa: Article = {
   title: "Seed, CFG, steps : les réglages d'image IA expliqués",
   slug: "seed-cfg-steps-reglages-image-ia",
   description:
-    "Comprendre les réglages d'une génération d'image IA : seed, CFG scale, steps. Ce que chacun fait vraiment et comment les régler. La méthode pour des résultats maîtrisés.",
+    "Comprendre les réglages d'une génération d'image IA : seed, CFG scale, steps. Ce que chacun fait vraiment et comment les régler pour maîtriser le rendu.",
   excerpt:
     "Seed, CFG, steps : ces réglages décident de tes images autant que le prompt. Mal compris, ils sabotent tout. Voici ce que chacun fait vraiment.",
   category: "prompting",

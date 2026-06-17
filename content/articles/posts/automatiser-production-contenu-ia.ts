@@ -4,7 +4,7 @@ export const automatiserProductionContenuIa: Article = {
   title: "Automatiser sa production de contenu avec l'IA",
   slug: "automatiser-production-contenu-ia",
   description:
-    "Automatiser sa production de contenu avec l'IA sans perdre la qualité : ce qu'on automatise, ce qu'on garde humain, les points de contrôle. La méthode pour une chaîne fiable.",
+    "Automatiser sa production de contenu avec l'IA sans perdre la qualité : ce qu'on automatise, ce qu'on garde humain, les points de contrôle.",
   excerpt:
     "Automatiser sa production de contenu avec l'IA fait gagner un temps fou, mais sans garde-fous, ça produit vite de la médiocrité à grande échelle. Voici comment faire.",
   category: "workflow-creatif",

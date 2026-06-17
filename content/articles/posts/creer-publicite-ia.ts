@@ -53,6 +53,12 @@ export const creerPubliciteIa: Article = {
       answer:
         "Séparez promesse créative et promesse marketing. Montrez un avant après de clarté du message, un test utilisateur léger, ou des métriques de campagne si vous en avez. Ne confondez pas beauté et efficacité.",
     },
+    {
+      question: "Combien de temps pour produire une pub IA complète ?",
+      answer:
+        "Pour un format court, compte une journée de travail réelle une fois ta méthode rodée, beaucoup plus la première fois. La génération est rapide, mais le brief, la sélection des plans, le montage et le son prennent l'essentiel du temps. Le piège, c'est de tout regénérer en boucle au lieu de figer tes choix. Avance par étapes verrouillées, tu gagnes des heures.",
+    },
+
   ],
   content: [
     {

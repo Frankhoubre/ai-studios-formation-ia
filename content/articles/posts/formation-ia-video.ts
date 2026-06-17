@@ -5,7 +5,7 @@ export const formationIaVideo: Article = {
     "Formation IA vidéo : par où commencer quand on veut créer des films, pubs et contenus cinématiques",
   slug: "formation-ia-video",
   description:
-    "Un chemin clair pour passer de la curiosité à une chaîne de production IA vidéo crédible : idée, script, images, storyboard, génération, montage, son et diffusion.",
+    "Un chemin clair pour passer de la curiosité à une chaîne de prod IA vidéo crédible : idée, script, images, storyboard, génération, montage, son.",
   excerpt:
     "Si vous démarrez l’IA vidéo comme une collection de démos, vous allez vite saturer. Voici un parcours réaliste, du brief à la sortie, sans magie ni dispersion.",
   category: "ia-video",
@@ -60,6 +60,12 @@ export const formationIaVideo: Article = {
       answer:
         "Une intention par session, un livrable court, une critique honnête. Exemple : aujourd’hui je travaille uniquement la continuité d’un personnage sur trois plans. Demain, le son et le sous-texte. C’est lent, mais ça compose une vraie compétence.",
     },
+    {
+      question: "Peut-on apprendre l'IA vidéo gratuitement ?",
+      answer:
+        "Oui pour les bases. Les versions gratuites des outils et les tutos publics suffisent pour comprendre la mécanique et produire tes premiers plans. Le payant devient utile pour le volume, la résolution et l'usage commercial. Commence gratuit, valide que ça te plaît et te sert, puis investis quand une limite te bloque vraiment, pas avant.",
+    },
+
   ],
   content: [
     {

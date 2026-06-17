@@ -4,7 +4,7 @@ export const devenirFreelanceCreationIa: Article = {
   title: "Devenir freelance en création IA : démarrer",
   slug: "devenir-freelance-creation-ia",
   description:
-    "Devenir freelance en création IA : positionnement, offre, premiers clients, tarification. Les étapes concrètes pour démarrer une activité viable. La méthode sans illusions.",
+    "Devenir freelance en création IA : positionnement, offre, premiers clients, tarification. Les étapes concrètes pour démarrer une activité viable.",
   excerpt:
     "Devenir freelance en création IA, c'est moins une question de maîtrise de l'outil que de positionnement et de clients. Voici les étapes pour démarrer.",
   category: "business-creatif",
@@ -241,7 +241,7 @@ export const devenirFreelanceCreationIa: Article = {
     },
     {
       type: "p",
-      text: "Tu bâtis toute ton activité sur la maîtrise d'un outil précis, et quand le paysage évolue, tu te retrouves fragilisé. Ton avantage reposait sur une technologie du moment, pas sur une valeur durable. Le changement d'outils, rapide dans l'IA, a balayé ton unique atout.",
+      text: "Tu bâtis toute ton activité sur la maîtrise d'un outil précis, et quand le marché évolue, tu te retrouves fragilisé. Ton avantage reposait sur une technologie du moment, pas sur une valeur durable. Le changement d'outils, rapide dans l'IA, a balayé ton unique atout.",
     },
     {
       type: "p",

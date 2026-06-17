@@ -4,7 +4,7 @@ export const avatarsIaUgcPresentateurVirtuel: Article = {
   title: "Avatars IA & UGC : un présentateur virtuel",
   slug: "avatars-ia-ugc-presentateur-virtuel",
   description:
-    "Créer un présentateur virtuel et du contenu UGC avec l'IA : avatars crédibles, voix, lip-sync et limites à connaître. La méthode pour des vidéos qui ne sonnent pas faux.",
+    "Créer un présentateur virtuel et du contenu UGC avec l'IA : avatars crédibles, voix, lip-sync et limites à connaître pour des vidéos qui sonnent vrai.",
   excerpt:
     "Les avatars IA promettent du contenu sans caméra, mais sonnent vite faux. Voici comment créer un présentateur virtuel crédible, et ses limites.",
   category: "business-creatif",

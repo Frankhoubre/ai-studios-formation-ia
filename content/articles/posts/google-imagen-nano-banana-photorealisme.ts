@@ -4,7 +4,7 @@ export const googleImagenNanoBananaPhotorealisme: Article = {
   title: "Google Imagen & Nano Banana : le photoréalisme IA",
   slug: "google-imagen-nano-banana-photorealisme",
   description:
-    "Imagen et Nano Banana, les modèles d'image de Google, visent le photoréalisme. Forces, usages et méthode pour obtenir des rendus crédibles, sans effet plastique.",
+    "Imagen et Nano Banana, les modèles d'image de Google, visent le photoréalisme. Forces, usages et méthode pour des rendus crédibles, sans plastique.",
   excerpt:
     "Les modèles d'image de Google poussent le photoréalisme très loin. Voici ce qu'ils valent vraiment et comment en tirer des rendus crédibles.",
   category: "ia-image",
@@ -102,7 +102,7 @@ export const googleImagenNanoBananaPhotorealisme: Article = {
     },
     {
       type: "p",
-      text: "Ces modèles ne sont pas seuls, ils font partie d'un paysage où chaque outil a sa personnalité. Pour le photoréalisme, ils sont d'excellents candidats, mais pour un style très artistique ou une signature particulière, d'autres peuvent mieux convenir. Les situer correctement t'évite d'attendre d'eux ce qu'ils ne visent pas, et de les choisir précisément là où ils excellent.",
+      text: "Ces modèles ne sont pas seuls, ils font partie d'un écosystème où chaque outil a sa personnalité. Pour le photoréalisme, ils sont d'excellents candidats, mais pour un style très artistique ou une signature particulière, d'autres peuvent mieux convenir. Les situer correctement t'évite d'attendre d'eux ce qu'ils ne visent pas, et de les choisir précisément là où ils excellent.",
     },
     {
       type: "p",

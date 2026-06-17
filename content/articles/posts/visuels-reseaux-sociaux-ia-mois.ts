@@ -4,7 +4,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
   title: "Un mois de visuels réseaux sociaux avec l'IA",
   slug: "visuels-reseaux-sociaux-ia-mois",
   description:
-    "Produire un mois de visuels réseaux sociaux avec l'IA : système, cohérence de marque, déclinaison et planification. La méthode pour ne plus jamais manquer de contenu.",
+    "Produire un mois de visuels réseaux sociaux avec l'IA : système, cohérence de marque, déclinaison et planification pour ne jamais manquer de contenu.",
   excerpt:
     "Alimenter ses réseaux est un travail sans fin. Voici comment produire un mois de visuels cohérents avec l'IA, en une session organisée.",
   category: "business-creatif",

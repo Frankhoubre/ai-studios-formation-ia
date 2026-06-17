@@ -4,7 +4,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
   title: "Gagner de l'argent avec l'IA créative : 7 modèles",
   slug: "gagner-argent-ia-creative-modeles",
   description:
-    "7 modèles concrets pour gagner de l'argent avec l'IA créative : services, produits, contenu. Lequel choisir selon ton profil. La méthode pour monétiser sans illusions.",
+    "7 modèles concrets pour gagner de l'argent avec l'IA créative : services, produits, contenu. Lequel choisir selon ton profil, sans illusions.",
   excerpt:
     "L'IA créative ouvre de vraies opportunités de revenus, mais pas celles qu'on croit. Voici 7 modèles concrets, et comment choisir le tien.",
   category: "business-creatif",

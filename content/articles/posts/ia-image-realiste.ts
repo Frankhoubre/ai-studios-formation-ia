@@ -54,6 +54,12 @@ export const iaImageRealiste: Article = {
       answer:
         "Il peut améliorer la netteté, pas la vérité. Si la structure est plastique, l’upscale amplifie parfois le problème. Corrigez la lumière et la texture avant de grossir.",
     },
+    {
+      question: "Quel outil donne les images les plus réalistes ?",
+      answer:
+        "Aucun outil n'a le monopole du réalisme, ça bouge à chaque version. Midjourney, les modèles d'image de Google ou Stable Diffusion bien réglé produisent tous des rendus crédibles selon le sujet. Le réalisme tient plus à ta direction qu'au nom de l'outil : lumière motivée, imperfections, cohérence. Teste deux outils sur le même prompt et garde celui qui colle à ton usage.",
+    },
+
   ],
   content: [
     {

@@ -4,7 +4,7 @@ export const storyboardShotlistNotionIa: Article = {
   title: "Storyboard + shot list: méthode Notion pour tourner vite avec l'IA",
   slug: "storyboard-shotlist-notion-ia",
   description:
-    "Masterclass complète pour organiser storyboard et shot list dans Notion pour une prod IA, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Organiser storyboard et shot list dans Notion pour une prod IA : méthode pas à pas, erreurs fréquentes et corrections pour rester carré.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "workflow-creatif",

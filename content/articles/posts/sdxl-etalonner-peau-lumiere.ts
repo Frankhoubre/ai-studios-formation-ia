@@ -4,7 +4,7 @@ export const sdxlEtalonnerPeauLumiere: Article = {
   title: "SDXL: etalonner peau et lumiere pour un rendu cinema exploitable",
   slug: "sdxl-etalonner-peau-lumiere",
   description:
-    "Masterclass complète pour etalonner des portraits SDXL pour un rendu cinema naturel, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Étalonner des portraits SDXL pour un rendu cinéma naturel : peau, lumière, méthode pas à pas et erreurs fréquentes à corriger.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "ia-image",

@@ -4,7 +4,7 @@ export const fixerPrixCreationIaGrille: Article = {
   title: "Fixer ses prix en création IA : la grille tarifaire",
   slug: "fixer-prix-creation-ia-grille",
   description:
-    "Fixer ses prix en création IA sans se brader : tarif à la valeur, au projet, au forfait. Comment construire une grille tarifaire solide. La méthode pour facturer juste.",
+    "Fixer ses prix en création IA sans se brader : tarif à la valeur, au projet, au forfait. Comment construire une grille solide et facturer juste.",
   excerpt:
     "L'IA va vite, alors on est tenté de facturer peu. C'est l'erreur qui tue une activité. Voici comment fixer des prix qui reflètent la valeur, pas le temps machine.",
   category: "business-creatif",

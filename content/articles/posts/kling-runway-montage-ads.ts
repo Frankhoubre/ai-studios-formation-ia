@@ -4,7 +4,7 @@ export const klingRunwayMontageAds: Article = {
   title: "Kling et Runway: monter un spot de 20 secondes qui vend vraiment",
   slug: "kling-runway-montage-ads",
   description:
-    "Masterclass complète pour produire un spot publicitaire court avec Kling et Runway, avec workflow débutant detaille, erreurs frequentes et correction technique orientee resultats.",
+    "Produire un spot publicitaire court avec Kling et Runway : workflow pas à pas, erreurs fréquentes et corrections pour un montage propre.",
   excerpt:
     "Tu veux des rendus IA credibles et utilisables en production, sans style plastique, voici la méthode terrain complète.",
   category: "ia-video",

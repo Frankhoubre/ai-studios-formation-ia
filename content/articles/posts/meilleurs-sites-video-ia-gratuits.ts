@@ -57,7 +57,7 @@ export const meilleursSitesVideoIaGratuits: Article = {
     {
       question: "Ces sites changent-ils souvent ?",
       answer:
-        "Constamment. De nouveaux sites apparaissent, d'autres ferment ou suppriment leur offre gratuite, les quotas évoluent. C'est pourquoi il vaut mieux apprendre à évaluer un site toi-même, sur la qualité, le quota, le filigrane et les droits, plutôt que de mémoriser une liste figée. Cette méthode d'évaluation reste valable quel que soit le site du moment, et te garde autonome dans un paysage qui bouge en permanence.",
+        "Constamment. De nouveaux sites apparaissent, d'autres ferment ou suppriment leur offre gratuite, les quotas évoluent. C'est pourquoi il vaut mieux apprendre à évaluer un site toi-même, sur la qualité, le quota, le filigrane et les droits, plutôt que de mémoriser une liste figée. Cette méthode d'évaluation reste valable quel que soit le site du moment, et te garde autonome dans un secteur qui bouge en permanence.",
     },
   ],
   content: [
@@ -308,7 +308,7 @@ export const meilleursSitesVideoIaGratuits: Article = {
     },
     {
       type: "p",
-      text: "Constamment. De nouveaux sites apparaissent, d'autres ferment ou suppriment leur offre gratuite, les quotas évoluent. C'est pourquoi il vaut mieux apprendre à évaluer un site toi-même, sur la qualité, le quota, le filigrane et les droits, plutôt que de mémoriser une liste figée. Cette méthode d'évaluation reste valable quel que soit le site du moment, et te garde autonome dans un paysage qui bouge en permanence.",
+      text: "Constamment. De nouveaux sites apparaissent, d'autres ferment ou suppriment leur offre gratuite, les quotas évoluent. C'est pourquoi il vaut mieux apprendre à évaluer un site toi-même, sur la qualité, le quota, le filigrane et les droits, plutôt que de mémoriser une liste figée. Cette méthode d'évaluation reste valable quel que soit le site du moment, et te garde autonome dans un secteur qui bouge en permanence.",
     },
   ],
 };

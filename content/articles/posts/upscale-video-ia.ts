@@ -4,7 +4,7 @@ export const upscaleVideoIa: Article = {
   title: "Upscale vidéo IA : agrandir une vidéo",
   slug: "upscale-video-ia",
   description:
-    "Agrandir et améliorer une vidéo avec l'IA : passer en HD ou 4K, gérer la cohérence temporelle, les artefacts et le poids. La méthode pour un upscale vidéo propre.",
+    "Agrandir et améliorer une vidéo avec l'IA : passer en HD ou 4K, gérer la cohérence temporelle, les artefacts et le poids. Pour un upscale propre.",
   excerpt:
     "Passer une vidéo en 4K avec l'IA est tentant, mais l'upscale vidéo a un piège que l'image n'a pas : la cohérence d'une image à l'autre. Voici comment faire.",
   category: "ia-video",

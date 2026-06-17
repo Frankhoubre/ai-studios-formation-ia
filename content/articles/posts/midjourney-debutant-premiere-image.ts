@@ -4,7 +4,7 @@ export const midjourneyDebutantPremiereImage: Article = {
   title: "Midjourney pour débutants : votre première image",
   slug: "midjourney-debutant-premiere-image",
   description:
-    "Débuter sur Midjourney sans se perdre : comprendre l'interface, écrire un premier prompt qui marche, choisir et affiner une image, et éviter les pièges classiques.",
+    "Débuter sur Midjourney sans se perdre : comprendre l'interface, écrire un premier prompt qui marche, choisir et affiner une image, éviter les pièges.",
   excerpt:
     "Midjourney impressionne, mais l'interface déroute au début. Voici la méthode claire pour réussir ta première image sans tâtonner.",
   category: "ia-image",
