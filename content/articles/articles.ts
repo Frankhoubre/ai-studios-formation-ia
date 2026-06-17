@@ -29,6 +29,9 @@ import { compositionCadrageImageIa } from "@/content/articles/posts/composition-
 import { structure3ActesVideoIa } from "@/content/articles/posts/structure-3-actes-video-ia";
 import { decrireLumierePromptIa } from "@/content/articles/posts/decrire-lumiere-prompt-ia";
 import { portfolioCreationsIaQuiConvertit } from "@/content/articles/posts/portfolio-creations-ia-qui-convertit";
+import { corrigerMainsYeuxDefautsAnatomiquesIa } from "@/content/articles/posts/corriger-mains-yeux-defauts-anatomiques-ia";
+import { prolongerPlanIaAuDela5Secondes } from "@/content/articles/posts/prolonger-plan-ia-au-dela-5-secondes";
+import { bibliothequePromptsReutilisables } from "@/content/articles/posts/bibliotheque-prompts-reutilisables";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -39,6 +42,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  bibliothequePromptsReutilisables,
+  prolongerPlanIaAuDela5Secondes,
+  corrigerMainsYeuxDefautsAnatomiquesIa,
   portfolioCreationsIaQuiConvertit,
   decrireLumierePromptIa,
   structure3ActesVideoIa,
