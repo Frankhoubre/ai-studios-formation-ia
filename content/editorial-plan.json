@@ -189,7 +189,7 @@
       "category": "ia-image",
       "kw": "lumière image cinéma",
       "hero": "A cinematic portrait dramatically lit showing strong directional cinema lighting, chiaroscuro, warm and cool contrast",
-      "done": false
+      "done": true
     },
     {
       "n": 20,
@@ -199,7 +199,7 @@
       "category": "ia-image",
       "kw": "illustration cinéma",
       "hero": "A cinematic sweeping concept-art style environment, epic film production design, atmospheric depth, dramatic light",
-      "done": false
+      "done": true
     },
     {
       "n": 21,
