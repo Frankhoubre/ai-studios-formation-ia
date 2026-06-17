@@ -78,6 +78,8 @@ import { changerStyleImageIa } from "@/content/articles/posts/changer-style-imag
 import { detourerSupprimerFondIa } from "@/content/articles/posts/detourer-supprimer-fond-ia";
 import { restaurerColoriserPhotoIa } from "@/content/articles/posts/restaurer-coloriser-photo-ia";
 import { upscaleVideoIa } from "@/content/articles/posts/upscale-video-ia";
+import { controlnetPosesControlerComposition } from "@/content/articles/posts/controlnet-poses-controler-composition";
+import { seedCfgStepsReglagesImageIa } from "@/content/articles/posts/seed-cfg-steps-reglages-image-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -88,6 +90,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  controlnetPosesControlerComposition,
+  seedCfgStepsReglagesImageIa,
   restaurerColoriserPhotoIa,
   upscaleVideoIa,
   changerStyleImageIa,

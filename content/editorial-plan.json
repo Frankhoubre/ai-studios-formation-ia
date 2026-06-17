@@ -472,7 +472,7 @@
       "category": "prompting",
       "kw": "controlnet pose ia",
       "hero": "A cinematic shot showing a pose skeleton guiding a generated character, precise control concept, studio light",
-      "done": false
+      "done": true
     },
     {
       "n": 48,
@@ -482,7 +482,7 @@
       "category": "prompting",
       "kw": "cfg steps seed ia",
       "hero": "A cinematic close-up of an AI generation interface with sliders and parameters glowing, technical precise mood, dark UI",
-      "done": false
+      "done": true
     },
     {
       "n": 49,
