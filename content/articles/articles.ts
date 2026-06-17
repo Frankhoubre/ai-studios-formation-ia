@@ -51,6 +51,8 @@ import { lipSyncIaFaireParlerPersonnage } from "@/content/articles/posts/lip-syn
 import { sousTitresAutomatiquesIaVideo } from "@/content/articles/posts/sous-titres-automatiques-ia-video";
 import { leonardoAiImagesAssets } from "@/content/articles/posts/leonardo-ai-images-assets";
 import { ideogramTexteLisibleImagesIa } from "@/content/articles/posts/ideogram-texte-lisible-images-ia";
+import { pikaLumaAlternativesVideoIa } from "@/content/articles/posts/pika-luma-alternatives-video-ia";
+import { hailuoWanSeedanceVideoIa } from "@/content/articles/posts/hailuo-wan-seedance-video-ia";
 import { recraftDesignVectorielIcones } from "@/content/articles/posts/recraft-design-vectoriel-icones";
 import { kreaAiTempsReelUpscale } from "@/content/articles/posts/krea-ai-temps-reel-upscale";
 import { magnificUpscalersIaAgrandirImage } from "@/content/articles/posts/magnific-upscalers-ia-agrandir-image";
@@ -80,6 +82,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  pikaLumaAlternativesVideoIa,
+  hailuoWanSeedanceVideoIa,
   ideogramTexteLisibleImagesIa,
   recraftDesignVectorielIcones,
   leonardoAiImagesAssets,
