@@ -80,6 +80,8 @@ import { restaurerColoriserPhotoIa } from "@/content/articles/posts/restaurer-co
 import { upscaleVideoIa } from "@/content/articles/posts/upscale-video-ia";
 import { controlnetPosesControlerComposition } from "@/content/articles/posts/controlnet-poses-controler-composition";
 import { seedCfgStepsReglagesImageIa } from "@/content/articles/posts/seed-cfg-steps-reglages-image-ia";
+import { loraEntrainerStyleVisage } from "@/content/articles/posts/lora-entrainer-style-visage";
+import { ponderationPromptPoidsMots } from "@/content/articles/posts/ponderation-prompt-poids-mots";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -90,6 +92,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  loraEntrainerStyleVisage,
+  ponderationPromptPoidsMots,
   controlnetPosesControlerComposition,
   seedCfgStepsReglagesImageIa,
   restaurerColoriserPhotoIa,

@@ -492,7 +492,7 @@
       "category": "prompting",
       "kw": "lora entraîner ia",
       "hero": "A cinematic contact sheet of consistent portraits of the same trained character, studio light, film still grid",
-      "done": false
+      "done": true
     },
     {
       "n": 50,
@@ -502,7 +502,7 @@
       "category": "prompting",
       "kw": "pondération prompt ia",
       "hero": "A cinematic close-up of words and weights glowing on a screen shaping an image, conceptual prompt control, moody light",
-      "done": false
+      "done": true
     },
     {
       "n": 51,
