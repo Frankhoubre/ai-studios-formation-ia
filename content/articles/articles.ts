@@ -90,6 +90,8 @@ import { fixerPrixCreationIaGrille } from "@/content/articles/posts/fixer-prix-c
 import { trouverPremiersClientsCreationIa } from "@/content/articles/posts/trouver-premiers-clients-creation-ia";
 import { automatiserProductionContenuIa } from "@/content/articles/posts/automatiser-production-contenu-ia";
 import { batchProduireVisuelsCoherentsSerie } from "@/content/articles/posts/batch-produire-visuels-coherents-serie";
+import { detecterImageGenereeIa } from "@/content/articles/posts/detecter-image-generee-ia";
+import { universVisuelMarqueIa } from "@/content/articles/posts/univers-visuel-marque-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -100,6 +102,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  detecterImageGenereeIa,
+  universVisuelMarqueIa,
   automatiserProductionContenuIa,
   batchProduireVisuelsCoherentsSerie,
   fixerPrixCreationIaGrille,

@@ -592,7 +592,7 @@
       "category": "ia-image",
       "kw": "détecter image ia",
       "hero": "A cinematic close-up of an eye and a hand examining an image for subtle AI artifacts, investigative mood, dramatic light",
-      "done": false
+      "done": true
     },
     {
       "n": 60,
@@ -602,7 +602,7 @@
       "category": "business-creatif",
       "kw": "identité visuelle ia",
       "hero": "A cinematic brand mood-board wall with cohesive visuals, color palette and logo, polished creative studio, warm light",
-      "done": false
+      "done": true
     }
   ]
 }
