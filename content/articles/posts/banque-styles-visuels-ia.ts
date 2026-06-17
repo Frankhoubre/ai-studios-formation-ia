@@ -32,7 +32,7 @@ export const banqueStylesVisuelsIa: Article = {
     {
       question: "Qu'est-ce qu'une banque de styles visuels ?",
       answer:
-        "C'est une collection de descriptions de styles prêtes à l'emploi, chacune capturant une ambiance visuelle, cinématique, aquarelle, néon, minimaliste, vintage. Au lieu de réinventer la description d'un style à chaque génération, tu piochate dans ta banque et tu l'appliquies à ton sujet. C'est un gain de temps et de cohérence considérable. Une bonne banque de styles transforme la page blanche en menu de points de départ éprouvés, et te permet de décliner un même sujet dans des ambiances variées en quelques secondes.",
+        "C'est une collection de descriptions de styles prêtes à l'emploi, chacune capturant une ambiance visuelle, cinématique, aquarelle, néon, minimaliste, vintage. Au lieu de réinventer la description d'un style à chaque génération, tu pioches dans ta banque et tu l'appliques à ton sujet. C'est un gain de temps et de cohérence considérable. Une bonne banque de styles transforme la page blanche en menu de points de départ éprouvés, et te permet de décliner un même sujet dans des ambiances variées en quelques secondes.",
     },
     {
       question: "Pourquoi se constituer une banque de styles ?",
@@ -63,7 +63,7 @@ export const banqueStylesVisuelsIa: Article = {
   content: [
     {
       type: "p",
-      text: "Tu ouvres ton générateur, tu as un sujet en tête, mais quel style lui donner ? La page blanche du style fait perdre un temps fou et bride la créativité. La solution, une banque de styles, une collection d'ambiances prêtes à l'emploi dans laquelle tu piochate. Cinématique, aquarelle, néon, minimaliste, vintage, chaque style décrit une fois, réutilisable à l'infini. Ce guide te montre comment bâtir et exploiter une banque de 20 ambiances qui change ta façon de produire.",
+      text: "Tu ouvres ton générateur, tu as un sujet en tête, mais quel style lui donner ? La page blanche du style fait perdre un temps fou et bride la créativité. La solution, une banque de styles, une collection d'ambiances prêtes à l'emploi dans laquelle tu pioches. Cinématique, aquarelle, néon, minimaliste, vintage, chaque style décrit une fois, réutilisable à l'infini. Ce guide te montre comment bâtir et exploiter une banque de 20 ambiances qui change ta façon de produire.",
     },
     {
       type: "p",
@@ -263,7 +263,7 @@ export const banqueStylesVisuelsIa: Article = {
     },
     {
       type: "p",
-      text: "C'est une collection de descriptions de styles prêtes à l'emploi, chacune capturant une ambiance visuelle, cinématique, aquarelle, néon, minimaliste, vintage. Au lieu de réinventer la description d'un style à chaque génération, tu piochate dans ta banque et tu l'appliquies à ton sujet. C'est un gain de temps et de cohérence considérable. Une bonne banque de styles transforme la page blanche en menu de points de départ éprouvés, et te permet de décliner un même sujet dans des ambiances variées en quelques secondes.",
+      text: "C'est une collection de descriptions de styles prêtes à l'emploi, chacune capturant une ambiance visuelle, cinématique, aquarelle, néon, minimaliste, vintage. Au lieu de réinventer la description d'un style à chaque génération, tu pioches dans ta banque et tu l'appliques à ton sujet. C'est un gain de temps et de cohérence considérable. Une bonne banque de styles transforme la page blanche en menu de points de départ éprouvés, et te permet de décliner un même sujet dans des ambiances variées en quelques secondes.",
     },
     {
       type: "h3",

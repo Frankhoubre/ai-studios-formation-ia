@@ -249,7 +249,7 @@ export const automatiserProductionContenuIa: Article = {
     },
     {
       type: "p",
-      text: "Quand tu automatises le mécanique, soignes la base, places des points de contrôle et construis petit à petit, l'automatisation devient un véritable gain de temps sans sacrifice de qualité. Tu déchargesl'humain du répétitif pour le concentrer sur le jugement et la créativité, et ta chaîne de production amplifie ta valeur au lieu de tes défauts.",
+      text: "Quand tu automatises le mécanique, soignes la base, places des points de contrôle et construis petit à petit, l'automatisation devient un véritable gain de temps sans sacrifice de qualité. Tu décharges l'humain du répétitif pour le concentrer sur le jugement et la créativité, et ta chaîne de production amplifie ta valeur au lieu de tes défauts.",
     },
     {
       type: "h2",

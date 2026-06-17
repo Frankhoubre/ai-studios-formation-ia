@@ -80,7 +80,7 @@ export const videosIaJoliesMaisVides: Article = {
     },
     {
       type: "p",
-      text: "Il se fabrique quand vous collectez des moments forts sans les relier par une tension. Vous avez un plan magnifique de ville, un plan magnifique de visage, un plan magnifique de main. Chacun porte une esthétique, aucun ne porte une progression. Vous ajoutez de la musique émotionnelle pour simuler du sens, et ça tient tre secondes. Puis ça s’effondre, parce que le cerveau détecte le patchwork. Ce n’est pas une insulte. C’est une conséquence de la méthode. La méthode commence par une intention, pas par une bibliothèque de plans.",
+      text: "Il se fabrique quand vous collectez des moments forts sans les relier par une tension. Vous avez un plan magnifique de ville, un plan magnifique de visage, un plan magnifique de main. Chacun porte une esthétique, aucun ne porte une progression. Vous ajoutez de la musique émotionnelle pour simuler du sens, et ça tient trois secondes. Puis ça s’effondre, parce que le cerveau détecte le patchwork. Ce n’est pas une insulte. C’est une conséquence de la méthode. La méthode commence par une intention, pas par une bibliothèque de plans.",
     },
     {
       type: "h2",
@@ -106,7 +106,7 @@ export const videosIaJoliesMaisVides: Article = {
       headers: ["Symptôme", "Cause probable", "Correction pragmatique"],
       rows: [
         [
-          "Ça impressionne mais on oublie en tre secondes",
+          "Ça impressionne mais on oublie en trois secondes",
           "Pas de bascule émotionnelle, pas de conséquence",
           "Écrire une conséquence explicite entre début et fin",
         ],
