@@ -85,7 +85,7 @@ export const illustrationIaCreerPro: Article = {
     },
     {
       type: "p",
-      text: "Quand tu ne donnes pas de direction stylistique, l'IA applique son rendu moyen, ce style consensuel qu'on voit partout. Ce n'est pas un défaut de l'outil, c'est la conséquence de l'absence de choix. Le modèle vise le milieu statistique, et le milieu n'a pas d'identité. Le style générique est donc le symptôme d'un prompt qui ne décide rien sur le plan esthétique.",
+      text: "Quand tu ne donnes pas de direction stylistique, l'IA applique son rendu moyen, ce style consensuel qu'on voit partout. Ce n'est pas un défaut de l'outil, c'est la conséquence de l'absence de choix. Le modèle vise le milieu statistique, et le milieu n'a pas d'identité. Le style générique est donc le symptôme d'un prompt qui ne décide rien sur le plan esthétique. À l'inverse, tu peux imposer une direction forte, transformer un rendu existant en jouant sur [le style d'une image](/blog/changer-style-image-ia), ou explorer des registres moins attendus comme [les images abstraites](/blog/images-abstraites-ia).",
     },
     {
       type: "p",

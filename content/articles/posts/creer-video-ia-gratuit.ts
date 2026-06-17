@@ -106,7 +106,7 @@ export const creerVideoIaGratuit: Article = {
     },
     {
       type: "p",
-      text: "Pense-y comme un réalisateur, pas comme quelqu'un qui filme un plan continu sans coupe. Un film est une suite de plans montés. En adoptant ce réflexe dès le gratuit, tu contournes la limite de durée et tu obtiens un résultat plus dynamique, car le montage donne du rythme qu'un long plan unique n'a jamais.",
+      text: "Pense-y comme un réalisateur, pas comme quelqu'un qui filme un plan continu sans coupe. Un film est une suite de plans montés, et tu peux pousser cette logique jusqu’au [court métrage en IA gratuit](/blog/film-ia-gratuit-court-metrage). En adoptant ce réflexe dès le gratuit, tu contournes la limite de durée et tu obtiens un résultat plus dynamique, car le montage donne du rythme qu'un long plan unique n'a jamais.",
     },
     {
       type: "p",
@@ -201,7 +201,7 @@ export const creerVideoIaGratuit: Article = {
     },
     {
       type: "p",
-      text: "Fix concret : pense en clips courts assemblés au montage. C'est la parade à la limite de durée et la bonne méthode vidéo. Plusieurs plans brefs bien raccordés battent une longue génération instable, gratuite ou non.",
+      text: "Fix concret : pense en clips courts assemblés au montage. C'est la parade à la limite de durée et la bonne méthode vidéo. Plusieurs plans brefs bien raccordés battent une longue génération instable, gratuite ou non. Si tu veux au contraire étirer un plan unique, vois comment [prolonger un plan IA au-delà de 5 secondes](/blog/prolonger-plan-ia-au-dela-5-secondes).",
     },
     {
       type: "h3",

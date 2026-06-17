@@ -77,7 +77,7 @@ export const creerPubliciteIa: Article = {
     },
     {
       type: "p",
-      text: "Un brief utile répond à cinq blocs : qui parle à qui, quelle promesse unique, quelle preuve ou démonstration, quels interdits (brand safety), quels formats et durées. Si un bloc manque, vous improviserez au milieu de la génération et vous paierez le prix en temps. Écrivez aussi ce que vous refusez : ton trop agressif, clichés, esthétique enfantine si la marque est sérieuse. Ces refus deviennent des garde-fous quand vous sélectionnez des images. Pour la narration, reliez au besoin avec [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides) : une pub peut être belle et inefficace.",
+      text: "Un brief utile répond à cinq blocs : qui parle à qui, quelle promesse unique, quelle preuve ou démonstration, quels interdits (brand safety), quels formats et durées. Si un bloc manque, vous improviserez au milieu de la génération et vous paierez le prix en temps. Écrivez aussi ce que vous refusez : ton trop agressif, clichés, esthétique enfantine si la marque est sérieuse. Ces refus deviennent des garde-fous quand vous sélectionnez des images, et ils gagnent à découler d’un [univers visuel de marque cohérent](/blog/univers-visuel-marque-ia) défini une fois pour toutes. Pour la narration, reliez au besoin avec [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides) : une pub peut être belle et inefficace.",
     },
     {
       type: "h2",

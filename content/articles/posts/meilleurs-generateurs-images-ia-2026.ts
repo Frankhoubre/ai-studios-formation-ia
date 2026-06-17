@@ -140,7 +140,7 @@ export const meilleursGenerateursImagesIa2026: Article = {
     },
     {
       type: "p",
-      text: "Repère la ligne qui correspond à ton usage prioritaire, et tu as déjà ta famille d'outils. Tu n'as plus à comparer dix générateurs, seulement deux ou trois de la bonne famille, ce qui rend le test final rapide et concluant.",
+      text: "Repère la ligne qui correspond à ton usage prioritaire, et tu as déjà ta famille d'outils. Tu n'as plus à comparer dix générateurs, seulement deux ou trois de la bonne famille, ce qui rend le test final rapide et concluant. Pour mettre des noms sur ces familles : [DALL·E dans ChatGPT](/blog/dalle-chatgpt-creer-images) pour le généraliste accessible, [Imagen et Nano Banana de Google](/blog/google-imagen-nano-banana-photorealisme) pour le photoréalisme, [Recraft](/blog/recraft-design-vectoriel-icones) pour le vectoriel et la typographie, et [Midjourney, dans sa version 8.1](/blog/midjourney-v8-1-mise-a-jour) côté artistique.",
     },
     {
       type: "h3",

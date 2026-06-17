@@ -106,7 +106,7 @@ export const inpaintingIaRetoucherImage: Article = {
     },
     {
       type: "p",
-      text: "Pense-y comme à une restauration de tableau. Le restaurateur ne se contente pas de combler un trou, il fond sa retouche dans l'œuvre pour qu'elle disparaisse. L'inpainting suit la même exigence, la zone réparée doit s'intégrer si bien qu'on ne la remarque pas. C'est là que se joue la différence entre une correction réussie et un rapiéçage visible.",
+      text: "Pense-y comme à une restauration de tableau. Le restaurateur ne se contente pas de combler un trou, il fond sa retouche dans l'œuvre pour qu'elle disparaisse. L'inpainting suit la même exigence, la zone réparée doit s'intégrer si bien qu'on ne la remarque pas. C'est là que se joue la différence entre une correction réussie et un rapiéçage visible. Et si ton sujet est une vieille photo abîmée, c'est exactement l'objet de [restaurer et coloriser une photo avec l'IA](/blog/restaurer-coloriser-photo-ia).",
     },
     {
       type: "p",

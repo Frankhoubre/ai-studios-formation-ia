@@ -105,7 +105,7 @@ export const iaImageRealiste: Article = {
     },
     {
       type: "p",
-      text: "Le grain n’est pas une astuce rétro. C’est une texture qui casse l’ultra netteté numérique. Le color grading n’est pas un filtre Instagram. C’est une décision : vous poussez les verts, vous salez les noirs, vous gardez la peau dans une plage crédible. Si vous poussez trop, vous retombez dans le plastique coloré. Travaillez par petites courbes mentales : moins trois pourcent de saturation globale peut suffire à rapprocher du réel. Et si vous enchaînez des images, gardez la même courbe pour toute la série.",
+      text: "Le grain n’est pas une astuce rétro. C’est une texture qui casse l’ultra netteté numérique. Le color grading n’est pas un filtre Instagram. C’est une décision : vous poussez les verts, vous salez les noirs, vous gardez la peau dans une plage crédible. Si vous poussez trop, vous retombez dans le plastique coloré. Travaillez par petites courbes mentales : moins trois pourcent de saturation globale peut suffire à rapprocher du réel. Et si vous enchaînez des images, gardez la même courbe pour toute la série. Pour la peau et la lumière en particulier, j’ai détaillé une méthode d’étalonnage dans [étalonner des portraits SDXL](/blog/sdxl-etalonner-peau-lumiere), et pour composer une ambiance lumineuse de cinéma, voyez [la lumière de cinéma dans vos images](/blog/lumiere-cinema-ambiances-images-ia).",
     },
     {
       type: "table",
@@ -186,7 +186,7 @@ export const iaImageRealiste: Article = {
     },
     {
       type: "p",
-      text: "Voici un réflexe simple pour juger une image : cherchez le défaut. Dans une vraie photo, il y a toujours quelque chose qui n’est pas idéal, une mèche rebelle, une ombre un peu dure, un reflet parasite, une asymétrie. Si votre image IA est parfaite partout, sans aucune aspérité, c’est presque toujours le signe du rendu synthétique. Le cerveau humain associe la perfection absolue à l’artificiel, parce que le réel ne l’atteint jamais. Demandez-vous donc, devant chaque rendu : où est le défaut crédible ? S’il n’y en a aucun, réintroduisez-en un, discret et motivé. Ce n’est pas dégrader l’image, c’est la rendre humaine. Les meilleurs visuels IA réalistes contiennent toujours une petite imperfection assumée qui sert d’alibi de réel.",
+      text: "Voici un réflexe simple pour juger une image : cherchez le défaut. Dans une vraie photo, il y a toujours quelque chose qui n’est pas idéal, une mèche rebelle, une ombre un peu dure, un reflet parasite, une asymétrie. Si votre image IA est parfaite partout, sans aucune aspérité, c’est presque toujours le signe du rendu synthétique. Le cerveau humain associe la perfection absolue à l’artificiel, parce que le réel ne l’atteint jamais. Demandez-vous donc, devant chaque rendu : où est le défaut crédible ? S’il n’y en a aucun, réintroduisez-en un, discret et motivé. Ce n’est pas dégrader l’image, c’est la rendre humaine. Les meilleurs visuels IA réalistes contiennent toujours une petite imperfection assumée qui sert d’alibi de réel. Ce même réflexe, traquer la perfection suspecte, sert aussi à [détecter une image générée par IA](/blog/detecter-image-generee-ia).",
     },
     {
       type: "h2",

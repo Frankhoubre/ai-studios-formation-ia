@@ -63,7 +63,7 @@ export const workflowIaCreatif: Article = {
   content: [
     {
       type: "p",
-      text: "Vous voulez produire dix fois plus. La tentation est d’ouvrir plus d’outils, de lancer plus de générations, de remplir des dossiers de variations anonymes. Résultat classique : vous êtes épuisé, vous ne savez plus ce qui est validé, et votre « gain » est un cimetière de fichiers. Produire plus sans perdre la qualité ne commence pas par la vitesse du GPU. Ça commence par une méthode qui tranche tôt, qui nomme les versions, et qui sépare exploration et production. C’est là que beaucoup se trompent : ils croient que le workflow est administratif. Le workflow est créatif, parce qu’il protège l’intention.",
+      text: "Vous voulez produire dix fois plus. La tentation est d’ouvrir plus d’outils, de lancer plus de générations, de remplir des dossiers de variations anonymes. Résultat classique : vous êtes épuisé, vous ne savez plus ce qui est validé, et votre « gain » est un cimetière de fichiers. Produire plus sans perdre la qualité ne commence pas par la vitesse du GPU. Ça commence par une méthode qui tranche tôt, qui nomme les versions, et qui sépare exploration et production. C’est là que beaucoup se trompent : ils croient que le workflow est administratif. Le workflow est créatif, parce qu’il protège l’intention. Et une fois la méthode rodée, vous pouvez [automatiser une partie de la production de contenu](/blog/automatiser-production-contenu-ia) sans sacrifier la qualité.",
     },
     {
       type: "youtube",
@@ -95,7 +95,7 @@ export const workflowIaCreatif: Article = {
     },
     {
       type: "p",
-      text: "Le batch efficace varie une dimension : expression, cadrage, lumière, mais pas les trois en même temps si vous êtes en phase d’apprentissage. Avant de générer, écrivez votre critère de sélection : « je garde l’image qui sert le beat 2 ». Après génération, appliquez le critère même si une autre image est « plus belle » au hasard. Sinon vous n’apprenez jamais pourquoi vous choisissez. La sélection est l’endroit où la plupart des créateurs perdent leur temps, parce qu’ils n’ont pas de règle.",
+      text: "Le batch efficace varie une dimension : expression, cadrage, lumière, mais pas les trois en même temps si vous êtes en phase d’apprentissage. Avant de générer, écrivez votre critère de sélection : « je garde l’image qui sert le beat 2 ». Après génération, appliquez le critère même si une autre image est « plus belle » au hasard. Sinon vous n’apprenez jamais pourquoi vous choisissez. La sélection est l’endroit où la plupart des créateurs perdent leur temps, parce qu’ils n’ont pas de règle. Pour appliquer ce principe à une série entière, voyez [produire des visuels cohérents en batch](/blog/batch-produire-visuels-coherents-serie).",
     },
     {
       type: "h2",
@@ -194,7 +194,7 @@ export const workflowIaCreatif: Article = {
     },
     {
       type: "p",
-      text: "La nouveauté permanente est un piège. Chaque semaine sort un outil « qui change tout », et tester sans fin, c’est ne jamais maîtriser. Un workflow qui scale repose sur une pile d’outils restreinte et bien connue, pas sur la course au dernier modèle. Choisissez un outil principal par tâche, image, vidéo, son, montage, et apprenez-le à fond. La maîtrise profonde d’un outil correct bat l’usage superficiel de dix outils excellents. Réservez l’exploration de nouveaux outils à des plages dédiées, hors production, pour ne pas saboter vos livraisons. Quand un nouvel outil prouve un gain réel et durable, vous l’intégrez consciemment à votre pile et vous mettez à jour votre prompt system. Le reste du temps, vous produisez avec ce que vous connaissez. La stabilité de votre pile est elle-même un multiplicateur : moins de friction, moins d’apprentissage perdu, plus de temps créatif réel.",
+      text: "La nouveauté permanente est un piège. Chaque semaine sort un outil « qui change tout », et tester sans fin, c’est ne jamais maîtriser. Un workflow qui scale repose sur une pile d’outils restreinte et bien connue, pas sur la course au dernier modèle. Choisissez un outil principal par tâche, image, vidéo, son, montage, et apprenez-le à fond. La maîtrise profonde d’un outil correct bat l’usage superficiel de dix outils excellents. Réservez l’exploration de nouveaux outils à des plages dédiées, hors production, pour ne pas saboter vos livraisons. Quand un nouvel outil prouve un gain réel et durable, vous l’intégrez consciemment à votre pile et vous mettez à jour votre prompt system. Le reste du temps, vous produisez avec ce que vous connaissez. La stabilité de votre pile est elle-même un multiplicateur : moins de friction, moins d’apprentissage perdu, plus de temps créatif réel. Si votre pile inclut un outil nodal, [débuter sur ComfyUI](/blog/comfyui-workflow-nodal-debutant) montre comment garder ce workflow lisible plutôt que de l’empiler en spaghetti.",
     },
     {
       type: "h2",

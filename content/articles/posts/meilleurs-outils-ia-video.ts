@@ -77,7 +77,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Cette famille part d’une image clef et propose du mouvement local ou caméra. C’est utile quand votre storyboard est stable et que vous voulez du mouvement contrôlé. Le risque classique est la dérive : la matière bouge là où elle devrait rester stable, le visage glisse, la physique devient soup. La méthode de correction n’est pas toujours « meilleur modèle ». Souvent, c’est simplifier l’action, réduire l’amplitude, verrouiller les éléments importants, ou découper en deux plans plus simples. Si vous n’avez pas d’image stable, revenez à [IA image réaliste](/blog/ia-image-realiste) avant de bouger.",
+      text: "Cette famille part d’une image clef et propose du mouvement local ou caméra. C’est utile quand votre storyboard est stable et que vous voulez du mouvement contrôlé. Le risque classique est la dérive : la matière bouge là où elle devrait rester stable, le visage glisse, la physique devient soupe. La méthode de correction n’est pas toujours « meilleur modèle ». Souvent, c’est simplifier l’action, réduire l’amplitude, verrouiller les éléments importants, ou découper en deux plans plus simples. Si vous n’avez pas d’image stable, revenez à [IA image réaliste](/blog/ia-image-realiste) avant de bouger. Pour comparer les modèles de cette famille, regardez [Pika, Luma et leurs alternatives](/blog/pika-luma-alternatives-video-ia) ou le récent [Runway Seedance 2 et Aleph 2](/blog/runway-seedance-2-fast-aleph-2).",
     },
     {
       type: "h2",
@@ -95,7 +95,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le montage est où votre vidéo devient film ou pub. Les logiciels traditionnels restent centraux : timeline, layers audio, couleur, export. L’IA dans le montage progresse sur certaines tâches : transcription, sous titrès, parfois suggestions de cuts. Mais la décision de couper tôt ou tard reste humaine si vous voulez du cinéma. Pourquoi ? Parce que le rythme est une lecture, pas un réglage automatique. Si votre montage sonne amateur, aucun générateur ne sauve l’ensemble. Pour la narration, reliez [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides).",
+      text: "Le montage est où votre vidéo devient film ou pub. Les logiciels traditionnels restent centraux : timeline, layers audio, couleur, export. L’IA dans le montage progresse sur certaines tâches : transcription, [sous-titres automatiques](/blog/sous-titres-automatiques-ia-video), parfois suggestions de cuts. Mais la décision de couper tôt ou tard reste humaine si vous voulez du cinéma. Pourquoi ? Parce que le rythme est une lecture, pas un réglage automatique. Si votre montage sonne amateur, aucun générateur ne sauve l’ensemble. Pour la narration, reliez [vidéos IA jolies mais vides](/blog/videos-ia-jolies-mais-vides).",
     },
     {
       type: "h2",
@@ -104,7 +104,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "La voix IA peut être un outil de prototypage formidable et une arme de destruction massive pour la crédibilité si vous la laissez générique. Direction, respiration, emphasis, silence : ce sont des choix. La musique générative ou bibliothèques IA peuvent accélérer, mais attention aux droits et à l’homogénéité. Une musique « neutre » tue une pub plus vite qu’un plan moyen. Choisissez une famille d’outil selon votre besoin : prototypage rapide, voix finale assistée, ou enregistrement humain hybride.",
+      text: "La voix IA peut être un outil de prototypage formidable et une arme de destruction massive pour la crédibilité si vous la laissez générique. Direction, respiration, emphasis, silence : ce sont des choix. La musique générative ou bibliothèques IA peuvent accélérer, mais attention aux droits et à l’homogénéité. Une musique « neutre » tue une pub plus vite qu’un plan moyen. Si vous voulez pousser le son jusqu’au clip complet, voyez [créer un clip musical avec l’IA](/blog/clip-musical-ia). Choisissez une famille d’outil selon votre besoin : prototypage rapide, voix finale assistée, ou enregistrement humain hybride.",
     },
     {
       type: "h2",
@@ -113,7 +113,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "L’upscaling répond à une contrainte de diffusion plus qu’à une contrainte artistique. Il peut aider à passer sur un écran plus grand, parfois à sauver un plan légèrement sous résolu. Il ne remplace pas une bonne lumière, un bon cadrage, un bon mouvement. Si vous upscalez une mise en scène confuse, vous obtenez souvent une confusion plus nette. Gardez cette famille pour la fin, pas pour le début.",
+      text: "L’upscaling répond à une contrainte de diffusion plus qu’à une contrainte artistique. Il peut aider à passer sur un écran plus grand, parfois à sauver un plan légèrement sous résolu. Il ne remplace pas une bonne lumière, un bon cadrage, un bon mouvement. Si vous upscalez une mise en scène confuse, vous obtenez souvent une confusion plus nette. Gardez cette famille pour la fin, pas pour le début. Pour la marche à suivre concrète, voyez [comment upscaler une vidéo IA proprement](/blog/upscale-video-ia).",
     },
     {
       type: "table",
@@ -213,7 +213,7 @@ export const meilleursOutilsIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autrès. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
+      text: "Le meilleur outil 2026 est celui qui réduit votre friction sur un maillon précis sans détruire les autres. Organisez d’abord votre production : [workflow IA créatif](/blog/workflow-ia-creatif). Pour aller plus loin, j’ai préparé une formation gratuite qui montre comment structurer un vrai workflow IA pour créer des images et vidéos plus cinématiques : [formation gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video). Et retenez une phrase : si un outil promet tout, il vous promet surtout une moyenne.",
     },
   ],
 };

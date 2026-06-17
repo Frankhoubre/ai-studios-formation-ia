@@ -216,7 +216,7 @@ export const photosProduitIaShooting: Article = {
     },
     {
       type: "p",
-      text: "Tu places un produit dans un décor généré, mais les ombres, reflets ou l'échelle ne collent pas. L'œil détecte le montage, le visuel sonne faux, et la confiance s'effondre. Une mauvaise intégration ruine un bon décor.",
+      text: "Tu places un produit dans un décor généré, mais les ombres, reflets ou l'échelle ne collent pas. L'œil détecte le montage, le visuel sonne faux, et la confiance s'effondre. Une mauvaise intégration ruine un bon décor. Quand tu pars d'un vrai produit à replacer, un détourage propre change tout, comme expliqué dans [détourer et supprimer le fond avec l'IA](/blog/detourer-supprimer-fond-ia).",
     },
     {
       type: "p",
@@ -295,7 +295,7 @@ export const photosProduitIaShooting: Article = {
     },
     {
       type: "p",
-      text: "Les mises en scène d'ambiance, les décors lifestyle, les variations de contexte et les fonds. L'IA brille pour montrer un produit dans différents univers, saisons ou usages, sans multiplier les shootings. Elle est aussi très utile pour les fonds et le détourage. Pour les vues techniques très précises ou réglementées, la vraie photo garde parfois l'avantage. Commence par les usages d'ambiance, là où l'IA fait gagner le plus de temps et d'argent.",
+      text: "Les mises en scène d'ambiance, les décors lifestyle, les variations de contexte et les fonds. L'IA brille pour montrer un produit dans différents univers, saisons ou usages, sans multiplier les shootings. Elle est aussi très utile pour les fonds et le détourage. Pour les vues techniques très précises ou réglementées, la vraie photo garde parfois l'avantage. Commence par les usages d'ambiance, là où l'IA fait gagner le plus de temps et d'argent. Et pour présenter un produit en situation prêt à publier, les [mockups produit générés par IA](/blog/mockups-produit-ia) prolongent directement cette logique.",
     },
     {
       type: "h3",

@@ -104,7 +104,7 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "p",
-      text: "Sans fiche, votre storyboard devient une mode défilé de visages. La fiche minimale comprend silhouette, cheveux, vêtements signature, âge apparent, traits stables, et deux photos de référence cohérentes. Si vous travaillez un personnage récurrent, vous recoupez avec [personnage cohérent sur plusieurs images IA](/blog/personnage-coherent-ia). L’objectif n’est pas le réalisme absolu. L’objectif est la reconnaissance : le spectateur doit croire que c’est la même entité d’un plan à l’autre, même si l’émotion change.",
+      text: "Sans fiche, votre storyboard devient une mode défilé de visages. La fiche minimale comprend silhouette, cheveux, vêtements signature, âge apparent, traits stables, et deux photos de référence cohérentes. Si vous travaillez un personnage récurrent, vous recoupez avec [personnage cohérent sur plusieurs images IA](/blog/personnage-coherent-ia). L’objectif n’est pas le réalisme absolu. L’objectif est la reconnaissance : le spectateur doit croire que c’est la même entité d’un plan à l’autre, même si l’émotion change. Pour transformer ces fiches en document de production exploitable, voyez comment [organiser storyboard et shot list dans Notion](/blog/storyboard-shotlist-notion-ia).",
     },
     {
       type: "h2",

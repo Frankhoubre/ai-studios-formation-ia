@@ -151,7 +151,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
     },
     {
       type: "p",
-      text: "Lance-toi sur un modèle accessible, souvent le service, avec une offre claire. Puis observe ce qui marche et spécialise-toi, car la spécialisation paie mieux que le généralisme. Un positionnement précis te rend identifiable et recommandable, on pense à toi pour un besoin donné.",
+      text: "Lance-toi sur un modèle accessible, souvent le service, avec une offre claire. Puis observe ce qui marche et spécialise-toi, car la spécialisation paie mieux que le généralisme. Un positionnement précis te rend identifiable et recommandable, on pense à toi pour un besoin donné. Pour les deux nerfs de la guerre au démarrage, vois comment [trouver tes premiers clients](/blog/trouver-premiers-clients-creation-ia) et [fixer tes prix avec une vraie grille](/blog/fixer-prix-creation-ia-grille).",
     },
     {
       type: "ol",
@@ -213,7 +213,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
     },
     {
       type: "p",
-      text: "Tu mises tout sur la vente d'assets en espérant un revenu passif immédiat, et tu découvres un marché saturé où tes créations se noient. Les ventes ne viennent pas, car la barrière d'entrée basse a attiré une foule de concurrents. Le revenu passif facile était un mirage, et tu as investi sans retour.",
+      text: "Tu mises tout sur la vente d'assets en espérant un revenu passif immédiat, et tu découvres un marché saturé où tes créations se noient. Les ventes ne viennent pas, car la barrière d'entrée basse a attiré une foule de concurrents. Le revenu passif facile était un mirage, et tu as investi sans retour. Si tu vises malgré tout ce créneau, des [modèles 3D générés par IA](/blog/generer-modeles-3d-ia) restent un asset à plus forte valeur que des images génériques, à condition de cibler un marché précis.",
     },
     {
       type: "p",
