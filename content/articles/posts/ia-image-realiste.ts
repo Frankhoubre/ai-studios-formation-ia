@@ -61,6 +61,11 @@ export const iaImageRealiste: Article = {
       text: "Vous demandez « photorealistic » et vous obtenez une peau lisse comme une pub pour crème, des yeux trop nets, une lumière qui n’a aucune raison d’être dans la pièce. Ce n’est pas le réalisme que vous cherchez. C’est une moyenne statistique de ce que les images « réalistes » ressemblent en ligne. Le vrai problème, c’est celui-ci : vous optimisez pour l’apparence du réalisme, pas pour ses mécanismes. Le réalisme crédible, c’est de la cohérence physique et humaine, pas du détail maximal.",
     },
     {
+      type: "youtube",
+      videoId: "HSngiz25nsI",
+      title: "Cette IA remplace les shootings photo e-commerce",
+    },
+    {
       type: "h2",
       id: "plastique-ou-vient",
       text: "Le plastique, ça vient d’où concrètement ?",

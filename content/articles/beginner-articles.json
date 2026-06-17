@@ -2670,6 +2670,11 @@
         "caption": "Interface de travail pour la conception d'un visuel Instagram, pensée comme un véritable plan de production."
       },
       {
+        "type": "youtube",
+        "videoId": "5oEf4y7Iz3E",
+        "title": "Je fais léviter des objets autour de moi avec l'IA"
+      },
+      {
         "type": "h2",
         "id": "concepts-de-base",
         "text": "Les concepts de base à comprendre avant de générer"
@@ -3380,6 +3385,11 @@
         "src": "/images/articles/idee-floue-brief-ia-exploitable-workflow-1.webp",
         "alt": "brief IA exploitable workflow IA débutant avec rendu cinématique naturel",
         "caption": "Interface de travail pour la conception d'un brief IA, pensée comme un véritable plan de production."
+      },
+      {
+        "type": "youtube",
+        "videoId": "-75yMA0uL1o",
+        "title": "De ce croquis à un vrai animé grâce à l'IA"
       },
       {
         "type": "h2",
@@ -6586,6 +6596,11 @@
         "caption": "Une interface de travail pensée comme un véritable plan de production pour un contrôle total du mouvement."
       },
       {
+        "type": "youtube",
+        "videoId": "muKmoeFpbxk",
+        "title": "Je dessine une trajectoire… l'IA pilote le drone"
+      },
+      {
         "type": "h2",
         "id": "concepts-de-base",
         "text": "Les concepts de base à comprendre avant de générer"
@@ -6940,6 +6955,11 @@
         "src": "/images/articles/ecrire-micro-scene-avant-generer-video-ia-workflow-1.webp",
         "alt": "workflow de création vidéo IA pour débutant avec rendu cinématique",
         "caption": "Espace de travail structuré pour une production vidéo réfléchie, loin des simples démonstrations techniques."
+      },
+      {
+        "type": "youtube",
+        "videoId": "YUhi_J0tNhQ",
+        "title": "L'IA transforme mon scénario en storyboard en quelques secondes"
       },
       {
         "type": "h2",
@@ -8369,6 +8389,11 @@
         "src": "/images/articles/cout-premier-mois-ia-image-video-workflow-1.webp",
         "alt": "workflow budgétaire IA pour débutant",
         "caption": "Planification financière pour un premier mois d'apprentissage IA maîtrisé."
+      },
+      {
+        "type": "youtube",
+        "videoId": "XEllEeEHEFI",
+        "title": "Higgsfield Supercomputer : gardez votre fric ! La grosse déception IA"
       },
       {
         "type": "h2",

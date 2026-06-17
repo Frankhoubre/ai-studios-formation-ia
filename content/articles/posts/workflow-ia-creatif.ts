@@ -60,6 +60,11 @@ export const workflowIaCreatif: Article = {
       text: "Vous voulez produire dix fois plus. La tentation est d’ouvrir plus d’outils, de lancer plus de générations, de remplir des dossiers de variations anonymes. Résultat classique : vous êtes épuisé, vous ne savez plus ce qui est validé, et votre « gain » est un cimetière de fichiers. Produire plus sans perdre la qualité ne commence pas par la vitesse du GPU. Ça commence par une méthode qui tranche tôt, qui nomme les versions, et qui sépare exploration et production. C’est là que beaucoup se trompent : ils croient que le workflow est administratif. Le workflow est créatif, parce qu’il protège l’intention.",
     },
     {
+      type: "youtube",
+      videoId: "CdRbvV5XWaY",
+      title: "Dreamina OCTO change complètement la création IA",
+    },
+    {
       type: "h2",
       id: "intention-prompt-system",
       text: "Intention et prompt system : écrire pour vous, pas seulement pour le modèle",

@@ -72,6 +72,11 @@ export const stabilitePersonnageMultiPlans: Article = {
       type: "p",
       text: "Voila la promesse, tu repars avec une méthode débutant friendly, mais pro dans son exécution. On parle vrais clics, vrais réglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
     },
+    {
+      type: "youtube",
+      videoId: "8B0d08tUA1k",
+      title: "Cet animé n'a pas été créé par un studio… mais entièrement avec l'IA",
+    },
     { type: "h2", id: "core-concepts", text: "Core Concepts: ce qui se passe vraiment quand un rendu parait cinematographique" },
     { type: "h3", id: "intent-avant-style", text: "L'intention avant le style" },
     {
