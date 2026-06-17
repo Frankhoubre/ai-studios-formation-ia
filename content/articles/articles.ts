@@ -33,6 +33,8 @@ import { corrigerMainsYeuxDefautsAnatomiquesIa } from "@/content/articles/posts/
 import { prolongerPlanIaAuDela5Secondes } from "@/content/articles/posts/prolonger-plan-ia-au-dela-5-secondes";
 import { bibliothequePromptsReutilisables } from "@/content/articles/posts/bibliotheque-prompts-reutilisables";
 import { genererImageIaGuideDebutant } from "@/content/articles/posts/generer-image-ia-guide-debutant";
+import { meilleursGenerateursImagesIa2026 } from "@/content/articles/posts/meilleurs-generateurs-images-ia-2026";
+import { midjourneyDebutantPremiereImage } from "@/content/articles/posts/midjourney-debutant-premiere-image";
 import { creerImagesIaGratuitOutils } from "@/content/articles/posts/creer-images-ia-gratuit-outils";
 
 const beginnerArticles = JSON.parse(
@@ -44,6 +46,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  meilleursGenerateursImagesIa2026,
+  midjourneyDebutantPremiereImage,
   genererImageIaGuideDebutant,
   creerImagesIaGratuitOutils,
   bibliothequePromptsReutilisables,
