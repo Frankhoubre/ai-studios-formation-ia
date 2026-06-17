@@ -86,6 +86,8 @@ import { promptMidjourneyParametres } from "@/content/articles/posts/prompt-midj
 import { banqueStylesVisuelsIa } from "@/content/articles/posts/banque-styles-visuels-ia";
 import { gagnerArgentIaCreativeModeles } from "@/content/articles/posts/gagner-argent-ia-creative-modeles";
 import { devenirFreelanceCreationIa } from "@/content/articles/posts/devenir-freelance-creation-ia";
+import { fixerPrixCreationIaGrille } from "@/content/articles/posts/fixer-prix-creation-ia-grille";
+import { trouverPremiersClientsCreationIa } from "@/content/articles/posts/trouver-premiers-clients-creation-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -96,6 +98,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  fixerPrixCreationIaGrille,
+  trouverPremiersClientsCreationIa,
   gagnerArgentIaCreativeModeles,
   devenirFreelanceCreationIa,
   promptMidjourneyParametres,
