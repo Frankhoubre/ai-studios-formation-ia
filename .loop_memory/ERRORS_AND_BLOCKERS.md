@@ -48,15 +48,13 @@ La tâche sœur `daily-ai-news-article` (frankhoubre.com) fait déjà de la rech
 web pour ses news → l'accès web existe sur ce runner. Le loop peut sourcer ses
 news. (Ahrefs : voir B-3, à NE PAS utiliser.)
 
-### B-2 — 🟠 OUVERT (seul vrai reste) : GEMINI_API_KEY absente DANS CE REPO
-`scripts/generate-hero.py` exige `GEMINI_API_KEY` (env ou `.env` racine
-git-ignoré). Le repo voisin frankhoubre.com a sa clé dans son `.env.local`, mais
-**ce repo n'a pas de `.env`** et aucune variable d'env GEMINI. Sans clé, les hero
-images des nouveaux articles échoueront (le loop continue : fallback image
-existante + brief loggé, mais c'est sous-optimal).
-**Action utilisateur (1 minute)** : créer `/Users/frankhoubre/blog-ai-studio/.env`
-avec `GEMINI_API_KEY=...` (déjà couvert par `.gitignore`). Réutiliser la même clé
-gratuite que frankhoubre.com. Clé gratuite : https://aistudio.google.com/apikey
+### B-2 — ✅ RÉSOLU : GEMINI_API_KEY en place + génération validée
+Clé fournie par l'utilisateur, déposée dans `/Users/frankhoubre/blog-ai-studio/.env`
+(git-ignoré via `.env*`, jamais commité). Test de génération réussi le 2026-06-17 :
+Imagen 4 Fast, 1K natif, export WebP 1280×698 ~25 Ko, rendu cinématique conforme
+(lumière motivée, bokeh, peau naturelle, mains correctes, pas de look-IA).
+`scripts/generate-hero.py` réglé pour le moins cher par défaut : **Fast 1K, 50mm**
+(`--lens 85mm`, `--standard/--ultra --image-size 2K` pour un rendu plus net).
 
 ### B-3 — ✅ MCP Ahrefs : NE PAS utiliser (plan gratuit insuffisant)
 Confirmé par la tâche sœur ("ne PAS appeler le MCP Ahrefs"). Le calage mot-clé se

@@ -33,9 +33,12 @@ Le plus récent en haut.
   Europe/Paris → exécute le loop complet (2 news + 1 evergreen + audit) en
   autonomie, auto-publie si gates verts. C'est LE système quotidien du site.
 
-### Seul reste avant 100%
-- 🟠 Déposer `GEMINI_API_KEY` dans `/Users/frankhoubre/blog-ai-studio/.env` pour
-  les hero images (B-2). Sans elle, le loop tourne mais sans visuel hero dédié.
+### Statut : système 100% opérationnel
+- ✅ `GEMINI_API_KEY` en place (.env git-ignoré), génération hero validée.
+- ✅ `scripts/generate-hero.py` réglé éco : Imagen 4 Fast, 1K, 50mm par défaut
+  (options 85mm / 2K standard/ultra). ~25 Ko/hero, coût minimal.
+- Le run quotidien `daily-growth-loop-ai-studios` (08:10) a tout ce qu'il faut.
+- Astuce : faire un "Run now" une fois pour pré-approuver les outils.
 
 ### Ce qui a échoué / bloqué
 - Aucune publication de contenu ce run (règle "premier run = pas de publication").
