@@ -32,6 +32,8 @@ import { portfolioCreationsIaQuiConvertit } from "@/content/articles/posts/portf
 import { corrigerMainsYeuxDefautsAnatomiquesIa } from "@/content/articles/posts/corriger-mains-yeux-defauts-anatomiques-ia";
 import { prolongerPlanIaAuDela5Secondes } from "@/content/articles/posts/prolonger-plan-ia-au-dela-5-secondes";
 import { bibliothequePromptsReutilisables } from "@/content/articles/posts/bibliotheque-prompts-reutilisables";
+import { genererImageIaGuideDebutant } from "@/content/articles/posts/generer-image-ia-guide-debutant";
+import { creerImagesIaGratuitOutils } from "@/content/articles/posts/creer-images-ia-gratuit-outils";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -42,6 +44,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  genererImageIaGuideDebutant,
+  creerImagesIaGratuitOutils,
   bibliothequePromptsReutilisables,
   prolongerPlanIaAuDela5Secondes,
   corrigerMainsYeuxDefautsAnatomiquesIa,
