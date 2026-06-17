@@ -152,6 +152,42 @@ export const creerPubliciteIa: Article = {
     },
     {
       type: "h2",
+      id: "accroche-trois-secondes",
+      text: "L’accroche : les trois premières secondes décident de tout",
+    },
+    {
+      type: "p",
+      text: "Une publicité, surtout en ligne, se joue dans les trois premières secondes. Passé ce délai, le spectateur scrolle, saute, oublie. C’est le maillon où l’IA est à la fois la plus tentante et la plus piégeuse : tentante parce qu’elle produit des plans spectaculaires, piégeuse parce que le spectaculaire gratuit n’accroche pas, il décore. Une vraie accroche pose un enjeu, une question, une rupture, quelque chose qui donne une raison de rester. Avant de soigner le rendu, soignez la première seconde : que voit-on, et pourquoi ne peut-on pas détourner le regard ? Testez votre accroche sans le son, puis sans l’image, pour vérifier que chaque canal porte seul une partie du message. Une accroche qui ne fonctionne qu’avec les deux réunis est fragile. La beauté ne retient personne ; la tension, si. C’est le premier endroit où une pub IA se distingue d’une démo technique.",
+    },
+    {
+      type: "h2",
+      id: "validation-client",
+      text: "Gérer la validation client sans s’enliser",
+    },
+    {
+      type: "p",
+      text: "Le plus gros risque de retard sur une pub n’est pas technique, il est relationnel : la validation client mal cadrée. Si vous montrez des images finales trop tôt, vous ancrez des attentes difficiles à déplacer, et le moindre changement devient une négociation. La parade est de faire valider par paliers, du plus abstrait au plus concret : d’abord le brief, puis le monde via le moodboard, puis la structure via le storyboard, et seulement ensuite les rendus. À chaque palier, vous obtenez un accord écrit et daté avant de passer au suivant. Ainsi, un client ne peut pas remettre en cause la direction artistique au stade du montage final, puisqu’il l’a validée plus tôt. Cadrez aussi le feedback : demandez des retours précis et groupés, pas un flux de remarques au fil de l’eau. Une validation structurée protège votre temps, votre marge et la relation elle-même.",
+    },
+    {
+      type: "h2",
+      id: "conformite-droits",
+      text: "Conformité et droits : le livrable invisible",
+    },
+    {
+      type: "p",
+      text: "En publicité, la conformité n’est pas une option, c’est un livrable à part entière, même s’il est invisible dans le rendu final. Visages identifiables, marques tierces, musiques, polices, conditions d’utilisation des outils : chaque élément peut comporter une contrainte de droits. Un visuel magnifique mais juridiquement risqué est un passif, pas un atout, et le problème ne se révèle souvent qu’après diffusion, quand il coûte le plus cher. Traitez donc la vérification des droits comme une étape explicite de votre chaîne, avant la livraison. Documentez la provenance de chaque élément, les licences, les conditions des outils utilisés. Pour un client professionnel, cette traçabilité est rassurante et vous distingue d’un prestataire amateur. Mieux vaut une question de droits ennuyeuse posée en amont qu’une campagne retirée en urgence. La conformité fait partie de ce que vend un créatif sérieux.",
+    },
+    {
+      type: "h2",
+      id: "beaute-vs-efficacite",
+      text: "Beauté contre efficacité : ne pas confondre les deux",
+    },
+    {
+      type: "p",
+      text: "Une publicité n’a pas pour but d’être belle, mais de faire agir. C’est une distinction que l’IA rend facile à oublier, parce qu’elle produit du beau à profusion. Or une pub superbe qui ne transmet pas la promesse, ou qui noie le message sous l’esthétique, a échoué, même si elle impressionne. Gardez toujours le message au centre : que doit comprendre, ressentir ou faire le spectateur ? Chaque choix visuel doit servir cette réponse, pas la concurrencer. Le piège du créateur IA est de tomber amoureux d’un plan magnifique qui dessert le message, et de le garder par attachement. Apprenez à sacrifier le beau plan inutile. Mesurez l’efficacité quand vous le pouvez, par un test utilisateur léger ou un avant-après de clarté du message, et ne confondez jamais l’admiration que suscite votre travail avec sa performance réelle. La beauté est un moyen au service de l’efficacité, jamais une fin en publicité.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : une pub IA est un processus, pas un coup de chance",
     },

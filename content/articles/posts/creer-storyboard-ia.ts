@@ -170,6 +170,42 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "h2",
+      id: "reduire-libertes",
+      text: "Quand ça casse, réduisez les degrés de liberté",
+    },
+    {
+      type: "p",
+      text: "Quand votre storyboard IA refuse de tenir la cohérence d’une case à l’autre, le réflexe le plus courant est le pire : on ajoute des adjectifs au prompt, on « booste » la description, on empile les précisions. Cela aggrave presque toujours le problème, parce que chaque mot supplémentaire donne au modèle une raison de plus de réinventer. La bonne réaction est l’inverse : réduisez les degrés de liberté. Simplifiez le décor, retirez les props inutiles, verrouillez les vêtements sur une tenue simple, gardez la même lumière, cadrez pour sortir du champ ce qui pose problème comme les mains. Plus vous laissez d’éléments libres, plus le modèle a d’occasions de faire dériver votre personnage ou votre scène. En resserrant, vous lui laissez moins de place pour l’erreur. C’est contre-intuitif quand on débute : on croit qu’il faut en dire plus pour mieux contrôler, alors qu’il faut en demander moins et le faire plus fermement. Un décor minimal et stable tient mieux qu’un décor riche et instable. Avant d’enrichir un plan, demandez-vous toujours si vous ne pourriez pas plutôt le simplifier. La cohérence se gagne en retirant, pas en ajoutant.",
+    },
+    {
+      type: "h2",
+      id: "beats-avant-images",
+      text: "Écrire les beats avant de toucher à une image",
+    },
+    {
+      type: "p",
+      text: "Le réflexe qui sabote le plus de storyboards, c’est d’ouvrir un générateur avant d’avoir écrit l’histoire. On se laisse porter par les belles images, et la narration suit le hasard des rendus au lieu de le commander. Inversez l’ordre : écrivez d’abord la séquence en mots, une ligne par case, sans aucune image. Chaque ligne dit ce qui change, ce que le spectateur apprend, comment la tension évolue. Ce squelette textuel est laid, rapide à produire, et c’est précisément sa force : vous pouvez le réécrire dix fois en cinq minutes, là où dix régénérations d’images coûteraient une heure. Une fois la suite de beats validée à l’écrit, et seulement là, vous passez aux images. Vous générez alors pour servir une structure décidée, pas pour la découvrir au petit bonheur. Cette séparation entre l’écriture de la séquence et sa mise en images est ce qui transforme une collection de jolis plans en un récit qui tient debout.",
+    },
+    {
+      type: "h2",
+      id: "raccords",
+      text: "Penser les raccords entre les cases, pas seulement les cases",
+    },
+    {
+      type: "p",
+      text: "Un storyboard n’est pas une suite d’images indépendantes, c’est une suite de transitions. Ce qui compte autant que chaque case, c’est ce qui se passe entre deux cases : le regard passe-t-il logiquement de l’une à l’autre ? La direction du mouvement est-elle cohérente ? L’échelle change-t-elle pour une raison ? Un débutant soigne chaque case isolément et obtient une séquence qui saute, parce que les raccords ne sont pas pensés. Demandez-vous, pour chaque passage : pourquoi cette case suit-elle celle-là, et qu’est-ce qui guide l’œil du spectateur d’un cadre au suivant ? Un raccord réussi est invisible, le spectateur ne sent pas la coupe. Un raccord raté casse l’immersion même si les deux images sont superbes. Storyboarder, c’est autant concevoir les intervalles que les plans eux-mêmes.",
+    },
+    {
+      type: "h2",
+      id: "test-lecture-muette",
+      text: "Le test de lecture muette : votre juge le plus honnête",
+    },
+    {
+      type: "p",
+      text: "Voici le test le plus révélateur pour valider un storyboard : faites-le lire à quelqu’un sans aucun son, sans texte, sans votre explication à côté. Si cette personne comprend l’action, la progression et l’enjeu rien qu’en regardant la suite d’images, votre séquence tient. Si elle ne comprend pas, aucun montage, aucune musique, aucune voix off ne sauvera la vidéo finale, ils ne feront que masquer le problème. La narration visuelle doit fonctionner par l’image seule, et le storyboard est le moment le moins cher pour le vérifier. Beaucoup de créateurs sautent ce test parce qu’il est inconfortable, il met à nu les trous de leur histoire. C’est justement pour ça qu’il est précieux. Mieux vaut découvrir qu’une séquence est illisible au stade du storyboard, où la corriger coûte cinq minutes, qu’après avoir produit et monté toute la vidéo.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : le storyboard est un frein utile",
     },

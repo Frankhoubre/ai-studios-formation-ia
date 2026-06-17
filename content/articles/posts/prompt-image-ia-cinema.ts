@@ -166,6 +166,33 @@ export const promptImageIaCinema: Article = {
     },
     {
       type: "h2",
+      id: "ordre-du-prompt",
+      text: "L’ordre des mots compte : du plus stable au plus variable",
+    },
+    {
+      type: "p",
+      text: "Un prompt n’est pas un sac d’adjectifs où l’ordre n’aurait pas d’importance. Le modèle accorde généralement plus de poids à ce qui vient en premier, et la structure de votre phrase oriente sa lecture. Organisez donc votre prompt du plus stable au plus variable : d’abord le sujet et son identité, puis la scène et le contexte, ensuite la lumière et la focale, enfin les détails de texture et d’ambiance. Cette hiérarchie protège l’essentiel. Si vous noyez votre sujet au milieu d’une liste d’effets, le modèle le traite comme un élément parmi d’autres et peut le déformer pour servir une ambiance. En plaçant l’identité en tête, stable, et la scène ensuite, variable, vous gardez le contrôle sur ce qui doit tenir et vous laissez de la souplesse sur le reste. C’est aussi ce qui rend vos itérations lisibles : quand vous changez un détail en fin de prompt, vous savez que le cœur reste intact. Un prompt bien ordonné est un prompt qu’on peut faire évoluer sans tout casser.",
+    },
+    {
+      type: "h2",
+      id: "moins-cest-plus",
+      text: "Moins, c’est plus : la discipline du prompt court",
+    },
+    {
+      type: "p",
+      text: "La tentation permanente est d’ajouter : un adjectif, une référence, un superlatif de qualité, encore un. On croit préciser, on dilue. Chaque terme supplémentaire est une instruction de plus que le modèle doit concilier avec les autres, et au-delà d’un certain point, ces instructions se contredisent et produisent une bouillie moyenne. Un prompt cinéma efficace est souvent étonnamment court : une intention, un sujet, une lumière motivée, une focale, une texture. Le reste, vous le laissez au modèle et vous le corrigez par itération si nécessaire. Faites régulièrement l’exercice inverse de l’instinct : retirez la moitié de votre prompt et comparez. Très souvent, l’image devient plus forte, parce que vous avez cessé de tirer le modèle dans dix directions à la fois. La précision ne vient pas de la quantité de mots, mais de la justesse de quelques causes bien choisies. Le prompt court n’est pas un prompt paresseux, c’est un prompt qui sait ce qu’il veut.",
+    },
+    {
+      type: "h2",
+      id: "iterer-un-levier",
+      text: "Itérer un seul levier à la fois : la méthode scientifique du prompt",
+    },
+    {
+      type: "p",
+      text: "La plus grande source de frustration avec les prompts vient d’une mauvaise habitude : changer plusieurs choses entre deux générations, puis conclure que « le modèle est nul » quand le résultat déçoit. Si vous modifiez la lumière, le cadrage et l’émotion en même temps, vous ne saurez jamais lequel a causé l’amélioration ou la dégradation. Adoptez la rigueur d’une expérience : ne changez qu’un levier à la fois, observez l’effet, puis décidez. Vous voulez plus d’émotion ? Changez le regard, rien d’autre, et comparez. La lumière ne convient pas ? Touchez à la source, et seulement à elle. Cette discipline transforme le tâtonnement aveugle en apprentissage réel : au bout de quelques séries, vous saurez exactement quel mot produit quel effet sur vos sujets. C’est lent en apparence, rapide en pratique, parce que vous arrêtez de tourner en rond. Le créateur qui maîtrise ses prompts n’est pas celui qui en écrit les plus longs, c’est celui qui sait isoler la variable qui compte.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : le cinéma est une décision, pas un style",
     },

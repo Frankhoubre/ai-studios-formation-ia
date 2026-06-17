@@ -148,6 +148,51 @@ export const iaImageRealiste: Article = {
     },
     {
       type: "h2",
+      id: "materiaux-environnement",
+      text: "Matériaux et environnement : le réalisme est contextuel",
+    },
+    {
+      type: "p",
+      text: "Un visage crédible dans un décor incohérent reste incrédible. Le réalisme ne se joue pas seulement sur la peau, il se joue sur la relation entre le sujet et son monde. Une surface métallique reflète l’environnement réel, un tissu absorbe la lumière selon sa matière, une vitre renvoie une partie de la scène. Quand ces réponses manquent ou se contredisent, l’image sonne faux même si le personnage est parfait. Décrivez donc la matière des surfaces autour du sujet et laissez la lumière les traverser de façon logique. Un sol mouillé après la pluie, une table en bois usé, un mur qui a vécu : ces détails ancrent le sujet dans un lieu réel. Le piège inverse existe aussi, celui du décor trop propre, sans poussière ni usure, qui trahit le studio virtuel. Le monde réel est sale, marqué, imparfait, et c’est précisément cette imperfection qui le rend crédible.",
+    },
+    {
+      type: "h2",
+      id: "prompt-a-rallonge",
+      text: "Pourquoi le prompt à rallonge sabote le réalisme",
+    },
+    {
+      type: "p",
+      text: "Empiler vingt adjectifs de qualité, « ultra detailed, 8k, hyperrealistic, masterpiece, award winning », ne rapproche pas du réel, cela en éloigne. Chaque terme tire le modèle vers la moyenne des images étiquetées ainsi en ligne, c’est-à-dire vers le rendu glossy de concours, pas vers la photographie honnête. Plus vous accumulez, plus vous diluez votre intention dans un brouillard de superlatifs. Un prompt réaliste est souvent court et précis : une source de lumière motivée, une matière, une focale, une intention de cadrage. Le reste, vous le laissez au modèle. Si vous devez choisir entre ajouter « hyperrealistic » et préciser « late afternoon light coming from a single window on the left », choisissez toujours la cause physique. Le réalisme naît de décisions concrètes, pas d’une surenchère de promesses dans le prompt.",
+    },
+    {
+      type: "h2",
+      id: "deux-passes",
+      text: "Le workflow en deux passes : structure puis vérité",
+    },
+    {
+      type: "p",
+      text: "Plutôt que d’espérer la perfection en une génération, séparez le travail en deux temps. Première passe : vous cherchez la bonne structure, la bonne composition, la bonne pose, la bonne lumière générale, sans vous soucier de la texture. Vous validez la direction. Deuxième passe : une fois la structure tenue, vous travaillez la vérité, la texture de peau, le grain, le color grading, les imperfections, par retouche ou régénération ciblée. Cette séparation évite le piège classique où l’on jette une image bien composée parce que la peau est plastique, ou l’inverse. Vous traitez un problème à la fois. La plupart des images IA décevantes le sont parce qu’on a tout demandé d’un coup et accepté un compromis flou sur tout. Travailler en deux passes, c’est refuser ce compromis.",
+    },
+    {
+      type: "h2",
+      id: "test-du-defaut",
+      text: "Le test du défaut : votre meilleur détecteur de plastique",
+    },
+    {
+      type: "p",
+      text: "Voici un réflexe simple pour juger une image : cherchez le défaut. Dans une vraie photo, il y a toujours quelque chose qui n’est pas idéal, une mèche rebelle, une ombre un peu dure, un reflet parasite, une asymétrie. Si votre image IA est parfaite partout, sans aucune aspérité, c’est presque toujours le signe du rendu synthétique. Le cerveau humain associe la perfection absolue à l’artificiel, parce que le réel ne l’atteint jamais. Demandez-vous donc, devant chaque rendu : où est le défaut crédible ? S’il n’y en a aucun, réintroduisez-en un, discret et motivé. Ce n’est pas dégrader l’image, c’est la rendre humaine. Les meilleurs visuels IA réalistes contiennent toujours une petite imperfection assumée qui sert d’alibi de réel.",
+    },
+    {
+      type: "h2",
+      id: "realisme-pas-but",
+      text: "Quand le réalisme n’est pas le bon objectif",
+    },
+    {
+      type: "p",
+      text: "Dernière nuance, et elle compte : le réalisme n’est pas toujours ce que vous devez viser. Une illustration, une affiche, un visuel de marque stylisé n’ont aucun besoin de passer pour une photo. Le piège serait d’appliquer ces techniques de réalisme à un projet qui demandait au contraire un parti pris graphique fort. Avant de chasser le plastique, demandez-vous si votre image doit être crédible comme une photographie, ou expressive comme une illustration. Les deux objectifs sont légitimes, mais ils appellent des choix opposés. Ce guide vous aide à atteindre la crédibilité photographique quand c’est elle que vous cherchez. Si votre projet vise un rendu assumé et stylisé, gardez ces leviers en réserve et concentrez-vous plutôt sur la cohérence de votre direction artistique.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : moins de mots, plus de causes",
     },

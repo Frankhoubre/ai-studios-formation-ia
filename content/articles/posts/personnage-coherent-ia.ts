@@ -146,6 +146,63 @@ export const personnageCoherentIa: Article = {
     },
     {
       type: "h2",
+      id: "banque-references",
+      text: "Construire une banque de références réutilisable",
+    },
+    {
+      type: "p",
+      text: "Une fois que vous tenez un visage, ne le laissez pas s’évaporer dans votre dossier de téléchargements. Constituez une petite banque : trois à cinq images validées, sous des angles complémentaires, en lumière neutre, nommées clairement avec le nom du personnage et la date. Cette banque devient votre source de vérité. À chaque nouvelle scène, vous repartez d’elle, pas de la dernière image générée, qui a peut-être déjà légèrement dérivé. C’est une nuance décisive : si vous régénérez toujours à partir du plan précédent, les micro écarts s’accumulent et, au bout de dix images, votre personnage a vieilli ou changé de morphologie sans que vous l’ayez décidé. En revenant systématiquement à la banque d’origine, vous repartez d’un point fixe. Pensez-y comme à un négatif que l’on réimprime, pas comme à une photocopie de photocopie.",
+    },
+    {
+      type: "h2",
+      id: "protocole-test",
+      text: "Le protocole de test en trois images",
+    },
+    {
+      type: "p",
+      text: "Avant de lancer une vraie série, validez la cohérence avec un test rapide et reproductible. Le principe : vous ne changez qu’une variable et vous observez si l’identité tient. Si elle tient sur ces trois plans, elle tiendra sur la série. Si elle casse dès le plan deux, inutile de produire vingt images, vous reproduiriez le problème vingt fois.",
+    },
+    {
+      type: "ol",
+      items: [
+        "Image 1 : portrait neutre, lumière douce, fond simple. C’est votre référence de contrôle.",
+        "Image 2 : même fiche, même lumière, mais un angle différent. Vous testez la stabilité géométrique du visage.",
+        "Image 3 : même fiche, même angle, mais une action ou une émotion modérée. Vous testez la résistance de l’identité au changement de scène.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Si le visage glisse entre l’image 1 et l’image 2, le problème vient de vos références ou de votre ancrage, pas de la scène. Si tout tient jusqu’à l’image 3 puis dérape, c’est que l’émotion ou l’action que vous demandez est trop forte pour ce que le modèle sait reproduire de façon stable. Vous saurez alors exactement où agir, au lieu de tout changer en aveugle.",
+    },
+    {
+      type: "h2",
+      id: "diagnostic-derive",
+      text: "Diagnostiquer une dérive : par où commencer",
+    },
+    {
+      type: "p",
+      text: "Quand un visage dérive, la réaction réflexe est de réécrire tout le prompt. C’est l’erreur. Une dérive a presque toujours une cause unique et identifiable. Reprenez les leviers dans l’ordre : avez-vous changé la lumière ? l’angle ? ajouté une émotion forte ? modifié la tenue ? introduit une nouvelle référence ? Dans neuf cas sur dix, un seul de ces éléments a bougé, et c’est lui le coupable. Revenez à la dernière image qui tenait, remettez ce paramètre à sa valeur précédente, et relancez. Cette discipline du retour en arrière contrôlé vous fera gagner des heures, parce qu’elle transforme un problème flou en une suite de tests binaires. Le modèle n’est pas capricieux : il réagit mécaniquement à ce que vous lui donnez. Votre travail est de garder la trace de ce que vous lui avez donné.",
+    },
+    {
+      type: "h2",
+      id: "corps-mains",
+      text: "Cohérence du corps, des mains et de la silhouette",
+    },
+    {
+      type: "p",
+      text: "On parle beaucoup du visage, mais un personnage cohérent, c’est aussi une morphologie stable. Si la carrure, la taille relative ou la posture changent d’un plan à l’autre, le spectateur sent le décalage même sans pouvoir le nommer. Décrivez la silhouette avec quelques repères simples et répétables : corpulence, posture générale, façon de se tenir. Les mains méritent une attention particulière, car elles sont à la fois difficiles à générer proprement et très visibles. Si une scène ne les exige pas, cadrez pour les sortir du champ ou les placer au repos. Vous réduisez ainsi le risque sans rien perdre. La cohérence n’est pas qu’une affaire de traits : c’est l’ensemble du corps qui doit appartenir à la même personne.",
+    },
+    {
+      type: "h2",
+      id: "vers-la-video",
+      text: "Préparer la cohérence pour la vidéo",
+    },
+    {
+      type: "p",
+      text: "Si votre série d’images doit nourrir une vidéo, la cohérence devient encore plus exigeante, car le mouvement amplifie le moindre écart. Un visage qui « flotte » légèrement d’un plan à l’autre passe presque inaperçu sur des images fixes, mais saute aux yeux en lecture. Préparez donc le terrain dès l’image : plus votre banque de référence est solide et plus vos plans fixes sont cohérents, plus la transition vers l’animation sera propre. Travaillez par plans courts, validez l’identité sur chaque plan avant de l’animer, et gardez la même logique d’un seul levier modifié à la fois. La vidéo ne pardonne pas l’à-peu-près : ce que vous laissez passer en image, elle le révèle.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : la cohérence est une discipline de production",
     },

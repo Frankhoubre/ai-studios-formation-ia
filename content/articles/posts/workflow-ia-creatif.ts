@@ -147,6 +147,51 @@ export const workflowIaCreatif: Article = {
     },
     {
       type: "h2",
+      id: "critere-avant-generer",
+      text: "Écrire son critère de sélection avant de générer",
+    },
+    {
+      type: "p",
+      text: "Voici une habitude qui change tout, et que presque personne ne pratique : décider de votre critère de sélection avant de lancer la moindre génération. La plupart des créateurs génèrent d’abord, puis choisissent « au feeling » parmi les résultats. Le problème, c’est que le feeling sur le moment est influencé par la beauté de surface, pas par l’utilité réelle de l’image pour votre projet. Vous gardez le plan le plus joli, pas celui qui sert le mieux votre intention. En écrivant noir sur blanc, avant de générer, ce que vous cherchez exactement, « je garde l’image qui transmet l’hésitation du personnage » ou « je garde le visuel qui marche en format vertical », vous vous donnez une règle objective à appliquer après coup. Et vous l’appliquez même si une autre image est plus séduisante mais hors sujet. Ce simple geste vous évite de remplir vos dossiers d’images « belles mais inutiles » que vous ne saurez jamais où placer. Il accélère aussi la sélection, parce que trancher contre un critère écrit prend quelques secondes, là où trancher au feeling peut prendre des heures de doute. Le critère avant la génération, c’est l’intention qui reprend la main sur le hasard.",
+    },
+    {
+      type: "h2",
+      id: "phases-separees",
+      text: "Séparer exploration et production : deux cerveaux différents",
+    },
+    {
+      type: "p",
+      text: "La plus grosse fuite de productivité vient du mélange des deux modes. En exploration, vous cherchez, vous testez, vous acceptez le désordre, vous gardez large. En production, vous exécutez, vous tranchez, vous fermez les options. Ce sont deux états mentaux opposés, et vouloir faire les deux en même temps épuise sans livrer. Concrètement, bloquez des plages distinctes : une session pour explorer une direction, une session séparée pour produire la série une fois la direction validée. Le signal qui dit que vous confondez les deux : vous changez encore de style alors que vous êtes censé livrer, ou vous refusez de trancher parce que vous voulez « voir encore une option ». Nommez votre mode au début de chaque session. Cette simple déclaration, « là j’explore » ou « là je produis », évite des heures de dérive où l’on croit avancer alors qu’on tourne en rond.",
+    },
+    {
+      type: "h2",
+      id: "seuil-reroll",
+      text: "Le seuil de reroll : décider quand s’arrêter de générer",
+    },
+    {
+      type: "p",
+      text: "Relancer une génération est gratuit en apparence, mais ruineux en temps et en énergie de décision. Sans règle, on reroll à l’infini en espérant « la » version magique, et on finit par valider au hasard, épuisé. Fixez un seuil avant de commencer : par exemple, si après six tentatives sérieuses sur un plan vous n’avez rien de validable, ce n’est pas le tirage qui est en cause, c’est le prompt, la référence ou l’intention. Vous arrêtez de reroll et vous changez l’entrée, ou vous passez à une retouche manuelle. Ce seuil transforme une boucle infinie en décision nette. Il vous oblige aussi à diagnostiquer plutôt qu’à espérer. La plupart des créateurs qui « passent des heures sur l’IA » n’explorent pas, ils rerollent sans critère. Le seuil de reroll est l’une des règles les plus rentables de tout le workflow.",
+    },
+    {
+      type: "h2",
+      id: "controle-qualite",
+      text: "Le contrôle qualité : une checklist avant de livrer",
+    },
+    {
+      type: "p",
+      text: "Avant de considérer un livrable terminé, passez-le dans une courte checklist écrite, toujours la même. La cohérence est-elle tenue sur toute la série ? Les défauts classiques sont-ils absents, mains, textes, raccords ? Le format et la résolution correspondent-ils à la destination ? La direction artistique est-elle homogène ? Une checklist fixe évite l’erreur de juger chaque livrable à l’humeur du moment. Elle attrape aussi les défauts qu’on ne voit plus à force de regarder son propre travail. L’idéal est de la relire à froid, idéalement le lendemain ou après une pause, car l’œil fatigué valide ce qu’il devrait refuser. Ce passage final, mécanique et systématique, est ce qui sépare une production amateur d’une production professionnelle. Il ne coûte que quelques minutes et rattrape des erreurs qui, une fois publiées, coûtent bien plus cher.",
+    },
+    {
+      type: "h2",
+      id: "outils-stables",
+      text: "Limiter sa pile d’outils : la discipline anti-dispersion",
+    },
+    {
+      type: "p",
+      text: "La nouveauté permanente est un piège. Chaque semaine sort un outil « qui change tout », et tester sans fin, c’est ne jamais maîtriser. Un workflow qui scale repose sur une pile d’outils restreinte et bien connue, pas sur la course au dernier modèle. Choisissez un outil principal par tâche, image, vidéo, son, montage, et apprenez-le à fond. La maîtrise profonde d’un outil correct bat l’usage superficiel de dix outils excellents. Réservez l’exploration de nouveaux outils à des plages dédiées, hors production, pour ne pas saboter vos livraisons. Quand un nouvel outil prouve un gain réel et durable, vous l’intégrez consciemment à votre pile et vous mettez à jour votre prompt system. Le reste du temps, vous produisez avec ce que vous connaissez. La stabilité de votre pile est elle-même un multiplicateur : moins de friction, moins d’apprentissage perdu, plus de temps créatif réel.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : produire plus, c’est trancher plus souvent",
     },

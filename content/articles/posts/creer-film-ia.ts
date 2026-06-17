@@ -157,6 +157,42 @@ export const creerFilmIa: Article = {
     },
     {
       type: "h2",
+      id: "commencer-petit",
+      text: "Commencer petit : le court avant le long",
+    },
+    {
+      type: "p",
+      text: "L’ambition tue beaucoup de premiers films IA. On rêve d’un court métrage de dix minutes, on s’épuise sur les trois premières, et on abandonne devant l’ampleur de la cohérence à tenir. La voie réaliste est l’inverse : commencez par un film d’une minute avec trois bascules nettes, et finissez-le vraiment. Un film court terminé vous apprend infiniment plus qu’un long métrage inachevé, parce qu’il vous fait traverser toute la chaîne, du scénario au montage final, et révèle où vous calez. La cohérence d’un personnage, le rythme, le son, la livraison : tout cela se travaille mieux sur une minute maîtrisée que sur dix minutes bancales. Une fois ce premier film bouclé, vous avez une méthode éprouvée que vous pouvez étendre. La durée n’est pas un signe de sérieux ; la capacité à finir, si. Les créateurs qui progressent vraiment sont ceux qui accumulent des petits projets terminés, pas ceux qui rêvent d’un chef-d’œuvre qu’ils ne livreront jamais. Visez petit, finissez, recommencez plus grand.",
+    },
+    {
+      type: "h2",
+      id: "rythme-respiration",
+      text: "Le rythme : un film respire, il ne court pas en continu",
+    },
+    {
+      type: "p",
+      text: "Le piège du créateur IA, c’est de vouloir que chaque seconde soit spectaculaire. Or un film qui ne fait que monter en intensité épuise et finit par devenir plat, faute de contraste. Le rythme se construit dans l’alternance : tension puis relâche, plan fort puis respiration, mouvement puis immobilité. Les silences et les temps morts ne sont pas des trous à combler, ce sont des outils dramatiques. C’est dans le calme qui précède qu’un pic prend sa force. Si vous enchaînez les moments forts sans répit, le spectateur s’anesthésie et plus rien ne fait effet. Apprenez à doser, à laisser un plan durer, à accepter une seconde de silence, à ne pas remplir chaque vide. Un film qui respire tient l’attention bien mieux qu’un film qui crie en permanence. Le rythme, c’est l’art de placer les vides autant que les pleins.",
+    },
+    {
+      type: "h2",
+      id: "son-personnage",
+      text: "Le son comme personnage à part entière",
+    },
+    {
+      type: "p",
+      text: "Sur un film IA, le son est trop souvent traité en dernier, comme une couche cosmétique posée à la fin. C’est une erreur de débutant. Le son porte la moitié de l’émotion : l’ambiance d’un lieu, la respiration d’un personnage, un silence qui pèse, un bruit hors champ qui inquiète. Souvent, ce qu’on ne montre pas mais qu’on fait entendre est plus fort que l’image elle-même. Pensez le son dès le scénario, pas après le montage : que doit-on entendre dans cette scène, et qu’est-ce que cela raconte que l’image ne dit pas ? Méfiez-vous surtout de la musique qui colmate : si votre film ne tient que grâce à une bande-son omniprésente, c’est que le travail dramatique n’est pas fini. Une musique doit amplifier une émotion déjà présente, pas la fabriquer de toutes pièces. Traitez le son comme un acteur, et votre film gagnera une profondeur que les images seules n’atteignent jamais.",
+    },
+    {
+      type: "h2",
+      id: "hybrider",
+      text: "Hybrider l’IA avec le réel et la post-production",
+    },
+    {
+      type: "p",
+      text: "L’idée du film « 100 % IA » est séduisante, mais elle vous prive souvent des meilleurs outils. Les projets les plus convaincants hybrident : ils mêlent plans générés, prises réelles, éléments graphiques, retouches manuelles et post-production classique. Une voix humaine bien dirigée peut sauver une scène, un raccord monté à la main peut rattraper une transition que l’IA gère mal, un étalonnage cohérent peut unifier des plans d’origines diverses. Ne vous enfermez pas dans le dogme du tout-génératif : le but est l’œuvre, pas la pureté technique. L’IA est un outil parmi d’autres dans votre chaîne, le plus puissant pour produire de la matière vite, mais pas le seul. Les créateurs qui obtiennent des résultats qui tiennent comme films sont ceux qui savent quand quitter l’IA pour un outil plus adapté, et qui assemblent l’ensemble avec le jugement d’un réalisateur, pas d’un opérateur de prompts.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : le film est une décision dans le temps",
     },

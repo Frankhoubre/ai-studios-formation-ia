@@ -147,6 +147,33 @@ export const videosIaJoliesMaisVides: Article = {
     },
     {
       type: "h2",
+      id: "intention-avant-plan",
+      text: "L’intention avant le plan : la question à se poser en premier",
+    },
+    {
+      type: "p",
+      text: "La racine du problème « beau mais vide » est presque toujours la même : on a généré des plans avant d’avoir décidé ce qu’on voulait raconter. L’IA inverse l’ordre naturel de la création, parce qu’elle rend la production d’images si facile qu’on saute l’étape de l’intention. Reprenez le contrôle en posant une question avant toute génération : qu’est-ce que cette vidéo doit laisser à celui qui la regarde ? Pas « à quoi va-t-elle ressembler », mais « que doit-il ressentir, comprendre ou retenir ». Si vous ne savez pas répondre en une phrase simple et non technique, vous n’êtes pas prêt à générer, vous êtes prêt à collectionner. Cette phrase d’intention devient votre boussole : chaque plan, chaque coupe, chaque choix de son se juge à l’aune de cette question. Un plan magnifique qui ne sert pas l’intention est un plan à couper, aussi douloureux que ce soit. L’intention d’abord, les images ensuite : c’est l’inversion qui sépare un créateur d’un assembleur d’effets.",
+    },
+    {
+      type: "h2",
+      id: "test-resume",
+      text: "Le test du résumé en une phrase",
+    },
+    {
+      type: "p",
+      text: "Voici un test impitoyable et gratuit pour savoir si votre vidéo raconte quelque chose : essayez de la résumer en une phrase qui ne parle pas de technique. Si la seule chose que vous pouvez dire est « c’est une vidéo IA avec de beaux plans de ville et un visage », vous avez une démo, pas une histoire. Si vous pouvez dire « c’est quelqu’un qui hésite puis renonce », vous avez une scène. La différence est radicale. Un résumé qui décrit le rendu trahit l’absence de récit ; un résumé qui décrit un changement, une tension, une bascule, révèle une vraie intention narrative. Appliquez ce test avant de publier, et plus tôt encore, au stade de l’idée. S’il échoue, ne cherchez pas à ajouter de plus beaux plans ou une musique plus émouvante, cela ne ferait que masquer le vide. Cherchez la bascule qui manque. Une vidéo mémorable se résume toujours par ce qui change, jamais par ce qu’on y voit.",
+    },
+    {
+      type: "h2",
+      id: "varier-distance",
+      text: "Varier la distance émotionnelle, pas seulement les plans",
+    },
+    {
+      type: "p",
+      text: "Une cause fréquente de l’effet « chaque plan est fort, l’ensemble est plat » est la monotonie émotionnelle. On varie les cadrages, les décors, les mouvements, mais on reste sur la même note intérieure du début à la fin : tout est intense, ou tout est contemplatif. Le spectateur s’habitue, et l’uniformité finit par anesthésier, même avec des images superbes. Le remède n’est pas visuel, il est émotionnel : faites varier la distance entre le spectateur et ce qui se passe. Un moment d’intimité serrée, puis un recul plus froid ; une tension, puis un répit ; une proximité, puis une mise à distance. C’est ce contraste qui crée le relief et rend chaque pic efficace. Pensez votre vidéo comme une courbe d’émotion, pas comme une suite de beaux tableaux. La beauté répétée sur une seule note s’aplatit ; la même beauté ponctuée de variations émotionnelles devient un récit qui tient en haleine.",
+    },
+    {
+      type: "h2",
       id: "conclusion",
       text: "Conclusion : visez la mémoire, pas le commentaire",
     },
