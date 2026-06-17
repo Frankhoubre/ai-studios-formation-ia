@@ -40,6 +40,8 @@ import { creerVideoIaGratuit } from "@/content/articles/posts/creer-video-ia-gra
 import { veo3GenererVideosIa } from "@/content/articles/posts/veo-3-generer-videos-ia";
 import { klingAiVideosCinematiques } from "@/content/articles/posts/kling-ai-videos-cinematiques";
 import { videoCourteIaTiktokReelsShorts } from "@/content/articles/posts/video-courte-ia-tiktok-reels-shorts";
+import { renduPelliculeGrainFilmIa } from "@/content/articles/posts/rendu-pellicule-grain-film-ia";
+import { imagesCinemaIaSceneFilm } from "@/content/articles/posts/images-cinema-ia-scene-film";
 import { filmIaGratuitCourtMetrage } from "@/content/articles/posts/film-ia-gratuit-court-metrage";
 import { runwayGuideVideoIa } from "@/content/articles/posts/runway-guide-video-ia";
 import { soraOpenaiCreerVideos } from "@/content/articles/posts/sora-openai-creer-videos";
@@ -58,6 +60,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  renduPelliculeGrainFilmIa,
+  imagesCinemaIaSceneFilm,
   videoCourteIaTiktokReelsShorts,
   filmIaGratuitCourtMetrage,
   klingAiVideosCinematiques,
