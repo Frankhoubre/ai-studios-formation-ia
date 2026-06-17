@@ -55,12 +55,14 @@ export default async function ArticlePage({ params }: Props) {
   const articleLd = buildArticleJsonLd(article, category?.name);
   const faqLd = article.faq.length ? buildFaqJsonLd(article.faq) : null;
 
-  // Some articles embed their FAQ as headings inside the body; in that case
-  // we skip the standalone FAQ block to avoid rendering it twice.
+  // Some articles embed their FAQ as a section inside the body; in that case
+  // we skip the standalone FAQ block to avoid rendering it twice. Match only
+  // genuine FAQ headings (anchored) so titles like "erreurs fréquentes" don't
+  // falsely hide a real FAQ.
+  const FAQ_HEADING =
+    /^\s*(questions fréquentes|foire aux questions|frequently asked questions|faq)\b/i;
   const hasInlineFaq = article.content.some(
-    (block) =>
-      block.type === "h2" &&
-      /faq|fréquentes|frequently asked/i.test(block.text),
+    (block) => block.type === "h2" && FAQ_HEADING.test(block.text),
   );
 
   return (

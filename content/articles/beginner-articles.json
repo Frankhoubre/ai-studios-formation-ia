@@ -1408,6 +1408,50 @@
       },
       {
         "type": "h2",
+        "id": "definir-coherence",
+        "text": "Définir la cohérence avant de générer la série"
+      },
+      {
+        "type": "p",
+        "text": "Produire six visuels qui vont ensemble n'est pas la même chose que produire six belles images. La différence, c'est la cohérence : un fil visuel commun qui fait sentir qu'elles appartiennent au même projet. Avant de générer quoi que ce soit, décidez ce qui restera constant sur toute la série : la palette de couleurs, le style de lumière, le type de cadrage, l'ambiance générale. Ces éléments fixes sont ce qui crée l'unité. Ce qui peut varier, c'est le sujet de chaque image, l'angle, un détail. En séparant clairement ce qui est constant de ce qui change, vous vous donnez une recette reproductible. Sans cette décision préalable, chaque image part dans sa direction et vous obtenez six visuels qui n'ont rien à voir entre eux, même s'ils sont réussis individuellement."
+      },
+      {
+        "type": "p",
+        "text": "Écrivez cette base commune noir sur blanc : c'est votre cahier des charges pour la série. Vous y reviendrez à chaque génération pour vérifier que la nouvelle image respecte bien le fil visuel défini."
+      },
+      {
+        "type": "h2",
+        "id": "produire-pas-a-pas",
+        "text": "Produire la série pas à pas, sans tout changer"
+      },
+      {
+        "type": "p",
+        "text": "La clé d'une série cohérente est de ne pas tout modifier d'une image à l'autre. Commencez par produire une première image que vous validez vraiment : elle devient votre référence, le ton de toute la série. Pour les suivantes, gardez la même base, lumière, palette, style, et ne changez que le sujet ou l'angle. Si vous modifiez plusieurs paramètres à la fois entre deux visuels, vous perdez le contrôle et la cohérence dérive sans que vous sachiez pourquoi. Avancez méthodiquement, une variation à la fois, en comparant chaque nouvelle image à votre référence. Cette discipline du changement minimal est exactement ce qui fait tenir une série. C'est lent en apparence, mais bien plus rapide que de régénérer sans fin en espérant que l'ensemble finisse par s'accorder."
+      },
+      {
+        "type": "h2",
+        "id": "valider-ensemble",
+        "text": "Valider l'ensemble, pas chaque image isolément"
+      },
+      {
+        "type": "p",
+        "text": "La dernière étape, souvent oubliée, est de juger la série comme un tout. Une image peut être réussie seule mais détonner à côté des autres : une lumière un peu différente, une couleur qui jure, un cadrage qui rompt le rythme. Affichez vos six visuels côte à côte et regardez-les comme un ensemble. Y a-t-il une intruse ? Une image qui casse l'unité ? Si oui, c'est elle qu'il faut régénérer pour la ramener dans le fil commun, même si elle vous plaisait isolément. Ce regard d'ensemble est ce qui distingue une vraie série d'une simple addition d'images. Pour votre premier projet, c'est l'apprentissage le plus précieux : la cohérence ne se juge pas image par image, mais sur la collection entière."
+      },
+      {
+        "type": "h2",
+        "id": "reutiliser-recette",
+        "text": "Et après : réutiliser votre recette de cohérence"
+      },
+      {
+        "type": "p",
+        "text": "Une fois votre première série de six visuels cohérents réussie, vous tenez quelque chose de précieux : une recette. Les réglages, le style, la lumière, la palette et la structure de prompt qui ont produit cette cohérence ne valent pas que pour ce projet. Notez-les, gardez-les, et réutilisez-les comme point de départ pour vos prochaines séries. C'est ainsi qu'on gagne en vitesse sans perdre en qualité : on capitalise sur ce qui a marché au lieu de repartir de zéro à chaque fois."
+      },
+      {
+        "type": "p",
+        "text": "Cette logique de recette réutilisable est le fondement d'une production sérieuse. Plutôt que de réinventer votre direction visuelle à chaque projet, vous bâtissez peu à peu une bibliothèque de bases éprouvées : un style pour tel type de contenu, une autre pour tel autre. Votre premier projet de six visuels n'est donc pas une fin en soi, c'est un apprentissage qui vous servira longtemps. Vous y avez appris à séparer le constant du variable, à produire pas à pas, et à juger une série comme un tout. Ces trois réflexes sont exactement ceux qui distinguent un débutant qui tâtonne d'un créateur qui produit des séries cohérentes de façon fiable, projet après projet."
+      },
+      {
+        "type": "h2",
         "id": "conclusion",
         "text": "Votre prochaine action"
       },
@@ -1601,6 +1645,50 @@
       {
         "type": "p",
         "text": "Pour aller plus loin, comparez toujours vos résultats avec nos guides de référence, comme celui sur [l'image réaliste](/blog/ia-image-realiste). La qualité finale naît du dialogue constant entre votre intention et les capacités de l'outil."
+      },
+      {
+        "type": "h2",
+        "id": "intention-avant-outil",
+        "text": "Définir son intention avant d'ouvrir l'outil"
+      },
+      {
+        "type": "p",
+        "text": "La première erreur du débutant n'est pas dans le prompt, elle est avant le prompt : ouvrir l'outil sans savoir ce qu'on cherche. On génère au hasard, on s'émerveille, on accumule des images sans direction, et on se retrouve avec une collection disparate qui ne sert aucun projet. La bonne habitude est de définir l'intention d'abord, en une phrase simple : à quoi sert cette image, quel message ou quelle émotion doit-elle porter, où sera-t-elle utilisée. Cette intention devient votre boussole. Elle vous permet de juger chaque génération, non pas « est-ce que c'est joli », mais « est-ce que ça sert ce que je veux ». Sans intention, même les plus beaux rendus restent inutiles, parce qu'ils ne répondent à aucune question."
+      },
+      {
+        "type": "p",
+        "text": "Prendre deux minutes pour écrire cette intention avant de générer vous fera gagner des heures. Vous cesserez de produire au hasard pour produire avec un but, et votre taux d'images réellement utilisables grimpera nettement."
+      },
+      {
+        "type": "h2",
+        "id": "preparer-references",
+        "text": "Préparer ses références avant de générer"
+      },
+      {
+        "type": "p",
+        "text": "Une autre erreur fréquente est de tout attendre du prompt, sans aucune référence visuelle pour s'orienter. Avant de générer, rassemblez quelques repères : une idée de lumière, une palette, un type de cadrage, une ambiance. Vous n'avez pas besoin d'un moodboard élaboré, juste de quoi savoir où vous allez. Ces références vous aident à traduire votre intention en instructions concrètes, et à reconnaître quand une génération s'en approche ou s'en éloigne. Sans repères, vous jugez à l'aveugle et vous tâtonnez. Avec quelques références claires en tête ou sous les yeux, vous orientez le modèle au lieu de le subir, et vous gagnez en cohérence dès les premières images."
+      },
+      {
+        "type": "h2",
+        "id": "piege-quantite",
+        "text": "Le piège de la quantité : générer moins, choisir mieux"
+      },
+      {
+        "type": "p",
+        "text": "Le débutant croit souvent que la solution est de générer toujours plus, en espérant qu'une image magique finira par sortir. C'est l'inverse qui fonctionne. Générer en masse sans critère produit surtout de la fatigue de décision et des dossiers pleins d'images moyennes que vous ne saurez jamais trier. Mieux vaut générer peu, mais avec une intention claire et un critère de sélection défini à l'avance. Décidez avant de produire ce que vous cherchez, puis gardez seulement les images qui y répondent, même si d'autres sont « jolies ». Cette discipline transforme une avalanche de rendus aléatoires en une sélection maîtrisée. La qualité d'un créateur ne se mesure pas au nombre d'images générées, mais à sa capacité à trancher et à ne garder que ce qui sert son projet."
+      },
+      {
+        "type": "h2",
+        "id": "routine-avant-generation",
+        "text": "Construire une routine avant chaque génération"
+      },
+      {
+        "type": "p",
+        "text": "La meilleure façon d'éviter les erreurs de débutant est de se donner une petite routine à suivre avant chaque session de génération. Cette routine n'a rien de contraignant : il s'agit de répondre à trois questions simples avant d'ouvrir l'outil. Quelle est mon intention, c'est-à-dire à quoi servira cette image et que doit-elle transmettre ? Quelles sont mes références, même sommaires, sur la lumière, la palette et le cadrage ? Quel est mon critère de sélection, ce qui me fera dire qu'une image est validée ou non ?"
+      },
+      {
+        "type": "p",
+        "text": "Répondre à ces trois questions prend deux minutes et change tout. Vous passez d'une génération au hasard, où vous espérez tomber sur quelque chose de bien, à une génération dirigée, où vous savez ce que vous cherchez et comment le reconnaître. Cette routine vous évite les trois pièges classiques : générer sans but, juger au feeling, et accumuler des images inutiles. Avec le temps, elle devient un réflexe, et la différence de qualité et d'efficacité est spectaculaire. Les créateurs qui progressent vite ne sont pas ceux qui maîtrisent le mieux l'outil, mais ceux qui préparent le mieux leur intention avant de l'utiliser. L'outil exécute ; c'est vous qui décidez, à condition d'avoir décidé avant de cliquer."
       },
       {
         "type": "h2",
@@ -1808,6 +1896,54 @@
       },
       {
         "type": "h2",
+        "id": "format-suit-destination",
+        "text": "Le format suit la destination, toujours"
+      },
+      {
+        "type": "p",
+        "text": "Carré, vertical, horizontal : le bon format n'est pas une question de goût, c'est une question d'usage. Chaque format a sa destination naturelle. Le vertical occupe tout l'écran d'un téléphone et domine les formats courts et les stories. L'horizontal est le format du cinéma, des bannières et des vidéos classiques regardées sur grand écran. Le carré offre un compromis polyvalent pour certaines publications. Choisir son format, c'est donc d'abord répondre à une question simple : où ce visuel sera-t-il vu, et sur quel écran ? Partir de la destination vous évite l'erreur la plus courante, celle de produire un visuel magnifique dans le mauvais format, qu'il faudra ensuite recadrer en sacrifiant la composition."
+      },
+      {
+        "type": "p",
+        "text": "Si un même contenu doit vivre sur plusieurs supports, anticipez-le dès le départ plutôt que de bricoler après coup. Un visuel pensé pour un seul format se transpose rarement bien dans un autre sans perte."
+      },
+      {
+        "type": "h2",
+        "id": "cadrage-des-la-generation",
+        "text": "Penser le cadrage dès la génération"
+      },
+      {
+        "type": "p",
+        "text": "Le format influence la composition, donc il doit être décidé avant de générer, pas après. Un sujet centré qui fonctionne en carré peut se retrouver perdu dans un large panoramique horizontal, ou coupé dans un vertical serré. Quand vous générez dans le bon format dès le départ, le modèle compose pour ce cadre : il place le sujet, équilibre les vides, gère l'espace en fonction de la forme. C'est exactement ce que vous perdez en recadrant une image existante, où vous êtes obligé de couper ce qui dépasse. Prenez donc l'habitude de fixer votre ratio avant la première génération, en gardant en tête la destination. Vous obtiendrez des visuels équilibrés, sans rognage destructeur."
+      },
+      {
+        "type": "h2",
+        "id": "decliner-plusieurs-formats",
+        "text": "Décliner un visuel en plusieurs formats proprement"
+      },
+      {
+        "type": "p",
+        "text": "Il arrive qu'un même contenu doive exister en plusieurs formats : une vidéo horizontale pour une plateforme et une version verticale pour les formats courts, par exemple. La mauvaise méthode est de recadrer brutalement, ce qui coupe des éléments essentiels et déséquilibre l'image. La bonne méthode est d'anticiper la déclinaison dès la conception : laisser de l'espace autour du sujet pour permettre des recadrages, ou mieux, régénérer le visuel dans chaque format pour que la composition soit pensée à chaque fois. Si vous savez à l'avance qu'un visuel vivra en plusieurs formats, gardez le sujet central et évitez de placer des éléments importants tout au bord, là où ils seront coupés. Penser multi-format en amont vous évite des heures de recadrage frustrant et des visuels mutilés."
+      },
+      {
+        "type": "h2",
+        "id": "erreurs-format",
+        "text": "Les erreurs de format les plus fréquentes"
+      },
+      {
+        "type": "p",
+        "text": "L'erreur numéro un est de produire d'abord et de se demander ensuite dans quel format publier. On se retrouve alors à recadrer une image conçue pour une autre forme, en coupant des éléments importants et en déséquilibrant la composition. Le format se décide avant la génération, en fonction de la destination, pas après coup. La deuxième erreur est de croire qu'un seul format convient partout : un visuel horizontal mal recadré en vertical perd tout son sens, et inversement."
+      },
+      {
+        "type": "p",
+        "text": "Une troisième erreur consiste à placer des éléments essentiels tout au bord de l'image. Si vous savez que le visuel sera peut-être recadré ou décliné, gardez le sujet et les informations clés vers le centre, dans une zone sûre, pour qu'ils survivent à un changement de format. Enfin, beaucoup oublient que le format influence l'émotion : un cadrage vertical serré crée de la proximité et de l'intensité, un large panoramique horizontal donne de l'ampleur et du contexte. Choisir un format, ce n'est pas seulement répondre à une contrainte technique, c'est aussi décider de la sensation que l'image va produire. Pensez le format comme un choix créatif autant que pratique."
+      },
+      {
+        "type": "p",
+        "text": "Au final, choisir un format se résume à une discipline simple : partez de la destination, décidez avant de générer, gardez l'essentiel au centre, et assumez le format comme un choix créatif qui façonne l'émotion. Ce réflexe vous évite la majorité des recadrages frustrants et des visuels mutilés. Un visuel pensé dès le départ pour son format final paraît toujours plus juste qu'un visuel rogné après coup pour entrer de force dans un cadre auquel il n'était pas destiné."
+      },
+      {
+        "type": "h2",
         "id": "conclusion",
         "text": "Votre prochaine étape"
       },
@@ -1997,6 +2133,67 @@
       {
         "type": "p",
         "text": "Prenez l'habitude de comparer votre image à 100% avec nos standards de [cohérence visuelle](/blog/personnage-coherent-ia). La technique doit toujours rester au service de l'esthétique, et non l'inverse."
+      },
+      {
+        "type": "h2",
+        "id": "upscale-vs-resolution",
+        "text": "Upscale n'est pas résolution : la nuance qui change tout"
+      },
+      {
+        "type": "p",
+        "text": "Beaucoup de débutants confondent agrandir une image et augmenter sa qualité. Ce sont deux choses différentes. La résolution native, c'est la quantité réelle de détail que votre image contient au moment de la génération. L'upscale, lui, agrandit cette image après coup en reconstruisant du détail plausible. Sur une bonne base, l'upscale fait des merveilles et donne un rendu net en grand format. Sur une base floue ou ratée, il ne fait qu'agrandir les défauts, parfois en les rendant plus visibles. La règle à retenir est simple : l'upscale améliore une image déjà correcte, il ne sauve pas une image mauvaise. Soignez donc d'abord votre génération, la lumière, le cadrage, la netteté, et réservez l'upscale à la toute fin, comme une étape de finition, jamais comme une réparation."
+      },
+      {
+        "type": "p",
+        "text": "Concrètement, si une image vous déçoit, ne lancez pas un upscale en espérant un miracle. Revenez à la source : régénérez avec un meilleur prompt, une meilleure composition, puis upscalez seulement la version que vous validez. Vous éviterez ainsi de produire des fichiers lourds qui amplifient un problème au lieu de le corriger."
+      },
+      {
+        "type": "h2",
+        "id": "ratio-destination",
+        "text": "Choisir son ratio selon la destination, pas l'inverse"
+      },
+      {
+        "type": "p",
+        "text": "Le ratio, c'est la forme de votre image : carré, paysage, portrait. C'est une décision à prendre avant de générer, pas après, car recadrer une image déjà produite casse souvent la composition et coupe des éléments importants. La bonne méthode est de partir de la destination : où cette image sera-t-elle vue ? Un format vertical pour un téléphone, un format large pour une bannière ou une vidéo, un carré pour certaines publications. En choisissant le ratio en fonction de l'usage final, vous laissez le modèle composer directement pour le bon cadre, et vous obtenez un résultat équilibré sans rognage destructeur."
+      },
+      {
+        "type": "p",
+        "text": "Si vous avez besoin d'un même visuel en plusieurs formats, mieux vaut le régénérer dans chaque ratio que de recadrer une seule version. Le modèle adapte alors la composition à chaque forme, là où un simple recadrage sacrifierait toujours une partie de l'image."
+      },
+      {
+        "type": "h2",
+        "id": "controle-qualite-export",
+        "text": "Le contrôle qualité avant l'export final"
+      },
+      {
+        "type": "p",
+        "text": "Avant de livrer ou de publier, prenez l'habitude d'inspecter votre image à 100 %, c'est-à-dire à sa taille réelle, pas réduite dans un aperçu. C'est à cette échelle que se révèlent les défauts invisibles en miniature : bords baveux, artefacts d'upscale, textures qui se répètent, zones molles. Vérifiez aussi que la résolution finale correspond à votre usage : une image destinée à l'impression demande bien plus de détail qu'une image pour un réseau social. Exporter trop petit donne un rendu flou à l'agrandissement, exporter inutilement grand alourdit le fichier pour rien. L'objectif est la bonne résolution pour le bon usage, vérifiée à taille réelle avant de valider."
+      },
+      {
+        "type": "h2",
+        "id": "resolution-par-usage",
+        "text": "Quelle résolution viser selon l'usage"
+      },
+      {
+        "type": "p",
+        "text": "La bonne résolution n'est pas la plus grande possible, c'est celle qui correspond à votre usage. Viser trop bas donne une image floue à l'agrandissement ; viser inutilement haut alourdit le fichier, ralentit les traitements et l'upscale sans aucun gain visible. Calibrer la résolution sur la destination finale est donc une compétence de base qui vous évite à la fois la déception et le gaspillage."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Réseaux sociaux et web : une résolution modérée suffit, l'image sera vue en petit ou moyen format sur écran.",
+          "Miniatures et icônes : la lisibilité prime sur la taille, inutile de viser énorme.",
+          "Bannières et grands visuels web : montez d'un cran pour rester net sur de larges écrans.",
+          "Impression : c'est l'usage le plus exigeant, prévoyez une résolution nettement supérieure dès la génération, car l'upscale ne remplace pas du vrai détail à l'impression."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Dans le doute, gardez une version maîtresse en bonne résolution et exportez des versions allégées pour chaque usage. Vous repartez ainsi toujours de la meilleure source, sans dégrader vos fichiers à chaque réexport."
+      },
+      {
+        "type": "p",
+        "text": "Retenez la hiérarchie : on décide d'abord du ratio en fonction de la destination, on génère ensuite dans la meilleure résolution native possible, et on réserve l'upscale à la finition d'une image déjà validée. Inversez cet ordre et vous accumulerez les déconvenues, des recadrages destructeurs aux agrandissements flous. Respectez-le, et vos exports seront nets, bien cadrés et adaptés à chaque usage, sans fichier inutilement lourd ni perte de qualité au moment où elle se voit le plus. En somme, la qualité finale se prépare en amont bien plus qu'elle ne se rattrape à la fin."
       },
       {
         "type": "h2",
@@ -2196,6 +2393,64 @@
       },
       {
         "type": "h2",
+        "id": "fps-selon-rendu",
+        "text": "Choisir son nombre d'images par seconde selon le rendu voulu"
+      },
+      {
+        "type": "p",
+        "text": "Le nombre d'images par seconde, ou fps, détermine la fluidité et la sensation de votre vidéo. Ce n'est pas qu'un réglage technique, c'est un choix esthétique. Un fps standard donne un rendu naturel, proche de ce à quoi l'œil est habitué au cinéma ou en vidéo classique. Un fps élevé donne une fluidité très lisse, parfois associée à un rendu « vidéo amateur » ou au contraire au sport et au jeu vidéo. L'important est la cohérence : tournez, générez et exportez dans le même fps d'un bout à l'autre de votre chaîne. Mélanger des cadences en cours de route crée des saccades ou des ralentis involontaires au montage. Décidez de votre fps dès le départ, en fonction de l'effet recherché, et tenez-le sur toute la production."
+      },
+      {
+        "type": "p",
+        "text": "Attention aussi aux ralentis : si vous voulez ralentir un plan proprement, mieux vaut l'avoir généré ou tourné à un fps plus élevé, pour avoir de la matière à étirer sans saccade. Anticiper ces besoins au moment de la création évite des déconvenues au montage."
+      },
+      {
+        "type": "h2",
+        "id": "codec-compression",
+        "text": "Codec et compression : la qualité sans le fichier monstrueux"
+      },
+      {
+        "type": "p",
+        "text": "Le codec, c'est la façon dont votre vidéo est compressée pour être stockée et lue. C'est un équilibre permanent entre qualité et poids du fichier. Une compression trop forte introduit des artefacts visibles, surtout dans les zones de dégradé ou de mouvement rapide. Une compression trop faible donne des fichiers énormes, difficiles à partager et à mettre en ligne. La bonne approche est de garder une version maîtresse de haute qualité, peu compressée, comme archive, puis d'exporter des versions plus légères adaptées à chaque diffusion. Ne travaillez jamais à partir d'une version déjà très compressée : chaque ré-export d'un fichier compressé dégrade un peu plus l'image. Partez toujours de la meilleure source disponible."
+      },
+      {
+        "type": "h2",
+        "id": "export-par-plateforme",
+        "text": "Adapter son export à la plateforme de diffusion"
+      },
+      {
+        "type": "p",
+        "text": "Chaque plateforme a ses préférences en matière de format, de résolution et de compression. Exporter sans tenir compte de la destination, c'est risquer un rendu dégradé ou un fichier refusé. Avant d'exporter, posez-vous la question de l'usage final : réseau social vertical, plateforme vidéo classique, présentation sur grand écran. Adaptez la résolution et le format à cet usage plutôt que d'exporter à l'aveugle. Une vidéo destinée à un petit format en ligne n'a pas besoin de la résolution maximale, qui ne ferait qu'alourdir le fichier sans gain visible. À l'inverse, une diffusion sur grand écran exige une qualité supérieure. Pensez toujours « un export par destination », à partir de votre version maîtresse, plutôt qu'un fichier unique censé convenir partout."
+      },
+      {
+        "type": "h2",
+        "id": "checklist-export",
+        "text": "La checklist d'export avant de livrer"
+      },
+      {
+        "type": "p",
+        "text": "Avant de considérer une vidéo terminée, passez-la dans une courte checklist toujours identique. Cette habitude évite les mauvaises surprises : un fichier refusé par une plateforme, une saccade due à un fps incohérent, un son trop fort ou trop faible, une qualité dégradée par une compression excessive. Quelques minutes de vérification valent mieux qu'une vidéo à réexporter en urgence après publication."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Le fps est-il cohérent du début à la fin, sans saccade ni ralenti involontaire ?",
+          "La résolution et le format correspondent-ils à la plateforme de diffusion ?",
+          "La compression préserve-t-elle la qualité sans produire un fichier inutilement lourd ?",
+          "Le niveau sonore est-il homogène et confortable, sans saturation ?",
+          "Existe-t-il une version maîtresse de haute qualité conservée comme archive ?"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Exportez toujours vos versions de diffusion à partir de cette version maîtresse, jamais à partir d'un fichier déjà compressé. Chaque réexport d'une vidéo compressée ajoute des défauts : partir de la meilleure source est la règle d'or pour garder une qualité propre sur tous vos formats."
+      },
+      {
+        "type": "p",
+        "text": "En gardant ces réglages cohérents d'un bout à l'autre, fps stable, compression maîtrisée, export adapté à la plateforme, vous transformez la technique d'un obstacle en allié discret. Le spectateur ne remarquera jamais un export bien fait, mais il sentira immédiatement un fps incohérent, une image pixelisée ou un son saturé. La qualité technique est invisible quand elle est réussie et criante quand elle est ratée : c'est une raison suffisante pour lui accorder ces quelques minutes d'attention avant chaque livraison."
+      },
+      {
+        "type": "h2",
         "id": "conclusion",
         "text": "Passez à l'action"
       },
@@ -2391,6 +2646,58 @@
       },
       {
         "type": "h2",
+        "id": "a-quoi-sert-moodboard",
+        "text": "À quoi sert vraiment un moodboard"
+      },
+      {
+        "type": "p",
+        "text": "Un moodboard n'est pas une simple collection de jolies images. C'est un outil de décision qui fixe la direction visuelle d'un projet avant de générer quoi que ce soit. Il répond à des questions concrètes : quelle lumière, quelle palette de couleurs, quelle ambiance, quel type de cadrage, quel niveau de réalisme ou de stylisation. En rassemblant ces repères au même endroit, vous vous donnez une référence stable à laquelle revenir quand vous hésitez. Sans moodboard, chaque génération repart un peu au hasard, et votre projet manque d'unité. Avec un moodboard, vous savez ce que vous cherchez, et vous pouvez juger chaque image produite par rapport à une intention claire au lieu de votre humeur du moment."
+      },
+      {
+        "type": "p",
+        "text": "C'est particulièrement précieux avec l'IA, qui peut produire une infinité de directions différentes. Le moodboard agit comme un garde-fou : il vous empêche de vous disperser et garde votre série cohérente du premier au dernier visuel."
+      },
+      {
+        "type": "h2",
+        "id": "construire-moodboard-coherent",
+        "text": "Construire un moodboard cohérent, pas un fourre-tout"
+      },
+      {
+        "type": "p",
+        "text": "L'erreur classique est d'entasser tout ce qu'on trouve beau. Un moodboard efficace est sélectif : quelques images bien choisies qui se répondent valent mieux qu'une trentaine d'images contradictoires. Cherchez la cohérence entre vos références. Si certaines sont chaleureuses et d'autres froides, certaines minimalistes et d'autres chargées, votre direction devient floue et le résultat le sera aussi. Regroupez vos repères par thème : une zone pour la lumière, une pour les couleurs, une pour les cadrages, une pour l'ambiance générale. Ajoutez une phrase qui résume l'intention, le ressenti que doit dégager le projet. Ce petit texte vaut souvent plus que dix images, car il met des mots sur ce que vous cherchez."
+      },
+      {
+        "type": "p",
+        "text": "Gardez votre moodboard accessible pendant toute la production, et n'hésitez pas à l'ajuster si vous découvrez en cours de route une direction plus juste. C'est un document vivant, pas une prison."
+      },
+      {
+        "type": "h2",
+        "id": "du-moodboard-au-prompt",
+        "text": "Du moodboard au prompt : traduire des images en mots"
+      },
+      {
+        "type": "p",
+        "text": "Un moodboard ne sert vraiment que si vous savez le traduire en instructions pour l'IA. Regardez vos références et nommez ce qui les caractérise : la source et la dureté de la lumière, la palette dominante, le type de cadrage, la texture, l'ambiance. Ce sont ces éléments que vous réinjectez dans vos prompts, sous forme de causes concrètes plutôt que d'adjectifs vagues. Au lieu d'écrire « belle image », vous décrivez « lumière douce de fin d'après-midi venant d'une fenêtre, palette chaude et désaturée, cadrage rapproché ». Le moodboard devient ainsi le pont entre votre intention visuelle et le langage que comprend le modèle. C'est cette traduction, des images vers des mots précis, qui transforme une inspiration floue en série cohérente et maîtrisée."
+      },
+      {
+        "type": "h2",
+        "id": "erreurs-moodboard",
+        "text": "Les erreurs de moodboard du débutant"
+      },
+      {
+        "type": "p",
+        "text": "Le moodboard est simple en théorie, mais quelques erreurs en réduisent l'utilité. La plus fréquente est le fourre-tout : on accumule tout ce qu'on trouve beau, sans cohérence, et la direction devient illisible. Un moodboard de cinq images qui se répondent vaut mieux qu'un mur de trente images contradictoires. La deuxième erreur est de confondre inspiration et copie : un moodboard sert à définir une ambiance, pas à reproduire une œuvre précise. Inspirez-vous des codes, pas des images elles-mêmes."
+      },
+      {
+        "type": "p",
+        "text": "La troisième erreur est de ne jamais traduire le moodboard en mots. Tant qu'il reste une simple collection visuelle, il ne guide pas vos prompts. Prenez le temps de nommer ce que vos références ont en commun, la lumière, la palette, le cadrage, l'ambiance, pour pouvoir le réinjecter dans vos générations. Enfin, beaucoup figent leur moodboard et n'y reviennent jamais : c'est dommage. Un bon moodboard est un document vivant, qu'on consulte pendant toute la production et qu'on ajuste si une meilleure direction émerge en cours de route. Bien utilisé, il reste votre meilleur garde-fou contre la dispersion."
+      },
+      {
+        "type": "p",
+        "text": "En définitive, un moodboard utile est sélectif, cohérent, traduit en mots et tenu à jour pendant toute la production. Ce n'est pas une étape décorative qu'on bâcle avant de passer aux choses sérieuses : c'est précisément ce qui rend les choses sérieuses possibles, en donnant à votre projet une direction claire et stable. Quelques minutes investies dans un bon moodboard vous épargnent des heures de générations dispersées et incohérentes par la suite."
+      },
+      {
+        "type": "h2",
         "id": "conclusion",
         "text": "Votre prochaine action"
       },
@@ -2579,6 +2886,58 @@
       {
         "type": "p",
         "text": "Enfin, n'oubliez pas que l'IA est un outil de création d'actifs (assets), pas une solution tout-en-un. La touche finale (typographie, équilibre des couleurs) reste votre prérogative de créateur."
+      },
+      {
+        "type": "h2",
+        "id": "miniature-fait-cliquer",
+        "text": "Ce qui fait vraiment cliquer une miniature"
+      },
+      {
+        "type": "p",
+        "text": "Une miniature YouTube n'a qu'un seul travail : donner envie de cliquer en une fraction de seconde, au milieu de dizaines d'autres. La beauté du visuel compte moins que sa clarté et sa promesse. Une bonne miniature transmet immédiatement un sujet, une émotion ou un enjeu. Le piège du débutant est de produire une image IA superbe mais illisible en petit, ou qui ne dit rien du contenu de la vidéo. Avant de soigner le rendu, demandez-vous : qu'est-ce que cette miniature promet, et le comprend-on instantanément ? Une expression forte, un contraste marqué, un élément central clair valent mieux qu'une scène complexe et chargée que personne ne déchiffrera à la taille d'un timbre-poste."
+      },
+      {
+        "type": "p",
+        "text": "Pensez aussi à la cohérence avec votre titre : la miniature et le titre doivent se compléter, pas se répéter. Ensemble, ils forment une seule promesse. Si la miniature dit déjà tout, le titre devient inutile, et inversement. Les deux travaillent en duo pour donner une raison de cliquer."
+      },
+      {
+        "type": "h2",
+        "id": "lisibilite-petit-ecran",
+        "text": "La lisibilité sur petit écran, votre contrainte numéro un"
+      },
+      {
+        "type": "p",
+        "text": "La grande majorité des spectateurs voient votre miniature en tout petit, sur un téléphone. C'est la contrainte qui doit guider toutes vos décisions. Un visuel qui fonctionne sur votre grand écran peut devenir une bouillie illisible une fois réduit. Testez systématiquement votre miniature en l'affichant à très petite taille : reconnaît-on encore le sujet ? Le texte, s'il y en a, reste-t-il lisible ? L'élément principal ressort-il du fond ? Privilégiez peu d'éléments, un sujet dominant, des contrastes forts et, si vous ajoutez du texte, très peu de mots en gros caractères. Une miniature surchargée perd toujours contre une miniature simple et lisible."
+      },
+      {
+        "type": "p",
+        "text": "Méfiez-vous des arrière-plans trop détaillés qui noient le sujet. Un fond simple ou flouté, un sujet net et bien détaché, c'est la combinaison qui ressort le mieux dans une grille de vidéos concurrentes."
+      },
+      {
+        "type": "h2",
+        "id": "tester-iterer-miniature",
+        "text": "Tester et comparer plusieurs versions"
+      },
+      {
+        "type": "p",
+        "text": "Ne vous contentez jamais de votre première miniature. Produisez-en plusieurs variantes et comparez-les côte à côte, à petite taille, comme elles apparaîtront réellement. Laquelle accroche le regard en premier ? Laquelle transmet le mieux la promesse de la vidéo ? Mettez-la aussi à côté de miniatures de vidéos similaires pour voir si elle se distingue ou se fond dans la masse. Cette comparaison rapide vous évite de publier une miniature que vous trouviez réussie isolément mais qui disparaît dans son contexte réel. La miniature est souvent ce qui décide du succès d'une vidéo : elle mérite autant de soin que le contenu lui-même."
+      },
+      {
+        "type": "h2",
+        "id": "erreurs-miniature",
+        "text": "Les erreurs de miniature qui font perdre des clics"
+      },
+      {
+        "type": "p",
+        "text": "Certaines erreurs reviennent sans cesse chez les débutants et plombent le taux de clic sans qu'ils s'en rendent compte. La première est la surcharge : trop d'éléments, trop de texte, un fond chargé qui noie le sujet. La deuxième est le manque de contraste : un sujet qui se fond dans son arrière-plan disparaît à petite taille. La troisième est la promesse floue : une miniature jolie mais qui ne dit rien du contenu ne donne aucune raison de cliquer."
+      },
+      {
+        "type": "p",
+        "text": "Une quatrième erreur, plus subtile, est l'incohérence avec le titre ou avec le reste de votre chaîne. Si chaque miniature a un style différent, votre chaîne paraît brouillonne et vos vidéos ne se reconnaissent pas au premier coup d'œil. À l'inverse, une identité visuelle constante, mêmes codes de couleur, même traitement, aide votre public à vous repérer instantanément dans son fil. Évitez aussi le décalage entre ce que promet la miniature et ce que contient la vidéo : une promesse non tenue gonfle peut-être le clic au début, mais détruit la confiance et fait fuir les spectateurs, ce que les plateformes pénalisent. Une bonne miniature attire le bon spectateur, pas n'importe lequel."
+      },
+      {
+        "type": "p",
+        "text": "En résumé, une miniature efficace est lisible en tout petit, contrastée, fidèle au contenu et cohérente avec votre identité. La beauté brute passe après ces fondamentaux. Avant de publier, faites toujours le test décisif : réduisez votre miniature à la taille d'un timbre, posez-la à côté de vidéos concurrentes, et demandez-vous si elle accroche encore le regard et donne envie de cliquer. Si la réponse est oui, vous tenez une bonne miniature ; sinon, simplifiez avant tout le reste."
       },
       {
         "type": "h2",
