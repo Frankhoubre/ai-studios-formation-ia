@@ -82,6 +82,8 @@ import { controlnetPosesControlerComposition } from "@/content/articles/posts/co
 import { seedCfgStepsReglagesImageIa } from "@/content/articles/posts/seed-cfg-steps-reglages-image-ia";
 import { loraEntrainerStyleVisage } from "@/content/articles/posts/lora-entrainer-style-visage";
 import { ponderationPromptPoidsMots } from "@/content/articles/posts/ponderation-prompt-poids-mots";
+import { promptMidjourneyParametres } from "@/content/articles/posts/prompt-midjourney-parametres";
+import { banqueStylesVisuelsIa } from "@/content/articles/posts/banque-styles-visuels-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -92,6 +94,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  promptMidjourneyParametres,
+  banqueStylesVisuelsIa,
   loraEntrainerStyleVisage,
   ponderationPromptPoidsMots,
   controlnetPosesControlerComposition,
