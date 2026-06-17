@@ -35,6 +35,8 @@ import { bibliothequePromptsReutilisables } from "@/content/articles/posts/bibli
 import { genererImageIaGuideDebutant } from "@/content/articles/posts/generer-image-ia-guide-debutant";
 import { meilleursGenerateursImagesIa2026 } from "@/content/articles/posts/meilleurs-generateurs-images-ia-2026";
 import { dalleChatgptCreerImages } from "@/content/articles/posts/dalle-chatgpt-creer-images";
+import { stableDiffusionDebutantDemarrer } from "@/content/articles/posts/stable-diffusion-debutant-demarrer";
+import { midjourneyVsFluxVsDalle } from "@/content/articles/posts/midjourney-vs-flux-vs-dalle";
 import { googleImagenNanoBananaPhotorealisme } from "@/content/articles/posts/google-imagen-nano-banana-photorealisme";
 import { midjourneyDebutantPremiereImage } from "@/content/articles/posts/midjourney-debutant-premiere-image";
 import { creerImagesIaGratuitOutils } from "@/content/articles/posts/creer-images-ia-gratuit-outils";
@@ -48,6 +50,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  stableDiffusionDebutantDemarrer,
+  midjourneyVsFluxVsDalle,
   dalleChatgptCreerImages,
   googleImagenNanoBananaPhotorealisme,
   meilleursGenerateursImagesIa2026,

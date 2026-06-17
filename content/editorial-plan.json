@@ -69,7 +69,7 @@
       "category": "ia-image",
       "kw": "stable diffusion débutant",
       "hero": "A cinematic shot of a creative tech setup running an open-source AI image tool, code and image side by side on screens, moody blue light",
-      "done": false
+      "done": true
     },
     {
       "n": 8,
@@ -79,7 +79,7 @@
       "category": "ia-image",
       "kw": "midjourney vs flux",
       "hero": "A cinematic split composition comparing three distinct beautiful AI image styles side by side, gallery lighting, premium feel",
-      "done": false
+      "done": true
     },
     {
       "n": 9,
