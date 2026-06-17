@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { categories } from "@/lib/categories";
 import {
   FORMATION_FREE_URL,
@@ -13,14 +14,36 @@ const navCategories = categories.filter((c) =>
   ["ia-video", "ia-image", "prompting"].includes(c.slug),
 );
 
-const linkClass =
-  "rounded-full px-3 py-2 text-sm text-text-soft transition hover:bg-white/[0.06] hover:text-text";
+const linkBase =
+  "rounded-full px-3 py-2 text-sm transition hover:bg-white/[0.06] hover:text-text";
 
-const mobileLinkClass =
-  "rounded-2xl border border-border-subtle bg-card px-4 py-3 text-sm text-text-soft transition hover:border-brand/50 hover:bg-white/[0.06] hover:text-text";
+const mobileLinkBase =
+  "rounded-2xl border px-4 py-3 text-sm transition hover:border-brand/50 hover:bg-white/[0.06] hover:text-text";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === "/blog") return pathname === "/blog";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  }
+
+  function linkClass(href: string) {
+    return `${linkBase} ${
+      isActive(href)
+        ? "bg-white/[0.06] text-text"
+        : "text-text-soft"
+    }`;
+  }
+
+  function mobileLinkClass(href: string) {
+    return `${mobileLinkBase} ${
+      isActive(href)
+        ? "border-brand/50 bg-white/[0.06] text-text"
+        : "border-border-subtle bg-card text-text-soft"
+    }`;
+  }
 
   useEffect(() => {
     function closeOnEscape(event: KeyboardEvent) {
@@ -54,7 +77,8 @@ export function Header() {
         >
           <Link
             href="/blog"
-            className={linkClass}
+            className={linkClass("/blog")}
+            aria-current={isActive("/blog") ? "page" : undefined}
           >
             Blog
           </Link>
@@ -62,7 +86,10 @@ export function Header() {
             <Link
               key={c.slug}
               href={`/categories/${c.slug}`}
-              className={linkClass}
+              className={linkClass(`/categories/${c.slug}`)}
+              aria-current={
+                isActive(`/categories/${c.slug}`) ? "page" : undefined
+              }
             >
               {c.name}
             </Link>
@@ -71,7 +98,7 @@ export function Header() {
             href={MAIN_SITE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className={linkClass}
+            className={`${linkBase} text-text-soft`}
           >
             Site principal
           </a>
@@ -79,7 +106,7 @@ export function Header() {
             href={FORMATION_FREE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className={linkClass}
+            className={`${linkBase} text-text-soft`}
           >
             Formation gratuite
           </a>
@@ -87,7 +114,7 @@ export function Header() {
             href={SKOOL_COMMUNITY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className={linkClass}
+            className={`${linkBase} text-text-soft`}
           >
             Skool
           </a>
@@ -133,7 +160,8 @@ export function Header() {
       >
         <Link
           href="/blog"
-          className={mobileLinkClass}
+          className={mobileLinkClass("/blog")}
+          aria-current={isActive("/blog") ? "page" : undefined}
           onClick={closeMenu}
         >
           Blog
@@ -142,7 +170,10 @@ export function Header() {
           <Link
             key={c.slug}
             href={`/categories/${c.slug}`}
-            className={mobileLinkClass}
+            className={mobileLinkClass(`/categories/${c.slug}`)}
+            aria-current={
+              isActive(`/categories/${c.slug}`) ? "page" : undefined
+            }
             onClick={closeMenu}
           >
             {c.name}
@@ -152,7 +183,7 @@ export function Header() {
           href={MAIN_SITE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className={mobileLinkClass}
+          className={`${mobileLinkBase} border-border-subtle bg-card text-text-soft`}
           onClick={closeMenu}
         >
           Site principal
@@ -170,7 +201,7 @@ export function Header() {
           href={SKOOL_COMMUNITY_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className={mobileLinkClass}
+          className={`${mobileLinkBase} border-border-subtle bg-card text-text-soft`}
           onClick={closeMenu}
         >
           Skool

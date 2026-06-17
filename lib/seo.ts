@@ -601,7 +601,9 @@ export function getTocEntries(
   const out: { id: string; text: string; depth: 2 | 3 }[] = [];
   for (const b of blocks) {
     if (b.type === "h2") out.push({ id: b.id, text: b.text, depth: 2 });
-    if (b.type === "h3" && b.id)
+    // Keep the FAQ section heading but skip its individual question sub-entries,
+    // which would otherwise clutter the outline.
+    if (b.type === "h3" && b.id && !b.id.startsWith("faq"))
       out.push({ id: b.id, text: b.text, depth: 3 });
   }
   return out;

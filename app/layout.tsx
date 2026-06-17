@@ -43,8 +43,13 @@ export default function RootLayout({
         <SEOJsonLd
           data={[buildOrganizationJsonLd(), buildWebsiteJsonLd()]}
         />
+        <a href="#main-content" className="skip-link">
+          Aller au contenu
+        </a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <Footer />
         <CookieConsent />
       </body>

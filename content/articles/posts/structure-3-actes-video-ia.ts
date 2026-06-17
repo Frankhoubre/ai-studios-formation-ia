@@ -252,7 +252,7 @@ export const structure3ActesVideoIa: Article = {
     {
       type: "h2",
       id: "faq",
-      text: "Frequently Asked Questions (FAQ)",
+      text: "Questions fréquentes",
     },
     {
       type: "h3",

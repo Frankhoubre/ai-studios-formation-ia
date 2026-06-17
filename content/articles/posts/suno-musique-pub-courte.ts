@@ -321,7 +321,7 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "C'est la vraie difference entre une piste IA generee et une production credible. L'une est un fichier. L'autre est une décision strategique.",
     },
-    { type: "h2", id: "faq", text: "Frequently Asked Questions (FAQ)" },
+    { type: "h2", id: "faq", text: "Questions fréquentes" },
     { type: "h3", id: "faq-1", text: "Comment choisir entre un jingle très court et une boucle de 20 secondes pour une pub locale ?" },
     {
       type: "p",

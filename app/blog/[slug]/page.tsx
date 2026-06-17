@@ -4,6 +4,7 @@ import { ArticleFaq } from "@/components/ArticleFaq";
 import { ArticleHero } from "@/components/ArticleHero";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
+import { ReadingProgress } from "@/components/ReadingProgress";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { TableOfContents } from "@/components/TableOfContents";
@@ -54,8 +55,17 @@ export default async function ArticlePage({ params }: Props) {
   const articleLd = buildArticleJsonLd(article, category?.name);
   const faqLd = article.faq.length ? buildFaqJsonLd(article.faq) : null;
 
+  // Some articles embed their FAQ as headings inside the body; in that case
+  // we skip the standalone FAQ block to avoid rendering it twice.
+  const hasInlineFaq = article.content.some(
+    (block) =>
+      block.type === "h2" &&
+      /faq|fréquentes|frequently asked/i.test(block.text),
+  );
+
   return (
     <>
+      <ReadingProgress />
       <SEOJsonLd
         data={[breadcrumbLd, articleLd, ...(faqLd ? [faqLd] : [])]}
       />
@@ -106,9 +116,11 @@ export default async function ArticlePage({ params }: Props) {
                   Accéder à la formation gratuite
                 </a>
               </section>
-              <div className="mx-auto max-w-[860px]">
-                <ArticleFaq items={article.faq} />
-              </div>
+              {hasInlineFaq ? null : (
+                <div className="mx-auto max-w-[860px]">
+                  <ArticleFaq items={article.faq} />
+                </div>
+              )}
             </div>
           </div>
         </div>

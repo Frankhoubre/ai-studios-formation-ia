@@ -268,7 +268,7 @@ export const workflowClientBriefLivraisonIa: Article = {
       type: "p",
       text: "Quand tu travailles comme ça, les retours client deviennent plus simples, parce que la discussion se base sur objectif et non sur gout personnel.",
     },
-    { type: "h2", id: "faq", text: "Frequently Asked Questions (FAQ)" },
+    { type: "h2", id: "faq", text: "Questions fréquentes" },
     { type: "h3", id: "faq-1", text: "Comment choisir entre image IA puis animation, ou video IA directe ?" },
     {
       type: "p",
