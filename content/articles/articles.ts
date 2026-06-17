@@ -88,6 +88,8 @@ import { gagnerArgentIaCreativeModeles } from "@/content/articles/posts/gagner-a
 import { devenirFreelanceCreationIa } from "@/content/articles/posts/devenir-freelance-creation-ia";
 import { fixerPrixCreationIaGrille } from "@/content/articles/posts/fixer-prix-creation-ia-grille";
 import { trouverPremiersClientsCreationIa } from "@/content/articles/posts/trouver-premiers-clients-creation-ia";
+import { automatiserProductionContenuIa } from "@/content/articles/posts/automatiser-production-contenu-ia";
+import { batchProduireVisuelsCoherentsSerie } from "@/content/articles/posts/batch-produire-visuels-coherents-serie";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -98,6 +100,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  automatiserProductionContenuIa,
+  batchProduireVisuelsCoherentsSerie,
   fixerPrixCreationIaGrille,
   trouverPremiersClientsCreationIa,
   gagnerArgentIaCreativeModeles,
