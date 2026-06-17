@@ -43,6 +43,8 @@ import { videoCourteIaTiktokReelsShorts } from "@/content/articles/posts/video-c
 import { renduPelliculeGrainFilmIa } from "@/content/articles/posts/rendu-pellicule-grain-film-ia";
 import { lumiereCinemaAmbiancesImagesIa } from "@/content/articles/posts/lumiere-cinema-ambiances-images-ia";
 import { illustrationIaCreerPro } from "@/content/articles/posts/illustration-ia-creer-pro";
+import { visuelsPublicitairesIaConvertissent } from "@/content/articles/posts/visuels-publicitaires-ia-convertissent";
+import { photosProduitIaShooting } from "@/content/articles/posts/photos-produit-ia-shooting";
 import { imagesAbstraitesIa } from "@/content/articles/posts/images-abstraites-ia";
 import { illustrationCinemaConceptArtIa } from "@/content/articles/posts/illustration-cinema-concept-art-ia";
 import { imagesCinemaIaSceneFilm } from "@/content/articles/posts/images-cinema-ia-scene-film";
@@ -64,6 +66,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  visuelsPublicitairesIaConvertissent,
+  photosProduitIaShooting,
   illustrationIaCreerPro,
   imagesAbstraitesIa,
   lumiereCinemaAmbiancesImagesIa,
