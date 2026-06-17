@@ -50,6 +50,8 @@ import { mockupsProduitIa } from "@/content/articles/posts/mockups-produit-ia";
 import { lipSyncIaFaireParlerPersonnage } from "@/content/articles/posts/lip-sync-ia-faire-parler-personnage";
 import { sousTitresAutomatiquesIaVideo } from "@/content/articles/posts/sous-titres-automatiques-ia-video";
 import { leonardoAiImagesAssets } from "@/content/articles/posts/leonardo-ai-images-assets";
+import { ideogramTexteLisibleImagesIa } from "@/content/articles/posts/ideogram-texte-lisible-images-ia";
+import { recraftDesignVectorielIcones } from "@/content/articles/posts/recraft-design-vectoriel-icones";
 import { kreaAiTempsReelUpscale } from "@/content/articles/posts/krea-ai-temps-reel-upscale";
 import { magnificUpscalersIaAgrandirImage } from "@/content/articles/posts/magnific-upscalers-ia-agrandir-image";
 import { doublageTraductionVideoIa } from "@/content/articles/posts/doublage-traduction-video-ia";
@@ -78,6 +80,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  ideogramTexteLisibleImagesIa,
+  recraftDesignVectorielIcones,
   leonardoAiImagesAssets,
   kreaAiTempsReelUpscale,
   sousTitresAutomatiquesIaVideo,
