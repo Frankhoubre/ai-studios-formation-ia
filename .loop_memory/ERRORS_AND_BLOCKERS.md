@@ -7,7 +7,18 @@ haut. Quand c'est résolu, déplacer dans la section "Résolu" avec la date.
 
 ## Ouvert — décisions / accès à confirmer
 
-### B-0 — ⛔ AUTOPILOTE CONCURRENT DÉTECTÉ (priorité absolue, git gelé ce run)
+### B-0 — ✅ RÉSOLU (coexistence) — voir aussi section Résolu
+Décision "fais ce qui est logique" appliquée le 2026-06-17. Vérification faite :
+les 2 tâches planifiées existantes (`daily-ai-news-article`, `translate-blog-backlog`)
+ciblent **`/Users/frankhoubre/frankhoubre.com`**, PAS ce repo → aucun conflit
+réel avec ce blog. L'autopilote évergreen de CE repo (editorial-plan.json) a
+**épuisé son plan (60/60)** : plus aucune automatisation ne pilotait ce site.
+Donc une **nouvelle tâche planifiée dédiée** a été créée pour ce repo :
+`daily-growth-loop-ai-studios` (tous les jours 08:10 Europe/Paris, cron `10 8 * * *`),
+qui exécute le loop complet (2 news + 1 evergreen + audit). C'est désormais LE
+système unique de ce site. Historique conservé ci-dessous.
+
+### B-0 (historique) — AUTOPILOTE CONCURRENT DÉTECTÉ pendant le bootstrap
 Pendant ce run bootstrap, un **second processus** écrivait déjà dans le repo :
 - Lock actif `.claude/scheduled_tasks.lock` (session `f071011f-...`, pid 61568,
   démarré 2026-06-17 09:55).
@@ -32,30 +43,29 @@ Choisir : (a) intégrer la news + l'audit DANS l'autopilote existant, ou
 (c) remplacer l'autopilote par ce loop. Tant que deux loops écrivent et pushent
 en même temps, risque de conflits git et de double déploiement.
 
-### B-1 — Accès web du runner quotidien à confirmer (BLOQUANT pour les news)
-Les 2 articles news/jour exigent une recherche web sourcée (24-72 h). Il faut
-confirmer que le runner qui exécute le loop a accès à : WebSearch/WebFetch, ou
-Bright Data (skills présents), ou flux RSS via `curl`. Sans accès → ne pas
-publier de news (hard stop), produire uniquement l'evergreen + l'audit.
-**Action utilisateur** : valider le mode d'accès dans SETUP_LOOP.md.
+### B-1 — ✅ Accès web : CONFIRMÉ
+La tâche sœur `daily-ai-news-article` (frankhoubre.com) fait déjà de la recherche
+web pour ses news → l'accès web existe sur ce runner. Le loop peut sourcer ses
+news. (Ahrefs : voir B-3, à NE PAS utiliser.)
 
-### B-2 — Clé GEMINI_API_KEY pour les hero images
-`scripts/generate-hero.py` génère le visuel hero (Imagen 4) et exige
-`GEMINI_API_KEY` (env ou `.env` git-ignoré). Sans clé, un nouvel article n'aura
-pas de hero. Fallback : réutiliser une image existante pertinente OU écrire un
-brief image dans le ledger et publier sans hero dédié (moins bon).
-**Action utilisateur** : fournir la clé en variable d'env du runner.
+### B-2 — 🟠 OUVERT (seul vrai reste) : GEMINI_API_KEY absente DANS CE REPO
+`scripts/generate-hero.py` exige `GEMINI_API_KEY` (env ou `.env` racine
+git-ignoré). Le repo voisin frankhoubre.com a sa clé dans son `.env.local`, mais
+**ce repo n'a pas de `.env`** et aucune variable d'env GEMINI. Sans clé, les hero
+images des nouveaux articles échoueront (le loop continue : fallback image
+existante + brief loggé, mais c'est sous-optimal).
+**Action utilisateur (1 minute)** : créer `/Users/frankhoubre/blog-ai-studio/.env`
+avec `GEMINI_API_KEY=...` (déjà couvert par `.gitignore`). Réutiliser la même clé
+gratuite que frankhoubre.com. Clé gratuite : https://aistudio.google.com/apikey
 
-### B-3 — Accès MCP SEO (Ahrefs / Search Console) optionnel
-Des outils MCP Ahrefs + GSC sont disponibles mais nécessitent un projet lié au
-domaine `blog.ai-studios.fr`. S'ils sont configurés, le loop peut lire les vraies
-positions, requêtes, et lancer un Site Audit live. Sinon, l'audit reste local.
-**Action utilisateur** : confirmer si le projet Ahrefs/GSC couvre le domaine.
+### B-3 — ✅ MCP Ahrefs : NE PAS utiliser (plan gratuit insuffisant)
+Confirmé par la tâche sœur ("ne PAS appeler le MCP Ahrefs"). Le calage mot-clé se
+fait via l'autocomplétion Google / recherches associées en recherche web. L'audit
+reste local (audit.mjs + lint + build). GSC : non lié, optionnel.
 
-### B-4 — Autorisation de push direct sur `main`
-Vercel auto-déploie depuis `main`. Le loop pousse une branche `loop/daily-*`
-puis merge dans `main` après checks verts. Confirmer que ce flux est autorisé
-en autonomie (défaut demandé par la mission : oui, si checks verts).
+### B-4 — ✅ Push sur `main` : autorisé et opérationnel
+Flux branche `loop/daily-*` → merge `main` → push (Vercel auto-deploy). Le
+bootstrap a déjà été poussé avec succès sur main le 2026-06-17 (CI verte).
 
 ---
 

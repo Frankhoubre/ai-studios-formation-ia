@@ -24,12 +24,18 @@ Le plus récent en haut.
 - ✅ 16 liens internes cassés (body + relatedSlugs) repointés ; 6 doublons
   relatedSlugs nettoyés.
 
-### Ce qui est en cours
-- ✅ Bootstrap commité et poussé sur `main` (sur demande utilisateur). CI lint
-  réparée + 16 liens cassés corrigés, désormais live.
-- Décision utilisateur encore attendue : coexistence avec l'autopilote (B-0) et
-  activation du run quotidien (cron). Voir SETUP_LOOP.md.
-- Note : l'autopilote a terminé son plan éditorial (60/60) au cours de ce run.
+### Ce qui est fait depuis
+- ✅ Bootstrap commité et poussé sur `main`. CI lint réparée + 16 liens cassés
+  corrigés, désormais live (CI verte confirmée).
+- ✅ Coexistence arbitrée (B-0 résolu) : les tâches planifiées existantes ciblent
+  frankhoubre.com (autre site) ; le plan évergreen de ce repo est épuisé (60/60).
+- ✅ Tâche planifiée créée : `daily-growth-loop-ai-studios`, tous les jours 08:10
+  Europe/Paris → exécute le loop complet (2 news + 1 evergreen + audit) en
+  autonomie, auto-publie si gates verts. C'est LE système quotidien du site.
+
+### Seul reste avant 100%
+- 🟠 Déposer `GEMINI_API_KEY` dans `/Users/frankhoubre/blog-ai-studio/.env` pour
+  les hero images (B-2). Sans elle, le loop tourne mais sans visuel hero dédié.
 
 ### Ce qui a échoué / bloqué
 - Aucune publication de contenu ce run (règle "premier run = pas de publication").

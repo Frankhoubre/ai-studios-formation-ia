@@ -19,26 +19,27 @@ Tout est détaillé dans `.loop_scripts/daily_content_loop.md` (orchestrateur).
 
 ---
 
-## ⚠️ À LIRE EN PREMIER — Coexistence avec l'autopilote existant
+## ✅ Coexistence — RÉSOLU (2026-06-17)
 
-Un **autopilote évergreen tourne déjà** sur ce repo (décrit dans
-`content/editorial-plan.json`) : il lit le plan, prend les 2 prochains articles
-`done:false`, les écrit, build, commit et push. Une exécution était **active
-pendant la mise en place de ce système** (lock `.claude/scheduled_tasks.lock`).
+État clarifié et arbitré ("fais ce qui est logique") :
 
-Faire tourner DEUX loops qui écrivent et pushent en parallèle = conflits git et
-doubles déploiements. **Choisis un mode avant d'activer le loop quotidien :**
+- Les 2 tâches planifiées préexistantes (`daily-ai-news-article`,
+  `translate-blog-backlog`) ciblent **`/Users/frankhoubre/frankhoubre.com`**, un
+  AUTRE site. Elles ne touchent pas ce repo → aucun conflit. On n'y touche pas.
+- L'autopilote évergreen de CE repo (`content/editorial-plan.json`) a **épuisé
+  son plan (60/60)**. Il ne produisait plus rien.
+- **Décision : un seul système quotidien pour ce site**, la tâche planifiée
+  `daily-growth-loop-ai-studios` (tous les jours **08:10** Europe/Paris), qui
+  exécute le loop complet (2 news + 1 evergreen + audit SEO) via les playbooks
+  `.loop_scripts/`. Auto-publie sur `main` si les gates sont verts.
 
-- **(a) Fusionner** : intégrer les étapes news + audit SEO de ce système DANS
-  l'autopilote existant. Recommandé à terme. Le plan éditorial reste la source
-  des evergreen ; on ajoute 2 news/jour + l'audit.
-- **(b) Horaires séparés** : laisser l'autopilote sur son créneau, lancer ce loop
-  à un autre horaire sans chevauchement, chacun sur sa branche `loop/...`.
-- **(c) Remplacer** : retirer la tâche planifiée de l'autopilote et ne garder que
-  ce loop (qui couvre evergreen + news + SEO).
+Gérer/inspecter la tâche : section "Scheduled" de Claude Code, ou
+`/Users/frankhoubre/.claude/scheduled-tasks/daily-growth-loop-ai-studios/SKILL.md`.
 
-Tant que ce choix n'est pas fait, ce système **ne pushe rien** (voir le run
-bootstrap dans `.loop_memory/DAILY_REPORT.md`).
+> Reste à faire pour 100% de fonctionnalité : déposer la clé `GEMINI_API_KEY`
+> dans `/Users/frankhoubre/blog-ai-studio/.env` (hero images). Voir
+> ERRORS_AND_BLOCKERS.md B-2. Sans elle, le loop tourne quand même mais sans
+> visuel hero dédié.
 
 ---
 
