@@ -432,7 +432,7 @@
       "category": "ia-image",
       "kw": "changer style image ia",
       "hero": "A cinematic shot of one image morphing between distinct artistic styles, creative transformation, gallery light",
-      "done": false
+      "done": true
     },
     {
       "n": 44,
@@ -442,7 +442,7 @@
       "category": "ia-image",
       "kw": "supprimer fond ia",
       "hero": "A cinematic shot of a subject cleanly separated from its background, crisp cut-out concept, studio light, depth",
-      "done": false
+      "done": true
     },
     {
       "n": 45,

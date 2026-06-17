@@ -74,6 +74,8 @@ import { midjourneyVsFluxVsDalle } from "@/content/articles/posts/midjourney-vs-
 import { googleImagenNanoBananaPhotorealisme } from "@/content/articles/posts/google-imagen-nano-banana-photorealisme";
 import { midjourneyDebutantPremiereImage } from "@/content/articles/posts/midjourney-debutant-premiere-image";
 import { creerImagesIaGratuitOutils } from "@/content/articles/posts/creer-images-ia-gratuit-outils";
+import { changerStyleImageIa } from "@/content/articles/posts/changer-style-image-ia";
+import { detourerSupprimerFondIa } from "@/content/articles/posts/detourer-supprimer-fond-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -84,6 +86,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  changerStyleImageIa,
+  detourerSupprimerFondIa,
   genererModeles3dIa,
   inpaintingIaRetoucherImage,
   pikaLumaAlternativesVideoIa,
