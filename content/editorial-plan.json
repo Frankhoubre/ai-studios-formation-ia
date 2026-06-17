@@ -452,7 +452,7 @@
       "category": "ia-image",
       "kw": "restaurer photo ia",
       "hero": "A cinematic shot of an old faded photograph being restored to vivid color, nostalgic warm light, emotional",
-      "done": false
+      "done": true
     },
     {
       "n": 46,
@@ -462,7 +462,7 @@
       "category": "ia-video",
       "kw": "upscale vidéo ia",
       "hero": "A cinematic macro of a video frame gaining sharp detail and clarity, high-resolution concept, tech premium mood",
-      "done": false
+      "done": true
     },
     {
       "n": 47,

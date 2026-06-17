@@ -76,6 +76,8 @@ import { midjourneyDebutantPremiereImage } from "@/content/articles/posts/midjou
 import { creerImagesIaGratuitOutils } from "@/content/articles/posts/creer-images-ia-gratuit-outils";
 import { changerStyleImageIa } from "@/content/articles/posts/changer-style-image-ia";
 import { detourerSupprimerFondIa } from "@/content/articles/posts/detourer-supprimer-fond-ia";
+import { restaurerColoriserPhotoIa } from "@/content/articles/posts/restaurer-coloriser-photo-ia";
+import { upscaleVideoIa } from "@/content/articles/posts/upscale-video-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -86,6 +88,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  restaurerColoriserPhotoIa,
+  upscaleVideoIa,
   changerStyleImageIa,
   detourerSupprimerFondIa,
   genererModeles3dIa,
