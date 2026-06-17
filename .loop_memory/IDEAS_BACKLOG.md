@@ -10,7 +10,7 @@ Priorité : 🔥 forte (gap + volume), ➕ moyenne, 💡 à creuser.
 
 ## Evergreen — gaps identifiés
 
-- [ ] 🔥 ComfyUI : premiers pas, workflow nodal expliqué simplement (`prompting`/`workflow-creatif`).
+- [x] 🔥 ComfyUI : premiers pas, workflow nodal expliqué simplement → publié 2026-06-17 (`comfyui-workflow-nodal-debutant`).
 - [ ] 🔥 Glossaire de l'IA créative (50 termes) — maille interne forte, hub (`workflow-creatif`).
 - [ ] 🔥 Combien coûte vraiment l'IA créative par mois (comparatif abonnements image + vidéo) (`business-creatif`).
 - [ ] ➕ Checklist livrable client propre (export, formats, droits) (`business-creatif`).

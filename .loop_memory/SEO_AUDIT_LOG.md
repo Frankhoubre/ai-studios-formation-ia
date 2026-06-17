@@ -6,6 +6,16 @@ Lancer l'audit automatisé : `node .loop_scripts/audit.mjs` (depuis la racine).
 
 ---
 
+## 2026-06-17 — Audit Run #1 (3 articles ajoutés)
+
+**Build** ✅ exit 0 · **Lint** ✅ exit 0 · **audit.mjs** ✅ 0 erreur (94 articles).
+3 nouveaux articles (2 news + 1 evergreen), descriptions 143/152/148 car., 0 tiret
+cadratin, 3 liens internes + lien externe d'autorité chacun, heros présents.
+Aucun nouveau problème introduit. Backlog inchangé : 47 descriptions >160 car.
+(anciens articles) à reprendre progressivement (~2-3 par run).
+
+---
+
 ## 2026-06-17 — Audit baseline (premier run)
 
 **Build** : ✅ `npm run build` exit 0 (82 routes prerendered, 79 articles SSG).

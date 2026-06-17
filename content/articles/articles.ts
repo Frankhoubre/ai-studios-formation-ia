@@ -92,6 +92,9 @@ import { automatiserProductionContenuIa } from "@/content/articles/posts/automat
 import { batchProduireVisuelsCoherentsSerie } from "@/content/articles/posts/batch-produire-visuels-coherents-serie";
 import { detecterImageGenereeIa } from "@/content/articles/posts/detecter-image-generee-ia";
 import { universVisuelMarqueIa } from "@/content/articles/posts/univers-visuel-marque-ia";
+import { midjourneyV81MiseAJour } from "@/content/articles/posts/midjourney-v8-1-mise-a-jour";
+import { runwaySeedance2FastAleph2 } from "@/content/articles/posts/runway-seedance-2-fast-aleph-2";
+import { comfyuiWorkflowNodalDebutant } from "@/content/articles/posts/comfyui-workflow-nodal-debutant";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -102,6 +105,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  midjourneyV81MiseAJour,
+  runwaySeedance2FastAleph2,
+  comfyuiWorkflowNodalDebutant,
   detecterImageGenereeIa,
   universVisuelMarqueIa,
   automatiserProductionContenuIa,

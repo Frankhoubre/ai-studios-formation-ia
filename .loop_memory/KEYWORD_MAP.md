@@ -137,6 +137,17 @@ doivent les **soutenir** (liens entrants), pas leur faire concurrence.
    `film-ia-gratuit-court-metrage` se touchent. Cluster saturé sur le "gratuit".
 5. Upscale image : `magnific-upscalers-ia-agrandir-image` + `krea-ai-temps-reel-upscale`.
 
+## Ajouts 2026-06-17 (Run #1)
+
+- `midjourney-v8-1-mise-a-jour` — **midjourney v8.1** (News, IA image). Distinct
+  de `midjourney-debutant-premiere-image` (intention = tutoriel) et de
+  `midjourney-vs-flux-vs-dalle` (comparatif). Ne pas refaire d'article "V8.1".
+- `runway-seedance-2-fast-aleph-2` — **runway seedance 2.0** (News, IA vidéo).
+  Distinct de `runway-guide-video-ia` (guide) et `hailuo-wan-seedance-video-ia`
+  (famille de modèles). Pour une prochaine actu Runway, viser une autre fonction.
+- `comfyui-workflow-nodal-debutant` — **comfyui débutant** (Evergreen, workflow).
+  Nouveau cluster. Gaps adjacents libres : nodes avancés, ComfyUI vs Automatic1111.
+
 ## Topics à ÉVITER (déjà couverts, créerait un doublon)
 
 générer une image débutant, créer image gratuit, midjourney débutant,
