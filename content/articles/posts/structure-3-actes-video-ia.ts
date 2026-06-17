@@ -24,7 +24,7 @@ export const structure3ActesVideoIa: Article = {
     "début milieu fin vidéo",
   ],
   relatedSlugs: [
-    "ecrire-micro-scene-avant-generer-video-ia",
+    "creer-storyboard-ia",
     "raccord-continuite-plans-ia",
     "hook-3-secondes-video-ia",
   ],
@@ -93,7 +93,7 @@ export const structure3ActesVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Tout commence par une intention claire, posée avant la génération. Pose ta micro-scène d'abord, avec [notre méthode pour écrire une micro-scène avant de générer une vidéo IA](/blog/ecrire-micro-scene-avant-generer-video-ia), puis répartis-la sur tes trois actes.",
+      text: "Tout commence par une intention claire, posée avant la génération. Pose ta micro-scène d'abord, avec [notre méthode pour créer un storyboard IA](/blog/creer-storyboard-ia), puis répartis-la sur tes trois actes.",
     },
     {
       type: "h3",

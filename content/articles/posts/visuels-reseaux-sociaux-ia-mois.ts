@@ -24,9 +24,9 @@ export const visuelsReseauxSociauxIaMois: Article = {
     "batch contenu ia",
   ],
   relatedSlugs: [
-    "creer-visuel-instagram-ia-sans-rendu-generique",
-    "illustration-ia-creer-pro",
     "visuels-publicitaires-ia-convertissent",
+    "illustration-ia-creer-pro",
+    "creer-publicite-ia",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     },
     {
       type: "p",
-      text: "Ce système s'appuie sur des visuels qui sortent du générique. Pour que chaque post ait de la personnalité, croise cette méthode avec [notre guide pour créer un visuel Instagram sans rendu générique](/blog/creer-visuel-instagram-ia-sans-rendu-generique).",
+      text: "Ce système s'appuie sur des visuels qui sortent du générique. Pour que chaque post ait de la personnalité, croise cette méthode avec [notre guide des visuels publicitaires IA qui convertissent](/blog/visuels-publicitaires-ia-convertissent).",
     },
     {
       type: "h3",

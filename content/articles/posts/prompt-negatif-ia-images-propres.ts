@@ -25,8 +25,8 @@ export const promptNegatifIaImagesPropres: Article = {
   ],
   relatedSlugs: [
     "prompt-image-ia-cinema",
-    "prompt-court-ou-long-ia-image",
-    "pourquoi-prompts-ia-ne-marchent-pas",
+    "decrire-lumiere-prompt-ia",
+    "prompt-structure-4-blocs-ia",
   ],
   faq: [
     {
@@ -106,7 +106,7 @@ export const promptNegatifIaImagesPropres: Article = {
     },
     {
       type: "p",
-      text: "Pense-y comme un volume d'eau. Tu ouvres un robinet avec le positif, tu essaies de le fermer avec le négatif. C'est épuisant et imprécis. Beaucoup plus efficace : n'ouvre pas le robinet du défaut au départ. Remplace les mots vagues par des causes physiques, source de lumière, matière, focale, distance. Cette idée est détaillée dans [notre analyse de pourquoi les prompts IA ne marchent pas](/blog/pourquoi-prompts-ia-ne-marchent-pas), et elle change tout dans ta façon de prompter.",
+      text: "Pense-y comme un volume d'eau. Tu ouvres un robinet avec le positif, tu essaies de le fermer avec le négatif. C'est épuisant et imprécis. Beaucoup plus efficace : n'ouvre pas le robinet du défaut au départ. Remplace les mots vagues par des causes physiques, source de lumière, matière, focale, distance. Cette idée est détaillée dans [notre méthode du prompt structuré en 4 blocs](/blog/prompt-structure-4-blocs-ia), et elle change tout dans ta façon de prompter.",
     },
     {
       type: "p",
@@ -168,7 +168,7 @@ export const promptNegatifIaImagesPropres: Article = {
     },
     {
       type: "p",
-      text: "Cette discipline de comparaison rejoint la question de la longueur de prompt. Si tu veux creuser le sujet du dosage, regarde [notre guide sur le prompt court ou long en image IA](/blog/prompt-court-ou-long-ia-image), parce que la même logique de soustraction s'applique au positif comme au négatif.",
+      text: "Cette discipline de comparaison rejoint la question de la longueur de prompt. Si tu veux creuser le sujet du dosage, regarde [notre guide pour décrire la lumière dans un prompt IA](/blog/decrire-lumiere-prompt-ia), parce que la même logique de soustraction s'applique au positif comme au négatif.",
     },
     {
       type: "p",

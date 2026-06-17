@@ -25,8 +25,8 @@ export const bibliothequePromptsReutilisables: Article = {
   ],
   relatedSlugs: [
     "prompt-structure-4-blocs-ia",
-    "organiser-fichiers-ia-noms-versions-exports-archives",
     "workflow-ia-creatif",
+    "decrire-lumiere-prompt-ia",
   ],
   faq: [
     {
@@ -93,7 +93,7 @@ export const bibliothequePromptsReutilisables: Article = {
     },
     {
       type: "p",
-      text: "Cette bibliothèque est le prolongement naturel d'une bonne organisation de fichiers. Pour ranger aussi tes générations, versions et exports de façon cohérente, croise ce guide avec [notre méthode pour organiser ses fichiers IA](/blog/organiser-fichiers-ia-noms-versions-exports-archives).",
+      text: "Cette bibliothèque est le prolongement naturel d'une bonne organisation de fichiers. Pour ranger aussi tes générations, versions et exports de façon cohérente, croise ce guide avec [notre méthode de workflow IA créatif](/blog/workflow-ia-creatif).",
     },
     {
       type: "h3",

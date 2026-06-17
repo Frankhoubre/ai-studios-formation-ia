@@ -24,7 +24,7 @@ export const videoCourteIaTiktokReelsShorts: Article = {
     "vidéo verticale ia",
   ],
   relatedSlugs: [
-    "creer-reel-ia-video-courte-comprehensible",
+    "structure-3-actes-video-ia",
     "hook-3-secondes-video-ia",
     "creer-video-ia-gratuit",
   ],
@@ -110,7 +110,7 @@ export const videoCourteIaTiktokReelsShorts: Article = {
     },
     {
       type: "p",
-      text: "Pour la structure narrative d'un clip court compréhensible, appuie-toi sur [notre guide pour créer un Reel IA clair](/blog/creer-reel-ia-video-courte-comprehensible), qui détaille comment rendre une vidéo courte limpide.",
+      text: "Pour la structure narrative d'un clip court compréhensible, appuie-toi sur [notre guide sur la structure en 3 actes d'une vidéo IA](/blog/structure-3-actes-video-ia), qui détaille comment rendre une vidéo courte limpide.",
     },
     {
       type: "h2",

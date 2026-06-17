@@ -24,7 +24,7 @@ export const magnificUpscalersIaAgrandirImage: Article = {
     "augmenter résolution image ia",
   ],
   relatedSlugs: [
-    "resolution-upscale-ratio-image-ia",
+    "krea-ai-temps-reel-upscale",
     "ia-image-realiste",
     "meilleurs-generateurs-images-ia-2026",
   ],
@@ -93,7 +93,7 @@ export const magnificUpscalersIaAgrandirImage: Article = {
     },
     {
       type: "p",
-      text: "L'upscale s'inscrit dans une réflexion plus large sur la résolution et la livraison. Pour le cadre d'ensemble, croise ce guide avec [notre article sur résolution, upscale et ratio des images IA](/blog/resolution-upscale-ratio-image-ia).",
+      text: "L'upscale s'inscrit dans une réflexion plus large sur la résolution et la livraison. Pour le cadre d'ensemble, croise ce guide avec [notre guide de Krea AI pour l'upscale en temps réel](/blog/krea-ai-temps-reel-upscale).",
     },
     {
       type: "h3",

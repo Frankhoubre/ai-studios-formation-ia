@@ -19,6 +19,9 @@ export function CookieConsent() {
   }, []);
 
   useEffect(() => {
+    // Mount gate volontaire : le consentement dépend de localStorage, on ne
+    // peut donc le lire qu'après hydratation pour éviter un mismatch SSR.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     refreshOpen();
   }, [refreshOpen]);
