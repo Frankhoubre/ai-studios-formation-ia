@@ -37,6 +37,8 @@ import { meilleursGenerateursImagesIa2026 } from "@/content/articles/posts/meill
 import { dalleChatgptCreerImages } from "@/content/articles/posts/dalle-chatgpt-creer-images";
 import { stableDiffusionDebutantDemarrer } from "@/content/articles/posts/stable-diffusion-debutant-demarrer";
 import { creerVideoIaGratuit } from "@/content/articles/posts/creer-video-ia-gratuit";
+import { veo3GenererVideosIa } from "@/content/articles/posts/veo-3-generer-videos-ia";
+import { soraOpenaiCreerVideos } from "@/content/articles/posts/sora-openai-creer-videos";
 import { meilleursSitesVideoIaGratuits } from "@/content/articles/posts/meilleurs-sites-video-ia-gratuits";
 import { midjourneyVsFluxVsDalle } from "@/content/articles/posts/midjourney-vs-flux-vs-dalle";
 import { googleImagenNanoBananaPhotorealisme } from "@/content/articles/posts/google-imagen-nano-banana-photorealisme";
@@ -52,6 +54,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  veo3GenererVideosIa,
+  soraOpenaiCreerVideos,
   creerVideoIaGratuit,
   meilleursSitesVideoIaGratuits,
   stableDiffusionDebutantDemarrer,
