@@ -38,6 +38,8 @@ import { dalleChatgptCreerImages } from "@/content/articles/posts/dalle-chatgpt-
 import { stableDiffusionDebutantDemarrer } from "@/content/articles/posts/stable-diffusion-debutant-demarrer";
 import { creerVideoIaGratuit } from "@/content/articles/posts/creer-video-ia-gratuit";
 import { veo3GenererVideosIa } from "@/content/articles/posts/veo-3-generer-videos-ia";
+import { klingAiVideosCinematiques } from "@/content/articles/posts/kling-ai-videos-cinematiques";
+import { runwayGuideVideoIa } from "@/content/articles/posts/runway-guide-video-ia";
 import { soraOpenaiCreerVideos } from "@/content/articles/posts/sora-openai-creer-videos";
 import { meilleursSitesVideoIaGratuits } from "@/content/articles/posts/meilleurs-sites-video-ia-gratuits";
 import { midjourneyVsFluxVsDalle } from "@/content/articles/posts/midjourney-vs-flux-vs-dalle";
@@ -54,6 +56,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  klingAiVideosCinematiques,
+  runwayGuideVideoIa,
   veo3GenererVideosIa,
   soraOpenaiCreerVideos,
   creerVideoIaGratuit,
