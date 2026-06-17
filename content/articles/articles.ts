@@ -47,6 +47,8 @@ import { visuelsPublicitairesIaConvertissent } from "@/content/articles/posts/vi
 import { creerLogoIaMethodeOutils } from "@/content/articles/posts/creer-logo-ia-methode-outils";
 import { avatarsIaUgcPresentateurVirtuel } from "@/content/articles/posts/avatars-ia-ugc-presentateur-virtuel";
 import { mockupsProduitIa } from "@/content/articles/posts/mockups-produit-ia";
+import { lipSyncIaFaireParlerPersonnage } from "@/content/articles/posts/lip-sync-ia-faire-parler-personnage";
+import { doublageTraductionVideoIa } from "@/content/articles/posts/doublage-traduction-video-ia";
 import { clipMusicalIa } from "@/content/articles/posts/clip-musical-ia";
 import { visuelsReseauxSociauxIaMois } from "@/content/articles/posts/visuels-reseaux-sociaux-ia-mois";
 import { portraitsIaPhotoProfilLinkedin } from "@/content/articles/posts/portraits-ia-photo-profil-linkedin";
@@ -72,6 +74,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  lipSyncIaFaireParlerPersonnage,
+  doublageTraductionVideoIa,
   mockupsProduitIa,
   clipMusicalIa,
   avatarsIaUgcPresentateurVirtuel,
