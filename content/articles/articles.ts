@@ -84,6 +84,8 @@ import { loraEntrainerStyleVisage } from "@/content/articles/posts/lora-entraine
 import { ponderationPromptPoidsMots } from "@/content/articles/posts/ponderation-prompt-poids-mots";
 import { promptMidjourneyParametres } from "@/content/articles/posts/prompt-midjourney-parametres";
 import { banqueStylesVisuelsIa } from "@/content/articles/posts/banque-styles-visuels-ia";
+import { gagnerArgentIaCreativeModeles } from "@/content/articles/posts/gagner-argent-ia-creative-modeles";
+import { devenirFreelanceCreationIa } from "@/content/articles/posts/devenir-freelance-creation-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -94,6 +96,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  gagnerArgentIaCreativeModeles,
+  devenirFreelanceCreationIa,
   promptMidjourneyParametres,
   banqueStylesVisuelsIa,
   loraEntrainerStyleVisage,
