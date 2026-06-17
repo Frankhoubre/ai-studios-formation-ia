@@ -331,7 +331,7 @@
       "category": "ia-video",
       "kw": "sous-titres automatiques ia",
       "hero": "A cinematic editing screen showing a video with clean auto-generated captions, focused editor, dark suite, warm glow",
-      "done": false
+      "done": true
     },
     {
       "n": 34,
@@ -341,7 +341,7 @@
       "category": "ia-image",
       "kw": "upscale image ia",
       "hero": "A cinematic macro showing an image gaining crisp detail and sharpness, before-after sense of resolution, premium tech mood",
-      "done": false
+      "done": true
     },
     {
       "n": 35,
