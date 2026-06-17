@@ -11,7 +11,15 @@ Source de vérité pour l'anti-cannibalisation. Mis à jour à chaque run.
 ## Légende des colonnes
 Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires | Liens internes (relatedSlugs) | URL
 
-## Articles
+## Ajouts par run (les plus récents en haut)
+
+| Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
+|------|-------|------|-----------|--------------|------|---------|
+| 2026-06-17 | Midjourney V8.1 : ce qui change vraiment | `midjourney-v8-1-mise-a-jour` | IA image | midjourney v8.1 | News | midjourney.com/updates |
+| 2026-06-17 | Runway : Seedance 2.0 Fast et Aleph 2.0 | `runway-seedance-2-fast-aleph-2` | IA vidéo | runway seedance 2.0 | News | runwayml.com |
+| 2026-06-17 | ComfyUI pour débutants : workflow nodal | `comfyui-workflow-nodal-debutant` | Workflow créatif | comfyui débutant | Evergreen | — |
+
+## Articles (registre de base, bootstrap)
 
 | Date | Titre | Slug | Catégorie | KW principal | KW secondaires | URL |
 |------|-------|------|-----------|--------------|----------------|-----|

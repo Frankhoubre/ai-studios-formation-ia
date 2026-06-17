@@ -4,77 +4,52 @@ Rapport du dernier run. Réécrit à chaque run (historique long → PROGRESS.md
 
 ---
 
-## 2026-06-17 — Run BOOTSTRAP (premier run, sans publication)
+## 2026-06-17 — Run #1 (premier run de contenu réel)
 
-**Date** : 2026-06-17 (Europe/Paris)
-**Type** : premier run = inspection + mise en place du système. Aucune publication
-(règle "premier run : ne pas publier immédiatement").
+**Date** : 2026-06-17 (Europe/Paris) · **Branche** : loop/daily-2026-06-17 → main
 
-### Site identifié
-AI Studios Blog, blog FR d'IA créative (Frank Houbre). Next.js 16 App Router,
-TypeScript, Tailwind v4. Contenu statique en modules TS (pas de CMS). Déploiement
-Vercel auto depuis `main`. 79 articles publiés/planifiés (evergreen), 6 catégories.
-SEO déjà très solide (metadata, JSON-LD riche, sitemap/robots dynamiques).
-
-### Articles créés
-- Aucun (premier run). Le système de production est prêt, pas déclenché.
-
-### URLs publiées
-- Aucune.
+### Articles créés (3)
+1. **News — `midjourney-v8-1-mise-a-jour`** (IA image)
+   « Midjourney V8.1 : ce qui change vraiment pour tes images ».
+   Actu datée : V8.1 par défaut depuis le 11/06/2026 (HD 2x/4x, 4s SD/12s HD,
+   prompts mieux suivis, texte lisible) + draft mode du 16/06.
+   URL : https://blog.ai-studios.fr/blog/midjourney-v8-1-mise-a-jour
+2. **News — `runway-seedance-2-fast-aleph-2`** (IA vidéo)
+   « Runway : Seedance 2.0 Fast et Aleph 2.0, ce qui arrive ».
+   Actu datée : Aleph 2.0 (02/06, montage par prompt) + Seedance 2.0 Fast
+   (05/06, génération rapide) via l'API Runway.
+   URL : https://blog.ai-studios.fr/blog/runway-seedance-2-fast-aleph-2
+3. **Evergreen — `comfyui-workflow-nodal-debutant`** (Workflow créatif)
+   « ComfyUI pour débutants : comprendre le workflow nodal ». Gap réel,
+   0 cannibalisation. Gabarit complet.
+   URL : https://blog.ai-studios.fr/blog/comfyui-workflow-nodal-debutant
 
 ### Sources utilisées
-- Inspection locale du repo uniquement (pas de recherche news ce run).
+- Midjourney : midjourney.com/updates + notes de version (V8.1 11/06, draft 16/06).
+- Runway : runwayml.com + notes de version (Aleph 2.0 02/06, Seedance 2.0 Fast 05/06).
+- Recherche web (WebSearch/WebFetch) pour le calage et la corroboration.
 
-### Correctifs SEO réalisés (dans le working tree, NON poussés — voir ci-dessous)
-1. **CI GitHub Actions réparée** : `npm run lint` échouait depuis ≥3 commits sur
-   `components/CookieConsent.tsx` (`react-hooks/set-state-in-effect`). Correctif
-   ciblé (suppression de règle sur le mount-gate volontaire). Lint exit 0.
-2. **16 liens internes cassés corrigés** : liens body + `relatedSlugs` vers 12
-   slugs jamais créés et hors roadmap, repointés vers les articles existants
-   pertinents ; 6 doublons `relatedSlugs` nettoyés. 0 cassé restant.
+### Fixes SEO réalisés
+- Aucun nouveau problème introduit. Audit propre sur les 94 articles.
 
-### Statut build / lint
-- `npm run build` : ✅ exit 0 · `npm run lint` : ✅ exit 0 ·
-  `node .loop_scripts/audit.mjs` : 0 erreur bloquante sur les 79 articles publiés
-  (2 hero manquants concernent des brouillons future-datés de l'autopilote, voir
-  ci-dessous).
+### Statut build / lint / audit
+- `node .loop_scripts/audit.mjs` : ✅ 0 erreur (47 avertissements = descriptions
+  >160 héritées du backlog, hors articles de ce run).
+- `npm run lint` : ✅ exit 0 · `npm run build` : ✅ exit 0 (3 routes générées).
+- Descriptions des 3 articles : 143 / 152 / 148 car. (≤160). Aucun tiret cadratin.
+
+### Hero images
+- 3 générées via Imagen 4 Fast (1K, 50mm), ~26-36 Ko. Style cinématique validé.
+  Coût total ≈ 0,06 $.
 
 ### Statut déploiement
-- ✅ **Bootstrap poussé sur `main`** (sur demande utilisateur). Infra du loop +
-  2 correctifs SEO (CI lint, 16 liens cassés) désormais live via Vercel.
-- L'autopilote concurrent avait terminé son lot (60/60) avant le commit : pas de
-  collision, working tree limité aux fichiers de ce run.
-
-### Problèmes trouvés
-- 🟠 CI rouge (lint) — corrigé.
-- 🟠 16 liens internes cassés — corrigés.
-- 🟡 37 meta descriptions > 160 car. (tronquées au rendu) — backlog.
-- 🟢 ~10 articles à mots-clés faibles (lot "calendrier") — backlog.
-- 🟢 Cannibalisation latente "storyboard IA" / "personnage cohérent" — surveillé.
-- ⛔ **Autopilote concurrent détecté** (scheduled task active, écrivait n°51-52,
-  1 hero encore manquant) — git gelé, décision utilisateur requise.
-
-### Problèmes corrigés
-- CI lint, 16 liens internes cassés (build re-vérifié vert).
+- ✅ Poussé sur `main` (validé par l'utilisateur), Vercel déploie.
 
 ### Problèmes restants
-- Coexistence des deux loops à arbitrer (B-0).
-- Accès à confirmer : web (news), GEMINI_API_KEY (hero), MCP SEO (B-1, B-2, B-3).
-- Backlog SEO (descriptions > 160, KW faibles).
+- Backlog : 47 descriptions >160 car. (anciens articles), KW faibles du lot
+  "calendrier". À traiter au fil des runs.
 
-### Prochaines actions recommandées
-1. Arbitrer la coexistence avec l'autopilote (SETUP_LOOP §Coexistence).
-2. Une fois l'autopilote au repos : revoir et committer le travail bootstrap
-   (infra + 2 correctifs SEO) sur `main`.
-3. Confirmer les accès (web, GEMINI_API_KEY, MCP).
-4. Activer le run quotidien (SETUP_LOOP §Automatiser).
-5. Run 2 : 2 news + 1 evergreen + audit, en autonomie.
-
-### Fichiers livrés ce run
-- `.loop_memory/` : PROGRESS, CONTENT_LEDGER, NEWS_SOURCES, SEO_AUDIT_LOG,
-  KEYWORD_MAP, STYLE_GUIDE, PUBLISH_LOG, ERRORS_AND_BLOCKERS, IDEAS_BACKLOG,
-  DAILY_REPORT.
-- `.loop_scripts/` : daily_content_loop, news_research_loop, evergreen_article_loop,
-  seo_audit_loop, publish_loop, checklist, audit.mjs.
-- `SETUP_LOOP.md` (racine).
-- Correctifs : `components/CookieConsent.tsx` + 14 modules d'articles.
+### Prochaines actions
+- Le run planifié `daily-growth-loop-ai-studios` (08:10) prend le relais demain.
+- Prochain evergreen candidat : glossaire IA créative, ou coût mensuel IA créative.
+- Traiter 2-3 descriptions >160 par run pour vider le backlog.
