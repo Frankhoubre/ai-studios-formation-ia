@@ -15,7 +15,7 @@ Priorité : 🔥 forte (gap + volume), ➕ moyenne, 💡 à creuser.
 - [ ] 🔥 Combien coûte vraiment l'IA créative par mois (comparatif abonnements image + vidéo) (`business-creatif`).
 - [ ] ➕ Checklist livrable client propre (export, formats, droits) (`business-creatif`).
 - [ ] ➕ Droits d'auteur & IA générative en France : ce qu'on peut/ne peut pas vendre (`business-creatif`, prudence légale).
-- [ ] ➕ Image to video : du still au plan, la méthode (`ia-video`, angle workflow, pas tool).
+- [x] ➕ Image to video : du still au plan, la méthode → publié 2026-06-18 (`image-to-video-ia-methode`).
 - [ ] ➕ Banque de styles visuels réutilisables (planifié n°52, ne pas doubler).
 - [ ] ➕ Batch produire une série visuelle cohérente (planifié n°58).
 - [ ] 💡 "Pourquoi tes vidéos IA ont l'air fausses" (angle opinion, storytelling).

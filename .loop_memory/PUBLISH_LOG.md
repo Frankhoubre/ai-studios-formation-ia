@@ -7,6 +7,14 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-06-18
+
+- `2026-06-18 | RUN #2 | loop/daily-2026-06-18 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `adobe-firefly-android-imagen-veo` (IA image, news, Firefly sur Android 17/06)
+  - `krea-2-images-2-secondes` (IA image, news, Krea 2 08/06)
+  - `image-to-video-ia-methode` (IA vidéo, evergreen)
+  - Heros Imagen 4 Fast 1K. Audit/lint/build verts. Voir DAILY_REPORT.
+
 ## 2026-06-17
 
 - `2026-06-17 | RUN #1 | loop/daily-2026-06-17 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`

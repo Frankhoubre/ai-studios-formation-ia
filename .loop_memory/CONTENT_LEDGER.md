@@ -15,6 +15,9 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-06-18 | Adobe Firefly débarque sur Android | `adobe-firefly-android-imagen-veo` | IA image | adobe firefly android | News | adobe.com, Android Central |
+| 2026-06-18 | Krea 2 : des images en 2 secondes | `krea-2-images-2-secondes` | IA image | krea 2 | News | krea.ai/news |
+| 2026-06-18 | Image to video IA : la méthode | `image-to-video-ia-methode` | IA vidéo | image to video ia | Evergreen | — |
 | 2026-06-17 | Midjourney V8.1 : ce qui change vraiment | `midjourney-v8-1-mise-a-jour` | IA image | midjourney v8.1 | News | midjourney.com/updates |
 | 2026-06-17 | Runway : Seedance 2.0 Fast et Aleph 2.0 | `runway-seedance-2-fast-aleph-2` | IA vidéo | runway seedance 2.0 | News | runwayml.com |
 | 2026-06-17 | ComfyUI pour débutants : workflow nodal | `comfyui-workflow-nodal-debutant` | Workflow créatif | comfyui débutant | Evergreen | — |
