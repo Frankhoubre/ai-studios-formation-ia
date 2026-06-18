@@ -4,52 +4,49 @@ Rapport du dernier run. Réécrit à chaque run (historique long → PROGRESS.md
 
 ---
 
-## 2026-06-17 — Run #1 (premier run de contenu réel)
+## 2026-06-18 — Run #2
 
-**Date** : 2026-06-17 (Europe/Paris) · **Branche** : loop/daily-2026-06-17 → main
+**Date** : 2026-06-18 (Europe/Paris) · **Branche** : loop/daily-2026-06-18 → main
 
-### Articles créés (3)
-1. **News — `midjourney-v8-1-mise-a-jour`** (IA image)
-   « Midjourney V8.1 : ce qui change vraiment pour tes images ».
-   Actu datée : V8.1 par défaut depuis le 11/06/2026 (HD 2x/4x, 4s SD/12s HD,
-   prompts mieux suivis, texte lisible) + draft mode du 16/06.
-   URL : https://blog.ai-studios.fr/blog/midjourney-v8-1-mise-a-jour
-2. **News — `runway-seedance-2-fast-aleph-2`** (IA vidéo)
-   « Runway : Seedance 2.0 Fast et Aleph 2.0, ce qui arrive ».
-   Actu datée : Aleph 2.0 (02/06, montage par prompt) + Seedance 2.0 Fast
-   (05/06, génération rapide) via l'API Runway.
-   URL : https://blog.ai-studios.fr/blog/runway-seedance-2-fast-aleph-2
-3. **Evergreen — `comfyui-workflow-nodal-debutant`** (Workflow créatif)
-   « ComfyUI pour débutants : comprendre le workflow nodal ». Gap réel,
-   0 cannibalisation. Gabarit complet.
-   URL : https://blog.ai-studios.fr/blog/comfyui-workflow-nodal-debutant
+### Contexte
+Run du 18 fait à la main (l'auto-run de 08:28 avait fired mais n'avait rien
+publié, vraisemblablement bloqué sur des permissions d'outils non pré-approuvées).
+Sujets choisis distincts du 17 (pas de re-Midjourney/Runway/ComfyUI).
 
-### Sources utilisées
-- Midjourney : midjourney.com/updates + notes de version (V8.1 11/06, draft 16/06).
-- Runway : runwayml.com + notes de version (Aleph 2.0 02/06, Seedance 2.0 Fast 05/06).
-- Recherche web (WebSearch/WebFetch) pour le calage et la corroboration.
+### Articles créés (3, datés 2026-06-18)
+1. **News — `adobe-firefly-android-imagen-veo`** (IA image)
+   « Adobe Firefly débarque sur Android avec Imagen 4 et Veo 3 ».
+   Actu : app Android le 17/06/2026, modèles Google Imagen 4 + Veo 3, iOS à venir.
+   URL : https://blog.ai-studios.fr/blog/adobe-firefly-android-imagen-veo
+2. **News — `krea-2-images-2-secondes`** (IA image)
+   « Krea 2 : des images en 2 secondes, ce que ça change ».
+   Actu : expérience Krea 2 lancée le 08/06/2026, images en ~2 s.
+   URL : https://blog.ai-studios.fr/blog/krea-2-images-2-secondes
+3. **Evergreen — `image-to-video-ia-methode`** (IA vidéo)
+   « Image to video IA : transformer une image en plan animé ». Gap réel, gabarit
+   complet. URL : https://blog.ai-studios.fr/blog/image-to-video-ia-methode
 
-### Fixes SEO réalisés
-- Aucun nouveau problème introduit. Audit propre sur les 94 articles.
+### Sources
+- Adobe Firefly Android : Adobe + presse spécialisée (Android Central, DIYP), 17/06.
+- Krea 2 : krea.ai/news (sortie 08/06).
+- Recherche web (WebSearch) pour calage et corroboration.
 
-### Statut build / lint / audit
-- `node .loop_scripts/audit.mjs` : ✅ 0 erreur (47 avertissements = descriptions
-  >160 héritées du backlog, hors articles de ce run).
-- `npm run lint` : ✅ exit 0 · `npm run build` : ✅ exit 0 (3 routes générées).
-- Descriptions des 3 articles : 143 / 152 / 148 car. (≤160). Aucun tiret cadratin.
+### Build / lint / audit
+- `audit.mjs` : ✅ 0 erreur, 0 avertissement (97 articles).
+- `npm run lint` : ✅ exit 0 · `npm run build` : ✅ exit 0.
+- Descriptions des 3 articles : 150 / 145 / 147 car. (≤160). Aucun tiret cadratin.
 
 ### Hero images
-- 3 générées via Imagen 4 Fast (1K, 50mm), ~26-36 Ko. Style cinématique validé.
-  Coût total ≈ 0,06 $.
+- 3 générées via Imagen 4 Fast (1K, 50mm), 20-22 Ko. Coût ≈ 0,06 $.
 
 ### Statut déploiement
-- ✅ Poussé sur `main` (validé par l'utilisateur), Vercel déploie.
+- ✅ Poussé sur `main`, Vercel déploie.
 
-### Problèmes restants
-- Backlog : 47 descriptions >160 car. (anciens articles), KW faibles du lot
-  "calendrier". À traiter au fil des runs.
+### Problèmes restants / à corriger
+- ⚠️ Auto-run local de 08:28 inefficace (permissions non pré-approuvées). Action :
+  pré-approuver les outils via "Run now", ou basculer vers un cron cloud
+  (GitHub Actions + Agent SDK) pour un vrai run sans laptop. Voir SETUP_LOOP.
 
 ### Prochaines actions
-- Le run planifié `daily-growth-loop-ai-studios` (08:10) prend le relais demain.
-- Prochain evergreen candidat : glossaire IA créative, ou coût mensuel IA créative.
-- Traiter 2-3 descriptions >160 par run pour vider le backlog.
+- Régler la fiabilité du run auto (permissions ou cron cloud).
+- Prochains evergreen candidats : glossaire IA créative, coût mensuel IA créative.

@@ -137,6 +137,15 @@ doivent les **soutenir** (liens entrants), pas leur faire concurrence.
    `film-ia-gratuit-court-metrage` se touchent. Cluster saturé sur le "gratuit".
 5. Upscale image : `magnific-upscalers-ia-agrandir-image` + `krea-ai-temps-reel-upscale`.
 
+## Ajouts 2026-06-18 (Run #2)
+
+- `adobe-firefly-android-imagen-veo` — **adobe firefly android** (News, IA image).
+  Pas de doublon. Pour une future actu Firefly, viser une autre fonction/plateforme.
+- `krea-2-images-2-secondes` — **krea 2** (News, IA image). Distinct de
+  `krea-ai-temps-reel-upscale` (guide outil). Lien croisé fait.
+- `image-to-video-ia-methode` — **image to video ia** (Evergreen, IA vidéo).
+  Nouveau cluster. Gaps adjacents : text-to-video méthode, keyframes vidéo IA.
+
 ## Ajouts 2026-06-17 (Run #1)
 
 - `midjourney-v8-1-mise-a-jour` — **midjourney v8.1** (News, IA image). Distinct

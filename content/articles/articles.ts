@@ -95,6 +95,9 @@ import { universVisuelMarqueIa } from "@/content/articles/posts/univers-visuel-m
 import { midjourneyV81MiseAJour } from "@/content/articles/posts/midjourney-v8-1-mise-a-jour";
 import { runwaySeedance2FastAleph2 } from "@/content/articles/posts/runway-seedance-2-fast-aleph-2";
 import { comfyuiWorkflowNodalDebutant } from "@/content/articles/posts/comfyui-workflow-nodal-debutant";
+import { adobeFireflyAndroidImagenVeo } from "@/content/articles/posts/adobe-firefly-android-imagen-veo";
+import { krea2Images2Secondes } from "@/content/articles/posts/krea-2-images-2-secondes";
+import { imageToVideoIaMethode } from "@/content/articles/posts/image-to-video-ia-methode";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -105,6 +108,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  adobeFireflyAndroidImagenVeo,
+  krea2Images2Secondes,
+  imageToVideoIaMethode,
   midjourneyV81MiseAJour,
   runwaySeedance2FastAleph2,
   comfyuiWorkflowNodalDebutant,
