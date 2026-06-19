@@ -95,9 +95,14 @@ import { universVisuelMarqueIa } from "@/content/articles/posts/univers-visuel-m
 import { midjourneyV81MiseAJour } from "@/content/articles/posts/midjourney-v8-1-mise-a-jour";
 import { runwaySeedance2FastAleph2 } from "@/content/articles/posts/runway-seedance-2-fast-aleph-2";
 import { comfyuiWorkflowNodalDebutant } from "@/content/articles/posts/comfyui-workflow-nodal-debutant";
+import { screenweaverScenarioStoryboardIa } from "@/content/articles/posts/screenweaver-scenario-storyboard-ia";
+import { ecrireScenarioIaMethodeOutils } from "@/content/articles/posts/ecrire-scenario-ia-methode-outils";
 import { adobeFireflyAndroidImagenVeo } from "@/content/articles/posts/adobe-firefly-android-imagen-veo";
 import { krea2Images2Secondes } from "@/content/articles/posts/krea-2-images-2-secondes";
 import { imageToVideoIaMethode } from "@/content/articles/posts/image-to-video-ia-methode";
+import { lumaRay32ControleVideoIa } from "@/content/articles/posts/luma-ray-3-2-controle-video-ia";
+import { lumaSkillsWorkflowReutilisable } from "@/content/articles/posts/luma-skills-workflow-reutilisable";
+import { glossaireIaCreativeTermes } from "@/content/articles/posts/glossaire-ia-creative-termes";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -108,9 +113,14 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  screenweaverScenarioStoryboardIa,
+  ecrireScenarioIaMethodeOutils,
   adobeFireflyAndroidImagenVeo,
   krea2Images2Secondes,
   imageToVideoIaMethode,
+  lumaRay32ControleVideoIa,
+  lumaSkillsWorkflowReutilisable,
+  glossaireIaCreativeTermes,
   midjourneyV81MiseAJour,
   runwaySeedance2FastAleph2,
   comfyuiWorkflowNodalDebutant,
