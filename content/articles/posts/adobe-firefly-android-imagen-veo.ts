@@ -98,6 +98,12 @@ export const adobeFireflyAndroidImagenVeo: Article = {
       text: "Si tu veux comprendre les modèles que tu manipules dans l'app, repars de nos guides dédiés : [Imagen et le photoréalisme de Google](/blog/google-imagen-nano-banana-photorealisme) pour l'image, et [Veo 3 pour générer des vidéos](/blog/veo-3-generer-videos-ia) pour la partie animée.",
     },
     {
+      type: "image",
+      src: "/images/articles/adobe-firefly-android-imagen-veo-home.webp",
+      alt: "Page Adobe Firefly présentant la génération d'images et de vidéos par IA",
+      caption: "La page Adobe Firefly (adobe.com), qui agrège Imagen, Veo et d'autres modèles.",
+    },
+    {
       type: "h2",
       id: "pour-qui",
       text: "Pour qui, et quoi en faire",

@@ -97,6 +97,12 @@ export const krea2Images2Secondes: Article = {
       text: "Krea a aussi une forte dimension temps réel et upscale. Pour le cadre complet de l'outil au-delà de cette nouveauté, croise avec [notre guide Krea AI en temps réel et upscale](/blog/krea-ai-temps-reel-upscale).",
     },
     {
+      type: "image",
+      src: "/images/articles/krea-2-images-2-secondes-home.webp",
+      alt: "Page d'accueil de Krea, suite créative IA pour images, vidéos et 3D",
+      caption: "La home de Krea (krea.ai).",
+    },
+    {
       type: "h2",
       id: "pour-qui",
       text: "Pour qui, et quoi en faire",
