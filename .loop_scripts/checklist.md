@@ -44,6 +44,9 @@ de révision par article. Échec après 3 → skip + log dans ERRORS_AND_BLOCKER
 - [ ] ≥ 1 lien externe d'autorité, URL valide.
 - [ ] FAQ (`faq[]`) reflète les Q/R du contenu (JSON-LD FAQPage).
 - [ ] CTA doux présent si pertinent (formation gratuite).
+- [ ] Si l'article parle d'un outil/site : ≥ 1 vraie capture d'écran de sa page
+      publique intégrée (bloc image), fichier présent dans public/images/articles/,
+      alt descriptif. Page publique uniquement (jamais login/paywall).
 
 ## E. Build (gate final)
 

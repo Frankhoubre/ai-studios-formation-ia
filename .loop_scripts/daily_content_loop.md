@@ -59,6 +59,10 @@ PROGRESS, ERRORS_AND_BLOCKERS, IDEAS_BACKLOG, et écrire DAILY_REPORT.md.
 8. Liens internes (≥ 2 vers slugs existants) + 1 lien externe d'autorité.
 9. CTA doux (formation gratuite) si pertinent.
 10. Hero : `python scripts/generate-hero.py --slug <slug> --prompt "<brief EN>"`.
+    Si l'article parle d'un outil/site précis : ajoute de VRAIES captures d'écran
+    de sa page publique avec `python3 scripts/capture-screenshot.py --url <url>
+    --slug <slug> --label home --alt "<alt>"` (plusieurs si utile : home,
+    pricing, app), et intègre-les via des blocs `{ type: "image", src, alt }`.
 11. Enregistrer le module dans `content/articles/posts/<slug>.ts`.
 12. Importer + ajouter au tableau dans `content/articles/articles.ts`.
 13. Passer le checker, réviser (max 3).
