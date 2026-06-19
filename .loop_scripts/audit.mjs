@@ -99,6 +99,12 @@ for (const a of articles) {
     if (!slugs.has(m[1])) errors.push(`${a.slug}: lien interne cassé -> /blog/${m[1]}`);
   }
 
+  // images inline (captures d'écran, blocs { type: "image", src: "/images/..." })
+  for (const m of a.src.matchAll(/\bsrc:\s*"(\/images\/[^"]+)"/g)) {
+    if (!existsSync(join(ROOT, "public", m[1])))
+      errors.push(`${a.slug}: image inline absente ${m[1]}`);
+  }
+
   // tirets cadratins interdits dans les valeurs de contenu
   if (/[—–]/.test(a.src))
     errors.push(`${a.slug}: tiret cadratin/demi-cadratin interdit (— ou –)`);
