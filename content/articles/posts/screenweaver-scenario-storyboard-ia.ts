@@ -74,6 +74,12 @@ export const screenweaverScenarioStoryboardIa: Article = {
       text: "Parce que la vraie question n'est pas est-ce que l'outil est impressionnant, mais est-ce qu'il résout un problème que tu as vraiment. Et le problème, ici, c'est la rupture entre ce que tu écris et ce que tu prépares.",
     },
     {
+      type: "image",
+      src: "/images/articles/screenweaver-home.webp",
+      alt: "Page d'accueil de ScreenWeaver, logiciel d'écriture de scénario gratuit avec storyboard IA, slogan « free screenwriting software with AI storyboard »",
+      caption: "La page d'accueil de ScreenWeaver résume sa promesse : une écriture de scénario gratuite, prolongée par le storyboard et des workflows de production. Capture du site officiel [screenweaver.ai](https://www.screenweaver.ai/).",
+    },
+    {
       type: "h2",
       id: "core-concepts",
       text: "Core Concepts : écrire, voir, préparer au même endroit",
