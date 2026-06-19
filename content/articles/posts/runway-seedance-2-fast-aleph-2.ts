@@ -10,7 +10,7 @@ export const runwaySeedance2FastAleph2: Article = {
   category: "ia-video",
   tags: ["runway", "actualité", "seedance", "montage ia"],
   date: "2026-06-17",
-  updatedAt: "2026-06-17",
+  updatedAt: "2026-06-18",
   readingTime: 9,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/runway-seedance-2-fast-aleph-2.webp",
@@ -96,6 +96,12 @@ export const runwaySeedance2FastAleph2: Article = {
     {
       type: "p",
       text: "Le point commun des deux : le contrôle par keyframes. C'est la tendance de fond de la vidéo IA, passer du prompt qui décrit à des points d'ancrage qui imposent. Pour resituer Runway dans ton arsenal, repars de [notre guide vidéo IA avec Runway](/blog/runway-guide-video-ia).",
+    },
+    {
+      type: "image",
+      src: "/images/articles/runway-seedance-2-fast-aleph-2-home.webp",
+      alt: "Page d'accueil de Runway, plateforme de génération vidéo IA",
+      caption: "La home de Runway (runwayml.com).",
     },
     {
       type: "h2",

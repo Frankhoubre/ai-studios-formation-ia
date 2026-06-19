@@ -10,7 +10,7 @@ export const midjourneyV81MiseAJour: Article = {
   category: "ia-image",
   tags: ["midjourney", "actualité", "modèles image"],
   date: "2026-06-17",
-  updatedAt: "2026-06-17",
+  updatedAt: "2026-06-18",
   readingTime: 9,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/midjourney-v8-1-mise-a-jour.webp",
@@ -100,6 +100,12 @@ export const midjourneyV81MiseAJour: Article = {
     {
       type: "p",
       text: "Si le rendu de texte t'intéresse en particulier, garde en tête que d'autres outils sont taillés pour ça. Compare l'approche avec [notre guide sur le texte lisible dans les images IA](/blog/ideogram-texte-lisible-images-ia) avant de choisir l'outil selon le besoin.",
+    },
+    {
+      type: "image",
+      src: "/images/articles/midjourney-v8-1-mise-a-jour-showcase.webp",
+      alt: "La galerie Explore de Midjourney avec des images générées par la communauté",
+      caption: "L'Explore de Midjourney (midjourney.com), où l'on juge le rendu réel du modèle.",
     },
     {
       type: "h2",
