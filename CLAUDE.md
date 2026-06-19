@@ -119,6 +119,7 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 - Dev : `npm run dev` (http://localhost:3000) · Build : `npm run build` · Lint : `npm run lint`
 - Audit contenu/SEO : `node .loop_scripts/audit.mjs` (93 articles, vérifie liens, longueurs, hero)
 - Hero image : `python scripts/generate-hero.py` (cf. `.loop_memory` pour les flags ; `GEMINI_API_KEY` dans `.env`, git-ignoré, ne jamais committer)
+- Cohérence du registre : `python3 scripts/check-registry.py` (vérifie que chaque import d'`articles.ts` + son hero est suivi par git ; évite le build Vercel cassé "Module not found")
 
 ## Notes infra
 
@@ -126,3 +127,6 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 - Daily growth loop : tâche planifiée `daily-growth-loop-ai-studios` (08:10 Europe/Paris),
   mémoire dans `.loop_memory/`, playbooks dans `.loop_scripts/`. Lire ces fichiers avant tout
   travail de loop. Attention aux push concurrents avec l'autopilot.
+- Hook anti-build-cassé : `.githooks/pre-push` lance `scripts/check-registry.py` et bloque
+  tout push où `articles.ts` importe un fichier non commité. Activation par clone (une fois) :
+  `git config core.hooksPath .githooks`. Contournement exceptionnel : `git push --no-verify`.

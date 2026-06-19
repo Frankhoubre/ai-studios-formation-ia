@@ -1,0 +1,21 @@
+#!/bin/sh
+# Garde-fou : bloque un push si articles.ts référence des fichiers non commités
+# (cause du build Vercel cassé "Module not found"). Voir scripts/check-registry.py.
+#
+# Activation (une fois par clone) : git config core.hooksPath .githooks
+# Contournement exceptionnel : git push --no-verify
+
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$(git rev-parse --show-toplevel)/scripts/check-registry.py"
+  status=$?
+  if [ "$status" -ne 0 ]; then
+    echo ""
+    echo "Push bloqué par .githooks/pre-push (registre d'articles incohérent)."
+    echo "Corrige les fichiers manquants ci-dessus, ou force avec: git push --no-verify"
+    exit 1
+  fi
+else
+  echo "pre-push: python3 introuvable, verification du registre ignoree." >&2
+fi
+
+exit 0
