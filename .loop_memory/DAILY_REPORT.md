@@ -4,49 +4,46 @@ Rapport du dernier run. Réécrit à chaque run (historique long → PROGRESS.md
 
 ---
 
-## 2026-06-18 — Run #2
+## 2026-06-20 — Run #4
 
-**Date** : 2026-06-18 (Europe/Paris) · **Branche** : loop/daily-2026-06-18 → main
+**Date** : 2026-06-20 (Europe/Paris) · **Branche** : loop/daily-2026-06-20 → main
 
 ### Contexte
-Run du 18 fait à la main (l'auto-run de 08:28 avait fired mais n'avait rien
-publié, vraisemblablement bloqué sur des permissions d'outils non pré-approuvées).
-Sujets choisis distincts du 17 (pas de re-Midjourney/Runway/ComfyUI).
+Run du 20 fait à la main (auto-run de 08:10 non déclenché, app pas ouverte).
+Le 19 était bien fait (Luma Ray 3.2, Luma skills, glossaire). Sujets du 20
+distincts de tout l'historique.
 
-### Articles créés (3, datés 2026-06-18)
-1. **News — `adobe-firefly-android-imagen-veo`** (IA image)
-   « Adobe Firefly débarque sur Android avec Imagen 4 et Veo 3 ».
-   Actu : app Android le 17/06/2026, modèles Google Imagen 4 + Veo 3, iOS à venir.
-   URL : https://blog.ai-studios.fr/blog/adobe-firefly-android-imagen-veo
-2. **News — `krea-2-images-2-secondes`** (IA image)
-   « Krea 2 : des images en 2 secondes, ce que ça change ».
-   Actu : expérience Krea 2 lancée le 08/06/2026, images en ~2 s.
-   URL : https://blog.ai-studios.fr/blog/krea-2-images-2-secondes
-3. **Evergreen — `image-to-video-ia-methode`** (IA vidéo)
-   « Image to video IA : transformer une image en plan animé ». Gap réel, gabarit
-   complet. URL : https://blog.ai-studios.fr/blog/image-to-video-ia-methode
+### Articles créés (3, datés 2026-06-20)
+1. **News — `higgsfield-creative-os-juin-2026`** (IA vidéo)
+   « Higgsfield passe en Creative OS ». Maj juin 2026 : plugins Adobe, agent
+   Supercomputer, studios intégrés. + vraie capture d'écran de higgsfield.ai.
+2. **News — `elevenlabs-music-v2-stable-audio-suno`** (Business créatif)
+   « Musique IA : ElevenLabs et Stable Audio bousculent Suno ». ElevenLabs Music
+   v2 + baisse de prix, Stable Audio 3.0, angle droits commerciaux. + capture elevenlabs.io.
+3. **Evergreen — `focale-objectif-prompt-ia`** (Prompting)
+   « Focales en prompt IA : 35mm, 50mm, 85mm expliqués ». Gabarit complet.
 
 ### Sources
-- Adobe Firefly Android : Adobe + presse spécialisée (Android Central, DIYP), 17/06.
-- Krea 2 : krea.ai/news (sortie 08/06).
-- Recherche web (WebSearch) pour calage et corroboration.
+- Higgsfield : site produit + communications (blog.mean.ceo, geo.higgsfield.ai).
+- Musique IA : Decrypt (ElevenLabs/Stability), TeamDay, contexte Suno.
+- Recherche web (WebSearch).
+
+### Images
+- 3 heros Imagen 4 Fast (1K) + 2 captures réelles (Higgsfield, ElevenLabs).
+- ElevenLabs : petit toast de langue résiduel en coin (bouton de fermeture non
+  matché par le script), page sinon propre et représentative. Acceptable.
 
 ### Build / lint / audit
-- `audit.mjs` : ✅ 0 erreur, 0 avertissement (97 articles).
-- `npm run lint` : ✅ exit 0 · `npm run build` : ✅ exit 0.
-- Descriptions des 3 articles : 150 / 145 / 147 car. (≤160). Aucun tiret cadratin.
-
-### Hero images
-- 3 générées via Imagen 4 Fast (1K, 50mm), 20-22 Ko. Coût ≈ 0,06 $.
+- `audit.mjs` ✅ 0 erreur (105 articles) · `lint` ✅ · `build` ✅.
+- Descriptions : 146 / 147 / 141 car. Aucun tiret cadratin.
 
 ### Statut déploiement
 - ✅ Poussé sur `main`, Vercel déploie.
 
-### Problèmes restants / à corriger
-- ⚠️ Auto-run local de 08:28 inefficace (permissions non pré-approuvées). Action :
-  pré-approuver les outils via "Run now", ou basculer vers un cron cloud
-  (GitHub Actions + Agent SDK) pour un vrai run sans laptop. Voir SETUP_LOOP.
+### Améliorations à noter
+- Script capture : ajouter la fermeture des toasts de préférence de langue
+  (sélecteurs supplémentaires) pour les sites comme ElevenLabs.
 
 ### Prochaines actions
-- Régler la fiabilité du run auto (permissions ou cron cloud).
-- Prochains evergreen candidats : glossaire IA créative, coût mensuel IA créative.
+- Prochains evergreen : coût mensuel IA créative, checklist livrable client.
+- Penser à fiabiliser le run auto (pré-approbation outils / app ouverte le matin).

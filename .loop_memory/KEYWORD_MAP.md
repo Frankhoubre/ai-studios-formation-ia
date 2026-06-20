@@ -137,6 +137,12 @@ doivent les **soutenir** (liens entrants), pas leur faire concurrence.
    `film-ia-gratuit-court-metrage` se touchent. Cluster saturé sur le "gratuit".
 5. Upscale image : `magnific-upscalers-ia-agrandir-image` + `krea-ai-temps-reel-upscale`.
 
+## Ajouts 2026-06-20 (Run #4)
+
+- `higgsfield-creative-os-juin-2026` — **higgsfield** (News, IA vidéo). Nouveau, pas de doublon.
+- `elevenlabs-music-v2-stable-audio-suno` — **musique ia** (News, Business créatif). Distinct de `suno-musique-pub-courte` (pub) et `clip-musical-ia`.
+- `focale-objectif-prompt-ia` — **focale prompt ia** (Evergreen, Prompting). Nouveau cluster ciné/optique. Gaps adjacents : ouverture/profondeur de champ, mouvements de caméra en prompt.
+
 ## Ajouts 2026-06-18 (Run #2)
 
 - `adobe-firefly-android-imagen-veo` — **adobe firefly android** (News, IA image).

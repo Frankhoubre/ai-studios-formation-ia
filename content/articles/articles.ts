@@ -100,6 +100,9 @@ import { ecrireScenarioIaMethodeOutils } from "@/content/articles/posts/ecrire-s
 import { adobeFireflyAndroidImagenVeo } from "@/content/articles/posts/adobe-firefly-android-imagen-veo";
 import { krea2Images2Secondes } from "@/content/articles/posts/krea-2-images-2-secondes";
 import { imageToVideoIaMethode } from "@/content/articles/posts/image-to-video-ia-methode";
+import { higgsfieldCreativeOsJuin2026 } from "@/content/articles/posts/higgsfield-creative-os-juin-2026";
+import { elevenlabsMusicV2StableAudioSuno } from "@/content/articles/posts/elevenlabs-music-v2-stable-audio-suno";
+import { focaleObjectifPromptIa } from "@/content/articles/posts/focale-objectif-prompt-ia";
 import { lumaRay32ControleVideoIa } from "@/content/articles/posts/luma-ray-3-2-controle-video-ia";
 import { lumaSkillsWorkflowReutilisable } from "@/content/articles/posts/luma-skills-workflow-reutilisable";
 import { glossaireIaCreativeTermes } from "@/content/articles/posts/glossaire-ia-creative-termes";
@@ -113,6 +116,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  higgsfieldCreativeOsJuin2026,
+  elevenlabsMusicV2StableAudioSuno,
+  focaleObjectifPromptIa,
   screenweaverScenarioStoryboardIa,
   ecrireScenarioIaMethodeOutils,
   adobeFireflyAndroidImagenVeo,
