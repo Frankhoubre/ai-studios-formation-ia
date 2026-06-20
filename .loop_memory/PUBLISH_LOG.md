@@ -7,6 +7,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-06-20
+
+- `2026-06-20 | RUN #4 | loop/daily-2026-06-20 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `higgsfield-creative-os-juin-2026` (IA vidéo, news, + capture higgsfield.ai)
+  - `elevenlabs-music-v2-stable-audio-suno` (Business créatif, news, + capture elevenlabs.io)
+  - `focale-objectif-prompt-ia` (Prompting, evergreen)
+
 ## 2026-06-18
 
 - `2026-06-18 | RUN #2 | loop/daily-2026-06-18 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`

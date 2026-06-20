@@ -15,6 +15,9 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-06-20 | Higgsfield passe en Creative OS | `higgsfield-creative-os-juin-2026` | IA vidéo | higgsfield | News | higgsfield.ai |
+| 2026-06-20 | Musique IA : ElevenLabs et Stable Audio vs Suno | `elevenlabs-music-v2-stable-audio-suno` | Business créatif | musique ia | News | Decrypt, elevenlabs.io |
+| 2026-06-20 | Focales en prompt IA : 35/50/85mm | `focale-objectif-prompt-ia` | Prompting | focale prompt ia | Evergreen | Wikipédia |
 | 2026-06-18 | Adobe Firefly débarque sur Android | `adobe-firefly-android-imagen-veo` | IA image | adobe firefly android | News | adobe.com, Android Central |
 | 2026-06-18 | Krea 2 : des images en 2 secondes | `krea-2-images-2-secondes` | IA image | krea 2 | News | krea.ai/news |
 | 2026-06-18 | Image to video IA : la méthode | `image-to-video-ia-methode` | IA vidéo | image to video ia | Evergreen | — |
