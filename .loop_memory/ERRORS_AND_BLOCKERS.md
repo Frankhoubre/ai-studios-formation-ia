@@ -7,6 +7,25 @@ haut. Quand c'est résolu, déplacer dans la section "Résolu" avec la date.
 
 ## Ouvert — décisions / accès à confirmer
 
+### B-5 — 2026-06-22 — 24 modifs non commitées dans le working tree (risque 404)
+Au démarrage du run #5, `git status` montrait 24 fichiers `content/articles/posts/*.ts`
+modifiés et non commités (injections de liens internes d'un run/autopilot
+précédent). Vérification : plusieurs de ces liens partent d'articles LIVE
+(ex. `workflow-ia-creatif`, 14/04) vers des articles encore FUTURE-datés
+(ex. `generer-modeles-3d-ia`, 07/07) → 404 live tant que la cible n'est pas
+publiée. **Non commités par ce run** (laissés en l'état, stashés pendant le push
+puis restaurés). À traiter par un humain ou un run dédié : soit committer
+seulement les injections dont la cible est déjà live, soit attendre que les
+cibles sortent. Ne PAS `git add` en bloc.
+
+### B-4 — 2026-06-22 — Seedance 2.0 Mini écarté (sujet sensible)
+Seedance 2.0 Mini (ByteDance, sorti le 15/06/2026) était un candidat news frais,
+mais le modèle est au cœur d'un litige actif (lettres de cease-and-desist de
+Disney et Paramount, lettre de sénateurs US du 16/03 demandant l'arrêt du
+modèle). Conformément à la règle "sujet sensible (procès/régulation) → factuel,
+neutre, ou revue humaine", news non produite sur ce sujet ce jour. À reconsidérer
+seulement sous un angle strictement neutre/sourcé, ou en revue humaine.
+
 ### B-0 — ✅ RÉSOLU (coexistence) — voir aussi section Résolu
 Décision "fais ce qui est logique" appliquée le 2026-06-17. Vérification faite :
 les 2 tâches planifiées existantes (`daily-ai-news-article`, `translate-blog-backlog`)

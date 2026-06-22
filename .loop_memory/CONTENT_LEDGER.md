@@ -15,6 +15,8 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-06-22 | Kling 3.0 Turbo et Omni : la maj vidéo de juin | `kling-3-turbo-omni-juin-2026` | IA vidéo | kling 3.0 turbo | News | klingai.com, atlascloud.ai, communiqué barchart/openpr (17 juin 2026) |
+| 2026-06-22 | Combien coûte l'IA créative par mois | `combien-coute-ia-creative-mois` | Business créatif | combien coûte l'ia créative | Evergreen | runwayml.com/pricing (autorité tarifs) |
 | 2026-06-20 | Higgsfield passe en Creative OS | `higgsfield-creative-os-juin-2026` | IA vidéo | higgsfield | News | higgsfield.ai |
 | 2026-06-20 | Musique IA : ElevenLabs et Stable Audio vs Suno | `elevenlabs-music-v2-stable-audio-suno` | Business créatif | musique ia | News | Decrypt, elevenlabs.io |
 | 2026-06-20 | Focales en prompt IA : 35/50/85mm | `focale-objectif-prompt-ia` | Prompting | focale prompt ia | Evergreen | Wikipédia |
@@ -111,6 +113,8 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 ## Liens internes (relatedSlugs) par article
 
+- `kling-3-turbo-omni-juin-2026` → `meilleurs-outils-ia-video`, `runway-seedance-2-fast-aleph-2`, `kling-runway-montage-ads`
+- `combien-coute-ia-creative-mois` → `meilleurs-sites-video-ia-gratuits`, `budget-rendu-temps-cout-ia`, `meilleurs-outils-ia-video`
 - `formation-ia-video` → `meilleurs-outils-ia-video`, `creer-storyboard-ia`, `videos-ia-jolies-mais-vides`
 - `prompt-image-ia-cinema` → `ia-image-realiste`, `personnage-coherent-ia`, `workflow-ia-creatif`
 - `videos-ia-jolies-mais-vides` → `creer-film-ia`, `creer-storyboard-ia`, `formation-ia-video`

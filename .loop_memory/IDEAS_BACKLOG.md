@@ -12,7 +12,7 @@ Priorité : 🔥 forte (gap + volume), ➕ moyenne, 💡 à creuser.
 
 - [x] 🔥 ComfyUI : premiers pas, workflow nodal expliqué simplement → publié 2026-06-17 (`comfyui-workflow-nodal-debutant`).
 - [ ] 🔥 Glossaire de l'IA créative (50 termes) — maille interne forte, hub (`workflow-creatif`).
-- [ ] 🔥 Combien coûte vraiment l'IA créative par mois (comparatif abonnements image + vidéo) (`business-creatif`).
+- [x] 🔥 Combien coûte vraiment l'IA créative par mois → publié 2026-06-22 (`combien-coute-ia-creative-mois`).
 - [ ] ➕ Checklist livrable client propre (export, formats, droits) (`business-creatif`).
 - [ ] ➕ Droits d'auteur & IA générative en France : ce qu'on peut/ne peut pas vendre (`business-creatif`, prudence légale).
 - [x] ➕ Image to video : du still au plan, la méthode → publié 2026-06-18 (`image-to-video-ia-methode`).

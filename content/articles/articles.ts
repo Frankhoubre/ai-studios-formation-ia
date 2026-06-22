@@ -106,6 +106,8 @@ import { focaleObjectifPromptIa } from "@/content/articles/posts/focale-objectif
 import { lumaRay32ControleVideoIa } from "@/content/articles/posts/luma-ray-3-2-controle-video-ia";
 import { lumaSkillsWorkflowReutilisable } from "@/content/articles/posts/luma-skills-workflow-reutilisable";
 import { glossaireIaCreativeTermes } from "@/content/articles/posts/glossaire-ia-creative-termes";
+import { kling3TurboOmniJuin2026 } from "@/content/articles/posts/kling-3-turbo-omni-juin-2026";
+import { combienCouteIaCreativeMois } from "@/content/articles/posts/combien-coute-ia-creative-mois";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -116,6 +118,8 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  kling3TurboOmniJuin2026,
+  combienCouteIaCreativeMois,
   higgsfieldCreativeOsJuin2026,
   elevenlabsMusicV2StableAudioSuno,
   focaleObjectifPromptIa,

@@ -5,6 +5,22 @@ Le plus récent en haut.
 
 ---
 
+## Run 2026-06-22 — RUN #5
+
+- 2 articles datés du 22 : 1 news `kling-3-turbo-omni-juin-2026` (Kling 3.0
+  Turbo + Omni, annonce 17/06, + capture klingai.com) et 1 evergreen
+  `combien-coute-ia-creative-mois` (budget mensuel outils IA, business-creatif,
+  sorti du backlog 🔥).
+- 1 seule news : seule actu fraîche, on-thème et non sensible cette semaine
+  (qualité > quantité). Seedance 2.0 Mini écarté (litige Disney/Paramount, voir
+  ERRORS B-4). 2 evergreen video déjà future-datés tombaient le 22 (Veo, Sora),
+  non touchés.
+- Audit 0 err (107 art.), lint + build verts. Descriptions 148/148, 0 cadratin,
+  liens internes → slugs LIVE seulement.
+- Working tree d'entrée non propre : 24 injections de liens d'un run précédent
+  pointant vers des cibles future-datées (risque 404 live). NON commitées,
+  stashées pendant le push, restaurées ensuite (ERRORS B-5).
+
 ## Run 2026-06-17 — BOOTSTRAP (premier run)
 
 ### Ce qui s'est passé
