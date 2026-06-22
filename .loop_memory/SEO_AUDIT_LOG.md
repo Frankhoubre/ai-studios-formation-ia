@@ -6,6 +6,16 @@ Lancer l'audit automatisé : `node .loop_scripts/audit.mjs` (depuis la racine).
 
 ---
 
+## 2026-06-22 — Audit Run #5 (2 articles ajoutés)
+
+**Build** ✅ exit 0 · **Lint** ✅ exit 0 · **audit.mjs** ✅ 0 erreur (107 articles).
+2 nouveaux articles (1 news + 1 evergreen), descriptions 148/148 car., 0 tiret
+cadratin, liens internes vers slugs LIVE uniquement + lien externe d'autorité
+(klingai.com ; runwayml.com/pricing), heros + 1 capture klingai.com présents.
+2 avertissements non bloquants, sur des articles préexistants (pas ce run) :
+`ecrire-scenario-ia-methode-outils` (168) et `screenweaver-scenario-storyboard-ia`
+(163) > 160 car. Laissés en l'état (hors périmètre du run, non régressifs).
+
 ## 2026-06-17 — Audit Run #1 (3 articles ajoutés)
 
 **Build** ✅ exit 0 · **Lint** ✅ exit 0 · **audit.mjs** ✅ 0 erreur (94 articles).

@@ -137,6 +137,11 @@ doivent les **soutenir** (liens entrants), pas leur faire concurrence.
    `film-ia-gratuit-court-metrage` se touchent. Cluster saturé sur le "gratuit".
 5. Upscale image : `magnific-upscalers-ia-agrandir-image` + `krea-ai-temps-reel-upscale`.
 
+## Ajouts 2026-06-22 (Run #5)
+
+- `kling-3-turbo-omni-juin-2026` — **kling 3.0 turbo** (News, IA vidéo). Distinct de l'evergreen `kling-ai-videos-cinematiques` (guide) et de `kling-runway-montage-ads` (spot). Angle actu : maj 17/06, vitesse d'itération + édition Omni 4K.
+- `combien-coute-ia-creative-mois` — **combien coûte l'ia créative** (Evergreen, Business créatif). Distinct de `budget-rendu-temps-cout-ia` (chiffrer UNE prod client) : ici, budget mensuel récurrent des outils côté créateur. Gaps adjacents : checklist livrable client, droits d'auteur & IA (prudence légale).
+
 ## Ajouts 2026-06-20 (Run #4)
 
 - `higgsfield-creative-os-juin-2026` — **higgsfield** (News, IA vidéo). Nouveau, pas de doublon.
