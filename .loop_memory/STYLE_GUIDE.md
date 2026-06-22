@@ -112,6 +112,8 @@ Contraintes :
   (`FORMATION_FREE_URL` dans `lib/constants.ts`) et la communauté Skool.
 - Une note fondateur ("c'est ce qu'on creuse dans la formation gratuite") en fin
   d'article suffit. Pas de CTA à chaque section.
+- **Jamais de "7 jours offerts" / "essai gratuit de 7 jours" ni aucune période
+  d'essai : cette offre n'existe plus. La formation est juste "gratuite".**
 - **ScreenWeaver** : ce produit n'est pas connecté à ce repo (le site pousse la
   formation AI Studios). Ne pas l'inventer. Si un jour il est intégré, le
   positionner ainsi : "ScreenWeaver n'est pas un bouton magique qui fabrique un
