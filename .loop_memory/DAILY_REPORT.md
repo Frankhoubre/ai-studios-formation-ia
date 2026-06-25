@@ -4,67 +4,55 @@ Rapport du dernier run. Réécrit à chaque run (historique long → PROGRESS.md
 
 ---
 
-## 2026-06-22 — Run #5
+## Run du 2026-06-25 — RUN #6
 
-**Date** : 2026-06-22 (Europe/Paris) · **Branche** : loop/daily-2026-06-22 → main
+**Statut : run du jour terminé.** 3 articles produits (2 news + 1 evergreen),
+poussés sur `main`.
 
-### Contexte
-Dernier run réel = 20/06. Rien le 21. Au démarrage, 2 articles étaient déjà
-datés du 22 (`veo-3-generer-videos-ia`, `sora-openai-creer-videos`), mais ce sont
-des evergreen future-datés tombant ce jour, pas la production du loop. Working
-tree non propre : 24 fichiers modifiés non commités (injections de liens d'un run
-précédent, risque 404 live, voir plus bas) → laissés en l'état.
-
-### Articles créés (2, datés 2026-06-22)
-1. **News — `kling-3-turbo-omni-juin-2026`** (IA vidéo)
-   « Kling 3.0 Turbo et Omni : la maj vidéo de juin ». Annonce du 17/06/2026 :
-   mode Turbo pour itérer vite, édition Omni en 4K / 3-15 s. Angle : la vitesse
-   d'itération change le workflow. + vraie capture de klingai.com.
-2. **Evergreen — `combien-coute-ia-creative-mois`** (Business créatif)
-   « Combien coûte l'IA créative par mois (le vrai budget) ». Méthode de budget
-   (image/vidéo/audio, abonnement vs usage), fourchettes en ordres de grandeur,
-   4 erreurs qui font gonfler la facture. Gabarit complet + FAQ 6 Q/R.
-
-### Pourquoi 1 seule news (et pas 2)
-Recherche web large (Kling, Runway, Sora, Veo, Midjourney, Flux, Seedance, Luma,
-Pika, ElevenLabs, Suno, Higgsfield, Krea, Ideogram). Seul sujet frais (≤7 j),
-on-thème, multi-sourcé ET non sensible : Kling 3.0 Turbo/Omni. Les autres étaient
-soit anciens (Veo 10/25, Runway Gen-4.5 12/25, FLUX.2 11/25, MJ V8.1 04/26), soit
-déjà couverts (ElevenLabs Music v2, Firefly Android, Luma Ray 3.2, Higgsfield),
-soit sensibles. Règle "qualité > quantité" appliquée : 1 news solide plutôt que 2.
-
-### Écarté volontairement
-**Seedance 2.0 Mini** (ByteDance, 15/06) : litige actif Disney/Paramount + lettre
-de sénateurs US (16/03) demandant l'arrêt du modèle → sujet sensible, non publié
-(voir ERRORS_AND_BLOCKERS B-4).
+### Articles publiés
+- **Grok Imagine 1.5 : vidéo IA avec son natif** (News, IA vidéo)
+  https://blog.ai-studios.fr/blog/grok-imagine-video-1-5-juin-2026
+- **MiniMax Hub : l'IA qui te laisse décider** (News, IA vidéo)
+  https://blog.ai-studios.fr/blog/minimax-hub-creation-video-ia
+- **Monter une vidéo IA dans CapCut ou DaVinci** (Evergreen, Workflow créatif)
+  https://blog.ai-studios.fr/blog/monter-video-ia-capcut-davinci
 
 ### Sources
-- Kling : klingai.com (site officiel), atlascloud.ai (guide), communiqué relayé
-  barchart/openpr (17/06/2026). Divergences mineures sur résolution/prix de Turbo
-  signalées honnêtement dans l'article (pas de chiffre contesté présenté en fait).
-- Budget : angle méthode, fourchettes en ordres de grandeur, autorité tarifs =
-  runwayml.com/pricing.
+- Grok Imagine 1.5 : x.ai/news/grok-imagine-video-1-5 (annonce officielle, 16 juin
+  2026, capture intégrée), corroboré par TechTimes (18/06) et morphic.com (specs).
+- MiniMax Hub : Variety (présentation au festival international du film de Shanghai,
+  15 juin 2026), capture du site officiel minimax.io intégrée.
+- Évergreen : DaVinci Resolve (blackmagicdesign.com) comme référence outil.
 
 ### Images
-- 2 heros Imagen 4 Fast (1K). 1 capture réelle klingai.com (home série 3.0, propre).
+- 3 heros Imagen 4 Fast 1K générés (~25 à 53 Ko).
+- 2 captures de pages publiques vérifiées visuellement avant intégration
+  (x.ai/news daté du 16/06 ; minimax.io montrant la logique Skills/Memory).
 
-### Build / lint / audit
-- `audit.mjs` ✅ 0 erreur (107 articles) · `lint` ✅ · `build` ✅.
-- Descriptions : 148 / 148 car. Aucun tiret cadratin. Liens internes → slugs LIVE
-  uniquement (les cibles business future-datées ont été évitées).
-- 2 avertissements préexistants (descriptions >160) sur des articles hors run,
-  laissés en l'état.
+### SEO / fixes
+- Audit `audit.mjs` : 0 erreur, 0 avertissement (110 articles).
+- Bonus : les 2 descriptions >160 traînantes depuis Run #5 corrigées
+  (`ecrire-scenario-ia-methode-outils`, `screenweaver-scenario-storyboard-ia`).
+- Descriptions des 3 nouveaux : 155 / 154 / 142 car. 0 tiret cadratin, 0 mot banni.
 
-### À noter / problème
-- **24 modifs non commitées** (injections de liens internes d'un run précédent)
-  pointent depuis des articles LIVE vers des articles encore future-datés → 404
-  live si commitées telles quelles. Stashées pendant le push, restaurées ensuite.
-  À traiter par un humain / run dédié (voir ERRORS_AND_BLOCKERS B-5).
+### Build / déploiement
+- `npm run lint` exit 0 · `npm run build` exit 0 (116 pages statiques).
+- `check-registry.py` : OK (110 imports + heros suivis par git).
+- Merge `loop/daily-2026-06-25` → `main`, push effectué.
 
-### Statut déploiement
-- Poussé sur `main`, Vercel redéploie. (Vérif CI + 200 en fin de run.)
+### À noter / problèmes
+- Semaine creuse côté actus fraîches : rien de solide en 24-72 h. Les 2 news
+  retenues datent du 15-16 juin (~8-10 j) mais sont les plus marquantes et les
+  mieux sourcées. Dates des faits citées précisément dans le texte.
+- Grok = xAI (Elon Musk) : couvert strictement comme outil créatif, factuel et
+  neutre, sans aucun angle politique.
+- B-5 toujours ouvert : 24 injections de liens non commitées laissées en l'état,
+  non poussées (push surgical, git add explicite). À traiter par un run dédié.
+- 2 evergreen image future-datés tombaient le 25 et sont désormais live sans
+  intervention (`images-cinema-ia-scene-film`, `rendu-pellicule-grain-film-ia`).
 
 ### Prochaines actions
-- Prochain evergreen : checklist livrable client propre, ou glossaire (hub).
-- Régler le lot des 24 injections de liens (committer seulement cibles live).
-- Fiabiliser le run auto du matin (app ouverte / outils pré-approuvés).
+1. Run dédié pour trier les 24 injections de liens B-5 (committer seulement celles
+   dont la cible est live, sinon attendre).
+2. Continuer à vider IDEAS_BACKLOG (checklist livrable client, glossaire déjà clos).
+3. Surveiller les vraies sorties fraîches (Sora API arrêtée le 24/09, migrations).

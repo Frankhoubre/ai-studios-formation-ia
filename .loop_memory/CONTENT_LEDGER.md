@@ -15,6 +15,9 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-06-25 | Grok Imagine 1.5 : vidéo IA avec son natif | `grok-imagine-video-1-5-juin-2026` | IA vidéo | grok imagine video 1.5 | News | x.ai/news/grok-imagine-video-1-5 (16 juin 2026), techtimes, morphic.com |
+| 2026-06-25 | MiniMax Hub : l'IA qui te laisse décider | `minimax-hub-creation-video-ia` | IA vidéo | minimax hub | News | Variety (festival de Shanghai, 15 juin 2026), minimax.io |
+| 2026-06-25 | Monter une vidéo IA dans CapCut ou DaVinci | `monter-video-ia-capcut-davinci` | Workflow créatif | monter une vidéo ia | Evergreen | blackmagicdesign.com (DaVinci Resolve) |
 | 2026-06-22 | Kling 3.0 Turbo et Omni : la maj vidéo de juin | `kling-3-turbo-omni-juin-2026` | IA vidéo | kling 3.0 turbo | News | klingai.com, atlascloud.ai, communiqué barchart/openpr (17 juin 2026) |
 | 2026-06-22 | Combien coûte l'IA créative par mois | `combien-coute-ia-creative-mois` | Business créatif | combien coûte l'ia créative | Evergreen | runwayml.com/pricing (autorité tarifs) |
 | 2026-06-20 | Higgsfield passe en Creative OS | `higgsfield-creative-os-juin-2026` | IA vidéo | higgsfield | News | higgsfield.ai |

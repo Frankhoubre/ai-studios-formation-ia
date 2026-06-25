@@ -5,6 +5,28 @@ Le plus récent en haut.
 
 ---
 
+## Run 2026-06-25 — RUN #6
+
+- 3 articles datés du 25 : 2 news + 1 evergreen.
+  - News `grok-imagine-video-1-5-juin-2026` (xAI, image vers vidéo + audio natif,
+    annonce officielle x.ai du 16 juin, + capture x.ai/news vérifiée).
+  - News `minimax-hub-creation-video-ia` (plateforme agentique présentée au
+    festival du film de Shanghai le 15 juin, source Variety, angle "l'humain garde
+    le jugement créatif", + capture minimax.io).
+  - Evergreen `monter-video-ia-capcut-davinci` (workflow-creatif, monter ses plans
+    IA dans un vrai NLE ; sorti d'IDEAS_BACKLOG).
+- Semaine creuse côté sorties fraîches (rien de solide en 24-72 h). Les 2 news
+  retenues ont ~8-10 j mais sont les plus marquantes, sourcées en primaire. Dates
+  des faits citées précisément. Grok = xAI/Musk : traité strictement comme outil
+  créatif, factuel et neutre (pas d'angle politique).
+- Audit 0 err / 0 avert. (110 art.), lint + build verts. Descriptions 155/154/142.
+  En bonus, fix des 2 avert. SEO traînants depuis Run #5 (descriptions >160).
+- B-5 toujours ouvert : les 24 injections de liens non commitées laissées en
+  l'état, non stagées. Push surgical (git add explicite, jamais -A).
+- 2 evergreen image future-datés tombaient le 25 (`images-cinema-ia-scene-film`,
+  `rendu-pellicule-grain-film-ia`), non touchés. Anti-cannibalisation OK
+  (evergreen du jour = workflow-creatif, pas ia-image).
+
 ## Run 2026-06-22 — RUN #5
 
 - 2 articles datés du 22 : 1 news `kling-3-turbo-omni-juin-2026` (Kling 3.0
