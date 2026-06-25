@@ -4,7 +4,7 @@ export const screenweaverScenarioStoryboardIa: Article = {
   title: "ScreenWeaver : du scénario au storyboard avec l'IA",
   slug: "screenweaver-scenario-storyboard-ia",
   description:
-    "ScreenWeaver écrit ton scénario et génère le storyboard sans rupture : world bible, continuité, workflows visuels. À quoi ça sert, pour qui, et comment l'utiliser.",
+    "ScreenWeaver écrit ton scénario et génère le storyboard sans rupture : world bible, continuité, workflows visuels. À quoi ça sert et pour qui.",
   excerpt:
     "La plupart des outils s'arrêtent à la mise en forme du scénario. ScreenWeaver garde le script, le storyboard et la continuité liés. Voici ce que ça change.",
   category: "storytelling",

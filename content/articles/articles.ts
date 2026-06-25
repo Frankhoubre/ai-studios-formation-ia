@@ -108,6 +108,9 @@ import { lumaSkillsWorkflowReutilisable } from "@/content/articles/posts/luma-sk
 import { glossaireIaCreativeTermes } from "@/content/articles/posts/glossaire-ia-creative-termes";
 import { kling3TurboOmniJuin2026 } from "@/content/articles/posts/kling-3-turbo-omni-juin-2026";
 import { combienCouteIaCreativeMois } from "@/content/articles/posts/combien-coute-ia-creative-mois";
+import { grokImagineVideo15Juin2026 } from "@/content/articles/posts/grok-imagine-video-1-5-juin-2026";
+import { minimaxHubCreationVideoIa } from "@/content/articles/posts/minimax-hub-creation-video-ia";
+import { monterVideoIaCapcutDavinci } from "@/content/articles/posts/monter-video-ia-capcut-davinci";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -225,4 +228,7 @@ export const articles: Article[] = [
   personnageCoherentIa,
   workflowIaCreatif,
   creerFilmIa,
+  grokImagineVideo15Juin2026,
+  minimaxHubCreationVideoIa,
+  monterVideoIaCapcutDavinci,
 ];

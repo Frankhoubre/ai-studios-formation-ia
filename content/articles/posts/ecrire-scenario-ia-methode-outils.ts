@@ -4,7 +4,7 @@ export const ecrireScenarioIaMethodeOutils: Article = {
   title: "Écrire un scénario avec l'IA : méthode et outils",
   slug: "ecrire-scenario-ia-methode-outils",
   description:
-    "Écrire un scénario avec l'IA sans déléguer l'histoire : structure, beats, dialogues, world bible, et où les outils aident vraiment. La méthode pour un script qui tient.",
+    "Écrire un scénario avec l'IA sans déléguer l'histoire : structure, beats, dialogues, world bible, et où les outils aident vraiment.",
   excerpt:
     "L'IA peut accélérer l'écriture d'un scénario, pas décider de ton histoire. Voici une méthode claire pour t'en servir comme assistant, pas comme auteur de substitution.",
   category: "storytelling",
