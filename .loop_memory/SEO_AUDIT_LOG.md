@@ -6,6 +6,17 @@ Lancer l'audit automatisé : `node .loop_scripts/audit.mjs` (depuis la racine).
 
 ---
 
+## 2026-06-25 — Audit Run #6 (3 articles ajoutés)
+
+**Build** ✅ exit 0 · **Lint** ✅ exit 0 · **audit.mjs** ✅ 0 erreur, 0 avert. (110 articles).
+3 nouveaux articles (2 news + 1 evergreen), descriptions 155/154/142 car., 0 tiret
+cadratin, 0 mot banni, liens internes vers slugs LIVE uniquement + lien externe
+d'autorité (x.ai ; Variety ; blackmagicdesign.com). Heros Imagen 4 Fast 1K + 2
+captures de pages publiques (x.ai/news, minimax.io) vérifiées et intégrées.
+Fix SEO sûr : les 2 avertissements traînants depuis Run #5 corrigés,
+`ecrire-scenario-ia-methode-outils` et `screenweaver-scenario-storyboard-ia`
+ramenés < 160. L'audit ressort désormais 0 avertissement.
+
 ## 2026-06-22 — Audit Run #5 (2 articles ajoutés)
 
 **Build** ✅ exit 0 · **Lint** ✅ exit 0 · **audit.mjs** ✅ 0 erreur (107 articles).

@@ -7,6 +7,21 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-06-25
+
+- `2026-06-25 | RUN #6 | loop/daily-2026-06-25 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `grok-imagine-video-1-5-juin-2026` (IA vidéo, news, Grok Imagine 1.5 xAI 16/06, image vers vidéo + audio natif, + capture x.ai/news)
+  - `minimax-hub-creation-video-ia` (IA vidéo, news, MiniMax Hub festival de Shanghai 15/06, source Variety, + capture minimax.io)
+  - `monter-video-ia-capcut-davinci` (Workflow créatif, evergreen, monter ses plans IA dans CapCut/DaVinci)
+  - Heros Imagen 4 Fast 1K. Audit (110 art., 0 err, 0 avert.) / lint / build verts.
+  - 2 news à ~8-10 j (semaine creuse côté sorties fraîches), mais solides et sourcées
+    (primaire x.ai ; Variety). Dates des faits citées précisément dans le texte.
+  - Fix SEO : 2 descriptions >160 (ecrire-scenario, screenweaver) raccourcies.
+  - 24 modifs non commitées (injections de liens, B-5) toujours laissées en l'état,
+    non stagées, non poussées. Push surgical (git add explicite uniquement).
+  - 2 articles préexistants future-datés tombaient le 25 (`images-cinema-ia-scene-film`,
+    `rendu-pellicule-grain-film-ia`, ia-image) : non touchés.
+
 ## 2026-06-22
 
 - `2026-06-22 | RUN #5 | loop/daily-2026-06-22 → main | 2 articles | 1 news + 1 evergreen | poussé sur main`

@@ -7,6 +7,13 @@ haut. Quand c'est résolu, déplacer dans la section "Résolu" avec la date.
 
 ## Ouvert — décisions / accès à confirmer
 
+> MàJ 2026-06-25 (Run #6) : B-5 toujours présent à l'identique (24 fichiers,
+> Jun 22 10:15, stale). Vérifié : la cible `generer-modeles-3d-ia` est bien dans
+> le registre, mais reste future-datée tant que sa date n'est pas atteinte → le
+> risque 404 live persiste pour les liens partant d'articles déjà publiés. Run #6
+> a de nouveau laissé ces 24 fichiers NON stagés et NON poussés (git add explicite
+> uniquement). Toujours en attente d'un traitement humain/dédié.
+
 ### B-5 — 2026-06-22 — 24 modifs non commitées dans le working tree (risque 404)
 Au démarrage du run #5, `git status` montrait 24 fichiers `content/articles/posts/*.ts`
 modifiés et non commités (injections de liens internes d'un run/autopilot
