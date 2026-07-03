@@ -6,7 +6,9 @@ import {
   AUTHOR_NAME,
   FORMATION_FREE_URL,
   MAIN_SITE_URL,
+  PODCAST_URL,
   SKOOL_COMMUNITY_URL,
+  VOIDBORN_AWARDS,
   YOUTUBE_URL,
 } from "@/lib/constants";
 import {
@@ -93,7 +95,29 @@ export default function AboutPage() {
           testés sur de vrais projets plutôt que des « prompts magiques ». Les
           guides de ce blog sont écrits depuis cette pratique de terrain.
         </p>
-        <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        <p className="mt-4 text-text-muted leading-relaxed">
+          Il est aussi le réalisateur de <strong className="text-text">VOIDBORN</strong>,
+          un film narratif réalisé avec l’intelligence artificielle, primé et
+          sélectionné dans plusieurs festivals internationaux. C’est cette
+          pratique réelle du cinéma IA, avec ses contraintes et ses échecs, qui
+          nourrit la méthode enseignée ici.
+        </p>
+        <h3 className="font-display mt-8 text-lg font-semibold text-text">
+          Récompenses et sélections (VOIDBORN)
+        </h3>
+        <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+          {VOIDBORN_AWARDS.map((award) => (
+            <li
+              key={award.name}
+              className="rounded-xl border border-border-subtle bg-white/[0.03] px-4 py-2.5 text-sm text-text-soft"
+            >
+              <span className="font-medium text-text">{award.name}</span>
+              {" · "}
+              {award.detail}
+            </li>
+          ))}
+        </ul>
+        <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
           <li>
             <a
               href={MAIN_SITE_URL}
@@ -122,6 +146,16 @@ export default function AboutPage() {
               className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
             >
               Communauté Skool
+            </a>
+          </li>
+          <li>
+            <a
+              href={PODCAST_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+            >
+              Podcast Les Créateurs IA
             </a>
           </li>
         </ul>

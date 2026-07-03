@@ -45,6 +45,13 @@ Conflit majeur → STOP, logger, ne pas forcer.
   webhook dispo, vérifier ; sinon, vérifier l'URL en HTTP 200 :
   `curl -sI https://blog.ai-studios.fr/blog/<nouveau-slug> | head -1`.
 - Déploiement échoué → logger ERRORS_AND_BLOCKERS.md, NE PAS marquer "publié".
+- Déploiement OK → **ping IndexNow** pour indexer les nouvelles URLs côté
+  Bing/Copilot en minutes :
+  ```
+  node scripts/indexnow-ping.mjs https://blog.ai-studios.fr/blog/<slug-1> https://blog.ai-studios.fr/blog/<slug-2>
+  ```
+  (sans arguments, le script soumet tout le sitemap ; préférer les URLs
+  précises des articles du jour). HTTP 200/202 = OK.
 
 ## 5. Journal
 

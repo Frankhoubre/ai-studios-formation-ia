@@ -31,10 +31,16 @@ export const metadata = buildMetadata({
 export default function HomePage() {
   const articles = getAllArticles();
   const latest = articles.slice(0, 6);
+  // Pages piliers : les 3 guides complets reçoivent le maillage le plus fort
+  // du site (home > piliers > clusters). Fallback sur les fondamentaux tant
+  // qu'un pilier n'est pas encore publié (date future).
   const starters = [
-    articles.find((a) => a.slug === "formation-ia-video"),
-    articles.find((a) => a.slug === "prompt-image-ia-cinema"),
-    articles.find((a) => a.slug === "creer-film-ia"),
+    articles.find((a) => a.slug === "video-ia-guide-complet") ??
+      articles.find((a) => a.slug === "formation-ia-video"),
+    articles.find((a) => a.slug === "image-ia-guide-complet") ??
+      articles.find((a) => a.slug === "prompt-image-ia-cinema"),
+    articles.find((a) => a.slug === "prompt-ia-guide-complet") ??
+      articles.find((a) => a.slug === "creer-film-ia"),
   ].filter(Boolean);
   const pageJsonLd = buildCollectionPageJsonLd({
     name: "AI Studios Blog",

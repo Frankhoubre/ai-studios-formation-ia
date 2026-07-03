@@ -12,6 +12,7 @@ import {
   SEO_CTA,
   SITE_NAME,
   SITE_URL,
+  VOIDBORN_AWARDS,
 } from "@/lib/constants";
 
 export const TITLE_MAX = 60;
@@ -446,10 +447,22 @@ export function buildPersonJsonLd(): Record<string, unknown> {
     name: AUTHOR_NAME,
     url: AUTHOR_URL,
     image: absoluteUrl(ORG_LOGO),
-    jobTitle: "Formateur IA créative",
+    jobTitle: "Formateur IA créative et réalisateur IA",
     description:
-      "Fondateur d’AI Studios. Forme les créateurs à un usage exigeant de l’IA image et vidéo : méthode, workflows et qualité cinématographique.",
+      "Fondateur d’AI Studios. Forme les créateurs à un usage exigeant de l’IA image et vidéo : méthode, workflows et qualité cinématographique. Réalisateur de VOIDBORN, film IA primé dans plusieurs festivals internationaux.",
     worksFor: { "@id": `${MAIN_SITE_URL}#organization` },
+    knowsAbout: [
+      "Intelligence artificielle générative",
+      "Création vidéo IA",
+      "Génération d'images IA",
+      "Cinéma IA",
+      "Prompting",
+      "Direction artistique",
+      "Workflows créatifs",
+    ],
+    award: VOIDBORN_AWARDS.map(
+      (a) => `${a.name} — ${a.detail} (VOIDBORN)`,
+    ),
     sameAs: [...ORG_SAME_AS],
   };
 }

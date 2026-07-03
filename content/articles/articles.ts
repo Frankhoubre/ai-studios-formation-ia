@@ -111,6 +111,9 @@ import { combienCouteIaCreativeMois } from "@/content/articles/posts/combien-cou
 import { grokImagineVideo15Juin2026 } from "@/content/articles/posts/grok-imagine-video-1-5-juin-2026";
 import { minimaxHubCreationVideoIa } from "@/content/articles/posts/minimax-hub-creation-video-ia";
 import { monterVideoIaCapcutDavinci } from "@/content/articles/posts/monter-video-ia-capcut-davinci";
+import { videoIaGuideComplet } from "@/content/articles/posts/video-ia-guide-complet";
+import { imageIaGuideComplet } from "@/content/articles/posts/image-ia-guide-complet";
+import { promptIaGuideComplet } from "@/content/articles/posts/prompt-ia-guide-complet";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -121,6 +124,9 @@ const beginnerArticles = JSON.parse(
 
 export const articles: Article[] = [
   ...beginnerArticles,
+  videoIaGuideComplet,
+  imageIaGuideComplet,
+  promptIaGuideComplet,
   kling3TurboOmniJuin2026,
   combienCouteIaCreativeMois,
   higgsfieldCreativeOsJuin2026,
