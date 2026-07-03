@@ -255,6 +255,11 @@ export function buildRootMetadata(): Metadata {
     alternates: {
       canonical: SITE_URL,
       languages: { "fr-FR": SITE_URL },
+      types: {
+        "application/rss+xml": [
+          { url: `${SITE_URL}/feed.xml`, title: "AI Studios Blog — flux RSS" },
+        ],
+      },
     },
     authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
     creator: AUTHOR_NAME,

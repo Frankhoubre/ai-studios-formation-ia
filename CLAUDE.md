@@ -123,6 +123,9 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 - Audit contenu/SEO : `node .loop_scripts/audit.mjs` (93 articles, vérifie liens, longueurs, hero)
 - Hero image : `python scripts/generate-hero.py` (cf. `.loop_memory` pour les flags ; `GEMINI_API_KEY` dans `.env`, git-ignoré, ne jamais committer)
 - Cohérence du registre : `python3 scripts/check-registry.py` (vérifie que chaque import d'`articles.ts` + son hero est suivi par git ; évite le build Vercel cassé "Module not found")
+- IndexNow (Bing/Copilot) : `node scripts/indexnow-ping.mjs` après chaque push qui publie
+  de nouveaux articles (indexation en minutes). GEO : `/llms.txt` et `/feed.xml` sont
+  générés dynamiquement, rien à maintenir.
 
 ## Notes infra
 
