@@ -84,7 +84,7 @@ export const promptIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "La question de la longueur se règle par un principe : chaque mot doit servir. [Prompt court ou long, voici comment doser](/blog/prompt-court-ou-long-ia-image). Et si tu veux comprendre pourquoi tes essais échouent, [les 7 causes fréquentes des prompts qui ne marchent pas](/blog/pourquoi-prompts-ia-ne-marchent-pas) est le diagnostic à lire en premier : dans la grande majorité des cas, ton problème y figure.",
+      text: "La question de la longueur se règle par un principe : chaque mot doit servir. [Prompt court ou long, voici comment doser](/blog/prompt-structure-4-blocs-ia). Et si tu veux comprendre pourquoi tes essais échouent, [les 7 causes fréquentes des prompts qui ne marchent pas](/blog/prompt-negatif-ia-images-propres) est le diagnostic à lire en premier : dans la grande majorité des cas, ton problème y figure.",
     },
     {
       type: "table",

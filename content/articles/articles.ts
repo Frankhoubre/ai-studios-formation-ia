@@ -114,6 +114,9 @@ import { monterVideoIaCapcutDavinci } from "@/content/articles/posts/monter-vide
 import { videoIaGuideComplet } from "@/content/articles/posts/video-ia-guide-complet";
 import { imageIaGuideComplet } from "@/content/articles/posts/image-ia-guide-complet";
 import { promptIaGuideComplet } from "@/content/articles/posts/prompt-ia-guide-complet";
+import { seedance25VideoIa30Secondes } from "@/content/articles/posts/seedance-2-5-video-ia-30-secondes";
+import { geminiImagesPersonnaliseesDonneesGoogle } from "@/content/articles/posts/gemini-images-personnalisees-donnees-google";
+import { pourquoiVideosIaAirFaux } from "@/content/articles/posts/pourquoi-videos-ia-air-faux";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -237,4 +240,7 @@ export const articles: Article[] = [
   grokImagineVideo15Juin2026,
   minimaxHubCreationVideoIa,
   monterVideoIaCapcutDavinci,
+  seedance25VideoIa30Secondes,
+  geminiImagesPersonnaliseesDonneesGoogle,
+  pourquoiVideosIaAirFaux,
 ];
