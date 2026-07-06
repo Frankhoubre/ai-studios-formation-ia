@@ -4,55 +4,56 @@ Rapport du dernier run. Réécrit à chaque run (historique long → PROGRESS.md
 
 ---
 
-## Run du 2026-06-25 — RUN #6
+## Run du 2026-07-06 — RUN #7
 
 **Statut : run du jour terminé.** 3 articles produits (2 news + 1 evergreen),
-poussés sur `main`.
+poussés sur `main`, live en 200.
 
 ### Articles publiés
-- **Grok Imagine 1.5 : vidéo IA avec son natif** (News, IA vidéo)
-  https://blog.ai-studios.fr/blog/grok-imagine-video-1-5-juin-2026
-- **MiniMax Hub : l'IA qui te laisse décider** (News, IA vidéo)
-  https://blog.ai-studios.fr/blog/minimax-hub-creation-video-ia
-- **Monter une vidéo IA dans CapCut ou DaVinci** (Evergreen, Workflow créatif)
-  https://blog.ai-studios.fr/blog/monter-video-ia-capcut-davinci
+- **Seedance 2.5 : 30 secondes de vidéo IA d'un coup** (News, IA vidéo)
+  https://blog.ai-studios.fr/blog/seedance-2-5-video-ia-30-secondes
+- **Gemini crée des images IA à partir de tes données Google** (News, IA image)
+  https://blog.ai-studios.fr/blog/gemini-images-personnalisees-donnees-google
+- **Pourquoi tes vidéos IA ont l'air faux (et comment corriger)** (Evergreen, IA vidéo)
+  https://blog.ai-studios.fr/blog/pourquoi-videos-ia-air-faux
 
 ### Sources
-- Grok Imagine 1.5 : x.ai/news/grok-imagine-video-1-5 (annonce officielle, 16 juin
-  2026, capture intégrée), corroboré par TechTimes (18/06) et morphic.com (specs).
-- MiniMax Hub : Variety (présentation au festival international du film de Shanghai,
-  15 juin 2026), capture du site officiel minimax.io intégrée.
-- Évergreen : DaVinci Resolve (blackmagicdesign.com) comme référence outil.
+- Seedance 2.5 : annonce ByteDance à la conférence Volcano Engine FORCE (Pékin,
+  23 juin 2026), couverture TechTimes (24/06) et analyse fingerlakes1 (02/07).
+  Angle assumé : specs revendiquées (30 s, 50 refs, 4K+audio) vs bêta fermée non testée.
+- Gemini images : blog officiel Google (29 juin 2026, expansion US Nano Banana +
+  Personal Intelligence), corroboré par TechCrunch (29/06). Angle utilité vs vie privée.
+- Evergreen : Wikipédia (vallée dérangeante) comme référence, + maillage interne.
 
 ### Images
-- 3 heros Imagen 4 Fast 1K générés (~25 à 53 Ko).
-- 2 captures de pages publiques vérifiées visuellement avant intégration
-  (x.ai/news daté du 16/06 ; minimax.io montrant la logique Skills/Memory).
+- 3 heros Imagen 4 Fast 1K générés (16 / 28 / 42 Ko). Aucune capture d'écran d'outil
+  ce run (les deux news portent sur des annonces, pas sur des UI publiques à illustrer).
 
 ### SEO / fixes
-- Audit `audit.mjs` : 0 erreur, 0 avertissement (110 articles).
-- Bonus : les 2 descriptions >160 traînantes depuis Run #5 corrigées
-  (`ecrire-scenario-ia-methode-outils`, `screenweaver-scenario-storyboard-ia`).
-- Descriptions des 3 nouveaux : 155 / 154 / 142 car. 0 tiret cadratin, 0 mot banni.
+- Audit `audit.mjs` : 0 erreur, 0 avertissement (116 articles).
+- Fix sûr important : les 3 pages piliers du commit 0398ccb (image/prompt/video-ia-
+  guide-complet) pointaient vers 14 slugs d'un cluster jamais construit → 14 liens
+  internes 404 en live. Tous repointés vers des articles existants pertinents.
+- 1 description ramenée sous 160 (`image-ia-guide-complet` : 166 → 159 car.).
+- Descriptions des 3 nouveaux : 155 / 144 / 148 car. 0 tiret cadratin, 0 mot banni.
 
 ### Build / déploiement
-- `npm run lint` exit 0 · `npm run build` exit 0 (116 pages statiques).
-- `check-registry.py` : OK (110 imports + heros suivis par git).
-- Merge `loop/daily-2026-06-25` → `main`, push effectué.
+- `npm run lint` exit 0 · `npm run build` exit 0 (116 articles, 126 pages blog).
+- `check-registry.py` : OK (116 imports + heros suivis par git).
+- Merge `loop/daily-2026-07-06` → `main` (edaae82), push effectué.
+- CI GitHub : success. 3 pages en 200. IndexNow : 135 URLs soumises (HTTP 200).
 
 ### À noter / problèmes
-- Semaine creuse côté actus fraîches : rien de solide en 24-72 h. Les 2 news
-  retenues datent du 15-16 juin (~8-10 j) mais sont les plus marquantes et les
-  mieux sourcées. Dates des faits citées précisément dans le texte.
-- Grok = xAI (Elon Musk) : couvert strictement comme outil créatif, factuel et
-  neutre, sans aucun angle politique.
-- B-5 toujours ouvert : 24 injections de liens non commitées laissées en l'état,
-  non poussées (push surgical, git add explicite). À traiter par un run dédié.
-- 2 evergreen image future-datés tombaient le 25 et sont désormais live sans
-  intervention (`images-cinema-ia-scene-film`, `rendu-pellicule-grain-film-ia`).
+- Idempotence : la garde "≥3 articles datés du jour" s'est déclenchée à tort. Les 5
+  articles datés du 06/07 étaient 3 pages piliers + 2 pages outils pré-planifiées, pas
+  le livrable news+evergreen du jour (dernier vrai run : #6, 25/06). Run complet fait.
+- B-5 toujours ouvert : 24 fichiers d'injections de liens non commités laissés
+  intacts (stash/pop autour du merge), toujours à trier par un run dédié.
+- Le cluster d'articles prévu pour les pages piliers n'existe pas encore : les 14
+  repoints tiennent, mais construire ce cluster reste une action de fond.
 
 ### Prochaines actions
-1. Run dédié pour trier les 24 injections de liens B-5 (committer seulement celles
-   dont la cible est live, sinon attendre).
-2. Continuer à vider IDEAS_BACKLOG (checklist livrable client, glossaire déjà clos).
-3. Surveiller les vraies sorties fraîches (Sora API arrêtée le 24/09, migrations).
+1. Run dédié pour trier les 24 injections de liens B-5 (committer seulement les cibles live).
+2. Construire (ou décider d'abandonner) le cluster d'articles des pages piliers image/prompt/vidéo.
+3. Continuer à vider IDEAS_BACKLOG (checklist livrable client encore ouverte).
+4. Surveiller l'ouverture publique de Seedance 2.5 pour un test terrain sourcé.

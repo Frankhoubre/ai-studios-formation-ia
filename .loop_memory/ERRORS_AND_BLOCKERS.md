@@ -7,6 +7,12 @@ haut. Quand c'est résolu, déplacer dans la section "Résolu" avec la date.
 
 ## Ouvert — décisions / accès à confirmer
 
+> MàJ 2026-07-06 (Run #7) : B-5 toujours présent (24 fichiers), laissé intact et
+> non poussé (stash/pop autour du merge). Nouveau : les 3 pages piliers du commit
+> 0398ccb avaient 14 liens internes 404 (cluster jamais construit) ; tous repointés
+> vers des articles existants ce run, audit repassé à 0/0. Cluster piliers à
+> construire un jour, sinon les repoints tiennent.
+>
 > MàJ 2026-06-25 (Run #6) : B-5 toujours présent à l'identique (24 fichiers,
 > Jun 22 10:15, stale). Vérifié : la cible `generer-modeles-3d-ia` est bien dans
 > le registre, mais reste future-datée tant que sa date n'est pas atteinte → le

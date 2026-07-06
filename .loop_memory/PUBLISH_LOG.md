@@ -7,6 +7,16 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-07-06
+
+- `2026-07-06 | RUN #7 | loop/daily-2026-07-06 → main | 3 articles | 2 news + 1 evergreen | poussé sur main (commit bd72b4b, merge edaae82)`
+  - `seedance-2-5-video-ia-30-secondes` (IA vidéo, news, Seedance 2.5 ByteDance)
+  - `gemini-images-personnalisees-donnees-google` (IA image, news, images Gemini gratuites US)
+  - `pourquoi-videos-ia-air-faux` (IA vidéo, evergreen, réalisme vidéo)
+  - Bonus SEO : 14 liens internes cassés repointés dans les 3 pages piliers + 1 description ramenée sous 160 car.
+  - Heros Imagen 4 Fast 1K (16/28/42 Ko). Audit 0 err, lint/build verts. CI success. 3 pages en 200. IndexNow 135 URLs (HTTP 200).
+  - B-5 (24 fichiers non commités) laissé intact et non poussé (stash/pop autour du merge).
+
 ## 2026-06-25
 
 - `2026-06-25 | RUN #6 | loop/daily-2026-06-25 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`

@@ -18,9 +18,9 @@ Priorité : 🔥 forte (gap + volume), ➕ moyenne, 💡 à creuser.
 - [x] ➕ Image to video : du still au plan, la méthode → publié 2026-06-18 (`image-to-video-ia-methode`).
 - [ ] ➕ Banque de styles visuels réutilisables (planifié n°52, ne pas doubler).
 - [ ] ➕ Batch produire une série visuelle cohérente (planifié n°58).
-- [ ] 💡 "Pourquoi tes vidéos IA ont l'air fausses" (angle opinion, storytelling).
+- [x] 💡 "Pourquoi tes vidéos IA ont l'air fausses" → publié 2026-07-06 (`pourquoi-videos-ia-air-faux`), angle réalisme technique + méthode.
 - [x] 💡 Monter une vidéo IA dans un vrai NLE (CapCut/DaVinci) → publié 2026-06-25 (`monter-video-ia-capcut-davinci`).
-- [ ] 💡 Référence de focales/objectifs pour prompts cinéma (35mm, 85mm…) (`prompting`).
+- [x] 💡 Référence de focales/objectifs pour prompts cinéma → déjà publié (`focale-objectif-prompt-ia`), gap clos.
 - [ ] 💡 Seedream / Reve / nouveaux modèles image — quand stables (tool, vérifier cannibalisation).
 
 ## Formats à exploiter (le gabarit s'y prête)

@@ -92,3 +92,13 @@ Aucun nouveau problème introduit. Backlog inchangé : 47 descriptions >160 car.
   (MCP dispo) ou crawl manuel.
 - Indexabilité réelle, couverture Search Console (MCP GSC dispo si projet lié).
 - Core Web Vitals terrain, poids réel des images servies.
+
+## Run #7 — 2026-07-06
+
+- `audit.mjs` : 0 erreur, 0 avertissement (116 articles) après corrections.
+- Découverte : les 3 pages piliers du commit 0398ccb (image/prompt/video-ia-guide-complet)
+  pointaient vers 14 slugs d'un cluster jamais construit → 14 liens internes 404 en live.
+  Tous repointés vers des articles existants pertinents (ancres conservées). Aucun slug publié changé.
+- 1 description > 160 corrigée : `image-ia-guide-complet` 166 → 159 car.
+- 3 nouveaux articles : descriptions 155 / 144 / 148 car, 0 tiret cadratin, 0 lien cassé.
+- IndexNow : 135 URLs soumises (HTTP 200) après le push.

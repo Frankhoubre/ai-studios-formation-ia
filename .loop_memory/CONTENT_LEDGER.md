@@ -15,6 +15,9 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-07-06 | Seedance 2.5 : 30 secondes de vidéo IA d'un coup | `seedance-2-5-video-ia-30-secondes` | IA vidéo | seedance 2.5 | News | TechTimes (24/06/2026), Volcano Engine FORCE (23/06), fingerlakes1 |
+| 2026-07-06 | Gemini crée des images IA à partir de tes données Google | `gemini-images-personnalisees-donnees-google` | IA image | gemini images personnalisées | News | blog.google (29/06/2026), TechCrunch (29/06) |
+| 2026-07-06 | Pourquoi tes vidéos IA ont l'air faux (et comment corriger) | `pourquoi-videos-ia-air-faux` | IA vidéo | vidéo ia réaliste | Evergreen | Wikipédia (vallée dérangeante) |
 | 2026-06-25 | Grok Imagine 1.5 : vidéo IA avec son natif | `grok-imagine-video-1-5-juin-2026` | IA vidéo | grok imagine video 1.5 | News | x.ai/news/grok-imagine-video-1-5 (16 juin 2026), techtimes, morphic.com |
 | 2026-06-25 | MiniMax Hub : l'IA qui te laisse décider | `minimax-hub-creation-video-ia` | IA vidéo | minimax hub | News | Variety (festival de Shanghai, 15 juin 2026), minimax.io |
 | 2026-06-25 | Monter une vidéo IA dans CapCut ou DaVinci | `monter-video-ia-capcut-davinci` | Workflow créatif | monter une vidéo ia | Evergreen | blackmagicdesign.com (DaVinci Resolve) |

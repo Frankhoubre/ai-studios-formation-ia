@@ -5,6 +5,23 @@ Le plus récent en haut.
 
 ---
 
+## Run 2026-07-06 — RUN #7
+
+- 3 articles datés du 06/07 : 2 news + 1 evergreen, poussés sur main.
+  - News `seedance-2-5-video-ia-30-secondes` (ByteDance Seedance 2.5, annonce Volcano
+    Engine FORCE du 23/06, angle honnête faits vs specs promises, bêta fermée).
+  - News `gemini-images-personnalisees-donnees-google` (images Gemini gratuites aux
+    US depuis le 29/06, Nano Banana + Personal Intelligence, angle utilité vs vie privée).
+  - Evergreen `pourquoi-videos-ia-air-faux` (réalisme vidéo IA : signaux de faux,
+    méthode prompt + montage, gabarit complet, FAQ 6 Q/R).
+- Idempotence : la garde "≥3 datés du jour" était un faux positif (3 pages piliers +
+  2 pages outils pré-planifiées, pas le livrable news+evergreen du jour). Run complet fait.
+- Fix SEO sûr : les 3 pages piliers (commit 0398ccb) avaient 14 liens internes vers un
+  cluster jamais construit → 14 x 404 live. Tous repointés vers des articles existants.
+  1 description (image-ia-guide-complet) ramenée de 166 à 159 car. Audit repassé à 0/0.
+- B-5 toujours là (24 fichiers non commités), laissé intact via stash/pop.
+- Gates : audit 0 err, lint OK, build OK (116 articles), CI success, 3 pages 200, IndexNow OK.
+
 ## Run 2026-06-25 — RUN #6
 
 - 3 articles datés du 25 : 2 news + 1 evergreen.

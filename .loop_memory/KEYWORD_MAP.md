@@ -201,3 +201,13 @@ des mots-clés faibles. Quand un de ces articles est retravaillé, élargir le K
 principal vers une vraie requête (ex. "étalonner peau SDXL" plutôt que "SDXL").
 
 Liens : [[CONTENT_LEDGER]] [[STYLE_GUIDE]] [[SEO_AUDIT_LOG]] [[IDEAS_BACKLOG]]
+
+## Ajouts Run #7 (2026-07-06)
+
+- `seedance-2-5-video-ia-30-secondes` → KW principal : seedance 2.5 (IA vidéo, news).
+  Secondaires : bytedance vidéo ia, modèle vidéo ia 30 secondes. Soutient `meilleurs-outils-ia-video`.
+- `gemini-images-personnalisees-donnees-google` → KW principal : gemini images personnalisées
+  (IA image, news). Secondaires : gemini nano banana, images ia gratuites. Soutient `meilleurs-generateurs-images-ia-2026`.
+- `pourquoi-videos-ia-air-faux` → KW principal : vidéo ia réaliste (IA vidéo, evergreen).
+  Secondaires : vidéo ia air faux, améliorer vidéo ia, défauts vidéo ia. Distinct de
+  `videos-ia-jolies-mais-vides` (fond/narration) : ici c'est le rendu technique. Les deux se lient.
