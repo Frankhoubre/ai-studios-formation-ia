@@ -4,7 +4,7 @@ export const imageIaGuideComplet: Article = {
   title: "Image IA : le guide complet pour créer en 2026",
   slug: "image-ia-guide-complet",
   description:
-    "Le guide complet de l'image IA : générateurs, prompts, réalisme, cohérence, retouche, usages pro. Le point d'entrée pour tout maîtriser, du premier visuel à la série.",
+    "Le guide complet de l'image IA : générateurs, prompts, réalisme, cohérence, retouche, usages pro. Ton entrée pour tout maîtriser, du premier visuel à la série.",
   excerpt:
     "Tout ce qu'il faut savoir pour créer des images avec l'IA : choisir son générateur, écrire des prompts qui marchent, éviter le rendu plastique et produire en série.",
   category: "ia-image",
@@ -122,7 +122,7 @@ export const imageIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Si tu vises un style assumé, travaille comme un directeur artistique : [créer des illustrations pro](/blog/illustration-ia-creer-pro), explorer [le concept art cinéma](/blog/illustration-cinema-concept-art-ia), recréer [des images dignes d'une scène de film](/blog/images-cinema-ia-scene-film) ou assumer [l'abstrait](/blog/images-abstraites-ia). Dans les deux cas, capitalise tes trouvailles dans [une fiche de style réutilisable](/blog/fiche-style-visuel-images-ia) : c'est ce qui rend ta patte reproductible.",
+      text: "Si tu vises un style assumé, travaille comme un directeur artistique : [créer des illustrations pro](/blog/illustration-ia-creer-pro), explorer [le concept art cinéma](/blog/illustration-cinema-concept-art-ia), recréer [des images dignes d'une scène de film](/blog/images-cinema-ia-scene-film) ou assumer [l'abstrait](/blog/images-abstraites-ia). Dans les deux cas, capitalise tes trouvailles dans [une fiche de style réutilisable](/blog/banque-styles-visuels-ia) : c'est ce qui rend ta patte reproductible.",
     },
     {
       type: "h2",
@@ -131,11 +131,11 @@ export const imageIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Une image réussie est un début. Un projet réel demande des dizaines de visuels qui vont ensemble : même personnage, même ambiance, même qualité. Les briques : [garder un personnage cohérent](/blog/personnage-coherent-ia), [tenir une ambiance visuelle sur toute une série](/blog/garder-meme-ambiance-visuelle-images-ia), et [produire une série cohérente, dès ton premier projet de 6 visuels](/blog/premier-projet-ia-image-6-visuels-coherents). Pour le contrôle fin, des techniques comme ControlNet (imposer une pose) et les LoRA (apprendre un visage ou un style) prennent le relais : leurs guides dédiés arrivent sur le blog. En attendant, [la stabilité d'un personnage sur plusieurs plans](/blog/stabilite-personnage-multi-plans) pose les bonnes bases.",
+      text: "Une image réussie est un début. Un projet réel demande des dizaines de visuels qui vont ensemble : même personnage, même ambiance, même qualité. Les briques : [garder un personnage cohérent](/blog/personnage-coherent-ia), [tenir une ambiance visuelle sur toute une série](/blog/batch-produire-visuels-coherents-serie), et [produire une série cohérente, dès ton premier projet de 6 visuels](/blog/generer-image-ia-guide-debutant). Pour le contrôle fin, des techniques comme ControlNet (imposer une pose) et les LoRA (apprendre un visage ou un style) prennent le relais : leurs guides dédiés arrivent sur le blog. En attendant, [la stabilité d'un personnage sur plusieurs plans](/blog/stabilite-personnage-multi-plans) pose les bonnes bases.",
     },
     {
       type: "p",
-      text: "La finition compte autant que la génération : [la correction des défauts, mains et visages en tête](/blog/corriger-mains-yeux-defauts-anatomiques-ia), [les upscalers pour agrandir proprement](/blog/magnific-upscalers-ia-agrandir-image), et [résolution, ratio et export maîtrisés](/blog/resolution-upscale-ratio-image-ia). Avant de publier, passe [la checklist qualité image](/blog/checklist-qualite-image-ia-avant-publication) : elle attrape les défauts que ton œil fatigué ne voit plus.",
+      text: "La finition compte autant que la génération : [la correction des défauts, mains et visages en tête](/blog/corriger-mains-yeux-defauts-anatomiques-ia), [les upscalers pour agrandir proprement](/blog/magnific-upscalers-ia-agrandir-image), et [résolution, ratio et export maîtrisés](/blog/krea-ai-temps-reel-upscale). Avant de publier, passe [la checklist qualité image](/blog/ia-image-realiste) : elle attrape les défauts que ton œil fatigué ne voit plus.",
     },
     {
       type: "p",

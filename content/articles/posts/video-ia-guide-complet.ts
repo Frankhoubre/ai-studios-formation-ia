@@ -80,7 +80,7 @@ export const videoIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Tout le paysage de la génération vidéo tient en trois familles. Le texte vers vidéo, où tu décris une scène et l'IA l'invente : parfait pour explorer, rarement suffisant pour livrer. L'image vers vidéo, où tu animes une image que tu as déjà validée : c'est la voie du contrôle, celle que privilégient les créateurs sérieux, détaillée dans [notre méthode image to video](/blog/image-to-video-ia-methode). Et la vidéo vers vidéo, qui transforme un plan existant. Les différences sont posées simplement dans [ce comparatif des trois approches](/blog/image-to-video-text-to-video-video-to-video-debutant).",
+      text: "Tout le paysage de la génération vidéo tient en trois familles. Le texte vers vidéo, où tu décris une scène et l'IA l'invente : parfait pour explorer, rarement suffisant pour livrer. L'image vers vidéo, où tu animes une image que tu as déjà validée : c'est la voie du contrôle, celle que privilégient les créateurs sérieux, détaillée dans [notre méthode image to video](/blog/image-to-video-ia-methode). Et la vidéo vers vidéo, qui transforme un plan existant. Les différences sont posées simplement dans [ce comparatif des trois approches](/blog/image-to-video-ia-methode).",
     },
     {
       type: "p",
@@ -97,7 +97,7 @@ export const videoIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Vient la production des plans. Le nerf de la guerre est la cohérence : garder [le même personnage d'un plan à l'autre](/blog/stabilite-personnage-multi-plans), tenir [les raccords et la continuité](/blog/raccord-continuite-plans-ia), maîtriser [les mouvements de caméra](/blog/mouvement-camera-ia-video-termes-simples) et [les cadrages utiles](/blog/cadrages-utiles-ia-video-plan-large-gros-plan-detail). Et quand un plan doit durer, apprends à [prolonger au-delà de cinq secondes sans casser la scène](/blog/prolonger-plan-ia-au-dela-5-secondes).",
+      text: "Vient la production des plans. Le nerf de la guerre est la cohérence : garder [le même personnage d'un plan à l'autre](/blog/stabilite-personnage-multi-plans), tenir [les raccords et la continuité](/blog/raccord-continuite-plans-ia), maîtriser [les mouvements de caméra](/blog/kling-ai-videos-cinematiques) et [les cadrages utiles](/blog/composition-cadrage-image-ia). Et quand un plan doit durer, apprends à [prolonger au-delà de cinq secondes sans casser la scène](/blog/prolonger-plan-ia-au-dela-5-secondes).",
     },
     {
       type: "table",
@@ -122,7 +122,7 @@ export const videoIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Le montage assemble tout. C'est une décision humaine, pas un réglage automatique : couper tôt ou tard, laisser respirer, rythmer. Avant de publier, passe systématiquement [la checklist qualité vidéo](/blog/checklist-qualite-video-ia-avant-publication) et vérifie [tes FPS, durées et codecs d'export](/blog/fps-duree-codec-export-video-ia). Une vidéo bien montée mais mal exportée reste une vidéo ratée aux yeux du spectateur.",
+      text: "Le montage assemble tout. C'est une décision humaine, pas un réglage automatique : couper tôt ou tard, laisser respirer, rythmer. Avant de publier, passe systématiquement [la checklist qualité vidéo](/blog/pourquoi-videos-ia-air-faux) et vérifie [tes FPS, durées et codecs d'export](/blog/monter-video-ia-capcut-davinci). Une vidéo bien montée mais mal exportée reste une vidéo ratée aux yeux du spectateur.",
     },
     {
       type: "h2",
@@ -131,7 +131,7 @@ export const videoIaGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Si tu débutes : commence par [ton premier projet vidéo, dix secondes en cinq plans](/blog/premier-projet-ia-video-10-secondes-5-plans). C'est le format qui t'apprend toute la chaîne sans te noyer. Enchaîne avec [un Reel structuré et compréhensible](/blog/creer-reel-ia-video-courte-comprehensible) pour apprendre le format court.",
+      text: "Si tu débutes : commence par [ton premier projet vidéo, dix secondes en cinq plans](/blog/structure-3-actes-video-ia). C'est le format qui t'apprend toute la chaîne sans te noyer. Enchaîne avec [un Reel structuré et compréhensible](/blog/video-courte-ia-tiktok-reels-shorts) pour apprendre le format court.",
     },
     {
       type: "p",
