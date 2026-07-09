@@ -76,7 +76,7 @@ export const ideogramTexteLisibleImagesIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le texte, point faible historique",
+      text: "Le texte, point faible historique",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const ideogramTexteLisibleImagesIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : du texte net dans l'image",
+      text: "Du texte net dans l'image",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const ideogramTexteLisibleImagesIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du texte en image",
+      text: "Les pièges du texte en image",
     },
     {
       type: "h3",

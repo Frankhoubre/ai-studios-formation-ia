@@ -76,7 +76,7 @@ export const meilleursGenerateursImagesIa2026: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : penser usage, pas palmarès",
+      text: "Penser usage, pas palmarès",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const meilleursGenerateursImagesIa2026: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : choisir en 3 étapes",
+      text: "Choisir en 3 étapes",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const meilleursGenerateursImagesIa2026: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du choix d'outil",
+      text: "Les pièges du choix d'outil",
     },
     {
       type: "h3",

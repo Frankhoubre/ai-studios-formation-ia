@@ -76,7 +76,7 @@ export const soraOpenaiCreerVideos: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : comprendre Sora",
+      text: "Comprendre Sora",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const soraOpenaiCreerVideos: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire avec Sora",
+      text: "Produire avec Sora",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const soraOpenaiCreerVideos: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec Sora",
+      text: "Les pièges avec Sora",
     },
     {
       type: "h3",

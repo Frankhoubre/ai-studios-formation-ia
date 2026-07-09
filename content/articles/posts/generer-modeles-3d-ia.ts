@@ -81,7 +81,7 @@ export const genererModeles3dIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la 3D devient accessible",
+      text: "La 3D devient accessible",
     },
     {
       type: "h3",
@@ -120,7 +120,7 @@ export const genererModeles3dIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : de l'idée au modèle 3D",
+      text: "De l'idée au modèle 3D",
     },
     {
       type: "h3",
@@ -194,7 +194,7 @@ export const genererModeles3dIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la 3D IA",
+      text: "Les pièges de la 3D IA",
     },
     {
       type: "h3",

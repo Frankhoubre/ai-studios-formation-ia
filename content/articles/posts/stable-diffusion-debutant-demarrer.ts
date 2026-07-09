@@ -76,7 +76,7 @@ export const stableDiffusionDebutantDemarrer: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : comprendre l'outil open source",
+      text: "Comprendre l'outil open source",
     },
     {
       type: "h3",
@@ -110,12 +110,12 @@ export const stableDiffusionDebutantDemarrer: Article = {
     },
     {
       type: "p",
-      text: "Pour situer Stable Diffusion par rapport aux autres options et décider s'il correspond à ton usage, appuie-toi sur [notre comparatif des meilleurs générateurs d'images IA](/blog/meilleurs-generateurs-images-ia-2026), qui raisonne par besoin réel.",
+      text: "Pour situer Stable Diffusion par rapport aux autres options et décider s'il correspond à ton usage, appuie-toi sur [notre comparatif des meilleurs générateurs d'images IA](/blog/meilleurs-generateurs-images-ia-2026), qui raisonne par besoin réel. Et si l'interface nodale t'attire pour aller plus loin en local, [notre guide ComfyUI pour débutants](/blog/comfyui-workflow-nodal-debutant) t'apprend à lire un workflow sans te noyer.",
     },
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : ta première image Stable Diffusion",
+      text: "Ta première image Stable Diffusion",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const stableDiffusionDebutantDemarrer: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du démarrage",
+      text: "Les pièges du démarrage",
     },
     {
       type: "h3",

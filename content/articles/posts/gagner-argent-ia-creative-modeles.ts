@@ -76,7 +76,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : où se trouve vraiment la valeur",
+      text: "Où se trouve vraiment la valeur",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : choisir et lancer ton modèle",
+      text: "Choisir et lancer ton modèle",
     },
     {
       type: "h3",
@@ -191,7 +191,7 @@ export const gagnerArgentIaCreativeModeles: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la monétisation",
+      text: "Les pièges de la monétisation",
     },
     {
       type: "h3",

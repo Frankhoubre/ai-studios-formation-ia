@@ -56,20 +56,29 @@ observée et à reproduire :
    - P1 : la galère du lecteur, posée frontalement.
    - P2 : la promesse concrète ("à la fin, tu sauras...").
    - P3 : l'angle, la phrase qui tranche.
-2. **H2 "Core Concepts"** (`id: "core-concepts"`) + 2 `h3` avec contenu.
-3. **H2 "Practical Workflow"** (`id: "practical-workflow"`) + un `table`
+2. **H2 concepts clés** (`id: "core-concepts"`) + 2 `h3` avec contenu.
+   Le texte du H2 est TOUJOURS en français, spécifique au sujet, idéalement avec
+   le mot-clé ou une variante (ex. "Un logo n'est pas une image"). **Jamais de
+   préfixe anglais** type "Core Concepts :" (264 occurrences nettoyées le
+   2026-07-09, ne pas les réintroduire).
+3. **H2 méthode pas à pas** (`id: "practical-workflow"`) + un `table`
    (`caption`, `headers`, `rows`) + une liste `ol` d'étapes + un **Pro Tip**
    (un `p` qui commence par `> Pro Tip : ...`) + 2 à 3 liens internes + 1 lien
-   externe d'autorité (Wikipédia ou source officielle).
-4. **H2 "The Trench Warfare Section"** (`id: "trench-warfare"`) + 4 erreurs, une
-   `h3` par erreur, chacune avec le symptôme puis un "Fix concret :".
+   externe d'autorité (Wikipédia ou source officielle). Texte du H2 en français,
+   orienté action (ex. "Comment créer un logo avec l'IA en 3 étapes").
+4. **H2 pièges/erreurs** (`id: "trench-warfare"`) + 4 erreurs, une
+   `h3` par erreur, chacune avec le symptôme puis un "Fix concret :". Texte du
+   H2 en français (ex. "Les pièges du logo IA"). Varier les formulations d'un
+   article à l'autre, ne pas dupliquer le même H2 sur toute une série.
 5. **H2 "FAQ"** (`id: "faq"`) + 6 questions (`h3` `id: "faq-1"`...`faq-6`),
    chaque réponse en un `p`. Ces 6 Q/R doivent **refléter** le tableau `faq` de
    l'objet (même questions, mêmes réponses) car ce tableau alimente le JSON-LD
    FAQPage.
 6. Commentaire final : `// <!-- PUBLICATION DATE: YYYY-MM-DD -->`.
 
-> Note : ce gabarit "Core/Workflow/Trench/FAQ" est celui des evergreen. Les
+> Note : ce gabarit (concepts / méthode / pièges / FAQ, ids historiques
+> `core-concepts`/`practical-workflow`/`trench-warfare` conservés) est celui des
+> evergreen. Les
 > articles **news** peuvent assouplir la structure (voir
 > `.loop_scripts/news_research_loop.md`) mais gardent intro forte + analyse +
 > takeaway + FAQ courte + métadonnées complètes.

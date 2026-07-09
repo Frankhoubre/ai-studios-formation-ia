@@ -76,7 +76,7 @@ export const illustrationCinemaConceptArtIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : explorer un univers",
+      text: "Explorer un univers",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const illustrationCinemaConceptArtIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire du concept art cohérent",
+      text: "Produire du concept art cohérent",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const illustrationCinemaConceptArtIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du concept art IA",
+      text: "Les pièges du concept art IA",
     },
     {
       type: "h3",

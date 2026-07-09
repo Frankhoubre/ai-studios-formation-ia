@@ -76,7 +76,7 @@ export const hailuoWanSeedanceVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : une vague à connaître",
+      text: "Une vague à connaître",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const hailuoWanSeedanceVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : exploiter ces modèles",
+      text: "Exploiter ces modèles",
     },
     {
       type: "h3",
@@ -176,7 +176,7 @@ export const hailuoWanSeedanceVideoIa: Article = {
     },
     {
       type: "p",
-      text: "La vidéo IA avance très vite, et ces modèles progressent à chaque version. Reste agile, teste les nouveautés, et ne t'enferme pas dans un seul outil. La compétence de direction se transfère, donc adopter le meilleur du moment ne te coûte pas ton savoir-faire. Cette agilité est ton meilleur atout dans un marché aussi mouvant et mondial.",
+      text: "La vidéo IA avance très vite, et ces modèles progressent à chaque version. Reste agile, teste les nouveautés, et ne t'enferme pas dans un seul outil. Élargis aussi tes essais à [Pika, Luma et leurs alternatives](/blog/pika-luma-alternatives-video-ia), tout aussi accessibles côté occidental. La compétence de direction se transfère, donc adopter le meilleur du moment ne te coûte pas ton savoir-faire. Cette agilité est ton meilleur atout dans un marché aussi mouvant et mondial.",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const hailuoWanSeedanceVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec ces modèles",
+      text: "Les pièges avec ces modèles",
     },
     {
       type: "h3",

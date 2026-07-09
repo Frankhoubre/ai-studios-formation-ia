@@ -63,7 +63,7 @@ export const devenirFreelanceCreationIa: Article = {
   content: [
     {
       type: "p",
-      text: "Tu maîtrises les outils IA, tu produis de belles images, et tu te demandes comment en faire ton métier. Devenir freelance en création IA est une voie réaliste, mais elle se joue moins sur la technique que sur le positionnement, les clients et la tarification. Beaucoup savent générer, peu savent vendre. Ce guide te donne les étapes concrètes pour démarrer une activité viable, sans les illusions des promesses de gains faciles.",
+      text: "Tu maîtrises les outils IA, tu produis de belles images, et tu te demandes comment en faire ton métier. Le freelance n'est d'ailleurs qu'une des [façons de gagner de l'argent avec la création IA](/blog/gagner-argent-ia-creative-modeles), mais c'est une voie réaliste, qui se joue moins sur la technique que sur le positionnement, les clients et la tarification. Beaucoup savent générer, peu savent vendre. Ce guide te donne les étapes concrètes pour démarrer une activité viable, sans les illusions des promesses de gains faciles.",
     },
     {
       type: "p",
@@ -76,7 +76,7 @@ export const devenirFreelanceCreationIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le métier au-delà de l'outil",
+      text: "Le métier au-delà de l'outil",
     },
     {
       type: "h3",
@@ -106,7 +106,7 @@ export const devenirFreelanceCreationIa: Article = {
     },
     {
       type: "p",
-      text: "Pense à un graphiste qui résout un problème de marque en une heure grâce à son expérience, il facture la solution, pas l'heure. C'est pareil en création IA, ta rapidité est un atout, pas une raison de baisser tes prix. Si tu raisonnes en valeur livrée, la vitesse de l'IA augmente ta marge. Si tu raisonnes en temps passé, elle écrase tes revenus. Le cadre de tarification que tu choisis change tout.",
+      text: "Pense à un graphiste qui résout un problème de marque en une heure grâce à son expérience, il facture la solution, pas l'heure. C'est pareil en création IA, ta rapidité est un atout, pas une raison de baisser tes prix. Si tu raisonnes en valeur livrée, la vitesse de l'IA augmente ta marge. Si tu raisonnes en temps passé, elle écrase tes revenus. Pour traduire ce principe en chiffres concrets, appuie-toi sur [une grille pour fixer le prix de tes créations IA](/blog/fixer-prix-creation-ia-grille), car le cadre de tarification que tu choisis change tout.",
     },
     {
       type: "p",
@@ -115,7 +115,7 @@ export const devenirFreelanceCreationIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : démarrer ton activité",
+      text: "Démarrer ton activité",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const devenirFreelanceCreationIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du démarrage",
+      text: "Les pièges du démarrage",
     },
     {
       type: "h3",

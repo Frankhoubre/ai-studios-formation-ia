@@ -76,7 +76,7 @@ export const mockupsProduitIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : montrer avant de fabriquer",
+      text: "Montrer avant de fabriquer",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const mockupsProduitIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un mockup produit crédible",
+      text: "Un mockup produit crédible",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const mockupsProduitIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des mockups IA",
+      text: "Les pièges des mockups IA",
     },
     {
       type: "h3",

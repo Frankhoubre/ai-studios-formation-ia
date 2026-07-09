@@ -76,7 +76,7 @@ export const imageToVideoIaMethode: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : décrire ne suffit pas",
+      text: "Décrire ne suffit pas",
     },
     {
       type: "h3",
@@ -111,7 +111,7 @@ export const imageToVideoIaMethode: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : animer proprement",
+      text: "Animer proprement",
     },
     {
       type: "h3",
@@ -184,7 +184,7 @@ export const imageToVideoIaMethode: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'animation",
+      text: "Les pièges de l'animation",
     },
     {
       type: "h3",

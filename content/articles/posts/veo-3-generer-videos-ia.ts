@@ -76,7 +76,7 @@ export const veo3GenererVideosIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la force de Veo",
+      text: "La force de Veo",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const veo3GenererVideosIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : générer un plan crédible avec Veo",
+      text: "Générer un plan crédible avec Veo",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const veo3GenererVideosIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec Veo",
+      text: "Les pièges avec Veo",
     },
     {
       type: "h3",

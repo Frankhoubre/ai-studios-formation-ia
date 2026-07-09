@@ -77,7 +77,7 @@ export const sunoMusiquePubCourte: Article = {
       videoId: "qcPbKGuiwEg",
       title: "Cette IA vole mes mélodies pour en faire des musiques épiques",
     },
-    { type: "h2", id: "core-concepts", text: "Core Concepts: pourquoi la plupart des musiques IA publicitaires ratent" },
+    { type: "h2", id: "core-concepts", text: "Pourquoi la plupart des musiques IA publicitaires ratent" },
     { type: "h3", id: "fonction-avant-style", text: "La fonction avant le style" },
     {
       type: "p",
@@ -102,7 +102,7 @@ export const sunoMusiquePubCourte: Article = {
     },
     {
       type: "p",
-      text: "Scenario 2, tu produis un teaser de serie web. La musique Suno est belle seule, mais elle casse les transitions plan a plan. Correction, tu maries la musique au montage, micro cuts a des points de respiration, baisse selective sur les moments de dialogue, et ajout d'une ponctuation sonore discrete sur les changements de plan.",
+      text: "Scenario 2, tu produis un teaser de serie web. La musique Suno est belle seule, mais elle casse les transitions plan a plan. Correction, tu maries la musique au montage, micro cuts a des points de respiration, baisse selective sur les moments de dialogue, et ajout d'une ponctuation sonore discrete sur les changements de plan. Si ton projet vise plutot une chanson complete portee par l'image, regarde [comment produire un clip musical avec l'IA](/blog/clip-musical-ia), la logique de synchronisation y est poussee plus loin.",
     },
     {
       type: "p",
@@ -112,7 +112,7 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "Think about it this way: un bon compositeur pub agit comme un monteur, il dose le temps, la tension et l espace. C'est exactement la même logique que [notre framework pour construire une publicite IA qui vend vraiment](/blog/creer-publicite-ia), chaque element sert un objectif concret.",
     },
-    { type: "h2", id: "workflow", text: "Practical Workflow: clicks, réglages et décisions a chaque étape" },
+    { type: "h2", id: "workflow", text: "Les clics, réglages et décisions à chaque étape" },
     { type: "h3", id: "step1-brief", text: "Étape 1, cadrer le brief sonore en 6 lignes" },
     {
       type: "p",
@@ -252,7 +252,7 @@ export const sunoMusiquePubCourte: Article = {
       type: "p",
       text: "A ce stade, tu dois deja entendre une intention nette. Si la piste distrait de la promesse commerciale, simplifie sans hesitation.",
     },
-    { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent en musique IA" },
+    { type: "h2", id: "trench-warfare", text: "Ce que les débutants cassent en musique IA" },
     { type: "h3", id: "erreur1", text: "Erreur 1, empiler trop d'idees musicales" },
     {
       type: "p",

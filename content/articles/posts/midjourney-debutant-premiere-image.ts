@@ -76,7 +76,7 @@ export const midjourneyDebutantPremiereImage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : comprendre Midjourney avant de prompter",
+      text: "Comprendre Midjourney avant de prompter",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const midjourneyDebutantPremiereImage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : ta première image, étape par étape",
+      text: "Ta première image, étape par étape",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const midjourneyDebutantPremiereImage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du débutant Midjourney",
+      text: "Les pièges du débutant Midjourney",
     },
     {
       type: "h3",

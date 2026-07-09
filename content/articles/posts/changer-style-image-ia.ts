@@ -76,7 +76,7 @@ export const changerStyleImageIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : appliquer un style sans tout perdre",
+      text: "Appliquer un style sans tout perdre",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const changerStyleImageIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un changement de style maîtrisé",
+      text: "Un changement de style maîtrisé",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const changerStyleImageIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du transfert de style",
+      text: "Les pièges du transfert de style",
     },
     {
       type: "h3",

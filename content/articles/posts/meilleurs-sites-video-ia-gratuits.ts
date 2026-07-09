@@ -1,22 +1,23 @@
 import type { Article } from "@/lib/types/article";
 
 export const meilleursSitesVideoIaGratuits: Article = {
-  title: "Les meilleurs sites de vidéo IA gratuits",
+  title: "Meilleure IA vidéo gratuite : comparatif",
   slug: "meilleurs-sites-video-ia-gratuits",
   description:
-    "Quels sites de vidéo IA gratuits valent le coup ? Les familles d'outils, leurs forces et limites, et comment les combiner pour produire sans payer.",
+    "Quelle est la meilleure IA vidéo gratuite ? Les critères pour trier les sites et les combiner pour produire sans payer.",
   excerpt:
     "Beaucoup de sites promettent de la vidéo IA gratuite. Voici comment trier les bons des pièges et les combiner intelligemment.",
   category: "ia-video",
   tags: ["sites vidéo IA", "gratuit", "comparatif"],
   date: "2026-06-21",
-  updatedAt: "2026-06-21",
+  updatedAt: "2026-07-09",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/meilleurs-sites-video-ia-gratuits.webp",
   imageAlt:
     "Les meilleurs sites de vidéo IA gratuits, espace de travail avec plusieurs écrans affichant des générateurs vidéo IA produisant des clips cinématiques",
   keywords: [
+    "meilleure ia video gratuite",
     "site vidéo gratuite ia",
     "meilleurs sites vidéo ia gratuits",
     "générateur vidéo ia gratuit en ligne",
@@ -75,8 +76,32 @@ export const meilleursSitesVideoIaGratuits: Article = {
     },
     {
       type: "h2",
+      id: "meilleure-ia-video-gratuite",
+      text: "Quelle est la meilleure IA vidéo gratuite ?",
+    },
+    {
+      type: "p",
+      text: "Réponse honnête : il n'y a pas un gagnant unique, il y a un meilleur outil par usage. Les quotas gratuits changent régulièrement, donc raisonne par famille avant de raisonner par marque.",
+    },
+    {
+      type: "table",
+      caption: "La meilleure piste gratuite selon ton besoin",
+      headers: ["Ton besoin", "Famille d'outils à tester en premier"],
+      rows: [
+        ["Plans cinématiques à partir d'un prompt", "Kling, Hailuo, Seedance (offres d'essai)"],
+        ["Animer une image existante", "Luma, Pika, Runway (crédits gratuits)"],
+        ["Vidéo verticale rapide pour les réseaux", "Outils tout-en-un avec templates"],
+        ["Court-métrage complet sans budget", "Combinaison de plusieurs quotas gratuits"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Pour creuser chaque piste : [Kling et ses rendus cinématiques](/blog/kling-ai-videos-cinematiques), [Pika et Luma en alternatives accessibles](/blog/pika-luma-alternatives-video-ia), et [Hailuo, Wan et Seedance côté modèles chinois](/blog/hailuo-wan-seedance-video-ia), souvent les plus généreux en essai gratuit. Le reste de ce guide te donne la grille pour trancher toi-même quand les offres évoluent.",
+    },
+    {
+      type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : évaluer un site gratuit",
+      text: "Évaluer un site gratuit",
     },
     {
       type: "h3",
@@ -115,7 +140,7 @@ export const meilleursSitesVideoIaGratuits: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : choisir et combiner les sites",
+      text: "Choisir et combiner les sites",
     },
     {
       type: "h3",
@@ -189,7 +214,7 @@ export const meilleursSitesVideoIaGratuits: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des sites gratuits",
+      text: "Les pièges des sites gratuits",
     },
     {
       type: "h3",
@@ -249,7 +274,7 @@ export const meilleursSitesVideoIaGratuits: Article = {
     },
     {
       type: "p",
-      text: "Quand tu évalues les sites sur des critères clairs, combines des briques gratuites complémentaires et soignes la finition, tu produis des vidéos complètes sans payer un centime. Et surtout, tu gardes une méthode qui survit aux changements incessants des offres gratuites, ce qui est le vrai trésor dans ce domaine.",
+      text: "Quand tu évalues les sites sur des critères clairs, combines des briques gratuites complémentaires et soignes la finition, tu produis des vidéos complètes sans payer un centime, jusqu'à [un court métrage IA entièrement gratuit](/blog/film-ia-gratuit-court-metrage) si tu structures bien ton récit. Et surtout, tu gardes une méthode qui survit aux changements incessants des offres gratuites, ce qui est le vrai trésor dans ce domaine.",
     },
     {
       type: "h2",

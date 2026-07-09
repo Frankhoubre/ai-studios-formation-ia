@@ -76,7 +76,7 @@ export const structure3ActesVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : pourquoi trois actes suffisent",
+      text: "Pourquoi trois actes suffisent",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const structure3ActesVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : construire une vidéo en 3 actes",
+      text: "Construire une vidéo en 3 actes",
     },
     {
       type: "h3",
@@ -187,7 +187,7 @@ export const structure3ActesVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui casse une structure",
+      text: "Ce qui casse une structure",
     },
     {
       type: "h3",

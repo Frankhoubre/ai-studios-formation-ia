@@ -86,7 +86,7 @@ export const creerPubliciteIa: Article = {
     },
     {
       type: "p",
-      text: "Le concept est une phrase d’angle : comment on raconte la promesse sans la répéter mot pour mot. Le moodboard est une famille visuelle : lumière, textures, casting type, décors possibles, références de cadrage. L’objectif n’est pas de copier. L’objectif est d’aligner le client sur un monde avant que vous ne produisiez des pixels coûteux. Si le client valide un monde, vous pouvez générer dedans. Si le client valide une image isolée sans monde, préparez-vous à des « j’aime pas » incompréhensibles.",
+      text: "Le concept est une phrase d’angle : comment on raconte la promesse sans la répéter mot pour mot. Le moodboard est une famille visuelle : lumière, textures, casting type, décors possibles, références de cadrage. L’objectif n’est pas de copier. L’objectif est d’aligner le client sur un monde avant que vous ne produisiez des pixels coûteux. Si le client valide un monde, vous pouvez générer dedans, et pour une marque locale qui revient souvent, entraîner [un flux LoRA dédié à la publicité locale](/blog/flux-lora-publicite-locale) verrouille ce monde d’une campagne à l’autre. Si le client valide une image isolée sans monde, préparez-vous à des « j’aime pas » incompréhensibles.",
     },
     {
       type: "h2",

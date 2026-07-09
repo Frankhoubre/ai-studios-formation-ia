@@ -76,7 +76,7 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : comprendre la limite de durée",
+      text: "Comprendre la limite de durée",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : prolonger un plan proprement",
+      text: "Prolonger un plan proprement",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const prolongerPlanIaAuDela5Secondes: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui casse un plan prolongé",
+      text: "Ce qui casse un plan prolongé",
     },
     {
       type: "h3",

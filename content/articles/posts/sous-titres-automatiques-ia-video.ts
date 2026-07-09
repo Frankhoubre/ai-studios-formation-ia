@@ -76,7 +76,7 @@ export const sousTitresAutomatiquesIaVideo: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le son n'est pas garanti",
+      text: "Le son n'est pas garanti",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const sousTitresAutomatiquesIaVideo: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : des sous-titres pro en un temps record",
+      text: "Des sous-titres pro en un temps record",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const sousTitresAutomatiquesIaVideo: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des sous-titres",
+      text: "Les pièges des sous-titres",
     },
     {
       type: "h3",

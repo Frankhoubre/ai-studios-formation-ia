@@ -76,7 +76,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : produire en système, pas en urgence",
+      text: "Produire en système, pas en urgence",
     },
     {
       type: "h3",
@@ -102,7 +102,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     },
     {
       type: "p",
-      text: "Un feed fort n'est pas une suite de belles images, c'est une présence de marque reconnaissable. Cette reconnaissance vient d'une identité visuelle constante, palette, style, typographie, types de visuels. Sans ces invariants, même de beaux posts paraissent décousus. L'identité est le fil rouge qui transforme un mois de contenus en une présence cohérente, où chaque visuel renforce les précédents.",
+      text: "Un feed fort n'est pas une suite de belles images, c'est une présence de marque reconnaissable. Cette reconnaissance vient d'une identité visuelle constante, palette, style, typographie, types de visuels, ce que tu peux poser durablement en [construisant un univers visuel de marque avec l'IA](/blog/univers-visuel-marque-ia). Sans ces invariants, même de beaux posts paraissent décousus. L'identité est le fil rouge qui transforme un mois de contenus en une présence cohérente, où chaque visuel renforce les précédents.",
     },
     {
       type: "p",
@@ -115,7 +115,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un mois de visuels en une session",
+      text: "Un mois de visuels en une session",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la production sociale",
+      text: "Les pièges de la production sociale",
     },
     {
       type: "h3",
@@ -232,7 +232,7 @@ export const visuelsReseauxSociauxIaMois: Article = {
     },
     {
       type: "p",
-      text: "Fix concret : varie dans le cadre cohérent, types de posts, sujets, compositions, tout en gardant tes invariants d'identité. Un bon système définit ce qui ne change jamais et ce qui change toujours. C'est cet équilibre qui garde le feed vivant et reconnaissable à la fois.",
+      text: "Fix concret : varie dans le cadre cohérent, types de posts, sujets, compositions, et glisse même des formats incarnés comme un [avatar IA ou présentateur virtuel](/blog/avatars-ia-ugc-presentateur-virtuel), tout en gardant tes invariants d'identité. Un bon système définit ce qui ne change jamais et ce qui change toujours. C'est cet équilibre qui garde le feed vivant et reconnaissable à la fois.",
     },
     {
       type: "h3",

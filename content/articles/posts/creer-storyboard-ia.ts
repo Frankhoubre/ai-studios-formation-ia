@@ -163,7 +163,7 @@ export const creerStoryboardIa: Article = {
     },
     {
       type: "p",
-      text: "Gardez une arborescence : brief, script, storyboard, rendus, versions. Nommez les fichiers avec des numéros de case. Si vous ne pouvez pas retrouver la case trois en trente secondes, votre futur vous déteste déjà. Pour l’outillage vidéo global, restez sur des familles d’outils plutôt que sur des modes : [meilleurs outils IA vidéo en 2026](/blog/meilleurs-outils-ia-video). Le storyboard n’est pas un logiciel. C’est une discipline.",
+      text: "Gardez une arborescence : brief, script, storyboard, rendus, versions. Nommez les fichiers avec des numéros de case. Si vous ne pouvez pas retrouver la case trois en trente secondes, votre futur vous déteste déjà. Pour l’outillage vidéo global, restez sur des familles d’outils plutôt que sur des modes : [meilleurs outils IA vidéo en 2026](/blog/meilleurs-outils-ia-video). Si votre chaîne passe par un outil nodal, [comprendre le workflow nodal de ComfyUI](/blog/comfyui-workflow-nodal-debutant) vous aide à garder ces étapes lisibles plutôt qu’emmêlées. Le storyboard n’est pas un logiciel. C’est une discipline.",
     },
     {
       type: "h2",

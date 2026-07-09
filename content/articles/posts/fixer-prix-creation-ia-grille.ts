@@ -76,7 +76,7 @@ export const fixerPrixCreationIaGrille: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le prix reflète la valeur, pas le temps",
+      text: "Le prix reflète la valeur, pas le temps",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const fixerPrixCreationIaGrille: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : construire ta grille tarifaire",
+      text: "Construire ta grille tarifaire",
     },
     {
       type: "h3",
@@ -176,7 +176,7 @@ export const fixerPrixCreationIaGrille: Article = {
     },
     {
       type: "p",
-      text: "Face au client, défends tes prix par la valeur et le résultat, jamais par le temps ou le coût de l'IA. Si on évoque la rapidité de l'outil, recentre sur ce que ton travail apporte. Un bon portfolio et des références appuient ta légitimité. Ne te brade pas pour décrocher un client, un prix bradé attire les mauvais clients et te piège dans des tarifs bas.",
+      text: "Face au client, défends tes prix par la valeur et le résultat, jamais par le temps ou le coût de l'IA. Si on évoque la rapidité de l'outil, recentre sur ce que ton travail apporte. Un bon portfolio et des références appuient ta légitimité. Ne te brade pas pour décrocher un client, un prix bradé attire les mauvais clients et te piège dans des tarifs bas, alors mieux vaut soigner ta manière de [trouver tes premiers clients en création IA](/blog/trouver-premiers-clients-creation-ia) que de casser tes tarifs.",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const fixerPrixCreationIaGrille: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la tarification",
+      text: "Les pièges de la tarification",
     },
     {
       type: "h3",

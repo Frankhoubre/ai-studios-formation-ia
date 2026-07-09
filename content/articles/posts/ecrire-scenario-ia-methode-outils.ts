@@ -76,7 +76,7 @@ export const ecrireScenarioIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : l'IA exécute, tu décides",
+      text: "L'IA exécute, tu décides",
     },
     {
       type: "h3",
@@ -111,7 +111,7 @@ export const ecrireScenarioIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : une méthode en couches",
+      text: "Une méthode en couches",
     },
     {
       type: "h3",
@@ -185,7 +185,7 @@ export const ecrireScenarioIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'écriture assistée",
+      text: "Les pièges de l'écriture assistée",
     },
     {
       type: "h3",

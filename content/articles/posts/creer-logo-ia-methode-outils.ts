@@ -1,22 +1,23 @@
 import type { Article } from "@/lib/types/article";
 
 export const creerLogoIaMethodeOutils: Article = {
-  title: "Créer un logo avec l'IA : méthode et outils",
+  title: "Comment créer un logo avec l'IA : le guide",
   slug: "creer-logo-ia-methode-outils",
   description:
-    "Créer un logo avec l'IA sans tomber dans le générique : cadrer l'identité, générer des pistes, choisir et finaliser un logo lisible et déclinable.",
+    "Comment créer un logo avec l'IA : cadrer l'identité, explorer des pistes et finaliser un logo lisible, déclinable, sans rendu générique.",
   excerpt:
     "L'IA génère mille logos en une minute, mais un bon logo demande de la méthode. Voici comment obtenir une identité lisible, pas un cliché.",
   category: "business-creatif",
   tags: ["logo", "identité visuelle", "branding"],
   date: "2026-06-29",
-  updatedAt: "2026-06-29",
+  updatedAt: "2026-07-09",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/creer-logo-ia-methode-outils.webp",
   imageAlt:
     "Créer un logo avec l'IA, gros plan d'un designer affinant un logo épuré sur un écran dans un studio sombre, lumière d'accent chaude",
   keywords: [
+    "comment créer un logo avec ia",
     "logo ia",
     "créer logo ia",
     "générateur logo ia",
@@ -67,7 +68,16 @@ export const creerLogoIaMethodeOutils: Article = {
     },
     {
       type: "p",
-      text: "La promesse est concrète : à la fin, tu sauras cadrer l'identité avant de générer, explorer des pistes pertinentes, choisir selon les bons critères, et finaliser un logo exploitable. On parle de design, pas de génération au hasard.",
+      text: "La promesse est concrète : à la fin, tu sauras cadrer l'identité avant de générer, explorer des pistes pertinentes, choisir selon les bons critères, et finaliser un logo exploitable. On parle de design, pas de génération au hasard. En résumé, créer un logo avec l'IA tient en quatre étapes :",
+    },
+    {
+      type: "ol",
+      items: [
+        "Cadrer l'identité de la marque : personnalité, secteur, public, différence.",
+        "Générer plusieurs directions à partir de cette identité, pas d'un prompt vague.",
+        "Sélectionner avec les critères d'un bon logo : simple, lisible en petit, déclinable.",
+        "Finaliser en vectoriel et vérifier l'unicité avant tout usage commercial.",
+      ],
     },
     {
       type: "p",
@@ -76,7 +86,7 @@ export const creerLogoIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un logo n'est pas une image",
+      text: "Un logo n'est pas une image",
     },
     {
       type: "h3",
@@ -115,7 +125,7 @@ export const creerLogoIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : créer un logo avec l'IA",
+      text: "Comment créer un logo avec l'IA en 3 étapes",
     },
     {
       type: "h3",
@@ -189,7 +199,7 @@ export const creerLogoIaMethodeOutils: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du logo IA",
+      text: "Les pièges du logo IA",
     },
     {
       type: "h3",

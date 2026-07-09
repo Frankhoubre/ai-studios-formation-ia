@@ -76,7 +76,7 @@ export const banqueStylesVisuelsIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le style, séparé du sujet",
+      text: "Le style, séparé du sujet",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const banqueStylesVisuelsIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : bâtir et utiliser ta banque",
+      text: "Bâtir et utiliser ta banque",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const banqueStylesVisuelsIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la banque de styles",
+      text: "Les pièges de la banque de styles",
     },
     {
       type: "h3",

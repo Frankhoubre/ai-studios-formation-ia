@@ -1,16 +1,16 @@
 import type { Article } from "@/lib/types/article";
 
 export const photosProduitIaShooting: Article = {
-  title: "Photos de produit IA : remplacer le shooting",
+  title: "Photo produit IA : remplacer le shooting",
   slug: "photos-produit-ia-shooting",
   description:
-    "Remplacer un shooting photo produit par l'IA : décors, lumière, mises en scène et cohérence. Des visuels e-commerce crédibles, sans studio ni budget.",
+    "Photo produit IA : remplacer le shooting par des décors, lumières et mises en scène générés. Des visuels e-commerce crédibles, sans studio.",
   excerpt:
     "L'IA peut remplacer une bonne partie des shootings produit. Voici comment obtenir des visuels e-commerce crédibles, sans studio ni budget.",
   category: "business-creatif",
   tags: ["photo produit", "e-commerce", "shooting"],
   date: "2026-06-28",
-  updatedAt: "2026-06-28",
+  updatedAt: "2026-07-09",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/photos-produit-ia-shooting.webp",
@@ -22,6 +22,7 @@ export const photosProduitIaShooting: Article = {
     "photo e-commerce ia",
     "remplacer shooting ia",
     "visuel produit ia",
+    "mise en scène produit",
   ],
   relatedSlugs: [
     "visuels-publicitaires-ia-convertissent",
@@ -81,7 +82,7 @@ export const photosProduitIaShooting: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ce que l'IA remplace vraiment",
+      text: "Ce que l'IA remplace vraiment",
     },
     {
       type: "h3",
@@ -120,7 +121,7 @@ export const photosProduitIaShooting: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : des visuels produit crédibles",
+      text: "Réussir sa photo produit IA en 3 étapes",
     },
     {
       type: "h3",
@@ -194,7 +195,7 @@ export const photosProduitIaShooting: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la photo produit IA",
+      text: "Les pièges de la photo produit IA",
     },
     {
       type: "h3",

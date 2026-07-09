@@ -76,7 +76,7 @@ export const inpaintingIaRetoucherImage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : corriger sans tout perdre",
+      text: "Corriger sans tout perdre",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const inpaintingIaRetoucherImage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : une retouche invisible",
+      text: "Une retouche invisible",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const inpaintingIaRetoucherImage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'inpainting",
+      text: "Les pièges de l'inpainting",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const kreaAiTempsReelUpscale: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : sculpter l'image en direct",
+      text: "Sculpter l'image en direct",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const kreaAiTempsReelUpscale: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : explorer puis finaliser",
+      text: "Explorer puis finaliser",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const kreaAiTempsReelUpscale: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de Krea",
+      text: "Les pièges de Krea",
     },
     {
       type: "h3",

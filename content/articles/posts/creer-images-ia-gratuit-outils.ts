@@ -76,7 +76,7 @@ export const creerImagesIaGratuitOutils: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ce que vaut vraiment le gratuit",
+      text: "Ce que vaut vraiment le gratuit",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const creerImagesIaGratuitOutils: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : exploiter le gratuit sans se bloquer",
+      text: "Exploiter le gratuit sans se bloquer",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const creerImagesIaGratuitOutils: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du gratuit",
+      text: "Les pièges du gratuit",
     },
     {
       type: "h3",

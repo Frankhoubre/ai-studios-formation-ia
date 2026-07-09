@@ -1,16 +1,16 @@
 import type { Article } from "@/lib/types/article";
 
 export const runwaySeedance2FastAleph2: Article = {
-  title: "Runway : Seedance 2.0 Fast et Aleph 2.0, ce qui arrive",
+  title: "Aleph 2.0 sur Runway : montage au prompt",
   slug: "runway-seedance-2-fast-aleph-2",
   description:
-    "Début juin 2026, Runway ajoute Seedance 2.0 Fast (vidéo plus rapide) et Aleph 2.0 (montage par prompt) via son API. Ce que ça change pour les créateurs.",
+    "Aleph 2.0 permet de monter une vidéo existante au prompt, Seedance 2.0 Fast accélère la génération. Ce que la mise à jour Runway change pour toi.",
   excerpt:
     "Runway a ajouté début juin 2026 deux briques à son API : Seedance 2.0 Fast pour générer plus vite, et Aleph 2.0 pour éditer une vidéo existante au prompt. Décryptage.",
   category: "ia-video",
   tags: ["runway", "actualité", "seedance", "montage ia"],
   date: "2026-06-17",
-  updatedAt: "2026-06-18",
+  updatedAt: "2026-07-09",
   readingTime: 9,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/runway-seedance-2-fast-aleph-2.webp",

@@ -76,7 +76,7 @@ export const controlnetPosesControlerComposition: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : guider par la structure",
+      text: "Guider par la structure",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const controlnetPosesControlerComposition: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : imposer une structure",
+      text: "Imposer une structure",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const controlnetPosesControlerComposition: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du contrôle",
+      text: "Les pièges du contrôle",
     },
     {
       type: "h3",

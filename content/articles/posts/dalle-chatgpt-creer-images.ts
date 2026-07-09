@@ -76,7 +76,7 @@ export const dalleChatgptCreerImages: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : créer une image en conversation",
+      text: "Créer une image en conversation",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const dalleChatgptCreerImages: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : générer une image en discutant",
+      text: "Générer une image en discutant",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const dalleChatgptCreerImages: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'image conversationnelle",
+      text: "Les pièges de l'image conversationnelle",
     },
     {
       type: "h3",

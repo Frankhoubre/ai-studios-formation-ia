@@ -76,7 +76,7 @@ export const illustrationIaCreerPro: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : sortir du générique",
+      text: "Sortir du générique",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const illustrationIaCreerPro: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : créer une illustration pro",
+      text: "Créer une illustration pro",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const illustrationIaCreerPro: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'illustration IA",
+      text: "Les pièges de l'illustration IA",
     },
     {
       type: "h3",

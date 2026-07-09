@@ -76,7 +76,7 @@ export const genererImageIaGuideDebutant: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : comment l'IA fabrique une image",
+      text: "Comment l'IA fabrique une image",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const genererImageIaGuideDebutant: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : générer ta première image, étape par étape",
+      text: "Générer ta première image, étape par étape",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const genererImageIaGuideDebutant: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les erreurs du tout premier jour",
+      text: "Les erreurs du tout premier jour",
     },
     {
       type: "h3",
@@ -241,7 +241,7 @@ export const genererImageIaGuideDebutant: Article = {
     },
     {
       type: "p",
-      text: "Séduit par l'ensemble, tu valides une image sans zoomer. Puis tu remarques trop tard une main à six doigts ou un texte illisible en arrière-plan. Ces défauts trahissent l'IA et ruinent une image par ailleurs réussie.",
+      text: "Séduit par l'ensemble, tu valides une image sans zoomer. Puis tu remarques trop tard une main à six doigts ou un texte illisible en arrière-plan. Ces défauts trahissent l'IA et ruinent une image par ailleurs réussie, ce sont d'ailleurs les mêmes signaux que repère [notre guide pour détecter une image générée par IA](/blog/detecter-image-generee-ia).",
     },
     {
       type: "p",

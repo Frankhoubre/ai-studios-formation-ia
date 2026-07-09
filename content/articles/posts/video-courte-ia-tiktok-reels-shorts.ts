@@ -76,7 +76,7 @@ export const videoCourteIaTiktokReelsShorts: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : les codes de la vidéo courte",
+      text: "Les codes de la vidéo courte",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const videoCourteIaTiktokReelsShorts: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire une vidéo courte qui performe",
+      text: "Produire une vidéo courte qui performe",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const videoCourteIaTiktokReelsShorts: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la vidéo courte",
+      text: "Les pièges de la vidéo courte",
     },
     {
       type: "h3",

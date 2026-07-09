@@ -76,7 +76,7 @@ export const batchProduireVisuelsCoherentsSerie: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : fixer la base, varier le reste",
+      text: "Fixer la base, varier le reste",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const batchProduireVisuelsCoherentsSerie: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire un batch homogène",
+      text: "Produire un batch homogène",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const batchProduireVisuelsCoherentsSerie: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du batch",
+      text: "Les pièges du batch",
     },
     {
       type: "h3",

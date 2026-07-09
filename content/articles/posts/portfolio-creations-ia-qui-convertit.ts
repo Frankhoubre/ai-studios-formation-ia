@@ -76,7 +76,7 @@ export const portfolioCreationsIaQuiConvertit: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : à quoi sert vraiment un portfolio",
+      text: "À quoi sert vraiment un portfolio",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const portfolioCreationsIaQuiConvertit: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : monter un portfolio qui convertit",
+      text: "Monter un portfolio qui convertit",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const portfolioCreationsIaQuiConvertit: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui empêche de convertir",
+      text: "Ce qui empêche de convertir",
     },
     {
       type: "h3",

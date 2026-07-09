@@ -76,7 +76,7 @@ export const magnificUpscalersIaAgrandirImage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : agrandir, c'est inventer",
+      text: "Agrandir, c'est inventer",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const magnificUpscalersIaAgrandirImage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : agrandir sans dénaturer",
+      text: "Agrandir sans dénaturer",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const magnificUpscalersIaAgrandirImage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'upscale",
+      text: "Les pièges de l'upscale",
     },
     {
       type: "h3",

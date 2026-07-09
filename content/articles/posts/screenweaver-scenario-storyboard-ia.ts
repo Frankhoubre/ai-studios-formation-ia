@@ -82,7 +82,7 @@ export const screenweaverScenarioStoryboardIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : écrire, voir, préparer au même endroit",
+      text: "Écrire, voir, préparer au même endroit",
     },
     {
       type: "h3",
@@ -117,7 +117,7 @@ export const screenweaverScenarioStoryboardIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : tirer parti de ScreenWeaver",
+      text: "Tirer parti de ScreenWeaver",
     },
     {
       type: "h3",
@@ -191,7 +191,7 @@ export const screenweaverScenarioStoryboardIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges à éviter",
+      text: "Les pièges à éviter",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const focaleObjectifPromptIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la focale comme consigne",
+      text: "La focale comme consigne",
     },
     {
       type: "h3",
@@ -107,7 +107,7 @@ export const focaleObjectifPromptIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : choisir sa focale",
+      text: "Choisir sa focale",
     },
     {
       type: "h3",
@@ -181,7 +181,7 @@ export const focaleObjectifPromptIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la focale",
+      text: "Les pièges de la focale",
     },
     {
       type: "h3",

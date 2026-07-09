@@ -76,7 +76,7 @@ export const renduPelliculeGrainFilmIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : pourquoi le grain fait cinéma",
+      text: "Pourquoi le grain fait cinéma",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const renduPelliculeGrainFilmIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un rendu pellicule crédible",
+      text: "Un rendu pellicule crédible",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const renduPelliculeGrainFilmIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du grain",
+      text: "Les pièges du grain",
     },
     {
       type: "h3",

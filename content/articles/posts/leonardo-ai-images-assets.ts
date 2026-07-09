@@ -76,7 +76,7 @@ export const leonardoAiImagesAssets: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : produire des assets, pas des images isolées",
+      text: "Produire des assets, pas des images isolées",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const leonardoAiImagesAssets: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire avec Leonardo",
+      text: "Produire avec Leonardo",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const leonardoAiImagesAssets: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec Leonardo",
+      text: "Les pièges avec Leonardo",
     },
     {
       type: "h3",

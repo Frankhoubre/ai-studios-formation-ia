@@ -76,7 +76,7 @@ export const avatarsIaUgcPresentateurVirtuel: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un visage qui parle ne pardonne rien",
+      text: "Un visage qui parle ne pardonne rien",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const avatarsIaUgcPresentateurVirtuel: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un présentateur virtuel crédible",
+      text: "Un présentateur virtuel crédible",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const avatarsIaUgcPresentateurVirtuel: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des avatars IA",
+      text: "Les pièges des avatars IA",
     },
     {
       type: "h3",

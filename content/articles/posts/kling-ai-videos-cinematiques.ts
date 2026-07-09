@@ -76,7 +76,7 @@ export const klingAiVideosCinematiques: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la force de Kling",
+      text: "La force de Kling",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const klingAiVideosCinematiques: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un plan Kling dynamique et stable",
+      text: "Un plan Kling dynamique et stable",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const klingAiVideosCinematiques: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec Kling",
+      text: "Les pièges avec Kling",
     },
     {
       type: "h3",

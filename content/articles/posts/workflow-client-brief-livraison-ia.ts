@@ -72,7 +72,7 @@ export const workflowClientBriefLivraisonIa: Article = {
       type: "p",
       text: "Voila la promesse, tu repars avec une méthode débutant friendly, mais pro dans son exécution. On parle vrais clics, vrais réglages, vrais erreurs. Pas de magie. Pas de vernis. Juste du travail propre que tu peux reproduire des ce soir.",
     },
-    { type: "h2", id: "core-concepts", text: "Core Concepts: ce qui se passe vraiment quand un rendu parait cinematographique" },
+    { type: "h2", id: "core-concepts", text: "Ce qui se passe vraiment quand un rendu paraît cinématographique" },
     { type: "h3", id: "intent-avant-style", text: "L'intention avant le style" },
     {
       type: "p",
@@ -107,7 +107,7 @@ export const workflowClientBriefLivraisonIa: Article = {
       type: "p",
       text: "Think about it this way: ces trois cas sont differents, mais la logique de correction est la même. Tu diagnostiques un signal casse, tu modifies un parametre a la fois, tu revalide sur usage reel. Cette approche est detaillee dans [notre méthode concrete pour creer un storyboard IA utilisable en tournage](/blog/creer-storyboard-ia) et elle t evite de tourner en rond pendant des heures.",
     },
-    { type: "h2", id: "practical-workflow", text: "Practical Workflow: les clics et réglages exacts, étape par étape" },
+    { type: "h2", id: "practical-workflow", text: "Les clics et réglages exacts, étape par étape" },
     { type: "h3", id: "setup-projet", text: "Étape 1, preparer le projet en mode production" },
     {
       type: "table",
@@ -124,7 +124,7 @@ export const workflowClientBriefLivraisonIa: Article = {
     },
     {
       type: "p",
-      text: "Ouvre ton outil principal pour structurer un workflow client IA du brief a la livraison, cree un dossier projet unique avec trois sous dossiers, références, sorties brutes, sorties valides. Ce detail parait administratif, pourtant il te sauve quand tu dois revenir sur une version precise. Ensuite fixe ton format principal en 16:9, même si tu sors ensuite en 9:16, tu gardes une base narrative stable.",
+      text: "Ouvre ton outil principal pour structurer un workflow client IA du brief a la livraison, cree un dossier projet unique avec trois sous dossiers, références, sorties brutes, sorties valides. Ce detail parait administratif, pourtant il te sauve quand tu dois revenir sur une version precise. Si tu veux pousser cette organisation jusqu'au plan de tournage, voici comment [monter ton storyboard et ta shot list dans Notion](/blog/storyboard-shotlist-notion-ia). Ensuite fixe ton format principal en 16:9, même si tu sors ensuite en 9:16, tu gardes une base narrative stable.",
     },
     {
       type: "p",
@@ -153,7 +153,7 @@ export const workflowClientBriefLivraisonIa: Article = {
         "Lance 3 generations avec seed fixe, même prompt, pour mesurer la stabilite du moteur.",
         "Modifie seulement la ligne camera, passe de 80mm a 100mm, puis compare la sensation de proximite.",
         "Modifie uniquement la ligne lumiere, passe de soft window light a hard side light et observe la peau.",
-        "Conserve la meilleure base et duplique en variante safe, premium, audacieuse pour le client."
+        "Conserve la meilleure base et duplique en variante safe, premium, audacieuse pour le client, la même logique qui te sert à [produire des visuels cohérents en série](/blog/batch-produire-visuels-coherents-serie) quand le client en demande plusieurs dizaines."
       ],
     },
     {
@@ -199,7 +199,7 @@ export const workflowClientBriefLivraisonIa: Article = {
       type: "p",
       text: "Avant de passer a la suite, verifie toujours que chaque choix sert l'objectif client. Un rendu impressionnant sans intention claire reste une mauvaise livraison.",
     },
-    { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent, et comment reparer techniquement" },
+    { type: "h2", id: "trench-warfare", text: "Ce que les débutants cassent, et comment réparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },
     {
       type: "p",

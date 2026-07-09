@@ -76,7 +76,7 @@ export const googleImagenNanoBananaPhotorealisme: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le photoréalisme selon Google",
+      text: "Le photoréalisme selon Google",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const googleImagenNanoBananaPhotorealisme: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : obtenir un vrai photoréalisme",
+      text: "Obtenir un vrai photoréalisme",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const googleImagenNanoBananaPhotorealisme: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du photoréalisme",
+      text: "Les pièges du photoréalisme",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const ponderationPromptPoidsMots: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : tous les mots ne pèsent pas pareil",
+      text: "Tous les mots ne pèsent pas pareil",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const ponderationPromptPoidsMots: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : doser le poids des mots",
+      text: "Doser le poids des mots",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const ponderationPromptPoidsMots: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la pondération",
+      text: "Les pièges de la pondération",
     },
     {
       type: "h3",

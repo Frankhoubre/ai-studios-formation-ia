@@ -76,7 +76,7 @@ export const hook3SecondesVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ce qu'est vraiment un hook",
+      text: "Ce qu'est vraiment un hook",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const hook3SecondesVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : construire un hook en 3 secondes",
+      text: "Construire un hook en 3 secondes",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const hook3SecondesVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les hooks qui tuent la rétention",
+      text: "Les hooks qui tuent la rétention",
     },
     {
       type: "h3",

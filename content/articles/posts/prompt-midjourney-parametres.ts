@@ -76,7 +76,7 @@ export const promptMidjourneyParametres: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : régler le comment, pas le quoi",
+      text: "Régler le comment, pas le quoi",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const promptMidjourneyParametres: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : combiner les paramètres",
+      text: "Combiner les paramètres",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const promptMidjourneyParametres: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des paramètres",
+      text: "Les pièges des paramètres",
     },
     {
       type: "h3",

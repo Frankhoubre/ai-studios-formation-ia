@@ -76,7 +76,7 @@ export const decrireLumierePromptIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : parler lumière à la machine",
+      text: "Parler lumière à la machine",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const decrireLumierePromptIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : écrire une lumière qui sculpte",
+      text: "Écrire une lumière qui sculpte",
     },
     {
       type: "h3",
@@ -191,7 +191,7 @@ export const decrireLumierePromptIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui aplatit ta lumière",
+      text: "Ce qui aplatit ta lumière",
     },
     {
       type: "h3",

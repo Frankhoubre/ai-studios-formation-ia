@@ -76,7 +76,7 @@ export const visuelsPublicitairesIaConvertissent: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un visuel de pub doit vendre",
+      text: "Un visuel de pub doit vendre",
     },
     {
       type: "h3",
@@ -110,12 +110,12 @@ export const visuelsPublicitairesIaConvertissent: Article = {
     },
     {
       type: "p",
-      text: "Le réalisme du produit ou de la scène joue aussi sur la confiance et donc la conversion. Pour un rendu crédible qui ne fait pas faux, appuie-toi sur [notre guide pour des images IA réalistes](/blog/ia-image-realiste).",
+      text: "Le réalisme du produit ou de la scène joue aussi sur la confiance et donc la conversion. Quand la pub doit montrer le produit en situation, mettre ton offre en scène avec des [mockups produit générés par IA](/blog/mockups-produit-ia) renforce cette crédibilité, et pour un rendu qui ne fait pas faux, appuie-toi sur [notre guide pour des images IA réalistes](/blog/ia-image-realiste).",
     },
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un visuel publicitaire qui convertit",
+      text: "Un visuel publicitaire qui convertit",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const visuelsPublicitairesIaConvertissent: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : pourquoi un visuel ne convertit pas",
+      text: "Pourquoi un visuel ne convertit pas",
     },
     {
       type: "h3",

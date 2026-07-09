@@ -76,7 +76,7 @@ export const universVisuelMarqueIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un système, pas une collection",
+      text: "Un système, pas une collection",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const universVisuelMarqueIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : bâtir l'univers de marque",
+      text: "Bâtir l'univers de marque",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const universVisuelMarqueIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'univers de marque",
+      text: "Les pièges de l'univers de marque",
     },
     {
       type: "h3",

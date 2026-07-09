@@ -76,7 +76,7 @@ export const detourerSupprimerFondIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : tout se joue sur les bords",
+      text: "Tout se joue sur les bords",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const detourerSupprimerFondIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un détourage net",
+      text: "Un détourage net",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const detourerSupprimerFondIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du détourage",
+      text: "Les pièges du détourage",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const restaurerColoriserPhotoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : réparer le passé sans le réécrire",
+      text: "Réparer le passé sans le réécrire",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const restaurerColoriserPhotoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : une restauration respectueuse",
+      text: "Une restauration respectueuse",
     },
     {
       type: "h3",
@@ -149,7 +149,7 @@ export const restaurerColoriserPhotoIa: Article = {
     },
     {
       type: "p",
-      text: "Restaure en gardant la retenue, surtout sur les visages. Compare en permanence à l'original pour vérifier que tu répares sans dénaturer. L'objectif est de retrouver la photo, pas d'en créer une nouvelle plus lisse ou plus belle que la réalité.",
+      text: "Restaure en gardant la retenue, surtout sur les visages. Compare en permanence à l'original pour vérifier que tu répares sans dénaturer. Si tu veux isoler le sujet d'un fond trop abîmé pour le réintégrer ailleurs, applique [notre méthode pour détourer et supprimer un fond](/blog/detourer-supprimer-fond-ia). L'objectif est de retrouver la photo, pas d'en créer une nouvelle plus lisse ou plus belle que la réalité.",
     },
     {
       type: "ol",
@@ -189,7 +189,7 @@ export const restaurerColoriserPhotoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la restauration",
+      text: "Les pièges de la restauration",
     },
     {
       type: "h3",

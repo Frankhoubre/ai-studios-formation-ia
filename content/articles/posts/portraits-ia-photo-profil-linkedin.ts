@@ -76,7 +76,7 @@ export const portraitsIaPhotoProfilLinkedin: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ressemblance et confiance",
+      text: "Ressemblance et confiance",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const portraitsIaPhotoProfilLinkedin: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un portrait LinkedIn crédible",
+      text: "Un portrait LinkedIn crédible",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const portraitsIaPhotoProfilLinkedin: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du portrait IA",
+      text: "Les pièges du portrait IA",
     },
     {
       type: "h3",

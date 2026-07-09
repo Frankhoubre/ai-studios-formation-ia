@@ -76,7 +76,7 @@ export const detecterImageGenereeIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : de l'œil au contexte",
+      text: "De l'œil au contexte",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const detecterImageGenereeIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : une détection méthodique",
+      text: "Une détection méthodique",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const detecterImageGenereeIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la détection",
+      text: "Les pièges de la détection",
     },
     {
       type: "h3",

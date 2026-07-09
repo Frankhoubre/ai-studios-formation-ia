@@ -76,7 +76,7 @@ export const lumiereCinemaAmbiancesImagesIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la lumière raconte",
+      text: "La lumière raconte",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const lumiereCinemaAmbiancesImagesIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : 6 ambiances à recréer",
+      text: "6 ambiances à recréer",
     },
     {
       type: "h3",
@@ -190,7 +190,7 @@ export const lumiereCinemaAmbiancesImagesIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la lumière cinéma",
+      text: "Les pièges de la lumière cinéma",
     },
     {
       type: "h3",

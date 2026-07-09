@@ -76,7 +76,7 @@ export const corrigerMainsYeuxDefautsAnatomiquesIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : pourquoi ces zones trahissent l'IA",
+      text: "Pourquoi ces zones trahissent l'IA",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const corrigerMainsYeuxDefautsAnatomiquesIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : éviter, repérer, réparer",
+      text: "Éviter, repérer, réparer",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const corrigerMainsYeuxDefautsAnatomiquesIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les défauts qui passent inaperçus",
+      text: "Les défauts qui passent inaperçus",
     },
     {
       type: "h3",

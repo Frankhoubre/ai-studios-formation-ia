@@ -76,7 +76,7 @@ export const lipSyncIaFaireParlerPersonnage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un visage qui parle ne ment pas",
+      text: "Un visage qui parle ne ment pas",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const lipSyncIaFaireParlerPersonnage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un lip-sync crédible",
+      text: "Un lip-sync crédible",
     },
     {
       type: "h3",
@@ -176,7 +176,7 @@ export const lipSyncIaFaireParlerPersonnage: Article = {
     },
     {
       type: "p",
-      text: "Le lip-sync convainc sur des messages courts, posés, bien cadrés, et montre ses limites sur de longs monologues émotionnels en gros plan. Choisis donc tes usages en conséquence, annonces, explications brèves, présentateurs, UGC court. Pour de l'émotion intense et prolongée, un vrai tournage garde l'avantage.",
+      text: "Le lip-sync convainc sur des messages courts, posés, bien cadrés, et montre ses limites sur de longs monologues émotionnels en gros plan. Choisis donc tes usages en conséquence, annonces, explications brèves, présentateurs, UGC court. Quand le but est de resynchroniser les lèvres sur une langue différente, ce travail rejoint [le doublage et la traduction vidéo par IA](/blog/doublage-traduction-video-ia), où le lip-sync devient central. Pour de l'émotion intense et prolongée, un vrai tournage garde l'avantage.",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const lipSyncIaFaireParlerPersonnage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du lip-sync",
+      text: "Les pièges du lip-sync",
     },
     {
       type: "h3",

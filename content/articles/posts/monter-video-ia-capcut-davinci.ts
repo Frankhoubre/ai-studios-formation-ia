@@ -76,7 +76,7 @@ export const monterVideoIaCapcutDavinci: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts",
+      text: "Les bases du montage d'une vidéo IA",
     },
     {
       type: "h3",
@@ -105,7 +105,7 @@ export const monterVideoIaCapcutDavinci: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow",
+      text: "Le montage étape par étape",
     },
     {
       type: "p",
@@ -146,7 +146,7 @@ export const monterVideoIaCapcutDavinci: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section",
+      text: "Les pièges à éviter",
     },
     {
       type: "h3",

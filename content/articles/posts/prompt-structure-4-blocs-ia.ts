@@ -76,7 +76,7 @@ export const promptStructure4BlocsIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : pourquoi la structure bat l'empilement",
+      text: "Pourquoi la structure bat l'empilement",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const promptStructure4BlocsIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : écrire et tester un prompt en 4 blocs",
+      text: "Écrire et tester un prompt en 4 blocs",
     },
     {
       type: "h3",
@@ -188,7 +188,7 @@ export const promptStructure4BlocsIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui casse un prompt structuré",
+      text: "Ce qui casse un prompt structuré",
     },
     {
       type: "h3",
@@ -231,7 +231,7 @@ export const promptStructure4BlocsIa: Article = {
     },
     {
       type: "p",
-      text: "Fix concret : indique systématiquement une focale et une indication de profondeur de champ, par exemple 85mm, faible profondeur de champ, arrière-plan adouci. Ce simple ajout suffit souvent à faire basculer une image du côté pro.",
+      text: "Fix concret : indique systématiquement une focale et une indication de profondeur de champ, par exemple 85mm, faible profondeur de champ, arrière-plan adouci. Ce simple ajout suffit souvent à faire basculer une image du côté pro, et selon ton outil tu prolonges le bloc caméra par des réglages dédiés, comme détaillé dans [notre guide des paramètres de prompt Midjourney](/blog/prompt-midjourney-parametres).",
     },
     {
       type: "h3",

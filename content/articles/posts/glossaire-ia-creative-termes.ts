@@ -76,7 +76,7 @@ export const glossaireIaCreativeTermes: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : pourquoi le vocabulaire compte",
+      text: "Pourquoi le vocabulaire compte",
     },
     {
       type: "h3",
@@ -107,7 +107,7 @@ export const glossaireIaCreativeTermes: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : le lexique de référence",
+      text: "Le lexique de référence",
     },
     {
       type: "h3",
@@ -181,7 +181,7 @@ export const glossaireIaCreativeTermes: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les confusions classiques",
+      text: "Les confusions classiques",
     },
     {
       type: "h3",

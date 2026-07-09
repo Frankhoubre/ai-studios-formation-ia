@@ -76,7 +76,7 @@ export const clipMusicalIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : l'union de l'image et du son",
+      text: "L'union de l'image et du son",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const clipMusicalIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : créer un clip qui tient",
+      text: "Créer un clip qui tient",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const clipMusicalIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du clip IA",
+      text: "Les pièges du clip IA",
     },
     {
       type: "h3",

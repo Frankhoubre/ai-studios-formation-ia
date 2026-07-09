@@ -76,7 +76,7 @@ export const imagesAbstraitesIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : l'abstrait, ça se compose",
+      text: "L'abstrait, ça se compose",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const imagesAbstraitesIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : créer un abstrait fort",
+      text: "Créer un abstrait fort",
     },
     {
       type: "h3",
@@ -176,7 +176,7 @@ export const imagesAbstraitesIa: Article = {
     },
     {
       type: "p",
-      text: "L'abstrait prend souvent sa valeur en série, fonds harmonieux pour une marque, collection décorative, habillage cohérent. Pour cela, fixe des invariants, palette, type de formes, traitement, et réutilise-les en variant le reste. Une série abstraite cohérente a une signature reconnaissable, même si chaque image diffère.",
+      text: "L'abstrait prend souvent sa valeur en série, fonds harmonieux pour une marque, collection décorative, habillage cohérent. Pour cela, fixe des invariants, palette, type de formes, traitement, et réutilise-les en variant le reste. Tu peux aussi décliner un même visuel sous plusieurs traitements en t'appuyant sur [notre méthode pour changer le style d'une image](/blog/changer-style-image-ia). Une série abstraite cohérente a une signature reconnaissable, même si chaque image diffère.",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const imagesAbstraitesIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'abstrait IA",
+      text: "Les pièges de l'abstrait IA",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const raccordContinuitePlansIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ce qu'est vraiment un raccord",
+      text: "Ce qu'est vraiment un raccord",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const raccordContinuitePlansIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : sécuriser un raccord, étape par étape",
+      text: "Sécuriser un raccord, étape par étape",
     },
     {
       type: "h3",
@@ -193,7 +193,7 @@ export const raccordContinuitePlansIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les faux raccords qui cassent tout",
+      text: "Les faux raccords qui cassent tout",
     },
     {
       type: "h3",

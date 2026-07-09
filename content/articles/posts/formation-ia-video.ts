@@ -1,11 +1,10 @@
 import type { Article } from "@/lib/types/article";
 
 export const formationIaVideo: Article = {
-  title:
-    "Formation IA vidéo : par où commencer quand on veut créer des films, pubs et contenus cinématiques",
+  title: "Formation IA vidéo : par où commencer",
   slug: "formation-ia-video",
   description:
-    "Un chemin clair pour passer de la curiosité à une chaîne de prod IA vidéo crédible : idée, script, images, storyboard, génération, montage, son.",
+    "Formation IA vidéo : un parcours clair du script au montage pour bâtir une chaîne de prod crédible, sans dispersion.",
   excerpt:
     "Si vous démarrez l’IA vidéo comme une collection de démos, vous allez vite saturer. Voici un parcours réaliste, du brief à la sortie, sans magie ni dispersion.",
   category: "ia-video",
@@ -17,7 +16,7 @@ export const formationIaVideo: Article = {
     "storyboard",
   ],
   date: "2026-04-02",
-  updatedAt: "2026-04-18",
+  updatedAt: "2026-07-09",
   readingTime: 16,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/formation-ia-video.webp",
@@ -48,7 +47,7 @@ export const formationIaVideo: Article = {
     {
       question: "Combien de temps avant un premier résultat propre ?",
       answer:
-        "Un premier clip propre peut arriver vite. Un résultat cohérent, avec une intention claire et une narration qui tient debout, prend plus de cycles. Comptez des semaines de itérations réelles, pas des soirées de prompts au hasard.",
+        "Un premier clip propre peut arriver vite. Un résultat cohérent, avec une intention claire et une narration qui tient debout, prend plus de cycles. Comptez des semaines d'itérations réelles, pas des soirées de prompts au hasard.",
     },
     {
       question: "L’IA remplace-t-elle le scénario ?",
@@ -115,7 +114,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Les références ne servent pas à copier une image connue. Elles servent à verrouiller des paramètrès : lumière, grain, focale, palette, rythme de découpage, type de mouvement caméra. Vous construisez une mini bible visuelle, même légère. Deux captures de films, trois photos, une note sur la texture de peau ou la façon dont la ville respire la nuit. Cette bible devient votre filtre de sélection quand l’IA vous propose douze variations plausibles. Sans filtre, vous choisissez au feeling et vous perdez la cohérence. Avec filtre, vous choisissez au service de l’intention.",
+      text: "Les références ne servent pas à copier une image connue. Elles servent à verrouiller des paramètres : lumière, grain, focale, palette, rythme de découpage, type de mouvement caméra. Vous construisez une mini bible visuelle, même légère. Deux captures de films, trois photos, une note sur la texture de peau ou la façon dont la ville respire la nuit. Cette bible devient votre filtre de sélection quand l’IA vous propose douze variations plausibles. Sans filtre, vous choisissez au feeling et vous perdez la cohérence. Avec filtre, vous choisissez au service de l’intention.",
     },
     {
       type: "h3",
@@ -133,7 +132,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Quand l’image commence à bouger, le cerveau du spectateur change de critère. Une image fixe peut survivre à une petite incohérence. Une vidéo non. Le mouvement révèle la physique, la profondeur, la continuité du personnage, la stabilité de la lumière. C’est pourquoi beaucoup de débutants ont l’impression d’être « à deux centimètrès du résultat » pendant des jours. Ils corrigent au pixel près un plan qui ne veut toujours pas tenir ensemble avec le suivant. La correction utile n’est pas toujours locale. Parfois, il faut remonter au storyboard, changer un cadrage, simplifier une action, réduire une ambition de mouvement pour sauver la lecture globale.",
+      text: "Quand l’image commence à bouger, le cerveau du spectateur change de critère. Une image fixe peut survivre à une petite incohérence. Une vidéo non. Le mouvement révèle la physique, la profondeur, la continuité du personnage, la stabilité de la lumière. C’est pourquoi beaucoup de débutants ont l’impression d’être « à deux centimètres du résultat » pendant des jours. Ils corrigent au pixel près un plan qui ne veut toujours pas tenir ensemble avec le suivant. La correction utile n’est pas toujours locale. Parfois, il faut remonter au storyboard, changer un cadrage, simplifier une action, réduire une ambition de mouvement pour sauver la lecture globale.",
     },
     {
       type: "p",
@@ -154,7 +153,7 @@ export const formationIaVideo: Article = {
     },
     {
       type: "p",
-      text: "Le montage est la phase où beaucoup de projets IA basculent soit vers le pro, soit vers l’amateur. Pas parce que les transitions sont compliquées, mais parce que le rythme et le son révèlent l’intention. Un plan peut être techniquement propre et narrativement mort si le cut arrive au mauvais endroit. Le son, lui, est souvent traité comme une couche finale. C’est l’inverse qui marche : le son guide l’émotion, et l’image suit. Voix, bruitages, musique, silence : ce sont des décisions. Même une voix IA crédible demande une direction, un tempo, une respiration. Si vous voulez comprendre comment éviter le côté artificiel sur l’image fixe, le guide [IA image réaliste](/blog/ia-image-realiste) croise des principes qui se transpose souvent à la vidéo en matière de texture et de lumière.",
+      text: "Le montage est la phase où beaucoup de projets IA basculent soit vers le pro, soit vers l’amateur. Pas parce que les transitions sont compliquées, mais parce que le rythme et le son révèlent l’intention. Un plan peut être techniquement propre et narrativement mort si le cut arrive au mauvais endroit. Le son, lui, est souvent traité comme une couche finale. C’est l’inverse qui marche : le son guide l’émotion, et l’image suit. Voix, bruitages, musique, silence : ce sont des décisions. Même une voix IA crédible demande une direction, un tempo, une respiration. Si vous voulez comprendre comment éviter le côté artificiel sur l’image fixe, le guide [IA image réaliste](/blog/ia-image-realiste) croise des principes qui se transposent souvent à la vidéo en matière de texture et de lumière.",
     },
     {
       type: "h2",
@@ -166,7 +165,7 @@ export const formationIaVideo: Article = {
       items: [
         "Trop d’outils en parallèle : vous perdez vos presets et votre style. Réduisez, maîtrisez, puis élargissez.",
         "Prompts décoratifs : vous décrivez tout sauf la fonction du plan. Recentrez : sujet, action, intention, lumière, contraintes.",
-        "Aucun critère de sélection : vous gardez « parce que c’est beau ». imposez un critère lié à la scène.",
+        "Aucun critère de sélection : vous gardez « parce que c’est beau ». Imposez un critère lié à la scène.",
         "Pas de versioning : vous écrasez une bonne prise. Archivez, nommez, gardez des jalons.",
         "Sous-estimer le son : vous livrez une image brillante avec une bande son générique. Le public entend le cheap avant de voir le détail.",
       ],
@@ -206,6 +205,29 @@ export const formationIaVideo: Article = {
     {
       type: "p",
       text: "Imaginez une pub de trente secondes pour un produit simple. Vous commencez par une promesse : après la vidéo, le spectateur doit avoir envie de tester le produit parce qu’il comprend une situation familière, pas parce que l’image est « futuriste ». Vous écrivez six beats : accroche, problème, tension légère, révélation du produit, preuve rapide, appel à l’action. Vous storyboard chaque beat avec un cadrage et une ligne d’action. Vous générez des images cohérentes avec une même direction de lumière. Vous passez au mouvement là où ça sert le beat, pas partout. Vous montez en privilégiant le rythme des phrases et des silences. Vous ajoutez une voix qui sonne humaine, même si elle est assistée. Le résultat n’est pas magique. Il est structuré. C’est la différence entre une démo et un contenu.",
+    },
+    {
+      type: "h2",
+      id: "choisir-formation",
+      text: "Choisir une formation IA vidéo : les critères qui comptent",
+    },
+    {
+      type: "p",
+      text: "Si vous cherchez une formation IA vidéo, gratuite ou payante, jugez-la sur ce qu'elle vous fait produire, pas sur la liste d'outils qu'elle promet de couvrir. Les outils changent tous les trois mois. Une chaîne de production, elle, reste valable quand un modèle en remplace un autre.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Elle enseigne une chaîne complète (script, storyboard, génération, montage, son), pas un seul outil.",
+        "Elle vous fait livrer des exercices concrets : une pub courte, une séquence cohérente, pas des images isolées.",
+        "Elle montre les critères de sélection d'un plan, pas seulement comment en générer.",
+        "Elle est à jour : un module qui date de plus de six mois sur les outils doit être signalé comme tel.",
+        "Le formateur produit lui-même : demandez à voir ses films ou ses pubs, pas ses captures d'écran.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Commencez par du gratuit pour valider que la discipline vous plaît, en vous appuyant par exemple sur [les outils vidéo IA utilisables sans payer](/blog/creer-video-ia-gratuit). Investissez ensuite dans une formation structurée quand vous savez ce que vous voulez produire, le budget suivra une intention au lieu de la précéder.",
     },
     {
       type: "h2",

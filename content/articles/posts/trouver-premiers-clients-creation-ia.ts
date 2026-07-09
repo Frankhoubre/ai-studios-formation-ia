@@ -76,7 +76,7 @@ export const trouverPremiersClientsCreationIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : se rendre visible et utile",
+      text: "Se rendre visible et utile",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const trouverPremiersClientsCreationIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : décrocher tes premiers clients",
+      text: "Décrocher tes premiers clients",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const trouverPremiersClientsCreationIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la prospection",
+      text: "Les pièges de la prospection",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const filmIaGratuitCourtMetrage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : un film, pas une suite de plans",
+      text: "Un film, pas une suite de plans",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const filmIaGratuitCourtMetrage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : réaliser ton court-métrage gratuit",
+      text: "Réaliser ton court-métrage gratuit",
     },
     {
       type: "h3",
@@ -163,7 +163,7 @@ export const filmIaGratuitCourtMetrage: Article = {
     },
     {
       type: "p",
-      text: "Pour la production gratuite des plans elle-même, combine les outils comme expliqué dans [notre guide pour créer une vidéo IA gratuitement](/blog/creer-video-ia-gratuit). Le travail par clips courts assemblés y est détaillé, et il s'applique parfaitement au court-métrage.",
+      text: "Pour la production gratuite des plans elle-même, combine les outils comme expliqué dans [notre guide pour créer une vidéo IA gratuitement](/blog/creer-video-ia-gratuit). Le travail par clips courts assemblés y est détaillé, et il s'applique parfaitement au court-métrage. Pour repérer les plateformes qui valent vraiment ton quota, appuie-toi sur [notre sélection des meilleurs sites de vidéo IA gratuits](/blog/meilleurs-sites-video-ia-gratuits).",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const filmIaGratuitCourtMetrage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du court-métrage gratuit",
+      text: "Les pièges du court-métrage gratuit",
     },
     {
       type: "h3",

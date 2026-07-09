@@ -76,7 +76,7 @@ export const imagesCinemaIaSceneFilm: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : les ingrédients du cinéma",
+      text: "Les ingrédients du cinéma",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const imagesCinemaIaSceneFilm: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : recréer une scène de film",
+      text: "Recréer une scène de film",
     },
     {
       type: "h3",
@@ -190,7 +190,7 @@ export const imagesCinemaIaSceneFilm: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui trahit le faux cinéma",
+      text: "Ce qui trahit le faux cinéma",
     },
     {
       type: "h3",

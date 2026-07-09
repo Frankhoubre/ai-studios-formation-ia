@@ -104,7 +104,7 @@ export const workflowIaCreatif: Article = {
     },
     {
       type: "p",
-      text: "Parfois la meilleure décision est de quitter l’IA pour une retouche locale ou un montage. Ce n’est pas un échec. C’est une fin de chaîne assumée. L’IA est un accélérateur de matière, pas une promesse de bout en bout parfaite sur tous les projets. Si vous montez, votre workflow inclut déjà une sortie timeline. Si vous ne montez pas, votre workflow doit quand même inclure une étape de finition et de contrôle qualité.",
+      text: "Parfois la meilleure décision est de quitter l’IA pour une retouche locale ou un montage. Ce n’est pas un échec. C’est une fin de chaîne assumée. L’IA est un accélérateur de matière, pas une promesse de bout en bout parfaite sur tous les projets, que vous produisiez des images, des vidéos ou que vous cherchiez à [générer des modèles 3D avec l’IA](/blog/generer-modeles-3d-ia) pour alimenter vos assets. Si vous montez, votre workflow inclut déjà une sortie timeline. Si vous ne montez pas, votre workflow doit quand même inclure une étape de finition et de contrôle qualité.",
     },
     {
       type: "table",

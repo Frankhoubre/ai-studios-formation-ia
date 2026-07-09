@@ -10,7 +10,7 @@ export const comfyuiWorkflowNodalDebutant: Article = {
   category: "workflow-creatif",
   tags: ["comfyui", "stable diffusion", "workflow"],
   date: "2026-06-17",
-  updatedAt: "2026-06-17",
+  updatedAt: "2026-07-09",
   readingTime: 14,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/comfyui-workflow-nodal-debutant.webp",
@@ -76,7 +76,7 @@ export const comfyuiWorkflowNodalDebutant: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le nodal sans jargon",
+      text: "Le nodal sans jargon",
     },
     {
       type: "h3",
@@ -111,7 +111,7 @@ export const comfyuiWorkflowNodalDebutant: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : démarrer sans se noyer",
+      text: "Démarrer sans se noyer",
     },
     {
       type: "h3",
@@ -184,8 +184,25 @@ export const comfyuiWorkflowNodalDebutant: Article = {
     },
     {
       type: "h2",
+      id: "trouver-workflows",
+      text: "Où trouver des workflows ComfyUI prêts à l'emploi",
+    },
+    {
+      type: "p",
+      text: "Tu n'as pas besoin de construire tes workflows ComfyUI toi-même, la communauté en partage des milliers. Les templates intégrés à ComfyUI couvrent déjà les cas classiques : génération d'image, image vers image, upscale. C'est le premier endroit où piocher, ils sont maintenus et fonctionnent avec les modèles récents.",
+    },
+    {
+      type: "p",
+      text: "Astuce précieuse : une image générée avec ComfyUI embarque souvent son workflow complet dans le fichier PNG. Glisse l'image dans l'interface, et le graphe entier se recharge, avec tous les réglages. C'est le moyen le plus rapide d'apprendre, tu pars d'un résultat qui te plaît et tu remontes la recette exacte qui l'a produit.",
+    },
+    {
+      type: "p",
+      text: "Pour aller plus loin, le gestionnaire d'extensions de ComfyUI installe les noeuds manquants d'un workflow partagé en quelques clics, et la [documentation officielle de ComfyUI](https://docs.comfy.org/) recense les templates et les bases du graphe. À chaque workflow récupéré, applique la grille des cinq noeuds vue plus haut : repère le modèle, les deux prompts, l'échantillonnage et la sortie, et le fouillis devient lisible.",
+    },
+    {
+      type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du débutant",
+      text: "Les pièges du débutant",
     },
     {
       type: "h3",

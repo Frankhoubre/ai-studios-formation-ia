@@ -76,7 +76,7 @@ export const pikaLumaAlternativesVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : des alternatives accessibles",
+      text: "Des alternatives accessibles",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const pikaLumaAlternativesVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : exploiter Pika et Luma",
+      text: "Exploiter Pika et Luma",
     },
     {
       type: "h3",
@@ -176,7 +176,7 @@ export const pikaLumaAlternativesVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Ne te limite pas à un seul outil. Beaucoup de créateurs combinent plusieurs alternatives selon les projets, l'une pour la créativité, l'autre pour la fluidité, un géant pour un plan clé. Cette flexibilité te donne le meilleur de chaque outil sans dépendre d'un seul, et te permet d'optimiser qualité et coût projet par projet.",
+      text: "Ne te limite pas à un seul outil. Beaucoup de créateurs combinent plusieurs alternatives selon les projets, l'une pour la créativité, l'autre pour la fluidité, un géant pour un plan clé. Élargis aussi tes essais à [Hailuo, Wan et Seedance, d'autres modèles vidéo accessibles](/blog/hailuo-wan-seedance-video-ia), qui se glissent très bien dans ce jeu d'alternatives. Cette flexibilité te donne le meilleur de chaque outil sans dépendre d'un seul, et te permet d'optimiser qualité et coût projet par projet.",
     },
     {
       type: "p",
@@ -189,7 +189,7 @@ export const pikaLumaAlternativesVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du choix d'alternative",
+      text: "Les pièges du choix d'alternative",
     },
     {
       type: "h3",

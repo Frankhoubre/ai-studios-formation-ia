@@ -76,7 +76,7 @@ export const recraftDesignVectorielIcones: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : le vectoriel, format roi du design",
+      text: "Le vectoriel, format roi du design",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const recraftDesignVectorielIcones: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : des assets graphiques pro",
+      text: "Des assets graphiques pro",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const recraftDesignVectorielIcones: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du design IA",
+      text: "Les pièges du design IA",
     },
     {
       type: "h3",

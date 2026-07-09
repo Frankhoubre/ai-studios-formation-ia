@@ -76,7 +76,7 @@ export const compositionCadrageImageIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : composer, c'est hiérarchiser",
+      text: "Composer, c'est hiérarchiser",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const compositionCadrageImageIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : composer une image étape par étape",
+      text: "Composer une image étape par étape",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const compositionCadrageImageIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui aplatit tes images",
+      text: "Ce qui aplatit tes images",
     },
     {
       type: "h3",

@@ -76,7 +76,7 @@ export const runwayGuideVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : Runway, une suite, pas un bouton",
+      text: "Runway, une suite, pas un bouton",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const runwayGuideVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire avec Runway",
+      text: "Produire avec Runway",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const runwayGuideVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges avec Runway",
+      text: "Les pièges avec Runway",
     },
     {
       type: "h3",

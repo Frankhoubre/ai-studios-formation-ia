@@ -76,7 +76,7 @@ export const seedCfgStepsReglagesImageIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : trois leviers, trois rôles",
+      text: "Trois leviers, trois rôles",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const seedCfgStepsReglagesImageIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : régler avec méthode",
+      text: "Régler avec méthode",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const seedCfgStepsReglagesImageIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges des réglages",
+      text: "Les pièges des réglages",
     },
     {
       type: "h3",

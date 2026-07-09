@@ -76,7 +76,7 @@ export const automatiserProductionContenuIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : automatiser le mécanique, garder l'humain aux décisions",
+      text: "Automatiser le mécanique, garder l'humain aux décisions",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const automatiserProductionContenuIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : bâtir une chaîne fiable",
+      text: "Bâtir une chaîne fiable",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const automatiserProductionContenuIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'automatisation",
+      text: "Les pièges de l'automatisation",
     },
     {
       type: "h3",

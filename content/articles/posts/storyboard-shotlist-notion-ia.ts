@@ -77,7 +77,7 @@ export const storyboardShotlistNotionIa: Article = {
       videoId: "YUhi_J0tNhQ",
       title: "L'IA transforme mon scénario en storyboard en quelques secondes",
     },
-    { type: "h2", id: "core-concepts", text: "Core Concepts: ce qui se passe vraiment quand un rendu parait cinematographique" },
+    { type: "h2", id: "core-concepts", text: "Ce qui se passe vraiment quand un rendu paraît cinématographique" },
     { type: "h3", id: "intent-avant-style", text: "L'intention avant le style" },
     {
       type: "p",
@@ -112,7 +112,7 @@ export const storyboardShotlistNotionIa: Article = {
       type: "p",
       text: "Think about it this way: ces trois cas sont differents, mais la logique de correction est la même. Tu diagnostiques un signal casse, tu modifies un parametre a la fois, tu revalide sur usage reel. Cette approche est detaillee dans [notre méthode concrete pour creer un storyboard IA utilisable en tournage](/blog/creer-storyboard-ia) et elle t evite de tourner en rond pendant des heures.",
     },
-    { type: "h2", id: "practical-workflow", text: "Practical Workflow: les clics et réglages exacts, étape par étape" },
+    { type: "h2", id: "practical-workflow", text: "Les clics et réglages exacts, étape par étape" },
     { type: "h3", id: "setup-projet", text: "Étape 1, preparer le projet en mode production" },
     {
       type: "table",
@@ -204,7 +204,7 @@ export const storyboardShotlistNotionIa: Article = {
       type: "p",
       text: "Avant de passer a la suite, verifie toujours que chaque choix sert l'objectif client. Un rendu impressionnant sans intention claire reste une mauvaise livraison.",
     },
-    { type: "h2", id: "trench-warfare", text: "The Trench Warfare Section: ce que les débutants cassent, et comment reparer techniquement" },
+    { type: "h2", id: "trench-warfare", text: "Ce que les débutants cassent, et comment réparer techniquement" },
     { type: "h3", id: "erreur-lumiere", text: "Erreur 1, lumiere sans cause" },
     {
       type: "p",

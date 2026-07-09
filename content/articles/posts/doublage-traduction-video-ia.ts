@@ -76,7 +76,7 @@ export const doublageTraductionVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : une chaîne, pas un bouton",
+      text: "Une chaîne, pas un bouton",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const doublageTraductionVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : doubler une vidéo proprement",
+      text: "Doubler une vidéo proprement",
     },
     {
       type: "h3",
@@ -149,7 +149,7 @@ export const doublageTraductionVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Les deux maillons les plus sensibles sont la traduction et la voix. Relis la traduction pour le sens et le ton, et écoute la voix générée pour son naturel. Ces vérifications humaines sont ce qui transforme un doublage automatique en doublage crédible.",
+      text: "Les deux maillons les plus sensibles sont la traduction et la voix. Relis la traduction pour le sens et le ton, et écoute la voix générée pour son naturel. Ces vérifications humaines sont ce qui transforme un doublage automatique en doublage crédible. Quand un doublage complet n'est pas nécessaire, [des sous-titres automatiques par IA](/blog/sous-titres-automatiques-ia-video) offrent une localisation plus légère qui repose sur la même traduction soignée.",
     },
     {
       type: "ol",
@@ -189,7 +189,7 @@ export const doublageTraductionVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du doublage IA",
+      text: "Les pièges du doublage IA",
     },
     {
       type: "h3",

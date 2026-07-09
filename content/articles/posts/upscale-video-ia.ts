@@ -76,7 +76,7 @@ export const upscaleVideoIa: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la résolution, et le temps",
+      text: "La résolution, et le temps",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const upscaleVideoIa: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : un upscale vidéo propre",
+      text: "Un upscale vidéo propre",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const upscaleVideoIa: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de l'upscale vidéo",
+      text: "Les pièges de l'upscale vidéo",
     },
     {
       type: "h3",

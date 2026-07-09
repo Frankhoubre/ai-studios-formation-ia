@@ -108,7 +108,7 @@ export const promptImageIaCinema: Article = {
     },
     {
       type: "p",
-      text: "Les contraintes négatives servent à empêcher des défauts récurrents : mains, dents, trop de netteté globale, peau cire, yeux « trop parfaits ». Mais si votre scène est floue, vous passerez votre temps à enlever des problèmes sans construire une image. Utilisez les négatifs comme une liste de garde-fou, pas comme un substitut à l’intention. Et si vous travaillez un personnage récurrent, la cohérence passe aussi par des références et des fiches, comme dans [personnage cohérent sur plusieurs images IA](/blog/personnage-coherent-ia).",
+      text: "Les contraintes négatives servent à empêcher des défauts récurrents : mains, dents, trop de netteté globale, peau cire, yeux « trop parfaits ». Mais si votre scène est floue, vous passerez votre temps à enlever des problèmes sans construire une image. Utilisez les négatifs comme une liste de garde-fou, pas comme un substitut à l’intention. Et si vous travaillez un personnage récurrent, la cohérence passe aussi par des références et des fiches, comme dans [personnage cohérent sur plusieurs images IA](/blog/personnage-coherent-ia), voire par [un LoRA entraîné sur un style ou un visage](/blog/lora-entrainer-style-visage) quand vous voulez verrouiller une identité visuelle d’une image à l’autre.",
     },
     {
       type: "table",

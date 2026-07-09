@@ -67,7 +67,7 @@ export const bibliothequePromptsReutilisables: Article = {
     },
     {
       type: "p",
-      text: "La promesse est concrète : à la fin, tu sauras capitaliser tes réussites en briques modulaires, les ranger pour les retrouver en quelques secondes, et produire bien plus vite sans perdre en qualité. On parle d'une méthode simple, applicable avec les outils que tu as déjà.",
+      text: "La promesse est concrète : à la fin, tu sauras capitaliser tes réussites en briques modulaires, les ranger pour les retrouver en quelques secondes, et produire bien plus vite sans perdre en qualité. Ces briques deviennent d'ailleurs la base idéale pour [automatiser une partie de ta production de contenu](/blog/automatiser-production-contenu-ia) une fois la méthode rodée. On parle d'une méthode simple, applicable avec les outils que tu as déjà.",
     },
     {
       type: "p",
@@ -76,7 +76,7 @@ export const bibliothequePromptsReutilisables: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : capitaliser au lieu de répéter",
+      text: "Capitaliser au lieu de répéter",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const bibliothequePromptsReutilisables: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : bâtir sa bibliothèque",
+      text: "Bâtir sa bibliothèque",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const bibliothequePromptsReutilisables: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : ce qui rend une bibliothèque inutile",
+      text: "Ce qui rend une bibliothèque inutile",
     },
     {
       type: "h3",

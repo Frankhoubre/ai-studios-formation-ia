@@ -1,7 +1,7 @@
 import type { Article } from "@/lib/types/article";
 
 export const promptNegatifIaImagesPropres: Article = {
-  title: "Prompt négatif IA : quoi enlever pour des images plus propres",
+  title: "Prompt négatif IA : nettoyer tes images",
   slug: "prompt-negatif-ia-images-propres",
   description:
     "Le prompt négatif mal utilisé salit tes images IA. Méthode terrain pour savoir quoi enlever, quoi garder et corriger un rendu sale sans tout casser.",
@@ -10,7 +10,7 @@ export const promptNegatifIaImagesPropres: Article = {
   category: "prompting",
   tags: ["prompt négatif", "negative prompt", "nettoyer image IA"],
   date: "2026-06-16",
-  updatedAt: "2026-06-16",
+  updatedAt: "2026-07-09",
   readingTime: 21,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/prompt-negatif-ia-images-propres.webp",
@@ -76,7 +76,7 @@ export const promptNegatifIaImagesPropres: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : ce que fait vraiment un prompt négatif",
+      text: "Ce que fait vraiment un prompt négatif",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const promptNegatifIaImagesPropres: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : construire un prompt négatif par soustraction",
+      text: "Construire un prompt négatif par soustraction",
     },
     {
       type: "h3",
@@ -168,7 +168,7 @@ export const promptNegatifIaImagesPropres: Article = {
     },
     {
       type: "p",
-      text: "Cette discipline de comparaison rejoint la question de la longueur de prompt. Si tu veux creuser le sujet du dosage, regarde [notre guide pour décrire la lumière dans un prompt IA](/blog/decrire-lumiere-prompt-ia), parce que la même logique de soustraction s'applique au positif comme au négatif.",
+      text: "Cette discipline de comparaison rejoint la question de la longueur de prompt et du poids que prend chaque mot, un point que tu peux approfondir avec [notre guide sur la pondération des mots dans un prompt](/blog/ponderation-prompt-poids-mots). Si tu veux creuser le sujet du dosage, regarde aussi [notre guide pour décrire la lumière dans un prompt IA](/blog/decrire-lumiere-prompt-ia), parce que la même logique de soustraction s'applique au positif comme au négatif.",
     },
     {
       type: "p",
@@ -194,7 +194,7 @@ export const promptNegatifIaImagesPropres: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les erreurs qui salissent tes images",
+      text: "Les erreurs qui salissent tes images",
     },
     {
       type: "h3",

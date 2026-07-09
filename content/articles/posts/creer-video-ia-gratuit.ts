@@ -1,7 +1,7 @@
 import type { Article } from "@/lib/types/article";
 
 export const creerVideoIaGratuit: Article = {
-  title: "Créer une vidéo IA gratuitement : les outils sans payer",
+  title: "Créer une vidéo IA gratuitement : le guide",
   slug: "creer-video-ia-gratuit",
   description:
     "Créer une vidéo avec l'IA sans payer, c'est possible. Les types d'outils gratuits, leurs limites réelles et la méthode pour produire un clip propre sans budget.",
@@ -10,7 +10,7 @@ export const creerVideoIaGratuit: Article = {
   category: "ia-video",
   tags: ["vidéo IA gratuite", "outils gratuits", "sans budget"],
   date: "2026-06-21",
-  updatedAt: "2026-06-21",
+  updatedAt: "2026-07-09",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/creer-video-ia-gratuit.webp",
@@ -76,7 +76,7 @@ export const creerVideoIaGratuit: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : la vidéo IA gratuite, ce que c'est vraiment",
+      text: "La vidéo IA gratuite, ce que c'est vraiment",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const creerVideoIaGratuit: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : produire un clip IA sans payer",
+      text: "Produire un clip IA sans payer",
     },
     {
       type: "h3",
@@ -162,7 +162,7 @@ export const creerVideoIaGratuit: Article = {
     },
     {
       type: "p",
-      text: "Pour aller plus loin sur le choix des outils de génération et de montage, y compris payants quand tu seras prêt, garde sous la main [notre panorama des meilleurs outils IA vidéo](/blog/meilleurs-outils-ia-video). Le passage du gratuit au payant se fera quand une limite précise te bloquera.",
+      text: "Pour aller plus loin sur le choix des outils de génération et de montage, y compris payants quand tu seras prêt, garde sous la main [notre panorama des meilleurs outils IA vidéo](/blog/meilleurs-outils-ia-video). Le passage du gratuit au payant se fera quand une limite précise te bloquera. Et si tu veux structurer ton apprentissage au lieu d'accumuler des tests, [notre parcours formation IA vidéo](/blog/formation-ia-video) pose la chaîne complète, du script au montage.",
     },
     {
       type: "p",
@@ -188,7 +188,7 @@ export const creerVideoIaGratuit: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges de la vidéo IA gratuite",
+      text: "Les pièges de la vidéo IA gratuite",
     },
     {
       type: "h3",

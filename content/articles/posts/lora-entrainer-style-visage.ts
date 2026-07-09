@@ -76,7 +76,7 @@ export const loraEntrainerStyleVisage: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : apprendre un concept à l'IA",
+      text: "Apprendre un concept à l'IA",
     },
     {
       type: "h3",
@@ -115,7 +115,7 @@ export const loraEntrainerStyleVisage: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : entraîner un LoRA fiable",
+      text: "Entraîner un LoRA fiable",
     },
     {
       type: "h3",
@@ -189,7 +189,7 @@ export const loraEntrainerStyleVisage: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du LoRA",
+      text: "Les pièges du LoRA",
     },
     {
       type: "h3",

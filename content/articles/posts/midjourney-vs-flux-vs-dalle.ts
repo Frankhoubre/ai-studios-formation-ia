@@ -76,7 +76,7 @@ export const midjourneyVsFluxVsDalle: Article = {
     {
       type: "h2",
       id: "core-concepts",
-      text: "Core Concepts : trois personnalités distinctes",
+      text: "Trois personnalités distinctes",
     },
     {
       type: "h3",
@@ -85,7 +85,7 @@ export const midjourneyVsFluxVsDalle: Article = {
     },
     {
       type: "p",
-      text: "Chaque outil incarne une philosophie. Midjourney privilégie la beauté et la signature artistique, il embellit, stylise, impressionne. Flux mise sur le réalisme et la fidélité au prompt, il fait ce que tu dis avec un rendu crédible. DALL·E, via le conversationnel, privilégie l'accessibilité, tu dialogues sans technique. Comprendre ces philosophies est plus utile que n'importe quel classement chiffré.",
+      text: "Chaque outil incarne une philosophie. Midjourney privilégie la beauté et la signature artistique, il embellit, stylise, impressionne. Flux mise sur le réalisme et la fidélité au prompt, il fait ce que tu dis avec un rendu crédible. DALL·E, via le conversationnel, privilégie l'accessibilité, tu dialogues sans technique, comme le détaille [notre guide pour créer des images avec ChatGPT](/blog/dalle-chatgpt-creer-images). Comprendre ces philosophies est plus utile que n'importe quel classement chiffré.",
     },
     {
       type: "p",
@@ -115,7 +115,7 @@ export const midjourneyVsFluxVsDalle: Article = {
     {
       type: "h2",
       id: "practical-workflow",
-      text: "Practical Workflow : choisir le bon des trois",
+      text: "Choisir le bon des trois",
     },
     {
       type: "h3",
@@ -187,7 +187,7 @@ export const midjourneyVsFluxVsDalle: Article = {
     {
       type: "h2",
       id: "trench-warfare",
-      text: "The Trench Warfare Section : les pièges du comparatif",
+      text: "Les pièges du comparatif",
     },
     {
       type: "h3",
