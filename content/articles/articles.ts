@@ -117,6 +117,7 @@ import { promptIaGuideComplet } from "@/content/articles/posts/prompt-ia-guide-c
 import { seedance25VideoIa30Secondes } from "@/content/articles/posts/seedance-2-5-video-ia-30-secondes";
 import { geminiImagesPersonnaliseesDonneesGoogle } from "@/content/articles/posts/gemini-images-personnalisees-donnees-google";
 import { pourquoiVideosIaAirFaux } from "@/content/articles/posts/pourquoi-videos-ia-air-faux";
+import { promptsVideoIa50Exemples } from "@/content/articles/posts/prompts-video-ia-50-exemples";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -243,4 +244,5 @@ export const articles: Article[] = [
   seedance25VideoIa30Secondes,
   geminiImagesPersonnaliseesDonneesGoogle,
   pourquoiVideosIaAirFaux,
+  promptsVideoIa50Exemples,
 ];
