@@ -47,3 +47,4 @@ webp 1600px < 300 Ko par ffmpeg).
 | Date | Jour | Progression | Slug | KW principal | Notes |
 |------|------|-------------|------|--------------|-------|
 | 2026-07-20 | J1 | 1/30 | prompts-video-ia-50-exemples | prompt vidéo ia | jour 1 lancé manuellement |
+| 2026-07-22 | J2 | 2/30 | agence-video-ia-lancer | agence vidéo ia | run automatisé daily-article-ai-studios |

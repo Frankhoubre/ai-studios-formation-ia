@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-07-22 | Agence vidéo IA : se lancer et vendre en 2026 | `agence-video-ia-lancer` | Business créatif | agence vidéo ia | Evergreen (business, J2 run 30j) | fr.wikipedia.org (agence de communication) |
 | 2026-07-20 | Prompts vidéo IA : 50 exemples qui marchent | `prompts-video-ia-50-exemples` | Prompting | prompt vidéo ia | Evergreen (prompt pack, J1 run 30j) | deepmind.google (doc Veo) |
 | 2026-07-06 | Seedance 2.5 : 30 secondes de vidéo IA d'un coup | `seedance-2-5-video-ia-30-secondes` | IA vidéo | seedance 2.5 | News | TechTimes (24/06/2026), Volcano Engine FORCE (23/06), fingerlakes1 |
 | 2026-07-06 | Gemini crée des images IA à partir de tes données Google | `gemini-images-personnalisees-donnees-google` | IA image | gemini images personnalisées | News | blog.google (29/06/2026), TechCrunch (29/06) |
