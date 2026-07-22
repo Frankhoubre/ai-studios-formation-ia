@@ -118,6 +118,7 @@ import { seedance25VideoIa30Secondes } from "@/content/articles/posts/seedance-2
 import { geminiImagesPersonnaliseesDonneesGoogle } from "@/content/articles/posts/gemini-images-personnalisees-donnees-google";
 import { pourquoiVideosIaAirFaux } from "@/content/articles/posts/pourquoi-videos-ia-air-faux";
 import { promptsVideoIa50Exemples } from "@/content/articles/posts/prompts-video-ia-50-exemples";
+import { agenceVideoIaLancer } from "@/content/articles/posts/agence-video-ia-lancer";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -245,4 +246,5 @@ export const articles: Article[] = [
   geminiImagesPersonnaliseesDonneesGoogle,
   pourquoiVideosIaAirFaux,
   promptsVideoIa50Exemples,
+  agenceVideoIaLancer,
 ];
