@@ -48,3 +48,4 @@ webp 1600px < 300 Ko par ffmpeg).
 |------|------|-------------|------|--------------|-------|
 | 2026-07-20 | J1 | 1/30 | prompts-video-ia-50-exemples | prompt vidéo ia | jour 1 lancé manuellement |
 | 2026-07-22 | J2 | 2/30 | agence-video-ia-lancer | agence vidéo ia | run automatisé daily-article-ai-studios |
+| 2026-07-23 | J3 | 3/30 | veo-3-vs-sora-comparatif | veo vs sora | Sora fermé par OpenAI (app 26/04/2026, API 24/09/2026) : angle réorienté vers "duel fini + remplacer Sora" |
