@@ -119,6 +119,7 @@ import { geminiImagesPersonnaliseesDonneesGoogle } from "@/content/articles/post
 import { pourquoiVideosIaAirFaux } from "@/content/articles/posts/pourquoi-videos-ia-air-faux";
 import { promptsVideoIa50Exemples } from "@/content/articles/posts/prompts-video-ia-50-exemples";
 import { agenceVideoIaLancer } from "@/content/articles/posts/agence-video-ia-lancer";
+import { veo3VsSoraComparatif } from "@/content/articles/posts/veo-3-vs-sora-comparatif";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -247,4 +248,5 @@ export const articles: Article[] = [
   pourquoiVideosIaAirFaux,
   promptsVideoIa50Exemples,
   agenceVideoIaLancer,
+  veo3VsSoraComparatif,
 ];
