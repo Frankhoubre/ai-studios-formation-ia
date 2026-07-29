@@ -120,6 +120,7 @@ import { pourquoiVideosIaAirFaux } from "@/content/articles/posts/pourquoi-video
 import { promptsVideoIa50Exemples } from "@/content/articles/posts/prompts-video-ia-50-exemples";
 import { agenceVideoIaLancer } from "@/content/articles/posts/agence-video-ia-lancer";
 import { veo3VsSoraComparatif } from "@/content/articles/posts/veo-3-vs-sora-comparatif";
+import { chaineYoutubeAutomatiseeIa } from "@/content/articles/posts/chaine-youtube-automatisee-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -249,4 +250,5 @@ export const articles: Article[] = [
   promptsVideoIa50Exemples,
   agenceVideoIaLancer,
   veo3VsSoraComparatif,
+  chaineYoutubeAutomatiseeIa,
 ];
