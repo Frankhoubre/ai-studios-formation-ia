@@ -7,6 +7,17 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-03
+
+- `2026-08-03 | RUN 30J J5 | main direct | 0869427 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - `creer-video-youtube-ia` (IA vidéo, tutoriel A à Z, script → voix off → visuels → montage → miniature, KW "créer vidéo youtube ia")
+  - Angle imposé par le plan : chaîne complète étape par étape avec point de vérification à chaque maillon (pas un outil miracle, un enchaînement précis).
+  - Note de rattrapage : la mémoire J4 (chaine-youtube-automatisee-ia, 2026-07-29) n'avait pas été committée à la fin du run précédent ; commit de rattrapage `43c0ce9` fait en tout début de ce run avant de démarrer J5.
+  - Lien externe support.google.com/youtube/answer/72431 (spécifications techniques miniature YouTube). Pas de lien vers `elevenlabs-guide-complet` (J9, pas encore publié) : redirigé vers `elevenlabs-voiceover-pub` existant avec ancre honnête.
+  - Hero Higgsfield soul_2 16:9 (bureau de créateur la nuit, laptop + smartphone + casque) converti webp 1600px (85 Ko). Audit 121 articles 0 err / 0 warn, lint et build verts, check-registry OK.
+  - Maillage : liens internes vers formation-ia-video, monter-video-ia-capcut-davinci, chaine-youtube-automatisee-ia, elevenlabs-voiceover-pub.
+  - Cinquième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (159 URLs, HTTP 200).
+
 ## 2026-07-29
 
 - `2026-07-29 | RUN 30J J4 | main direct | b43f934 | 1 article | 1 evergreen (business/stratégie) | poussé sur main`
