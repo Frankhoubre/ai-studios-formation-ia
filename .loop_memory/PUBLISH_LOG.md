@@ -7,6 +7,16 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-07-29
+
+- `2026-07-29 | RUN 30J J4 | main direct | b43f934 | 1 article | 1 evergreen (business/stratégie) | poussé sur main`
+  - `chaine-youtube-automatisee-ia` (Business créatif, evergreen, la vérité sur la chaîne YouTube faceless automatisée à l'IA, KW "chaîne youtube automatisée ia")
+  - Angle honnête anti-get-rich-quick imposé par le plan : ce qui marche, ce qui sature, où placer l'automatisation sans se faire démonétiser. Pas de revenu passif promis, pas de chiffres inventés.
+  - Fait clé vérifié par recherche web : YouTube a précisé sa politique de monétisation le 15/07/2025 en renommant "contenu répétitif" en "contenu inauthentique" (contenu produit en masse, sans apport d'auteur). L'IA reste monétisable si elle enrichit un contenu original. Source officielle liée : support.google.com/youtube/answer/1311392 (politiques de monétisation). Divulgation du contenu synthétique dans YouTube Studio mentionnée sans inventer de seuils.
+  - Hero Higgsfield soul_2 16:9 (bureau de créateur la nuit, timeline de montage) converti webp 1600px (70 Ko). Audit 120 articles 0 err / 0 warn, lint et build verts.
+  - Maillage : liens internes vers gagner-argent-ia-creative-modeles, video-courte-ia-tiktok-reels-shorts, sous-titres-automatiques-ia-video, automatiser-production-contenu-ia, video-ia-guide-complet, meilleurs-outils-ia-video. Lien externe support.google.com (YouTube).
+  - Quatrième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (158 URLs, HTTP 200).
+
 ## 2026-07-23
 
 - `2026-07-23 | RUN 30J J3 | main direct | 2c1019f | 1 article | 1 evergreen (comparatif) | poussé sur main`

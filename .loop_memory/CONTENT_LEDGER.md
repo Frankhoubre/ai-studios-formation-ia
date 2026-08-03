@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-07-29 | Chaîne YouTube automatisée avec l'IA : la vérité | `chaine-youtube-automatisee-ia` | Business créatif | chaîne youtube automatisée ia | Evergreen (business/stratégie, J4 run 30j) | support.google.com (politiques de monétisation YouTube, inauthentic content 15/07/2025) |
 | 2026-07-23 | Veo 3 vs Sora : pourquoi le duel est fini | `veo-3-vs-sora-comparatif` | IA vidéo | veo vs sora | Evergreen (comparatif, J3 run 30j) | help.openai.com (arrêt de Sora), deepmind.google (Veo), support.google.com (crédits Flow) |
 | 2026-07-22 | Agence vidéo IA : se lancer et vendre en 2026 | `agence-video-ia-lancer` | Business créatif | agence vidéo ia | Evergreen (business, J2 run 30j) | fr.wikipedia.org (agence de communication) |
 | 2026-07-20 | Prompts vidéo IA : 50 exemples qui marchent | `prompts-video-ia-50-exemples` | Prompting | prompt vidéo ia | Evergreen (prompt pack, J1 run 30j) | deepmind.google (doc Veo) |
