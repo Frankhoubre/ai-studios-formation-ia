@@ -121,6 +121,7 @@ import { promptsVideoIa50Exemples } from "@/content/articles/posts/prompts-video
 import { agenceVideoIaLancer } from "@/content/articles/posts/agence-video-ia-lancer";
 import { veo3VsSoraComparatif } from "@/content/articles/posts/veo-3-vs-sora-comparatif";
 import { chaineYoutubeAutomatiseeIa } from "@/content/articles/posts/chaine-youtube-automatisee-ia";
+import { creerVideoYoutubeIa } from "@/content/articles/posts/creer-video-youtube-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -251,4 +252,5 @@ export const articles: Article[] = [
   agenceVideoIaLancer,
   veo3VsSoraComparatif,
   chaineYoutubeAutomatiseeIa,
+  creerVideoYoutubeIa,
 ];
