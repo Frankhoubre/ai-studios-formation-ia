@@ -7,6 +7,18 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-17
+
+- `2026-08-17 | RUN 30J J6 | main direct | efcade7 | 1 article | 1 evergreen (prompt pack) | poussé sur main`
+  - `prompt-veo-3-exemples` (Prompting, prompt pack, 25 prompts Veo 3 classés par usage : dialogue, ambiance sonore, physique, plans cinématiques, formats sociaux, KW "prompt veo 3")
+  - Angle du plan respecté : satellite de prompts-video-ia-50-exemples spécifique Veo (audio natif, dialogue, physique). Le guide veo-3-generer-videos-ia garde le KW marque "veo 3".
+  - Vérification web : la version courante est Veo 3.1 (annonce Google du 15/10/2025 : images de référence, first/last frame, extension de scène, mêmes règles de prompt). Article écrit "Veo 3 et 3.1", pas de réorientation nécessaire. Faits repris de J3 (8 s, son natif) cohérents.
+  - Hero **Nano Banana 2** via Vercel AI Gateway (`scripts/generate-hero-nb2.mjs`, premier run sans Higgsfield) : webp 16:9 131 Ko, coût affiché 0,139 $.
+  - Maillage : liens internes vers prompts-video-ia-50-exemples, veo-3-generer-videos-ia, decrire-lumiere-prompt-ia, veo-3-vs-sora-comparatif. Lien externe developers.googleblog.com (annonce Veo 3.1). CTA formation gratuite.
+  - Audit 122 articles 0 err / 0 warn, lint et build verts. check-registry KO avant commit (fichier pas encore suivi), OK après add.
+  - Le commit inclut aussi la migration hero laissée en attente dans l'arbre de travail : generate-hero.py réécrit NB2, notes CLAUDE.md et RUN_30J.md.
+  - Sixième article du run 30 jours. Runs du 04 au 16/08 manqués (tâche planifiée disparue, recréée ce jour).
+
 ## 2026-08-03
 
 - `2026-08-03 | RUN 30J J5 | main direct | 0869427 | 1 article | 1 evergreen (tutoriel) | poussé sur main`

@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-08-17 | Prompts Veo 3 : structure et exemples testés | `prompt-veo-3-exemples` | Prompting | prompt veo 3 | Evergreen (prompt pack, J6 run 30j) | developers.googleblog.com (annonce Veo 3.1, 15/10/2025) |
 | 2026-08-03 | Créer une vidéo YouTube avec l'IA de A à Z | `creer-video-youtube-ia` | IA vidéo | créer vidéo youtube ia | Evergreen (tutoriel, J5 run 30j) | support.google.com (spécifications miniature YouTube) |
 | 2026-07-29 | Chaîne YouTube automatisée avec l'IA : la vérité | `chaine-youtube-automatisee-ia` | Business créatif | chaîne youtube automatisée ia | Evergreen (business/stratégie, J4 run 30j) | support.google.com (politiques de monétisation YouTube, inauthentic content 15/07/2025) |
 | 2026-07-23 | Veo 3 vs Sora : pourquoi le duel est fini | `veo-3-vs-sora-comparatif` | IA vidéo | veo vs sora | Evergreen (comparatif, J3 run 30j) | help.openai.com (arrêt de Sora), deepmind.google (Veo), support.google.com (crédits Flow) |

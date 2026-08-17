@@ -55,3 +55,4 @@ heroes (utilisé pour J1 à J5, 2026-07-20 → 2026-08-03, avant ce changement).
 | 2026-07-23 | J3 | 3/30 | veo-3-vs-sora-comparatif | veo vs sora | Sora fermé par OpenAI (app 26/04/2026, API 24/09/2026) : angle réorienté vers "duel fini + remplacer Sora" |
 | 2026-07-29 | J4 | 4/30 | chaine-youtube-automatisee-ia | chaîne youtube automatisée ia | Angle honnête anti-hype. Fait clé : politique YouTube "contenu inauthentique" (15/07/2025), source officielle liée. Hero Higgsfield soul_2 |
 | 2026-08-03 | J5 | 5/30 | creer-video-youtube-ia | créer vidéo youtube ia | Tutoriel A à Z (script/voix/visuels/montage/miniature). Lien elevenlabs-guide-complet remplacé par elevenlabs-voiceover-pub (pas encore publié). Hero Higgsfield soul_2 |
+| 2026-08-17 | J6 | 6/30 | prompt-veo-3-exemples | prompt veo 3 | runs du 04 au 16/08 manqués (tâche planifiée disparue, recréée ce jour), hero basculé Higgsfield → Nano Banana 2 via Vercel AI Gateway |
