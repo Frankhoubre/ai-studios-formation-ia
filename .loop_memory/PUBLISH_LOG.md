@@ -137,3 +137,18 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 > À partir du run 2 : chaque article publié doit aussi apparaître dans
 > CONTENT_LEDGER.md, et chaque push doit confirmer le statut Vercel (Ready).
+
+## 2026-08-17 : article hors plan (publication différée 2026-08-21)
+
+- **Article** : Créer un plan vidéo IA de A à Z sur Imaginode
+  - Slug : `creer-plan-video-ia-imaginode` · Catégorie : Workflow créatif
+  - Mot-clé principal : plan vidéo ia (secondaires : imaginode, canvas ia, canvas à nodes, workflow vidéo ia)
+  - **Hors run 30 jours** : article produit Imaginode (outil de Frank), demandé à part.
+    Ne touche pas RUN_30J.md ni au plan quotidien.
+  - `date: 2026-08-21` (volontaire : 3 articles Imaginode sur 3 sites à dates
+    décalées ; le repo masque les articles futurs jusqu'à leur date). Committé et
+    poussé le 2026-08-17, visible en ligne à partir du 21/08.
+  - Hero : vraie frame extraite de `SimpleAI/public/about.mp4` (t=4 s, ffmpeg,
+    1600 px, ~51 Ko), pas de génération Nano Banana pour cet article produit.
+  - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
+  - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.

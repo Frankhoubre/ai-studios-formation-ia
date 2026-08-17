@@ -206,3 +206,12 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 - `upscale-video-ia` → `magnific-upscalers-ia-agrandir-image`, `krea-ai-temps-reel-upscale`, `meilleurs-outils-ia-video`
 - `controlnet-poses-controler-composition` → `composition-cadrage-image-ia`, `personnage-coherent-ia`, `prompt-structure-4-blocs-ia`
 - `seed-cfg-steps-reglages-image-ia` → `prompt-negatif-ia-images-propres`, `prompt-structure-4-blocs-ia`, `stable-diffusion-debutant-demarrer`
+## Hors plan (2026-08-17)
+
+| 2026-08-21 | Créer un plan vidéo IA de A à Z sur Imaginode | `creer-plan-video-ia-imaginode` | Workflow créatif | plan vidéo ia | imaginode; canvas ia; canvas à nodes; workflow vidéo ia | /blog/creer-plan-video-ia-imaginode |
+
+- `creer-plan-video-ia-imaginode` → `workflow-ia-creatif`, `comfyui-workflow-nodal-debutant`, `creer-storyboard-ia`
+  (article produit Imaginode, hors run 30 jours ; date de publication différée au
+  2026-08-21, masqué jusque-là par lib/articles.ts. Intention : tutoriel workflow
+  canvas à nodes, angle distinct de comfyui-workflow-nodal-debutant qui couvre
+  ComfyUI en local.)

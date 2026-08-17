@@ -123,6 +123,7 @@ import { veo3VsSoraComparatif } from "@/content/articles/posts/veo-3-vs-sora-com
 import { chaineYoutubeAutomatiseeIa } from "@/content/articles/posts/chaine-youtube-automatisee-ia";
 import { creerVideoYoutubeIa } from "@/content/articles/posts/creer-video-youtube-ia";
 import { promptVeo3Exemples } from "@/content/articles/posts/prompt-veo-3-exemples";
+import { creerPlanVideoIaImaginode } from "@/content/articles/posts/creer-plan-video-ia-imaginode";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -255,4 +256,5 @@ export const articles: Article[] = [
   chaineYoutubeAutomatiseeIa,
   creerVideoYoutubeIa,
   promptVeo3Exemples,
+  creerPlanVideoIaImaginode,
 ];
