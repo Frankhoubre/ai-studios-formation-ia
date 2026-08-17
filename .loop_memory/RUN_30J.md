@@ -3,9 +3,13 @@
 Run 30 jours démarré le **2026-07-20** (J1 lancé manuellement). Objectif : 1 article
 par jour, sujets J1 à J30 de `.loop_memory/seo-90-day-plan.md` (Phase 1 :
 opportunités GSC + intentions commerciales). Publication automatisée ensuite via la
-tâche planifiée `daily-article-ai-studios` à **08:53** (Europe/Paris). Hero image
-générée via **Higgsfield MCP** (modèle soul_2, 16:9, cinematic still, conversion
-webp 1600px < 300 Ko par ffmpeg).
+tâche planifiée `daily-article-ai-studios` à **08:53** (Europe/Paris).
+
+**Hero image (depuis le 2026-08-17)** : `python scripts/generate-hero.py --slug <slug>
+--prompt "..."`, modèle **Nano Banana 2** (`google/gemini-3.1-flash-image`) via le
+**Vercel AI Gateway** en REST (`AI_GATEWAY_API_KEY` dans `.env`), recadrage 16:9 et
+export webp 1600px par ffmpeg. **Higgsfield MCP ne doit plus être utilisé** pour les
+heroes (utilisé pour J1 à J5, 2026-07-20 → 2026-08-03, avant ce changement).
 
 ## Sujets J1 à J30 (source : seo-90-day-plan.md, ne pas dévier sans raison notée ici)
 

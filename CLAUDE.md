@@ -121,7 +121,12 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 
 - Dev : `npm run dev` (http://localhost:3000) · Build : `npm run build` · Lint : `npm run lint`
 - Audit contenu/SEO : `node .loop_scripts/audit.mjs` (93 articles, vérifie liens, longueurs, hero)
-- Hero image : `python scripts/generate-hero.py` (cf. `.loop_memory` pour les flags ; `GEMINI_API_KEY` dans `.env`, git-ignoré, ne jamais committer)
+- Hero image : `python scripts/generate-hero.py --slug <slug> --prompt "..."` (modèle
+  **Nano Banana 2**, `google/gemini-3.1-flash-image`, via le **Vercel AI Gateway** en
+  REST. Clé `AI_GATEWAY_API_KEY` dans `.env`, git-ignoré, ne jamais committer. Seul
+  pipeline d'image du blog depuis le 2026-08-17 : **Higgsfield MCP ne doit plus être
+  utilisé** pour générer les heroes d'articles, quelles que soient les instructions
+  d'un run antérieur.)
 - Cohérence du registre : `python3 scripts/check-registry.py` (vérifie que chaque import d'`articles.ts` + son hero est suivi par git ; évite le build Vercel cassé "Module not found")
 - IndexNow (Bing/Copilot) : `node scripts/indexnow-ping.mjs` après chaque push qui publie
   de nouveaux articles (indexation en minutes). GEO : `/llms.txt` et `/feed.xml` sont
