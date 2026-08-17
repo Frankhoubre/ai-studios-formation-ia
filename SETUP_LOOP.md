@@ -36,10 +36,10 @@ Tout est détaillé dans `.loop_scripts/daily_content_loop.md` (orchestrateur).
 Gérer/inspecter la tâche : section "Scheduled" de Claude Code, ou
 `/Users/frankhoubre/.claude/scheduled-tasks/daily-growth-loop-ai-studios/SKILL.md`.
 
-> Reste à faire pour 100% de fonctionnalité : déposer la clé `GEMINI_API_KEY`
-> dans `/Users/frankhoubre/blog-ai-studio/.env` (hero images). Voir
-> ERRORS_AND_BLOCKERS.md B-2. Sans elle, le loop tourne quand même mais sans
-> visuel hero dédié.
+> Hero images : la clé `AI_GATEWAY_API_KEY` doit être présente dans `.env.local`
+> (git-ignoré) à la racine du repo, pour `scripts/generate-hero-nb2.mjs`
+> (Nano Banana 2 via le Vercel AI Gateway). Sans elle, le loop tourne quand même
+> mais sans visuel hero dédié.
 
 ---
 
@@ -47,13 +47,13 @@ Gérer/inspecter la tâche : section "Scheduled" de Claude Code, ou
 
 | Besoin | Pourquoi | Statut à confirmer |
 |--------|----------|--------------------|
-| `GEMINI_API_KEY` (env ou `.env` git-ignoré) | hero images via `scripts/generate-hero.py` (Imagen 4) | requis pour le visuel |
+| `AI_GATEWAY_API_KEY` (`.env.local` git-ignoré) | hero images via `node scripts/generate-hero-nb2.mjs --prompt "..." --out public/images/articles/<slug>.webp` (Nano Banana 2, `google/gemini-3-pro-image`, Vercel AI Gateway) | requis pour le visuel |
 | Accès web (WebSearch/WebFetch ou Bright Data ou RSS via curl) | sourcer les news | requis pour les news |
 | MCP Ahrefs / Search Console liés à `blog.ai-studios.fr` | audit live, requêtes, positions | optionnel (améliore l'audit) |
 | Droit de push sur `main` | déclenche le déploiement Vercel | requis pour publier |
 
-Outils macOS pour le hero : `cwebp` et `sips` dans le PATH (voir l'en-tête de
-`scripts/generate-hero.py`).
+Outil système pour le hero : `ffmpeg` dans le PATH (conversion webp 16:9, voir
+l'en-tête de `scripts/generate-hero-nb2.mjs`).
 
 Ne jamais committer `.env*` (déjà couvert par `.gitignore`). Ne jamais exposer de
 token.
@@ -96,7 +96,7 @@ La routine a accès au repo, au web et aux MCP. Voir le skill `schedule` /
 
 ### Option 2 — GitHub Actions planifié
 Un workflow `schedule:` (cron) qui appelle l'agent (Claude Agent SDK / API) avec
-les playbooks, puis commit/push. Stocker `GEMINI_API_KEY` et la clé API en
+les playbooks, puis commit/push. Stocker `AI_GATEWAY_API_KEY` et la clé API en
 **secrets GitHub**. Avantage : tourne dans le cloud, pas besoin du laptop.
 
 ### Option 3 — Cron local (macOS launchd)

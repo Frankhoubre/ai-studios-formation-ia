@@ -5,11 +5,12 @@ par jour, sujets J1 à J30 de `.loop_memory/seo-90-day-plan.md` (Phase 1 :
 opportunités GSC + intentions commerciales). Publication automatisée ensuite via la
 tâche planifiée `daily-article-ai-studios` à **08:53** (Europe/Paris).
 
-**Hero image (depuis le 2026-08-17)** : `python scripts/generate-hero.py --slug <slug>
---prompt "..."`, modèle **Nano Banana 2** (`google/gemini-3.1-flash-image`) via le
-**Vercel AI Gateway** en REST (`AI_GATEWAY_API_KEY` dans `.env`), recadrage 16:9 et
-export webp 1600px par ffmpeg. **Higgsfield MCP ne doit plus être utilisé** pour les
-heroes (utilisé pour J1 à J5, 2026-07-20 → 2026-08-03, avant ce changement).
+**Hero image (depuis le 2026-08-17)** : `node scripts/generate-hero-nb2.mjs --prompt "..."
+--out public/images/articles/<slug>.webp`, modèle **Nano Banana 2**
+(`google/gemini-3-pro-image`) via le **Vercel AI Gateway** (https://ai-gateway.vercel.sh,
+clé `AI_GATEWAY_API_KEY` dans `.env.local`, git-ignoré). **Higgsfield MCP ne doit plus
+être utilisé** pour les heroes (utilisé pour J1 à J5, 2026-07-20 → 2026-08-03, avant ce
+changement).
 
 ## Sujets J1 à J30 (source : seo-90-day-plan.md, ne pas dévier sans raison notée ici)
 

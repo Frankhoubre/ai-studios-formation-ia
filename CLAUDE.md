@@ -120,13 +120,13 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 ## Commandes
 
 - Dev : `npm run dev` (http://localhost:3000) · Build : `npm run build` · Lint : `npm run lint`
-- Audit contenu/SEO : `node .loop_scripts/audit.mjs` (93 articles, vérifie liens, longueurs, hero)
-- Hero image : `python scripts/generate-hero.py --slug <slug> --prompt "..."` (modèle
-  **Nano Banana 2**, `google/gemini-3.1-flash-image`, via le **Vercel AI Gateway** en
-  REST. Clé `AI_GATEWAY_API_KEY` dans `.env`, git-ignoré, ne jamais committer. Seul
-  pipeline d'image du blog depuis le 2026-08-17 : **Higgsfield MCP ne doit plus être
-  utilisé** pour générer les heroes d'articles, quelles que soient les instructions
-  d'un run antérieur.)
+- Audit contenu/SEO : `node .loop_scripts/audit.mjs` (122 articles, vérifie liens, longueurs, hero)
+- Hero image : `node scripts/generate-hero-nb2.mjs --prompt "..." --out public/images/articles/<slug>.webp`
+  (modèle **Nano Banana 2**, `google/gemini-3-pro-image`, via le **Vercel AI Gateway**,
+  https://ai-gateway.vercel.sh. Clé `AI_GATEWAY_API_KEY` dans `.env.local`, git-ignoré,
+  ne jamais committer. Seul pipeline d'image du blog depuis le 2026-08-17 : **Higgsfield
+  MCP ne doit plus être utilisé** pour générer les heroes d'articles, quelles que soient
+  les instructions d'un run antérieur.)
 - Cohérence du registre : `python3 scripts/check-registry.py` (vérifie que chaque import d'`articles.ts` + son hero est suivi par git ; évite le build Vercel cassé "Module not found")
 - IndexNow (Bing/Copilot) : `node scripts/indexnow-ping.mjs` après chaque push qui publie
   de nouveaux articles (indexation en minutes). GEO : `/llms.txt` et `/feed.xml` sont
@@ -135,9 +135,10 @@ correct ? Et toujours : **`node .loop_scripts/audit.mjs`**, **`npm run lint`**,
 ## Notes infra
 
 - Articles datés dans le futur : masqués jusqu'à leur date (`lib/articles.ts`).
-- Daily growth loop : tâche planifiée `daily-growth-loop-ai-studios` (08:10 Europe/Paris),
-  mémoire dans `.loop_memory/`, playbooks dans `.loop_scripts/`. Lire ces fichiers avant tout
-  travail de loop. Attention aux push concurrents avec l'autopilot.
+- Loop quotidien : tâche planifiée `daily-article-ai-studios` (cron, 08:53 Europe/Paris),
+  qui suit `.loop_memory/seo-90-day-plan.md`. L'ancienne tâche `daily-growth-loop-ai-studios`
+  n'existe plus. Mémoire dans `.loop_memory/`, playbooks dans `.loop_scripts/`. Lire ces
+  fichiers avant tout travail de loop. Attention aux push concurrents avec l'autopilot.
 - Hook anti-build-cassé : `.githooks/pre-push` lance `scripts/check-registry.py` et bloque
   tout push où `articles.ts` importe un fichier non commité. Activation par clone (une fois) :
   `git config core.hooksPath .githooks`. Contournement exceptionnel : `git push --no-verify`.

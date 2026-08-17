@@ -4,7 +4,7 @@
  * through the Vercel AI Gateway, then convert it to webp via ffmpeg.
  *
  * Usage:
- *   node scripts/generate-hero-nb2.mjs --prompt "cinematic still ..." --out public/assets/blog/blog-<slug>-hero.webp
+ *   node scripts/generate-hero-nb2.mjs --prompt "cinematic still ..." --out public/images/articles/<slug>.webp
  *
  * The API key is read from AI_GATEWAY_API_KEY (env) or from .env.local at the
  * repo root (git-ignored). Never commit the key.

@@ -11,7 +11,8 @@ les étapes dans l'ordre. Max 10 itérations / jour, sinon hard stop + log.
    Si collision possible → STOP, logger B-0 dans ERRORS_AND_BLOCKERS.md.
 3. `git pull` sur `main` (repartir d'un état propre).
 4. Créer la branche du jour : `git switch -c loop/daily-YYYY-MM-DD`.
-5. Confirmer les accès : web (news), GEMINI_API_KEY (hero), MCP SEO (optionnel).
+5. Confirmer les accès : web (news), AI_GATEWAY_API_KEY dans `.env.local` (hero),
+   MCP SEO (optionnel).
    Accès manquant → adapter le scope, logger dans ERRORS_AND_BLOCKERS.md.
 
 ## 1. Recherche news → `news_research_loop.md`
@@ -58,7 +59,9 @@ PROGRESS, ERRORS_AND_BLOCKERS, IDEAS_BACKLOG, et écrire DAILY_REPORT.md.
 7. Métadonnées (description ≤ 160, keywords 4-6, imageAlt, excerpt, tags).
 8. Liens internes (≥ 2 vers slugs existants) + 1 lien externe d'autorité.
 9. CTA doux (formation gratuite) si pertinent.
-10. Hero : `python scripts/generate-hero.py --slug <slug> --prompt "<brief EN>"`.
+10. Hero : `node scripts/generate-hero-nb2.mjs --prompt "<brief EN>" --out
+    public/images/articles/<slug>.webp` (Nano Banana 2, `google/gemini-3-pro-image`,
+    via le Vercel AI Gateway, clé `AI_GATEWAY_API_KEY` dans `.env.local`).
     Si l'article parle d'un outil/site précis : ajoute de VRAIES captures d'écran
     de sa page publique avec `python3 scripts/capture-screenshot.py --url <url>
     --slug <slug> --label home --alt "<alt>"` (plusieurs si utile : home,
