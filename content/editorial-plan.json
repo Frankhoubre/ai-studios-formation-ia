@@ -1,5 +1,5 @@
 {
-  "note": "Plan éditorial autopilote — 60 articles, 2/jour à partir du 2026-06-17. Chaque itération du loop lit ce fichier, prend les 2 prochains 'done:false', écrit l'article complet (intro 3p, Core Concepts h2+2h3, Practical Workflow h2 + table + ol + pro tip + 2-3 liens internes + 1 lien externe Wikipédia, Trench Warfare h2 + 4 erreurs, FAQ h2 + 6 Q/R miroir), génère le hero 2K via scripts/generate-hero.py, enregistre dans content/articles/articles.ts, build, commit, push, puis passe done:true.",
+  "note": "Plan éditorial autopilote — 60 articles, 2/jour à partir du 2026-06-17. Chaque itération du loop lit ce fichier, prend les 2 prochains 'done:false', écrit l'article complet (intro 3p, Core Concepts h2+2h3, Practical Workflow h2 + table + ol + pro tip + 2-3 liens internes + 1 lien externe Wikipédia, Trench Warfare h2 + 4 erreurs, FAQ h2 + 6 Q/R miroir), génère le hero via node scripts/generate-hero-nb2.mjs (--prompt puis --out public/images/articles/slug.webp), enregistre dans content/articles/articles.ts, build, commit, push, puis passe done:true.",
   "articles": [
     {
       "n": 1,
