@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-08-19 | Vidéo IA en entreprise : 7 usages vraiment rentables | `video-ia-pour-entreprise` | Business créatif | vidéo ia entreprise | Evergreen (use cases B2B, J7 run 30j) | digital-strategy.ec.europa.eu (FAQ obligations de transparence, article 50 du règlement IA, applicables depuis le 02/08/2026) |
 | 2026-08-17 | Prompts Veo 3 : structure et exemples testés | `prompt-veo-3-exemples` | Prompting | prompt veo 3 | Evergreen (prompt pack, J6 run 30j) | developers.googleblog.com (annonce Veo 3.1, 15/10/2025) |
 | 2026-08-03 | Créer une vidéo YouTube avec l'IA de A à Z | `creer-video-youtube-ia` | IA vidéo | créer vidéo youtube ia | Evergreen (tutoriel, J5 run 30j) | support.google.com (spécifications miniature YouTube) |
 | 2026-07-29 | Chaîne YouTube automatisée avec l'IA : la vérité | `chaine-youtube-automatisee-ia` | Business créatif | chaîne youtube automatisée ia | Evergreen (business/stratégie, J4 run 30j) | support.google.com (politiques de monétisation YouTube, inauthentic content 15/07/2025) |
@@ -125,6 +126,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 ## Liens internes (relatedSlugs) par article
 
+- `video-ia-pour-entreprise` → `video-ia-guide-complet`, `agence-video-ia-lancer`, `avatars-ia-ugc-presentateur-virtuel`
 - `kling-3-turbo-omni-juin-2026` → `meilleurs-outils-ia-video`, `runway-seedance-2-fast-aleph-2`, `kling-runway-montage-ads`
 - `combien-coute-ia-creative-mois` → `meilleurs-sites-video-ia-gratuits`, `budget-rendu-temps-cout-ia`, `meilleurs-outils-ia-video`
 - `formation-ia-video` → `meilleurs-outils-ia-video`, `creer-storyboard-ia`, `videos-ia-jolies-mais-vides`

@@ -7,6 +7,27 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-19
+
+- `2026-08-19 | RUN 30J J7 | main direct | c6ebdf0 | 1 article | 1 evergreen (use cases B2B) | poussé sur main`
+- **Article** : Vidéo IA en entreprise : 7 usages vraiment rentables
+  - Slug : `video-ia-pour-entreprise` · Catégorie : Business créatif
+  - Mot-clé principal : vidéo ia entreprise (secondaires : vidéo corporate ia, vidéo institutionnelle ia, production vidéo interne ia)
+  - Angle : distinction prestige (film de marque, à laisser au tournage) vs flux
+    (formation, produit, social, RH, support, avant-vente, multilingue). Les 7 usages
+    avec ce qu'ils remplacent et le signal de rentabilité.
+  - Source d'autorité : FAQ de la Commission européenne sur les obligations de
+    transparence de l'article 50 du règlement IA, applicables depuis le 02/08/2026.
+  - Liens internes : video-ia-guide-complet, photos-produit-ia-shooting,
+    video-courte-ia-tiktok-reels-shorts, sous-titres-automatiques-ia-video,
+    agence-video-ia-lancer, avatars-ia-ugc-presentateur-virtuel.
+  - Hero : Nano Banana 2 via Vercel AI Gateway, 64 Ko. Motif : réunion d'équipe en
+    salle vitrée, lumière du jour, storyboards imprimés. Choisi pour rompre avec les
+    trois heros précédents (bureaux de nuit).
+  - CTA : formation IA gratuite (aucune mention d'essai limité).
+  - Gates : audit.mjs OK (124 articles, 0 erreur, 0 avertissement), lint OK, build OK,
+    check-registry.py OK. IndexNow : 161 URLs soumises (HTTP 200).
+
 ## 2026-08-17
 
 - `2026-08-17 | RUN 30J J6 | main direct | efcade7 | 1 article | 1 evergreen (prompt pack) | poussé sur main`

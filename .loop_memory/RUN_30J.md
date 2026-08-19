@@ -12,6 +12,12 @@ clé `AI_GATEWAY_API_KEY` dans `.env.local`, git-ignoré). **Higgsfield MCP ne d
 être utilisé** pour les heroes (utilisé pour J1 à J5, 2026-07-20 → 2026-08-03, avant ce
 changement).
 
+**Plafond du run porté à 36 articles** (les lignes de log antérieures au 2026-08-19
+affichent l'ancien plafond X/30, ne pas les réécrire). Une fois la Phase 1 du plan
+épuisée (J1 à J30), les articles J31 à J36 s'enchaînent dans l'ordre de la Phase 2 de
+`seo-90-day-plan.md`. Au 36e article, la tâche planifiée `daily-article-ai-studios`
+est désactivée.
+
 ## Sujets J1 à J30 (source : seo-90-day-plan.md, ne pas dévier sans raison notée ici)
 
 | J | Slug | KW principal |
@@ -57,3 +63,4 @@ changement).
 | 2026-07-29 | J4 | 4/30 | chaine-youtube-automatisee-ia | chaîne youtube automatisée ia | Angle honnête anti-hype. Fait clé : politique YouTube "contenu inauthentique" (15/07/2025), source officielle liée. Hero Higgsfield soul_2 |
 | 2026-08-03 | J5 | 5/30 | creer-video-youtube-ia | créer vidéo youtube ia | Tutoriel A à Z (script/voix/visuels/montage/miniature). Lien elevenlabs-guide-complet remplacé par elevenlabs-voiceover-pub (pas encore publié). Hero Higgsfield soul_2 |
 | 2026-08-17 | J6 | 6/30 | prompt-veo-3-exemples | prompt veo 3 | runs du 04 au 16/08 manqués (tâche planifiée disparue, recréée ce jour), hero basculé Higgsfield → Nano Banana 2 via Vercel AI Gateway |
+| 2026-08-19 | J7 | 7/36 | video-ia-pour-entreprise | vidéo ia entreprise | Use cases B2B (7 usages), plafond du run porté à 36 articles. Fait sourcé : obligations de transparence de l'article 50 du règlement européen sur l'IA, applicables depuis le 02/08/2026 (FAQ Commission européenne). Hero Nano Banana 2, motif : réunion d'équipe en salle vitrée, plein jour, storyboards sur la table (rupture voulue avec les 3 heros précédents, tous des bureaux de nuit) |
