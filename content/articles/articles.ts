@@ -125,6 +125,7 @@ import { creerVideoYoutubeIa } from "@/content/articles/posts/creer-video-youtub
 import { promptVeo3Exemples } from "@/content/articles/posts/prompt-veo-3-exemples";
 import { creerPlanVideoIaImaginode } from "@/content/articles/posts/creer-plan-video-ia-imaginode";
 import { videoIaPourEntreprise } from "@/content/articles/posts/video-ia-pour-entreprise";
+import { heygenGuideAvatars } from "@/content/articles/posts/heygen-guide-avatars";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -259,4 +260,5 @@ export const articles: Article[] = [
   promptVeo3Exemples,
   creerPlanVideoIaImaginode,
   videoIaPourEntreprise,
+  heygenGuideAvatars,
 ];
