@@ -29,6 +29,14 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
   - Gates : audit.mjs OK (125 articles, 0 erreur, 0 avertissement), lint OK,
     build OK, check-registry.py OK. IndexNow : 162 URLs, HTTP 200.
+  - Passe structurelle FR ajoutée après coup (commit `5cf78b9`), sur signalement
+    d'une session sœur : le scanner unslop est anglophone, un score bas ne prouve
+    rien sur du français. Corrigés à la main 2 parallélismes négatifs (« ce n'est
+    pas X, c'est Y »), dont un que j'avais moi-même introduit en corrigeant la
+    passe précédente, plus une première ligne de section qui répétait son titre.
+    Méthode : grep des négations directement dans le .ts, pas sur l'extrait .md.
+    Piège rencontré : un grep contenant une apostrophe droite est mangé par le
+    shell et renvoie un faux négatif, écrire le motif en `n.est pas`.
 
 ## 2026-08-19
 
