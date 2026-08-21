@@ -86,7 +86,7 @@ export const heygenGuideAvatars: Article = {
     },
     {
       type: "p",
-      text: "Le premier choix se fait avant même de payer, et il compte plus que tous les réglages qui suivent. HeyGen propose trois routes pour obtenir un présentateur.",
+      text: "Ce choix se fait avant même de payer, et il compte plus que tous les réglages qui suivent. Il décide aussi de ce que tu devras faire signer, et à qui.",
     },
     {
       type: "p",
@@ -98,7 +98,7 @@ export const heygenGuideAvatars: Article = {
     },
     {
       type: "p",
-      text: "Ce choix n'est pas cosmétique, il détermine ce que tu devras faire signer et à qui. Notre article sur [les avatars IA et le présentateur virtuel](/blog/avatars-ia-ugc-presentateur-virtuel) détaille les cas où un personnage générique évite tout le débat juridique.",
+      text: "Le jumeau engage ton visage, l'avatar photo aussi, le personnage généré n'engage personne. Notre article sur [les avatars IA et le présentateur virtuel](/blog/avatars-ia-ugc-presentateur-virtuel) détaille les cas où ce dernier évite tout le débat juridique.",
     },
     {
       type: "h3",
@@ -107,7 +107,7 @@ export const heygenGuideAvatars: Article = {
     },
     {
       type: "p",
-      text: "HeyGen empile plusieurs générations de moteurs, appelées Avatar III, IV et V. Ce n'est pas une histoire de version qui remplace la précédente : les trois cohabitent, et ils ne coûtent pas du tout la même chose à la minute.",
+      text: "HeyGen empile plusieurs générations de moteurs, appelées Avatar III, IV et V. Les trois cohabitent, aucune n'a remplacé la précédente, et elles ne coûtent pas du tout la même chose à la minute.",
     },
     {
       type: "p",
@@ -140,7 +140,7 @@ export const heygenGuideAvatars: Article = {
     },
     {
       type: "p",
-      text: "Les tarifs et les plafonds bougent régulièrement, vérifie la [page officielle des offres HeyGen](https://www.heygen.com/pricing) avant de sortir la carte bleue. Pour arbitrer entre deux offres, le chiffre utile n'est pas le prix affiché mais le nombre de minutes que tes crédits paient réellement.",
+      text: "Les tarifs et les plafonds bougent régulièrement, vérifie la [page officielle des offres HeyGen](https://www.heygen.com/pricing) avant de sortir la carte bleue. Pour arbitrer entre deux offres, compte plutôt en minutes : combien de vidéo tes crédits paient réellement dans le mois.",
     },
     {
       type: "h2",
