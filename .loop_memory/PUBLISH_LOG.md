@@ -7,6 +7,29 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-21
+
+- `2026-08-21 | RUN 30J J8 | main direct | 3231dd3 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : HeyGen : le guide complet des avatars vidéo IA
+  - Slug : `heygen-guide-avatars` · Catégorie : IA vidéo · KW : heygen
+  - Faits sourcés sur les pages officielles HeyGen, pas sur les blogs tiers : les
+    comparatifs SEO trouvés en recherche donnaient Creator à 200 crédits, la page
+    officielle en annonce 600 et Pro à 49 $ (et non 99 $). Vérifier chaque chiffre
+    à la source reste indispensable sur ce sujet.
+  - Coûts en crédits repris du centre d'aide (article 15126059) : Avatar III 4 à 7
+    crédits/min, Avatar IV 16 (look photo) et 31 (look vidéo), Avatar V 48.
+  - Passes anti-slop appliquées : humanizer, unslop-text (score 2, densité 0,7/1k,
+    2 faux positifs sur le mot français « utilise »), antislop-copywriting. Cette
+    dernière passe a rattrapé une incohérence de calcul (« se paie quatre fois »
+    alors que 48/16 = 3) et deux ouvertures recopiées de l'article J7.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 75 Ko. Motif : coin de bureau
+    transformé en poste d'enregistrement, chaise vide face à un smartphone sur
+    trépied, fond gris agrafé, fin d'après-midi. Rupture voulue avec les heros
+    récents, tous des bureaux avec écrans.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (125 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK, check-registry.py OK. IndexNow : 162 URLs, HTTP 200.
+
 ## 2026-08-19
 
 - `2026-08-19 | RUN 30J J7 | main direct | c6ebdf0 | 1 article | 1 evergreen (use cases B2B) | poussé sur main`
