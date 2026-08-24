@@ -7,6 +7,46 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-24
+
+- `2026-08-24 | RUN 30J J9 | main direct | fc5ada0 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : ElevenLabs : le guide complet en français
+  - Slug : `elevenlabs-guide-complet` · Catégorie : IA vidéo · KW : elevenlabs français
+  - **Run repris en cours de route** : un run antérieur du même jour (14:05) avait
+    écrit l'article, généré le hero et modifié `articles.ts`, puis s'était arrêté
+    sans committer. Rien n'était loggé pour le 24/08, le working tree contenait
+    exactement les 3 fichiers du jour et rien d'autre : travail repris, vérifié,
+    puis publié. Réflexe à garder : un `git status` sale au démarrage n'est pas
+    forcément une collision autopilote, regarder les dates et le contenu avant de
+    jeter quoi que ce soit.
+  - Anti-cannibalisation J9 respectée : `elevenlabs-voiceover-pub` garde « voix off
+    pub », cet article prend le tour complet du produit (TTS, clonage, SFX, dubbing,
+    transcription). Les deux sont liés dans le corps du texte.
+  - Chiffres pris sur les pages officielles : tableau des offres (Free 10 000
+    crédits jusqu'à Business 6 M), tableau des prix par fonction repris de
+    `elevenlabs.io/pricing/api`, durées de clonage de la doc. Point de vigilance
+    utile pour les prochains guides outils : la licence commerciale démarre à
+    Starter, le palier Free ne couvre que les essais personnels.
+  - Passes anti-slop : humanizer, unslop-text, antislop-copywriting. Scanner
+    unslop = score 1, densité 0,5/1k, unique hit « Robust » qui est le **nom
+    officiel d'un réglage de stabilité ElevenLabs**, donc faux positif conservé.
+  - Passe structurelle FR (le scanner anglophone ne prouve rien sur du français) :
+    0 parallélisme négatif, 0 signposting, 0 preuve sociale vague. **Un vrai tell
+    trouvé et corrigé** : l'ouverture recopiait la forme de J8 (même amorce en
+    « Tu [verbe] », puis un second paragraphe en liste de quatre propositions
+    interrogatives « quel / combien / comment / à quel moment »). Réécrit en
+    attaque de scène et en groupes nominaux. À surveiller chaque jour : c'est le
+    deuxième run d'affilée où l'intro est le point qui se recopie.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 64 Ko, généré par le run précédent et
+    validé ici. Motif : cabine de voix off vue depuis la régie, comédienne au micro
+    derrière la vitre, console de mixage au premier plan, lumière du jour. Distinct
+    de J8 (coin de bureau bricolé, smartphone sur trépied) et de J7 (salle de
+    réunion vitrée).
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (126 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK (page `/blog/elevenlabs-guide-complet` prérendue), check-registry.py
+    OK après `git add`. IndexNow : 164 URLs, HTTP 200.
+
 ## 2026-08-21
 
 - `2026-08-21 | RUN 30J J8 | main direct | 3231dd3 | 1 article | 1 evergreen (guide outil) | poussé sur main`

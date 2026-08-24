@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-08-24 | ElevenLabs : le guide complet en français | `elevenlabs-guide-complet` | IA vidéo | elevenlabs français | Evergreen (guide outil, J9 run 30j) | elevenlabs.io/pricing/api (prix par fonction) ; elevenlabs.io/blog/v3-audiotags (balises audio v3) ; elevenlabs.io/docs (clonage professionnel : durées, entraînement) ; règlement européen sur l'IA, transparence applicable depuis le 02/08/2026 |
 | 2026-08-21 | HeyGen : le guide complet des avatars vidéo IA | `heygen-guide-avatars` | IA vidéo | heygen | Evergreen (guide outil, J8 run 30j) | heygen.com/pricing (offres et plafonds) ; help.heygen.com article 15126059 (coût en crédits par moteur) ; heygen.com/academy (types d'avatars) |
 | 2026-08-19 | Vidéo IA en entreprise : 7 usages vraiment rentables | `video-ia-pour-entreprise` | Business créatif | vidéo ia entreprise | Evergreen (use cases B2B, J7 run 30j) | digital-strategy.ec.europa.eu (FAQ obligations de transparence, article 50 du règlement IA, applicables depuis le 02/08/2026) |
 | 2026-08-17 | Prompts Veo 3 : structure et exemples testés | `prompt-veo-3-exemples` | Prompting | prompt veo 3 | Evergreen (prompt pack, J6 run 30j) | developers.googleblog.com (annonce Veo 3.1, 15/10/2025) |
