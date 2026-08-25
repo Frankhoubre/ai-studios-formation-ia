@@ -127,6 +127,7 @@ import { creerPlanVideoIaImaginode } from "@/content/articles/posts/creer-plan-v
 import { videoIaPourEntreprise } from "@/content/articles/posts/video-ia-pour-entreprise";
 import { heygenGuideAvatars } from "@/content/articles/posts/heygen-guide-avatars";
 import { elevenlabsGuideComplet } from "@/content/articles/posts/elevenlabs-guide-complet";
+import { sunoGuideComplet } from "@/content/articles/posts/suno-guide-complet";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -263,4 +264,5 @@ export const articles: Article[] = [
   videoIaPourEntreprise,
   heygenGuideAvatars,
   elevenlabsGuideComplet,
+  sunoGuideComplet,
 ];
