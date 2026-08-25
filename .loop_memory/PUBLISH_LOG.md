@@ -7,6 +7,68 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-25
+
+- `2026-08-25 | RUN 30J J10 | main direct | d77af31 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : Suno AI : le guide complet et les nouvelles limites
+  - Slug : `suno-guide-complet` · Catégorie : IA vidéo · KW : suno ai
+  - Anti-cannibalisation J10 respectée : `suno-musique-pub-courte` garde
+    « musique de pub » (workflow de production courte),
+    `elevenlabs-music-v2-stable-audio-suno` garde le comparatif des moteurs. Cet
+    article prend le tour du produit (modèles, offres, crédits, Studio, droits).
+    Les trois sont liés dans le corps du texte.
+  - **Angle différenciant, à valeur de scoop FR** : les quotas de téléchargement
+    Suno entrent en vigueur le **3 septembre 2026**, soit 9 jours après
+    publication. 7 téléchargements à vie sur le gratuit, 20/mois sur Pro,
+    60/mois sur Premier, applicables **rétroactivement à toute la bibliothèque**.
+    Source : help.suno.com article 13614785. Aucun contenu FR ne couvrait ça.
+  - Chiffres pris sur les pages officielles uniquement, après avoir constaté que
+    les blogs SEO tiers se contredisent sur le coût d'une génération (5 ou 10
+    crédits selon les sources). Parade retenue : ne pas trancher à leur place mais
+    dériver le coût des chiffres officiels du centre d'aide (50 crédits/jour = 10
+    morceaux, 2 500 = 500 morceaux, 10 000 = 2 000 morceaux, donc ~5 crédits le
+    morceau et ~10 la génération puisqu'elle rend deux variantes). Ce calcul est
+    montré au lecteur, il n'est pas assené.
+  - Point de vigilance utile pour les prochains guides outils : chez Suno,
+    **propriété ≠ protection**. Suno documente lui-même qu'une musique 100 % IA
+    peut ne pas remplir les conditions du droit d'auteur et que certains
+    distributeurs refusent les œuvres non protégées. Distinction reprise telle
+    quelle, sans extrapoler sur le droit français.
+  - Passes anti-slop : humanizer, unslop-text, antislop-copywriting. Scanner
+    unslop final = 0 finding, densité 0,0/1k. Le seul hit du premier passage
+    (« Nuance » pris pour le meme anglophone) était un faux positif français,
+    reformulé quand même parce que la tournure était raide.
+  - Passe structurelle FR (un vert au scanner ne prouve rien sur du français).
+    **Tells trouvés et corrigés** : (1) parallélisme négatif déguisé dans le P3
+    d'intro (« la qualité n'est plus le sujet… ce qui compte maintenant, c'est… ») ;
+    (2) signposting « et c'est là que ça se complique » + scaffolding « La
+    propriété d'abord… La protection ensuite… », remplacés par les faits
+    directement ; (3) première ligne de section qui restait la reformulation de
+    son h3 (« Trois offres, une grille simple, et un piège classique ») ;
+    (4) passif sans acteur (« chaque sortie de fichier est décomptée » → « Suno
+    décompte ») ; (5) aphorisme creux sur les ayants droit, remplacé par la cause
+    concrète. **Rupture par rapport à J8/J9** : les deux ouvertures précédentes se
+    recopiaient (amorce « Tu [verbe] », puis scène au présent). Ici l'attaque est
+    factuelle et datée (le 3 septembre + trois chiffres). Le titre a aussi été
+    écarté du gabarit « X : le guide complet en français » de J9, qui allait
+    devenir une série repérable.
+  - **Chiffre inventé attrapé à la relecture** : un « se joue à 80 % dans le champ
+    de style » s'était glissé dans le premier jet. Aucune source, supprimé.
+    Réflexe à garder : les pourcentages d'autorité sont le type de faux fait qui
+    passe le mieux les scanners.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 108 Ko. Motif : **salle de répétition
+    dans un vieil immeuble au matin**, piano droit contre un mur de plâtre
+    écalé, basse sur pied, portable sur un tabouret, structure du morceau
+    écrite à la main scotchée sur le piano, contre-plongée au ras du sol.
+    Anti-répétition vérifiée sur les 5 derniers heros : J9 cabine de voix off vue
+    de la régie, J8 coin de bureau bricolé, J7 salle de réunion vitrée, J6 et J5
+    bureaux avec écrans. Aucun écran d'ordinateur dominant ici, pas de studio
+    moderne, lumière naturelle seule.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (127 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK (page `/blog/suno-guide-complet` prérendue), check-registry.py OK
+    après `git add`. IndexNow : 165 URLs, HTTP 200.
+
 ## 2026-08-24
 
 - `2026-08-24 | RUN 30J J9 | main direct | fc5ada0 | 1 article | 1 evergreen (guide outil) | poussé sur main`

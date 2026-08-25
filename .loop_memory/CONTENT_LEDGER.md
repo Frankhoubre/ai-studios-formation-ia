@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-08-25 | Suno AI : le guide complet et les nouvelles limites | `suno-guide-complet` | IA vidéo | suno ai | Evergreen (guide outil, J10 run 30j) | suno.com/pricing (offres et crédits) ; help.suno.com article 13614785 (quotas de téléchargement au 03/09/2026) ; help.suno.com article 2746945 (propriété et droit d'auteur) ; help.suno.com article 13670529 (Studio 2.0) ; suno.com/blog/v5-5 ; musicbusinessworldwide.com (accord Warner) |
 | 2026-08-24 | ElevenLabs : le guide complet en français | `elevenlabs-guide-complet` | IA vidéo | elevenlabs français | Evergreen (guide outil, J9 run 30j) | elevenlabs.io/pricing/api (prix par fonction) ; elevenlabs.io/blog/v3-audiotags (balises audio v3) ; elevenlabs.io/docs (clonage professionnel : durées, entraînement) ; règlement européen sur l'IA, transparence applicable depuis le 02/08/2026 |
 | 2026-08-21 | HeyGen : le guide complet des avatars vidéo IA | `heygen-guide-avatars` | IA vidéo | heygen | Evergreen (guide outil, J8 run 30j) | heygen.com/pricing (offres et plafonds) ; help.heygen.com article 15126059 (coût en crédits par moteur) ; heygen.com/academy (types d'avatars) |
 | 2026-08-19 | Vidéo IA en entreprise : 7 usages vraiment rentables | `video-ia-pour-entreprise` | Business créatif | vidéo ia entreprise | Evergreen (use cases B2B, J7 run 30j) | digital-strategy.ec.europa.eu (FAQ obligations de transparence, article 50 du règlement IA, applicables depuis le 02/08/2026) |
@@ -128,6 +129,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 ## Liens internes (relatedSlugs) par article
 
+- `suno-guide-complet` → `suno-musique-pub-courte`, `elevenlabs-music-v2-stable-audio-suno`, `clip-musical-ia`
 - `heygen-guide-avatars` → `avatars-ia-ugc-presentateur-virtuel`, `lip-sync-ia-faire-parler-personnage`, `video-ia-pour-entreprise`
 - `video-ia-pour-entreprise` → `video-ia-guide-complet`, `agence-video-ia-lancer`, `avatars-ia-ugc-presentateur-virtuel`
 - `kling-3-turbo-omni-juin-2026` → `meilleurs-outils-ia-video`, `runway-seedance-2-fast-aleph-2`, `kling-runway-montage-ads`
