@@ -7,6 +7,61 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-26
+
+- `2026-08-26 | RUN 30J J11 | main direct | 05e329b | 1 article | 1 evergreen (business) | poussé sur main`
+- **Article** : Vendre des vidéos IA : offres, prix et débouchés
+  - Slug : `vendre-videos-ia` · Catégorie : Business créatif · KW : vendre des vidéos ia
+  - Anti-cannibalisation J11 respectée : `agence-video-ia-lancer` (J2) garde la
+    structure et le passage à l'agence, `fixer-prix-creation-ia-grille` garde la
+    méthode de tarification (elle ne contient aucun montant), `gagner-argent-ia-creative-modeles`
+    garde le panorama tous métiers. Cet article est 100 % vidéo et apporte ce que
+    les trois autres n'ont pas : un catalogue de six livrables formulés côté client,
+    des montants en euros, et la question des canaux de vente.
+  - **Angle différenciant** : l'écart de prix entre canaux, sourcé. Codeur affiche
+    135 € de TJM moyen pour un motion designer en août 2026 (84 € débutant, 210 €
+    senior, budget moyen de mission 581 €), le baromètre Malt joue dans une gamme
+    trois fois supérieure sur le même intitulé. Message de l'article : le canal de
+    vente pèse plus lourd sur la facture que le niveau technique.
+  - Vérification des sources : la page Codeur a été lue directement (WebFetch OK,
+    chiffres exacts repris tels quels). La page Malt renvoie un **403 en fetch
+    direct**, seul l'ordre de grandeur issu de deux recherches concordantes est
+    donc utilisé dans l'intro ("autour de 420 euros"), et le paragraphe détaillé
+    ne cite aucun chiffre Malt précis, juste le lien. À refaire pareil la
+    prochaine fois qu'un baromètre bloque le crawl.
+  - Adobe Stock : dépôt de vidéos génératives autorisé, case "Created using
+    generative AI" obligatoire + autorisation pour toute personne identifiable
+    (helpx.adobe.com, consignes de dépôt). Sert de débouché secondaire dans la FAQ.
+  - Passes d'humanisation appliquées (humanizer → unslop-text → antislop-copywriting) :
+    - 9 parallélismes négatifs ("ce n'est pas X, c'est Y") supprimés au premier
+      passage, dont 3 en cellules de tableau qui finissaient toutes pareil.
+    - 3 signposting retirés ("Une donnée pour poser le décor", "La conséquence
+      pratique est brutale", "Cet article prend les trois questions dans l'ordre").
+    - **Un chiffre inventé attrapé au 3e passage** : le Pro Tip affirmait que
+      l'offre du milieu "se vend deux fois plus souvent". Aucune source, supprimé.
+      Même correctif que J10 (le "80 %"). Ce type de statistique de persuasion est
+      le piège récurrent des articles business, à traquer systématiquement.
+    - Fourchettes de prix explicitement présentées comme des observations
+      ("les fourchettes que j'observe", "ordres de grandeur, pas un barème"),
+      jamais comme une statistique de marché.
+    - Grappe de "trois" (10 occurrences, dont 3 dans les 3 paragraphes d'intro)
+      diluée. Nouveau tell FR à ajouter à la grille : le mot-nombre qui se répète.
+    - Scanner unslop : 0 finding sur 2 224 mots (article FR, donc non probant,
+      passe structurelle manuelle faite en plus).
+  - Hero Nano Banana 2, motif : bistrot de quartier après le service, chaises
+    retournées sur les tables, lampes tungstène chaudes contre une vitrine de rue
+    bleu nuit, le vidéaste et le patron attablés autour d'une tablette qui montre
+    une vidéo verticale du plat, devis imprimé et stylo posés à côté. 87 Ko.
+    Distinct des 5 derniers heros (J10 salle de répétition matin, J9 cabine voix
+    off jour, J8 coin de bureau fin d'après-midi, J7 salle de réunion plein jour,
+    J6 bureau de nuit avec moniteur) : premier hero du run situé chez le client,
+    et premier à montrer le moment de la vente plutôt que celui de la production.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (128 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK, check-registry.py OK. IndexNow : 166 URLs soumises (HTTP 200).
+
+---
+
 ## 2026-08-25
 
 - `2026-08-25 | RUN 30J J10 | main direct | d77af31 | 1 article | 1 evergreen (guide outil) | poussé sur main`
