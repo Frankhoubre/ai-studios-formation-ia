@@ -128,6 +128,7 @@ import { videoIaPourEntreprise } from "@/content/articles/posts/video-ia-pour-en
 import { heygenGuideAvatars } from "@/content/articles/posts/heygen-guide-avatars";
 import { elevenlabsGuideComplet } from "@/content/articles/posts/elevenlabs-guide-complet";
 import { sunoGuideComplet } from "@/content/articles/posts/suno-guide-complet";
+import { vendreVideosIa } from "@/content/articles/posts/vendre-videos-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -265,4 +266,5 @@ export const articles: Article[] = [
   heygenGuideAvatars,
   elevenlabsGuideComplet,
   sunoGuideComplet,
+  vendreVideosIa,
 ];
