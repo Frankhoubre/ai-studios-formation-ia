@@ -15,6 +15,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 
 | Date | Titre | Slug | Catégorie | KW principal | Type | Sources |
 |------|-------|------|-----------|--------------|------|---------|
+| 2026-08-27 | Kling vs Runway : lequel choisir en 2026 ? | `kling-vs-runway-comparatif` | IA vidéo | kling vs runway | Evergreen (comparatif, J12 run 30j) | runway.com/pricing (offres et crédits) ; help.runwayml.com article 15124877443219 (crédits mensuels 625/2250/9500, expiration, report Max, cloison web/API) ; help.runwayml.com article 46974685288467 (fiche Gen-4.5 : 12 crédits/s, 2 à 10 s, 720p) ; help.runwayml.com section 54758948966547 (modèles vidéo tiers, dont Kling 3.0 Motion Control) ; docs.dev.runwayml.com/guides/pricing (tarifs API) ; klingai.com/blog/kling-video-3-0-credit-cost-guide du 28/07/2026 (offres, crédits, 4K à 30 crédits/s) |
 | 2026-08-25 | Suno AI : le guide complet et les nouvelles limites | `suno-guide-complet` | IA vidéo | suno ai | Evergreen (guide outil, J10 run 30j) | suno.com/pricing (offres et crédits) ; help.suno.com article 13614785 (quotas de téléchargement au 03/09/2026) ; help.suno.com article 2746945 (propriété et droit d'auteur) ; help.suno.com article 13670529 (Studio 2.0) ; suno.com/blog/v5-5 ; musicbusinessworldwide.com (accord Warner) |
 | 2026-08-26 | Vendre des vidéos IA : offres, prix et débouchés | `vendre-videos-ia` | Business créatif | vendre des vidéos ia | Evergreen (business, J11 run 30j) | codeur.com/motion-designer/tarif (TJM motion design août 2026) ; malt.fr baromètre tarifs image-son motion designer ; helpx.adobe.com (dépôt de vidéos génératives sur Adobe Stock) ; règlement européen sur l'IA article 50 (via video-ia-pour-entreprise) |
 | 2026-08-24 | ElevenLabs : le guide complet en français | `elevenlabs-guide-complet` | IA vidéo | elevenlabs français | Evergreen (guide outil, J9 run 30j) | elevenlabs.io/pricing/api (prix par fonction) ; elevenlabs.io/blog/v3-audiotags (balises audio v3) ; elevenlabs.io/docs (clonage professionnel : durées, entraînement) ; règlement européen sur l'IA, transparence applicable depuis le 02/08/2026 |
@@ -181,6 +182,7 @@ Date | Titre | Slug | Catégorie | Mot-clé principal | Mots-clés secondaires |
 - `veo-3-generer-videos-ia` → `meilleurs-outils-ia-video`, `creer-video-ia-gratuit`, `sora-openai-creer-videos`
 - `kling-ai-videos-cinematiques` → `meilleurs-outils-ia-video`, `veo-3-generer-videos-ia`, `kling-runway-montage-ads`
 - `runway-guide-video-ia` → `meilleurs-outils-ia-video`, `kling-ai-videos-cinematiques`, `creer-video-ia-gratuit`
+- `kling-vs-runway-comparatif` → `kling-ai-videos-cinematiques`, `runway-guide-video-ia`, `meilleurs-outils-ia-video`
 - `film-ia-gratuit-court-metrage` → `creer-film-ia`, `structure-3-actes-video-ia`, `creer-video-ia-gratuit`
 - `video-courte-ia-tiktok-reels-shorts` → `structure-3-actes-video-ia`, `hook-3-secondes-video-ia`, `creer-video-ia-gratuit`
 - `images-cinema-ia-scene-film` → `prompt-image-ia-cinema`, `composition-cadrage-image-ia`, `rendu-pellicule-grain-film-ia`

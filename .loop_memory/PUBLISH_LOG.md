@@ -7,6 +7,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-27
+
+- `2026-08-27 | RUN 30J J12 | main direct | 80cc672 | 1 article | 1 evergreen (comparatif) | poussé sur main`
+  - Article : `kling-vs-runway-comparatif`, hero Nano Banana 2 (131 Ko).
+  - Gates : audit.mjs OK (129 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 167 URLs soumises (HTTP 200).
+
 ## 2026-08-26
 
 - `2026-08-26 | RUN 30J J11 | main direct | 05e329b | 1 article | 1 evergreen (business) | poussé sur main`
