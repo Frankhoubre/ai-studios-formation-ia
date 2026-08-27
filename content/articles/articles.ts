@@ -129,6 +129,7 @@ import { heygenGuideAvatars } from "@/content/articles/posts/heygen-guide-avatar
 import { elevenlabsGuideComplet } from "@/content/articles/posts/elevenlabs-guide-complet";
 import { sunoGuideComplet } from "@/content/articles/posts/suno-guide-complet";
 import { vendreVideosIa } from "@/content/articles/posts/vendre-videos-ia";
+import { klingVsRunwayComparatif } from "@/content/articles/posts/kling-vs-runway-comparatif";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -267,4 +268,5 @@ export const articles: Article[] = [
   elevenlabsGuideComplet,
   sunoGuideComplet,
   vendreVideosIa,
+  klingVsRunwayComparatif,
 ];
