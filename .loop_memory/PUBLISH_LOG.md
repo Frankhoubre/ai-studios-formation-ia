@@ -7,6 +7,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-28
+
+- `2026-08-28 | RUN 30J J13 | main direct | a87c97b | 1 article | 1 evergreen (prompt pack) | poussé sur main`
+  - Article : `prompts-kling-exemples`, hero Nano Banana 2 (63 Ko).
+  - Gates : audit.mjs OK (130 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 168 URLs soumises (HTTP 200).
+
 ## 2026-08-27
 
 - `2026-08-27 | RUN 30J J12 | main direct | 80cc672 | 1 article | 1 evergreen (comparatif) | poussé sur main`
