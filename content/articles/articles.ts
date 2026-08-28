@@ -130,6 +130,7 @@ import { elevenlabsGuideComplet } from "@/content/articles/posts/elevenlabs-guid
 import { sunoGuideComplet } from "@/content/articles/posts/suno-guide-complet";
 import { vendreVideosIa } from "@/content/articles/posts/vendre-videos-ia";
 import { klingVsRunwayComparatif } from "@/content/articles/posts/kling-vs-runway-comparatif";
+import { promptsKlingExemples } from "@/content/articles/posts/prompts-kling-exemples";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -269,4 +270,5 @@ export const articles: Article[] = [
   sunoGuideComplet,
   vendreVideosIa,
   klingVsRunwayComparatif,
+  promptsKlingExemples,
 ];
