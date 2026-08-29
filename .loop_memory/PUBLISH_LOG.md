@@ -7,6 +7,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-29
+
+- `2026-08-29 | RUN 30J J14 | main direct | d713111 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - Article : `script-video-chatgpt`, hero Nano Banana 2 (92 Ko).
+  - Gates : audit.mjs OK (131 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 169 URLs soumises (HTTP 200).
+
 ## 2026-08-28
 
 - `2026-08-28 | RUN 30J J13 | main direct | a87c97b | 1 article | 1 evergreen (prompt pack) | poussé sur main`
