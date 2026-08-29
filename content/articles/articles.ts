@@ -131,6 +131,7 @@ import { sunoGuideComplet } from "@/content/articles/posts/suno-guide-complet";
 import { vendreVideosIa } from "@/content/articles/posts/vendre-videos-ia";
 import { klingVsRunwayComparatif } from "@/content/articles/posts/kling-vs-runway-comparatif";
 import { promptsKlingExemples } from "@/content/articles/posts/prompts-kling-exemples";
+import { scriptVideoChatgpt } from "@/content/articles/posts/script-video-chatgpt";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -271,4 +272,5 @@ export const articles: Article[] = [
   vendreVideosIa,
   klingVsRunwayComparatif,
   promptsKlingExemples,
+  scriptVideoChatgpt,
 ];
