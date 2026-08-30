@@ -7,6 +7,14 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-08-30
+
+- `2026-08-30 | RUN 30J J15 | main direct | f3df06c | 1 article | 1 evergreen (guide) | poussé sur main`
+  - Article : `influenceur-virtuel-ia`, hero Nano Banana 2 (63 Ko).
+  - Gates : audit.mjs OK (132 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage : fichiers pas encore stagés, corrigé par git add puis revert au vert).
+  - IndexNow : 170 URLs soumises (HTTP 200).
+
 ## 2026-08-29
 
 - `2026-08-29 | RUN 30J J14 | main direct | d713111 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
