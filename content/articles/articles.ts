@@ -133,6 +133,7 @@ import { klingVsRunwayComparatif } from "@/content/articles/posts/kling-vs-runwa
 import { promptsKlingExemples } from "@/content/articles/posts/prompts-kling-exemples";
 import { scriptVideoChatgpt } from "@/content/articles/posts/script-video-chatgpt";
 import { influenceurVirtuelIa } from "@/content/articles/posts/influenceur-virtuel-ia";
+import { voixOffIaGuide } from "@/content/articles/posts/voix-off-ia-guide";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -275,4 +276,5 @@ export const articles: Article[] = [
   promptsKlingExemples,
   scriptVideoChatgpt,
   influenceurVirtuelIa,
+  voixOffIaGuide,
 ];
