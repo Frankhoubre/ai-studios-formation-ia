@@ -7,6 +7,15 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-09-01
+
+- `2026-09-01 | RUN 30J J16 | main direct | 934f594 | 1 article | 1 evergreen (guide) | poussé sur main`
+  - Article : `voix-off-ia-guide`, hero Nano Banana 2 (95 Ko).
+  - Run du 31/08 manqué (aucune ligne au journal), reprise directe sur J16 sans rattrapage.
+  - Gates : audit.mjs OK (133 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage comme d'habitude : fichiers pas encore stagés, vert après git add).
+  - IndexNow : 171 URLs soumises (HTTP 200).
+
 ## 2026-08-30
 
 - `2026-08-30 | RUN 30J J15 | main direct | f3df06c | 1 article | 1 evergreen (guide) | poussé sur main`
