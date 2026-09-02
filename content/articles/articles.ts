@@ -134,6 +134,7 @@ import { promptsKlingExemples } from "@/content/articles/posts/prompts-kling-exe
 import { scriptVideoChatgpt } from "@/content/articles/posts/script-video-chatgpt";
 import { influenceurVirtuelIa } from "@/content/articles/posts/influenceur-virtuel-ia";
 import { voixOffIaGuide } from "@/content/articles/posts/voix-off-ia-guide";
+import { decouperVideoLongueShortsIa } from "@/content/articles/posts/decouper-video-longue-shorts-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -277,4 +278,5 @@ export const articles: Article[] = [
   scriptVideoChatgpt,
   influenceurVirtuelIa,
   voixOffIaGuide,
+  decouperVideoLongueShortsIa,
 ];
