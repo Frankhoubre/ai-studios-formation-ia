@@ -7,6 +7,20 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-09-02
+
+- `2026-09-02 | RUN 30J J17 | main direct | a2c8af7 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - Article : `decouper-video-longue-shorts-ia`, hero Nano Banana 2 (103 Ko).
+  - Premier article du run avec 2 captures d'écran réelles dans le corps : section « Contenu revendiqué
+    par un tiers dans un Short de plus d'une minute » du centre d'aide YouTube, et page « How Do Credits
+    Work? » du centre d'aide Opus Clip (88 Ko et 63 Ko, capturées le 2026-09-02).
+  - `scripts/capture-screenshot.py` inutilisable sur cette machine (playwright, sips et cwebp absents) :
+    captures faites avec Chrome headless (`--headless=new --screenshot`) + Pillow pour le recadrage et
+    le WebP, script jetable dans le scratchpad, rien ajouté au repo.
+  - Gates : audit.mjs OK (134 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage comme d'habitude : fichiers pas encore stagés, vert après git add).
+  - IndexNow : 172 URLs soumises (HTTP 200).
+
 ## 2026-09-01
 
 - `2026-09-01 | RUN 30J J16 | main direct | 934f594 | 1 article | 1 evergreen (guide) | poussé sur main`
