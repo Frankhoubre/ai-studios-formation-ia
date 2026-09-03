@@ -135,6 +135,7 @@ import { scriptVideoChatgpt } from "@/content/articles/posts/script-video-chatgp
 import { influenceurVirtuelIa } from "@/content/articles/posts/influenceur-virtuel-ia";
 import { voixOffIaGuide } from "@/content/articles/posts/voix-off-ia-guide";
 import { decouperVideoLongueShortsIa } from "@/content/articles/posts/decouper-video-longue-shorts-ia";
+import { photoCulinaireIaRestaurant } from "@/content/articles/posts/photo-culinaire-ia-restaurant";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -279,4 +280,5 @@ export const articles: Article[] = [
   influenceurVirtuelIa,
   voixOffIaGuide,
   decouperVideoLongueShortsIa,
+  photoCulinaireIaRestaurant,
 ];
