@@ -7,6 +7,22 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ---
 
+## 2026-09-03
+
+- `2026-09-03 | RUN 30J J18 | main direct | 3ec67b2 | 1 article | 1 evergreen (use case métier) | poussé sur main`
+  - Article : `photo-culinaire-ia-restaurant`, hero Nano Banana 2 (113 Ko).
+  - 2 captures d'écran réelles dans le corps : page « Conseils pour publier des contenus multimédias
+    sur Maps » du centre d'aide Google (accordéons Contenu et formats + Ajustements stylistiques
+    dépliés via le fragment `#zippy=`, 151 Ko) et page « Store submitted menu photo guidelines » du
+    centre d'aide Uber commerçants (90 Ko), capturées le 2026-09-03.
+  - `scripts/capture-screenshot.py` toujours inutilisable sur cette machine (playwright absent) :
+    Chrome headless + Pillow comme en J17, script jetable dans le scratchpad. À noter, Chrome refuse
+    d'écrire le PNG dans le dossier scratchpad de la session (« Accès refusé »), il faut passer par un
+    dossier temporaire simple et `--no-sandbox --user-data-dir`.
+  - Gates : audit.mjs OK (135 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge avant `git add`, comme prévu).
+  - IndexNow : 173 URLs soumises (HTTP 200).
+
 ## 2026-09-02
 
 - `2026-09-02 | RUN 30J J17 | main direct | a2c8af7 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
