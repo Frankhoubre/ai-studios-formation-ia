@@ -429,3 +429,18 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
     1600 px, ~51 Ko), pas de génération Nano Banana pour cet article produit.
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
+
+## 2026-09-04 | loop 30j J19 | main | `ac9eccb`
+
+- Article : `video-ia-immobilier` (« Vidéo IA immobilier : embellir sans mentir »),
+  KW principal « vidéo ia immobilier », 19/36 du run.
+- Hero : Nano Banana 2 via Vercel AI Gateway (91 Ko), appartement parisien vide un
+  matin d'hiver. Premier jet écarté (deux personnages de dos devant l'écran du
+  téléphone, trop proche du cliché banni), relancé en plan large avec les
+  personnages de profil.
+- Corps : 2 captures d'écran réelles (DGCCRF economie.gouv.fr, fiche DPE
+  service-public.gouv.fr), chacune collée à l'affirmation qu'elle prouve.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (136 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 174 URLs soumises, HTTP 200.
