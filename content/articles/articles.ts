@@ -136,6 +136,7 @@ import { influenceurVirtuelIa } from "@/content/articles/posts/influenceur-virtu
 import { voixOffIaGuide } from "@/content/articles/posts/voix-off-ia-guide";
 import { decouperVideoLongueShortsIa } from "@/content/articles/posts/decouper-video-longue-shorts-ia";
 import { photoCulinaireIaRestaurant } from "@/content/articles/posts/photo-culinaire-ia-restaurant";
+import { videoIaImmobilier } from "@/content/articles/posts/video-ia-immobilier";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -281,4 +282,5 @@ export const articles: Article[] = [
   voixOffIaGuide,
   decouperVideoLongueShortsIa,
   photoCulinaireIaRestaurant,
+  videoIaImmobilier,
 ];
