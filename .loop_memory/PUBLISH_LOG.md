@@ -430,6 +430,32 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-07 | loop 30j J20 | main | `255a3dd`
+
+- Article : `midjourney-video-guide` (« Midjourney vidéo : ce que ça fait, ce que
+  ça coûte »), KW principal « midjourney video », 20/36 du run. Runs du 05 et du
+  06/09 non exécutés, reprise directe sur J20.
+- Angle : le modèle vidéo de Midjourney est toujours le V1 du 18/06/2025 alors que
+  la partie image est passée en V8.2 le 24/07/2026. L'article vend le calcul que
+  personne ne fait en français, le coût GPU d'un plan animé mis en face du coût
+  d'une génération d'images (un prompt vidéo HD = 20 générations d'images HD, une
+  extension coûte le prix d'une génération, donc un plan de 21 s vaut 5 fois un
+  plan de 5 s).
+- Hero : Nano Banana 2 via Vercel AI Gateway (120 Ko), banc-titre d'animation dans
+  un petit atelier, un tirage papier sur la vitre sous deux lampes tungstène, mains
+  gantées avec compte-fils et crayon gras, lumière froide de fin d'après-midi par
+  la fenêtre latérale, palette ambre et sarcelle. Motif choisi parce qu'un banc-titre
+  est littéralement une image fixe qu'on met en mouvement. Rupture avec J19
+  (appartement vide, hiver gris), J18 (cuisine de restaurant), J17 (salle de
+  conférence), J16 (dressing clos), J15 (studio blanc). Réussi au premier jet.
+- Corps : 2 captures d'écran réelles de docs.midjourney.com, chacune collée à
+  l'affirmation qu'elle prouve (tableau Batch Size pour les coûts GPU, tableau
+  Comparing Midjourney Plans pour le Relax vidéo réservé à Pro et Mega).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (137 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 175 URLs soumises, HTTP 200.
+
 ## 2026-09-04 | loop 30j J19 | main | `ac9eccb`
 
 - Article : `video-ia-immobilier` (« Vidéo IA immobilier : embellir sans mentir »),
