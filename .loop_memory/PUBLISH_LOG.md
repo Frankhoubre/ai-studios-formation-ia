@@ -430,6 +430,31 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-07 | loop 30j J21 | main | `d351d98`
+
+- Article : `ugc-ia-pour-marques` (« UGC IA : monter une offre que les marques
+  signent »), KW principal « ugc ia », 21/36 du run. Publié le même jour que J20,
+  en rattrapage des runs manqués des 05 et 06/09, à la demande de Frank.
+- Angle : le business et pas la technique. Le tri des livrables se fait sur une
+  seule question, est-ce qu'un visage apparaît, parce que c'est elle qui déclenche
+  la mention « Images virtuelles » de l'article 5 de la loi influenceurs, le droit
+  à l'image et le temps de validation client.
+- Hero : Nano Banana 2 via Vercel AI Gateway (99 Ko), vue en plongée verticale sur
+  une table de travail en bois clair, grille de fiches d'accroches numérotées
+  qu'une main retire de sa rangée, flacon blanc, trépied plié, mug, ombre de
+  fenêtre en diagonale, palette gris-vert froide. Premier hero du run en plongée
+  verticale et premier sans aucun visage ni écran. Réussi au premier jet.
+- Corps : 2 captures de sources primaires, article 5 de la loi 2023-451 sur
+  Légifrance et article 50 §4 du règlement (UE) 2024/1689 sur EUR-Lex.
+- Prudence rédactionnelle : aucune grille de tarifs publiée (aucune source
+  sérieuse), méthode de calcul à la place. Les lectures juridiques discutables
+  (champ d'application pour une marque qui publie sur son propre compte, cas du
+  plan de dos) sont explicitement données comme interprétation et non comme fait.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (138 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 176 URLs soumises, HTTP 200.
+
 ## 2026-09-07 | loop 30j J20 | main | `255a3dd`
 
 - Article : `midjourney-video-guide` (« Midjourney vidéo : ce que ça fait, ce que
