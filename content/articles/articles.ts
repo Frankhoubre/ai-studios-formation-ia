@@ -139,6 +139,7 @@ import { photoCulinaireIaRestaurant } from "@/content/articles/posts/photo-culin
 import { videoIaImmobilier } from "@/content/articles/posts/video-ia-immobilier";
 import { midjourneyVideoGuide } from "@/content/articles/posts/midjourney-video-guide";
 import { ugcIaPourMarques } from "@/content/articles/posts/ugc-ia-pour-marques";
+import { capcutIaFonctions } from "@/content/articles/posts/capcut-ia-fonctions";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -287,4 +288,5 @@ export const articles: Article[] = [
   videoIaImmobilier,
   midjourneyVideoGuide,
   ugcIaPourMarques,
+  capcutIaFonctions,
 ];
