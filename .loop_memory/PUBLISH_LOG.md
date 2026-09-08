@@ -430,6 +430,58 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-08 | loop 30j J22 | main | `64230ff`
+
+- Article : `capcut-ia-fonctions` (« CapCut IA : les fonctions qui font gagner du
+  temps »), KW principal « capcut ia », 22/36 du run.
+- Angle : pas un tour des fonctions, un tri par gain de temps réel, adossé au
+  passage de CapCut aux crédits. Fait pivot sourcé sur la note d'aide officielle
+  du 25/03/2026 : plan Pro relevé (AI points 550 -> 1200, cloud 100 Go -> 1 To),
+  nouveau plan Standard, anciens tarifs retirés aux nouveaux abonnés.
+- Prudence rédactionnelle : AUCUN prix cité. CapCut ne publie ses tarifs nulle
+  part sur son site (sa propre page d'aide renvoie à l'app et dit que le prix
+  varie selon région, appareil et promotions). Tous les blogs FR qui annoncent un
+  montant ferme le tirent d'ailleurs. L'article le dit et renvoie le lecteur à son
+  app. Même prudence sur les coûts en crédits par fonction : non documentés.
+- Autres faits sourcés : règlement des crédits (crédits d'abonnement attribués au
+  début du mois d'abonnement et expirés à la fin de ce mois, exemple officiel
+  20/06 -> 19/07, crédits achetés valables 2 ans, aucun remboursement ni
+  conversion en argent, conversion des utilisations Pro en crédits irréversible) ;
+  conditions d'utilisation version du 15/04/2026 (ByteDance Pte. Ltd., licence non
+  exclusive, libre de redevance, transférable, sous-licenciable, perpétuelle et
+  mondiale sur le contenu utilisateur, CapCut ne devient pas propriétaire) ;
+  import de sous-titres réservé à Desktop et Web, SRT seul sur le web, UTF-8 ;
+  Seedance 2.0 annoncé le 26/03/2026 sur 7 marchés (TechCrunch), Seedance 2.5
+  lancé le 31/07/2026 et déployé dans CapCut en Europe pour les abonnés (page
+  fonctionnalité CapCut).
+- Hero : Nano Banana 2 via Vercel AI Gateway (76 Ko), intérieur de train régional
+  au crépuscule, femme assise près de la vitre constellée de pluie tenant son
+  téléphone à l'horizontale, écouteurs filaires, gobelet et carnet sur la
+  tablette, campagne floue et caténaires derrière la vitre, mélange lumière
+  sodium chaude et bleu froid du dehors. Premier hero du run dans un véhicule en
+  mouvement. Réussi au premier jet.
+- Corps : 2 captures de sources primaires CapCut (note d'aide sur le changement de
+  tarification, règlement des crédits). Note d'outillage : `scripts/capture-screenshot.py`
+  ne tourne pas sous Windows (il appelle `sips` et `cwebp`, absents) ; capture
+  faite avec un script scratchpad playwright + Pillow. Le popup promo « Try online
+  for free » et le toast « Saved! » de capcut.com se posent en travers, il faut
+  choisir le scroll puis recadrer.
+- Passes humanisation : scanner unslop 3 hits, tous faux positifs français
+  (« utilisation », « utilises » pris pour « utilize »). La vraie passe a été
+  manuelle : 4 parallélismes négatifs « n'est pas X, c'est Y » trouvés d'un coup
+  (intro, classement, note de fondateur, plus la variante « la bonne question
+  n'est plus... c'est... »), 3 supprimés, 1 gardé. Intro réécrite car elle
+  ouvrait sur « Cet article trie », même tell qu'en J13 et J14, la troisième fois
+  du run que l'ouverture recopie un gabarit. Signposting « la méthode tient en
+  quatre gestes » remplacé par une amorce concrète. Deux restatements de titre de
+  section supprimés. Affirmation invérifiable (« tous les articles français ont
+  recopié ») transformée en conseil de vérification. Sur-correction rattrapée :
+  « je m'en fiche » réécrit, registre anti-IA affecté.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (139 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 177 URLs soumises, HTTP 200.
+
 ## 2026-09-07 | loop 30j J21 | main | `d351d98`
 
 - Article : `ugc-ia-pour-marques` (« UGC IA : monter une offre que les marques
