@@ -140,6 +140,7 @@ import { videoIaImmobilier } from "@/content/articles/posts/video-ia-immobilier"
 import { midjourneyVideoGuide } from "@/content/articles/posts/midjourney-video-guide";
 import { ugcIaPourMarques } from "@/content/articles/posts/ugc-ia-pour-marques";
 import { capcutIaFonctions } from "@/content/articles/posts/capcut-ia-fonctions";
+import { musiqueIaDroitsVideos } from "@/content/articles/posts/musique-ia-droits-videos";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -289,4 +290,5 @@ export const articles: Article[] = [
   midjourneyVideoGuide,
   ugcIaPourMarques,
   capcutIaFonctions,
+  musiqueIaDroitsVideos,
 ];
