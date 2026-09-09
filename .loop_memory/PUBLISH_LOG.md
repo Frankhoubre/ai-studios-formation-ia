@@ -430,6 +430,63 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-09 | loop 30j J23 | main | `7bdb1dc`
+
+- Article : `musique-ia-droits-videos` (« Musique IA libre de droits : sécuriser
+  tes vidéos »), KW principal « musique ia libre de droits », 23/36 du run.
+- Angle, absent du web FR où tout le corpus « musique IA libre de droits » est un
+  classement d'outils : l'expression n'est pas une catégorie juridique et recouvre
+  trois couches distinctes (licence contractuelle de la plateforme / propriété au
+  sens du droit d'auteur / règles de la plateforme de diffusion). On peut être en
+  règle sur la première et se faire démonétiser sur la troisième.
+- Trouvaille de vérification, gardée dans l'article : plusieurs sites FR très bien
+  placés sur la requête citent un « article L112-8 du CPI » et une « loi
+  n° 2025-678 du 17 juin 2025 » qui n'existent ni l'un ni l'autre. Vérifié sur
+  Légifrance : le chapitre Œuvres protégées s'arrête à L112-4, et aucune loi de ce
+  numéro. Ces deux références fantômes sortent aussi des résumés de recherche web,
+  donc ne jamais citer un texte de loi sans ouvrir Légifrance.
+- Faits sourcés : CGU Suno (gratuit = usage personnel et non commercial ;
+  Pro/Premier = cession des droits que Suno détient ; aucune garantie qu'un droit
+  d'auteur naisse sur une sortie) ; page d'aide Suno sur les droits d'un
+  abonnement payant (même mise en garde) ; centre d'aide Udio, article sur le
+  partenariat UMG (téléchargement audio, vidéo et stems désactivé depuis l'accord
+  du 29/10/2025) ; elevenlabs.io/fr/music (entraîné uniquement sur données sous
+  licence, accords Merlin et Kobalt, usage commercial self-serve sauf films, TV et
+  jeux de grands studios) ; AI Act article 50 applicable depuis le 02/08/2026, le
+  marquage machine-readable pèse sur les FOURNISSEURS, l'obligation côté
+  utilisateur ne vise que les deepfakes ; Sénat, proposition de loi présomption
+  d'exploitation adoptée le 08/04/2026 et transmise à l'AN le 09/04/2026.
+- Prudence : aucune affirmation sur les CGU d'Epidemic ou Artlist (ligne du
+  tableau volontairement générique). Position française donnée comme lecture
+  dominante et pas comme jurisprudence, faute de décision sur un morceau généré.
+- Hero : Nano Banana 2 via Vercel AI Gateway (91 Ko), bureau d'une petite agence
+  vidéo en fin de matinée, femme debout lisant un contrat imprimé à contre-jour de
+  la fenêtre, monteur assis casque autour du cou levant les yeux vers la page,
+  panneau de liège couvert de feuilles et de post-it derrière, contrats agrafés et
+  disque dur au premier plan, chêne chaud contre lumière du jour froide. Premier
+  hero du run sur une scène de paperasse à deux personnages. Réussi au premier jet.
+- Corps : 2 captures de sources primaires (page d'aide Suno sur les droits d'un
+  abonnement payant, article 50 sur AI Act Explorer). Outillage : même contournement
+  qu'en J22, `scripts/capture-screenshot.py` échoue sous Windows (il appelle `sips`,
+  macOS only) ; script scratchpad playwright + Pillow, viewport haut puis recadrage
+  PIL pour attraper le paragraphe qui compte, souvent sous la ligne de flottaison.
+- Passes humanisation : scanner unslop 1 hit, faux positif français
+  (« conditions d'utilisation » pris pour « utilize »). Passe manuelle : 7
+  parallélismes négatifs « X, pas Y » trouvés d'un coup, ramenés à 3 (dont le titre
+  de section « La licence, c'est un contrat, pas un titre de propriété », réécrit).
+  4 signposting supprimés (« Un avertissement au passage », « Lis bien à qui
+  s'adresse le texte », « Le cas Udio mérite qu'on s'y arrête », « Le tableau
+  ci-dessous résume »). Ouverture de la section AI Act réécrite, elle répétait la
+  date de son propre H2. Attribution vague « toute la doctrine française » remplacée
+  par une formulation vérifiable plus l'aveu qu'aucune décision n'a tranché.
+  Sur-correction rattrapée : « L'objectif tient en une phrase » réintroduisait un
+  signposting là où j'en supprimais un. Incohérence numérique attrapée au dernier
+  contrôle : l'intro annonçait « trois vérifications » et le H2 « quatre ».
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (140 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 178 URLs soumises, HTTP 200.
+
 ## 2026-09-08 | loop 30j J22 | main | `64230ff`
 
 - Article : `capcut-ia-fonctions` (« CapCut IA : les fonctions qui font gagner du
