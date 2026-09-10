@@ -141,6 +141,7 @@ import { midjourneyVideoGuide } from "@/content/articles/posts/midjourney-video-
 import { ugcIaPourMarques } from "@/content/articles/posts/ugc-ia-pour-marques";
 import { capcutIaFonctions } from "@/content/articles/posts/capcut-ia-fonctions";
 import { musiqueIaDroitsVideos } from "@/content/articles/posts/musique-ia-droits-videos";
+import { tiktokFormatsVideoIaViraux } from "@/content/articles/posts/tiktok-formats-video-ia-viraux";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -291,4 +292,5 @@ export const articles: Article[] = [
   ugcIaPourMarques,
   capcutIaFonctions,
   musiqueIaDroitsVideos,
+  tiktokFormatsVideoIaViraux,
 ];
