@@ -430,6 +430,69 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-10 | loop 30j J24 | main | `96a1d75`
+
+- Article : `tiktok-formats-video-ia-viraux` (« Vidéos IA virales sur TikTok : les
+  formats 2026 »), KW principal « vidéo ia virale tiktok », 24/36 du run.
+- Angle, absent du web FR où tout le corpus « vidéo IA virale TikTok » est une liste
+  de trends ou d'outils : viral et éligible sont deux choses différentes. Trois
+  filtres passent avant la viralité (label IA obligatoire dès que ça a l'air réel,
+  contenu non original inéligible au FYF, Programme de Récompenses qui exige une
+  minute et exclut les boucles), et un format ne vaut que par la mécanique qu'il
+  porte (personnage récurrent en caméra subjective, immersion, son, feuilleton).
+- Trouvaille de vérification gardée dans l'article : plusieurs blogs anglophones
+  bien classés affirment que le Programme de Récompenses « bannit entièrement le
+  contenu IA ». La page d'aide officielle (lue en français via le navigateur, elle
+  est rendue en JS et WebFetch ne renvoie que le header) ne contient pas le mot IA.
+  Elle exclut les boucles, photos simples et texte seul, ce qui touche les clips IA
+  de 8 s pour une autre raison. Deuxième trouvaille : la page des règles de la
+  communauté porte un bandeau annonçant une mise à jour au 24/09/2026 ; la version
+  `?cgversion=2026H2update` ne se charge pas (page blanche même après 15 s), donc
+  l'article annonce la date sans décrire le contenu, et le ledger prévoit une
+  relecture M+1.
+- Faits sourcés : règles de la communauté TikTok (publiées le 14/08/2025,
+  applicables depuis le 13/09/2025, section AIGC et section contenu non original) ;
+  communiqué newsroom du 19/11/2025 (curseur AIGC dans Gérer les sujets, filigrane
+  invisible, C2PA, plus de 1,3 milliard de vidéos labellisées) ; page d'aide FR du
+  Programme de Récompenses (10 000 abonnés, 100 000 vues/30 j, >= 1 min, liste des
+  exclusions, contestation sous 30 jours) ; Know Your Meme du 18/06/2025 (premier
+  vlog Bigfoot par @bigfootvlogs fin mai 2025, Veo 3) ; fermeture de Sora reprise de
+  J3 (app 26/04/2026, API 24/09/2026).
+- Prudence : aucun chiffre de vues ou de durée de vie de tendance inventé ; les
+  formats sont présentés comme observation recoupée, les durées du tableau comme
+  pratique et non comme règle ; la phrase qui attribuait à Sora le rôle d'outil
+  principal des mashups de célébrités a été supprimée faute de source.
+- Hero : Nano Banana 2 via Vercel AI Gateway (111 Ko), salon d'un petit appartement
+  la nuit, jeune créateur allongé sur un canapé en velours côtelé vert tenant son
+  téléphone au-dessus du visage, sur la table basse un carnet avec un croquis de
+  yéti à perche à selfie, un mini trépied de téléphone, un bol de nouilles et un mug,
+  fenêtre pluvieuse avec lampadaire orange, tungstène chaud contre bleu du téléphone.
+  Réussi au premier jet, croquis de créature bien lisible.
+- Corps : 3 captures de sources primaires (section AIGC des règles de la communauté,
+  communiqué newsroom sur le curseur AIGC, section contenu original de la page
+  d'aide du Programme de Récompenses). Outillage : script scratchpad playwright +
+  Pillow avec option `--find <texte>` qui fait un `scrollIntoView` sur le dernier
+  élément contenant le texte puis recule à la molette (le `window.scrollTo` ne
+  marche pas sur le centre d'aide TikTok, qui scrolle dans un conteneur interne ;
+  `.first` tombait sur le lien du sommaire, `.last` sur le vrai titre de section).
+  Le clic « Décliner les cookies facultatifs » déclenche un toast « Saved! » qui
+  reste 3 à 4 s sur la page des règles : attendre 5 s avant la capture.
+- Passes humanisation : scanner unslop 0 hit sur 3897 mots (sans valeur sur du
+  français). Passe manuelle : 4 parallélismes négatifs réécrits (« La mécanique, ce
+  n'est pas Bigfoot », « Ce n'est pas un format pour monétiser », note de fondateur,
+  « Ce n'est pas un hasard »), 2 annonces méta supprimées (« Voilà ce que je te
+  propose », « Traduction pour toi »), première ligne du H2 core-concepts qui
+  répétait son titre réécrite, aphorisme symétrique en fin de FAQ 6 remplacé par
+  deux phrases concrètes, cellule de tableau « pas une règle mais un mur » réécrite,
+  citation traduite entre guillemets d'un blog remplacée par une paraphrase. Corps
+  ramené de 3241 à environ 3040 mots (FAQ dupliquée incluse) en coupant les
+  redites. Intro P2 réécrite en phrase complète après la passe (c'était devenu une
+  liste sans verbe, sur-correction du signposting).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (141 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (191 pages, 0 worker orphelin), check-registry.py OK après git add.
+- IndexNow : 179 URLs soumises, HTTP 200.
+
 ## 2026-09-09 | loop 30j J23 | main | `7bdb1dc`
 
 - Article : `musique-ia-droits-videos` (« Musique IA libre de droits : sécuriser
