@@ -430,6 +430,70 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-11 | loop 30j J25 | main | `546e942`
+
+- Article : `apprendre-ia-creative-parcours` (« Apprendre l'IA créative en 2026 :
+  le bon parcours »), KW principal « apprendre l'ia créative », 25/36 du run.
+- Angle : le web FR sur « apprendre l'IA » mélange deux mondes, le parcours
+  ingénieur (modèles, Python) et le parcours créateur (produire avec les outils).
+  L'article tranche pour le second, impose l'ordre image avant vidéo (l'erreur
+  coûte des centimes en image et des crédits en vidéo), et réduit la question
+  gratuit/payant à ce que le gratuit ne fournit pas : un ordre, une échéance,
+  quelqu'un qui regarde le travail. Section CPF à contre-courant des pages de vente :
+  formations certifiantes seulement, 150 € de participation, donc presque jamais
+  applicable à la création IA. Grille de sept questions avant de payer, parcours
+  en douze semaines, quatre pièges.
+- Faits sourcés : Hugging Face Diffusion Course (gratuit, 4 unités, prérequis
+  Python + PyTorch) ; Runway Academy (inscription gratuite, AI for Advertising
+  10 modules débutant, AI for Visual Effects 6 modules) ; fiche CPF F10705 de
+  service-public.gouv.fr vérifiée le 27/06/2026 (150 €, certifiantes RNCP/RS,
+  exemptions) ; « The MOOC Pivot » (Science, 2019, 3,13 % d'achèvement en
+  2017-2018 sur 12,67 millions d'inscriptions MIT/Harvard) ; contenu du challenge
+  gratuit AI Studios lu sur la page officielle (3 jours, idée/scénario/storyboard/
+  vidéo, Kling + Midjourney) ; VOIDBORN primé au Seoul International AI Film
+  Festival (lib/constants.ts) ; fermeture de l'app Sora le 26/04/2026 (J3).
+- Prudence : « après trois ans à former des gens » retiré du premier jet
+  (invérifiable) ; la date « depuis le 2 avril 2026 » pour les 150 € venait de
+  sources secondaires, remplacée par « au moment où j'écris » car la fiche
+  officielle donne le montant sans cette date ; aucune preuve sociale vague sur
+  la formation (le « 200+ créateurs » et la note Trustpilot de la page de vente
+  n'ont pas été repris), seul le contenu concret du challenge est décrit.
+- Hero : Nano Banana 2 via Vercel AI Gateway (74 Ko), table de cuisine en bois un
+  dimanche matin, personne en pull gris vue de la poitrine aux mains triant des
+  tirages photo en deux piles, croix rouges au crayon gras sur la pile des rejetés,
+  cahier à spirale ouvert sur un parcours en quatre cases fléchées, mug, tablette
+  éteinte, clémentine dans un bol, lumière rasante de fenêtre. Scène tirée de la
+  « semaine 6, pause bilan » de l'article. Réussi au premier jet.
+- Corps : 3 captures (page d'accueil du Diffusion Course avec « In this free
+  course » et les prérequis, section Explore Courses de Runway Academy recadrée,
+  fiche CPF avec l'accordéon « prise en charge des frais » ouvert sur l'onglet
+  Cas général et le « 150 € »). Outillage : script scratchpad playwright + Pillow
+  (`cap.py`, options --click répétable, --scroll-to, --crop) ; la fiche
+  service-public est en accordéons repliés avec des onglets DSFR à l'intérieur :
+  `get_by_role("button", name=...)` pour l'accordéon, `input[type=radio]` pour
+  l'onglet, bouton « Refuser » pour les cookies, et repérage du « 150 € » par
+  `evaluate` sur le DOM + `window.scrollTo` (le get_by_text tombait sur un nœud
+  masqué). `PYTHONIOENCODING=utf-8` obligatoire sinon le log playwright plante
+  sur un caractère Unicode.
+- Outillage audit : `.loop_scripts/audit.mjs` ne connaissait que les slugs des
+  modules TS et signalait en erreur bloquante le lien vers
+  `/blog/plan-apprentissage-ia-image-video-30-jours` (article du JSON débutant,
+  HTTP 200 en prod, lien prévu par le plan). Patch commité : les slugs de
+  `beginner-articles.json` sont ajoutés au set des cibles valides.
+- Passes humanisation : humanizer + unslop-text (scanner 0 hit sur 3426 mots,
+  sans valeur sur du français) + antislop-copywriting. Corrections : quatre
+  parallélismes négatifs « ce n'est pas X, c'est Y » réécrits (parti pris de
+  l'intro, argument commercial, objectif du mouvement, note fondateur), cinq
+  contrastes « X, pas Y » réduits à deux, signposting « tient en une phrase »
+  supprimé, une généralisation « ceux qui avaient attendu Sora » reformulée en
+  observation, ouverture « À la fin de cet article, tu sauras » remplacée car
+  présente dans 13 autres posts. Sur-correction rattrapée à la relecture : deux
+  « ne compte pas » en fin de phrase à trois paragraphes d'écart, le premier
+  réécrit.
+- Gates : audit 0 erreur / 0 avertissement (142 articles), lint vert, build vert
+  (page générée avec les 3 images et le JSON-LD FAQPage), check-registry OK.
+- Push : `546e942` sur main, IndexNow 180 URLs (HTTP 200).
+
 ## 2026-09-10 | loop 30j J24 | main | `96a1d75`
 
 - Article : `tiktok-formats-video-ia-viraux` (« Vidéos IA virales sur TikTok : les
