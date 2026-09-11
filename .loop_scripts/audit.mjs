@@ -53,6 +53,16 @@ for (const f of files) {
 }
 
 const slugs = new Set(articles.map((a) => a.slug));
+// Les 30 articles débutant vivent dans beginner-articles.json (voir articles.ts) :
+// leurs slugs sont des cibles valides pour les liens internes et relatedSlugs.
+try {
+  const beginner = JSON.parse(
+    readFileSync(join(ROOT, "content/articles/beginner-articles.json"), "utf8"),
+  );
+  for (const b of Array.isArray(beginner) ? beginner : beginner.articles ?? []) {
+    if (b?.slug) slugs.add(b.slug);
+  }
+} catch {}
 const errors = [];
 const warns = [];
 

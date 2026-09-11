@@ -142,6 +142,7 @@ import { ugcIaPourMarques } from "@/content/articles/posts/ugc-ia-pour-marques";
 import { capcutIaFonctions } from "@/content/articles/posts/capcut-ia-fonctions";
 import { musiqueIaDroitsVideos } from "@/content/articles/posts/musique-ia-droits-videos";
 import { tiktokFormatsVideoIaViraux } from "@/content/articles/posts/tiktok-formats-video-ia-viraux";
+import { apprendreIaCreativeParcours } from "@/content/articles/posts/apprendre-ia-creative-parcours";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -293,4 +294,5 @@ export const articles: Article[] = [
   capcutIaFonctions,
   musiqueIaDroitsVideos,
   tiktokFormatsVideoIaViraux,
+  apprendreIaCreativeParcours,
 ];
