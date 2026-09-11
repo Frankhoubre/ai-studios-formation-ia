@@ -217,7 +217,7 @@ export const agenceVideoIaLancer: Article = {
     },
     {
       type: "p",
-      text: "Une agence vidéo IA solide se construit sur un positionnement honnête, une offre resserrée, des tarifs qui reflètent la structure que tu apportes et un cadre contractuel clair. C'est exactement le genre de trajectoire, du freelance isolé vers une vraie petite structure, qu'on accompagne dans la [formation IA gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), et la communauté Skool est un bon endroit pour échanger avec d'autres qui traversent la même transition et trouver tes premiers collaborateurs de confiance.",
+      text: "Une agence vidéo IA solide se construit sur un positionnement honnête, une offre resserrée, des tarifs qui reflètent la structure que tu apportes et un cadre contractuel clair. C'est exactement le genre de trajectoire, du freelance isolé vers une vraie petite structure, qu'on accompagne dans la [formation IA gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), et la communauté Skool est un bon endroit pour échanger avec d'autres qui traversent la même transition et trouver tes premiers collaborateurs de confiance.",
     },
     {
       type: "h2",

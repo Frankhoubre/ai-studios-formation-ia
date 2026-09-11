@@ -257,7 +257,7 @@ export const heygenGuideAvatars: Article = {
     },
     {
       type: "p",
-      text: "Reste la partie qu'aucun avatar ne prendra en charge : savoir quoi dire, à qui, et dans quel ordre. C'est exactement ce qu'on travaille étape par étape dans la [formation IA vidéo gratuite d'AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), avec la même logique de production en série que celle décrite ici.",
+      text: "Reste la partie qu'aucun avatar ne prendra en charge : savoir quoi dire, à qui, et dans quel ordre. C'est exactement ce qu'on travaille étape par étape dans la [formation IA vidéo gratuite d'AI Studios](https://frankhoubre.com/formation-ia-gratuite), avec la même logique de production en série que celle décrite ici.",
     },
     {
       type: "h2",

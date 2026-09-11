@@ -234,7 +234,7 @@ export const veo3VsSoraComparatif: Article = {
     },
     {
       type: "p",
-      text: "Un modèle très fort peut donc s'arrêter du jour au lendemain. Ce qui te reste dans ce cas, c'est ta méthode : ta façon de découper une idée en plans et de monter des morceaux de 8 secondes en quelque chose qui tient debout. C'est ce qu'on travaille dans la [formation IA gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), et ça reste valable quel que soit le modèle du moment.",
+      text: "Un modèle très fort peut donc s'arrêter du jour au lendemain. Ce qui te reste dans ce cas, c'est ta méthode : ta façon de découper une idée en plans et de monter des morceaux de 8 secondes en quelque chose qui tient debout. C'est ce qu'on travaille dans la [formation IA gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), et ça reste valable quel que soit le modèle du moment.",
     },
     {
       type: "h2",

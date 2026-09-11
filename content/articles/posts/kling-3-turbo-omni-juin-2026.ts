@@ -128,7 +128,7 @@ export const kling3TurboOmniJuin2026: Article = {
     },
     {
       type: "p",
-      text: "Un dernier réflexe : ne change pas d'outil juste parce qu'une maj sort. Teste Turbo sur un plan que tu maîtrises déjà ailleurs, mesure le temps gagné et le rendu, et garde la main sur ton coût. C'est ce qu'on creuse pas à pas dans la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video), sans vendre du rêve.",
+      text: "Un dernier réflexe : ne change pas d'outil juste parce qu'une maj sort. Teste Turbo sur un plan que tu maîtrises déjà ailleurs, mesure le temps gagné et le rendu, et garde la main sur ton coût. C'est ce qu'on creuse pas à pas dans la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite), sans vendre du rêve.",
     },
     {
       type: "h2",

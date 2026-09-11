@@ -246,7 +246,7 @@ export const creerPlanVideoIaImaginode: Article = {
     },
     {
       type: "p",
-      text: "Tu as maintenant la méthode complète : un node par décision, l'image validée avant la vidéo, la caméra partagée entre les plans, et les crédits dépensés au bon endroit. La suite logique, c'est d'enchaîner les plans en séquence qui raconte quelque chose, et ça, c'est exactement ce qu'on travaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), du storyboard au montage final.",
+      text: "Tu as maintenant la méthode complète : un node par décision, l'image validée avant la vidéo, la caméra partagée entre les plans, et les crédits dépensés au bon endroit. La suite logique, c'est d'enchaîner les plans en séquence qui raconte quelque chose, et ça, c'est exactement ce qu'on travaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), du storyboard au montage final.",
     },
     {
       type: "h2",

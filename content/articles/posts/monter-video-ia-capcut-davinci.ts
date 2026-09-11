@@ -257,7 +257,7 @@ export const monterVideoIaCapcutDavinci: Article = {
     },
     {
       type: "p",
-      text: "Le montage, c'est l'étape où tu arrêtes de subir tes générations et où tu redeviens réalisateur de ta vidéo. Si tu veux apprendre à enchaîner génération et montage proprement, sans y passer tes nuits, c'est exactement ce qu'on construit pas à pas dans la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video).",
+      text: "Le montage, c'est l'étape où tu arrêtes de subir tes générations et où tu redeviens réalisateur de ta vidéo. Si tu veux apprendre à enchaîner génération et montage proprement, sans y passer tes nuits, c'est exactement ce qu'on construit pas à pas dans la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite).",
     },
   ],
 };

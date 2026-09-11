@@ -135,7 +135,7 @@ export const seedance25VideoIa30Secondes: Article = {
     },
     {
       type: "p",
-      text: "Choisir le bon outil au bon moment, sans se laisser hypnotiser par la dernière annonce, c'est exactement ce qu'on travaille dans la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video) : garder la tête froide et la main sur la réalisation.",
+      text: "Choisir le bon outil au bon moment, sans se laisser hypnotiser par la dernière annonce, c'est exactement ce qu'on travaille dans la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite) : garder la tête froide et la main sur la réalisation.",
     },
     {
       type: "h2",

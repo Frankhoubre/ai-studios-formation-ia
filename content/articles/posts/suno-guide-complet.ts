@@ -288,7 +288,7 @@ export const sunoGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Un bon morceau ne sauve pas une vidéo qui n'a rien à raconter. Trouver l'angle, poser le rythme et savoir où la musique doit entrer, c'est le travail qu'on fait pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video).",
+      text: "Un bon morceau ne sauve pas une vidéo qui n'a rien à raconter. Trouver l'angle, poser le rythme et savoir où la musique doit entrer, c'est le travail qu'on fait pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://frankhoubre.com/formation-ia-gratuite).",
     },
     {
       type: "h2",

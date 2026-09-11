@@ -284,7 +284,7 @@ export const vendreVideosIa: Article = {
     },
     {
       type: "p",
-      text: "Poser une offre, tenir un prix et livrer sans y passer ses nuits, ça s'apprend surtout en le faisant. On décortique la partie vidéo pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), avec la communauté qui va avec.",
+      text: "Poser une offre, tenir un prix et livrer sans y passer ses nuits, ça s'apprend surtout en le faisant. On décortique la partie vidéo pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://frankhoubre.com/formation-ia-gratuite), avec la communauté qui va avec.",
     },
     {
       type: "h2",

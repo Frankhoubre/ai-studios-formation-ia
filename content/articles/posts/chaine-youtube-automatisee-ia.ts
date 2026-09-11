@@ -243,7 +243,7 @@ export const chaineYoutubeAutomatiseeIa: Article = {
     },
     {
       type: "p",
-      text: "Une chaîne IA qui dure, ce n'est donc pas une machine qui tourne seule, c'est ton savoir amplifié par des outils. La partie automatisable, c'est la sueur. La partie humaine, c'est la valeur. C'est exactement cette frontière qu'on travaille dans la [formation IA gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), pour que tu construises une chaîne qui rapporte au lieu d'une chaîne qui se fait couper.",
+      text: "Une chaîne IA qui dure, ce n'est donc pas une machine qui tourne seule, c'est ton savoir amplifié par des outils. La partie automatisable, c'est la sueur. La partie humaine, c'est la valeur. C'est exactement cette frontière qu'on travaille dans la [formation IA gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), pour que tu construises une chaîne qui rapporte au lieu d'une chaîne qui se fait couper.",
     },
     {
       type: "h2",

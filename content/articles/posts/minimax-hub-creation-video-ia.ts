@@ -123,7 +123,7 @@ export const minimaxHubCreationVideoIa: Article = {
     },
     {
       type: "p",
-      text: "Garder l'humain au centre, c'est aussi la philosophie qu'on défend dans la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video) : l'IA fait le travail ingrat, toi tu gardes la réalisation.",
+      text: "Garder l'humain au centre, c'est aussi la philosophie qu'on défend dans la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite) : l'IA fait le travail ingrat, toi tu gardes la réalisation.",
     },
     {
       type: "h2",

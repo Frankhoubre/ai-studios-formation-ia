@@ -270,7 +270,7 @@ export const elevenlabsGuideComplet: Article = {
     },
     {
       type: "p",
-      text: "Une voix impeccable ne rattrape pas un script qui n'a rien à dire. Trouver l'angle et l'ordre des idées, c'est le travail qu'on fait pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video).",
+      text: "Une voix impeccable ne rattrape pas un script qui n'a rien à dire. Trouver l'angle et l'ordre des idées, c'est le travail qu'on fait pas à pas dans la [formation IA vidéo gratuite d'AI Studios](https://frankhoubre.com/formation-ia-gratuite).",
     },
     {
       type: "h2",

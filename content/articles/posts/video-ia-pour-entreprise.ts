@@ -332,7 +332,7 @@ export const videoIaPourEntreprise: Article = {
     },
     {
       type: "p",
-      text: "Reste la partie que l'IA ne prendra jamais en charge : savoir quoi dire et à qui. C'est ce qu'on creuse étape par étape dans la [formation IA vidéo gratuite d'AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), avec la même logique de production en série que celle décrite ici.",
+      text: "Reste la partie que l'IA ne prendra jamais en charge : savoir quoi dire et à qui. C'est ce qu'on creuse étape par étape dans la [formation IA vidéo gratuite d'AI Studios](https://frankhoubre.com/formation-ia-gratuite), avec la même logique de production en série que celle décrite ici.",
     },
     {
       type: "h2",

@@ -391,7 +391,7 @@ export const promptVeo3Exemples: Article = {
     },
     {
       type: "p",
-      text: "Ces 25 prompts te donnent la matière première, mais la vraie compétence, c'est de savoir les adapter à TES sujets et enchaîner les plans en séquence qui raconte quelque chose. C'est exactement ce qu'on travaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), du premier prompt au montage final.",
+      text: "Ces 25 prompts te donnent la matière première, mais la vraie compétence, c'est de savoir les adapter à TES sujets et enchaîner les plans en séquence qui raconte quelque chose. C'est exactement ce qu'on travaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), du premier prompt au montage final.",
     },
     {
       type: "h2",

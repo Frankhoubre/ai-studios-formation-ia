@@ -232,7 +232,7 @@ export const creerVideoYoutubeIa: Article = {
     },
     {
       type: "p",
-      text: "Une fois cette méthode intégrée, la partie technique cesse d'être le frein. C'est exactement ce parcours, du script à la publication, qu'on détaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video), pour que tu sortes ta première vidéo sans tourner en rond entre les outils.",
+      text: "Une fois cette méthode intégrée, la partie technique cesse d'être le frein. C'est exactement ce parcours, du script à la publication, qu'on détaille pas à pas dans la [formation IA vidéo gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite), pour que tu sortes ta première vidéo sans tourner en rond entre les outils.",
     },
     {
       type: "h2",

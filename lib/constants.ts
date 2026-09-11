@@ -5,7 +5,7 @@ export const DEFAULT_SOCIAL_IMAGE = "/images/og-default.png";
 /** Logo carré pour les icônes et le JSON-LD Organization (512×512). */
 export const ORG_LOGO = "/images/logo.png";
 export const FORMATION_FREE_URL =
-  "https://www.ai-studios.fr/formation-ia-gratuite-video";
+  "https://frankhoubre.com/formation-ia-gratuite";
 /** Communauté privée AI Studios sur Skool */
 export const SKOOL_COMMUNITY_URL = "https://www.skool.com/ai-studios/about";
 export const MAIN_SITE_URL = "https://www.ai-studios.fr";

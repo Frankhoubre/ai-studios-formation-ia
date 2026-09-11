@@ -122,7 +122,7 @@ export const geminiImagesPersonnaliseesDonneesGoogle: Article = {
     },
     {
       type: "p",
-      text: "Choisir en conscience plutôt que par réflexe, c'est le fil rouge de la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video) : de bons outils, oui, mais toujours en gardant la main sur ce que tu donnes et ce que tu produis.",
+      text: "Choisir en conscience plutôt que par réflexe, c'est le fil rouge de la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite) : de bons outils, oui, mais toujours en gardant la main sur ce que tu donnes et ce que tu produis.",
     },
     {
       type: "h2",

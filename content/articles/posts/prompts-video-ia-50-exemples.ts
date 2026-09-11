@@ -598,7 +598,7 @@ export const promptsVideoIa50Exemples: Article = {
     },
     {
       type: "p",
-      text: "Ces 50 prompts sont des points de départ. Choisis-en un proche de ton projet, génère-le tel quel pour voir la base, puis modifie un seul bloc à la fois : le sujet d'abord, la lumière ensuite. En quelques essais, tu auras un plan qui t'appartient. C'est exactement ce genre de méthode qu'on pousse plus loin dans la [formation IA gratuite AI Studios](https://www.ai-studios.fr/formation-ia-gratuite-video) : passer de prompts copiés à un vrai workflow de réalisation. Exercice du jour : prends le prompt 9, change le pêcheur pour un personnage de ton univers, garde tout le reste. Tu viens d'écrire ton premier prompt vidéo structuré.",
+      text: "Ces 50 prompts sont des points de départ. Choisis-en un proche de ton projet, génère-le tel quel pour voir la base, puis modifie un seul bloc à la fois : le sujet d'abord, la lumière ensuite. En quelques essais, tu auras un plan qui t'appartient. C'est exactement ce genre de méthode qu'on pousse plus loin dans la [formation IA gratuite AI Studios](https://frankhoubre.com/formation-ia-gratuite) : passer de prompts copiés à un vrai workflow de réalisation. Exercice du jour : prends le prompt 9, change le pêcheur pour un personnage de ton univers, garde tout le reste. Tu viens d'écrire ton premier prompt vidéo structuré.",
     },
   ],
 };

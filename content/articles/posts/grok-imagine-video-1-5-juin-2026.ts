@@ -130,7 +130,7 @@ export const grokImagineVideo15Juin2026: Article = {
     },
     {
       type: "p",
-      text: "Le bon réflexe : ajoute Grok Imagine à ta boîte à outils, teste-le sur un cas réel, et garde ton pipeline de montage là où tu es efficace. C'est ce qu'on creuse sans vendre du rêve dans la [formation IA gratuite](https://www.ai-studios.fr/formation-ia-gratuite-video).",
+      text: "Le bon réflexe : ajoute Grok Imagine à ta boîte à outils, teste-le sur un cas réel, et garde ton pipeline de montage là où tu es efficace. C'est ce qu'on creuse sans vendre du rêve dans la [formation IA gratuite](https://frankhoubre.com/formation-ia-gratuite).",
     },
     {
       type: "h2",
