@@ -430,6 +430,47 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-12 | loop 30j J26 | main | `b5ab2c1`
+
+- Article : `vendre-prompts-templates-ia` (« Vendre des prompts, presets et
+  templates IA : le vrai plan »), KW principal « vendre des prompts », 26/36 du run.
+- Angle : deux documents officiels que personne ne lit avant de vendre un pack.
+  Les CGU Midjourney (27/05/2026) rendent prompts et images publics et remixables
+  par défaut (Stealth Pro/Mega en « best efforts »), et le rapport Part 2 du
+  Copyright Office (29/01/2025) refuse l'authorship aux prompts seuls. Donc le
+  texte du prompt ne vaut rien ; ce qui se vend, c'est le résultat garanti pour
+  un métier, les variables, les exemples bruts et la mise à jour par version.
+  Tableau des commissions vérifiées le jour même, plan en six semaines, trois
+  formats (pack à variables, preset/LUT, template de production), quatre pièges,
+  section TVA (Merchant of Record vs OSS).
+- Faits sourcés : PromptBase (/sell : 0 % via lien, 20 % marketplace, Stripe ou
+  Zoneless ; /prompt-guidelines : anglais uniquement, refus doublons, exemples
+  retouchés, prompts générés en masse ; home : 330k+ prompts, 520 000+ utilisateurs,
+  2,99 à 6,99 $, Select 19 $/mois) ; Gumroad (/pricing : 10 % + 0,50 $ direct,
+  30 % Discover ; aide taxes : Merchant of Record) ; Etsy (règlement des frais :
+  0,20 USD par fiche, 6,5 %, paiement selon pays, frais réglementaires selon pays,
+  pub externe 15 % / 12 % au-delà de 10 000 USD) ; Notion Marketplace (8 % +
+  0,40 $, +1 % change, 14 jours, payout dès 20 $) ; impots.gouv.fr OSS (10 000 €).
+- Prudence : aucun revenu de vendeur cité ; fourchette de prix et exemple
+  « 50 clients à 19 € » donnés comme avis ; chiffre Notion pris sur la page
+  officielle (8 %) et non sur les sources tierces (10 %) ; « depuis 2023 » retiré ;
+  droit français signalé comme non tranché.
+- Hero : Nano Banana 2 via Vercel AI Gateway (103 Ko), atelier de sérigraphie au
+  crépuscule, fil de séchage avec une dizaine de variations du même portrait
+  suspendues à des pinces, jeune femme en tablier de profil attachant une
+  étiquette kraft vierge, lampes tungstène, fenêtre bleue. Réussi au premier jet.
+- Corps : 3 captures (page Sell de PromptBase, page tarifs de Gumroad avec les
+  10 % + 0,50 $ et 30 %, section Remixing and Stealth Mode des CGU Midjourney),
+  chacune collée à l'affirmation qu'elle prouve, source et date en légende.
+  Outillage : script scratchpad playwright + Pillow (options crop, scrollto,
+  wheel), Etsy et Midjourney lus via le pane navigateur (403 à WebFetch).
+- Passes humanisation : humanizer + unslop-text + antislop-copywriting appliquées
+  (détail dans RUN_30J.md). Scanner : 3 faux positifs FR, 0 tiret.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (143 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 181 URLs soumises, HTTP 200.
+
 ## 2026-09-11 | loop 30j J25 | main | `546e942`
 
 - Article : `apprendre-ia-creative-parcours` (« Apprendre l'IA créative en 2026 :
