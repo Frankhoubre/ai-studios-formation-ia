@@ -144,6 +144,7 @@ import { musiqueIaDroitsVideos } from "@/content/articles/posts/musique-ia-droit
 import { tiktokFormatsVideoIaViraux } from "@/content/articles/posts/tiktok-formats-video-ia-viraux";
 import { apprendreIaCreativeParcours } from "@/content/articles/posts/apprendre-ia-creative-parcours";
 import { vendrePromptsTemplatesIa } from "@/content/articles/posts/vendre-prompts-templates-ia";
+import { synthesiaVsHeygen } from "@/content/articles/posts/synthesia-vs-heygen";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -297,4 +298,5 @@ export const articles: Article[] = [
   tiktokFormatsVideoIaViraux,
   apprendreIaCreativeParcours,
   vendrePromptsTemplatesIa,
+  synthesiaVsHeygen,
 ];
