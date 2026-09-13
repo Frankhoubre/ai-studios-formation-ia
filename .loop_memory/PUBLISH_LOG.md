@@ -430,6 +430,51 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-13 | loop 30j J27 | main | `ac2d92a`
+
+- Article : `synthesia-vs-heygen` (« Synthesia vs HeyGen : lequel choisir pour
+  tes vidéos pro »), KW principal « synthesia vs heygen », 27/36 du run, dernier
+  comparatif de la Phase 1 ; complète J8 côté B2B.
+- Angle : deux critères décident, le coût réel de la minute selon le moteur
+  (Synthesia 120 crédits la minute quel que soit l'avatar ; HeyGen de 4 à 48
+  selon moteur et look, échelle de 1 à 12) et ce que la plateforme autorise à
+  publier (Synthesia réserve actualité et politique à Enterprise avec avatar
+  custom, vérifie chaque vidéo ; HeyGen interdit la campagne politique mais ne
+  réserve aucun sujet). Tableau verdict, tableau coût de la minute offre par
+  offre (1,90 € à 2,63 € chez Synthesia en mensuel, 0,19 $ à 2,32 $ chez HeyGen
+  selon moteur), méthode en cinq étapes, verdict par profil (L&D grande
+  entreprise, créateur solo, PME avec dirigeant, média).
+- Trouvaille : la page tarifs Synthesia vue depuis la France est en euros et
+  affiche « New lower prices » (Starter 19 €/12 €, Creator 79 €/49 €) alors que
+  WebFetch depuis les US renvoie 29 $/89 $ ; les prix euros ont été gardés,
+  vérifiés par capture. HeyGen reste en dollars depuis la France.
+- Faits sourcés : voir CONTENT_LEDGER (guide des crédits Synthesia, article
+  « Disagreeable Content » du 23/07/2026, features/avatars, responsible-ai ;
+  heygen.com/pricing, articles 15126059, 15125761, 12092609, trust-and-safety).
+- Prudence : aucune part de marché, aucun avis d'utilisateur, « Trusted by 90 %
+  of Fortune 100 » non repris, « première entreprise certifiée ISO 42001 »
+  attribuée à l'annonce de Synthesia elle-même, coûts de la minute présentés
+  comme des calculs à partir des barèmes, devises non converties.
+- Hero : Nano Banana 2 via Vercel AI Gateway (75 Ko, seconde génération : la
+  première portait un titre lisible sur le tableau blanc), salle de réunion
+  vitrée transformée en cabine d'enregistrement, homme en blazer marine lisant
+  une carte de consentement face à un téléphone sur mini trépied, panneau LED,
+  tableau blanc de flèches et cases sans texte, collègue flou derrière la vitre.
+- Images corps : 3 captures réelles (page tarifs Synthesia en euros, section
+  « Media Reporting (News) » du centre d'aide Synthesia recadrée, barème des
+  crédits HeyGen recadré), via script playwright + Pillow du scratchpad
+  (capture-screenshot.py toujours inutilisable sous Windows : sips/cwebp).
+- Humanisation : humanizer + unslop-text (scan 0 finding, non probant en FR) +
+  antislop-copywriting ; 9 corrections manuelles (2 parallélismes négatifs,
+  1 signposting « ce qui compte ici », 1 « La première : / La seconde : »,
+  1 première ligne qui répétait son H2, 1 « du marché » invérifiable, 1 date
+  non sourcée retirée, note fondateur réécrite).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (144 articles, 0 erreur, 0 avertissement après
+  description ramenée à 156 caractères), lint OK, build exit 0,
+  check-registry.py OK.
+- IndexNow : 182 URLs soumises, HTTP 200.
+
 ## 2026-09-12 | loop 30j J26 | main | `b5ab2c1`
 
 - Article : `vendre-prompts-templates-ia` (« Vendre des prompts, presets et
