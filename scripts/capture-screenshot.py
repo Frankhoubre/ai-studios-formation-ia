@@ -13,12 +13,14 @@ Produit public/images/articles/<slug>-<label>.webp (1280px, léger), à intégre
 dans l'article via un bloc image :
   { type: "image", src: "/images/articles/<slug>-<label>.webp", alt: "<alt>" }
 
-Pré-requis : Google Chrome installé + playwright (python) + cwebp.
+Pré-requis : Google Chrome installé + playwright (python) + cwebp (ou Pillow
+en repli quand sips/cwebp manquent, cas de Windows).
 N'utilise que des pages PUBLIQUES (home, page produit). Jamais derrière login,
 paywall ou données privées.
 """
 
 import argparse
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -91,10 +93,20 @@ def capture_png(url: str, dest_png: Path, width: int, height: int,
 
 def to_webp(src_png: Path, dest: Path, width: int, quality: int) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run(["sips", "--resampleWidth", str(width), str(src_png)],
-                   check=True, capture_output=True)
-    subprocess.run(["cwebp", "-quiet", "-q", str(quality), str(src_png),
-                    "-o", str(dest)], check=True, capture_output=True)
+    if shutil.which("sips") and shutil.which("cwebp"):
+        subprocess.run(["sips", "--resampleWidth", str(width), str(src_png)],
+                       check=True, capture_output=True)
+        subprocess.run(["cwebp", "-quiet", "-q", str(quality), str(src_png),
+                        "-o", str(dest)], check=True, capture_output=True)
+        return
+    # Windows / Linux : sips et cwebp absents, on passe par Pillow.
+    from PIL import Image
+    with Image.open(src_png) as im:
+        im = im.convert("RGB")
+        if im.width > width:
+            im = im.resize((width, round(im.height * width / im.width)),
+                           Image.LANCZOS)
+        im.save(dest, "WEBP", quality=quality, method=6)
 
 
 def main() -> None:
@@ -132,7 +144,7 @@ def main() -> None:
         shown = dest.resolve().relative_to(REPO_ROOT)
     except ValueError:
         shown = dest
-    print(f"✓ {shown} ({size_kb:.0f} Ko)")
+    print(f"OK {shown} ({size_kb:.0f} Ko)")
     if args.slug:
         alt = args.alt or f"Capture d'écran de {args.url}"
         print("Bloc à insérer dans content :")
