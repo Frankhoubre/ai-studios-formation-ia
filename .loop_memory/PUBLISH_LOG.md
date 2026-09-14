@@ -430,6 +430,56 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-14 | loop 30j J28 | main | `ba1dea4`
+
+- Article : `festivals-films-ia` (« Festivals de films IA : où montrer ton
+  travail »), KW principal « festival film ia », 28/36 du run, premier sujet de
+  la Phase 2 (J31 du plan, cluster Cinéma IA).
+- Angle : trois familles de festivals qui ne vendent pas la même chose
+  (dotation financée par les outils / frais de dépôt avec événement physique /
+  en ligne mensuel accrédité IMDb), et ce qu'un laurier rapporte dans chacune.
+  E-E-A-T : VOIDBORN cité avec les placements de lib/constants.ts uniquement.
+  Trouvaille centrale : le règlement du SIAFF écrit que la sélection officielle
+  n'est pas projetée et donne « le droit d'utiliser le logo », seuls 10 films de
+  lauréats présents passent à l'écran ; Top Shorts écrit qu'il ne diffuse pas
+  les films. Tableau 6 festivals (frais, durée, gain, échéance), ordre de dépôt
+  en 7 étapes, 4 pièges (film de 2 min 30, sélection différente de projection,
+  laurier différent de carrière, droits de la bande-son).
+- Faits sourcés : voir CONTENT_LEDGER (règlement Runway AIF, aaiff.ai, page
+  Reply, chromaawards.com, fiches FilmFreeway SIAFF et Top Shorts). Astana est
+  passé de 5 000+ films (capture ScreenWeaver du 08/09) à 8 067 films / 125 pays
+  affichés le 14/09.
+- Prudence : frais Reply et Chroma « non précisés » plutôt qu'affirmés ; aucun
+  dépôt de VOIDBORN chez Runway inventé (première version retirée) ; « deux
+  festivals sur neuf » non documenté retiré ; Chroma « Première place Silver »
+  de constants rendu par « Silver aux Chroma Awards » ; durée de VOIDBORN non
+  citée (inconnue).
+- Hero : Nano Banana 2 via Vercel AI Gateway (77 Ko, premier jet), coulisses
+  d'une projection en plein air la nuit, réalisateur en veste sombre avec badge
+  tenant un petit trophée en acrylique, écran bleu violet abstrait, public assis
+  dans l'ombre, projecteur tungstène sur pied, guirlande d'ampoules. Motif
+  distinct de J27 (salle de réunion vitrée), J26 (atelier de sérigraphie), J25
+  (table de cuisine), J24 (canapé), J23 (paperasse).
+- Images corps : 3 captures réelles (fiche FilmFreeway du SIAFF avec le
+  calendrier 2027, home aaiff.ai « Submissions closed · 8,067 films », home
+  aif.runwayml.com avec les dates des galas), chacune sous l'affirmation qu'elle
+  prouve, légendes avec source et date.
+- Outil : scripts/capture-screenshot.py réparé pour Windows (repli Pillow quand
+  sips/cwebp manquent, sortie console ASCII) ; plus besoin du script scratchpad.
+  FilmFreeway renvoie 403 à WebFetch mais accepte Playwright channel=chrome.
+- Humanisation : humanizer + unslop-text (scan 0 finding, non probant en FR) +
+  antislop-copywriting ; 10 corrections manuelles (parallélisme négatif « pas
+  une arnaque, c'est un modèle », « n'a pas de valeur en soi. Il a la valeur »,
+  paire symétrique « comptent un peu / ne comptent pas du tout », signposting
+  « le modèle est clair » et « tient en deux choses », preuve sociale vague
+  « des prix, des sélections, des finales » remplacée par les placements
+  nommés, « pas après » en queue de phrase, deux affirmations à la première
+  personne non documentées).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (145 articles, 0 erreur, 0 avertissement), lint OK,
+  build exit 0, check-registry.py OK (description ramenée de 161 à 155 car.).
+- IndexNow : 183 URLs soumises, HTTP 200.
+
 ## 2026-09-13 | loop 30j J27 | main | `ac2d92a`
 
 - Article : `synthesia-vs-heygen` (« Synthesia vs HeyGen : lequel choisir pour
