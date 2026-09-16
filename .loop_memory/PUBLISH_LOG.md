@@ -430,6 +430,50 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
   - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
 
+## 2026-09-16 | loop 30j J29 | main | `afeeb24`
+
+- Article : `decors-cinema-ia` (« Décors de cinéma avec l'IA : un lieu qui tient
+  sur dix plans »), KW principal « décor cinéma ia », 29/36 du run, J32 du plan
+  (cluster Cinéma IA, satellite de illustration-cinema-concept-art-ia). Aucun
+  article publié le 15/09 : un run avait démarré (3 captures datées du 15/09
+  17:36 laissées non suivies dans public/images/articles/) sans module ni log ;
+  les captures ont été relues, jugées lisibles et réutilisées avec leur date.
+- Angle : un décor se juge au deuxième angle. Concept art / plate / décor
+  distingués, fiche de lieu d'une page (géographie, lumière, objets signature,
+  palette), deux routes (images de référence dans Flow avec Veo 3.1, monde 3D
+  dans Marble), matte painting comme filiation (Wikipédia FR). Tableau 4 routes
+  (ce que tu construis, angles et caméra, où ça casse, coût), méthode en 5
+  étapes, Pro Tip sourcé (Record de Marble ne persiste pas les images clés),
+  4 pièges (champ/contre-champ, lumière, splats en gros plan, droits
+  commerciaux Pro 35 $).
+- Faits sourcés : voir CONTENT_LEDGER (pricing Marble capturé, blog World Labs,
+  docs Record et export, blog Google Veo 3.1, doc API Gemini). Vérification web
+  qu'aucun « Veo 4 » officiel n'existe au 16/09 : Veo 3.1 reste la référence de
+  Flow ; Gemini Omni Flash non cité faute de vérification directe.
+- Prudence : note fondateur sans anecdote VOIDBORN inventée (première version
+  retirée) ; « abonnement Google AI Pro et Ultra » gardé comme fait courant,
+  non recapturé ; dégradation des splats en gros plan donnée comme observation.
+- Hero : Nano Banana 2 via Vercel AI Gateway (139 Ko, régénéré une fois : le
+  premier jet contenait des bribes de texte rouge sur les tirages punaisés),
+  atelier de décoration de cinéma sous verrière, femme en tablier ajustant à la
+  pince un réverbère miniature sur la maquette d'une ruelle pavée, tablette
+  affichant la même ruelle, mur de tirages du lieu sous plusieurs angles. Motif
+  distinct de J28 (projection plein air), J27 (salle vitrée), J26 (sérigraphie),
+  J25 (cuisine), J24 (canapé).
+- Images corps : 3 captures réelles (blog.google Veo 3.1 recapturée le 16/09
+  sans la bannière cookies via un script Playwright scratchpad cliquant
+  « Understood », home worldlabs.ai du 15/09, pricing Marble du 15/09), chacune
+  sous l'affirmation qu'elle prouve, légendes avec source et date.
+- Humanisation : humanizer + unslop-text (scan 1 faux positif « utilise ») +
+  antislop-copywriting. Corrections : 3 parallélismes négatifs retirés (excerpt,
+  H2 core-concepts, piège droits), promesse P2 reformulée sans « cet article »,
+  signposting « le tableau résume » et « c'est exactement pour ça » supprimés,
+  conclusion « voilà ce qui sépare » remplacée par l'instruction concrète.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (146 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, 196 pages), check-registry.py OK après git add.
+- IndexNow : 184 URLs soumises, HTTP 200.
+
 ## 2026-09-14 | loop 30j J28 | main | `ba1dea4`
 
 - Article : `festivals-films-ia` (« Festivals de films IA : où montrer ton
