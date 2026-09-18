@@ -911,3 +911,50 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs OK (136 articles, 0 erreur, 0 avertissement), lint OK,
   build OK, check-registry.py OK.
 - IndexNow : 174 URLs soumises, HTTP 200.
+
+## 2026-09-18 | loop 30j J30 | main | `59ae17c`
+
+- Article : `acteurs-ia-casting-virtuel` (« Acteur IA : ce que le casting
+  virtuel permet vraiment »), KW principal « acteur ia », 30/36 du run, J33 du
+  plan (cluster Cinéma IA, type analyse). Aucun article publié le 17/09 (pas de
+  run loggé).
+- Angle : le mot « acteur IA » recouvre trois objets (synthétique façon Tilly
+  Norwood, réplique numérique d'une personne réelle, transfert de jeu d'un
+  comédien vers un personnage). Le troisième est celui du lecteur : casting
+  d'un humain derrière un visage dessiné, contrat, prises courtes. Contrat
+  SAG-AFTRA 2026 (notification, « valeur ajoutée significative », arbitrage)
+  expliqué depuis la page officielle ; art. 226-8 CP après la loi SREN ; Act-Two
+  comme exemple de transfert de jeu avec specs officielles. Tableau 3 objets
+  (consentement, où ça casse, coût), méthode en 5 étapes, Pro Tip sur le
+  minimum facturé, 4 pièges (sosie, comédien invisible, presque humain, mention
+  oubliée).
+- Faits sourcés : voir CONTENT_LEDGER (SAG-AFTRA communiqué et page contrat lus
+  via le navigateur intégré parce que sagaftra.org bloque Playwright et
+  WebFetch, TheWrap, Wikipédia, CBS, Légifrance, Runway, OpenAI via recherche).
+- Prudence : note fondateur réécrite sans anecdote inventée (première version
+  citait une comédienne de théâtre imaginaire) ; « la plupart des festivals »
+  remplacé par le fait documenté d'Astana (modèles et pipeline déclarés au
+  dépôt, source festivals-films-ia) ; Sora cameo décrit sans chiffre ; la
+  règle « un comédien pour trois ou quatre personnages » donnée comme ma règle.
+- Hero : Nano Banana 2 via Vercel AI Gateway (62 Ko, premier jet, coût 0,14 $),
+  salle de répétition de théâtre aux rideaux noirs, comédienne en survêtement
+  gris jouant un monologue sur une marque au sol, projection murale d'un vieux
+  pêcheur en bonnet reproduisant son expression, table de casting au premier
+  plan avec photos de comédiens. Motif distinct de J29 (atelier maquette),
+  J28 (projection plein air), J27 (salle vitrée + smartphone), J26
+  (sérigraphie), J25 (cuisine).
+- Images corps : 3 captures réelles (Wikipédia Tilly Norwood recadrée sans la
+  bannière Wiki Loves Monuments, doc Act-Two de Runway, art. 226-8 sur
+  Légifrance recadré sur le texte via capture haute puis crop Pillow),
+  chacune sous l'affirmation qu'elle prouve, légendes avec source et date.
+  Capture sagaftra.org impossible (slider anti-bot même en Chrome headed),
+  remplacée par Wikipédia.
+- Humanisation : humanizer + unslop-text (scan 0 finding, 2 990 mots avec FAQ
+  doublée) + antislop-copywriting. Corrections : 5 parallélismes négatifs
+  retirés (P3, Sora, étape 3, étape 4, sosie), signposting « la règle tient
+  en trois engagements » et « Trois objets, trois questions » supprimés,
+  triade répétée notification/valeur/consentement retirée de la conclusion,
+  triade de l'excerpt réduite à deux, preuve sociale vague remplacée.
+- Gates : audit.mjs OK (147 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route présente), check-registry.py OK.
+- IndexNow : 185 URLs soumises, HTTP 200.
