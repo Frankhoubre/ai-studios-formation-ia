@@ -958,3 +958,50 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs OK (147 articles, 0 erreur, 0 avertissement), lint OK,
   build OK (exit 0, route présente), check-registry.py OK.
 - IndexNow : 185 URLs soumises, HTTP 200.
+
+## 2026-09-19 | loop 30j J31 | main | `98bf866`
+
+- Article : `vfx-ia-effets-speciaux` (« VFX IA : faire tes effets spéciaux
+  sans studio »), KW principal « vfx ia », 31/36 du run, J34 du plan (cluster
+  Cinéma IA, type guide).
+- Angle : le web FR liste des outils ; ici un plan VFX = quatre travaux
+  (isoler, nettoyer, ajouter, raccorder) et deux familles d'outils (édition
+  générative type Edit Studio / Aleph 2.0 et Kling Omni, vs compositing
+  assisté type Resolve Magic Mask / Fusion et Flow Studio), départagées par un
+  seul critère : ce qui doit rester identique dans l'image (visage, produit,
+  texte). Parti pris : les VFX IA se gagnent au tournage (marqueurs, clean
+  plate, boule de référence, 24-30 fps, montage verrouillé avant tout effet à
+  28 crédits/s). Tableau 4 travaux x outil x coût x où ça lâche, méthode en 6
+  étapes, Pro Tip clean plate, 4 pièges (25 s pour 2 s, visage au prompt,
+  tournage sans marqueurs, plan plus net que ses voisins). Calculs : Standard
+  625 crédits = 22 s d'Aleph, Pro 2 250 = 80 s, 14 s perdues = 392 crédits.
+- Faits sourcés : voir CONTENT_LEDGER (Runway help + pricing, Blackmagic FR,
+  Autodesk buy page, help.wonderdynamics, Wikipédia FR). help.runwayml.com et
+  autodesk.com renvoient 403 à curl/WebFetch mais passent en navigateur intégré
+  et en Playwright channel=chrome. Pas de coût par seconde connu pour Flow
+  Studio, donc non chiffré. « Neuf fois sur dix » et « dix minutes / trois
+  soirées » donnés comme observation, pas comme mesure.
+- Hero : Nano Banana 2 via Vercel AI Gateway (158 Ko, premier jet, 0,14 $),
+  ruelle pavée mouillée à l'heure bleue, jeune femme en doudoune noire tenant
+  une boule à facettes chromée et une sphère grise sur perche devant un hybride
+  sur trépied, croix de ruban orange (marqueurs de tracking) sur le mur de
+  brique, fond vert replié contre un lampadaire, panneau LED. Motif distinct de
+  J30 (salle de répétition), J29 (atelier maquette), J28 (projection plein
+  air), J27 (salle vitrée), J26 (sérigraphie).
+- Images corps : 3 captures réelles via script scratchpad Playwright + Pillow
+  (clic accordéons + scroll) : spec Edit Studio sur help.runwayml.com (28
+  crédits/s visibles), plans Flow Studio sur autodesk.com (popup géo fermée,
+  cookies refusés, le refus bascule la page en thème sombre avec sélecteur de
+  durée « 1 year »), page Resolve Studio FR (Resolve 21, 255 €, Neural
+  Engine). Chacune sous l'affirmation qu'elle prouve, légende source + date.
+- Humanisation : humanizer + unslop-text (scan : 1 vrai hit, labels gras
+  **Isoler** : réécrits en prose ; « utilise » faux positif) +
+  antislop-copywriting. Corrections manuelles : parallélisme négatif « ne porte
+  pas sur… elle porte sur » remplacé par « un seul critère », deux signposting
+  (« Pourquoi ce découpage compte : », « Maintenant la méthode. ») supprimés,
+  auto-promo « ce guide te fait économiser les deux » retirée, note fondateur
+  « par X, pas par Y » réécrite avec un fait d'observation. Description
+  ramenée de 161 à 158 caractères.
+- Gates : audit.mjs OK (148 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route présente), check-registry.py OK.
+- IndexNow : 186 URLs soumises, HTTP 200.
