@@ -148,6 +148,7 @@ import { synthesiaVsHeygen } from "@/content/articles/posts/synthesia-vs-heygen"
 import { festivalsFilmsIa } from "@/content/articles/posts/festivals-films-ia";
 import { decorsCinemaIa } from "@/content/articles/posts/decors-cinema-ia";
 import { acteursIaCastingVirtuel } from "@/content/articles/posts/acteurs-ia-casting-virtuel";
+import { vfxIaEffetsSpeciaux } from "@/content/articles/posts/vfx-ia-effets-speciaux";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -305,4 +306,5 @@ export const articles: Article[] = [
   festivalsFilmsIa,
   decorsCinemaIa,
   acteursIaCastingVirtuel,
+  vfxIaEffetsSpeciaux,
 ];
