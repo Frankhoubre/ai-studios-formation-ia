@@ -1006,7 +1006,7 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   build OK (exit 0, route présente), check-registry.py OK.
 - IndexNow : 186 URLs soumises, HTTP 200.
 
-## 2026-09-20 | loop 30j J32 | main | `PENDING`
+## 2026-09-20 | loop 30j J32 | main | `21b1457`
 
 - Article : `animatique-ia-methode` (« Animatique IA : du storyboard au film
   chronométré »), KW principal « animatique ia », 32/36 du run, J35 du plan
@@ -1051,3 +1051,4 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs OK (149 articles, 0 erreur, 0 avertissement), lint OK,
   build OK (exit 0, route /blog/animatique-ia-methode présente, 199 pages),
   check-registry.py OK après git add.
+- IndexNow : 187 URLs soumises, HTTP 200.
