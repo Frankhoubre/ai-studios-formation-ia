@@ -1005,3 +1005,49 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs OK (148 articles, 0 erreur, 0 avertissement), lint OK,
   build OK (exit 0, route présente), check-registry.py OK.
 - IndexNow : 186 URLs soumises, HTTP 200.
+
+## 2026-09-20 | loop 30j J32 | main | `PENDING`
+
+- Article : `animatique-ia-methode` (« Animatique IA : du storyboard au film
+  chronométré »), KW principal « animatique ia », 32/36 du run, J35 du plan
+  (cluster Workflow, type tutoriel), catégorie workflow-creatif.
+- Angle : le web FR s'arrête au storyboard ; ici l'étape que l'animation
+  pratique depuis toujours (Wikipédia : storyboard synchronisé sur la
+  bande-dialogues) appliquée à la vidéo IA. Parti pris : étape la moins chère
+  de la chaîne, celle qui fixe le coût de toutes les autres ; la voix passe
+  avant l'image (durée mesurée sur la voix témoin, pas devinée) ; « storyboard
+  animé » redéfini comme animatique (images fixes + temps + son), pas comme
+  génération vidéo case par case. Tableau 3 niveaux (fixe / caméra simulée /
+  images clés) x validé x outil x coût, méthode en 7 étapes (numérotation 010
+  020, voix témoin, montage sur le son, 3 visionnages, caméra simulée, shot
+  list chronométrée, remplacement in situ), Pro Tip cases > longueur de clip
+  (5 s Gen-4.5 / 8 s Veo 3.1), 4 pièges (animatique après génération,
+  chronométrer sans voix, soigner les cases avant de couper, abandonner la
+  timeline). Calcul clé : Runway Standard 7 500 crédits/an = 125 vidéos de
+  5 s (10 min 25 s) ou 3 750 images Gen-4 Image Turbo ; 1 clip Gen-4.5 = 30
+  images Turbo.
+- Faits sourcés : voir CONTENT_LEDGER (Wikipédia FR, wonderunit.com,
+  boords.com/pricing, elevenlabs.io/pricing, runway.com/pricing). Captures :
+  Storyboarder (home, 36 Ko), Boords pricing (recadrée depuis une capture
+  pleine page car la capture above-the-fold tombait sur la FAQ, 41 Ko),
+  Runway pricing tableau Compare models across plans (recadré depuis pleine
+  page, 28 Ko). runwayml.com/pricing redirige en 308 vers runway.com/pricing.
+  CapCut cité sans chiffre. « Trois soirées », « une soirée » donnés comme
+  ordre de grandeur vécu, pas comme mesure.
+- Passes : humanizer (6 corrections : paraphrase Wikipédia trop proche,
+  signposting « mon avis en deux lignes » et « un point qui découle », gloss
+  « ce tableau dit pourquoi », parallélisme négatif du piège 1, « la plupart
+  des créateurs » remplacé par observation personnelle), unslop-text (scanner
+  0 finding sur 2 831 mots, puis passe manuelle : 4 triades cassées, 3 gras
+  ajoutés), antislop-copywriting (verbes humains sur l'animatique « décide »
+  -> « fixe », unité 5 s précisée comme unité de facturation Gen-4.5). Zéro
+  tiret long.
+- Hero : Nano Banana 2 via Vercel AI Gateway (88 Ko, premier jet, 0,14 $),
+  loft en lumière du matin, femme en chemise de lin agenouillée sur un
+  plancher, longue bande de cases de storyboard scotchées bout à bout au sol,
+  chronomètre en main, enregistreur portable et casque posés à côté. Motif
+  distinct de J31 (ruelle VFX heure bleue), J30 (salle de répétition), J29
+  (atelier maquette), J28 (projection plein air), J27 (salle vitrée).
+- Gates : audit.mjs OK (149 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route /blog/animatique-ia-methode présente, 199 pages),
+  check-registry.py OK après git add.
