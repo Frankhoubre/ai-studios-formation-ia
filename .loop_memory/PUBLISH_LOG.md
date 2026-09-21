@@ -1052,3 +1052,64 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   build OK (exit 0, route /blog/animatique-ia-methode présente, 199 pages),
   check-registry.py OK après git add.
 - IndexNow : 187 URLs soumises, HTTP 200.
+
+## 2026-09-21 | loop 30j J33 | main | `7a74110`
+
+- Article : `mascotte-marque-ia` (« Mascotte de marque IA : la créer et la
+  protéger »), KW principal « mascotte ia », 33/36 du run, J36 du plan
+  (cluster Personnages, type use case commercial), catégorie business-creatif.
+- Angle : une mascotte est un employé dessiné qu'on recrute pour vingt ans ;
+  la génération est la partie facile, tout se joue dans les règles (bible de
+  mascotte) et la protection. Bibendum (1898, refontes 1960s / 1997 / 2003)
+  et Duo (2013 : couleur et espèce non négociables ; 2020 : 4 composantes de
+  forme) comme preuves que la mascotte tient par ses règles. Tableau bible
+  minimum (identité, palette, traits fixes, accessoire signature, formes,
+  interdits) x fixé x exemple renard de torréfaction x libre, méthode 6 étapes
+  (job avant dessin, silhouettes noires, référence unique, planche de vues via
+  Edit Model / Nano Banana, vectoriel Recraft ou main, déclinaisons), Pro Tip
+  « test du dos », section protection à part (H2 id protection) : Copyright
+  Office 29/01/2025 (prompt seul non protégeable, apports humains
+  protégeables, donc vectoriser à la main = apport daté) et INPI (marque
+  figurative, 190 € + 40 €/classe, 10 ans), 4 pièges (trop détaillé,
+  photoréalisme, mascotte vs logo, déposer le premier jet ou rien).
+- Réorientation factuelle en cours de run : la doc Omni Reference de
+  Midjourney affiche « not supported in V8.2 » et renvoie vers l'Edit Model
+  (jusqu'à 4 références, remplace Omni Reference et Character Reference). La
+  capture prévue de la page Omni Reference a été remplacée par la page Edit
+  Model. Tout tutoriel --cref / --oref est signalé comme daté dans l'article.
+- Faits sourcés : voir CONTENT_LEDGER. Captures : INPI coût d'une marque
+  (recadrée depuis une capture pleine page pour éviter la bannière cookies et
+  isoler les lignes 190 € / 40 €, 21 Ko), Copyright Office NewsNet 1060
+  (115 Ko), Midjourney Edit Model (53 Ko, bandeau « supported in V8.2 »).
+  docs.midjourney.com renvoie 403 à WebFetch et une page Cloudflare à
+  Playwright headless ; lecture faite via le navigateur intégré, capture via
+  le script (qui passe). design.duolingo.com redirige vers blog.duolingo.com,
+  faits Duo pris sur les deux billets de blog primaires.
+- Passes : humanizer (9 corrections : ouvertures « Ma position : » et « Dans
+  cet article, tu vas construire » recopiées de J32 réécrites, parallélisme
+  négatif « n'est pas une image, c'est un jeu de règles » -> « tient par ses
+  règles », « pas une promesse » supprimé, H2 conclusion « ne le génère pas »
+  coupé, aphorisme « vectoriser c'est signer » -> fait plat, « le logo
+  identifie, la mascotte incarne » -> règles de placement, signposting de la
+  section protection remplacé par le fait, triade finale réduite), unslop-text
+  (scanner 1 faux positif « utilisation » sur 3 058 mots, puis passe
+  manuelle : deux paragraphes ouvrant en répétant leur H3 réécrits, claim non
+  sourcé sur les dépôts de marque de Michelin supprimé, « quatre ou cinq
+  refontes » recalé sur « au moins trois refontes », H2 concepts reformulé),
+  antislop-copywriting (verbe « décide » sur une phrase -> « te donne la
+  liste », tournure lourde réécrite). Zéro tiret long (le grep byte-class
+  `[—–]` donne 11 faux positifs sur « œ » et « € » ; compter avec Python).
+- Hero : Nano Banana 2 via Vercel AI Gateway (95 Ko, deuxième jet, 2 x
+  0,14 $), atelier de sérigraphie au crépuscule, homme barbu en tablier taché
+  d'encre soulevant le cadre de la presse au-dessus d'un sac de café kraft
+  imprimé d'un renard en tablier vert, pile de sacs et mug identiques, planche
+  de poses face / profil / dos suspendue à un fil devant la fenêtre. Premier
+  jet écarté car la planche portait du texte lisible (CHARACTER SHEET, FRONT /
+  SIDE / BACK) ; idée initiale (femme en tablier + figurine dans un atelier)
+  abandonnée avant génération car trop proche du J29 (atelier maquette).
+  Motif distinct de J32 (loft storyboard au sol), J31 (ruelle VFX), J30
+  (salle de répétition), J29 (atelier maquette), J28 (projection plein air).
+- Gates : audit.mjs OK (150 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route /blog/mascotte-marque-ia présente), check-registry
+  OK après git add.
+- IndexNow : 188 URLs soumises, HTTP 200.
