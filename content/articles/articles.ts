@@ -150,6 +150,7 @@ import { decorsCinemaIa } from "@/content/articles/posts/decors-cinema-ia";
 import { acteursIaCastingVirtuel } from "@/content/articles/posts/acteurs-ia-casting-virtuel";
 import { vfxIaEffetsSpeciaux } from "@/content/articles/posts/vfx-ia-effets-speciaux";
 import { animatiqueIaMethode } from "@/content/articles/posts/animatique-ia-methode";
+import { mascotteMarqueIa } from "@/content/articles/posts/mascotte-marque-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -309,4 +310,5 @@ export const articles: Article[] = [
   acteursIaCastingVirtuel,
   vfxIaEffetsSpeciaux,
   animatiqueIaMethode,
+  mascotteMarqueIa,
 ];
