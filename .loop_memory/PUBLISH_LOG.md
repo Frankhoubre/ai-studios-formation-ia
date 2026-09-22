@@ -1053,6 +1053,53 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   check-registry.py OK après git add.
 - IndexNow : 187 URLs soumises, HTTP 200.
 
+## 2026-09-22 | loop 30j J34 | main | `f05bdec`
+
+- Article : `video-produit-ecommerce-ia` (« Vidéo produit IA : la méthode
+  e-commerce qui vend »), KW principal « vidéo produit ia », 34/36 du run,
+  J37 du plan (cluster Métiers, type use case commercial), catégorie
+  business-creatif.
+- Angle : l'IA fabrique le monde autour du produit, jamais le produit. Quatre
+  questions que la photo laisse sans réponse (taille, matière, geste, usage
+  réel), tableau des trois formats (tour de produit, démo d'usage, pub) x ce
+  que le client vérifie x ce qui reste filmé x ce que l'IA fait x durée et
+  canal, méthode 6 étapes (cinq objections, cinq plans réels au téléphone,
+  images de référence, plans d'ambiance générés avec références Veo 3.1,
+  montage par objections, publication selon specs + label IA + mesure), Pro
+  Tip « le plan d'échelle en premier », section outils des plateformes (H2
+  id outils-plateformes : générateur Amazon Ads gratuit en France depuis le
+  11/11/2025, Product Studio de Google fermé aux marchands FR + encadré label
+  IA UE, Shopify vidéo 1 Go / 10 min / 4K et 3D GLB/USDZ), quatre erreurs
+  (produit généré en gros plan, résultat non fourni = L121-2, vidéo unique
+  pour tous les canaux, six images ou plus sur Amazon), FAQ 6, conclusion
+  planning week-end.
+- Sources primaires lues le 22/09/2026 : sell.amazon.com (page du 12/05/2025),
+  advertising.amazon.com (annonce du 11/11/2025), support.google.com
+  (Product Studio), help.shopify.com (product media types), ai.google.dev
+  (Veo 3.1), legifrance.gouv.fr (L121-2). Le chiffre +23,8 % est présenté
+  comme une donnée interne Amazon 2024, pas comme un fait indépendant.
+- Images : hero Nano Banana 2 (réserve d'une marque de céramique, femme
+  accroupie filmant un mug bleu sur plateau tournant au smartphone, panneau
+  blanc en main, porte de quai ouverte, cartons étiquetés), 3 captures
+  réelles via script Playwright scratchpad (full page + crop PIL) : specs
+  Amazon (section Technical requirements), annonce Amazon Ads (FR), page
+  d'aide Product Studio avec encadré label IA. `scripts/capture-screenshot.py`
+  ne capture que l'above-the-fold, d'où le script scratchpad pour viser une
+  section précise.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting
+  invoqués ; scanner unslop 3 hits, tous faux positifs FR (« utilisation »
+  dans la citation de L121-2) ; passe manuelle : signposting supprimé (« tient
+  en une phrase », « Le tableau dit une chose simple », « Deux choses à
+  retenir »), ouverture P2 réécrite pour ne pas recopier « À la fin de cette
+  page » de J33, contrastes « X, pas Y » réduits de 4 à 2, triade doublée dans
+  l'intro coupée, claim « Non, plus depuis 2025 » corrigée en date de page,
+  phrase Kling non sourcée retirée de la FAQ, prix inventé du plateau tournant
+  remplacé, mention « vrais élèves » retirée de la note fondateur.
+- Gates : audit.mjs 151 articles 0 erreur 0 avertissement, lint OK, build
+  OK (exit 0, route /blog/video-produit-ecommerce-ia présente),
+  check-registry OK après git add.
+- IndexNow : 189 URLs soumises, HTTP 200.
+
 ## 2026-09-21 | loop 30j J33 | main | `7a74110`
 
 - Article : `mascotte-marque-ia` (« Mascotte de marque IA : la créer et la
