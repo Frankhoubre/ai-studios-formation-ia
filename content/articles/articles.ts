@@ -151,6 +151,7 @@ import { acteursIaCastingVirtuel } from "@/content/articles/posts/acteurs-ia-cas
 import { vfxIaEffetsSpeciaux } from "@/content/articles/posts/vfx-ia-effets-speciaux";
 import { animatiqueIaMethode } from "@/content/articles/posts/animatique-ia-methode";
 import { mascotteMarqueIa } from "@/content/articles/posts/mascotte-marque-ia";
+import { videoProduitEcommerceIa } from "@/content/articles/posts/video-produit-ecommerce-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -311,4 +312,5 @@ export const articles: Article[] = [
   vfxIaEffetsSpeciaux,
   animatiqueIaMethode,
   mascotteMarqueIa,
+  videoProduitEcommerceIa,
 ];
