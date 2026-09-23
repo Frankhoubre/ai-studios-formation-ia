@@ -152,6 +152,7 @@ import { vfxIaEffetsSpeciaux } from "@/content/articles/posts/vfx-ia-effets-spec
 import { animatiqueIaMethode } from "@/content/articles/posts/animatique-ia-methode";
 import { mascotteMarqueIa } from "@/content/articles/posts/mascotte-marque-ia";
 import { videoProduitEcommerceIa } from "@/content/articles/posts/video-produit-ecommerce-ia";
+import { videosFormationEnLigneIa } from "@/content/articles/posts/videos-formation-en-ligne-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -313,4 +314,5 @@ export const articles: Article[] = [
   animatiqueIaMethode,
   mascotteMarqueIa,
   videoProduitEcommerceIa,
+  videosFormationEnLigneIa,
 ];
