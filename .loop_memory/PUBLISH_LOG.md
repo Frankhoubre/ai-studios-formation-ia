@@ -1160,3 +1160,69 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   build OK (exit 0, route /blog/mascotte-marque-ia présente), check-registry
   OK après git add.
 - IndexNow : 188 URLs soumises, HTTP 200.
+
+## 2026-09-23 | loop 30j J35 | main | `9e55357`
+
+- Article : `videos-formation-en-ligne-ia` (« Vidéo formation IA : produire ton
+  cours en ligne »), KW principal « vidéo formation ia », 35/103 du run, J38 du
+  plan (cluster Métiers, type use case commercial), catégorie business-creatif.
+- Angle absent du web FR (partout des listes d'outils et des promesses d'avatar) :
+  le coût d'une formation en ligne est un coût de MAINTENANCE, pas de production.
+  Un cours se range en trois couches qui ne se périment pas à la même vitesse,
+  Toi (des années, caméra, correction chère), l'Écran (jusqu'à la prochaine mise
+  à jour de l'outil, enregistrement d'écran, correction moyenne) et l'Information
+  (quelques mois, script + avatar ou voix de synthèse, correction quasi gratuite).
+  Tout ce qui contient un prix, un numéro de version ou une capture d'interface
+  part en couche Information. Contre-pied sourcé du discours des plateformes
+  d'avatars : l'étude edX recommande explicitement le face-à-face informel plutôt
+  que le studio haut de gamme, donc l'avatar est un narrateur de service, pas un
+  remplaçant. Méthode 6 étapes (découper sous 6 min avant d'écrire, classer T/E/I,
+  scripter la seule couche I, tourner la couche Toi en une journée, enregistrer
+  écran puis information, sous-titrer et mesurer le taux de complétion par
+  capsule), section coût réel à la minute, quatre erreurs, FAQ 6.
+- Sources primaires lues le 23/09/2026 : PDF des diapositives Guo/Kim/Rubin sur
+  learningatscale.acm.org (téléchargé, texte extrait avec pypdf, pages rendues
+  avec PyMuPDF) ; synthesia.io/pricing depuis la France (euros, pas les dollars
+  de la version US) ; descript.com/pricing. Les deux €/min sont des calculs à
+  moi, annoncés comme tels dans l'article. Trouvaille gardée : chez Synthesia
+  le doublage et la génération tirent sur la MÊME réserve de crédits (« 120 min
+  de vidéo OU 580 min de doublage »), donc traduire son cours se paie en minutes
+  de génération ; et le plan cher revient plus cher à la minute (1,63 € contre
+  1,20 €), ce qu'aucun comparatif FR ne relève. Autre point utile : l'export
+  SCORM n'existe que sur Enterprise.
+- Écartés faute de source primaire solide : l'European Accessibility Act comme
+  obligation de sous-titrage pour un cours en ligne (la liste de l'article 2 de
+  la directive 2019/882 nomme les e-books et l'e-commerce, pas le e-learning ;
+  les blogs anglophones qui l'affirment surinterprètent, et EUR-Lex renvoie du
+  vide à WebFetch comme à curl). Le décret Qualiopi n° 2026-728 du 01/08/2026
+  (33 indicateurs, entrée en vigueur au 01/11/2026) existe bien sur Légifrance
+  mais ne concerne pas la cible infopreneur de l'article : piste pour un futur
+  article FOAD/organisme de formation.
+- Images : hero Nano Banana 2 (82 Ko, premier jet), motif J35 : amphithéâtre
+  vide à midi, formatrice en blazer rouille assise de profil à une petite table
+  contre les hautes fenêtres, portable surélevé sur une pile de livres, micro-
+  cravate, main levée en plein geste, bancs de bois flous derrière, minuteur
+  mécanique et liasse de pages (rupture avec J34 réserve/entrepôt, J33 atelier
+  de sérigraphie, J32 loft storyboard au sol, J31 ruelle VFX, J30 salle de
+  répétition). 3 images dans le corps : le graphique engagement/durée rendu
+  depuis le PDF de l'étude avec PyMuPDF puis recadré (30 Ko), et 2 captures
+  Playwright des pages de tarifs Synthesia et Descript. Script scratchpad
+  `shot.py` qui clique « Reject all » plutôt qu'« Accept all » (préférable au
+  comportement de `scripts/capture-screenshot.py`).
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués ;
+  scanner unslop 2 hits, tous faux positifs FR (« Utilise » lu comme « utilize ») ;
+  passe manuelle : 4 parallélismes négatifs réécrits (le thèse de l'intro, la
+  vidéo de 20 minutes dans la FAQ et son doublon, le doublage « pas un supplément
+  gratuit »), 2 signposting supprimés (« tient en une ligne de leur diapositive »,
+  « Le graphique ci-dessous est le plus utile »), « Je te propose » remplacé,
+  surclaim « la seule vraie étude » ramené à « le plus gros jeu de données »,
+  preuve sociale vague « reste la référence sur le sujet » remplacée par ce que
+  la source dit d'elle-même, « l'outil qui sert le plus souvent » (Descript)
+  retiré, « presque tous les cours » ramené à une observation assumée, trois
+  « bat/battent » d'affilée variés, quatre phrases parallèles sur le graphique
+  refondues, incohérence 5 min vs 6 min entre l'étape 1 et l'erreur 1 corrigée,
+  anecdote inventée sur un tarif refilmé retirée de la note fondateur (piège
+  déjà vu en J30), « lectures démarrées » corrigé en « capsules démarrées ».
+- Gates : audit.mjs 152 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add.
+- IndexNow : 190 URLs soumises, HTTP 200.
