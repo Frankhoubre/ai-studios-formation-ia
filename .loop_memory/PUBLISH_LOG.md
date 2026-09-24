@@ -1226,3 +1226,87 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs 152 articles 0 erreur 0 avertissement, lint OK, build OK
   (exit 0), check-registry OK après git add.
 - IndexNow : 190 URLs soumises, HTTP 200.
+
+## 2026-09-24 | loop 30j J36 | main | `a19e63b`
+
+- Article : `bande-annonce-ia` (« Bande-annonce IA : 90 secondes, 40 plans, la
+  méthode »), KW principal « bande annonce ia », 36/103 du run, J28 du plan
+  (cluster Cinéma IA, type tutoriel, intention info), catégorie workflow-creatif.
+- Reprise de ligne sautée : le J28 du run est parti sur la Phase 2 sans noter
+  qu'il enjambait les lignes 28, 29 et 30 de la Phase 1. L'étape 1 de la tâche
+  dit « toujours la première ligne dont le slug n'existe pas », donc retour sur
+  la 28. Restent `court-metrage-ia-niveau-festival` (29) et `flux-guide-complet`
+  (30) avant de reprendre la Phase 2 à la ligne 39. La ligne 96 de la Phase 4
+  porte le MÊME slug `bande-annonce-ia` : elle est consommée par cet article,
+  ne pas la republier.
+- Angle absent du web FR, qui traite le sujet en liste d'outils de montage :
+  une bande-annonce est le format le plus contraint de la vidéo, avec deux
+  plafonds chiffrés que personne ne cite côté IA. Durée : plafond MPA à
+  2 min 30, une dérogation par an et par studio ou distributeur ; recommandation
+  NATO officialisée en janvier 2014 à 2 minutes (30 s de moins que la norme
+  précédente), deux dérogations par an, applicable aux films sortant à partir
+  du 01/10/2014, diffusion limitée aux 5 mois avant la sortie et affiches aux
+  4 mois, le tout volontaire et laissé à chaque circuit de salles. Son :
+  standard TASA à Leqm 85, développé à la demande de NATO après des plaintes
+  du public, pondéré sur les fréquences agaçantes (l'exemple du site : un bris
+  de verre à 85 dB irrite plus qu'une corne de brume au même niveau), adopté
+  volontairement par tous les studios membres MPA, et la MPA n'approuve que les
+  trailers certifiés conformes pour un film classé CARA (600 $ la certification
+  chez THX, 800 $ en immersif Atmos).
+- Partie utile : conducteur en 5 blocs avec plans et longueurs moyennes par bloc
+  (accroche 1-2 plans de 4-8 s, exposition 8-12 plans de 2-3 s, bascule 3-5 plans
+  de 1,5-3 s, montée 18-25 plans de 0,8-1,5 s, bouton 2-4 plans de 2-5 s), total
+  32 à 48 plans ; 6 étapes dont le code R/U de réemploi des plans ; tableau de
+  budget calculé sur les tarifs publics Veo du 24/09 (40 plans x 3 tentatives x
+  8 s = 960 s facturées, soit 48 $ en Lite 720p, 115 $ en Fast 1080p, 384 $ en
+  3.1 standard, 576 $ en 4K ; 1,28 $ la seconde finie en Fast 1080p ; ratio
+  10 pour 1 entre secondes facturées et secondes gardées). Specs Veo sourcées :
+  durationSeconds 4/6/8 mais 8 obligatoire avec extension, images de référence,
+  1080p ou 4K ; aspectRatio 16:9 et 9:16 seulement (d'où le calcul du recadrage
+  2.39:1, 803 px de haut sur 1080, 26 % de perte) ; 3 images de référence max ;
+  extension +7 s jusqu'à 20 fois et 148 s, en 720p uniquement ; vidéos stockées
+  2 jours sur le serveur puis supprimées (devenu le Pro Tip).
+- Images : hero Nano Banana 2 (58 Ko, premier jet), motif J36 : auditorium de
+  mixage en fin de soirée, ingénieure du son en cardigan gris seule à une large
+  console posée au milieu des fauteuils rouges, faders bleus éclairés par le bas,
+  VU-mètre à aiguille dans un rack, écran du fond sur une mer sombre floue,
+  panneaux acoustiques rouges, lampe de bureau chaude (rupture avec J35
+  amphithéâtre, J34 réserve, J33 sérigraphie, J32 loft, J31 ruelle VFX ; noter
+  que J28 était une projection en plein air, donc éviter le registre salle
+  obscure pendant quelques runs). 2 captures réelles dans le corps :
+  tasatrailers.org/whatis.html via `scripts/capture-screenshot.py` (78 Ko,
+  lisible du premier coup, la page est en HTML brut sans bannière) et le tableau
+  des specs Veo de ai.google.dev via script Playwright scratchpad. Astuce à
+  réutiliser sur les longues tables de doc : `page.evaluate("document.body.style
+  .zoom='0.62'")` avant `locator.screenshot()`, sinon l'en-tête des colonnes
+  (ici les noms de modèles) sort du cadre et la capture ne prouve plus rien.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués ;
+  scanner unslop 4 hits, tous faux positifs FR (« utilise » lu comme « utilize ») ;
+  passe manuelle : 4 parallélismes négatifs réécrits (excerpt « pas douze », FAQ 2
+  et son doublon dans le corps « jamais un rythme de bande-annonce », « tu n'es
+  plus en train de donner envie, tu racontes le film », « avant de monter, pas
+  après »), 3 signposting supprimés (« Voici le découpage que j'utilise »,
+  « Deux contraintes techniques pèsent sur l'étape 5 » et son « Première
+  contrainte / Deuxième contrainte », « Traduit autrement »), première ligne du
+  H3 durée sortie de l'écho de son titre, et les 6 items de la liste `ol`
+  débarrassés de leurs en-têtes **gras** : c'est le pattern P15 du humanizer, et
+  surtout un écart au gabarit maison, les `ol` des articles existants ouvrent sur
+  une phrase simple.
+- Crédibilité : trois retraits pour cause d'invention ou de généralisation non
+  vérifiée, « les deux plafonds que le métier impose depuis vingt ans » (aucune
+  date de création de TASA vérifiée), « beaucoup de plateformes de soumission
+  demandent la bande-annonce séparément du film », et la preuve sociale vague
+  « J'ai vu des gens reprendre un projet le lundi ». Claim « Veo 3.1 Lite : pas
+  d'images de référence » retiré aussi : la colonne Lite de la doc affiche un
+  « Objet n/a » ambigu alors que la note sur durationSeconds parle bien d'images
+  de référence pour Lite, donc on ne garde que ce qui est certain (pas
+  d'extension, pas de 4K). Erreur de calcul rattrapée en relecture : l'économie
+  du réemploi de 6 plans était annoncée à « une centaine de dollars » puis
+  corrigée à tort en « une trentaine », le vrai chiffre est 17 $ en Fast 1080p
+  et 58 $ en standard (6 x 3 x 8 s x le prix à la seconde).
+- Longueur : 2 892 mots, au-dessus de la fourchette 1500-2500 de la consigne mais
+  dans la bande réelle des articles récents (2 388 à 3 141 mots sur J28 à J35),
+  donc gardé tel quel.
+- Gates : audit.mjs 153 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add.
+- IndexNow : 191 URLs soumises, HTTP 200.
