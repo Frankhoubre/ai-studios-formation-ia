@@ -153,6 +153,7 @@ import { animatiqueIaMethode } from "@/content/articles/posts/animatique-ia-meth
 import { mascotteMarqueIa } from "@/content/articles/posts/mascotte-marque-ia";
 import { videoProduitEcommerceIa } from "@/content/articles/posts/video-produit-ecommerce-ia";
 import { videosFormationEnLigneIa } from "@/content/articles/posts/videos-formation-en-ligne-ia";
+import { bandeAnnonceIa } from "@/content/articles/posts/bande-annonce-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -315,4 +316,5 @@ export const articles: Article[] = [
   mascotteMarqueIa,
   videoProduitEcommerceIa,
   videosFormationEnLigneIa,
+  bandeAnnonceIa,
 ];
