@@ -1310,3 +1310,89 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs 153 articles 0 erreur 0 avertissement, lint OK, build OK
   (exit 0), check-registry OK après git add.
 - IndexNow : 191 URLs soumises, HTTP 200.
+## 2026-09-25 | loop 30j J37 | main | `a466500`
+
+- Article : `court-metrage-ia-niveau-festival` (« Court-métrage IA : viser le
+  niveau festival »), KW principal « court métrage ia », 37/103 du run, J29 du
+  plan (cluster Cinéma IA, type méthode, intention info), catégorie storytelling.
+  Suite de la reprise des lignes sautées commencée au J36 : il reste la ligne 30
+  `flux-guide-complet` avant de reprendre la Phase 2 à la ligne 39
+  `ia-community-manager`.
+- Angle absent du web FR, qui traite « court métrage IA » en liste d'outils :
+  un dépôt en festival passe deux filtres, et le premier est une vérification de
+  conformité chiffrée qui écarte des films avant tout jugement artistique.
+  E-E-A-T VOIDBORN (9 festivals) assumé sans réutiliser le contenu de
+  `festivals-films-ia`, qui garde « où déposer ».
+- Faits sourcés le 25/09 :
+  - sundance.org 2026_Submissions_Rules.pdf (lu avec PyMuPDF, WebFetch ne sort
+    que le texte compressé) : court = moins de 50 minutes « including credits » ;
+    règle 11 et définitions de catégories, les courts n'ont AUCUNE exigence de
+    statut de première, contrairement aux longs ; règle 20, dialogues non
+    anglophones significatifs sans sous-titres anglais = disqualification sans
+    remboursement, avec l'exception du choix artistique ; règles 17 à 19, droits
+    d'auteur et marques sous la seule responsabilité du déposant avec clause
+    d'indemnisation ; règle 22, fichier non visionnable en entier pour un
+    problème technique « whether the fault of the Applicant or any third-party
+    system » ; règle 15, projets terminés avant le 01/01/2024 inéligibles.
+  - sundance.org Technical-Specifications-For-Festival-Presentation.pdf :
+    fichier de projection en ligne ProRes LT 82-102 Mbps, .mov, 1920x1080,
+    Rec 709 / 2.2, pixels carrés, PCM 48 kHz 24 bits, **-24 dB LUFS avec crête
+    max -2 dB**, progressif uniquement 23,98 / 24 / 25 / 29,97 / 30 im/s,
+    closed captions .srt ou .vtt avec time code à 00:00:00:00 ; DCP Interop ou
+    SMPTE 24/25/30 fps, 2K ou 4K, nommage ISDCF, 5.1 avec canaux inutilisés
+    remplis de silence numérique ; « All titles must be finished, mixed release
+    versions. We will not screen any rough cut with a temp mix. »
+  - aaiff.ai (section Rules) : 5 règles d'admission, hashtag #SpecialForAAIFF
+    obligatoire sur YouTube sous peine de non-examen, sous-titres anglais
+    INCRUSTÉS dans la vidéo, dépôts du 25/05 au 07/09/26, « Generative AI must
+    be integral to creation, not only VFX or upscaling », tous les contributeurs
+    crédités et modèles + pipeline déclarés.
+  - aif.runwayml.com/terms-film : 3 à 15 minutes, aucun frais, « a short,
+    written description of the AI techniques used in the Submission ».
+  - partnerhelp.netflixstudios.com Timed Text Style Guide General Requirements :
+    durée minimale 5/6 de seconde (20 images en 24 im/s), maximale 7 secondes,
+    2 lignes maximum, centré haut ou bas. La page ne donne PAS les caractères
+    par ligne ni la vitesse de lecture, qui renvoient aux guides par langue :
+    ne pas citer 42 caractères de mémoire.
+  - Artdocfest (via recherche) : sonie -18 à -21 LUFS et sous-titres incrustés
+    REFUSÉS, cité comme contre-exemple d'Astana. Source secondaire, présenté
+    dans l'article comme ce qu'annonce le festival.
+- Écarté faute de source : les spécifications techniques de Clermont-Ferrand
+  (la page /guidelines du site est le règlement intérieur du public, pas celui
+  des dépôts, et le vrai règlement est sur /pros/submit-a-film non consulté) ;
+  les specs Berlinale (HTTP 503 sur WebFetch). Le comparatif FR aurait été plus
+  parlant, à retenter sur un futur article distribution.
+- Partie utile : tableau de 6 seuils avec la source de chacun, liste `ol` de
+  6 étapes de préparation de dépôt, Pro Tip du master unique ProRes 1080p
+  24 im/s PCM 48/24, et conclusion qui décrit le dossier de dépôt à 6 pièces
+  réutilisable pendant deux ans.
+- 3 images dans le corps : rendu PyMuPDF du tableau de specs Sundance (page 3
+  du PDF, clip `Rect(48, 153, 566, 302)` à 260 dpi puis resize PIL en 1280 px,
+  47 Ko) ; capture Playwright de la section Rules d'aaiff.ai (clic sur
+  « REJECT NON-ESSENTIAL » puis sur le lien RULES du menu, viewport 1440x780
+  pour cadrer les 5 cartes sans le pied de page, 101 Ko) ; capture
+  `scripts/capture-screenshot.py` de la page Netflix Timed Text avec `--vh 1100`
+  pour faire entrer la section Duration (61 Ko). Les 3 relues avec Read.
+  Piège rencontré : `aaiff.ai` ne finit jamais en `networkidle` (vidéo de fond
+  en boucle), utiliser `wait_until="load"`.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués.
+  Scanner unslop : 1 hit HIGH réel, `**deux filtres successifs** :` lu comme un
+  label en gras suivi de deux-points, corrigé en gras suivi d'une virgule.
+  Passe manuelle FR : 2 parallélismes négatifs (« Ce document n'est pas une
+  formalité, il conditionne l'éligibilité », « les films qui passent et ceux qui
+  ne passent pas »), 3 signposting (« Voici les valeurs relevées », « Deux
+  d'entre eux méritent d'être lus deux fois », « La marche à suivre »),
+  1 « Autrement dit » (P43), 2 triades réduites à deux termes, tic « et c'est
+  normal » / « et c'est très bien ainsi » présent deux fois et corrigé une fois.
+- Crédibilité : deux inventions rattrapées en relecture de mes propres
+  corrections, « Sur mille tutos, aucun ne mentionne » (chiffre rhétorique
+  fabriqué) et « Une sur dix tombe assez près d'une marque existante »
+  (statistique inventée pour remplacer une répétition). Leçon : la
+  sur-correction d'un tell stylistique fabrique volontiers un faux chiffre,
+  relire les phrases retouchées avec la grille crédibilité, pas seulement avec
+  la grille style. Faute de grammaire corrigée aussi : « du premier au dernier
+  image ».
+- Longueur : 2 354 mots de corps, dans la fourchette 1500-2500 de la consigne.
+- Gates : audit.mjs 154 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add (154 imports + heros suivis).
+- IndexNow : 192 URLs soumises, HTTP 200.
