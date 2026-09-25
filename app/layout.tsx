@@ -1,6 +1,8 @@
 import type { Viewport } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { AiReferralBeacon } from "@/components/AiReferralBeacon";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -52,6 +54,8 @@ export default function RootLayout({
         </main>
         <Footer />
         <CookieConsent />
+        <Analytics />
+        <AiReferralBeacon />
       </body>
     </html>
   );
