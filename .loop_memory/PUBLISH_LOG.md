@@ -1396,3 +1396,75 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs 154 articles 0 erreur 0 avertissement, lint OK, build OK
   (exit 0), check-registry OK après git add (154 imports + heros suivis).
 - IndexNow : 192 URLs soumises, HTTP 200.
+
+## 2026-09-26 | loop 30j J38 | main | `78bdb61`
+
+- Article : `flux-guide-complet` (« Flux IA : quel modèle choisir et à quel
+  prix »), KW principal « flux ia », 38/103 du run, ligne 30 du plan (cluster
+  Outils, type guide outil, intention info), catégorie ia-image. Dernière des
+  trois lignes Phase 1 sautées au J28 du run : la reprise est terminée, le
+  prochain article repart sur la Phase 2 à la ligne 39 `ia-community-manager`.
+- Réorientation par rapport au plan, écrit quand Flux voulait dire FLUX.1 : le
+  titre prévu était « Flux : le guide du modèle image qui monte ». Vérification
+  web du 26/09 : Flux n'est plus un modèle, c'est une famille de neuf entrées sur
+  trois générations. L'angle devient le tri dans la famille, le prix réel et les
+  licences, ce qu'aucun contenu FR ne fait (le web FR est resté sur les tutos
+  ComfyUI FLUX.1 dev de 2024).
+- Angle absent du web FR : la facturation a changé d'unité entre FLUX.1 (prix
+  fixe à l'image) et FLUX.2 (mégapixel, premier plus cher que les suivants,
+  images de référence facturées au tarif du MP supplémentaire), et « poids
+  ouverts » ne veut pas dire « libres » (seuls klein 4B et 4B Base sont Apache
+  2.0).
+- Faits sourcés le 26/09 sur bfl.ai, navigateur intégré :
+  - bfl.ai/models : neuf entrées (FLUX 3 Action, FLUX 3 Video, FLUX.2 Max,
+    FLUX.2, FLUX.2 Klein, FLUX Tools, FLUX.1 Kontext, FLUX 1.1 Pro Ultra,
+    FLUX 1.1 Pro).
+  - bfl.ai/blog/flux-2, 25/11/2025 : jusqu'à 10 références, sortie et édition
+    jusqu'à 4 MP, typographie, 32K tokens de prompt, world knowledge, VLM
+    Mistral-3 24B couplé à un transformeur à flux rectifié, FLUX.2 [dev] = 32B
+    à poids ouverts avec implémentation fp8 NVIDIA/ComfyUI, VAE sous Apache 2.0.
+  - bfl.ai/pricing, onglet FLUX.2 : l'onglet est un toggle capricieux, les
+    valeurs ont été lues dans le JSON-LD de la page (fetch RSC puis lecture des
+    blocs Product/UnitPriceSpecification) avant d'être confirmées par la
+    capture Playwright. max 0,07 $ le 1er MP puis 0,03 $, pro 0,03 / 0,015 $,
+    flex 0,05 $/MP sans dégressivité, klein 9B 0,015 / 0,002 $, klein 4B
+    0,014 / 0,001 $ ; colonne REF IMG = tarif du MP supplémentaire. FLUX.1
+    facturé à l'image : 1.1 pro 0,04 $, 1.1 pro Ultra 0,06 $, FLUX.1 pro
+    0,05 $, FLUX.1 dev 0,025 $. Règles : arrondi au MP entier supérieur
+    séparément pour l'entrée et la sortie, sortie plafonnée à 4 MP, références
+    multiples ramenées à 1 MP chacune.
+  - bfl.ai/models/flux-2-klein : 9B FLUX Non-Commercial License 19,6 Go ~0,5 s
+    GB200 / ~2 s RTX 5090 ; 9B Base non-commercial 21,7 Go ~6 s / ~35 s ; 4B
+    Apache 2.0 8,4 Go ~0,3 s / ~1,2 s ; 4B Base Apache 2.0 9,2 Go ~3 s / ~17 s.
+  - bfl.ai/licensing : Builder (modèles klein, 10K images/mois, 1 domaine, 10
+    utilisateurs, usage client exclu), Platform (klein Base 9B + dev, 100K/mois),
+    Professional (dev, 100K/mois, jusqu'à 3 domaines, 3 premiers clients inclus),
+    Enterprise sur mesure.
+  - bfl.ai/research : rapport FLUX.2 daté du 25/11/2025. bfl.ai/blog : FLUX 3
+    Action (7B, poids ouverts, 23/09/2026), FLUX 3 Video (04/08/2026), tarifs
+    vidéo 0,17 $/s en HD et 0,06 $/s en Draft, clips jusqu'à 20 s avec audio.
+- Calculs dérivés (vérifiables à partir de la grille, absents des pages BFL) :
+  pro 1 MP = 0,03 $ et 4 MP = 0,075 $ ; max 0,07 $ et 0,16 $ ; **flex à 4 MP
+  revient à 0,20 $, soit plus cher que max** ; 200 visuels en 1 MP = 6 $ sur pro
+  et 14 $ sur max, les mêmes en 4 MP = 15 $ et 32 $ ; 3 références sur pro =
+  0,045 $ par image.
+- Erreur rattrapée à la relecture : la note de fondateur disait « cinquante fois
+  moins cher » pour klein 4B contre max, alors que le rapport réel en 1 MP est de
+  cinq (0,014 $ contre 0,07 $). Corrigé avant commit.
+- Images : hero Nano Banana 2 (atelier de réparation informatique, carte
+  graphique posée dans un boîtier ouvert), première génération jetée parce que le
+  modèle avait écrit des chiffres lisibles sur un post-it malgré la consigne « no
+  text » ; trois captures réelles Playwright (grille de prix FLUX.2, tableau des
+  quatre klein locaux avec VRAM et licences, paliers de licence), chacune
+  légendée avec la page et la date.
+- Humanisation : humanizer + unslop-text + antislop-copywriting. Corrigés :
+  signposting (« la réponse tient en deux mots », « un détail vaut le coup
+  d'œil », « trois règles encadrent le calcul », « les paliers se lisent vite »),
+  deux parallélismes négatifs en fin de section, gras en tête de liste sur deux
+  sections consécutives (dégrassées pour casser la symétrie), titre de section
+  bancal « en mégapixels, plus en images ». Scanner unslop : 1 finding LOW, faux
+  positif français (« tu utilises » pris pour « utilize »).
+- Longueur : environ 1 950 mots de corps, dans la fourchette.
+- Gates : audit.mjs 155 articles 0 erreur 0 avertissement, lint OK, build OK,
+  check-registry OK après git add (155 imports + heros suivis).
+- IndexNow : 193 URLs soumises, HTTP 200.
