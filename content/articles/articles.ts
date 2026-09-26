@@ -155,6 +155,7 @@ import { videoProduitEcommerceIa } from "@/content/articles/posts/video-produit-
 import { videosFormationEnLigneIa } from "@/content/articles/posts/videos-formation-en-ligne-ia";
 import { bandeAnnonceIa } from "@/content/articles/posts/bande-annonce-ia";
 import { courtMetrageIaNiveauFestival } from "@/content/articles/posts/court-metrage-ia-niveau-festival";
+import { fluxGuideComplet } from "@/content/articles/posts/flux-guide-complet";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -319,4 +320,5 @@ export const articles: Article[] = [
   videosFormationEnLigneIa,
   bandeAnnonceIa,
   courtMetrageIaNiveauFestival,
+  fluxGuideComplet,
 ];
