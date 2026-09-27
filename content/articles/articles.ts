@@ -156,6 +156,7 @@ import { videosFormationEnLigneIa } from "@/content/articles/posts/videos-format
 import { bandeAnnonceIa } from "@/content/articles/posts/bande-annonce-ia";
 import { courtMetrageIaNiveauFestival } from "@/content/articles/posts/court-metrage-ia-niveau-festival";
 import { fluxGuideComplet } from "@/content/articles/posts/flux-guide-complet";
+import { iaCommunityManager } from "@/content/articles/posts/ia-community-manager";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -321,4 +322,5 @@ export const articles: Article[] = [
   bandeAnnonceIa,
   courtMetrageIaNiveauFestival,
   fluxGuideComplet,
+  iaCommunityManager,
 ];
