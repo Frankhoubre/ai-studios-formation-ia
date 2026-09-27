@@ -1468,3 +1468,54 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Gates : audit.mjs 155 articles 0 erreur 0 avertissement, lint OK, build OK,
   check-registry OK après git add (155 imports + heros suivis).
 - IndexNow : 193 URLs soumises, HTTP 200.
+
+## 2026-09-27 | loop 30j J39 | main | `f8c949a`
+
+- Article : `ia-community-manager` (« IA community manager : la boîte à outils
+  2026 »), KW principal « ia community manager », 39/103 du run, ligne 39 du
+  plan (cluster Métiers, type liste/guide, intention commerciale), catégorie
+  business-creatif. Première ligne de la Phase 2 reprise dans l'ordre après la
+  fin du rattrapage des trois lignes Phase 1 sautées.
+- Angle absent du web FR : les listes d'outils IA pour CM ne parlent jamais de
+  provenance. L'article range les outils par tâche et ajoute la colonne « ce que
+  ça laisse dans le fichier » + « ce que tu déclares », avec l'article 50 du
+  règlement européen applicable depuis le 2 août 2026 comme charnière.
+- Faits sourcés le 27/09 :
+  - digital-strategy.ec.europa.eu, guidelines sur l'article 50 : applicable
+    depuis le 2 août 2026 ; fournisseur = marquage lisible par machine ;
+    déployeur = information dans trois cas (reconnaissance d'émotions et
+    catégorisation biométrique, deepfakes, textes d'intérêt public publiés sans
+    relecture ni contrôle éditorial humain) ; exception pour les œuvres
+    manifestement artistiques, satiriques ou de fiction.
+  - artificialintelligenceact.eu/article/99 : paragraphe 4, jusqu'à 15 M€ ou 3 %
+    du CA mondial, le plus élevé des deux, seuils réduits pour les PME.
+  - support.google.com/youtube/answer/14328491 (FR) : trois cas de déclaration ;
+    l'IA d'aide à la production (scripts, idées, sous-titres) reste hors champ.
+  - linkedin.com/help/linkedin/answer/a6282984 : icône C2PA sur les contenus
+    signés, détail au clic, limite assumée (tout n'est pas identifiable).
+  - transparency.meta.com : mention « AI Info » depuis mai 2024, déclenchée par
+    les indicateurs standards ou par la déclaration de l'utilisateur.
+  - newsroom.tiktok.com (19/11/2025) : lecture des Content Credentials, ajout aux
+    contenus faits sur TikTok, test d'un filigrane invisible, plus de 1,3
+    milliard de vidéos étiquetées.
+  - help.openai.com : Content Credentials C2PA + IPTC Digital Source Type
+    `trainedAlgorithmicMedia` (page en 403 au fetch, fait confirmé par recherche).
+  - deepmind.google/science/synthid : filigrane sur l'app Gemini, Veo, Lyria,
+    NotebookLM ; vérification possible en téléversant dans Gemini.
+  - helpx.adobe.com : Content Credentials attachés automatiquement dès qu'une
+    fonction Firefly a servi, y compris le remplissage génératif sur une photo
+    réelle.
+  - techcrunch.com (31/08/2026) : Instagram renomme l'étiquette en « profil
+    généré par IA », portée réduite pour les comptes non étiquetés, pas de
+    pénalité quand l'étiquette est posée.
+- Sora volontairement absent du tableau vidéo : app fermée le 26/04/2026 et API
+  le 24/09/2026 (fait déjà au ledger depuis J24). Remplacé par Veo, Runway, Kling.
+- Partie utile : tableau 7 lignes (tâche / outils / ce qui part dans le fichier /
+  ce que tu déclares), `ol` de 7 étapes de semaine type avec le relevé Verify à
+  l'étape 4, 4 erreurs avec fix concret.
+- 3 captures réelles : aide YouTube FR (repo script), guidelines de la Commission
+  (Playwright scratchpad, refus des cookies non essentiels + scroll 620),
+  contentcredentials.org/verify (repo script). Capture Meta abandonnée : mur de
+  cookies non cliquable par `button:has-text()` et URL `features/...` en 404.
+- Gates : audit 156 articles 0/0, lint OK, build exit 0, check-registry OK.
+  IndexNow 194 URLs HTTP 200.
