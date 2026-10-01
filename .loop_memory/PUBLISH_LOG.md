@@ -1519,3 +1519,71 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   cookies non cliquable par `button:has-text()` et URL `features/...` en 404.
 - Gates : audit 156 articles 0/0, lint OK, build exit 0, check-registry OK.
   IndexNow 194 URLs HTTP 200.
+
+## 2026-10-01 | loop 30j J40 | main | `97959f7`
+
+- Article : `video-publicite-locale-ia` (« Publicité locale IA : filmer le vrai,
+  générer le reste »), KW principal « publicité locale ia », 40/103 du run,
+  ligne 40 du plan (cluster Métiers, type use case, intention commerciale),
+  catégorie business-creatif. Quatre jours sans run entre J39 (27/09) et
+  aujourd'hui, reprise sur la première ligne du plan au slug absent, sans saut.
+- Angle propre à la pub locale et absent du web FR : contrairement à une pub
+  nationale, l'audience d'un spot de quartier connaît le lieu, donc toute
+  invention visuelle sur le commerce est détectée par la cible elle-même. La
+  ligne de partage de l'article n'est pas réel/généré mais habillage/promesse,
+  ce qui donne une grille par métier des plans à filmer et des plans générables.
+- Faits sourcés le 01/10 :
+  - support.google.com/business/answer/6103862 (FR, capture) : vidéo jusqu'à
+    30 secondes, 75 Mo, au moins 720p ; photo JPG/PNG entre 10 Ko et 5 Mo, 720 px
+    recommandé, 250 px minimum, « nette et bien éclairée », pas de retouches
+    importantes ni de filtres excessifs, « l'image doit être fidèle à la
+    réalité » ; 24 à 48 h avant affichage. Cette phrase sur la fidélité est le
+    pivot de l'article, elle vient de Google et pas d'une interprétation.
+  - legifrance LEGIARTI000044563114 (L121-2) : pratique commerciale trompeuse
+    quand une allégation fausse ou de nature à induire en erreur porte sur les
+    caractéristiques essentielles, les qualités substantielles, l'origine ou les
+    résultats attendus de l'utilisation.
+  - legifrance LEGISCTA000032221101 (L132-2) : 2 ans et 300 000 €, portés à
+    5 ans et 750 000 € via un service de communication au public en ligne ;
+    majorations possibles à 10 % du CA annuel moyen ou 50 % des dépenses de
+    publicité (80 % pour les allégations environnementales).
+  - ai.google.dev/gemini-api/docs/video (capture) : Gemini Omni Flash en modèle
+    par défaut (texte + images vers vidéos courtes, édition conversationnelle
+    multitour), Veo 3.1 pour l'extension de scène, le contrôle de la dernière
+    image et la direction par l'image. C'est cette direction par l'image qui
+    permet de partir d'une photo prise sur place.
+- Partie utile : tableau 6 lignes x 4 colonnes (commerce / à filmer au téléphone
+  / générable sans mentir / le plan qui te trahit) couvrant boulangerie, garage,
+  coiffeur, restaurant, artisan du bâtiment et cabinet ; `ol` de 5 étapes pour
+  une demi-journée ; Pro Tip sur le tournage 4K pour récupérer les trois ratios ;
+  4 erreurs avec fix concret.
+- 2 captures réelles en plus du hero : aide Fiche d'établissement Google FR
+  (scroll Playwright sur « 75 Mo »), doc vidéo de l'API Gemini. Captures
+  abandonnées et pourquoi : **legifrance.gouv.fr et economie.gouv.fr sont tous
+  les deux derrière un challenge Cloudflare « Vérification de sécurité en
+  cours »** en Playwright comme en WebFetch, aucune capture possible sans
+  franchir un contrôle anti-bot, donc on cite le texte sans l'illustrer. Les
+  pages Meta (facebook.com/business/help, transparency.meta.com) répondent 404
+  au fetch, specs Meta volontairement absentes de l'article faute de source
+  officielle (les seuls chiffres trouvés venaient de blogs SEO tiers).
+- Passes humanizer + unslop-text + antislop-copywriting : **cluster de 7
+  parallélismes négatifs** au premier jet (« ne regarde pas l'outil, elle regarde
+  la promesse », « n'achète pas tes heures, il achète », « ne tient pas dans le
+  chrono, il tient », etc.), tous réécrits sauf les appositions courtes du type
+  « X, pas Y » dont il reste 3, volontairement. Cinq signposting supprimés en
+  gardant la chose (« mérite d'être lue deux fois », « la colonne de droite
+  mérite une minute d'attention », « cette dernière ligne est celle qui
+  t'intéresse », « la question tient en quelques mots », « la règle pratique
+  tient en un principe ») plus l'annonce d'opinion « Mon avis sur la question : ».
+  « Beaucoup de créateurs cherchent » (preuve sociale vague sur un groupe)
+  remplacé par « On me demande souvent ». Scanner unslop : 2 findings LOW, tous
+  deux des faux positifs français (« utilisation » dans la citation légale,
+  « j'utilise »).
+- Script de capture avec scroll vers un texte : `scratchpad/shot.py` (Playwright
+  channel=chrome + PIL), `wait_until="domcontentloaded"` obligatoire,
+  `networkidle` fait échouer les pages support.google.com.
+- Gates : audit 157 articles 0/0 (une 1re passe à 168 car. sur `description`,
+  corrigée à 155), lint OK, build exit 0 avec la route prérendue, check-registry
+  OK après `git add`. IndexNow 195 URLs HTTP 200. HTML prérendu vérifié : 3
+  images, 8 liens internes, 1 lien externe Legifrance, JSON-LD FAQPage présent,
+  0 tiret cadratin.
