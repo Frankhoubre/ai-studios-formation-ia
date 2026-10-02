@@ -1587,3 +1587,80 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   OK après `git add`. IndexNow 195 URLs HTTP 200. HTML prérendu vérifié : 3
   images, 8 liens internes, 1 lien externe Legifrance, JSON-LD FAQPage présent,
   0 tiret cadratin.
+
+## 2026-10-02 | loop 30j J41 | main | `36559b7`
+
+- Article : `affiche-film-ia` (« Affiche de film IA : du prompt au fichier
+  imprimable »), KW principal « affiche film ia », 41/103 du run, ligne 41 du
+  plan (cluster Image, type tutoriel, intention informationnelle), catégorie
+  ia-image. Enchaînement normal derrière J40 publié la veille.
+- Angle : le plan prévoyait « méthode complète (compo, typo, impression) » face
+  à `ideogram-typographie-affiche-cinema` qui garde l'outil. Vérification faite,
+  cet article ancien ne parle quasiment pas d'affiche (son contenu réel porte
+  sur le rendu cinématique générique), donc le risque de cannibalisation annoncé
+  comme moyen était faible. L'article prend donc tout le sujet affiche : format
+  de sortie d'abord, image ensuite. La thèse opérationnelle est que le format
+  physique fixe le ratio, la définition et l'emplacement du titre, et que
+  l'ordre inverse (générer puis chercher un format) est ce qui fait refaire
+  l'affiche trois fois.
+- Faits sourcés le 02/10 :
+  - en.wikipedia.org/wiki/Film_poster (capture écran dans l'article) : one sheet
+    US 27 x 40 pouces soit 686 x 1016 mm, contre 27 x 41 pouces avant le milieu
+    des années 1980, quand les studios ont repris la production de leurs
+    affiches au National Screen Service. Bloc de crédits en typographie ultra
+    condensée (hauteur des caractères plusieurs fois la largeur), corps à 25 ou
+    35 % de la hauteur moyenne des lettres du titre, par convention
+    contractuelle ; la typo condensée existe précisément pour tenir cette
+    hauteur imposée tout en logeant tous les noms. C'est la trouvaille de
+    l'article, aucun contenu FR sur l'affiche IA ne mentionne cette règle.
+  - mauvais-genres.com (capture écran) : formats français, 120 x 160 cm grand
+    format de base hérité de la première affiche de cinéma (Cinématographe
+    Lumière, L'Arroseur arrosé, 1896 selon le site), 40 x 60 petit format,
+    60 x 160 pantalon pour portes de salle et colonnes Morris, 400 x 300 géant
+    en 8 panneaux, 240 x 320 et 240 x 160 abandonnés. Le site précise que ces
+    tailles sont approximatives et varient de quelques centimètres d'un film à
+    l'autre, nuance reprise telle quelle dans l'article.
+  - luxvisual.lu/guide-pao-grand-format (capture écran du bloc RÉSUMÉ) : 100 dpi
+    comme résolution optimale en grand format, plancher 72 dpi au-delà de 1 m²
+    et 36 dpi au-delà de 10 m², donnés comme « base théorique » ; PDF échelle
+    1:1, CMJN profil Fogra 39, fond perdu 10 mm sur les 4 côtés, sans traits de
+    coupe ni repères, textes et logos en vectoriel.
+  - ai.google.dev/gemini-api/docs/image-generation : ratios 1:1, 3:2, 2:3, 3:4,
+    4:3, 4:5, 5:4, 9:16, 16:9, 21:9 ; Gemini 3 Pro Image en 1K, 2K, 4K. La doc
+    ne donne PAS les dimensions en pixels par palier, donc aucune équivalence
+    4K = N Mpx n'a été affirmée dans l'article.
+  - Calculs maison explicités : 120 x 160 cm à 100 dpi = 4 724 x 6 299 px
+    (29,8 Mpx, surface 1,92 m²) ; 40 x 60 cm à 300 dpi = 4 724 x 7 087 px
+    (33,5 Mpx) ; one sheet 27 x 40 in à 300 dpi = 8 100 x 12 000 px (97,2 Mpx) ;
+    60 x 160 cm à 100 dpi = 2 362 x 6 299 px ; 400 x 300 cm à 36 dpi =
+    5 669 x 4 252 px (24,1 Mpx) ; 120 x 160 à 300 dpi = 268 Mpx. Ratios :
+    120/160 = 3:4 pile, 40/60 = 2:3 pile, 27/40 = 0,675 donc 2:3 puis un
+    demi-pouce à rogner, 60/160 = 3:8 sans équivalent natif.
+  - Contre-intuition vendable et vérifiée par le calcul : le petit format
+    40 x 60 réclame plus de pixels que le 120 x 160, et le géant de 12 m² quatre
+    fois moins que le one sheet, la distance de lecture commandant la résolution.
+- Images : hero Nano Banana 2 (atelier d'impression grand format, contrôle
+  d'épreuve au compte-fils sur la bande de pastilles couleur, traceur à rouleau,
+  fin de journée) + 3 captures réelles relues avec Read avant intégration
+  (Wikipedia bloc de crédits, Mauvais Genres formats, LuxVisual résumé PAO).
+  Bannière de don Wikipedia et ancre #Billing_block non honorée par le script
+  standard : un script de capture par sélecteur a été écrit dans le scratchpad
+  (scroll_into_view + suppression JS des blocs banner/donate) plutôt que de
+  livrer une capture tronquée.
+- Humanisation : scanner unslop à 1 finding (« nuance », faux positif
+  anglophone). Passe FR manuelle : 3 parallélismes négatifs supprimés (« cette
+  taille n'est pas un choix graphique, elle sort des contrats » dans faq[] ET
+  dans content, « Pas 5 %, pas ce qui tombe bien visuellement », « la partie
+  difficile n'est pas la génération, c'est de décider » en note de fondateur) ;
+  grappe de « trois » ramenée de 5 à 4 ; 2 signposting supprimés en gardant la
+  chose (« Il donne, pour chaque format, le ratio... », « détaillés juste
+  après »). Note de fondateur réécrite pour sortir du gabarit « Les outils, tu
+  les auras pris en main en un week-end » qui fermait J40.
+- Gates : audit 158 articles 0 erreur 0 avertissement, lint OK, build exit 0
+  avec /blog/affiche-film-ia prérendue, check-registry OK après `git add`.
+  IndexNow 196 URLs HTTP 200. Vérification manuelle : 4 images présentes sur
+  disque, 4 liens internes existants, 3 liens externes d'autorité, 0 tiret
+  cadratin, title 52 car., description 150 car.
+- Non fait : vérification navigateur impossible (les serveurs de dev sont
+  bloqués dans les runs planifiés). Le prérendu du build et le contrôle statique
+  des chemins d'images et des liens tiennent lieu de preuve.
