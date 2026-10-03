@@ -1664,3 +1664,78 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Non fait : vérification navigateur impossible (les serveurs de dev sont
   bloqués dans les runs planifiés). Le prérendu du build et le contrôle statique
   des chemins d'images et des liens tiennent lieu de preuve.
+
+## 2026-10-03 : J42 `grok-imagine-guide`
+
+- Article : `grok-imagine-guide` (« Grok Imagine : quel modèle et à quel prix »),
+  KW principal « grok imagine », 42/103 du run, ligne 42 du plan (cluster
+  Outils, type guide outil, intention informationnelle), catégorie ia-video.
+  Enchaînement normal derrière J41 publié la veille.
+- Angle : le plan prévoyait « la news 1.5 garde le KW versionné, ici l'evergreen
+  marque ». Vérification faite, le sujet avait bougé depuis la rédaction du plan
+  et depuis la news de juin : xAI a sorti Imagine Image 2.0 le 7 août 2026, et
+  la famille compte désormais SIX modèles facturés séparément (3 image, 3 vidéo)
+  là où la news ne parlait que de Video 1.5. L'angle retenu est donc le routage
+  par le prix : le nom commercial cache six tarifs, et la même séquence de 320 s
+  coûte 6,40 $ ou 25,60 $ selon la ligne appelée. La partie utile est la grille
+  complète plus les multiplications sur un volume réel, que personne ne publie
+  en français.
+- Faits sourcés le 03/10 :
+  - docs.x.ai/docs/models (capture écran dans l'article) : grok-imagine-image
+    0,02 $/image, grok-imagine-image-2.0 0,04 $, grok-imagine-image-quality
+    0,05 $, grok-imagine-video-1.5-lite 0,020 $/sec, grok-imagine-video
+    0,050 $/sec, grok-imagine-video-1.5 0,080 $/sec. Carte Imagine API : image
+    1K/2K, vidéo 480p/720p/1080p.
+  - x.ai/news/grok-imagine-image-2 (capture écran dans l'article) : Image 2.0
+    annoncé le 7 août 2026, GA comme Quality Mode sur grok.com/imagine et apps
+    iOS/Android, API `grok-imagine-image-2.0`. Baguette magique sur zone,
+    segmentation, détourage sur fond transparent, multi-ref jusqu'à 5 images
+    sources, smart resize, 16+ templates. 2e place Arena text-to-image et
+    image-edit derrière gpt-image-2, au jour de l'annonce (présenté dans
+    l'article comme un instantané d'éditeur, pas comme un fait durable).
+  - docs.x.ai/docs/guides/image-generations : 10 images max par requête, 5
+    sources max en multi-ref, tarif forfaitaire par image quelle que soit la
+    longueur du prompt, et une édition facturée sur l'image d'entrée ET sur
+    l'image de sortie. Ce dernier point est le piège numéro un de l'article,
+    absent de tout le contenu FR existant.
+  - docs.x.ai/docs/guides/video-generations : API asynchrone (requête, polling
+    de l'ID, URL finale), durée configurable jusqu'à 15 s, image-to-video,
+    reference-to-video, extension de plan, durée et définition pesant toutes
+    deux sur le coût.
+- Écarté faute de source primaire : les paliers de prix vidéo par définition
+  (0,14 $/sec en 720p et 0,25 $/sec en 1080p circulent chez des tiers, la doc
+  xAI dit seulement que la définition pèse sur le total) et le prix de
+  l'abonnement SuperGrok (x.ai/grok renvoie 403). L'article dit d'aller vérifier
+  la grille plutôt que d'avancer un chiffre non vérifié.
+- Passes humanizer + unslop-text + antislop-copywriting : SEPT parallélismes
+  négatifs au premier jet (« X, pas Y » et « plutôt que Y ») ramenés à un seul,
+  qui est une simple énumération. Un H3 dont la première ligne répétait son
+  titre (« Côté vidéo : trois vitesses » suivi de « Même logique, trois crans »)
+  corrigé en gardant la chose et en supprimant l'annonce. Deux signposting
+  supprimés (« Le discours officiel tient en une phrase : », « Ce qui change
+  concrètement, c'est... »). Tic « vrai/vraie » à 6 occurrences ramené à 0.
+  Grappe de « trois » à 15 occurrences ramenée à 13, toutes factuelles
+  désormais (il y a littéralement trois modèles image et trois modèles vidéo).
+  Burstiness ajoutée (fragments « Du simple au quadruple. », « Insister coûte
+  plus cher que changer. »). Scanner unslop : 0 finding sur 1 796 mots, ce qui
+  ne prouve rien en français, d'où la passe structurelle manuelle ci-dessus.
+  Zéro tiret cadratin vérifié par grep sur le fichier source.
+- Images : hero Nano Banana 2 (toit-terrasse en plein soleil de midi, repérage
+  avec tablette et liste de plans) plus DEUX captures réelles des sources
+  primaires, réparties dans deux sections différentes (l'annonce Image 2.0 dans
+  les concepts, la carte tarifaire xAI dans la méthode, à côté du lien vers la
+  doc). Les deux captures relues avec Read avant intégration : lisibles, 45 et
+  51 Ko, légende nommant la source et la date de capture.
+- Titre raccourci de 50 à 41 caractères après contrôle du prérendu : avec le
+  suffixe « | AI Studios Blog », TITLE_MAX = 60 tronquait le titre comme il
+  tronque celui des articles récents. À 41 caractères, le titre passe entier.
+  À reprendre pour les prochains runs : viser 42 caractères max.
+- Gates : `node .loop_scripts/audit.mjs` 159 articles 0 erreur 0 avertissement,
+  `npm run lint` vert, `npm run build` vert (209 pages), `check-registry.py` OK
+  après `git add`. Prérendu vérifié dans `.next/server/app/blog/grok-imagine-guide.html` :
+  H1 correct, 3 images présentes, 3 liens internes valides, JSON-LD FAQPage
+  généré. Push `4bb7871`, IndexNow 197 URLs HTTP 200.
+- Non fait : vérification navigateur impossible (le `.claude/launch.json` actif
+  est au niveau de ClaudeCodeGit et ne contient pas ce repo ; pas touché pour ne
+  pas modifier un fichier partagé hors périmètre). Le prérendu du build tient
+  lieu de preuve.
