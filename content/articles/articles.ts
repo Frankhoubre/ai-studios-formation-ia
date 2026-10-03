@@ -159,6 +159,7 @@ import { fluxGuideComplet } from "@/content/articles/posts/flux-guide-complet";
 import { iaCommunityManager } from "@/content/articles/posts/ia-community-manager";
 import { videoPubliciteLocaleIa } from "@/content/articles/posts/video-publicite-locale-ia";
 import { afficheFilmIa } from "@/content/articles/posts/affiche-film-ia";
+import { grokImagineGuide } from "@/content/articles/posts/grok-imagine-guide";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -327,4 +328,5 @@ export const articles: Article[] = [
   iaCommunityManager,
   videoPubliciteLocaleIa,
   afficheFilmIa,
+  grokImagineGuide,
 ];
