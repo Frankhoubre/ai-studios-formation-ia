@@ -160,6 +160,7 @@ import { iaCommunityManager } from "@/content/articles/posts/ia-community-manage
 import { videoPubliciteLocaleIa } from "@/content/articles/posts/video-publicite-locale-ia";
 import { afficheFilmIa } from "@/content/articles/posts/affiche-film-ia";
 import { grokImagineGuide } from "@/content/articles/posts/grok-imagine-guide";
+import { higgsfieldGuide } from "@/content/articles/posts/higgsfield-guide";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -329,4 +330,5 @@ export const articles: Article[] = [
   videoPubliciteLocaleIa,
   afficheFilmIa,
   grokImagineGuide,
+  higgsfieldGuide,
 ];
