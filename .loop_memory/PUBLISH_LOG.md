@@ -1739,3 +1739,40 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   est au niveau de ClaudeCodeGit et ne contient pas ce repo ; pas touché pour ne
   pas modifier un fichier partagé hors périmètre). Le prérendu du build tient
   lieu de preuve.
+
+## 2026-10-04 - J43 - higgsfield-guide
+
+- Publie : « Higgsfield : le vrai prix de ses credits », slug `higgsfield-guide`,
+  categorie `ia-video`, KW principal « higgsfield ». 2 439 mots de corps.
+- Angle : le plan prevoyait l'evergreen marque face a la news Creative OS. Retenu, inedit
+  en FR : Higgsfield est un catalogue plus un compteur, et la seule donnee qui decide est le
+  prix du credit (0,070 / 0,039 / 0,033 EUR). Tous les chiffres viennent de
+  higgsfield.ai/pricing releve le 04/10, plus des multiplications refaisables.
+- Trouvaille du jour : la grille « Compare features » raisonne en annee et pas en
+  mois, verifie deux fois par l'arithmetique (640 videos Plus = 54 par mois, 1 620 images
+  Starter = 135 par mois). Et le bas de page exclut l'illimite de Canvas, Supercomputer et
+  MCP/CLI, donc des surfaces memes du Creative OS.
+- 3 captures reelles relues avec Read (cartes de prix, grille comparative, mentions du bas
+  de page). Les accordeons de la FAQ ne s'ouvrent pas en headless malgre clic, scroll et
+  forcage CSS : la capture visee a ete remplacee par un recadrage du bloc de mentions, qui
+  prouve mieux l'affirmation. Script de capture par selecteur dans le scratchpad.
+- Humanisation : passes humanizer, unslop-text et antislop-copywriting. Supprime 3 signposting
+  (« la methode tient en une multiplication », « cette capture cache un piege »,
+  « meritent qu'on s'y arrete »), l'annonce de comptage « trois restrictions le
+  cadrent » qui repetait son propre titre de section, l'ouverture d'enumeration hedgee
+  « trois choses a lire ensemble », la preuve sociale vague « une bonne pratique
+  que peu d'editeurs appliquent » (remplacee par une opinion assumee), et la formule de
+  cloture « si tu ne retiens qu'une chose » deja utilisee en J42. Liste a en-tetes gras
+  convertie en phrases (seul hit HIGH du scanner, passe de 3 HIGH a 0). Symetrie des 4 pieges
+  cassee (labels « symptome / reflexe utile » varies, un piege ramene a un paragraphe).
+  Corrige un accord : « le nombre de generations simultanees peuvent etre reduites »
+  en « reduits », 2 occurrences. Scanner unslop final : 0 HIGH, 0 MEDIUM, 4 LOW tous
+  faux positifs francais (« utilises » lu comme « utilize »). 0 tiret long,
+  0 parallelisme negatif.
+- Metadonnees : titre 40 car. (sous le plafond de 42 retenu en J42), description portee de
+  132 a 140 car. pour rentrer dans la cible 140-158.
+- Gates : audit 0/0, lint OK, build exit 0 verifie explicitement, check-registry OK apres
+  staging. Push `39a4909`, IndexNow 198 URLs HTTP 200.
+- Non fait : verification navigateur impossible, les serveurs de dev sont bloques en session
+  planifiee non surveillee. Controle fait sur le HTML prerendu a la place (3 images du corps,
+  3 liens internes, lien externe, JSON-LD FAQPage, title et description) : tout present.
