@@ -1776,3 +1776,38 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Non fait : verification navigateur impossible, les serveurs de dev sont bloques en session
   planifiee non surveillee. Controle fait sur le HTML prerendu a la place (3 images du corps,
   3 liens internes, lien externe, JSON-LD FAQPage, title et description) : tout present.
+
+## 2026-10-05 - J44 - udio-vs-suno
+
+- Article : « Udio vs Suno : un seul te laisse exporter », slug `udio-vs-suno`, categorie
+  workflow-creatif, KW principal « udio vs suno », ligne 44 du plan (cluster Comparatifs,
+  type comparatif). Environ 2 000 mots de corps, 11 min annoncees.
+- Reorientation d'angle assumee : le plan prevoyait « quelle musique IA choisir », mais Udio
+  a desactive le telechargement de l'audio, de la video et des stems le 30/10/2025, au
+  lendemain de son accord avec Universal Music Group, et la mesure tient toujours au 05/10/2026
+  (page d'aide officielle mise a jour le 17/02/2026, changelog muet depuis le 28/01/2026).
+  L'article compare donc ce que chaque service te laisse emporter, pas seulement le rendu.
+- Verifications faites avant redaction : page d'aide Udio sur le partenariat UMG, udio.com/pricing,
+  suno.com/pricing (lu en mensuel ET en annuel via le navigateur integre pour ne pas deduire les
+  prix mensuels d'un pourcentage), couts en credits chez les deux editeurs, accords Merlin et
+  Kobalt via Digital Music News, communique UMG via Music Business Worldwide.
+  Point laisse volontairement flou : l'etat exact du proces UMG contre Suno, sources contradictoires.
+- Images : hero Nano Banana 2 + 3 captures reelles (page d'aide Udio avec l'encadre « downloading
+  has been disabled », grille Suno avec les quotas de telechargement, grille Udio qui ne mentionne
+  nulle part le telechargement). Les trois captures relues avec Read avant integration, toutes
+  lisibles, 45 a 62 Ko.
+- Passes humanisation : humanizer, unslop-text (scanner : 2 findings, les deux faux positifs
+  sur « droits d'utilisation commerciale » pris pour « utilize ») puis antislop-copywriting.
+  Corrections appliquees : 1 parallelisme negatif (« l'interet de Premier n'est pas le prix
+  unitaire, c'est le volume »), 1 signposting (« elle tient en un mot : fichier »), 1 aphorisme
+  (« a sauve plus d'abonnements que tous les comparatifs du web »), 1 conclusion prophetique
+  (« prendra le marche entier »), 1 « Autrement dit » de treadmill, 1 passif sans acteur
+  (« le telechargement a ete coupe » devenu « Udio a coupe le telechargement »), 1 symetrie
+  cassee sur les vingt fichiers.
+- Gates : audit.mjs 161 articles 0 erreur 0 avertissement, lint OK, build OK exit 0,
+  check-registry OK apres git add. Zero tiret cadratin dans le HTML prerendu.
+- Push `f3ac2b1`, IndexNow 199 URLs HTTP 200.
+- Non fait : verification navigateur du site en local, les serveurs de dev sont bloques en
+  session planifiee non surveillee. Controle fait sur .next/server/app/blog/udio-vs-suno.html
+  a la place : 3 images du corps presentes, 4 liens internes valides, 2 liens externes
+  d'autorite, les 5 H2 attendus, zero tiret long.
