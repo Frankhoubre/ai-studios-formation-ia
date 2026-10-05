@@ -161,6 +161,7 @@ import { videoPubliciteLocaleIa } from "@/content/articles/posts/video-publicite
 import { afficheFilmIa } from "@/content/articles/posts/affiche-film-ia";
 import { grokImagineGuide } from "@/content/articles/posts/grok-imagine-guide";
 import { higgsfieldGuide } from "@/content/articles/posts/higgsfield-guide";
+import { udioVsSuno } from "@/content/articles/posts/udio-vs-suno";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -331,4 +332,5 @@ export const articles: Article[] = [
   afficheFilmIa,
   grokImagineGuide,
   higgsfieldGuide,
+  udioVsSuno,
 ];
