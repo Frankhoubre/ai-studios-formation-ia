@@ -1811,3 +1811,27 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   session planifiee non surveillee. Controle fait sur .next/server/app/blog/udio-vs-suno.html
   a la place : 3 images du corps presentes, 4 liens internes valides, 2 liens externes
   d'autorite, les 5 H2 attendus, zero tiret long.
+
+## 2026-10-06 - J45 - bruitages-sound-design-ia
+
+- Article : « Bruitage IA : donner un vrai son a tes videos », slug `bruitages-sound-design-ia`,
+  categorie workflow-creatif, KW bruitage ia (sound design ia, sfx ia), ligne 45 du plan (guide).
+- Angle : trois couches (ambiance, synchro, design), un type d'outil par couche (texte vers audio
+  ElevenLabs, video vers audio MMAudio / Kling, timing a la voix Firefly, Freesound en depannage),
+  methode en 6 etapes depuis le reperage muet jusqu'au mixage, 4 erreurs, FAQ 6.
+- Sources verifiees le jour meme : doc et pricing ElevenLabs, README MMAudio, aide Adobe Firefly,
+  FAQ Freesound, Wikipedia Bruitage. Aucun chiffre de niveau sonore (LUFS) donne, faute de source
+  officielle. Regle « 2 ou 3 effets de design par minute » presentee comme regle perso.
+- Images : hero Nano Banana 2 (126 Ko, premier jet) + 3 captures (doc ElevenLabs Sound effects,
+  depot GitHub MMAudio, aide Firefly recadree pour retirer la banniere cookies), relues avec Read.
+- Humanisation : humanizer, unslop-text (scanner 0 finding, non probant en francais), puis
+  antislop-copywriting. Corrections : 1 parallelisme negatif dans un H2 (« trois couches, pas un
+  seul fichier »), 1 signposting (« Mon avis tranche : », « Le metier a un nom et une histoire »),
+  trois paragraphes symetriques a ouverture en gras rendus asymetriques, 1 promesse exageree
+  (« deux fois plus cher »), 1 experience inventee (« le moyen le plus rapide que j'ai vu »),
+  1 aphorisme en FAQ, 1 attribution non sourcee (« les monteurs son appellent ca »).
+- Gates : audit 162 articles 0 erreur, lint OK, build OK, check-registry OK.
+- Push `554a99f`, IndexNow 200 URLs HTTP 200.
+- Non fait : verification navigateur en local (session planifiee). Controle sur
+  .next/server/app/blog/bruitages-sound-design-ia.html : H1, 3 images du corps, FAQPage presents.
+
