@@ -1835,3 +1835,29 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Non fait : verification navigateur en local (session planifiee). Controle sur
   .next/server/app/blog/bruitages-sound-design-ia.html : H1, 3 images du corps, FAQPage presents.
 
+## 2026-10-07 - J46 - montage-automatique-ia
+
+- Article : « Montage automatique IA : ce qui marche », slug `montage-automatique-ia`, categorie
+  workflow-creatif, KW montage automatique ia, ligne 46 du plan (guide), aucune ligne sautee.
+- Angle : test unique « le critere de la coupe se mesure-t-il ? » ; tableau de 8 fonctions (tache /
+  outil / ce que la machine mesure / ce que tu verifies) ; ordre en 6 etapes (trier, assembler,
+  blancs avec duree cible, visionnage integral, recadrage APRES validation car Auto Reframe duplique
+  la sequence, chapitres en dernier) ; 4 pieges (mots rognes, multicam qui oublie l'auditeur,
+  recadrage a deux visages, chapitres auto absents) ; section dediee aux plans generes sans dialogue.
+- Sources verifiees le jour meme : Blackmagic whatsnew + page Studio, aide Adobe Auto Reframe,
+  aide Descript Shorten word gaps, forum feedback Descript, aide YouTube chapitres FR. Ecarte : la
+  page Adobe Scene Edit Detection (404), et toute affirmation « fonction X reservee a Studio ».
+- Images : hero Nano Banana 2 (89 Ko, premier jet) + 3 captures relues avec Read. Pieges : helpx.adobe.com
+  renvoie Access Denied a Playwright headless (passer headless=False + --disable-blink-features=AutomationControlled),
+  puis modale geo a fermer (clic sur la croix ~936,280), puis bouton « Don't Enable » des cookies ;
+  feedback.descript.com s'auto-traduit en locale fr-FR (« description » au lieu de « Descript »), capturer en en-US.
+- Humanisation : humanizer, unslop-text (scanner 0 finding, non probant), antislop-copywriting.
+  Corrections : 1 signposting (« Mon test tient en une question »), 1 enumeration symetrique
+  Certaines / D'autres / Les dernieres, 1 triade d'infinitifs, 1 negation formule (« bon texte ne veut
+  pas dire bon jeu »), 1 preuve sociale vague (« l'etape que tout le monde saute »), 1 claim non
+  verifie (fonctions IA reservees a Studio) adouci, 1 repetition « trois ou quatre », italiques
+  doublees retirees des legendes, alt du hero aligne sur l'image (homme penche, pas accroupi).
+- Gates : audit 163 articles 0 erreur, lint OK, build exit 0, check-registry OK.
+- Push `beb1f19`, IndexNow 201 URLs HTTP 200.
+- Non fait : verification navigateur en local (session planifiee). Controle sur
+  .next/server/app/blog/montage-automatique-ia.html : title, description, 3 images du corps presents.
