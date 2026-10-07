@@ -163,6 +163,7 @@ import { grokImagineGuide } from "@/content/articles/posts/grok-imagine-guide";
 import { higgsfieldGuide } from "@/content/articles/posts/higgsfield-guide";
 import { udioVsSuno } from "@/content/articles/posts/udio-vs-suno";
 import { bruitagesSoundDesignIa } from "@/content/articles/posts/bruitages-sound-design-ia";
+import { montageAutomatiqueIa } from "@/content/articles/posts/montage-automatique-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -335,4 +336,5 @@ export const articles: Article[] = [
   higgsfieldGuide,
   udioVsSuno,
   bruitagesSoundDesignIa,
+  montageAutomatiqueIa,
 ];
