@@ -1861,3 +1861,25 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Push `beb1f19`, IndexNow 201 URLs HTTP 200.
 - Non fait : verification navigateur en local (session planifiee). Controle sur
   .next/server/app/blog/montage-automatique-ia.html : title, description, 3 images du corps presents.
+
+## 2026-10-08 : J47 prompts-suno-styles (prompt pack)
+
+- Ligne 47 du plan (Prompts Suno : décrire un style musical qui sonne). Réorientation : Suno a lancé la
+  famille v6 le 9/09/2026 et retiré tous les modèles antérieurs, le plan datait de la v5.5. Angle recalé
+  sur la v6 (v6 pour livrer, v6-wild pour chercher, v6-mini gratuit ; mode simple multi-sources vs mode
+  personnalisé pour une fiche de style réutilisable).
+- Contenu : recette en 4 temps (genre+tempo, 2-3 instruments, dynamique/structure, voix), tableau livrable /
+  familles / curseurs / voix, 22 prompts en quote blocks (voix off, pub, documentaire, tension, chantés),
+  6 étapes, Pro Tip Persona, 4 corrections (générique, nom d'artiste bloqué, négation dans le style -> Exclude,
+  morceau qui part dans tous les sens -> curseurs + édition v6 en langage courant).
+- Sources : release notes Suno (introducing-v6, exclude-styles) + 8 articles help.suno.com (voir ledger).
+  Ecarté : limites de caractères des champs et « pondération des premiers mots » (sources tierces seulement).
+- Images : hero Nano Banana 2 (125 Ko, premier jet) + 3 captures relues (release note v6, aide Creative
+  Sliders, aide modération). help.suno.com et suno.com se capturent sans souci en headless.
+- Humanisation : humanizer (5 parallélismes « X, pas Y » réduits, 3 négations retirées des prompts pour rester
+  cohérent avec le conseil Exclude), unslop-text (2 faux positifs : « underscore » terme musical, « utilise »),
+  antislop-copywriting (aphorisme « Tout le reste est du bruit » et affirmation non sourcée sur l'entraînement retirés).
+- Gates : audit 164 articles 0 erreur, lint OK, build exit 0, check-registry OK. Contrôle du HTML prérendu
+  .next/server/app/blog/prompts-suno-styles.html (H2, FAQPage, captures présents).
+- Push `a3520b7`, IndexNow 202 URLs HTTP 200.
+- A faire hors loop : suno-guide-complet décrit encore la v5.5 comme modèle courant.
