@@ -164,6 +164,7 @@ import { higgsfieldGuide } from "@/content/articles/posts/higgsfield-guide";
 import { udioVsSuno } from "@/content/articles/posts/udio-vs-suno";
 import { bruitagesSoundDesignIa } from "@/content/articles/posts/bruitages-sound-design-ia";
 import { montageAutomatiqueIa } from "@/content/articles/posts/montage-automatique-ia";
+import { promptsSunoStyles } from "@/content/articles/posts/prompts-suno-styles";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -337,4 +338,5 @@ export const articles: Article[] = [
   udioVsSuno,
   bruitagesSoundDesignIa,
   montageAutomatiqueIa,
+  promptsSunoStyles,
 ];
