@@ -1883,3 +1883,12 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
   .next/server/app/blog/prompts-suno-styles.html (H2, FAQPage, captures présents).
 - Push `a3520b7`, IndexNow 202 URLs HTTP 200.
 - A faire hors loop : suno-guide-complet décrit encore la v5.5 comme modèle courant.
+
+## 2026-10-09 : J48 prompts-photo-produit (prompt pack)
+
+- Ligne 48 du plan (satellite prompts de photos-produit-ia-shooting), 48/103 du run. Categorie prompting.
+- 20 prompts en anglais (blocs quote) en 8 familles : fond blanc, fond neutre, mises en situation, flat lay, macro, echelle, saisons, declinaisons. Tous partent d'une vraie photo du produit (edition, pas generation). Tableau emplacement -> prompts -> format, methode en 6 etapes, Pro Tip texte d'etiquette entre guillemets, 4 pieges (etiquette reecrite, taille, blanc pas blanc, decor qui promet).
+- Sources primaires : doc Gemini image-generation, blog vendeurs Amazon product-photos, aide Merchant Center image_link (FR). Captures recadrees (Gemini sans banniere cookies).
+- Passes humanizer (titre en parallelisme negatif, phrase qui repetait son H3, 2 aphorismes, triplet, 2 « X, pas Y » corriges) + unslop-text (4 « seamless » remplaces, terme photo mais banni par la charte) + antislop-copywriting (valeur de pipette presentee comme exemple).
+- Gates : audit 0 erreur (description ramenee a 152 car.), lint OK, build exit 0, HTML prerendu .next/server/app/blog/prompts-photo-produit.html verifie (3 captures + FAQPage), check-registry OK.
+- Push `792f770`, IndexNow 203 URLs HTTP 200.
