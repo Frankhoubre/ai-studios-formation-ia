@@ -1892,3 +1892,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Passes humanizer (titre en parallelisme negatif, phrase qui repetait son H3, 2 aphorismes, triplet, 2 « X, pas Y » corriges) + unslop-text (4 « seamless » remplaces, terme photo mais banni par la charte) + antislop-copywriting (valeur de pipette presentee comme exemple).
 - Gates : audit 0 erreur (description ramenee a 152 car.), lint OK, build exit 0, HTML prerendu .next/server/app/blog/prompts-photo-produit.html verifie (3 captures + FAQPage), check-registry OK.
 - Push `792f770`, IndexNow 203 URLs HTTP 200.
+
+## 2026-10-10 : J49 monetisation-youtube-contenu-ia (guide)
+
+- Ligne 49 du plan (cluster IA pour YouTube), type guide, categorie business-creatif, KW « monétisation youtube ia ».
+- Angle : YouTube juge ce que l'examinateur voit sur la chaine, pas l'outil ; declaration IA et monetisation = deux regles distinctes. Tableau de 10 situations avec verdict appuye sur les exemples officiels, verification en 6 etapes, 4 erreurs.
+- Fait notable : la politique de monetisation a ete reorganisee mi-juillet 2026 (rubriques « decevants ou deplaisants » et « personas IA lies a des sujets sensibles »), presente par Tubefilter comme une clarification ; la version FR de la page est a jour.
+- Captures : declaration IA (14328491 EN, accordeon deplie), personas IA (1311392 EN, accordeon « Follow our program policies » ouvert puis clip viewport ; le full_page apres forçage CSS donnait une image noire), paliers YPP (youtube.com/intl/fr_fr/creators, banniere cookies fermee via « J'ai compris »). Script scratchpad Playwright + PIL.
+- Passes humanizer (ouverture « Dans cet article », 3 signposting, 1 parallelisme negatif), unslop-text (scanner 3 faux positifs FR) + 2 contrastes « pas X » retires, antislop-copywriting (details non sources retires : « dix minutes », « trois semaines », « sans appel possible », « avertissement »).
+- Gates : audit 0 erreur (description ramenee sous 160), lint OK, build exit 0, HTML prerendu verifie (3 captures), check-registry OK.
+- Push `39c62fe`, IndexNow 204 URLs HTTP 200.
