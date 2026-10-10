@@ -166,6 +166,7 @@ import { bruitagesSoundDesignIa } from "@/content/articles/posts/bruitages-sound
 import { montageAutomatiqueIa } from "@/content/articles/posts/montage-automatique-ia";
 import { promptsSunoStyles } from "@/content/articles/posts/prompts-suno-styles";
 import { promptsPhotoProduit } from "@/content/articles/posts/prompts-photo-produit";
+import { monetisationYoutubeContenuIa } from "@/content/articles/posts/monetisation-youtube-contenu-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -341,4 +342,5 @@ export const articles: Article[] = [
   montageAutomatiqueIa,
   promptsSunoStyles,
   promptsPhotoProduit,
+  monetisationYoutubeContenuIa,
 ];
