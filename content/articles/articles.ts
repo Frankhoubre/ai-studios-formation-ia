@@ -167,6 +167,7 @@ import { montageAutomatiqueIa } from "@/content/articles/posts/montage-automatiq
 import { promptsSunoStyles } from "@/content/articles/posts/prompts-suno-styles";
 import { promptsPhotoProduit } from "@/content/articles/posts/prompts-photo-produit";
 import { monetisationYoutubeContenuIa } from "@/content/articles/posts/monetisation-youtube-contenu-ia";
+import { carrouselInstagramIa } from "@/content/articles/posts/carrousel-instagram-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -343,4 +344,5 @@ export const articles: Article[] = [
   promptsSunoStyles,
   promptsPhotoProduit,
   monetisationYoutubeContenuIa,
+  carrouselInstagramIa,
 ];
