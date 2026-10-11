@@ -1902,3 +1902,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Passes humanizer (ouverture « Dans cet article », 3 signposting, 1 parallelisme negatif), unslop-text (scanner 3 faux positifs FR) + 2 contrastes « pas X » retires, antislop-copywriting (details non sources retires : « dix minutes », « trois semaines », « sans appel possible », « avertissement »).
 - Gates : audit 0 erreur (description ramenee sous 160), lint OK, build exit 0, HTML prerendu verifie (3 captures), check-registry OK.
 - Push `39c62fe`, IndexNow 204 URLs HTTP 200.
+
+## 2026-10-11 : J50 carrousel-instagram-ia (tutoriel)
+
+- Ligne 50 du plan (cluster Social), type tutoriel, categorie workflow-creatif, KW « carrousel instagram ia ».
+- Angle : un carrousel se raconte comme une BD ; l'IA ecrit le decoupage et fabrique des visuels SANS texte, le texte se pose dans l'outil de mise en page ; la slide 2 est une deuxieme couverture (Mosseri, oct. 2024 : Instagram remontre le 2e element a qui n'a pas swipe). Tableau des roles de 8 slides, 7 etapes, prompt de decoupage, 4 formes de carrousel, 4 pieges.
+- Fait notable : 20 elements dans l'app depuis aout 2024 mais 10 max via l'API Meta (outils de programmation), recadrage sur la 1re image, 50 publications / 24 h.
+- Captures : doc Meta developpeurs FR section carrousel (cookies refuses via « Refuser les cookies optionnels »), article Meta labeling maj 1er juillet 2024 (AI info). Capture 9to5mac abandonnee (mur de consentement). Script scratchpad Playwright + PIL.
+- Passes humanizer (5 contrastes « pas X » / parallelismes, 1 teaser « raison que peu de gens connaissent », 1 triade), unslop-text (2 faux positifs « utilise »), antislop-copywriting (rien de fabrique).
+- Gates : audit 0 erreur (167 articles), lint OK, build exit 0, HTML prerendu verifie (2 captures), check-registry OK.
+- Push `3e761b7`, IndexNow 205 URLs HTTP 200.
