@@ -1912,3 +1912,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Passes humanizer (5 contrastes « pas X » / parallelismes, 1 teaser « raison que peu de gens connaissent », 1 triade), unslop-text (2 faux positifs « utilise »), antislop-copywriting (rien de fabrique).
 - Gates : audit 0 erreur (167 articles), lint OK, build exit 0, HTML prerendu verifie (2 captures), check-registry OK.
 - Push `3e761b7`, IndexNow 205 URLs HTTP 200.
+
+## 2026-10-12 : J51 video-ia-sans-filigrane (comparatif)
+
+- Angle : deux filigranes dans une vidéo IA, le logo visible (abonnement ou réglage Gemini) et le marquage invisible (SynthID, C2PA) qui reste quoi que tu paies ; et « sans logo » n'égale pas « vendable » (Pika).
+- Tableau 4 outils (Runway, Kling, Pika, Gemini/Flow), méthode en 5 étapes, 4 pièges (effaceur, recadrage, licence, étiquette + article 50 AI Act).
+- Captures : aide Gemini FR filigrane, tarifs Pika (cartes), tarifs Runway annuel (bannière Cookiebot fermée via « Deny »). Script scratchpad Playwright + PIL avec scroll sur texte.
+- Passes humanizer (signposting x3, H3 qui reprenait son titre + généralisation non sourcée, redite « vrai/vraiment »), unslop-text (2 faux positifs « utilisation »), antislop-copywriting (crédits Runway rendus concrets : 52 s de Gen-4.5).
+- Titre raccourci à 42 car. après contrôle du <title> prérendu (tronqué à 46).
+- Gates : audit 0 erreur (168 articles), lint OK, build exit 0 (x2), HTML prérendu vérifié, check-registry OK.
+- Push `21c386f`, IndexNow 206 URLs HTTP 200.
