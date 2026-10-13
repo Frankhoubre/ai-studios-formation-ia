@@ -169,6 +169,7 @@ import { promptsPhotoProduit } from "@/content/articles/posts/prompts-photo-prod
 import { monetisationYoutubeContenuIa } from "@/content/articles/posts/monetisation-youtube-contenu-ia";
 import { carrouselInstagramIa } from "@/content/articles/posts/carrousel-instagram-ia";
 import { videoIaSansFiligrane } from "@/content/articles/posts/video-ia-sans-filigrane";
+import { videoIaLongueDuree } from "@/content/articles/posts/video-ia-longue-duree";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -347,4 +348,5 @@ export const articles: Article[] = [
   monetisationYoutubeContenuIa,
   carrouselInstagramIa,
   videoIaSansFiligrane,
+  videoIaLongueDuree,
 ];
