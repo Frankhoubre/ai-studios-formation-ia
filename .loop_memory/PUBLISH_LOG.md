@@ -1922,3 +1922,11 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Titre raccourci à 42 car. après contrôle du <title> prérendu (tronqué à 46).
 - Gates : audit 0 erreur (168 articles), lint OK, build exit 0 (x2), HTML prérendu vérifié, check-registry OK.
 - Push `21c386f`, IndexNow 206 URLs HTTP 200.
+
+## 2026-10-13 : J52 video-ia-longue-duree (méthode)
+
+- Ligne 52 du plan (cluster Vidéo IA), KW « vidéo ia longue ». Angle : même l'extension Veo plafonne à 148 s en 720p, donc 3 minutes = 36 plans montés sur une bande-son posée d'abord ; découpage type 6 séquences, 7 étapes, budget Veo 3.1 à la seconde (864 s facturées pour 180 s gardées).
+- Captures : doc Veo FR section extension, grille tarifs Veo 3.1 FR, Wikipedia Average shot length. Script scratchpad Playwright (channel chrome) avec scroll sur texte ; la doc ai.google.dev s'affiche en français, chercher les libellés FR.
+- Passes humanizer + unslop-text (1 faux positif « utilise ») + antislop-copywriting : 5 parallélismes négatifs ramenés à 0, 1 signposting, 2 aphorismes, 1 preuve sociale vague (« la plupart des créateurs ») et 1 affirmation non sourcée (« le défaut repéré le plus vite ») retirées ; 2 sur-corrections rattrapées en relecture (comparaison de prix fausse, affirmation non vérifiée sur The Mist).
+- Gates : audit 0/0 (169 articles), lint OK, build exit 0, HTML prérendu vérifié (title 33 car. + marque, 3 captures, FAQPage), check-registry OK.
+- Push `b01c236`, IndexNow 207 URLs HTTP 200.
