@@ -1930,3 +1930,12 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Passes humanizer + unslop-text (1 faux positif « utilise ») + antislop-copywriting : 5 parallélismes négatifs ramenés à 0, 1 signposting, 2 aphorismes, 1 preuve sociale vague (« la plupart des créateurs ») et 1 affirmation non sourcée (« le défaut repéré le plus vite ») retirées ; 2 sur-corrections rattrapées en relecture (comparaison de prix fausse, affirmation non vérifiée sur The Mist).
 - Gates : audit 0/0 (169 articles), lint OK, build exit 0, HTML prérendu vérifié (title 33 car. + marque, 3 captures, FAQPage), check-registry OK.
 - Push `b01c236`, IndexNow 207 URLs HTTP 200.
+
+## 2026-10-14 : J53 animer-photo-ia (tutoriel)
+
+- Ligne 53 du plan (cluster Vidéo IA), KW « animer une photo ia », intention grand public (photos de famille). Angle : un mouvement discret vaut mieux qu'un grand geste ; tableau 4 outils (Google Photos Photo en vidéo, Gemini Veo, MyHeritage LiveMemory, Deep Nostalgia), 5 étapes, prompts par type de photo, 4 erreurs (vignette trop petite, J'ai de la chance sur un portrait de défunt, montrer sans prévenir, publier sans mention IA + art. 226-8).
+- Captures : aide Google Photos FR section Photo en vidéo dépliée, FAQ LiveMemory et FAQ Deep Nostalgia dépliées (bannière cookies MyHeritage : cliquer « Accepter obligatoire seulement », la retirer du DOM ne suffit pas, elle se réinjecte). Script Playwright scratchpad.
+- Passes humanizer + unslop-text (0 finding, non probant en français) + antislop-copywriting : 2 « pas une archive » (parallélisme), 1 signposting (« Ma position, posée d'entrée »), 1 aphorisme de fin, 1 affirmation non vérifiable (« que peu de gens lisent »), 3 affirmations d'expérience non testée (« qui marche bien », « qui donnent des résultats ») retirés ; attribution Google corrigée vers l'aide Gemini.
+- Hero : bandes noires latérales de Nano Banana 2 recadrées (PIL), 84 Ko.
+- Gates : audit 0/0 (170 articles), lint OK, build exit 0, HTML prérendu vérifié (H1, 3 captures, CTA), check-registry OK.
+- Push `5d7dc20`, IndexNow 208 URLs HTTP 200.
