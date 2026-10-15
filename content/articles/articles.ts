@@ -171,6 +171,7 @@ import { carrouselInstagramIa } from "@/content/articles/posts/carrousel-instagr
 import { videoIaSansFiligrane } from "@/content/articles/posts/video-ia-sans-filigrane";
 import { videoIaLongueDuree } from "@/content/articles/posts/video-ia-longue-duree";
 import { animerPhotoIa } from "@/content/articles/posts/animer-photo-ia";
+import { seedanceGuide } from "@/content/articles/posts/seedance-guide";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -351,4 +352,5 @@ export const articles: Article[] = [
   videoIaSansFiligrane,
   videoIaLongueDuree,
   animerPhotoIa,
+  seedanceGuide,
 ];
