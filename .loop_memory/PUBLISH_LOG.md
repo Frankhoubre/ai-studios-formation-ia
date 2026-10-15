@@ -1939,3 +1939,13 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 - Hero : bandes noires latérales de Nano Banana 2 recadrées (PIL), 84 Ko.
 - Gates : audit 0/0 (170 articles), lint OK, build exit 0, HTML prérendu vérifié (H1, 3 captures, CTA), check-registry OK.
 - Push `5d7dc20`, IndexNow 208 URLs HTTP 200.
+
+## 2026-10-15 : J54 seedance-guide (guide outil)
+
+- Ligne 54 du plan (cluster Outils), KW « seedance ». Fait majeur depuis le plan : l'API Seedance 2.5 est ouverte sur BytePlus (bannière « Official Dreamina Seedance 2.5 API is now live »), donc angle « quelle version prendre, où, combien » plutôt que veille. Sources primaires BytePlus relues via Playwright (pages rendues en JS, WebFetch vide).
+- Angle : 2.0 suffit pour la majorité des plans, 2.5 pour > 15 s / > 15 références / édition ; pas de 4K en 2.5 ; français absent des 11 langues ; méthode mode Draft (480p puis finale 1080p) chiffrée.
+- 3 captures : tutoriel 2.5 BytePlus (Latest capabilities), exemples de prix 2.5 BytePlus, page vitrine seed.bytedance.com (bannière cookies refusée avant capture).
+- Passes humanizer (signposting « Mon avis tient en une ligne », 2 méta-commentaires, 2 clivées « X, c'est », cliché du Pro Tip), unslop-text (1 label gras, 1 faux positif « utilise ») + passe manuelle (parallélisme « ne permet pas de générer, elle renvoie », puces à en-tête gras), antislop-copywriting (« quatre sites » non compté, 0,60 $ de revendeur, passif sans acteur). scan-anti-ia : OK.
+- Hero Nano Banana 2 (100 Ko, premier jet).
+- Gates : audit 0/0 (171 articles), lint OK, build exit 0, check-registry OK.
+- Push `f168522`, IndexNow 209 URLs HTTP 200.
