@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Article, ArticleFaqItem } from "@/lib/types/article";
+import { getPublicImageSize } from "@/lib/image-size";
 import {
   AUTHOR_NAME,
   AUTHOR_URL,
@@ -58,21 +59,20 @@ export function withSeoCta(
   return truncateAtWord(base, DESCRIPTION_MAX);
 }
 
+/**
+ * Titre + « | AI Studios Blog » si l'ensemble tient en 60 caractères, sinon le
+ * titre seul, entier. Google réécrit les titres coupés par « … » : mieux vaut
+ * un titre complet un peu long qu'un titre amputé.
+ */
 export function resolvePageTitle(
   title: string,
   options?: { includeBrand?: boolean },
 ): string {
+  const clean = title.replace(/\s+/g, " ").trim();
   const includeBrand = options?.includeBrand ?? true;
-  const branded = includeBrand ? `${title} | ${SITE_NAME}` : title;
-  if (branded.length <= TITLE_MAX) return branded;
-  if (!includeBrand && title.length <= TITLE_MAX) return title;
-  const budget = includeBrand
-    ? TITLE_MAX - ` | ${SITE_NAME}`.length
-    : TITLE_MAX;
-  if (budget > 12) {
-    return `${truncateAtWord(title, budget)} | ${SITE_NAME}`;
-  }
-  return truncateAtWord(title, TITLE_MAX);
+  const branded = `${clean} | ${SITE_NAME}`;
+  if (includeBrand && branded.length <= TITLE_MAX) return branded;
+  return clean;
 }
 
 const indexableRobots: Metadata["robots"] = {
@@ -92,15 +92,37 @@ function buildOpenGraphImages(
   alt: string,
 ): NonNullable<Metadata["openGraph"]>["images"] {
   const ogImage = absoluteUrl(image);
+  // Dimensions lues dans le fichier : un héros 2048x1117 déclaré en 1200x630
+  // fausse le recadrage des aperçus sociaux.
+  const size = getPublicImageSize(image);
   return [
     {
       url: ogImage,
       secureUrl: ogImage,
-      width: 1200,
-      height: 630,
+      ...(size ? { width: size.width, height: size.height } : {}),
       alt,
     },
   ];
+}
+
+function articleAuthorJsonLd(article: Article): Record<string, unknown> {
+  if (article.author.name === AUTHOR_NAME) {
+    return {
+      "@type": "Person",
+      "@id": `${AUTHOR_URL}#person`,
+      name: AUTHOR_NAME,
+      url: AUTHOR_URL,
+    };
+  }
+  return {
+    "@type": "Person",
+    name: article.author.name,
+    ...(article.author.url ? { url: article.author.url } : {}),
+  };
+}
+
+function articleAuthorUrl(article: Article): string | undefined {
+  return article.author.name === AUTHOR_NAME ? AUTHOR_URL : article.author.url;
 }
 
 function baseTwitter(
@@ -165,11 +187,9 @@ export function buildMetadata({
   const resolvedImageAlt = imageAlt ?? title ?? absoluteTitle ?? SITE_NAME;
 
   return {
-    title: absoluteTitle
-      ? { absolute: absoluteTitle }
-      : title
-        ? title
-        : undefined,
+    // Absolute so the root "%s | AI Studios Blog" template cannot push a long
+    // title past 60 characters; resolvePageTitle already adds the brand when it fits.
+    title: absoluteTitle || title ? { absolute: resolvedTitle } : undefined,
     description: metaDescription,
     keywords: keywords?.length ? keywords : undefined,
     alternates: { canonical: url },
@@ -202,13 +222,13 @@ export function articleMetadata(article: Article): Metadata {
   const ogImage = article.image;
 
   return {
-    // Titre absolu déjà tronqué à 60 car. (marque incluse) pour éviter
-    // que le template racine "%s | AI Studios Blog" ne rallonge le <title>.
+    // Titre absolu : le template racine "%s | AI Studios Blog" ne doit pas
+    // rallonger un titre qui ne laisse pas la place à la marque.
     title: { absolute: ogTitle },
     description: metaDescription,
     keywords: article.keywords,
     alternates: { canonical: url },
-    authors: [{ name: article.author.name, url: article.author.url }],
+    authors: [{ name: article.author.name, url: articleAuthorUrl(article) }],
     creator: article.author.name,
     publisher: ORG_NAME,
     category: article.category,
@@ -258,7 +278,7 @@ export function buildRootMetadata(): Metadata {
       languages: { "fr-FR": SITE_URL },
       types: {
         "application/rss+xml": [
-          { url: `${SITE_URL}/feed.xml`, title: "AI Studios Blog — flux RSS" },
+          { url: `${SITE_URL}/feed.xml`, title: "AI Studios Blog, flux RSS" },
         ],
       },
     },
@@ -461,7 +481,7 @@ export function buildPersonJsonLd(): Record<string, unknown> {
       "Workflows créatifs",
     ],
     award: VOIDBORN_AWARDS.map(
-      (a) => `${a.name} — ${a.detail} (VOIDBORN)`,
+      (a) => `${a.name}, ${a.detail} (VOIDBORN)`,
     ),
     sameAs: [...ORG_SAME_AS],
   };
@@ -543,11 +563,7 @@ export function buildArticleItemListJsonLd({
         datePublished: article.date,
         dateModified: article.updatedAt,
         url: absoluteUrl(`/blog/${article.slug}`),
-        author: {
-          "@type": "Person",
-          name: article.author.name,
-          url: article.author.url,
-        },
+        author: articleAuthorJsonLd(article),
       },
     })),
   };
@@ -572,11 +588,7 @@ export function buildArticleJsonLd(
     },
     datePublished: article.date,
     dateModified: article.updatedAt,
-    author: {
-      "@type": "Person",
-      name: article.author.name,
-      url: article.author.url,
-    },
+    author: articleAuthorJsonLd(article),
     publisher: {
       "@type": "Organization",
       "@id": `${MAIN_SITE_URL}#organization`,
@@ -598,6 +610,29 @@ export function buildArticleJsonLd(
       .reduce((n, b) => n + (b.type === "p" ? b.text.split(/\s+/).length : 0), 0),
     timeRequired: `PT${article.readingTime}M`,
     inLanguage: "fr-FR",
+  };
+}
+
+export function buildHowToJsonLd(article: Article): Record<string, unknown> | null {
+  const howTo = article.howTo;
+  if (!howTo || howTo.steps.length === 0) return null;
+  const url = absoluteUrl(`/blog/${article.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": `${url}#howto`,
+    name: howTo.name,
+    description: howTo.description ?? article.description,
+    image: absoluteUrl(article.image),
+    inLanguage: "fr-FR",
+    ...(howTo.totalTime ? { totalTime: howTo.totalTime } : {}),
+    step: howTo.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+      ...(step.anchor ? { url: `${url}#${step.anchor}` } : {}),
+    })),
   };
 }
 

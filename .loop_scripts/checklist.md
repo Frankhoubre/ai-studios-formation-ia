@@ -45,8 +45,11 @@ de révision par article. Échec après 3 → skip + log dans ERRORS_AND_BLOCKER
 - [ ] FAQ (`faq[]`) reflète les Q/R du contenu (JSON-LD FAQPage).
 - [ ] CTA doux présent si pertinent (formation gratuite).
 - [ ] Si l'article parle d'un outil/site : ≥ 1 vraie capture d'écran de sa page
-      publique intégrée (bloc image), fichier présent dans public/images/articles/,
-      alt descriptif. Page publique uniquement (jamais login/paywall).
+      publique intégrée (bloc `screenshot` avec source, capturedAt, width, height),
+      fichier présent dans public/images/articles/, alt descriptif. Page publique
+      uniquement (jamais login/paywall).
+- [ ] Lien affilié = `affiliate: true` ; verdict sans note chiffrée ; comparatif avec
+      source et `verifieLe` (voir seo-multisites/COMPOSANTS-aistudios.md).
 
 ## E. Build (gate final)
 

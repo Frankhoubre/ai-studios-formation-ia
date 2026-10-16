@@ -9,9 +9,10 @@ Usage typique (la home d'un outil dont parle l'article) :
     --slug higgsfield-presentation --label home \
     --alt "Page d'accueil de Higgsfield"
 
-Produit public/images/articles/<slug>-<label>.webp (1280px, léger), à intégrer
-dans l'article via un bloc image :
-  { type: "image", src: "/images/articles/<slug>-<label>.webp", alt: "<alt>" }
+Produit public/images/articles/<slug>-<label>.webp (1280px, léger) et affiche
+le bloc `screenshot` prêt à coller, avec les vraies dimensions et la date du
+jour (voir seo-multisites/COMPOSANTS-aistudios.md) :
+  { type: "screenshot", src, alt, caption, source, capturedAt, width, height }
 
 Pré-requis : Google Chrome installé + playwright (python) + cwebp (ou Pillow
 en repli quand sips/cwebp manquent, cas de Windows).
@@ -24,6 +25,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+from datetime import date
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -147,9 +149,33 @@ def main() -> None:
     print(f"OK {shown} ({size_kb:.0f} Ko)")
     if args.slug:
         alt = args.alt or f"Capture d'écran de {args.url}"
-        print("Bloc à insérer dans content :")
-        print(f'    {{ type: "image", src: "/images/articles/{dest.name}", '
-              f'alt: "{alt}" }},')
+        width, height = webp_size(dest)
+        today = date.today().isoformat()
+        print("Bloc à insérer dans content (caption à écrire) :")
+        print("    {")
+        print('      type: "screenshot",')
+        print(f'      src: "/images/articles/{dest.name}",')
+        print(f'      alt: "{alt}",')
+        print('      caption: "",')
+        print(f'      source: "{args.url}",')
+        print(f'      capturedAt: "{today}",')
+        print(f"      width: {width},")
+        print(f"      height: {height},")
+        print("    },")
+
+
+def webp_size(path: Path) -> tuple[int, int]:
+    """Dimensions lues dans l'en-tête WebP (VP8X, VP8 ou VP8L)."""
+    b = path.read_bytes()[:64]
+    chunk = b[12:16]
+    if chunk == b"VP8X":
+        return 1 + int.from_bytes(b[24:27], "little"), 1 + int.from_bytes(b[27:30], "little")
+    if chunk == b"VP8 ":
+        return int.from_bytes(b[26:28], "little") & 0x3FFF, int.from_bytes(b[28:30], "little") & 0x3FFF
+    if chunk == b"VP8L":
+        v = int.from_bytes(b[21:25], "little")
+        return (v & 0x3FFF) + 1, ((v >> 14) & 0x3FFF) + 1
+    return 0, 0
 
 
 if __name__ == "__main__":

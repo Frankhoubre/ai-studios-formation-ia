@@ -1,10 +1,23 @@
-import Image from "next/image";
 import type { ArticleBlock } from "@/lib/types/article";
 import { RichParagraph } from "@/components/RichParagraph";
 import { LiteYouTube } from "@/components/LiteYouTube";
+import { ArticleCta } from "@/components/article/ArticleCta";
+import { DataTable } from "@/components/article/DataTable";
+import { MediaFigure } from "@/components/article/MediaFigure";
+import { Methodology } from "@/components/article/Methodology";
+import { Verdict } from "@/components/article/Verdict";
 import { YOUTUBE_URL } from "@/lib/constants";
 
-export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
+export function ArticleContent({
+  blocks,
+  slug,
+}: {
+  blocks: ArticleBlock[];
+  slug: string;
+}) {
+  const firstMedia = blocks.findIndex(
+    (b) => b.type === "image" || b.type === "screenshot" || b.type === "gallery",
+  );
   return (
     <div className="prose-blog space-y-5 text-[17px] leading-[1.75] text-text-soft md:text-lg">
       {blocks.map((block, i) => {
@@ -65,77 +78,65 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
             </ol>
           );
         }
-        if (block.type === "table") {
+        if (block.type === "table" || block.type === "comparison") {
+          return <DataTable key={i} {...block} />;
+        }
+        if (block.type === "image" || block.type === "screenshot") {
           return (
-            <figure key={i} className="my-8 overflow-x-auto rounded-2xl border border-border-subtle bg-card/60">
-              {block.caption ? (
-                <figcaption className="border-b border-border-subtle px-4 py-3 text-sm text-text-muted">
-                  {block.caption}
-                </figcaption>
-              ) : null}
-              <table className="w-full min-w-[520px] text-left text-sm md:text-base">
-                <thead>
-                  <tr className="border-b border-border-subtle bg-white/[0.03]">
-                    {block.headers.map((h) => (
-                      <th
-                        key={h}
-                        className="px-4 py-3 font-display font-semibold text-text"
-                      >
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {block.rows.map((row, ri) => (
-                    <tr
-                      key={ri}
-                      className="border-b border-border-subtle/80 last:border-0"
-                    >
-                      {row.map((cell, ci) => (
-                        <td
-                          key={ci}
-                          className="px-4 py-3 align-top text-text-soft"
-                        >
-                          <RichParagraph text={cell} />
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </figure>
+            <MediaFigure
+              key={`${block.src}-${i}`}
+              item={block}
+              eager={i === firstMedia}
+            />
           );
         }
-        if (block.type === "image") {
+        if (block.type === "gallery") {
           return (
-            <figure
-              key={`${block.src}-${i}`}
-              className="my-10 overflow-hidden rounded-3xl border border-border-subtle bg-card/70"
-            >
-              <div className="relative aspect-video w-full">
-                <Image
-                  src={block.src}
-                  alt={block.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 860px, 100vw"
-                />
+            <figure key={`gallery-${i}`} className="my-10">
+              <div
+                className={
+                  block.items.length >= 3
+                    ? "grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                    : "grid gap-4 sm:grid-cols-2"
+                }
+              >
+                {block.items.map((item, gi) => (
+                  <MediaFigure
+                    key={item.src}
+                    item={item}
+                    compact
+                    eager={i === firstMedia && gi === 0}
+                    sizes={
+                      block.items.length >= 3
+                        ? "(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
+                        : "(min-width: 1024px) 420px, (min-width: 640px) 50vw, 100vw"
+                    }
+                  />
+                ))}
               </div>
               {block.caption ? (
-                <figcaption className="border-t border-border-subtle px-5 py-3 text-sm leading-relaxed text-text-muted">
+                <figcaption className="mt-3 text-sm leading-relaxed text-text-muted">
                   <RichParagraph text={block.caption} />
                 </figcaption>
               ) : null}
             </figure>
           );
         }
+        if (block.type === "verdict") {
+          return <Verdict key={`verdict-${i}`} block={block} />;
+        }
+        if (block.type === "methodology") {
+          return <Methodology key={`methodology-${i}`} block={block} />;
+        }
+        if (block.type === "cta") {
+          return <ArticleCta key={`cta-${i}`} block={block} slug={slug} />;
+        }
         if (block.type === "youtube") {
           return (
             <figure key={`${block.videoId}-${i}`} className="my-10">
               <LiteYouTube videoId={block.videoId} title={block.title} />
               <figcaption className="mt-3 text-sm leading-relaxed text-text-muted">
-                Vidéo : {block.title} —{" "}
+                Vidéo : {block.title}, sur la{" "}
                 <a
                   href={YOUTUBE_URL}
                   target="_blank"

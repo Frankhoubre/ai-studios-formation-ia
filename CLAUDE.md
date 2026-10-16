@@ -62,6 +62,10 @@ recherche respectée. Ne jamais sacrifier la lecture pour caser un mot-clé.
 - **≥ 1 lien externe d'autorité** (doc officielle d'un outil, page de release, Wikipédia,
   étude, média spécialisé). Les liens externes doivent enrichir, pas décorer. Ne pas linker
   un concurrent direct sans raison.
+- `rel` automatique (`lib/links.ts`) : source officielle = follow (`noopener noreferrer`),
+  lien affilié (registre `seo-multisites/affiliation.md`) ou préfixé `sponsored:`
+  (`[ancre](sponsored:https://...)`) = `sponsored nofollow noopener`, forum ou
+  Reddit = `nofollow noopener`. Tout lien affilié exige `affiliate: true` (l'audit bloque).
 
 ### 4. Crédibilité
 
@@ -96,12 +100,17 @@ image, imageAlt, keywords, content, faq, relatedSlugs`. `imageAlt` descriptif et
 distincts. `category` parmi : `ia-image`, `ia-video`, `prompting`, `storytelling`,
 `workflow-creatif`, `business-creatif`. `author` = `{ name: "Frank Houbre", url: "https://www.ai-studios.fr" }`.
 Le tableau `faq[]` doit refléter les Q/R du contenu (il alimente le JSON-LD FAQPage).
+Champs optionnels : `affiliate: true` (mention d'affiliation en tête) et `howTo` (schéma
+HowTo, jamais automatique). Blocs premium (`verdict`, `comparison`, `screenshot`, `gallery`,
+`methodology`, `cta`) : syntaxe dans `seo-multisites/COMPOSANTS-aistudios.md`. Aucune note
+chiffrée, ni étoiles, ni Review/AggregateRating.
 
 ### 8. CTA
 
 CTA doux. Le produit poussé est la **formation IA gratuite** (`FORMATION_FREE_URL` dans
 `lib/constants.ts`) et la communauté Skool. Une note fondateur en fin d'article suffit.
-ScreenWeaver n'est pas connecté à ce repo : ne pas l'inventer.
+ScreenWeaver et Imaginode : uniquement via le bloc `cta` (variant `screenweaver` ou
+`imaginode`), qui fabrique lui-même le lien `/go` avec UTM ; ne rien inventer sur ces outils.
 **Ne jamais mentionner d'« essai gratuit de 7 jours » / « 7 jours offerts » ni aucune
 période d'essai pour la formation ou Skool : cette offre n'existe plus. La formation est
 simplement « gratuite », sans essai limité dans le temps.**

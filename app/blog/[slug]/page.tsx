@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleContent } from "@/components/ArticleContent";
 import { ArticleFaq } from "@/components/ArticleFaq";
 import { ArticleHero } from "@/components/ArticleHero";
+import { AffiliateNotice } from "@/components/article/AffiliateNotice";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
 import { ReadingProgress } from "@/components/ReadingProgress";
@@ -14,13 +16,14 @@ import {
   getRelatedArticles,
 } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
-import { FORMATION_FREE_URL } from "@/lib/constants";
+import { AUTHOR_NAME, FORMATION_FREE_URL } from "@/lib/constants";
 import {
   articleMetadata,
   buildArticleBreadcrumbItems,
   buildArticleBreadcrumbJsonLd,
   buildArticleJsonLd,
   buildFaqJsonLd,
+  buildHowToJsonLd,
   getTocEntries,
 } from "@/lib/seo";
 import { formatFrenchDate } from "@/lib/utils";
@@ -54,6 +57,7 @@ export default async function ArticlePage({ params }: Props) {
 
   const articleLd = buildArticleJsonLd(article, category?.name);
   const faqLd = article.faq.length ? buildFaqJsonLd(article.faq) : null;
+  const howToLd = article.howTo ? buildHowToJsonLd(article) : null;
 
   // Some articles embed their FAQ as a section inside the body; in that case
   // we skip the standalone FAQ block to avoid rendering it twice. Match only
@@ -69,7 +73,12 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <ReadingProgress />
       <SEOJsonLd
-        data={[breadcrumbLd, articleLd, ...(faqLd ? [faqLd] : [])]}
+        data={[
+          breadcrumbLd,
+          articleLd,
+          ...(faqLd ? [faqLd] : []),
+          ...(howToLd ? [howToLd] : []),
+        ]}
       />
       <article className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <Breadcrumbs items={breadcrumbItems} />
@@ -78,8 +87,22 @@ export default async function ArticlePage({ params }: Props) {
           <ArticleHero article={article} />
         </div>
 
-        <p className="mt-6 text-sm text-text-muted">
-          Publié le{" "}
+        <p className="mt-6 text-sm leading-relaxed text-text-muted">
+          Par{" "}
+          {article.author.name === AUTHOR_NAME ? (
+            <Link
+              href="/a-propos"
+              rel="author"
+              className="font-medium text-text-soft underline decoration-white/25 underline-offset-[3px] transition hover:text-brand-bright"
+            >
+              {article.author.name}
+            </Link>
+          ) : (
+            <span className="font-medium text-text-soft">
+              {article.author.name}
+            </span>
+          )}
+          {" · "}Publié le{" "}
           <time dateTime={article.date}>{formatFrenchDate(article.date)}</time>
           {article.updatedAt !== article.date ? (
             <>
@@ -93,13 +116,15 @@ export default async function ArticlePage({ params }: Props) {
           {article.readingTime} min de lecture
         </p>
 
+        {article.affiliate ? <AffiliateNotice /> : null}
+
         <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,240px)_minmax(0,1fr)] lg:gap-14">
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <TableOfContents entries={toc} />
           </aside>
           <div className="min-w-0">
             <div className="mx-auto max-w-[860px]">
-              <ArticleContent blocks={article.content} />
+              <ArticleContent blocks={article.content} slug={article.slug} />
               <section className="mx-auto mt-14 max-w-[860px] rounded-2xl border border-border-subtle bg-card/50 p-6 md:p-8">
                 <p className="text-sm font-medium text-brand-bright">
                   Aller plus loin

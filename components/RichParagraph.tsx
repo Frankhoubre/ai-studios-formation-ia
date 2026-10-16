@@ -1,13 +1,10 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Fragment } from "react";
+import { classifyLink, REL_BY_KIND } from "@/lib/links";
 
 const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
 const MARK_RE = /(\*\*[^*]+\*\*|\*[^*]+\*)/g;
-
-function isExternal(href: string) {
-  return href.startsWith("http://") || href.startsWith("https://");
-}
 
 export function RichParagraph({ text }: { text: string }) {
   function renderMarks(value: string, prefix: string): ReactNode[] {
@@ -66,14 +63,14 @@ export function RichParagraph({ text }: { text: string }) {
       );
     }
     const label = m[1];
-    const href = m[2];
-    if (isExternal(href)) {
+    const { href, kind } = classifyLink(m[2]);
+    if (kind !== "internal") {
       parts.push(
         <a
           key={`a-${key++}`}
           href={href}
           target="_blank"
-          rel="nofollow noopener noreferrer"
+          rel={REL_BY_KIND[kind]}
           className="text-brand-bright underline decoration-white/20 underline-offset-[3px] transition hover:text-accent-rose"
         >
           {renderMarks(label, `a-${key}`)}

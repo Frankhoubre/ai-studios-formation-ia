@@ -136,12 +136,12 @@ video {
     var(--bg-secondary);
 }
 
-.prose-blog a {
+.prose-blog a:not([data-button]) {
   color: var(--violet-bright);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.prose-blog a:hover {
+.prose-blog a:not([data-button]):hover {
   color: var(--rose);
 }
