@@ -173,6 +173,7 @@ import { videoIaLongueDuree } from "@/content/articles/posts/video-ia-longue-dur
 import { animerPhotoIa } from "@/content/articles/posts/animer-photo-ia";
 import { seedanceGuide } from "@/content/articles/posts/seedance-guide";
 import { freepikMagnificSpacesAvis } from "@/content/articles/posts/freepik-magnific-spaces-avis";
+import { meilleursOutilsStoryboardIa } from "@/content/articles/posts/meilleurs-outils-storyboard-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -355,4 +356,5 @@ export const articles: Article[] = [
   animerPhotoIa,
   seedanceGuide,
   freepikMagnificSpacesAvis,
+  meilleursOutilsStoryboardIa,
 ];
