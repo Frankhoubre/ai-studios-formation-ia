@@ -1957,3 +1957,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-17 : meilleurs-outils-storyboard-ia
 - Ligne A19 du PLAN_80, KW « meilleur outil storyboard ia ». Commit `1d1c0c1`, IndexNow 211 URLs. 9 captures officielles, QA 90/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-18 : alternatives-sora
+- Ligne A07 du PLAN_80, KW « alternative sora ». Commit `f32a618`, IndexNow 212 URLs. 7 captures officielles (OpenAI x2, Flow, Kling, Dreamina, Runway, Pika), QA 91/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
