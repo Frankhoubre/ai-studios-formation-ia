@@ -1954,3 +1954,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 - Ligne A02 du PLAN_80 (opération SEO multi-sites), KW « freepik ia ». Publiée à 12h59 par la session de l'opération (commit `e3e67e3`), pas par la tâche quotidienne. 11 captures magnific.com, QA 88/100, CTA Imaginode.
 - Run quotidien de 22h36 : créneau du jour déjà rempli, aucune publication supplémentaire, compteur 54/103 inchangé.
+
+## 2026-10-17 : meilleurs-outils-storyboard-ia
+- Ligne A19 du PLAN_80, KW « meilleur outil storyboard ia ». Commit `1d1c0c1`, IndexNow 211 URLs. 9 captures officielles, QA 90/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
