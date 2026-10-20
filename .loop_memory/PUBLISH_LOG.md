@@ -1963,3 +1963,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-19 : alternatives-storyboarder
 - Ligne A08 du PLAN_80, KW « alternative storyboarder ». Commit `f1b99e2`, IndexNow 213 URLs. 9 captures officielles (GitHub x2, Wonder Unit, Krita, Boords x2, StoryboardHero, Celtx, ScreenWeaver), QA 91/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-20 : storyboard-ia-gratuit-tutoriel
+- Ligne A17 du PLAN_80, KW « storyboard ia gratuit ». Commit `e22efc1`, IndexNow 214 URLs. 6 captures officielles (Boords x3, aide Gemini, ScreenWeaver tarifs, Krita), QA 90/100, CTA ScreenWeaver (destination script). Compteur du plan habituel 54/103 inchangé.
