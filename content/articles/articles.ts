@@ -175,6 +175,7 @@ import { seedanceGuide } from "@/content/articles/posts/seedance-guide";
 import { freepikMagnificSpacesAvis } from "@/content/articles/posts/freepik-magnific-spaces-avis";
 import { meilleursOutilsStoryboardIa } from "@/content/articles/posts/meilleurs-outils-storyboard-ia";
 import { alternativesStoryboarder } from "@/content/articles/posts/alternatives-storyboarder";
+import { storyboardIaGratuitTutoriel } from "@/content/articles/posts/storyboard-ia-gratuit-tutoriel";
 import { alternativesSora } from "@/content/articles/posts/alternatives-sora";
 
 const beginnerArticles = JSON.parse(
@@ -360,5 +361,6 @@ export const articles: Article[] = [
   freepikMagnificSpacesAvis,
   meilleursOutilsStoryboardIa,
   alternativesStoryboarder,
+  storyboardIaGratuitTutoriel,
   alternativesSora,
 ];
