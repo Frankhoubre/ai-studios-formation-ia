@@ -194,7 +194,7 @@ Imaginode, AI Studios ne prend qu'un angle informationnel distinct (M4).
   naturelle, jamais le mot-clé exact.
 - Non planifié ici parce que la tâche saute les slugs existants : mise à jour de `ecrire-scenario-ia-methode-outils`
   sur « ia pour écrire un scénario » (autocomplétion : « meilleur ia pour écrire un scénario », « ia pour écrire un
-  script »), à faire en session si Frank le décide.
+  script »), à faire en session si Frank le décide. FAIT le 2026-10-20 en session directe (voir CONTENT_LEDGER).
 - Carte inter-sites : C:\Users\frank\Desktop\ClaudeCodeGit\automations\travail\seo-satellites-2026-10-20.md.
   Deux sites ne visent jamais la même requête FR : la relire avant d'écrire.
 
