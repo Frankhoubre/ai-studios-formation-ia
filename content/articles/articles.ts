@@ -177,6 +177,7 @@ import { meilleursOutilsStoryboardIa } from "@/content/articles/posts/meilleurs-
 import { alternativesStoryboarder } from "@/content/articles/posts/alternatives-storyboarder";
 import { storyboardIaGratuitTutoriel } from "@/content/articles/posts/storyboard-ia-gratuit-tutoriel";
 import { alternativesSora } from "@/content/articles/posts/alternatives-sora";
+import { scriptToVideoIaTutoriel } from "@/content/articles/posts/script-to-video-ia-tutoriel";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -363,4 +364,5 @@ export const articles: Article[] = [
   alternativesStoryboarder,
   storyboardIaGratuitTutoriel,
   alternativesSora,
+  scriptToVideoIaTutoriel,
 ];
