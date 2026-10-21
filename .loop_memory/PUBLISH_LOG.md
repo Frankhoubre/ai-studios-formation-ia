@@ -1966,3 +1966,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-20 : storyboard-ia-gratuit-tutoriel
 - Ligne A17 du PLAN_80, KW « storyboard ia gratuit ». Commit `e22efc1`, IndexNow 214 URLs. 6 captures officielles (Boords x3, aide Gemini, ScreenWeaver tarifs, Krita), QA 90/100, CTA ScreenWeaver (destination script). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-21 : script-to-video-ia-tutoriel
+- Ligne A18 du PLAN_80, KW « script to video ia ». Commit `6c423a2`, IndexNow 215 URLs. 9 captures officielles (HeyGen, FlexClip, LTX Studio x2, aide Google Flow x3, ScreenWeaver x2), QA 91/100, CTA ScreenWeaver (destination script). En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement. Compteur du plan habituel 54/103 inchangé.
