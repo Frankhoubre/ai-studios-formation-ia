@@ -1969,3 +1969,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-21 : script-to-video-ia-tutoriel
 - Ligne A18 du PLAN_80, KW « script to video ia ». Commit `6c423a2`, IndexNow 215 URLs. 9 captures officielles (HeyGen, FlexClip, LTX Studio x2, aide Google Flow x3, ScreenWeaver x2), QA 91/100, CTA ScreenWeaver (destination script). En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement. Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-22 : meilleures-plateformes-ia-tout-en-un
+- Ligne A20 du PLAN_80, KW « plateforme ia tout en un ». Commit `2940359`, IndexNow 216 URLs. 10 captures officielles (Higgsfield, Dreamina, Magnific, Krea x2, OpenArt x2, FLORA, Imaginode x2), QA 89/100, CTA Imaginode (destination models), affiliation Higgsfield + FLORA. En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement, images chargées. Compteur du plan habituel 54/103 inchangé.
