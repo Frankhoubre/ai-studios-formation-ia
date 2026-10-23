@@ -1972,3 +1972,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-22 : meilleures-plateformes-ia-tout-en-un
 - Ligne A20 du PLAN_80, KW « plateforme ia tout en un ». Commit `2940359`, IndexNow 216 URLs. 10 captures officielles (Higgsfield, Dreamina, Magnific, Krea x2, OpenArt x2, FLORA, Imaginode x2), QA 89/100, CTA Imaginode (destination models), affiliation Higgsfield + FLORA. En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement, images chargées. Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-23 : alternatives-boords
+- Ligne A09 du PLAN_80, KW « alternative boords ». Commit `7ae5cee`, IndexNow 217 URLs. 7 captures officielles du jour (Boords x3, LTX Studio, StoryboardHero, ScreenWeaver, Krita), QA 89/100, CTA ScreenWeaver (destination fr), aucune affiliation. Hero Nano Banana 2 (128 Ko, premier jet).
