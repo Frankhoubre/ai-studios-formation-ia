@@ -1975,3 +1975,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-23 : alternatives-boords
 - Ligne A09 du PLAN_80, KW « alternative boords ». Commit `7ae5cee`, IndexNow 217 URLs. 7 captures officielles du jour (Boords x3, LTX Studio, StoryboardHero, ScreenWeaver, Krita), QA 89/100, CTA ScreenWeaver (destination fr), aucune affiliation. Hero Nano Banana 2 (128 Ko, premier jet).
+
+## 2026-10-24 : openart-avis
+- Ligne A01 du PLAN_80, KW « openart avis ». Commit `f30b2f4`, IndexNow 219 URLs, page en ligne vérifiée (200, 1 H1, sitemap, JSON-LD, mobile 390 px sans débordement). 9 captures du jour (OpenArt x8, Trustpilot), QA 92/100, CTA Imaginode (home, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (122 Ko, premier jet).
