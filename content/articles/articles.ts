@@ -181,6 +181,7 @@ import { scriptToVideoIaTutoriel } from "@/content/articles/posts/script-to-vide
 import { meilleuresPlateformesIaToutEnUn } from "@/content/articles/posts/meilleures-plateformes-ia-tout-en-un";
 import { alternativesBoords } from "@/content/articles/posts/alternatives-boords";
 import { openartAvis } from "@/content/articles/posts/openart-avis";
+import { seedanceVsVeo } from "@/content/articles/posts/seedance-vs-veo";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -371,4 +372,5 @@ export const articles: Article[] = [
   meilleuresPlateformesIaToutEnUn,
   alternativesBoords,
   openartAvis,
+  seedanceVsVeo,
 ];
