@@ -1978,3 +1978,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-24 : openart-avis
 - Ligne A01 du PLAN_80, KW « openart avis ». Commit `f30b2f4`, IndexNow 219 URLs, page en ligne vérifiée (200, 1 H1, sitemap, JSON-LD, mobile 390 px sans débordement). 9 captures du jour (OpenArt x8, Trustpilot), QA 92/100, CTA Imaginode (home, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (122 Ko, premier jet).
+
+## 2026-10-25 : seedance-vs-veo
+- Ligne A13 du PLAN_80, KW « seedance vs veo ». Commit `c571180`, IndexNow 220 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 11 captures du jour (BytePlus x4, Seed, Dreamina, Gemini API x2, Gemini app, Flow x2, DeepMind), QA 92/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (154 Ko, premier jet).
