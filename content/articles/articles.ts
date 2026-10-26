@@ -182,6 +182,7 @@ import { meilleuresPlateformesIaToutEnUn } from "@/content/articles/posts/meille
 import { alternativesBoords } from "@/content/articles/posts/alternatives-boords";
 import { openartAvis } from "@/content/articles/posts/openart-avis";
 import { seedanceVsVeo } from "@/content/articles/posts/seedance-vs-veo";
+import { kreaAiAvis } from "@/content/articles/posts/krea-ai-avis";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -373,4 +374,5 @@ export const articles: Article[] = [
   alternativesBoords,
   openartAvis,
   seedanceVsVeo,
+  kreaAiAvis,
 ];
