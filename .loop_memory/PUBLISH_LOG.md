@@ -1981,3 +1981,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-25 : seedance-vs-veo
 - Ligne A13 du PLAN_80, KW « seedance vs veo ». Commit `c571180`, IndexNow 220 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 11 captures du jour (BytePlus x4, Seed, Dreamina, Gemini API x2, Gemini app, Flow x2, DeepMind), QA 92/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (154 Ko, premier jet).
+
+## 2026-10-26 : krea-ai-avis
+- Ligne A04 du PLAN_80, KW « krea ai avis ». Commit `aaf11bb`, IndexNow 221 URLs (1er essai en échec réseau, 2e OK après déploiement), page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 9 images en 200, mobile 390 px sans débordement). 7 captures du jour (Krea pricing x3, docs compute-units, Node Editor, Realtime, Trustpilot), QA 92/100, CTA Imaginode (conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (112 Ko, 2e essai après timeout réseau du Gateway).
