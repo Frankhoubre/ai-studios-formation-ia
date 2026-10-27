@@ -1984,3 +1984,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-26 : krea-ai-avis
 - Ligne A04 du PLAN_80, KW « krea ai avis ». Commit `aaf11bb`, IndexNow 221 URLs (1er essai en échec réseau, 2e OK après déploiement), page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 9 images en 200, mobile 390 px sans débordement). 7 captures du jour (Krea pricing x3, docs compute-units, Node Editor, Realtime, Trustpilot), QA 92/100, CTA Imaginode (conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (112 Ko, 2e essai après timeout réseau du Gateway).
+
+## 2026-10-27 : dreamina-vs-capcut
+- Ligne A16 du PLAN_80, KW « dreamina vs capcut ». Commit `29af16e`, IndexNow 221 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 8 captures du jour (Dreamina tarifs + Seedance 2.5 x2, CapCut menu, tarifs, générateur Seedance, script vers vidéo, newsroom), QA 88/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucun lien affilié. Hero : public/images/articles/dreamina-vs-capcut.webp.
