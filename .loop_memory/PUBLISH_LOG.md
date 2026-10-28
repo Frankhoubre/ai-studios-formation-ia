@@ -1987,3 +1987,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-27 : dreamina-vs-capcut
 - Ligne A16 du PLAN_80, KW « dreamina vs capcut ». Commit `29af16e`, IndexNow 221 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 8 captures du jour (Dreamina tarifs + Seedance 2.5 x2, CapCut menu, tarifs, générateur Seedance, script vers vidéo, newsroom), QA 88/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucun lien affilié. Hero : public/images/articles/dreamina-vs-capcut.webp.
+
+## 2026-10-28 : midjourney-avis-2026
+- Ligne A03 du PLAN_80, KW « midjourney avis ». Commit `2b1363c`, IndexNow 223 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, images en 200, mobile 390 px sans débordement). 9 captures du jour (doc Midjourney x7, journal updates x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (93 Ko, premier jet).
