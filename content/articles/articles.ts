@@ -185,6 +185,7 @@ import { seedanceVsVeo } from "@/content/articles/posts/seedance-vs-veo";
 import { kreaAiAvis } from "@/content/articles/posts/krea-ai-avis";
 import { dreaminaVsCapcut } from "@/content/articles/posts/dreamina-vs-capcut";
 import { midjourneyAvis2026 } from "@/content/articles/posts/midjourney-avis-2026";
+import { pikaAvis } from "@/content/articles/posts/pika-avis";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -379,4 +380,5 @@ export const articles: Article[] = [
   kreaAiAvis,
   dreaminaVsCapcut,
   midjourneyAvis2026,
+  pikaAvis,
 ];
