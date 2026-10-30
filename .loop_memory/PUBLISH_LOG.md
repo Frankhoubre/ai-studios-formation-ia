@@ -1993,3 +1993,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-29 : pika-avis
 - Ligne A06 du PLAN_80, KW « avis pika ». Commit `6d8533c`, IndexNow 223 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 9 images en 200, mobile 390 px sans débordement). 9 captures du jour (tarifs x4, FAQ x3, apps, MCP), QA 93/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (99 Ko, premier jet).
+
+## 2026-10-30 : alternatives-gratuites-midjourney
+- Ligne A10 du PLAN_80, KW « alternative gratuite midjourney ». Commit `d5b786b`, IndexNow 224 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 10 images en 200, mobile 390 px sans débordement). 10 captures du jour (Midjourney, Leonardo, Krea, Firefly x2, Ideogram x2, Bing, Gemini x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (95 Ko, premier jet).
