@@ -187,6 +187,7 @@ import { dreaminaVsCapcut } from "@/content/articles/posts/dreamina-vs-capcut";
 import { midjourneyAvis2026 } from "@/content/articles/posts/midjourney-avis-2026";
 import { pikaAvis } from "@/content/articles/posts/pika-avis";
 import { alternativesGratuitesMidjourney } from "@/content/articles/posts/alternatives-gratuites-midjourney";
+import { midjourneyVsNanoBanana } from "@/content/articles/posts/midjourney-vs-nano-banana";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -383,4 +384,5 @@ export const articles: Article[] = [
   midjourneyAvis2026,
   pikaAvis,
   alternativesGratuitesMidjourney,
+  midjourneyVsNanoBanana,
 ];
