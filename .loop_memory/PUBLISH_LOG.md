@@ -1996,3 +1996,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-30 : alternatives-gratuites-midjourney
 - Ligne A10 du PLAN_80, KW « alternative gratuite midjourney ». Commit `d5b786b`, IndexNow 224 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 10 images en 200, mobile 390 px sans débordement). 10 captures du jour (Midjourney, Leonardo, Krea, Firefly x2, Ideogram x2, Bing, Gemini x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (95 Ko, premier jet).
+
+## 2026-10-31 : midjourney-vs-nano-banana
+- Ligne A12 du PLAN_80, KW « midjourney vs nano banana ». Commit `91f872a`, IndexNow 225 URLs. 9 captures du jour (Midjourney x4, aide Gemini x2, doc API, guide Google x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (102 Ko, premier jet). Vérif en ligne OK (200, 1 H1, canonical, 5 JSON-LD, 9 images, sitemap, mobile 390 px).
