@@ -1999,3 +1999,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-10-31 : midjourney-vs-nano-banana
 - Ligne A12 du PLAN_80, KW « midjourney vs nano banana ». Commit `91f872a`, IndexNow 225 URLs. 9 captures du jour (Midjourney x4, aide Gemini x2, doc API, guide Google x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (102 Ko, premier jet). Vérif en ligne OK (200, 1 H1, canonical, 5 JSON-LD, 9 images, sitemap, mobile 390 px).
+
+## 2026-11-01 : leonardo-ai-avis-2026
+- Ligne A05 du PLAN_80, KW « leonardo ai avis ». Commit `d7f0ef5`, IndexNow 226 URLs. 7 captures du jour (tarifs, fonctions, actualités, usage commercial, tokens, résiliation, remboursement), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (174 Ko, premier jet).
