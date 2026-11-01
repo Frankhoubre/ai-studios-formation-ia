@@ -126,6 +126,10 @@ export type Article = {
   /** Affiche la mention d'affiliation en tête d'article. */
   affiliate?: boolean;
   howTo?: ArticleHowTo;
+  /** Article d'actualité : schéma NewsArticle et catégorie "actualites-ia". */
+  news?: boolean;
+  /** Heure de publication "HH:MM", heure de Paris, pour un datePublished horodaté. */
+  publishedTime?: string;
 };
 
 export type Category = {

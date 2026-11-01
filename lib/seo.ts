@@ -121,6 +121,34 @@ function articleAuthorJsonLd(article: Article): Record<string, unknown> {
   };
 }
 
+/** Offset de Paris ("+01:00" ou "+02:00") à cette date et heure. */
+function parisOffset(date: string, time: string): string {
+  const instant = new Date(`${date}T${time}:00Z`);
+  const zone = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Paris",
+    timeZoneName: "longOffset",
+  })
+    .formatToParts(instant)
+    .find((part) => part.type === "timeZoneName")?.value;
+  const match = zone?.match(/GMT([+-]\d{2}:\d{2})/);
+  return match ? match[1] : "+00:00";
+}
+
+/** "2026-11-02" + "08:40" -> "2026-11-02T08:40:00+01:00" ; sans heure, la date seule. */
+export function parisDateTime(date: string, time?: string): string {
+  if (!time || !/^\d{2}:\d{2}$/.test(time)) return date;
+  return `${date}T${time}:00${parisOffset(date, time)}`;
+}
+
+export function articlePublishedAt(article: Article): string {
+  return parisDateTime(article.date, article.publishedTime);
+}
+
+/** Même jour que la publication : on reprend l'heure, sinon dateModified précéderait datePublished. */
+export function articleModifiedAt(article: Article): string {
+  return article.updatedAt === article.date ? articlePublishedAt(article) : article.updatedAt;
+}
+
 function articleAuthorUrl(article: Article): string | undefined {
   return article.author.name === AUTHOR_NAME ? AUTHOR_URL : article.author.url;
 }
@@ -240,8 +268,8 @@ export function articleMetadata(article: Article): Metadata {
       title: ogTitle,
       description: metaDescription,
       images: buildOpenGraphImages(ogImage, article.imageAlt),
-      publishedTime: article.date,
-      modifiedTime: article.updatedAt,
+      publishedTime: articlePublishedAt(article),
+      modifiedTime: articleModifiedAt(article),
       authors: [article.author.name],
       tags: article.tags,
     },
@@ -576,7 +604,7 @@ export function buildArticleJsonLd(
   const url = absoluteUrl(`/blog/${article.slug}`);
   return {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": article.news ? "NewsArticle" : "BlogPosting",
     "@id": `${url}#article`,
     headline: article.title,
     description: article.description,
@@ -586,8 +614,8 @@ export function buildArticleJsonLd(
       url: absoluteUrl(article.image),
       caption: article.imageAlt,
     },
-    datePublished: article.date,
-    dateModified: article.updatedAt,
+    datePublished: articlePublishedAt(article),
+    dateModified: articleModifiedAt(article),
     author: articleAuthorJsonLd(article),
     publisher: {
       "@type": "Organization",

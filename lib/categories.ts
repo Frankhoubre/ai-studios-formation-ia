@@ -37,6 +37,12 @@ export const categories: Category[] = [
     description:
       "Utiliser l’IA créative pour créer des pubs, vendre des services et produire du contenu client.",
   },
+  {
+    name: "Actualités IA",
+    slug: "actualites-ia",
+    description:
+      "Les annonces IA vidéo et image du moment, vérifiées et expliquées pour les créateurs.",
+  },
 ];
 
 export function getCategoryBySlug(slug: string): Category | undefined {

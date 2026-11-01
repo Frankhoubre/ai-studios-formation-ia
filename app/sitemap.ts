@@ -38,15 +38,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    ...categories.map((c) => ({
-      url: `${SITE_URL}/categories/${c.slug}`,
-      lastModified: getLatestModifiedDate(
-        articles.filter((article) => article.category === c.slug),
-        latestSiteUpdate.toISOString(),
-      ),
-      changeFrequency: "weekly" as const,
-      priority: 0.75,
-    })),
+    ...categories
+      .filter((c) => articles.some((article) => article.category === c.slug))
+      .map((c) => ({
+        url: `${SITE_URL}/categories/${c.slug}`,
+        lastModified: getLatestModifiedDate(
+          articles.filter((article) => article.category === c.slug),
+          latestSiteUpdate.toISOString(),
+        ),
+        changeFrequency: "weekly" as const,
+        priority: 0.75,
+      })),
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = articles.map((a) => ({

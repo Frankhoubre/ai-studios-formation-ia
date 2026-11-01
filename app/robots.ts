@@ -39,7 +39,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/go/"],
       })),
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
+    sitemap: [`${SITE_URL}/sitemap.xml`, `${SITE_URL}/news-sitemap.xml`],
     host: new URL(SITE_URL).host,
   };
 }

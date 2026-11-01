@@ -28,7 +28,7 @@ const ROOT = process.cwd();
 const POSTS = join(ROOT, "content/articles/posts");
 const VALID_CATS = new Set([
   "ia-image", "ia-video", "prompting",
-  "storytelling", "workflow-creatif", "business-creatif",
+  "storytelling", "workflow-creatif", "business-creatif", "actualites-ia",
 ]);
 const DESC_MAX = 160;
 const TITLE_MAX = 60;

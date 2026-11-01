@@ -54,6 +54,8 @@ export default async function CategoryPage({ params }: Props) {
       "Un workflow créatif, c’est ce qui vous empêche de refaire le même chaos en plus vite. Méthodes, archives, batch, sélection, livrables : des guides pour produire sérieusement.",
     "business-creatif":
       "Le business créatif avec l’IA, c’est brief, validation, droits, livraison. Ces articles parlent pubs, process client, et qualité professionnelle sans bullshit.",
+    "actualites-ia":
+      "Un nouveau modèle vidéo, une mise à jour d’outil image, une décision qui touche les créateurs : on explique ce qui vient de sortir, ce que ça change pour ton travail et comment le tester, sources à l’appui.",
   };
   const categoryIntro =
     intro[slug] ??
