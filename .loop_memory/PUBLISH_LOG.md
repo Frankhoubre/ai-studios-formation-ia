@@ -2002,3 +2002,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-01 : leonardo-ai-avis-2026
 - Ligne A05 du PLAN_80, KW « leonardo ai avis ». Commit `d7f0ef5`, IndexNow 226 URLs. 7 captures du jour (tarifs, fonctions, actualités, usage commercial, tokens, résiliation, remboursement), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (174 Ko, premier jet).
+
+## 2026-11-01 : robots-txt-entrainement-ia-createurs (actu Google News)
+- Premier article d'actualité (consigne du 01/11), KW « robots.txt entraînement ia ». Commit `1dbb46d`, IndexNow 227 URLs, URL 200 en prod, JSON-LD BlogPosting présent (le site ne gère pas NewsArticle ni de catégorie Actualités IA : tag « Actualités IA » à la place). 3 captures du jour (brouillon IETF, Google Search Central, Bing Blog). CTA formation. Hero Nano Banana 2 (104 Ko, premier jet).
