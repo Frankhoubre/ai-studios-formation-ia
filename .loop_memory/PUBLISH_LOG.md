@@ -2005,3 +2005,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-01 : robots-txt-entrainement-ia-createurs (actu Google News)
 - Premier article d'actualité (consigne du 01/11), KW « robots.txt entraînement ia ». Commit `1dbb46d`, IndexNow 227 URLs, URL 200 en prod, JSON-LD BlogPosting présent (le site ne gère pas NewsArticle ni de catégorie Actualités IA : tag « Actualités IA » à la place). 3 captures du jour (brouillon IETF, Google Search Central, Bing Blog). CTA formation. Hero Nano Banana 2 (104 Ko, premier jet).
+
+## 2026-11-02 : pika-h3-flex-disponible-pika-art (actu Google News)
+- Deuxième article d actualité, KW « pika h3 flex ». Commit `0081036`, IndexNow 228 URLs, URL 200 en prod, JSON-LD NewsArticle (datePublished 2026-11-02T09:10:00+01:00), présent dans news-sitemap.xml. 3 captures du jour (communiqué, tarifs pika-h3-flex, Hugging Face). Aucune génération lancée. Passes humanizer + unslop-text (score 0) + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (86 Ko) : studio dans une ancienne laverie, corde à linge de versions d un même plan.
