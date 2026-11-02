@@ -190,6 +190,7 @@ import { alternativesGratuitesMidjourney } from "@/content/articles/posts/altern
 import { midjourneyVsNanoBanana } from "@/content/articles/posts/midjourney-vs-nano-banana";
 import { leonardoAiAvis2026 } from "@/content/articles/posts/leonardo-ai-avis-2026";
 import { robotsTxtEntrainementIaCreateurs } from "@/content/articles/posts/robots-txt-entrainement-ia-createurs";
+import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-flex-disponible-pika-art";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -389,4 +390,5 @@ export const articles: Article[] = [
   midjourneyVsNanoBanana,
   leonardoAiAvis2026,
   robotsTxtEntrainementIaCreateurs,
+  pikaH3FlexDisponiblePikaArt,
 ];
