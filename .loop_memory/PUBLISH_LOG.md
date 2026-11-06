@@ -2009,3 +2009,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 ## 2026-11-02 : pika-h3-flex-disponible-pika-art (actu Google News)
 - Deuxième article d actualité, KW « pika h3 flex ». Commit `0081036`, IndexNow 228 URLs, URL 200 en prod, JSON-LD NewsArticle (datePublished 2026-11-02T09:10:00+01:00), présent dans news-sitemap.xml. 3 captures du jour (communiqué, tarifs pika-h3-flex, Hugging Face). Aucune génération lancée. Passes humanizer + unslop-text (score 0) + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (86 Ko) : studio dans une ancienne laverie, corde à linge de versions d un même plan.
 | 2026-11-05 | chatgpt-images-2-6-gif | actu | 09:03 |
+
+## 2026-11-06 : openart-vs-leonardo
+- Ligne A14 du PLAN_80, KW « openart vs leonardo ». Commit `2006a48`, IndexNow 232 URLs, prod 200, 11 images 200, sitemap OK, un H1, JSON-LD valide, pas de débordement à 390 px. 10 captures du jour, QA 91/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (127 Ko, premier jet).
