@@ -191,6 +191,7 @@ import { midjourneyVsNanoBanana } from "@/content/articles/posts/midjourney-vs-n
 import { leonardoAiAvis2026 } from "@/content/articles/posts/leonardo-ai-avis-2026";
 import { robotsTxtEntrainementIaCreateurs } from "@/content/articles/posts/robots-txt-entrainement-ia-createurs";
 import { chatgptImages26Gif } from "@/content/articles/posts/chatgpt-images-2-6-gif";
+import { openartVsLeonardo } from "@/content/articles/posts/openart-vs-leonardo";
 import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-flex-disponible-pika-art";
 import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram-edits-mac-mcp-agents-ia";
 
@@ -393,6 +394,7 @@ export const articles: Article[] = [
   leonardoAiAvis2026,
   robotsTxtEntrainementIaCreateurs,
   chatgptImages26Gif,
+  openartVsLeonardo,
   pikaH3FlexDisponiblePikaArt,
   instagramEditsMacMcpAgentsIa,
 ];
