@@ -192,6 +192,7 @@ import { leonardoAiAvis2026 } from "@/content/articles/posts/leonardo-ai-avis-20
 import { robotsTxtEntrainementIaCreateurs } from "@/content/articles/posts/robots-txt-entrainement-ia-createurs";
 import { chatgptImages26Gif } from "@/content/articles/posts/chatgpt-images-2-6-gif";
 import { openartVsLeonardo } from "@/content/articles/posts/openart-vs-leonardo";
+import { pikaVsPixverse } from "@/content/articles/posts/pika-vs-pixverse";
 import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-flex-disponible-pika-art";
 import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram-edits-mac-mcp-agents-ia";
 
@@ -395,6 +396,7 @@ export const articles: Article[] = [
   robotsTxtEntrainementIaCreateurs,
   chatgptImages26Gif,
   openartVsLeonardo,
+  pikaVsPixverse,
   pikaH3FlexDisponiblePikaArt,
   instagramEditsMacMcpAgentsIa,
 ];
