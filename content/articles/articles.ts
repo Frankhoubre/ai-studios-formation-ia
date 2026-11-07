@@ -195,6 +195,7 @@ import { openartVsLeonardo } from "@/content/articles/posts/openart-vs-leonardo"
 import { pikaVsPixverse } from "@/content/articles/posts/pika-vs-pixverse";
 import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-flex-disponible-pika-art";
 import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram-edits-mac-mcp-agents-ia";
+import { physicl10MillionsMonde3dRobots } from "@/content/articles/posts/physicl-10-millions-monde-3d-robots";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -399,4 +400,5 @@ export const articles: Article[] = [
   pikaVsPixverse,
   pikaH3FlexDisponiblePikaArt,
   instagramEditsMacMcpAgentsIa,
+  physicl10MillionsMonde3dRobots,
 ];
