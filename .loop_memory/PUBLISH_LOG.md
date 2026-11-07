@@ -2012,3 +2012,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-06 : openart-vs-leonardo
 - Ligne A14 du PLAN_80, KW « openart vs leonardo ». Commit `2006a48`, IndexNow 232 URLs, prod 200, 11 images 200, sitemap OK, un H1, JSON-LD valide, pas de débordement à 390 px. 10 captures du jour, QA 91/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (127 Ko, premier jet).
+
+## 2026-11-07 : pika-vs-pixverse
+- Ligne A15 du PLAN_80, KW « pika vs pixverse ». Commit `6552762`, IndexNow 233 URLs, prod 200, 11 images 200, sitemap OK, un H1, JSON-LD valide, pas de débordement à 390 px. 10 captures du jour, QA 91/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (117 Ko, premier jet).
