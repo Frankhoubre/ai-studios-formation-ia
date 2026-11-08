@@ -193,6 +193,7 @@ import { robotsTxtEntrainementIaCreateurs } from "@/content/articles/posts/robot
 import { chatgptImages26Gif } from "@/content/articles/posts/chatgpt-images-2-6-gif";
 import { openartVsLeonardo } from "@/content/articles/posts/openart-vs-leonardo";
 import { pikaVsPixverse } from "@/content/articles/posts/pika-vs-pixverse";
+import { alternativesHeygenGratuit } from "@/content/articles/posts/alternatives-heygen-gratuit";
 import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-flex-disponible-pika-art";
 import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram-edits-mac-mcp-agents-ia";
 import { physicl10MillionsMonde3dRobots } from "@/content/articles/posts/physicl-10-millions-monde-3d-robots";
@@ -399,6 +400,7 @@ export const articles: Article[] = [
   chatgptImages26Gif,
   openartVsLeonardo,
   pikaVsPixverse,
+  alternativesHeygenGratuit,
   pikaH3FlexDisponiblePikaArt,
   instagramEditsMacMcpAgentsIa,
   physicl10MillionsMonde3dRobots,
