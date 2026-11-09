@@ -2018,3 +2018,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-08 : alternatives-heygen-gratuit
 - Ligne A11 du PLAN_80 (dernière du site), KW « alternative heygen gratuit ». Commit `7c44ef2`, IndexNow 236 URLs. 9 captures du jour, QA 92/100, CTA formation, aucune affiliation (HeyGen suspendu). Hero Nano Banana 2 (appartement vide, agente immobilière qui se filme). Prochain run : reprise du plan habituel.
+
+## 2026-11-09 : deepfake-createur-droit
+- J55 du plan habituel (reprise après les 20 lignes PLAN_80 du site), KW « deepfake légal ». Commit `1c22357`, IndexNow 237 URLs, prod 200 (après 3 min de déploiement), HTML prérendu vérifié (1 H1, 4 captures, FAQPage). 4 captures du jour (Légifrance 226-8 et 226-8-1, CNIL, AI Act Explorer art. 50), cookies jamais acceptés ; un premier essai Légifrance 226-8-1 est tombé sur une vérification Cloudflare, non touchée, la page est passée au second chargement. Aucune jurisprudence citée (non lue en source), article 226-4-1 mentionné sans peines (Légifrance en 404 le jour même). Passes humanizer + unslop-text (score 5, faux positifs « utilises » et listes en gras) + antislop-copywriting (4 affirmations adoucies), scan-anti-ia OK, zéro tiret. Hero Nano Banana 2 (111 Ko, premier jet).
