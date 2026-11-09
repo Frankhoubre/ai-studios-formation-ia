@@ -199,6 +199,7 @@ import { pikaH3FlexDisponiblePikaArt } from "@/content/articles/posts/pika-h3-fl
 import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram-edits-mac-mcp-agents-ia";
 import { physicl10MillionsMonde3dRobots } from "@/content/articles/posts/physicl-10-millions-monde-3d-robots";
 import { metaMuseVoixAvatarsTempsReel } from "@/content/articles/posts/meta-muse-voix-avatars-temps-reel";
+import { olmPokemonIaColorisationTroisImages } from "@/content/articles/posts/olm-pokemon-ia-colorisation-trois-images";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -408,4 +409,5 @@ export const articles: Article[] = [
   instagramEditsMacMcpAgentsIa,
   physicl10MillionsMonde3dRobots,
   metaMuseVoixAvatarsTempsReel,
+  olmPokemonIaColorisationTroisImages,
 ];
