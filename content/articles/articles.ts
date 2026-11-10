@@ -200,6 +200,7 @@ import { instagramEditsMacMcpAgentsIa } from "@/content/articles/posts/instagram
 import { physicl10MillionsMonde3dRobots } from "@/content/articles/posts/physicl-10-millions-monde-3d-robots";
 import { metaMuseVoixAvatarsTempsReel } from "@/content/articles/posts/meta-muse-voix-avatars-temps-reel";
 import { olmPokemonIaColorisationTroisImages } from "@/content/articles/posts/olm-pokemon-ia-colorisation-trois-images";
+import { apprendreEcrireScenario } from "@/content/articles/posts/apprendre-ecrire-scenario";
 import { adobeCreateursIaResultatPresque } from "@/content/articles/posts/adobe-createurs-ia-resultat-presque";
 
 const beginnerArticles = JSON.parse(
@@ -412,4 +413,5 @@ export const articles: Article[] = [
   metaMuseVoixAvatarsTempsReel,
   olmPokemonIaColorisationTroisImages,
   adobeCreateursIaResultatPresque,
+  apprendreEcrireScenario,
 ];
