@@ -202,6 +202,7 @@ import { metaMuseVoixAvatarsTempsReel } from "@/content/articles/posts/meta-muse
 import { olmPokemonIaColorisationTroisImages } from "@/content/articles/posts/olm-pokemon-ia-colorisation-trois-images";
 import { apprendreEcrireScenario } from "@/content/articles/posts/apprendre-ecrire-scenario";
 import { adobeCreateursIaResultatPresque } from "@/content/articles/posts/adobe-createurs-ia-resultat-presque";
+import { openaiUpworkFreelancesIaVideo } from "@/content/articles/posts/openai-upwork-freelances-ia-video";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -413,5 +414,6 @@ export const articles: Article[] = [
   metaMuseVoixAvatarsTempsReel,
   olmPokemonIaColorisationTroisImages,
   adobeCreateursIaResultatPresque,
+  openaiUpworkFreelancesIaVideo,
   apprendreEcrireScenario,
 ];
