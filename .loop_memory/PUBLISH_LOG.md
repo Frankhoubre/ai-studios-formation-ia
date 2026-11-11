@@ -2024,3 +2024,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-10 : apprendre-ecrire-scenario
 - Ligne M1 du plan (intercalée entre J55 et J56), KW « apprendre à écrire un scénario ». Commit `5ae6cad`, IndexNow 240 URLs. HTML prérendu vérifié (1 H1, captures, CTA /go/bl-academy-a, 10 blocs JSON-LD). 4 captures du jour (BBC Script Library, fiche livres-cinema.info de La Dramaturgie car le site des Impressions nouvelles est derrière Cloudflare, La Procure pour Chion, Cineuropa formation en ligne). Alison écarté (la page cours redirige vers l'accueil), Save the Cat écarté (pas d'édition française vérifiée). Hero Nano Banana 2 (111 Ko, premier jet).
+
+## 2026-11-11 : stock-footage-ia-vendre
+- J56 du plan (Monétisation, business), KW « stock footage ia ». Commit `210a8bd` (rebase sur le push actu openai-upwork, conflit articles.ts résolu en gardant les deux imports, build relancé vert), IndexNow 242 URLs. 4 captures du jour (Adobe règles IA, Adobe royalties, Getty FR, MotionElements), bannières de région et cookies retirées du DOM sans rien accepter ; Shutterstock lu dans le navigateur (capture Playwright vide), Pond5 403. Hero Nano Banana 2 108 Ko premier jet.
