@@ -205,6 +205,7 @@ import { adobeCreateursIaResultatPresque } from "@/content/articles/posts/adobe-
 import { openaiUpworkFreelancesIaVideo } from "@/content/articles/posts/openai-upwork-freelances-ia-video";
 import { elevenlabsScribeV3SousTitresVideo } from "@/content/articles/posts/elevenlabs-scribe-v3-sous-titres-video";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
+import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -420,4 +421,5 @@ export const articles: Article[] = [
   elevenlabsScribeV3SousTitresVideo,
   apprendreEcrireScenario,
   stockFootageIaVendre,
+  finalDraftAvis,
 ];
