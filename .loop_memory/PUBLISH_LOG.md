@@ -2027,3 +2027,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-11 : stock-footage-ia-vendre
 - J56 du plan (Monétisation, business), KW « stock footage ia ». Commit `210a8bd` (rebase sur le push actu openai-upwork, conflit articles.ts résolu en gardant les deux imports, build relancé vert), IndexNow 242 URLs. 4 captures du jour (Adobe règles IA, Adobe royalties, Getty FR, MotionElements), bannières de région et cookies retirées du DOM sans rien accepter ; Shutterstock lu dans le navigateur (capture Playwright vide), Pond5 403. Hero Nano Banana 2 108 Ko premier jet.
+
+## 2026-11-12 : final-draft-avis
+- Ligne M2 du plan (intercalée après J56), KW « final draft avis ». Commit `44b620b`, IndexNow 244 URLs, prod 200. 6 captures finaldraft.com du jour (produit, tarifs, upgrade, configuration, International, essai), popup Black Friday retirée du DOM via Playwright sans rien accepter ; registre captures mis à jour. Aucun essai lancé ni licence achetée (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (retrait d'une affirmation inventée sur les utilisateurs ScreenWeaver), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build).
