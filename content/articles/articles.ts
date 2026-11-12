@@ -203,6 +203,7 @@ import { olmPokemonIaColorisationTroisImages } from "@/content/articles/posts/ol
 import { apprendreEcrireScenario } from "@/content/articles/posts/apprendre-ecrire-scenario";
 import { adobeCreateursIaResultatPresque } from "@/content/articles/posts/adobe-createurs-ia-resultat-presque";
 import { openaiUpworkFreelancesIaVideo } from "@/content/articles/posts/openai-upwork-freelances-ia-video";
+import { elevenlabsScribeV3SousTitresVideo } from "@/content/articles/posts/elevenlabs-scribe-v3-sous-titres-video";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 
 const beginnerArticles = JSON.parse(
@@ -416,6 +417,7 @@ export const articles: Article[] = [
   olmPokemonIaColorisationTroisImages,
   adobeCreateursIaResultatPresque,
   openaiUpworkFreelancesIaVideo,
+  elevenlabsScribeV3SousTitresVideo,
   apprendreEcrireScenario,
   stockFootageIaVendre,
 ];
