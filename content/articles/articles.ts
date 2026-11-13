@@ -204,6 +204,7 @@ import { apprendreEcrireScenario } from "@/content/articles/posts/apprendre-ecri
 import { adobeCreateursIaResultatPresque } from "@/content/articles/posts/adobe-createurs-ia-resultat-presque";
 import { openaiUpworkFreelancesIaVideo } from "@/content/articles/posts/openai-upwork-freelances-ia-video";
 import { elevenlabsScribeV3SousTitresVideo } from "@/content/articles/posts/elevenlabs-scribe-v3-sous-titres-video";
+import { nectarCreatorAgentMarquesCreateurs } from "@/content/articles/posts/nectar-creator-agent-marques-createurs";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 
@@ -419,6 +420,7 @@ export const articles: Article[] = [
   adobeCreateursIaResultatPresque,
   openaiUpworkFreelancesIaVideo,
   elevenlabsScribeV3SousTitresVideo,
+  nectarCreatorAgentMarquesCreateurs,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,
