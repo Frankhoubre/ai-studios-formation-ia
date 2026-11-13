@@ -207,6 +207,7 @@ import { elevenlabsScribeV3SousTitresVideo } from "@/content/articles/posts/elev
 import { nectarCreatorAgentMarquesCreateurs } from "@/content/articles/posts/nectar-creator-agent-marques-createurs";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
+import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -424,4 +425,5 @@ export const articles: Article[] = [
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,
+  miniatureYoutubeStrategieCtr,
 ];
