@@ -2030,3 +2030,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-12 : final-draft-avis
 - Ligne M2 du plan (intercalée après J56), KW « final draft avis ». Commit `44b620b`, IndexNow 244 URLs, prod 200. 6 captures finaldraft.com du jour (produit, tarifs, upgrade, configuration, International, essai), popup Black Friday retirée du DOM via Playwright sans rien accepter ; registre captures mis à jour. Aucun essai lancé ni licence achetée (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (retrait d'une affirmation inventée sur les utilisateurs ScreenWeaver), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build).
+
+## 2026-11-13 : miniature-youtube-strategie-ctr
+- Ligne J57 du plan (PLAN_80 du site terminé), KW « miniature youtube ia ». Commit `c7100be`, IndexNow 246 URLs. 3 captures Aide YouTube du jour (FAQ CTR, tests A/B, miniatures personnalisées), aucun test A/B lancé (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (affirmation non sourcée sur les modèles d'édition retirée), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build, check-registry).
