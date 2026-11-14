@@ -2033,3 +2033,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-13 : miniature-youtube-strategie-ctr
 - Ligne J57 du plan (PLAN_80 du site terminé), KW « miniature youtube ia ». Commit `c7100be`, IndexNow 246 URLs. 3 captures Aide YouTube du jour (FAQ CTR, tests A/B, miniatures personnalisées), aucun test A/B lancé (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (affirmation non sourcée sur les modèles d'édition retirée), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build, check-registry).
+
+## 2026-11-14 : idees-scenario-court-metrage
+- Ligne M3 du plan (intercalée après J57), KW « idée scénario court métrage ». Commit `35bc525`, IndexNow 247 URLs. 2 captures du jour (atelier de logline ScreenWeaver, article Phototrend sur le thème Surprise du Nikon Film Festival 2027), bannières cookies retirées du DOM sans rien accepter ; festivalnikon.fr ne rend pas en Playwright. Passes humanizer + unslop-text (score 0) + antislop-copywriting (« sans inscription » non vérifié retiré, affirmation sur les milliers de créateurs reformulée), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build, check-registry), HTML prérendu vérifié.
