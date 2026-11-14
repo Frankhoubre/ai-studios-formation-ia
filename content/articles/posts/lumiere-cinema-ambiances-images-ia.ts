@@ -10,7 +10,7 @@ export const lumiereCinemaAmbiancesImagesIa: Article = {
   category: "ia-image",
   tags: ["lumière cinéma", "ambiances", "éclairage"],
   date: "2026-06-26",
-  updatedAt: "2026-06-26",
+  updatedAt: "2026-11-14",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/lumiere-cinema-ambiances-images-ia.webp",
@@ -251,6 +251,10 @@ export const lumiereCinemaAmbiancesImagesIa: Article = {
     {
       type: "p",
       text: "Quand tu choisis consciemment ton ambiance, la décris précisément et la varies selon le propos, tes images IA gagnent enfin cette dimension émotionnelle qui fait le cinéma. La lumière cesse d'être un détail subi pour devenir ton outil de narration le plus puissant.",
+    },
+    {
+      type: "p",
+      text: "Et si ta photo est déjà prise avec une lumière plate, Photoshop a maintenant un outil pour la rééclairer après coup : voici [comment marche Relight dans Photoshop](/blog/photoshop-relight-eclairage-ia-photo).",
     },
     {
       type: "h2",
