@@ -206,6 +206,7 @@ import { openaiUpworkFreelancesIaVideo } from "@/content/articles/posts/openai-u
 import { elevenlabsScribeV3SousTitresVideo } from "@/content/articles/posts/elevenlabs-scribe-v3-sous-titres-video";
 import { nectarCreatorAgentMarquesCreateurs } from "@/content/articles/posts/nectar-creator-agent-marques-createurs";
 import { photoshopRelightEclairageIaPhoto } from "@/content/articles/posts/photoshop-relight-eclairage-ia-photo";
+import { higgsfieldGpuLouerCarteGraphiqueIa } from "@/content/articles/posts/higgsfield-gpu-louer-carte-graphique-ia";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -426,6 +427,7 @@ export const articles: Article[] = [
   elevenlabsScribeV3SousTitresVideo,
   nectarCreatorAgentMarquesCreateurs,
   photoshopRelightEclairageIaPhoto,
+  higgsfieldGpuLouerCarteGraphiqueIa,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

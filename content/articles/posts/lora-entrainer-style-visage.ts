@@ -10,7 +10,7 @@ export const loraEntrainerStyleVisage: Article = {
   category: "prompting",
   tags: ["lora", "entraînement", "fine-tuning"],
   date: "2026-07-11",
-  updatedAt: "2026-07-11",
+  updatedAt: "2026-11-15",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/lora-entrainer-style-visage.webp",
@@ -250,6 +250,10 @@ export const loraEntrainerStyleVisage: Article = {
     {
       type: "p",
       text: "Quand tu soignes ton jeu de données, vises l'équilibre d'entraînement, vérifies la compatibilité et combines le LoRA avec un bon prompt, tu obtiens un modèle personnalisé fiable. Ton visage ou ton style devient reproductible à volonté, dans des contextes infiniment variés, ce qui est exactement la promesse du LoRA bien entraîné.",
+    },
+    {
+      type: "p",
+      text: "Pas de carte graphique assez puissante pour faire tourner ta LoRA ? Higgsfield propose depuis novembre 2026 de louer un GPU piloté depuis un chat : voici [comment marche Higgsfield GPU](/blog/higgsfield-gpu-louer-carte-graphique-ia).",
     },
     {
       type: "h2",
