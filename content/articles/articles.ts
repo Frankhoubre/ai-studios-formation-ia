@@ -210,6 +210,7 @@ import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
 import { ideesScenarioCourtMetrage } from "@/content/articles/posts/idees-scenario-court-metrage";
+import { calendrierContenuIa } from "@/content/articles/posts/calendrier-contenu-ia";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -430,4 +431,5 @@ export const articles: Article[] = [
   finalDraftAvis,
   miniatureYoutubeStrategieCtr,
   ideesScenarioCourtMetrage,
+  calendrierContenuIa,
 ];
