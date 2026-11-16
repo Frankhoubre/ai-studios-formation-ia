@@ -212,6 +212,7 @@ import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
 import { ideesScenarioCourtMetrage } from "@/content/articles/posts/idees-scenario-court-metrage";
 import { calendrierContenuIa } from "@/content/articles/posts/calendrier-contenu-ia";
+import { chatgptPhotoPrompts } from "@/content/articles/posts/chatgpt-photo-prompts";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -434,4 +435,5 @@ export const articles: Article[] = [
   miniatureYoutubeStrategieCtr,
   ideesScenarioCourtMetrage,
   calendrierContenuIa,
+  chatgptPhotoPrompts,
 ];
