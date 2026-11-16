@@ -1,6 +1,6 @@
 import { getAllArticles } from "@/lib/articles";
 import { SITE_URL } from "@/lib/constants";
-import { articlePublishedAt, parisDateTime } from "@/lib/seo";
+import { articlePublishedAt } from "@/lib/seo";
 
 export const revalidate = 600;
 
@@ -17,10 +17,11 @@ function esc(value: string): string {
 
 export async function GET() {
   const cutoff = Date.now() - WINDOW_MS;
-  const recent = getAllArticles().filter(
+  const recent = getAllArticles()
+    .slice(0, 1000)
+    .filter(
     (a) =>
-      new Date(parisDateTime(a.date, a.publishedTime ?? "00:00")).getTime() >=
-      cutoff,
+      new Date(articlePublishedAt(a)).getTime() >= cutoff,
   );
 
   const items = recent

@@ -14,7 +14,7 @@ export function ManageCookiesLink() {
         window.dispatchEvent(new Event(COOKIE_CONSENT_RESET_EVENT));
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
-      className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
+      className="inline-flex min-h-11 items-center transition hover:text-brand-bright"
     >
       Gérer les cookies
     </button>

@@ -21,7 +21,6 @@ import {
   getRelatedArticles,
 } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
-import { AUTHOR_NAME } from "@/lib/constants";
 import {
   articleMetadata,
   buildArticleBreadcrumbItems,
@@ -31,7 +30,6 @@ import {
   buildHowToJsonLd,
   getTocEntries,
 } from "@/lib/seo";
-import { formatFrenchDate } from "@/lib/utils";
 
 export const revalidate = 3600;
 
@@ -101,38 +99,9 @@ export default async function ArticlePage({ params }: Props) {
       <article className="mx-auto max-w-6xl px-4 pb-10 pt-4 md:px-6 md:py-14">
         <Breadcrumbs items={breadcrumbItems} />
 
-        <div className="mt-3 md:mt-6">
+        <div className="mt-2 md:mt-6">
           <ArticleHero article={article} />
         </div>
-
-        <p className="mt-6 text-sm leading-relaxed text-text-muted">
-          Par{" "}
-          {article.author.name === AUTHOR_NAME ? (
-            <Link
-              href="/a-propos"
-              rel="author"
-              className="font-medium text-text-soft underline decoration-white/25 underline-offset-[3px] transition hover:text-brand-bright"
-            >
-              {article.author.name}
-            </Link>
-          ) : (
-            <span className="font-medium text-text-soft">
-              {article.author.name}
-            </span>
-          )}
-          {" · "}Publié le{" "}
-          <time dateTime={article.date}>{formatFrenchDate(article.date)}</time>
-          {article.updatedAt !== article.date ? (
-            <>
-              {" · "}Mis à jour le{" "}
-              <time dateTime={article.updatedAt}>
-                {formatFrenchDate(article.updatedAt)}
-              </time>
-            </>
-          ) : null}
-          {" · "}
-          {article.readingTime} min de lecture
-        </p>
 
         {article.affiliate ? <AffiliateNotice /> : null}
 

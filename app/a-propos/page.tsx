@@ -45,7 +45,10 @@ export default function AboutPage() {
           { label: "À propos" },
         ]}
       />
-      <h1 className="font-display mt-8 text-4xl font-semibold tracking-tight text-text md:text-5xl">
+      <p className="mt-5 text-[13px] font-semibold uppercase tracking-[0.14em] text-brand-bright md:mt-8">
+        Qui écrit ce blog
+      </p>
+      <h1 className="font-display mt-3 text-4xl font-semibold leading-[1.05] tracking-tight text-text md:text-6xl">
         À propos
       </h1>
       <p className="mt-6 text-lg text-text-soft leading-relaxed">
@@ -159,6 +162,33 @@ export default function AboutPage() {
             </a>
           </li>
         </ul>
+      </section>
+
+      <section
+        id="contact"
+        className="mt-10 scroll-mt-28 rounded-2xl border border-border-subtle bg-card/50 p-6 md:p-8"
+      >
+        <h2 className="font-display text-2xl font-semibold text-text">
+          Contact
+        </h2>
+        <p className="mt-4 leading-relaxed text-text-muted">
+          Une question sur un article ou une erreur à signaler ? Écris à{" "}
+          <a
+            href="mailto:hello@businessdynamite.xyz"
+            className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+          >
+            hello@businessdynamite.xyz
+          </a>
+          . L’éditeur du site et le directeur de la publication sont détaillés
+          dans les{" "}
+          <Link
+            href="/mentions-legales"
+            className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
+          >
+            mentions légales
+          </Link>
+          .
+        </p>
       </section>
 
       <div className="mt-16">

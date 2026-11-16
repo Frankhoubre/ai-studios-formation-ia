@@ -12,7 +12,7 @@ import {
 } from "@/lib/constants";
 
 const navCategories = categories.filter((c) =>
-  ["ia-video", "ia-image", "prompting"].includes(c.slug),
+  ["ia-video", "ia-image", "prompting", "actualites-ia"].includes(c.slug),
 );
 
 const linkBase =
@@ -96,14 +96,6 @@ export function Header() {
               {c.name}
             </Link>
           ))}
-          <a
-            href={MAIN_SITE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${linkBase} text-text-soft`}
-          >
-            Site principal
-          </a>
           <CtaLink
             href={SKOOL_COMMUNITY_URL}
             placement="header-nav"

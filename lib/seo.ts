@@ -134,19 +134,32 @@ function parisOffset(date: string, time: string): string {
   return match ? match[1] : "+00:00";
 }
 
-/** "2026-11-02" + "08:40" -> "2026-11-02T08:40:00+01:00" ; sans heure, la date seule. */
+/**
+ * Date complète ISO 8601 avec le fuseau de Paris, comme le demande Google pour
+ * datePublished / dateModified : "2026-11-02" + "08:40" -> "2026-11-02T08:40:00+01:00".
+ * Sans heure connue, minuit heure de Paris : c'est l'instant où un article daté
+ * de ce jour devient visible sur le blog (voir lib/articles.ts).
+ */
 export function parisDateTime(date: string, time?: string): string {
-  if (!time || !/^\d{2}:\d{2}$/.test(time)) return date;
-  return `${date}T${time}:00${parisOffset(date, time)}`;
+  const day = date.slice(0, 10);
+  const clock = time && /^\d{2}:\d{2}$/.test(time) ? time : "00:00";
+  return `${day}T${clock}:00${parisOffset(day, clock)}`;
 }
 
 export function articlePublishedAt(article: Article): string {
   return parisDateTime(article.date, article.publishedTime);
 }
 
-/** Même jour que la publication : on reprend l'heure, sinon dateModified précéderait datePublished. */
+/** Jamais antérieure à la publication : même jour, on reprend son heure. */
 export function articleModifiedAt(article: Article): string {
-  return article.updatedAt === article.date ? articlePublishedAt(article) : article.updatedAt;
+  if (article.updatedAt.slice(0, 10) <= article.date.slice(0, 10))
+    return articlePublishedAt(article);
+  return parisDateTime(article.updatedAt);
+}
+
+/** True quand l'article affiche une vraie date de mise à jour, distincte de la publication. */
+export function articleWasUpdated(article: Article): boolean {
+  return article.updatedAt.slice(0, 10) > article.date.slice(0, 10);
 }
 
 function articleAuthorUrl(article: Article): string | undefined {
@@ -475,8 +488,11 @@ export function buildAboutPageJsonLd({
   const url = absoluteUrl("/a-propos");
   return {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
+    // Page auteur : ProfilePage relie la page à la personne citée comme
+    // auteur dans le JSON-LD de chaque article.
+    "@type": ["AboutPage", "ProfilePage"],
     "@id": `${url}#about`,
+    mainEntity: { "@id": `${AUTHOR_URL}#person` },
     name: `À propos de ${ORG_NAME}`,
     description,
     url,
@@ -625,7 +641,8 @@ export function buildArticleJsonLd(
     "@context": "https://schema.org",
     "@type": article.news ? "NewsArticle" : "BlogPosting",
     "@id": `${url}#article`,
-    headline: article.title,
+    // Google tronque au-delà : 110 caractères maximum.
+    headline: truncateAtWord(article.title, 110),
     description: article.description,
     url,
     image: {
@@ -647,6 +664,8 @@ export function buildArticleJsonLd(
       logo: {
         "@type": "ImageObject",
         url: absoluteUrl(ORG_LOGO),
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {

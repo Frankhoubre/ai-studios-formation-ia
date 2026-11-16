@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { getAllArticles } from "@/lib/articles";
 import { categories } from "@/lib/categories";
+import { articleModifiedAt } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -53,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleRoutes: MetadataRoute.Sitemap = articles.map((a) => ({
     url: `${SITE_URL}/blog/${a.slug}`,
-    lastModified: new Date(a.updatedAt),
+    lastModified: new Date(articleModifiedAt(a)),
     changeFrequency: "monthly" as const,
     priority: 0.8,
     // Image de couverture déclarée à Google Images.
