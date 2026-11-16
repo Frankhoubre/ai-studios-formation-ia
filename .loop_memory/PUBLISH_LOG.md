@@ -2039,3 +2039,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-15 : calendrier-contenu-ia
 - Ligne J58 du plan, KW « calendrier contenu ia ». Commit `0d03a8e`, IndexNow 249 URLs. 2 captures du jour (aide OpenAI tâches planifiées via Playwright, aide Meta Planificateur via le navigateur intégré, cookies optionnels refusés) ; page d'aide LinkedIn sur la programmation introuvable (404), sujet traité sans elle. Passes humanizer + unslop-text (score 1, faux positif « Utilise ») + antislop-copywriting (titre de CTA changé, estimation « 80 % » retirée, deux aphorismes réécrits), scan-anti-ia OK. Gates verts (audit, lint, build, check-registry). Hero Nano Banana 2 : premier jet refusé (texte « WEEKLY » sur le tableau), second jet retenu (159 Ko).
+
+## 2026-11-16 : chatgpt-photo-prompts
+- Ligne M4 du plan (intercalée), KW « chat gpt photo ». Commit `96d8531`, IndexNow 251 URLs, prod 200. 3 captures du jour via Playwright Chrome (aide OpenAI images, politiques d'utilisation recadrées sans bandeau, aide contrôles des données ; cookies masqués, jamais acceptés). Passes humanizer + unslop-text (score 4, faux positifs « utilisation ») + antislop-copywriting, scan-anti-ia OK après correction d'une structure « Pour toi, ça ». Hero Nano Banana 2 au second jet (le premier montrait « Departures » sur un panneau).
