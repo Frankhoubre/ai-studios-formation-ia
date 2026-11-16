@@ -10,7 +10,7 @@ export const workflowClientBriefLivraisonIa: Article = {
   category: "workflow-creatif",
   tags: ["workflow client", "brief creatif", "livraison IA"],
   date: "2026-05-03",
-  updatedAt: "2026-05-03",
+  updatedAt: "2026-11-16",
   readingTime: 30,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/workflow-client-brief-livraison-ia.webp",
@@ -267,6 +267,10 @@ export const workflowClientBriefLivraisonIa: Article = {
     {
       type: "p",
       text: "Quand tu travailles comme ça, les retours client deviennent plus simples, parce que la discussion se base sur objectif et non sur gout personnel.",
+    },
+    {
+      type: "p",
+      text: "Mise à jour du 16 novembre 2026 : si tu génères dans Adobe Firefly, note aussi le modèle utilisé pour chaque image livrée. Les modèles partenaires (Seedance, Kling, GPT Image) n'ont pas les mêmes garanties que les modèles Firefly, je t'explique pourquoi dans [Firefly et modèles partenaires](/blog/firefly-modeles-partenaires-usage-commercial).",
     },
     { type: "h2", id: "faq", text: "Questions fréquentes" },
     { type: "h3", id: "faq-1", text: "Comment choisir entre image IA puis animation, ou video IA directe ?" },
