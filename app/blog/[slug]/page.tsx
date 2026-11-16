@@ -5,7 +5,12 @@ import { ArticleFaq } from "@/components/ArticleFaq";
 import { ArticleHero } from "@/components/ArticleHero";
 import { AffiliateNotice } from "@/components/article/AffiliateNotice";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { CTASection } from "@/components/CTASection";
+import {
+  FormationCta,
+  FormationSidebarCard,
+  SkoolNote,
+} from "@/components/cta/FormationCta";
+import { StickyFormationBar } from "@/components/cta/StickyFormationBar";
 import { ReadingProgress } from "@/components/ReadingProgress";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
@@ -16,7 +21,7 @@ import {
   getRelatedArticles,
 } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
-import { AUTHOR_NAME, FORMATION_FREE_URL } from "@/lib/constants";
+import { AUTHOR_NAME } from "@/lib/constants";
 import {
   articleMetadata,
   buildArticleBreadcrumbItems,
@@ -69,9 +74,22 @@ export default async function ArticlePage({ params }: Props) {
     (block) => block.type === "h2" && FAQ_HEADING.test(block.text),
   );
 
+  // Note formation à mi-parcours : seulement sur les guides longs où l'auteur
+  // n'a pas déjà placé son propre bloc CTA, jamais sur une actualité.
+  const midCta =
+    !article.news &&
+    article.readingTime >= 6 &&
+    !article.content.some((block) => block.type === "cta");
+
+  // L'auteur a déjà conclu sur son propre bloc formation : on ne le double pas.
+  const endsWithFormationCta = article.content
+    .slice(-6)
+    .some((block) => block.type === "cta" && block.variant === "formation");
+
   return (
     <>
       <ReadingProgress />
+      <StickyFormationBar />
       <SEOJsonLd
         data={[
           breadcrumbLd,
@@ -80,10 +98,10 @@ export default async function ArticlePage({ params }: Props) {
           ...(howToLd ? [howToLd] : []),
         ]}
       />
-      <article className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
+      <article className="mx-auto max-w-6xl px-4 pb-10 pt-4 md:px-6 md:py-14">
         <Breadcrumbs items={breadcrumbItems} />
 
-        <div className="mt-6">
+        <div className="mt-3 md:mt-6">
           <ArticleHero article={article} />
         </div>
 
@@ -118,42 +136,39 @@ export default async function ArticlePage({ params }: Props) {
 
         {article.affiliate ? <AffiliateNotice /> : null}
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,240px)_minmax(0,1fr)] lg:gap-14">
+        <div className="mt-8 grid gap-8 md:mt-10 lg:grid-cols-[minmax(0,240px)_minmax(0,1fr)] lg:gap-14">
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <TableOfContents entries={toc} />
+            <FormationSidebarCard placement="article-sidebar" />
           </aside>
           <div className="min-w-0">
             <div className="mx-auto max-w-[860px]">
-              <ArticleContent blocks={article.content} slug={article.slug} />
-              <section className="mx-auto mt-14 max-w-[860px] rounded-2xl border border-border-subtle bg-card/50 p-6 md:p-8">
-                <p className="text-sm font-medium text-brand-bright">
-                  Aller plus loin
-                </p>
-                <p className="mt-2 text-text-soft leading-relaxed">
-                  Pour aller plus loin, j’ai préparé une formation gratuite qui
-                  montre comment structurer un vrai workflow IA pour créer des
-                  images et vidéos plus cinématiques.
-                </p>
-                <a
-                  href={FORMATION_FREE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-bright"
-                >
-                  Accéder à la formation gratuite
-                </a>
-              </section>
-              {hasInlineFaq ? null : (
-                <div className="mx-auto max-w-[860px]">
-                  <ArticleFaq items={article.faq} />
+              <ArticleContent
+                blocks={article.content}
+                slug={article.slug}
+                midCta={midCta}
+              />
+              {hasInlineFaq ? null : <ArticleFaq items={article.faq} />}
+              {endsWithFormationCta ? (
+                <SkoolNote placement="article-end" />
+              ) : (
+                <div className="mt-14">
+                  <FormationCta placement="article-end" signed />
                 </div>
               )}
+              {category ? (
+                <p className="mt-8 text-text-soft">
+                  Envie de creuser le sujet ?{" "}
+                  <Link
+                    href={`/categories/${category.slug}`}
+                    className="font-medium text-brand-bright underline decoration-white/25 underline-offset-[3px] transition hover:text-accent-rose"
+                  >
+                    Tous les guides {category.name}
+                  </Link>
+                </p>
+              ) : null}
             </div>
           </div>
-        </div>
-
-        <div className="mx-auto mt-16 max-w-[860px]">
-          <CTASection />
         </div>
 
         <RelatedArticles articles={related} />

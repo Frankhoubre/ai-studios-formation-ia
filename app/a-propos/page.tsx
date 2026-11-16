@@ -20,7 +20,7 @@ import {
 } from "@/lib/seo";
 
 const aboutDescription =
-  "AI Studios forme les créateurs à l’IA image et vidéo : méthode, workflows et exigence qualité. Découvrez Frank Houbre et la communauté.";
+  "AI Studios forme les créateurs à l’IA image et vidéo : méthode, workflows et exigence qualité. Qui est Frank Houbre et comment il travaille.";
 
 export const metadata = buildMetadata({
   title: "À propos AI Studios - formation IA créative",
@@ -59,20 +59,20 @@ export default function AboutPage() {
         Ce blog prolonge cette même exigence. Les articles sont écrits comme des
         guides de terrain : problèmes réels, erreurs fréquentes, workflows,
         exemples. Pas de langue corporate, pas de promesses vides, pas de
-        contenu « SEO creux ». Si vous débutez sérieusement, vous trouverez des
-        piliers pour structurer votre apprentissage. Si vous créez déjà, vous
-        trouverez des critères pour durcir la qualité et accélérer sans vous
+        contenu « SEO creux ». Si tu débutes sérieusement, tu trouveras des
+        piliers pour structurer ton apprentissage. Si tu crées déjà, tu
+        trouveras des critères pour durcir la qualité et accélérer sans te
         disperser.
       </p>
       <p className="mt-6 text-text-muted leading-relaxed">
-        L’objectif final reste le même : vous aider à produire des images et des
-        vidéos qui tiennent debout hors de votre timeline, avec une démarche
+        L’objectif final reste le même : t’aider à produire des images et des
+        vidéos qui tiennent debout hors de ta timeline, avec une démarche
         répétable, pas avec un prompt miracle du jour.
       </p>
       <div className="mt-10 flex flex-col gap-3 sm:flex-row">
         <Link
           href="/blog"
-          className="inline-flex justify-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-bright"
+          className="inline-flex min-h-12 items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-bright"
         >
           Lire les guides
         </Link>
@@ -80,7 +80,7 @@ export default function AboutPage() {
           href={FORMATION_FREE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex justify-center rounded-full border border-border-subtle px-6 py-3 text-sm font-semibold text-text transition hover:border-brand/40"
+          className="inline-flex min-h-12 items-center justify-center rounded-full border border-border-subtle px-6 py-3 text-sm font-semibold text-text transition hover:border-brand/40"
         >
           Formation gratuite
         </a>
@@ -162,7 +162,7 @@ export default function AboutPage() {
       </section>
 
       <div className="mt-16">
-        <CTASection />
+        <CTASection placement="about-end" />
       </div>
     </div>
   );

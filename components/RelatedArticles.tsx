@@ -6,11 +6,11 @@ export function RelatedArticles({ articles }: { articles: Article[] }) {
   return (
     <section className="mt-16 border-t border-border-subtle pt-12">
       <h2 className="font-display text-2xl font-semibold text-text">
-        Articles liés
+        À lire ensuite
       </h2>
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((a) => (
-          <ArticleCard key={a.slug} article={a} />
+          <ArticleCard key={a.slug} article={a} headingLevel={3} />
         ))}
       </div>
     </section>

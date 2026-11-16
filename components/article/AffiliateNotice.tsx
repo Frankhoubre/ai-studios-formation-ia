@@ -1,5 +1,5 @@
 export const AFFILIATE_NOTICE =
-  "Certains liens de cet article sont affiliés : si vous vous abonnez, Frank touche une commission, sans surcoût pour vous. Cela ne change pas notre avis.";
+  "Certains liens de cet article sont affiliés : si tu t’abonnes, Frank touche une commission, sans surcoût pour toi. Cela ne change pas notre avis.";
 
 export function AffiliateNotice() {
   return (

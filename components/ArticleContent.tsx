@@ -1,26 +1,62 @@
 import type { ArticleBlock } from "@/lib/types/article";
 import { RichParagraph } from "@/components/RichParagraph";
 import { LiteYouTube } from "@/components/LiteYouTube";
+import { Fragment } from "react";
 import { ArticleCta } from "@/components/article/ArticleCta";
+import { FormationInlineNote } from "@/components/cta/FormationCta";
 import { DataTable } from "@/components/article/DataTable";
 import { MediaFigure } from "@/components/article/MediaFigure";
 import { Methodology } from "@/components/article/Methodology";
 import { Verdict } from "@/components/article/Verdict";
 import { YOUTUBE_URL } from "@/lib/constants";
 
+/**
+ * Index du H2 qui ouvre la seconde moitié de l'article : c'est devant lui que
+ * se glisse la note formation. -1 si l'article a moins de quatre sections.
+ */
+export function midArticleIndex(blocks: ArticleBlock[]): number {
+  const h2 = blocks
+    .map((b, i) => (b.type === "h2" ? i : -1))
+    .filter((i) => i >= 0);
+  if (h2.length < 4) return -1;
+  return h2[Math.ceil(h2.length / 2)];
+}
+
 export function ArticleContent({
   blocks,
   slug,
+  midCta = false,
 }: {
   blocks: ArticleBlock[];
   slug: string;
+  /** Glisse une note formation d'une ligne à mi-parcours. */
+  midCta?: boolean;
 }) {
-  const firstMedia = blocks.findIndex(
-    (b) => b.type === "image" || b.type === "screenshot" || b.type === "gallery",
-  );
+  // Un média placé tout en haut du corps peut être l'image principale à
+  // l'écran : lui seul est chargé sans attendre. Plus bas, le lazy-loading
+  // évite de concurrencer l'image de couverture.
+  const firstMedia = blocks
+    .slice(0, 3)
+    .findIndex(
+      (b) => b.type === "image" || b.type === "screenshot" || b.type === "gallery",
+    );
+  const noteIndex = midCta ? midArticleIndex(blocks) : -1;
   return (
     <div className="prose-blog space-y-5 text-[17px] leading-[1.75] text-text-soft md:text-lg">
       {blocks.map((block, i) => {
+        const node = renderBlock(block, i);
+        if (i !== noteIndex) return node;
+        return (
+          <Fragment key={`mid-cta-${i}`}>
+            <FormationInlineNote placement="article-mid" />
+            {node}
+          </Fragment>
+        );
+      })}
+    </div>
+  );
+
+  function renderBlock(block: ArticleBlock, i: number) {
         if (block.type === "h2") {
           return (
             <h2
@@ -167,7 +203,5 @@ export function ArticleContent({
           );
         }
         return null;
-      })}
-    </div>
-  );
+  }
 }

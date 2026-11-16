@@ -1,4 +1,5 @@
 import type { ArticleCta as ArticleCtaBlock, ArticleCtaVariant } from "@/lib/types/article";
+import { CtaLink } from "@/components/cta/CtaLink";
 import { FORMATION_FREE_URL } from "@/lib/constants";
 
 // Same contract as automations/scripts/lien.mjs: <site>/go/bl-<destination>-a/<slug>
@@ -48,9 +49,12 @@ export function ctaHref(block: Pick<ArticleCtaBlock, "variant" | "destination">,
 
 export function ArticleCta({ block, slug }: { block: ArticleCtaBlock; slug: string }) {
   const d = DEFAULTS[block.variant];
+  const buttonClass =
+    "inline-flex min-h-11 shrink-0 items-center justify-center self-start rounded-full bg-white px-5 py-2.5 text-center text-sm font-semibold text-bg-primary transition hover:bg-text-soft md:self-center";
   return (
     <aside
       aria-label={d.name}
+      {...(block.variant === "formation" ? { "data-formation-cta": true } : {})}
       className="my-10 flex flex-col gap-5 rounded-2xl border border-brand/30 bg-bg-secondary p-5 md:flex-row md:items-center md:justify-between md:gap-8 md:p-7"
     >
       <div className="min-w-0">
@@ -62,15 +66,26 @@ export function ArticleCta({ block, slug }: { block: ArticleCtaBlock; slug: stri
           {block.text ?? d.text}
         </p>
       </div>
-      <a
-        href={ctaHref(block, slug)}
-        target="_blank"
-        rel="noopener"
-        data-button
-        className="inline-flex min-h-11 shrink-0 items-center justify-center self-start rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-bg-primary transition hover:bg-text-soft md:self-center"
-      >
-        {block.label ?? d.label}
-      </a>
+      {block.variant === "formation" ? (
+        <CtaLink
+          href={FORMATION_FREE_URL}
+          placement="article-block"
+          data-button
+          className={buttonClass}
+        >
+          {block.label ?? d.label}
+        </CtaLink>
+      ) : (
+        <a
+          href={ctaHref(block, slug)}
+          target="_blank"
+          rel="noopener"
+          data-button
+          className={buttonClass}
+        >
+          {block.label ?? d.label}
+        </a>
+      )}
     </aside>
   );
 }
