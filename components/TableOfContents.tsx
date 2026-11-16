@@ -32,13 +32,13 @@ export function TableOfContents({ entries }: { entries: Entry[] }) {
 
   function linkClass(id: string) {
     return cn(
-      "block rounded py-0.5 transition",
+      "flex min-h-11 items-center rounded py-2 leading-snug transition lg:block lg:min-h-0 lg:py-0.5",
       active === id ? "text-brand-bright" : "text-text-soft hover:text-text",
     );
   }
 
   const list = (
-    <ol className="mt-4 space-y-2 text-sm">
+    <ol className="space-y-0 text-sm lg:mt-4 lg:space-y-2">
       {entries.map((e) => (
         <li
           key={e.id}
@@ -57,8 +57,8 @@ export function TableOfContents({ entries }: { entries: Entry[] }) {
   return (
     <>
       {/* Mobile: collapsed by default so it never pushes the article down */}
-      <details className="group rounded-2xl border border-border-subtle bg-card/80 p-5 lg:hidden">
-        <summary className="flex cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-wider text-text-muted [&::-webkit-details-marker]:hidden">
+      <details className="group rounded-2xl border border-border-subtle bg-card/80 lg:hidden">
+        <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between px-5 text-[13px] font-semibold uppercase tracking-wider text-text-muted [&::-webkit-details-marker]:hidden">
           Sommaire
           <span
             aria-hidden="true"
@@ -67,13 +67,13 @@ export function TableOfContents({ entries }: { entries: Entry[] }) {
             ▾
           </span>
         </summary>
-        {list}
+        <div className="px-5 pb-4">{list}</div>
       </details>
 
       {/* Desktop: sticky outline with scroll-spy */}
       <nav
         aria-label="Sommaire"
-        className="hidden rounded-2xl border border-border-subtle bg-card/80 p-5 lg:block"
+        className="hidden max-h-[calc(100vh-21rem)] overflow-y-auto overscroll-contain rounded-2xl border border-border-subtle bg-card/80 p-5 lg:block"
       >
         <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">
           Sommaire

@@ -25,7 +25,7 @@ export function MediaCredit({ source, capturedAt }: { source?: string; capturedA
   if (!source && !capturedAt) return null;
   const link = source ? classifyLink(source) : null;
   return (
-    <span className="mt-1 block text-xs text-text-muted">
+    <span className="mt-1 block text-[13px] text-text-muted">
       {link ? (
         <>
           Source :{" "}

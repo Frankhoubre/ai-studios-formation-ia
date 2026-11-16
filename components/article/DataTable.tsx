@@ -111,12 +111,12 @@ export function DataTable({
         </table>
       </div>
       {wide ? (
-        <p className="border-t border-border-subtle px-4 py-2 text-xs text-text-muted md:hidden">
+        <p className="border-t border-border-subtle px-4 py-2 text-[13px] text-text-muted md:hidden">
           Fais glisser le tableau vers la gauche pour voir toutes les colonnes.
         </p>
       ) : null}
       {verifieLe || sources.length || note ? (
-        <div className="space-y-1 border-t border-border-subtle px-4 py-3 text-xs leading-relaxed text-text-muted">
+        <div className="space-y-1 border-t border-border-subtle px-4 py-3 text-[13px] leading-relaxed text-text-muted">
           {verifieLe ? (
             <p>
               {releveLabel}{" "}

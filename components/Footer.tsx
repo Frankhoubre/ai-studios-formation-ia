@@ -24,12 +24,12 @@ export function Footer() {
           </div>
           <div>
             <p className="text-sm font-semibold text-text">Catégories</p>
-            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            <ul className="mt-2 grid grid-cols-2 gap-x-4 md:mt-4 md:gap-y-1">
               {categories.map((c) => (
                 <li key={c.slug}>
                   <Link
                     href={`/categories/${c.slug}`}
-                    className="text-sm text-text-soft transition hover:text-brand-bright"
+                    className="inline-flex min-h-11 items-center text-sm text-text-soft transition hover:text-brand-bright md:min-h-0 md:py-1"
                   >
                     {c.name}
                   </Link>
@@ -39,13 +39,13 @@ export function Footer() {
           </div>
           <div>
             <p className="text-sm font-semibold text-text">AI Studios</p>
-            <ul className="mt-4 space-y-2 text-sm text-text-soft">
+            <ul className="mt-2 grid grid-cols-2 gap-x-4 text-sm text-text-soft md:mt-4 md:grid-cols-1 md:gap-y-1">
               <li>
                 <a
                   href={MAIN_SITE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   Site principal
                 </a>
@@ -55,7 +55,7 @@ export function Footer() {
                   href={FORMATION_FREE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   Formation gratuite
                 </a>
@@ -65,7 +65,7 @@ export function Footer() {
                   href={SKOOL_COMMUNITY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   Communauté Skool
                 </a>
@@ -73,7 +73,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/a-propos"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   À propos
                 </Link>
@@ -81,7 +81,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/politique-cookies"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   Politique cookies
                 </Link>
@@ -89,7 +89,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/mentions-legales"
-                  className="transition hover:text-brand-bright"
+                  className="inline-flex min-h-11 items-center transition hover:text-brand-bright md:min-h-0 md:py-1"
                 >
                   Mentions légales
                 </Link>
@@ -100,7 +100,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="mt-12 text-center text-xs text-text-muted md:text-left">
+        <p className="mt-10 text-center text-[13px] text-text-muted md:text-left">
           © {year} AI Studios. Tous droits réservés.
         </p>
       </div>

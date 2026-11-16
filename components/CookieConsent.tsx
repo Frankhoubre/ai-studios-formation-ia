@@ -46,28 +46,25 @@ export function CookieConsent() {
 
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-[100] p-4 md:p-6"
+      className="fixed inset-x-0 bottom-0 z-[100] p-2 sm:p-4 md:p-6"
       role="dialog"
-      aria-modal="true"
       aria-labelledby="cookie-consent-title"
       aria-describedby="cookie-consent-desc"
     >
-      <div className="mx-auto max-w-3xl rounded-2xl border border-border-subtle bg-bg-secondary/95 p-5 shadow-[0_-8px_40px_-12px_rgba(0,0,0,0.65)] backdrop-blur-md md:p-6">
+      <div className="mx-auto max-h-[85vh] max-w-3xl overflow-y-auto rounded-2xl border border-border-subtle bg-bg-secondary/95 p-4 shadow-[0_-8px_40px_-12px_rgba(0,0,0,0.65)] backdrop-blur-md sm:p-5 md:p-6">
         <h2
           id="cookie-consent-title"
-          className="font-display text-base font-semibold text-text md:text-lg"
+          className="font-display text-[15px] font-semibold text-text md:text-lg"
         >
           Cookies et traceurs
         </h2>
         <p
           id="cookie-consent-desc"
-          className="mt-3 text-sm leading-relaxed text-text-muted"
+          className="mt-1.5 text-[13px] leading-relaxed text-text-muted sm:mt-3 sm:text-sm"
         >
-          Nous utilisons des cookies strictement nécessaires au fonctionnement du
-          site et, avec votre accord, des cookies pour mesurer l’audience. Vous
-          pouvez accepter, refuser les cookies non essentiels ou personnaliser
-          votre choix. Vous pouvez modifier votre décision à tout moment via le
-          lien en bas de page.{" "}
+          Le site utilise des cookies nécessaires à son fonctionnement et, avec
+          ton accord, des cookies de mesure d’audience. Tu peux changer d’avis
+          à tout moment depuis le lien en bas de page.{" "}
           <Link
             href="/politique-cookies"
             className="text-brand-bright underline underline-offset-2 hover:text-accent-rose"
@@ -94,7 +91,7 @@ export function CookieConsent() {
                 <label htmlFor="cookie-essential">
                   <span className="font-medium text-text">Nécessaires</span>
                   <span className="mt-0.5 block text-text-muted">
-                    Mémorisation de vos préférences de consentement, sécurité et
+                    Mémorisation de tes préférences de consentement, sécurité et
                     charge du site. Toujours actifs.
                   </span>
                 </label>
@@ -120,14 +117,14 @@ export function CookieConsent() {
               <button
                 type="button"
                 onClick={() => close(analyticsOptIn)}
-                className="rounded-full bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-bright"
+                className="min-h-11 rounded-full bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-bright"
               >
                 Enregistrer mes choix
               </button>
               <button
                 type="button"
                 onClick={() => setShowCustomize(false)}
-                className="rounded-full border border-border-subtle px-4 py-2 text-sm text-text-soft transition hover:border-brand/40 hover:text-text"
+                className="min-h-11 rounded-full border border-border-subtle px-4 py-2 text-sm text-text-soft transition hover:border-brand/40 hover:text-text"
               >
                 Retour
               </button>
@@ -136,13 +133,13 @@ export function CookieConsent() {
         ) : null}
 
         {!showCustomize ? (
-          <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end">
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:mt-5 sm:flex sm:flex-wrap sm:items-center sm:justify-end">
             <button
               type="button"
               onClick={() => close(false)}
-              className="order-2 rounded-full border border-border-subtle px-4 py-2.5 text-sm font-medium text-text-soft transition hover:border-brand/40 hover:text-text sm:order-1"
+              className="order-1 min-h-11 rounded-full border border-border-subtle px-4 text-sm font-medium text-text-soft transition hover:border-brand/40 hover:text-text"
             >
-              Refuser les cookies non essentiels
+              Refuser
             </button>
             <button
               type="button"
@@ -150,16 +147,16 @@ export function CookieConsent() {
                 setShowCustomize(true);
                 setAnalyticsOptIn(false);
               }}
-              className="order-3 rounded-full border border-border-subtle px-4 py-2.5 text-sm font-medium text-text-soft transition hover:border-brand/40 hover:text-text sm:order-2"
+              className="order-3 col-span-2 min-h-11 rounded-full px-4 text-sm font-medium text-text-muted underline decoration-white/25 underline-offset-[3px] transition hover:text-text sm:order-2 sm:border sm:border-border-subtle sm:text-text-soft sm:no-underline sm:hover:border-brand/40"
             >
               Personnaliser
             </button>
             <button
               type="button"
               onClick={() => close(true)}
-              className="order-1 rounded-full bg-brand px-4 py-2.5 text-sm font-medium text-white transition hover:bg-brand-bright sm:order-3"
+              className="order-2 min-h-11 rounded-full bg-brand px-4 text-sm font-medium text-white transition hover:bg-brand-bright sm:order-3"
             >
-              Tout accepter
+              Accepter
             </button>
           </div>
         ) : null}

@@ -58,7 +58,7 @@ export default function MentionsLegalesPage() {
         <br />
         Forme juridique : Société par actions simplifiée (SAS).
         <br />
-        SIREN : 840 854 129 — SIRET (siège social) : 840 854 129 00011.
+        SIREN : 840 854 129, SIRET (siège social) : 840 854 129 00011.
         <br />
         Numéro de TVA intracommunautaire : FR90 840 854 129.
         <br />
@@ -90,7 +90,7 @@ export default function MentionsLegalesPage() {
       </h2>
       <p className="mt-4 text-text-muted leading-relaxed">
         Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA
-        91789, États-Unis —{" "}
+        91789, États-Unis,{" "}
         <a
           href="https://vercel.com"
           target="_blank"

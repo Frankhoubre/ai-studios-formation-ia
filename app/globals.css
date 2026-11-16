@@ -102,6 +102,9 @@ video {
   border-radius: 9999px;
   background: var(--violet);
   color: #fff;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   padding: 0.6rem 1.1rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -134,6 +137,11 @@ video {
       transparent 55%
     ),
     var(--bg-secondary);
+}
+
+/* Une URL ou un mot très long ne doit jamais élargir la page sur mobile */
+.prose-blog {
+  overflow-wrap: break-word;
 }
 
 .prose-blog a:not([data-button]) {
