@@ -38,8 +38,8 @@ export function ReadingProgress() {
       className="fixed inset-x-0 top-0 z-[60] h-0.5 bg-transparent"
     >
       <div
-        className="h-full origin-left bg-gradient-to-r from-brand to-accent-rose transition-[width] duration-75 ease-out"
-        style={{ width: `${progress * 100}%` }}
+        className="h-full w-full origin-left bg-gradient-to-r from-brand to-accent-rose transition-transform duration-75 ease-out"
+        style={{ transform: `scaleX(${progress})` }}
       />
     </div>
   );

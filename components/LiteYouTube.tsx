@@ -39,7 +39,10 @@ export function LiteYouTube({
           <img
             src={thumbnail}
             alt={title}
+            width={480}
+            height={360}
             loading="lazy"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover transition group-hover:scale-[1.02]"
           />
           <span className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent transition group-hover:from-black/45" />

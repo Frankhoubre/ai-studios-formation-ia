@@ -17,7 +17,7 @@ export const AUTHOR_NAME = "Frank Houbre";
 export const AUTHOR_URL = `${SITE_URL}/a-propos`;
 
 /** CTA réutilisé en fin de meta descriptions indexables */
-export const SEO_CTA = "Accédez à la formation gratuite.";
+export const SEO_CTA = "Accède à la formation gratuite.";
 
 export const PODCAST_URL = "https://www.podcastics.com/podcast/generation-ia/";
 

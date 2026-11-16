@@ -23,7 +23,7 @@ export const DEFAULT_TITLE =
   "AI Studios Blog - Formation IA vidéo, image et cinéma";
 
 export const DEFAULT_DESCRIPTION =
-  "Guides IA image, vidéo et cinéma pour des workflows pro, sans rendu générique. Méthode AI Studios, guides terrain. Accédez à la formation gratuite.";
+  "Guides IA image, vidéo et cinéma pour des workflows pro, sans rendu générique. Méthode AI Studios, guides terrain. Accède à la formation gratuite.";
 
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
@@ -164,7 +164,6 @@ function baseTwitter(
     title,
     description,
     images: [ogImage],
-    creator: AUTHOR_NAME,
   };
 }
 
@@ -567,10 +566,13 @@ export function buildArticleItemListJsonLd({
   articles,
   name,
   path,
+  compact = false,
 }: {
   articles: Article[];
   name: string;
   path: string;
+  /** Longues listes : une entrée = position, nom et URL, sans BlogPosting imbriqué. */
+  compact?: boolean;
 }): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
@@ -583,18 +585,34 @@ export function buildArticleItemListJsonLd({
       "@type": "ListItem",
       position: index + 1,
       url: absoluteUrl(`/blog/${article.slug}`),
-      item: {
-        "@type": "BlogPosting",
-        headline: article.title,
-        description: article.description,
-        image: absoluteUrl(article.image),
-        datePublished: article.date,
-        dateModified: article.updatedAt,
-        url: absoluteUrl(`/blog/${article.slug}`),
-        author: articleAuthorJsonLd(article),
-      },
+      ...(compact
+        ? { name: article.title }
+        : {
+            item: {
+              "@type": "BlogPosting",
+              headline: article.title,
+              description: article.description,
+              image: absoluteUrl(article.image),
+              datePublished: articlePublishedAt(article),
+              dateModified: articleModifiedAt(article),
+              url: absoluteUrl(`/blog/${article.slug}`),
+              author: articleAuthorJsonLd(article),
+            },
+          }),
     })),
   };
+}
+
+/** Mots du corps : titres, paragraphes, listes et citations. */
+function countWords(article: Article): number {
+  const words = (text: string) => text.split(/\s+/).filter(Boolean).length;
+  return article.content.reduce((n, b) => {
+    if (b.type === "p" || b.type === "h2" || b.type === "h3" || b.type === "quote")
+      return n + words(b.text);
+    if (b.type === "ul" || b.type === "ol")
+      return n + b.items.reduce((m, item) => m + words(item), 0);
+    return n;
+  }, 0);
 }
 
 export function buildArticleJsonLd(
@@ -602,6 +620,7 @@ export function buildArticleJsonLd(
   categoryName?: string,
 ): Record<string, unknown> {
   const url = absoluteUrl(`/blog/${article.slug}`);
+  const imageSize = getPublicImageSize(article.image);
   return {
     "@context": "https://schema.org",
     "@type": article.news ? "NewsArticle" : "BlogPosting",
@@ -613,6 +632,9 @@ export function buildArticleJsonLd(
       "@type": "ImageObject",
       url: absoluteUrl(article.image),
       caption: article.imageAlt,
+      ...(imageSize
+        ? { width: imageSize.width, height: imageSize.height }
+        : {}),
     },
     datePublished: articlePublishedAt(article),
     dateModified: articleModifiedAt(article),
@@ -633,11 +655,11 @@ export function buildArticleJsonLd(
     },
     keywords: article.keywords?.join(", "),
     articleSection: categoryName,
-    wordCount: article.content
-      .filter((b) => b.type === "p")
-      .reduce((n, b) => n + (b.type === "p" ? b.text.split(/\s+/).length : 0), 0),
+    wordCount: countWords(article),
     timeRequired: `PT${article.readingTime}M`,
     inLanguage: "fr-FR",
+    isPartOf: { "@id": `${SITE_URL}#website` },
+    isAccessibleForFree: true,
   };
 }
 

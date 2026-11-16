@@ -1,11 +1,25 @@
 import { getAllArticles } from "@/lib/articles";
 import { SITE_URL } from "@/lib/constants";
+import { articlePublishedAt } from "@/lib/seo";
 
 export const revalidate = 3600;
 
 const SITE_TITLE = "AI Studios Blog";
 const SITE_DESC =
   "Le blog francophone pour apprendre l'IA créative : images, vidéos, films, publicités, prompts et workflows professionnels.";
+
+const IMAGE_TYPES: Record<string, string> = {
+  webp: "image/webp",
+  png: "image/png",
+  jpg: "image/jpeg",
+  jpeg: "image/jpeg",
+  avif: "image/avif",
+};
+
+function imageType(path: string): string {
+  const ext = path.split(".").pop()?.toLowerCase() ?? "";
+  return IMAGE_TYPES[ext] ?? "image/webp";
+}
 
 function esc(value: string): string {
   return value
@@ -28,9 +42,9 @@ export async function GET() {
       <title>${esc(a.title)}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <pubDate>${new Date(a.date).toUTCString()}</pubDate>
+      <pubDate>${new Date(articlePublishedAt(a)).toUTCString()}</pubDate>
       <description>${esc(a.description)}</description>
-      <enclosure url="${SITE_URL}${a.image}" type="image/webp" length="0" />
+      <enclosure url="${esc(`${SITE_URL}${a.image}`)}" type="${imageType(a.image)}" length="0" />
       <category>${esc(a.category)}</category>
     </item>`;
     })

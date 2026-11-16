@@ -56,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(a.updatedAt),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+    // Image de couverture déclarée à Google Images.
+    images: [`${SITE_URL}${a.image}`],
   }));
 
   return [...staticRoutes, ...articleRoutes];

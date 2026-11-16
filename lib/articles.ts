@@ -47,10 +47,28 @@ export function getRelatedArticles(
     .map((s) => getArticleBySlug(s))
     .filter((a): a is Article => Boolean(a));
   if (pool.length >= limit) return pool.slice(0, limit);
-  const rest = getAllArticles()
-    .filter((a) => a.slug !== article.slug && !pool.find((p) => p.slug === a.slug))
-    .slice(0, limit - pool.length);
+  // Complément : d'abord la même catégorie (maillage thématique), puis le
+  // reste du blog, du plus récent au plus ancien.
+  const candidates = getAllArticles().filter(
+    (a) => a.slug !== article.slug && !pool.find((p) => p.slug === a.slug),
+  );
+  const rest = [
+    ...candidates.filter((a) => a.category === article.category),
+    ...candidates.filter((a) => a.category !== article.category),
+  ].slice(0, limit - pool.length);
   return [...pool, ...rest];
+}
+
+/** Nombre de cartes par page sur /blog et /blog/page/N. */
+export const BLOG_PAGE_SIZE = 24;
+
+export function getBlogPageCount(): number {
+  return Math.max(1, Math.ceil(getAllArticles().length / BLOG_PAGE_SIZE));
+}
+
+export function getBlogPage(page: number): Article[] {
+  const start = (page - 1) * BLOG_PAGE_SIZE;
+  return getAllArticles().slice(start, start + BLOG_PAGE_SIZE);
 }
 
 export function getAllSlugs(): string[] {

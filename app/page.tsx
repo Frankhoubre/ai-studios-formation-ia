@@ -6,6 +6,7 @@ import { CategoryPill } from "@/components/CategoryPill";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getAllArticles } from "@/lib/articles";
 import { categories } from "@/lib/categories";
+import { CtaLink } from "@/components/cta/CtaLink";
 import { FORMATION_FREE_URL } from "@/lib/constants";
 import {
   buildArticleItemListJsonLd,
@@ -60,12 +61,12 @@ export default function HomePage() {
       <SEOJsonLd
         data={[blogJsonLd, formationServiceLd, pageJsonLd, latestJsonLd]}
       />
-      <section className="mx-auto max-w-6xl px-4 pb-16 pt-12 md:px-6 md:pb-24 md:pt-16">
+      <section className="mx-auto max-w-6xl px-4 pb-14 pt-10 md:px-6 md:pb-24 md:pt-16">
         <div className="max-w-4xl">
           <p className="text-sm font-medium uppercase tracking-wider text-brand-bright">
             AI Studios Blog
           </p>
-          <h1 className="font-display mt-4 text-4xl font-semibold leading-[1.08] tracking-tight text-text md:text-5xl lg:text-[3.35rem]">
+          <h1 className="font-display mt-4 text-[2.1rem] font-semibold leading-[1.1] tracking-tight text-text sm:text-4xl md:text-5xl lg:text-[3.35rem]">
             Apprendre l’IA créative pour créer des images, vidéos et films qui
             marquent vraiment
           </h1>
@@ -75,18 +76,17 @@ export default function HomePage() {
             visuels : prompts, images, vidéo, storyboard, montage, son,
             publicité et narration.
           </p>
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-10">
+            <CtaLink
               href={FORMATION_FREE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex justify-center rounded-full bg-gradient-to-r from-brand to-brand-bright px-7 py-3 text-sm font-semibold text-white shadow-[0_0_32px_-6px_rgba(168,85,247,0.6)] transition hover:brightness-110"
+              placement="home-hero"
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-brand to-brand-bright px-7 py-3 text-[15px] font-semibold text-white shadow-[0_0_32px_-6px_rgba(168,85,247,0.6)] transition hover:brightness-110"
             >
-              Voir la formation gratuite
-            </a>
+              Accéder à la formation gratuite
+            </CtaLink>
             <Link
               href="/blog"
-              className="inline-flex justify-center rounded-full border border-border-subtle bg-card px-7 py-3 text-sm font-semibold text-text transition hover:border-brand/40"
+              className="inline-flex min-h-12 items-center justify-center rounded-full border border-border-subtle bg-card px-7 py-3 text-[15px] font-semibold text-text transition hover:border-brand/40"
             >
               Lire les guides
             </Link>
@@ -102,20 +102,22 @@ export default function HomePage() {
                 Commencer ici
               </h2>
               <p className="mt-2 max-w-xl text-text-muted">
-                Trois piliers pour cadrer votre apprentissage sans vous perdre
-                dans les outils.
+                Trois guides complets pour cadrer ton apprentissage sans te
+                perdre dans les outils.
               </p>
             </div>
             <Link
               href="/blog"
-              className="text-sm font-medium text-brand-bright hover:text-accent-rose"
+              className="inline-flex min-h-11 items-center text-sm font-medium text-brand-bright hover:text-accent-rose"
             >
               Tous les articles →
             </Link>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {starters.map((a) =>
-              a ? <ArticleCard key={a.slug} article={a} /> : null,
+              a ? (
+                <ArticleCard key={a.slug} article={a} headingLevel={3} />
+              ) : null,
             )}
           </div>
         </div>
@@ -127,7 +129,7 @@ export default function HomePage() {
             Catégories
           </h2>
           <p className="mt-2 max-w-2xl text-text-muted">
-            Choisissez une piste, pas une overdose de contenus mélangés.
+            Choisis une piste, pas une overdose de contenus mélangés.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((c) => (
@@ -137,7 +139,7 @@ export default function HomePage() {
                 className="group rounded-2xl border border-border-subtle bg-card p-6 transition hover:border-brand/35"
               >
                 <div className="flex items-center gap-2">
-                  <CategoryPill slug={c.slug} label={c.name} />
+                  <CategoryPill slug={c.slug} label={c.name} asLink={false} />
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-text-soft">
                   {c.description}
@@ -164,14 +166,14 @@ export default function HomePage() {
             </div>
             <Link
               href="/blog"
-              className="text-sm font-medium text-brand-bright hover:text-accent-rose"
+              className="inline-flex min-h-11 items-center text-sm font-medium text-brand-bright hover:text-accent-rose"
             >
               Voir le blog →
             </Link>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {latest.map((a) => (
-              <ArticleCard key={a.slug} article={a} />
+              <ArticleCard key={a.slug} article={a} headingLevel={3} />
             ))}
           </div>
         </div>
@@ -188,9 +190,9 @@ export default function HomePage() {
                 AI Studios, c’est une formation et une communauté pour créateurs
                 qui veulent maîtriser l’IA image et vidéo avec une méthode, pas
                 avec des prompts magiques. Ici, on parle workflows, narration,
-                cohérence, livrables, et critères de qualité. Pas de discours
-                vaporware, pas de promesses « révolution ». Du terrain, des
-                erreurs assumées, des corrections.
+                cohérence, livrables et critères de qualité. Pas de discours
+                creux, pas de promesse miracle. Du terrain, des erreurs
+                assumées, des corrections.
               </p>
               <ul className="mt-6 space-y-3 text-sm text-text-muted">
                 <li className="flex gap-2">
@@ -214,7 +216,7 @@ export default function HomePage() {
 
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <CTASection />
+          <CTASection placement="home-end" />
         </div>
       </section>
     </div>
