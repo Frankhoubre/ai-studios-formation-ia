@@ -62,7 +62,7 @@ export function ArticleContent({
             <h2
               key={`${block.id}-${i}`}
               id={block.id}
-              className="font-display mt-14 scroll-mt-28 text-2xl font-semibold tracking-tight text-text first:mt-0 md:text-3xl"
+              className="font-display mt-14 scroll-mt-28 text-2xl font-semibold tracking-tight text-text before:mb-4 before:block before:h-[3px] before:w-10 before:rounded-full before:bg-gradient-to-r before:from-brand before:to-accent-rose before:content-[''] first:mt-0 md:mt-16 md:text-[2rem] md:leading-tight"
             >
               {block.text}
             </h2>
@@ -81,7 +81,10 @@ export function ArticleContent({
         }
         if (block.type === "p") {
           return (
-            <p key={i} className="text-text-soft">
+            <p
+              key={i}
+              className="text-text-soft first:text-[1.15rem] first:leading-[1.7] first:text-text md:first:text-[1.3rem]"
+            >
               <RichParagraph text={block.text} />
             </p>
           );
@@ -189,7 +192,7 @@ export function ArticleContent({
           return (
             <blockquote
               key={`${block.text.slice(0, 48)}-${i}`}
-              className="my-8 rounded-2xl border border-brand/25 bg-brand/10 px-5 py-4 text-text-soft"
+              className="my-9 rounded-r-2xl border-l-[3px] border-brand-bright bg-gradient-to-r from-brand/15 to-transparent px-5 py-4 text-text md:px-6 md:py-5"
             >
               <p className="leading-relaxed">
                 <RichParagraph text={block.text} />

@@ -1,13 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArticleCard } from "@/components/ArticleCard";
 import { CTASection } from "@/components/CTASection";
 import { NewsletterBlock } from "@/components/NewsletterBlock";
-import { CategoryPill } from "@/components/CategoryPill";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getAllArticles } from "@/lib/articles";
 import { categories } from "@/lib/categories";
+import { formatFrenchDate } from "@/lib/utils";
 import { CtaLink } from "@/components/cta/CtaLink";
-import { FORMATION_FREE_URL } from "@/lib/constants";
+import { AUTHOR_NAME, FORMATION_FREE_URL } from "@/lib/constants";
 import {
   buildArticleItemListJsonLd,
   buildBlogJsonLd,
@@ -31,7 +32,9 @@ export const metadata = buildMetadata({
 
 export default function HomePage() {
   const articles = getAllArticles();
-  const latest = articles.slice(0, 6);
+  // Le plus récent ouvre la page ("À la une"), les six suivants forment la grille.
+  const lead = articles[0];
+  const latest = articles.slice(1, 7);
   // Pages piliers : les 3 guides complets reçoivent le maillage le plus fort
   // du site (home > piliers > clusters). Fallback sur les fondamentaux tant
   // qu'un pilier n'est pas encore publié (date future).
@@ -51,7 +54,7 @@ export default function HomePage() {
   const blogJsonLd = buildBlogJsonLd({ description: homeDescription });
   const formationServiceLd = buildFormationServiceJsonLd();
   const latestJsonLd = buildArticleItemListJsonLd({
-    articles: latest,
+    articles: lead ? [lead, ...latest] : latest,
     name: "Derniers guides IA créative",
     path: "/",
   });
@@ -62,35 +65,92 @@ export default function HomePage() {
         data={[blogJsonLd, formationServiceLd, pageJsonLd, latestJsonLd]}
       />
       <section className="mx-auto max-w-6xl px-4 pb-14 pt-10 md:px-6 md:pb-24 md:pt-16">
-        <div className="max-w-4xl">
-          <p className="text-sm font-medium uppercase tracking-wider text-brand-bright">
-            AI Studios Blog
-          </p>
-          <h1 className="font-display mt-4 text-[2.1rem] font-semibold leading-[1.1] tracking-tight text-text sm:text-4xl md:text-5xl lg:text-[3.35rem]">
-            Apprendre l’IA créative pour créer des images, vidéos et films qui
-            marquent vraiment
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-soft md:text-xl">
-            Des guides concrets pour arrêter de produire des rendus IA jolis
-            mais oubliables, et commencer à construire de vrais workflows
-            visuels : prompts, images, vidéo, storyboard, montage, son,
-            publicité et narration.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-10">
-            <CtaLink
-              href={FORMATION_FREE_URL}
-              placement="home-hero"
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-brand to-brand-bright px-7 py-3 text-[15px] font-semibold text-white shadow-[0_0_32px_-6px_rgba(168,85,247,0.6)] transition hover:brightness-110"
-            >
-              Accéder à la formation gratuite
-            </CtaLink>
-            <Link
-              href="/blog"
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-border-subtle bg-card px-7 py-3 text-[15px] font-semibold text-text transition hover:border-brand/40"
-            >
-              Lire les guides
-            </Link>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-stretch lg:gap-14">
+          <div>
+            <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-brand-bright">
+              AI Studios Blog
+            </p>
+            <h1 className="font-display mt-4 text-[2.1rem] font-semibold leading-[1.1] tracking-tight text-text sm:text-4xl md:text-5xl lg:text-[3.35rem] lg:leading-[1.06]">
+              Apprendre l’IA créative pour créer des images, vidéos et films
+              qui{" "}
+              <span className="bg-gradient-to-r from-brand-bright to-accent-rose bg-clip-text text-transparent">
+                marquent vraiment
+              </span>
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-soft md:text-xl md:leading-relaxed">
+              Des guides concrets pour arrêter de produire des rendus IA jolis
+              mais oubliables, et commencer à construire de vrais workflows
+              visuels : prompts, images, vidéo, storyboard, montage, son,
+              publicité et narration.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-10">
+              <CtaLink
+                href={FORMATION_FREE_URL}
+                placement="home-hero"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-brand to-brand-bright px-7 py-3 text-[15px] font-semibold text-white shadow-[0_0_32px_-6px_rgba(168,85,247,0.6)] transition hover:brightness-110"
+              >
+                Accéder à la formation gratuite
+              </CtaLink>
+              <Link
+                href="/blog"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-border-subtle bg-card px-7 py-3 text-[15px] font-semibold text-text transition hover:border-brand/40"
+              >
+                Lire les guides
+              </Link>
+            </div>
+            <p className="mt-7 max-w-xl border-l-2 border-brand/50 pl-4 text-sm leading-relaxed text-text-muted">
+              {articles.length} guides et actualités écrits par{" "}
+              <Link
+                href="/a-propos"
+                className="font-medium text-text-soft underline decoration-white/25 underline-offset-[3px] transition hover:text-brand-bright"
+              >
+                {AUTHOR_NAME}
+              </Link>
+              , fondateur d’AI Studios et réalisateur de VOIDBORN, film IA
+              primé en festivals.
+            </p>
           </div>
+
+          {lead ? (
+            <article className="group relative overflow-hidden rounded-3xl border border-border-subtle bg-card shadow-[0_40px_120px_-50px_rgba(139,92,246,0.65)] transition duration-300 hover:border-brand/45">
+              <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[28rem]">
+                <Image
+                  src={lead.image}
+                  alt={lead.imageAlt}
+                  fill
+                  preload
+                  fetchPriority="high"
+                  className="object-cover transition duration-700 ease-out group-hover:scale-[1.03]"
+                  sizes="(max-width: 1023px) 100vw, 560px"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-gradient-to-t from-[#06060a] via-[#06060a]/55 to-transparent"
+                />
+              </div>
+              <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
+                <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-text backdrop-blur">
+                  <span
+                    aria-hidden="true"
+                    className="h-1.5 w-1.5 rounded-full bg-accent-rose"
+                  />
+                  À la une
+                </p>
+                <h2 className="font-display mt-3 text-xl font-semibold leading-snug tracking-tight text-text sm:text-2xl">
+                  <Link
+                    href={`/blog/${lead.slug}`}
+                    className="after:absolute after:inset-0 after:content-['']"
+                  >
+                    {lead.title}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm text-text-soft">
+                  <time dateTime={lead.date}>{formatFrenchDate(lead.date)}</time>{" "}
+                  · {lead.readingTime} min de lecture
+                </p>
+              </div>
+            </article>
+          ) : null}
         </div>
       </section>
 
@@ -131,24 +191,61 @@ export default function HomePage() {
           <p className="mt-2 max-w-2xl text-text-muted">
             Choisis une piste, pas une overdose de contenus mélangés.
           </p>
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/categories/${c.slug}`}
-                className="group rounded-2xl border border-border-subtle bg-card p-6 transition hover:border-brand/35"
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            {categories.map((c) => {
+              const count = articles.filter((a) => a.category === c.slug).length;
+              return (
+                <Link
+                  key={c.slug}
+                  href={`/categories/${c.slug}`}
+                  className="group flex flex-col rounded-2xl border border-border-subtle bg-card p-4 transition duration-300 hover:-translate-y-1 hover:border-brand/45 hover:bg-white/[0.06] md:p-6"
+                >
+                  <span className="text-[13px] font-medium text-text-muted">
+                    {count} {c.slug === "actualites-ia" ? "actualités" : "guides"}
+                  </span>
+                  <h3 className="font-display mt-2 text-lg font-semibold sm:text-xl tracking-tight text-text transition group-hover:text-brand-bright">
+                    {c.name}
+                  </h3>
+                  <p className="mt-3 hidden flex-1 text-sm leading-relaxed text-text-muted sm:block">
+                    {c.description}
+                  </p>
+                  <span
+                    aria-hidden="true"
+                    className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-brand-bright"
+                  >
+                    Explorer
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </span>
+                </Link>
+              );
+            })}
+            <Link
+              href="/blog"
+              className="group flex flex-col justify-between rounded-2xl border border-brand/35 bg-gradient-to-br from-brand/20 via-bg-secondary to-bg-secondary p-4 transition duration-300 hover:-translate-y-1 hover:border-brand/60 md:p-6"
+            >
+              <span className="text-[13px] font-medium text-text-soft">
+                {articles.length} articles
+              </span>
+              <span>
+                <span className="font-display mt-2 block text-lg font-semibold tracking-tight text-text sm:text-xl">
+                  Tout le blog
+                </span>
+                <span className="mt-3 hidden text-sm leading-relaxed text-text-soft sm:block">
+                  Tous les guides et actualités, du plus récent au plus ancien.
+                </span>
+              </span>
+              <span
+                aria-hidden="true"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-text"
               >
-                <div className="flex items-center gap-2">
-                  <CategoryPill slug={c.slug} label={c.name} asLink={false} />
-                </div>
-                <p className="mt-4 text-sm leading-relaxed text-text-soft">
-                  {c.description}
-                </p>
-                <p className="mt-4 text-sm font-medium text-brand-bright group-hover:text-accent-rose">
-                  Explorer →
-                </p>
-              </Link>
-            ))}
+                Parcourir
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </span>
+            </Link>
           </div>
         </div>
       </section>

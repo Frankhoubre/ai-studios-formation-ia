@@ -4,7 +4,8 @@ import { CategoryNav } from "@/components/CategoryNav";
 import { FormationBand } from "@/components/cta/FormationCta";
 import { Pagination } from "@/components/Pagination";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
-import { getBlogPage, getBlogPageCount } from "@/lib/articles";
+import { ListingHeader } from "@/components/ListingHeader";
+import { getAllArticles, getBlogPage, getBlogPageCount } from "@/lib/articles";
 import {
   absoluteUrl,
   buildArticleItemListJsonLd,
@@ -35,15 +36,22 @@ export function blogListingMetadata(page: number) {
   });
 }
 
-/** Cartes avant le bandeau formation : deux rangées sur grand écran. */
-const CARDS_BEFORE_BAND = 6;
+/**
+ * Cartes avant le bandeau formation. Page 1 : une grande carte et deux
+ * cartes à côté. Pages suivantes : deux rangées de trois.
+ */
+function cardsBeforeBand(page: number): number {
+  return page <= 1 ? 3 : 6;
+}
 
 export function BlogListing({ page }: { page: number }) {
   const articles = getBlogPage(page);
   const total = getBlogPageCount();
   const path = blogPagePath(page);
-  const first = articles.slice(0, CARDS_BEFORE_BAND);
-  const rest = articles.slice(CARDS_BEFORE_BAND);
+  const split = cardsBeforeBand(page);
+  const first = articles.slice(0, split);
+  const rest = articles.slice(split);
+  const count = getAllArticles().length;
 
   const pageJsonLd = buildCollectionPageJsonLd({
     name: page <= 1 ? "Blog AI Studios" : `Blog AI Studios, page ${page}`,
@@ -79,18 +87,18 @@ export function BlogListing({ page }: { page: number }) {
             : [{ label: "Accueil", href: "/" }, { label: "Blog" }]
         }
       />
-      <div className="mt-6 max-w-3xl md:mt-8">
-        <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
-          Blog
-          {page > 1 ? (
-            <span className="text-text-muted">, page {page}</span>
-          ) : null}
-        </h1>
-        <p className="mt-4 text-lg text-text-soft">
-          Des guides longs et concrets pour apprendre l’IA créative sans te
-          perdre. Choisis une catégorie si tu veux suivre une seule piste.
-        </p>
-      </div>
+      <ListingHeader
+        eyebrow={`${count} guides et actualités`}
+        title={
+          <>
+            Blog
+            {page > 1 ? (
+              <span className="text-text-muted">, page {page}</span>
+            ) : null}
+          </>
+        }
+        lead="Des guides longs et concrets pour apprendre l’IA créative sans te perdre. Choisis une catégorie si tu veux suivre une seule piste."
+      />
 
       <div className="mt-8 md:mt-10">
         <CategoryNav />
@@ -98,7 +106,12 @@ export function BlogListing({ page }: { page: number }) {
 
       <div className="mt-8 grid gap-6 md:mt-10 md:grid-cols-2 lg:grid-cols-3">
         {first.map((a, i) => (
-          <ArticleCard key={a.slug} article={a} eager={i < 3} />
+          <ArticleCard
+            key={a.slug}
+            article={a}
+            eager={i < 3}
+            featured={page <= 1 && i === 0}
+          />
         ))}
       </div>
 

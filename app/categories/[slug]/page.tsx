@@ -5,6 +5,7 @@ import { ArticleCompactList } from "@/components/ArticleCompactList";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CategoryNav } from "@/components/CategoryNav";
 import { FormationBand } from "@/components/cta/FormationCta";
+import { ListingHeader } from "@/components/ListingHeader";
 import { SEOJsonLd } from "@/components/SEOJsonLd";
 import { getArticlesByCategory } from "@/lib/articles";
 import { categories, getCategoryBySlug } from "@/lib/categories";
@@ -85,8 +86,8 @@ export default async function CategoryPage({ params }: Props) {
   // Les plus récents en cartes, le reste en liste dense : la catégorie garde
   // tous ses liens sur une seule URL sans devenir une page interminable.
   const cards = posts.slice(0, CARDS);
-  const firstCards = cards.slice(0, 6);
-  const nextCards = cards.slice(6);
+  const firstCards = cards.slice(0, 3);
+  const nextCards = cards.slice(3);
   const older = posts.slice(CARDS);
 
   return (
@@ -100,15 +101,13 @@ export default async function CategoryPage({ params }: Props) {
         ]}
       />
 
-      <header className="mt-6 max-w-3xl md:mt-8">
-        <h1 className="font-display text-4xl font-semibold tracking-tight text-text md:text-5xl">
-          {cat.name}
-        </h1>
-        <p className="mt-4 text-lg text-text-soft">{cat.description}</p>
-        <p className="mt-6 leading-relaxed text-text-muted">
-          {categoryIntro}
-        </p>
-      </header>
+      <ListingHeader
+        eyebrow={`${posts.length} ${slug === "actualites-ia" ? "actualités" : "guides"}`}
+        title={cat.name}
+        lead={cat.description}
+      >
+        <p className="mt-5 leading-relaxed text-text-muted">{categoryIntro}</p>
+      </ListingHeader>
 
       <div className="mt-8 md:mt-10">
         <CategoryNav active={slug} />
@@ -116,7 +115,12 @@ export default async function CategoryPage({ params }: Props) {
 
       <div className="mt-8 grid gap-6 md:mt-10 md:grid-cols-2 lg:grid-cols-3">
         {firstCards.map((a, i) => (
-          <ArticleCard key={a.slug} article={a} eager={i < 3} />
+          <ArticleCard
+            key={a.slug}
+            article={a}
+            eager={i < 3}
+            featured={i === 0 && posts.length >= 3}
+          />
         ))}
       </div>
 
