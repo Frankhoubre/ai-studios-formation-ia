@@ -2042,3 +2042,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-16 : chatgpt-photo-prompts
 - Ligne M4 du plan (intercalée), KW « chat gpt photo ». Commit `96d8531`, IndexNow 251 URLs, prod 200. 3 captures du jour via Playwright Chrome (aide OpenAI images, politiques d'utilisation recadrées sans bandeau, aide contrôles des données ; cookies masqués, jamais acceptés). Passes humanizer + unslop-text (score 4, faux positifs « utilisation ») + antislop-copywriting, scan-anti-ia OK après correction d'une structure « Pour toi, ça ». Hero Nano Banana 2 au second jet (le premier montrait « Departures » sur un panneau).
+
+## 2026-11-17 : traduire-chaine-youtube-ia
+- Ligne 59 du plan, KW « traduire vidéo youtube ia ». Commit `d41a99f` (rebase sur le push actu du jour 946017f, sans conflit), IndexNow 253 URLs. 3 captures du jour de l'Aide YouTube (doublage automatique, fonctionnalités multilingues, titres et descriptions), schéma HowTo 4 étapes. Passes humanizer + unslop-text (score 0) + antislop-copywriting (6 corrections : annonces supprimées, « ton seul juge », « pas seulement », « lot indivisible »), scan-anti-ia OK. Hero Nano Banana 2 au premier jet (113 Ko).
