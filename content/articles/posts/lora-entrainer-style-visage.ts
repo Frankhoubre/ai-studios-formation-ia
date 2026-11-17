@@ -10,7 +10,7 @@ export const loraEntrainerStyleVisage: Article = {
   category: "prompting",
   tags: ["lora", "entraînement", "fine-tuning"],
   date: "2026-07-11",
-  updatedAt: "2026-11-15",
+  updatedAt: "2026-11-17",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/lora-entrainer-style-visage.webp",
@@ -254,6 +254,10 @@ export const loraEntrainerStyleVisage: Article = {
     {
       type: "p",
       text: "Pas de carte graphique assez puissante pour faire tourner ta LoRA ? Higgsfield propose depuis novembre 2026 de louer un GPU piloté depuis un chat : voici [comment marche Higgsfield GPU](/blog/higgsfield-gpu-louer-carte-graphique-ia).",
+    },
+    {
+      type: "p",
+      text: "Tu veux garder ton visage sans entraîner de LoRA ? Phota Labs propose depuis novembre 2026 une « couche de ressemblance » qui s'entraîne sur quelques photos et se pose sur plusieurs modèles : [ce que fait Phota Labs](/blog/phota-labs-photos-ia-ressemblance).",
     },
     {
       type: "h2",
