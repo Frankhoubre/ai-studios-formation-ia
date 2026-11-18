@@ -209,6 +209,7 @@ import { photoshopRelightEclairageIaPhoto } from "@/content/articles/posts/photo
 import { higgsfieldGpuLouerCarteGraphiqueIa } from "@/content/articles/posts/higgsfield-gpu-louer-carte-graphique-ia";
 import { fireflyModelesPartenairesUsageCommercial } from "@/content/articles/posts/firefly-modeles-partenaires-usage-commercial";
 import { photaLabsPhotosIaRessemblance } from "@/content/articles/posts/phota-labs-photos-ia-ressemblance";
+import { toneVoixIaPersuasionJordanBelfort } from "@/content/articles/posts/tone-voix-ia-persuasion-jordan-belfort";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -434,6 +435,7 @@ export const articles: Article[] = [
   higgsfieldGpuLouerCarteGraphiqueIa,
   fireflyModelesPartenairesUsageCommercial,
   photaLabsPhotosIaRessemblance,
+  toneVoixIaPersuasionJordanBelfort,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

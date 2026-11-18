@@ -10,7 +10,7 @@ export const voixOffIaGuide: Article = {
   category: "ia-video",
   tags: ["voix off", "audio", "montage", "YouTube"],
   date: "2026-09-01",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-11-18",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/voix-off-ia-guide.webp",
@@ -195,6 +195,10 @@ export const voixOffIaGuide: Article = {
     {
       type: "p",
       text: "Si ta vidéo existe déjà dans une autre langue, tu quittes la narration pour la synchronisation, et ça se traite dans [le doublage de vidéos avec l'IA](/blog/doublage-traduction-video-ia). Si tu pars d'une page blanche, [la chaîne complète d'une vidéo YouTube](/blog/creer-video-youtube-ia) remet la voix off à sa place dans l'ordre de fabrication. Les valeurs de sonie et leurs tolérances, elles, sont publiées par [l'Union européenne de radio-télévision dans sa recommandation R 128](https://tech.ebu.ch/publications/r128).",
+    },
+    {
+      type: "p",
+      text: "Le ton compte autant que la voix : en novembre 2026, la startup Tone, lancée par Jordan Belfort, vend même une voix IA qui règle l'intonation mot par mot pour convaincre. Ce qu'elle promet et ses limites : [Tone, la voix IA qui veut persuader](/blog/tone-voix-ia-persuasion-jordan-belfort).",
     },
     {
       type: "h2",
