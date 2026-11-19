@@ -2045,3 +2045,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-17 : traduire-chaine-youtube-ia
 - Ligne 59 du plan, KW « traduire vidéo youtube ia ». Commit `d41a99f` (rebase sur le push actu du jour 946017f, sans conflit), IndexNow 253 URLs. 3 captures du jour de l'Aide YouTube (doublage automatique, fonctionnalités multilingues, titres et descriptions), schéma HowTo 4 étapes. Passes humanizer + unslop-text (score 0) + antislop-copywriting (6 corrections : annonces supprimées, « ton seul juge », « pas seulement », « lot indivisible »), scan-anti-ia OK. Hero Nano Banana 2 au premier jet (113 Ko).
+
+## 2026-11-19 : veille-ia-creative-methode
+- Ligne 60 du plan, KW « veille ia ». Commit `db6d2e7`, IndexNow 256 URLs. 5 captures du jour (classement Artificial Analysis, journal Runway, Aide Google Alertes, tarifs Inoreader, rubrique Actualités IA du blog). Passes humanizer + unslop-text (score 4, faux positifs « utilise ») + antislop-copywriting (9 corrections : « Deux réglages changent tout », « Voilà ce que ça donne », chutes en fragments, « X, c'est Y », « Pour un créateur, ça »), scan-anti-ia OK. Hero Nano Banana 2 au premier jet (161 Ko). Pas de run loggé le 18/11.
