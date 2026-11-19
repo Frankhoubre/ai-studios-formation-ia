@@ -17,7 +17,7 @@ export const animatiqueIaMethode: Article = {
     "workflow créatif",
   ],
   date: "2026-09-20",
-  updatedAt: "2026-09-20",
+  updatedAt: "2026-11-19",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/animatique-ia-methode.webp",
@@ -93,6 +93,10 @@ export const animatiqueIaMethode: Article = {
     {
       type: "p",
       text: "En animation, on ne met pas une scène en mouvement avant de l'avoir vue en animatique. [Wikipédia](https://fr.wikipedia.org/wiki/Animatique) la décrit comme l'enregistrement du storyboard synchronisé sur la bande-dialogues : un monteur pose les vignettes du storyboard sur les voix déjà enregistrées, donne une durée à chaque plan et esquisse les mouvements de caméra. Une musique et quelques bruitages temporaires aident à juger le rythme. Le résultat ressemble à un diaporama sonore, et c'est exactement ce qu'on veut : une maquette du film assez complète pour sentir où il traîne, assez pauvre pour qu'on ose la couper.",
+    },
+    {
+      type: "p",
+      text: "Mise à jour du 19 novembre 2026 : un studio d'animation qui grandit vite sur YouTube applique exactement cette règle. Son outil IA exige des croquis et des vignettes avant de générer quoi que ce soit : [The Sentinels, la série animée de Studio Jadu](/blog/studio-jadu-the-sentinels-serie-animee-ia).",
     },
     {
       type: "p",
