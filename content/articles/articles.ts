@@ -211,6 +211,7 @@ import { fireflyModelesPartenairesUsageCommercial } from "@/content/articles/pos
 import { photaLabsPhotosIaRessemblance } from "@/content/articles/posts/phota-labs-photos-ia-ressemblance";
 import { toneVoixIaPersuasionJordanBelfort } from "@/content/articles/posts/tone-voix-ia-persuasion-jordan-belfort";
 import { studioJaduTheSentinelsSerieAnimeeIa } from "@/content/articles/posts/studio-jadu-the-sentinels-serie-animee-ia";
+import { canvaDesactiverIaGenerative } from "./posts/canva-desactiver-ia-generative";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -439,6 +440,7 @@ export const articles: Article[] = [
   photaLabsPhotosIaRessemblance,
   toneVoixIaPersuasionJordanBelfort,
   studioJaduTheSentinelsSerieAnimeeIa,
+  canvaDesactiverIaGenerative,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

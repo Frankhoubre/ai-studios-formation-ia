@@ -10,7 +10,7 @@ export const carrouselInstagramIa: Article = {
   category: "workflow-creatif",
   tags: ["instagram", "carrousel", "réseaux sociaux", "contenu ia", "storytelling"],
   date: "2026-10-11",
-  updatedAt: "2026-10-11",
+  updatedAt: "2026-11-20",
   readingTime: 10,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/carrousel-instagram-ia.webp",
@@ -292,6 +292,10 @@ export const carrouselInstagramIa: Article = {
     {
       type: "p",
       text: "Elle peut, mais je le déconseille pour le corps du texte. Les générateurs d'images gèrent mieux un titre court qu'un paragraphe de trois lignes, et une faute dans une image oblige à tout régénérer. Fais générer des visuels sans texte, puis pose tes phrases dans Canva, Figma ou ton outil de mise en page habituel.",
+    },
+    {
+      type: "p",
+      text: "Mise à jour du 20 novembre 2026 : si ton client refuse l'IA générative, Canva permet maintenant de la couper. Je détaille [ce que le bouton « off » de Canva coupe et ce qu'il garde](/blog/canva-desactiver-ia-generative).",
     },
     {
       type: "h3",
