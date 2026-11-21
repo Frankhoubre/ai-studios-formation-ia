@@ -16,7 +16,7 @@ export const instagramEditsMacMcpAgentsIa: Article = {
   category: "actualites-ia",
   tags: ["Actualités IA", "instagram", "edits", "montage vidéo", "mcp", "agents ia", "mac"],
   date: "2026-11-06",
-  updatedAt: "2026-11-06",
+  updatedAt: "2026-11-21",
   news: true,
   publishedTime: "09:45",
   readingTime: 6,
@@ -96,6 +96,10 @@ export const instagramEditsMacMcpAgentsIa: Article = {
     {
       type: "p",
       text: "Ce qui manque est dit noir sur blanc : pas de version Windows ni Linux, et pas encore de projet partagé entre téléphone et ordinateur. Seuls tes styles audio et texte enregistrés sur mobile te suivent. Instagram dit travailler sur le montage entre appareils, sans donner de date.",
+    },
+    {
+      type: "p",
+      text: "*Mise à jour du 21 novembre 2026 : Google va plus loin avec Gemini pour Mac, qui pilote n'importe quelle appli par son interface. J'explique ce que ça change dans [l'article sur Gemini et l'usage de l'ordinateur](/blog/gemini-mac-agent-applications-creatifs).*",
     },
     { type: "h2", id: "mcp", text: "Le MCP, la vraie nouveauté pour les agents IA" },
     {
