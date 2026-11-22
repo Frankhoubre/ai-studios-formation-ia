@@ -213,6 +213,7 @@ import { toneVoixIaPersuasionJordanBelfort } from "@/content/articles/posts/tone
 import { studioJaduTheSentinelsSerieAnimeeIa } from "@/content/articles/posts/studio-jadu-the-sentinels-serie-animee-ia";
 import { canvaDesactiverIaGenerative } from "./posts/canva-desactiver-ia-generative";
 import { geminiMacAgentApplicationsCreatifs } from "./posts/gemini-mac-agent-applications-creatifs";
+import { etsyIaEntrainementCreationsVendeurs } from "./posts/etsy-ia-entrainement-creations-vendeurs";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -443,6 +444,7 @@ export const articles: Article[] = [
   studioJaduTheSentinelsSerieAnimeeIa,
   canvaDesactiverIaGenerative,
   geminiMacAgentApplicationsCreatifs,
+  etsyIaEntrainementCreationsVendeurs,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

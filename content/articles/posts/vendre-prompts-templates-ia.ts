@@ -17,7 +17,7 @@ export const vendrePromptsTemplatesIa: Article = {
     "gumroad",
   ],
   date: "2026-09-12",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-11-22",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/vendre-prompts-templates-ia.webp",
@@ -76,6 +76,10 @@ export const vendrePromptsTemplatesIa: Article = {
     {
       type: "p",
       text: "Quand tu auras fini de lire, tu connaîtras les commissions exactes de PromptBase, Gumroad, Etsy et du Marketplace de Notion, ce que tu peux protéger et ce que tu ne peux pas, les trois formats de produit qui se vendent encore, et un plan en six semaines pour sortir un premier pack qui ne finisse pas noyé parmi 330 000 autres.",
+    },
+    {
+      type: "p",
+      text: "*Mise à jour du 22 novembre 2026 : si tu vends sur Etsy, ses nouvelles conditions autorisent l'entraînement de l'IA sur le contenu des vendeurs, et Etsy promet une révision. Je fais le point dans [l'article sur Etsy et l'IA](/blog/etsy-ia-entrainement-creations-vendeurs).*",
     },
     {
       type: "p",
