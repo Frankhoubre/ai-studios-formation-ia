@@ -10,7 +10,7 @@ export const musiqueIaDroitsVideos: Article = {
   category: "workflow-creatif",
   tags: ["musique ia", "droits d'auteur", "suno", "youtube", "workflow"],
   date: "2026-09-09",
-  updatedAt: "2026-09-09",
+  updatedAt: "2026-11-23",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/musique-ia-droits-videos.webp",
@@ -68,6 +68,10 @@ export const musiqueIaDroitsVideos: Article = {
     {
       type: "p",
       text: "Ce qui suit te donne la réponse pour chacune de tes vidéos, en quatre vérifications qui prennent deux minutes. Avec un tableau de ce que chaque outil accorde vraiment, et le petit dossier à garder au cas où quelqu'un te pose la question un an plus tard.",
+    },
+    {
+      type: "p",
+      text: "*Mise à jour du 23 novembre 2026 : The Binding of Isaac vient d'être noyé sous les avis négatifs pour une musique Suno non déclarée. Je raconte ce qui s'est passé et ce que ça t'apprend dans [l'article sur la musique IA cachée dans Isaac](/blog/binding-of-isaac-musique-ia-suno).*",
     },
     {
       type: "p",

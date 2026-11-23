@@ -214,6 +214,7 @@ import { studioJaduTheSentinelsSerieAnimeeIa } from "@/content/articles/posts/st
 import { canvaDesactiverIaGenerative } from "./posts/canva-desactiver-ia-generative";
 import { geminiMacAgentApplicationsCreatifs } from "./posts/gemini-mac-agent-applications-creatifs";
 import { etsyIaEntrainementCreationsVendeurs } from "./posts/etsy-ia-entrainement-creations-vendeurs";
+import { bindingOfIsaacMusiqueIaSuno } from "./posts/binding-of-isaac-musique-ia-suno";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -445,6 +446,7 @@ export const articles: Article[] = [
   canvaDesactiverIaGenerative,
   geminiMacAgentApplicationsCreatifs,
   etsyIaEntrainementCreationsVendeurs,
+  bindingOfIsaacMusiqueIaSuno,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,
