@@ -51,7 +51,7 @@ export const deepfakeCreateurDroit: Article = {
   category: "business-creatif",
   tags: ["deepfake", "droit", "AI Act", "consentement", "éthique"],
   date: "2026-11-09",
-  updatedAt: "2026-11-09",
+  updatedAt: "2026-11-24",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/deepfake-createur-droit.webp",
@@ -147,6 +147,10 @@ export const deepfakeCreateurDroit: Article = {
     {
       type: "p",
       text: "J'ai détaillé la répartition fournisseur et déployeur, et les étiquettes des plateformes, dans mon guide sur [la boîte à outils du community manager IA](/blog/ia-community-manager). La mention que tu poses pour l'AI Act est aussi celle qui t'aide face à l'article 226-8.",
+    },
+    {
+      type: "p",
+      text: "Aux États-Unis, la question remonte jusqu'aux éditeurs d'outils : l'Oregon et la Virginie poursuivent X et xAI pour les images sexualisées créées sans consentement avec Grok Imagine. Je résume [ce que disent ces plaintes et ce qu'elles changent pour toi](/blog/grok-imagine-plainte-deepfakes-oregon-virginie).",
     },
     { type: "h2", id: "practical-workflow", text: "Six projets de créateur passés au crible" },
     {
