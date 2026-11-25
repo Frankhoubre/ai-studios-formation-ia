@@ -216,6 +216,7 @@ import { geminiMacAgentApplicationsCreatifs } from "./posts/gemini-mac-agent-app
 import { etsyIaEntrainementCreationsVendeurs } from "./posts/etsy-ia-entrainement-creations-vendeurs";
 import { bindingOfIsaacMusiqueIaSuno } from "./posts/binding-of-isaac-musique-ia-suno";
 import { grokImaginePlainteDeepfakesOregonVirginie } from "./posts/grok-imagine-plainte-deepfakes-oregon-virginie";
+import { geminiHistoriqueSansEntrainementIa } from "./posts/gemini-historique-sans-entrainement-ia";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -450,6 +451,7 @@ export const articles: Article[] = [
   etsyIaEntrainementCreationsVendeurs,
   bindingOfIsaacMusiqueIaSuno,
   grokImaginePlainteDeepfakesOregonVirginie,
+  geminiHistoriqueSansEntrainementIa,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

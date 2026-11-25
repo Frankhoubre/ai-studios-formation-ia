@@ -10,7 +10,7 @@ export const geminiImagesPersonnaliseesDonneesGoogle: Article = {
   category: "ia-image",
   tags: ["gemini", "actualité", "google", "images ia", "vie privée"],
   date: "2026-07-06",
-  updatedAt: "2026-07-06",
+  updatedAt: "2026-11-25",
   readingTime: 7,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/gemini-images-personnalisees-donnees-google.webp",
@@ -106,6 +106,10 @@ export const geminiImagesPersonnaliseesDonneesGoogle: Article = {
     {
       type: "p",
       text: "> Pro Tip : avant d'activer une fonction qui lit tes données, pose-toi une seule question, quelles données pour quel gain. Si le gain est un gadget et la donnée sensible, coupe. Si le gain est réel et la donnée déjà partagée, vas-y. Un opt-in bien pesé vaut mieux qu'un opt-in par curiosité.",
+    },
+    {
+      type: "p",
+      text: "Mise à jour du 25 novembre 2026 : Gemini sépare désormais l'historique et l'entraînement des modèles. Je t'explique [comment garder ton historique sans entraîner l'IA](/blog/gemini-historique-sans-entrainement-ia).",
     },
     {
       type: "h2",
