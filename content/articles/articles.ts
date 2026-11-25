@@ -223,6 +223,7 @@ import { ideesScenarioCourtMetrage } from "@/content/articles/posts/idees-scenar
 import { calendrierContenuIa } from "@/content/articles/posts/calendrier-contenu-ia";
 import { chatgptPhotoPrompts } from "@/content/articles/posts/chatgpt-photo-prompts";
 import { traduireChaineYoutubeIa } from "@/content/articles/posts/traduire-chaine-youtube-ia";
+import { videoGenerativeDefinition } from "@/content/articles/posts/video-generative-definition";
 import { veilleIaCreativeMethode } from "@/content/articles/posts/veille-ia-creative-methode";
 
 const beginnerArticles = JSON.parse(
@@ -457,5 +458,6 @@ export const articles: Article[] = [
   calendrierContenuIa,
   chatgptPhotoPrompts,
   traduireChaineYoutubeIa,
+  videoGenerativeDefinition,
   veilleIaCreativeMethode,
 ];
