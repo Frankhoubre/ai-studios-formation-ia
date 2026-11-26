@@ -2051,3 +2051,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-25 : video-generative-definition
 - Ligne 61 du plan, KW « vidéo générative ». Commit `d7b838e`, IndexNow 264 URLs (second essai, le premier en erreur réseau). 4 captures du jour (OQLF, NVIDIA Video LDM, aide Gemini, aide YouTube) + 1 simulation de bruit faite sur une vraie image de Lost Garden (ep1_03m38s.jpg). Passes humanizer + unslop-text (score 3, faux positifs) + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 au premier jet (107 Ko). Aucun article du plan du 20 au 24/11 ; un essai du 20/11 sur ce sujet n'avait laissé que des captures, refaites ou supprimées.
+
+## 2026-11-26 : comment-ia-genere-image
+- Ligne 62 du plan, KW « comment fonctionne ia image ». Commit `0feb7b7`, IndexNow 265 URLs. 4 captures du jour (fiche HF Stable Diffusion 1.4, arXiv LDM, arXiv CFG, addendum OpenAI) + 1 schéma maison HTML capturé (pipeline en 4 étapes). Passes humanizer + unslop-text (score 6, faux positifs « 5 steps ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (88 Ko, premier jet) : chambre noire à Marseille.
