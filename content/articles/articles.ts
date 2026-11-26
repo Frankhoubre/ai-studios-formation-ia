@@ -226,6 +226,7 @@ import { chatgptPhotoPrompts } from "@/content/articles/posts/chatgpt-photo-prom
 import { traduireChaineYoutubeIa } from "@/content/articles/posts/traduire-chaine-youtube-ia";
 import { videoGenerativeDefinition } from "@/content/articles/posts/video-generative-definition";
 import { veilleIaCreativeMethode } from "@/content/articles/posts/veille-ia-creative-methode";
+import { commentIaGenereImage } from "@/content/articles/posts/comment-ia-genere-image";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -462,4 +463,5 @@ export const articles: Article[] = [
   traduireChaineYoutubeIa,
   videoGenerativeDefinition,
   veilleIaCreativeMethode,
+  commentIaGenereImage,
 ];
