@@ -10,7 +10,7 @@ export const scriptVideoChatgpt: Article = {
   category: "storytelling",
   tags: ["ChatGPT", "script vidéo", "YouTube", "écriture"],
   date: "2026-08-29",
-  updatedAt: "2026-08-29",
+  updatedAt: "2026-11-26",
   readingTime: 12,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/script-video-chatgpt.webp",
@@ -294,6 +294,10 @@ export const scriptVideoChatgpt: Article = {
     {
       type: "p",
       text: "Symptôme : au montage, quarante secondes de texte n'ont aucune image en face et tu meubles avec des plans de coupe qui ne veulent rien dire. Fix concret : deux colonnes dès la rédaction, le texte à gauche, le plan prévu à droite. Toute ligne qui reste sans plan à droite est raccourcie ou coupée. C'est aussi ce document qui devient ton plan de tournage.",
+    },
+    {
+      type: "p",
+      text: "Mise à jour du 26 novembre 2026 : à partir de décembre, Chat, Work et Codex partagent une seule réserve d'usage sur les offres payantes de ChatGPT. Si tu écris beaucoup de scripts, regarde [comment organiser ton quota](/blog/chatgpt-chat-work-limites-partagees).",
     },
     {
       type: "h2",
