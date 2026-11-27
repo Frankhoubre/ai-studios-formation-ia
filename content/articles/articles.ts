@@ -229,6 +229,7 @@ import { traduireChaineYoutubeIa } from "@/content/articles/posts/traduire-chain
 import { videoGenerativeDefinition } from "@/content/articles/posts/video-generative-definition";
 import { veilleIaCreativeMethode } from "@/content/articles/posts/veille-ia-creative-methode";
 import { commentIaGenereImage } from "@/content/articles/posts/comment-ia-genere-image";
+import { declarerContenuIaPlateformes } from "@/content/articles/posts/declarer-contenu-ia-plateformes";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -468,4 +469,5 @@ export const articles: Article[] = [
   videoGenerativeDefinition,
   veilleIaCreativeMethode,
   commentIaGenereImage,
+  declarerContenuIaPlateformes,
 ];
