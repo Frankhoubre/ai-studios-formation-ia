@@ -1,0 +1,2059 @@
+# PUBLISH_LOG.md
+
+Journal des publications et des push. Une ligne par commit/déploiement réel.
+Ne JAMAIS écrire "publié" si le push/déploiement n'a pas réussi.
+
+Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
+
+---
+
+## 2026-09-03
+
+- `2026-09-03 | RUN 30J J18 | main direct | 3ec67b2 | 1 article | 1 evergreen (use case métier) | poussé sur main`
+  - Article : `photo-culinaire-ia-restaurant`, hero Nano Banana 2 (113 Ko).
+  - 2 captures d'écran réelles dans le corps : page « Conseils pour publier des contenus multimédias
+    sur Maps » du centre d'aide Google (accordéons Contenu et formats + Ajustements stylistiques
+    dépliés via le fragment `#zippy=`, 151 Ko) et page « Store submitted menu photo guidelines » du
+    centre d'aide Uber commerçants (90 Ko), capturées le 2026-09-03.
+  - `scripts/capture-screenshot.py` toujours inutilisable sur cette machine (playwright absent) :
+    Chrome headless + Pillow comme en J17, script jetable dans le scratchpad. À noter, Chrome refuse
+    d'écrire le PNG dans le dossier scratchpad de la session (« Accès refusé »), il faut passer par un
+    dossier temporaire simple et `--no-sandbox --user-data-dir`.
+  - Gates : audit.mjs OK (135 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge avant `git add`, comme prévu).
+  - IndexNow : 173 URLs soumises (HTTP 200).
+
+## 2026-09-02
+
+- `2026-09-02 | RUN 30J J17 | main direct | a2c8af7 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - Article : `decouper-video-longue-shorts-ia`, hero Nano Banana 2 (103 Ko).
+  - Premier article du run avec 2 captures d'écran réelles dans le corps : section « Contenu revendiqué
+    par un tiers dans un Short de plus d'une minute » du centre d'aide YouTube, et page « How Do Credits
+    Work? » du centre d'aide Opus Clip (88 Ko et 63 Ko, capturées le 2026-09-02).
+  - `scripts/capture-screenshot.py` inutilisable sur cette machine (playwright, sips et cwebp absents) :
+    captures faites avec Chrome headless (`--headless=new --screenshot`) + Pillow pour le recadrage et
+    le WebP, script jetable dans le scratchpad, rien ajouté au repo.
+  - Gates : audit.mjs OK (134 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage comme d'habitude : fichiers pas encore stagés, vert après git add).
+  - IndexNow : 172 URLs soumises (HTTP 200).
+
+## 2026-09-01
+
+- `2026-09-01 | RUN 30J J16 | main direct | 934f594 | 1 article | 1 evergreen (guide) | poussé sur main`
+  - Article : `voix-off-ia-guide`, hero Nano Banana 2 (95 Ko).
+  - Run du 31/08 manqué (aucune ligne au journal), reprise directe sur J16 sans rattrapage.
+  - Gates : audit.mjs OK (133 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage comme d'habitude : fichiers pas encore stagés, vert après git add).
+  - IndexNow : 171 URLs soumises (HTTP 200).
+
+## 2026-08-30
+
+- `2026-08-30 | RUN 30J J15 | main direct | f3df06c | 1 article | 1 evergreen (guide) | poussé sur main`
+  - Article : `influenceur-virtuel-ia`, hero Nano Banana 2 (63 Ko).
+  - Gates : audit.mjs OK (132 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK
+    (rouge au premier passage : fichiers pas encore stagés, corrigé par git add puis revert au vert).
+  - IndexNow : 170 URLs soumises (HTTP 200).
+
+## 2026-08-29
+
+- `2026-08-29 | RUN 30J J14 | main direct | d713111 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - Article : `script-video-chatgpt`, hero Nano Banana 2 (92 Ko).
+  - Gates : audit.mjs OK (131 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 169 URLs soumises (HTTP 200).
+
+## 2026-08-28
+
+- `2026-08-28 | RUN 30J J13 | main direct | a87c97b | 1 article | 1 evergreen (prompt pack) | poussé sur main`
+  - Article : `prompts-kling-exemples`, hero Nano Banana 2 (63 Ko).
+  - Gates : audit.mjs OK (130 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 168 URLs soumises (HTTP 200).
+
+## 2026-08-27
+
+- `2026-08-27 | RUN 30J J12 | main direct | 80cc672 | 1 article | 1 evergreen (comparatif) | poussé sur main`
+  - Article : `kling-vs-runway-comparatif`, hero Nano Banana 2 (131 Ko).
+  - Gates : audit.mjs OK (129 articles, 0 erreur, 0 avertissement), lint OK, build OK, check-registry.py OK.
+  - IndexNow : 167 URLs soumises (HTTP 200).
+
+## 2026-08-26
+
+- `2026-08-26 | RUN 30J J11 | main direct | 05e329b | 1 article | 1 evergreen (business) | poussé sur main`
+- **Article** : Vendre des vidéos IA : offres, prix et débouchés
+  - Slug : `vendre-videos-ia` · Catégorie : Business créatif · KW : vendre des vidéos ia
+  - Anti-cannibalisation J11 respectée : `agence-video-ia-lancer` (J2) garde la
+    structure et le passage à l'agence, `fixer-prix-creation-ia-grille` garde la
+    méthode de tarification (elle ne contient aucun montant), `gagner-argent-ia-creative-modeles`
+    garde le panorama tous métiers. Cet article est 100 % vidéo et apporte ce que
+    les trois autres n'ont pas : un catalogue de six livrables formulés côté client,
+    des montants en euros, et la question des canaux de vente.
+  - **Angle différenciant** : l'écart de prix entre canaux, sourcé. Codeur affiche
+    135 € de TJM moyen pour un motion designer en août 2026 (84 € débutant, 210 €
+    senior, budget moyen de mission 581 €), le baromètre Malt joue dans une gamme
+    trois fois supérieure sur le même intitulé. Message de l'article : le canal de
+    vente pèse plus lourd sur la facture que le niveau technique.
+  - Vérification des sources : la page Codeur a été lue directement (WebFetch OK,
+    chiffres exacts repris tels quels). La page Malt renvoie un **403 en fetch
+    direct**, seul l'ordre de grandeur issu de deux recherches concordantes est
+    donc utilisé dans l'intro ("autour de 420 euros"), et le paragraphe détaillé
+    ne cite aucun chiffre Malt précis, juste le lien. À refaire pareil la
+    prochaine fois qu'un baromètre bloque le crawl.
+  - Adobe Stock : dépôt de vidéos génératives autorisé, case "Created using
+    generative AI" obligatoire + autorisation pour toute personne identifiable
+    (helpx.adobe.com, consignes de dépôt). Sert de débouché secondaire dans la FAQ.
+  - Passes d'humanisation appliquées (humanizer → unslop-text → antislop-copywriting) :
+    - 9 parallélismes négatifs ("ce n'est pas X, c'est Y") supprimés au premier
+      passage, dont 3 en cellules de tableau qui finissaient toutes pareil.
+    - 3 signposting retirés ("Une donnée pour poser le décor", "La conséquence
+      pratique est brutale", "Cet article prend les trois questions dans l'ordre").
+    - **Un chiffre inventé attrapé au 3e passage** : le Pro Tip affirmait que
+      l'offre du milieu "se vend deux fois plus souvent". Aucune source, supprimé.
+      Même correctif que J10 (le "80 %"). Ce type de statistique de persuasion est
+      le piège récurrent des articles business, à traquer systématiquement.
+    - Fourchettes de prix explicitement présentées comme des observations
+      ("les fourchettes que j'observe", "ordres de grandeur, pas un barème"),
+      jamais comme une statistique de marché.
+    - Grappe de "trois" (10 occurrences, dont 3 dans les 3 paragraphes d'intro)
+      diluée. Nouveau tell FR à ajouter à la grille : le mot-nombre qui se répète.
+    - Scanner unslop : 0 finding sur 2 224 mots (article FR, donc non probant,
+      passe structurelle manuelle faite en plus).
+  - Hero Nano Banana 2, motif : bistrot de quartier après le service, chaises
+    retournées sur les tables, lampes tungstène chaudes contre une vitrine de rue
+    bleu nuit, le vidéaste et le patron attablés autour d'une tablette qui montre
+    une vidéo verticale du plat, devis imprimé et stylo posés à côté. 87 Ko.
+    Distinct des 5 derniers heros (J10 salle de répétition matin, J9 cabine voix
+    off jour, J8 coin de bureau fin d'après-midi, J7 salle de réunion plein jour,
+    J6 bureau de nuit avec moniteur) : premier hero du run situé chez le client,
+    et premier à montrer le moment de la vente plutôt que celui de la production.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (128 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK, check-registry.py OK. IndexNow : 166 URLs soumises (HTTP 200).
+
+---
+
+## 2026-08-25
+
+- `2026-08-25 | RUN 30J J10 | main direct | d77af31 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : Suno AI : le guide complet et les nouvelles limites
+  - Slug : `suno-guide-complet` · Catégorie : IA vidéo · KW : suno ai
+  - Anti-cannibalisation J10 respectée : `suno-musique-pub-courte` garde
+    « musique de pub » (workflow de production courte),
+    `elevenlabs-music-v2-stable-audio-suno` garde le comparatif des moteurs. Cet
+    article prend le tour du produit (modèles, offres, crédits, Studio, droits).
+    Les trois sont liés dans le corps du texte.
+  - **Angle différenciant, à valeur de scoop FR** : les quotas de téléchargement
+    Suno entrent en vigueur le **3 septembre 2026**, soit 9 jours après
+    publication. 7 téléchargements à vie sur le gratuit, 20/mois sur Pro,
+    60/mois sur Premier, applicables **rétroactivement à toute la bibliothèque**.
+    Source : help.suno.com article 13614785. Aucun contenu FR ne couvrait ça.
+  - Chiffres pris sur les pages officielles uniquement, après avoir constaté que
+    les blogs SEO tiers se contredisent sur le coût d'une génération (5 ou 10
+    crédits selon les sources). Parade retenue : ne pas trancher à leur place mais
+    dériver le coût des chiffres officiels du centre d'aide (50 crédits/jour = 10
+    morceaux, 2 500 = 500 morceaux, 10 000 = 2 000 morceaux, donc ~5 crédits le
+    morceau et ~10 la génération puisqu'elle rend deux variantes). Ce calcul est
+    montré au lecteur, il n'est pas assené.
+  - Point de vigilance utile pour les prochains guides outils : chez Suno,
+    **propriété ≠ protection**. Suno documente lui-même qu'une musique 100 % IA
+    peut ne pas remplir les conditions du droit d'auteur et que certains
+    distributeurs refusent les œuvres non protégées. Distinction reprise telle
+    quelle, sans extrapoler sur le droit français.
+  - Passes anti-slop : humanizer, unslop-text, antislop-copywriting. Scanner
+    unslop final = 0 finding, densité 0,0/1k. Le seul hit du premier passage
+    (« Nuance » pris pour le meme anglophone) était un faux positif français,
+    reformulé quand même parce que la tournure était raide.
+  - Passe structurelle FR (un vert au scanner ne prouve rien sur du français).
+    **Tells trouvés et corrigés** : (1) parallélisme négatif déguisé dans le P3
+    d'intro (« la qualité n'est plus le sujet… ce qui compte maintenant, c'est… ») ;
+    (2) signposting « et c'est là que ça se complique » + scaffolding « La
+    propriété d'abord… La protection ensuite… », remplacés par les faits
+    directement ; (3) première ligne de section qui restait la reformulation de
+    son h3 (« Trois offres, une grille simple, et un piège classique ») ;
+    (4) passif sans acteur (« chaque sortie de fichier est décomptée » → « Suno
+    décompte ») ; (5) aphorisme creux sur les ayants droit, remplacé par la cause
+    concrète. **Rupture par rapport à J8/J9** : les deux ouvertures précédentes se
+    recopiaient (amorce « Tu [verbe] », puis scène au présent). Ici l'attaque est
+    factuelle et datée (le 3 septembre + trois chiffres). Le titre a aussi été
+    écarté du gabarit « X : le guide complet en français » de J9, qui allait
+    devenir une série repérable.
+  - **Chiffre inventé attrapé à la relecture** : un « se joue à 80 % dans le champ
+    de style » s'était glissé dans le premier jet. Aucune source, supprimé.
+    Réflexe à garder : les pourcentages d'autorité sont le type de faux fait qui
+    passe le mieux les scanners.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 108 Ko. Motif : **salle de répétition
+    dans un vieil immeuble au matin**, piano droit contre un mur de plâtre
+    écalé, basse sur pied, portable sur un tabouret, structure du morceau
+    écrite à la main scotchée sur le piano, contre-plongée au ras du sol.
+    Anti-répétition vérifiée sur les 5 derniers heros : J9 cabine de voix off vue
+    de la régie, J8 coin de bureau bricolé, J7 salle de réunion vitrée, J6 et J5
+    bureaux avec écrans. Aucun écran d'ordinateur dominant ici, pas de studio
+    moderne, lumière naturelle seule.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (127 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK (page `/blog/suno-guide-complet` prérendue), check-registry.py OK
+    après `git add`. IndexNow : 165 URLs, HTTP 200.
+
+## 2026-08-24
+
+- `2026-08-24 | RUN 30J J9 | main direct | fc5ada0 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : ElevenLabs : le guide complet en français
+  - Slug : `elevenlabs-guide-complet` · Catégorie : IA vidéo · KW : elevenlabs français
+  - **Run repris en cours de route** : un run antérieur du même jour (14:05) avait
+    écrit l'article, généré le hero et modifié `articles.ts`, puis s'était arrêté
+    sans committer. Rien n'était loggé pour le 24/08, le working tree contenait
+    exactement les 3 fichiers du jour et rien d'autre : travail repris, vérifié,
+    puis publié. Réflexe à garder : un `git status` sale au démarrage n'est pas
+    forcément une collision autopilote, regarder les dates et le contenu avant de
+    jeter quoi que ce soit.
+  - Anti-cannibalisation J9 respectée : `elevenlabs-voiceover-pub` garde « voix off
+    pub », cet article prend le tour complet du produit (TTS, clonage, SFX, dubbing,
+    transcription). Les deux sont liés dans le corps du texte.
+  - Chiffres pris sur les pages officielles : tableau des offres (Free 10 000
+    crédits jusqu'à Business 6 M), tableau des prix par fonction repris de
+    `elevenlabs.io/pricing/api`, durées de clonage de la doc. Point de vigilance
+    utile pour les prochains guides outils : la licence commerciale démarre à
+    Starter, le palier Free ne couvre que les essais personnels.
+  - Passes anti-slop : humanizer, unslop-text, antislop-copywriting. Scanner
+    unslop = score 1, densité 0,5/1k, unique hit « Robust » qui est le **nom
+    officiel d'un réglage de stabilité ElevenLabs**, donc faux positif conservé.
+  - Passe structurelle FR (le scanner anglophone ne prouve rien sur du français) :
+    0 parallélisme négatif, 0 signposting, 0 preuve sociale vague. **Un vrai tell
+    trouvé et corrigé** : l'ouverture recopiait la forme de J8 (même amorce en
+    « Tu [verbe] », puis un second paragraphe en liste de quatre propositions
+    interrogatives « quel / combien / comment / à quel moment »). Réécrit en
+    attaque de scène et en groupes nominaux. À surveiller chaque jour : c'est le
+    deuxième run d'affilée où l'intro est le point qui se recopie.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 64 Ko, généré par le run précédent et
+    validé ici. Motif : cabine de voix off vue depuis la régie, comédienne au micro
+    derrière la vitre, console de mixage au premier plan, lumière du jour. Distinct
+    de J8 (coin de bureau bricolé, smartphone sur trépied) et de J7 (salle de
+    réunion vitrée).
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (126 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK (page `/blog/elevenlabs-guide-complet` prérendue), check-registry.py
+    OK après `git add`. IndexNow : 164 URLs, HTTP 200.
+
+## 2026-08-21
+
+- `2026-08-21 | RUN 30J J8 | main direct | 3231dd3 | 1 article | 1 evergreen (guide outil) | poussé sur main`
+- **Article** : HeyGen : le guide complet des avatars vidéo IA
+  - Slug : `heygen-guide-avatars` · Catégorie : IA vidéo · KW : heygen
+  - Faits sourcés sur les pages officielles HeyGen, pas sur les blogs tiers : les
+    comparatifs SEO trouvés en recherche donnaient Creator à 200 crédits, la page
+    officielle en annonce 600 et Pro à 49 $ (et non 99 $). Vérifier chaque chiffre
+    à la source reste indispensable sur ce sujet.
+  - Coûts en crédits repris du centre d'aide (article 15126059) : Avatar III 4 à 7
+    crédits/min, Avatar IV 16 (look photo) et 31 (look vidéo), Avatar V 48.
+  - Passes anti-slop appliquées : humanizer, unslop-text (score 2, densité 0,7/1k,
+    2 faux positifs sur le mot français « utilise »), antislop-copywriting. Cette
+    dernière passe a rattrapé une incohérence de calcul (« se paie quatre fois »
+    alors que 48/16 = 3) et deux ouvertures recopiées de l'article J7.
+  - Hero : Nano Banana 2 (Vercel AI Gateway), 75 Ko. Motif : coin de bureau
+    transformé en poste d'enregistrement, chaise vide face à un smartphone sur
+    trépied, fond gris agrafé, fin d'après-midi. Rupture voulue avec les heros
+    récents, tous des bureaux avec écrans.
+  - CTA : formation IA gratuite. Aucune mention d'essai 7 jours.
+  - Gates : audit.mjs OK (125 articles, 0 erreur, 0 avertissement), lint OK,
+    build OK, check-registry.py OK. IndexNow : 162 URLs, HTTP 200.
+  - Passe structurelle FR ajoutée après coup (commit `5cf78b9`), sur signalement
+    d'une session sœur : le scanner unslop est anglophone, un score bas ne prouve
+    rien sur du français. Corrigés à la main 2 parallélismes négatifs (« ce n'est
+    pas X, c'est Y »), dont un que j'avais moi-même introduit en corrigeant la
+    passe précédente, plus une première ligne de section qui répétait son titre.
+    Méthode : grep des négations directement dans le .ts, pas sur l'extrait .md.
+    Piège rencontré : un grep contenant une apostrophe droite est mangé par le
+    shell et renvoie un faux négatif, écrire le motif en `n.est pas`.
+
+## 2026-08-19
+
+- `2026-08-19 | RUN 30J J7 | main direct | c6ebdf0 | 1 article | 1 evergreen (use cases B2B) | poussé sur main`
+- **Article** : Vidéo IA en entreprise : 7 usages vraiment rentables
+  - Slug : `video-ia-pour-entreprise` · Catégorie : Business créatif
+  - Mot-clé principal : vidéo ia entreprise (secondaires : vidéo corporate ia, vidéo institutionnelle ia, production vidéo interne ia)
+  - Angle : distinction prestige (film de marque, à laisser au tournage) vs flux
+    (formation, produit, social, RH, support, avant-vente, multilingue). Les 7 usages
+    avec ce qu'ils remplacent et le signal de rentabilité.
+  - Source d'autorité : FAQ de la Commission européenne sur les obligations de
+    transparence de l'article 50 du règlement IA, applicables depuis le 02/08/2026.
+  - Liens internes : video-ia-guide-complet, photos-produit-ia-shooting,
+    video-courte-ia-tiktok-reels-shorts, sous-titres-automatiques-ia-video,
+    agence-video-ia-lancer, avatars-ia-ugc-presentateur-virtuel.
+  - Hero : Nano Banana 2 via Vercel AI Gateway, 64 Ko. Motif : réunion d'équipe en
+    salle vitrée, lumière du jour, storyboards imprimés. Choisi pour rompre avec les
+    trois heros précédents (bureaux de nuit).
+  - CTA : formation IA gratuite (aucune mention d'essai limité).
+  - Gates : audit.mjs OK (124 articles, 0 erreur, 0 avertissement), lint OK, build OK,
+    check-registry.py OK. IndexNow : 161 URLs soumises (HTTP 200).
+
+## 2026-08-17
+
+- `2026-08-17 | RUN 30J J6 | main direct | efcade7 | 1 article | 1 evergreen (prompt pack) | poussé sur main`
+  - `prompt-veo-3-exemples` (Prompting, prompt pack, 25 prompts Veo 3 classés par usage : dialogue, ambiance sonore, physique, plans cinématiques, formats sociaux, KW "prompt veo 3")
+  - Angle du plan respecté : satellite de prompts-video-ia-50-exemples spécifique Veo (audio natif, dialogue, physique). Le guide veo-3-generer-videos-ia garde le KW marque "veo 3".
+  - Vérification web : la version courante est Veo 3.1 (annonce Google du 15/10/2025 : images de référence, first/last frame, extension de scène, mêmes règles de prompt). Article écrit "Veo 3 et 3.1", pas de réorientation nécessaire. Faits repris de J3 (8 s, son natif) cohérents.
+  - Hero **Nano Banana 2** via Vercel AI Gateway (`scripts/generate-hero-nb2.mjs`, premier run sans Higgsfield) : webp 16:9 131 Ko, coût affiché 0,139 $.
+  - Maillage : liens internes vers prompts-video-ia-50-exemples, veo-3-generer-videos-ia, decrire-lumiere-prompt-ia, veo-3-vs-sora-comparatif. Lien externe developers.googleblog.com (annonce Veo 3.1). CTA formation gratuite.
+  - Audit 122 articles 0 err / 0 warn, lint et build verts. check-registry KO avant commit (fichier pas encore suivi), OK après add.
+  - Le commit inclut aussi la migration hero laissée en attente dans l'arbre de travail : generate-hero.py réécrit NB2, notes CLAUDE.md et RUN_30J.md.
+  - Sixième article du run 30 jours. Runs du 04 au 16/08 manqués (tâche planifiée disparue, recréée ce jour).
+
+## 2026-08-03
+
+- `2026-08-03 | RUN 30J J5 | main direct | 0869427 | 1 article | 1 evergreen (tutoriel) | poussé sur main`
+  - `creer-video-youtube-ia` (IA vidéo, tutoriel A à Z, script → voix off → visuels → montage → miniature, KW "créer vidéo youtube ia")
+  - Angle imposé par le plan : chaîne complète étape par étape avec point de vérification à chaque maillon (pas un outil miracle, un enchaînement précis).
+  - Note de rattrapage : la mémoire J4 (chaine-youtube-automatisee-ia, 2026-07-29) n'avait pas été committée à la fin du run précédent ; commit de rattrapage `43c0ce9` fait en tout début de ce run avant de démarrer J5.
+  - Lien externe support.google.com/youtube/answer/72431 (spécifications techniques miniature YouTube). Pas de lien vers `elevenlabs-guide-complet` (J9, pas encore publié) : redirigé vers `elevenlabs-voiceover-pub` existant avec ancre honnête.
+  - Hero Higgsfield soul_2 16:9 (bureau de créateur la nuit, laptop + smartphone + casque) converti webp 1600px (85 Ko). Audit 121 articles 0 err / 0 warn, lint et build verts, check-registry OK.
+  - Maillage : liens internes vers formation-ia-video, monter-video-ia-capcut-davinci, chaine-youtube-automatisee-ia, elevenlabs-voiceover-pub.
+  - Cinquième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (159 URLs, HTTP 200).
+
+## 2026-07-29
+
+- `2026-07-29 | RUN 30J J4 | main direct | b43f934 | 1 article | 1 evergreen (business/stratégie) | poussé sur main`
+  - `chaine-youtube-automatisee-ia` (Business créatif, evergreen, la vérité sur la chaîne YouTube faceless automatisée à l'IA, KW "chaîne youtube automatisée ia")
+  - Angle honnête anti-get-rich-quick imposé par le plan : ce qui marche, ce qui sature, où placer l'automatisation sans se faire démonétiser. Pas de revenu passif promis, pas de chiffres inventés.
+  - Fait clé vérifié par recherche web : YouTube a précisé sa politique de monétisation le 15/07/2025 en renommant "contenu répétitif" en "contenu inauthentique" (contenu produit en masse, sans apport d'auteur). L'IA reste monétisable si elle enrichit un contenu original. Source officielle liée : support.google.com/youtube/answer/1311392 (politiques de monétisation). Divulgation du contenu synthétique dans YouTube Studio mentionnée sans inventer de seuils.
+  - Hero Higgsfield soul_2 16:9 (bureau de créateur la nuit, timeline de montage) converti webp 1600px (70 Ko). Audit 120 articles 0 err / 0 warn, lint et build verts.
+  - Maillage : liens internes vers gagner-argent-ia-creative-modeles, video-courte-ia-tiktok-reels-shorts, sous-titres-automatiques-ia-video, automatiser-production-contenu-ia, video-ia-guide-complet, meilleurs-outils-ia-video. Lien externe support.google.com (YouTube).
+  - Quatrième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (158 URLs, HTTP 200).
+
+## 2026-07-23
+
+- `2026-07-23 | RUN 30J J3 | main direct | 2c1019f | 1 article | 1 evergreen (comparatif) | poussé sur main`
+  - `veo-3-vs-sora-comparatif` (IA vidéo, evergreen, comparatif Veo 3.1 contre Sora, KW "veo vs sora")
+  - Angle imposé par les faits : OpenAI a fermé l'app et le site Sora le 26/04/2026, l'API Sora 2 s'arrête le 24/09/2026. Le comparatif devient donc "le duel est fini + par quoi remplacer Sora", vérifié sur la page d'aide officielle OpenAI, confirmé par CNN, VentureBeat et the-decoder.
+  - Faits Veo vérifiés sur deepmind.google/models/veo : Veo 3.1, plans de 8 s, 1080p et 4K, son natif, accès Gemini / Flow / AI Studio / API Gemini / Vids. Crédits Flow (50/jour gratuits, 200/mois offre Plus) vérifiés sur support.google.com/flow.
+  - Hero Higgsfield soul_2 16:9 converti webp 1600px (54 Ko). Audit 0 err / 0 warn, lint et build verts, check-registry OK. Rendu vérifié en local (H1 unique, JSON-LD FAQPage, hero servi, 0 tiret cadratin).
+  - Maillage : liens internes vers sora-openai-creer-videos, veo-3-generer-videos-ia, meilleurs-outils-ia-video, prompts-video-ia-50-exemples, pourquoi-videos-ia-air-faux. Liens externes help.openai.com, deepmind.google, support.google.com.
+  - Troisième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (157 URLs, HTTP 200).
+
+## 2026-07-22
+
+- `2026-07-22 | RUN 30J J2 | main direct | 1c9cb72 | 1 article | 1 evergreen (business) | poussé sur main`
+  - `agence-video-ia-lancer` (Business créatif, evergreen, lancer une agence vidéo IA : positionnement, offre, tarifs, premiers contrats, KW "agence vidéo ia")
+  - Hero Higgsfield soul_2 16:9 converti webp 1600px (77 Ko). Audit 0 err / 0 warn, lint et build verts.
+  - Maillage : liens internes vers gagner-argent-ia-creative-modeles, devenir-freelance-creation-ia, fixer-prix-creation-ia-grille, workflow-client-brief-livraison-ia. Lien externe fr.wikipedia.org/wiki/Agence_de_communication.
+  - Deuxième article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push (156 URLs, HTTP 200).
+
+## 2026-07-20
+
+- `2026-07-20 | RUN 30J J1 | main direct | 1 article | 1 evergreen (prompt pack) | poussé sur main`
+  - `prompts-video-ia-50-exemples` (Prompting, evergreen, 50 prompts vidéo classés par genre, KW "prompt vidéo ia", ~3900 mots)
+  - Hero Higgsfield soul_2 16:9 converti webp 1600px (71 Ko). Audit 0 err / 0 warn, lint et build verts.
+  - Maillage : liens internes vers prompt-structure-4-blocs-ia, decrire-lumiere-prompt-ia, video-ia-guide-complet. Lien externe deepmind.google/models/veo.
+  - Premier article du run 30 jours (voir RUN_30J.md). IndexNow pingé après push.
+
+## 2026-07-06
+
+- `2026-07-06 | RUN #7 | loop/daily-2026-07-06 → main | 3 articles | 2 news + 1 evergreen | poussé sur main (commit bd72b4b, merge edaae82)`
+  - `seedance-2-5-video-ia-30-secondes` (IA vidéo, news, Seedance 2.5 ByteDance)
+  - `gemini-images-personnalisees-donnees-google` (IA image, news, images Gemini gratuites US)
+  - `pourquoi-videos-ia-air-faux` (IA vidéo, evergreen, réalisme vidéo)
+  - Bonus SEO : 14 liens internes cassés repointés dans les 3 pages piliers + 1 description ramenée sous 160 car.
+  - Heros Imagen 4 Fast 1K (16/28/42 Ko). Audit 0 err, lint/build verts. CI success. 3 pages en 200. IndexNow 135 URLs (HTTP 200).
+  - B-5 (24 fichiers non commités) laissé intact et non poussé (stash/pop autour du merge).
+
+## 2026-06-25
+
+- `2026-06-25 | RUN #6 | loop/daily-2026-06-25 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `grok-imagine-video-1-5-juin-2026` (IA vidéo, news, Grok Imagine 1.5 xAI 16/06, image vers vidéo + audio natif, + capture x.ai/news)
+  - `minimax-hub-creation-video-ia` (IA vidéo, news, MiniMax Hub festival de Shanghai 15/06, source Variety, + capture minimax.io)
+  - `monter-video-ia-capcut-davinci` (Workflow créatif, evergreen, monter ses plans IA dans CapCut/DaVinci)
+  - Heros Imagen 4 Fast 1K. Audit (110 art., 0 err, 0 avert.) / lint / build verts.
+  - 2 news à ~8-10 j (semaine creuse côté sorties fraîches), mais solides et sourcées
+    (primaire x.ai ; Variety). Dates des faits citées précisément dans le texte.
+  - Fix SEO : 2 descriptions >160 (ecrire-scenario, screenweaver) raccourcies.
+  - 24 modifs non commitées (injections de liens, B-5) toujours laissées en l'état,
+    non stagées, non poussées. Push surgical (git add explicite uniquement).
+  - 2 articles préexistants future-datés tombaient le 25 (`images-cinema-ia-scene-film`,
+    `rendu-pellicule-grain-film-ia`, ia-image) : non touchés.
+
+## 2026-06-22
+
+- `2026-06-22 | RUN #5 | loop/daily-2026-06-22 → main | 2 articles | 1 news + 1 evergreen | poussé sur main`
+  - `kling-3-turbo-omni-juin-2026` (IA vidéo, news, Kling 3.0 Turbo + Omni 17/06, + capture klingai.com)
+  - `combien-coute-ia-creative-mois` (Business créatif, evergreen, budget mensuel outils IA)
+  - Heros Imagen 4 Fast 1K. Audit (107 art., 0 err) / lint / build verts.
+  - 1 seule news : seul sujet frais, on-thème et non sensible cette semaine.
+    Seedance 2.0 Mini (15/06) volontairement écarté (litige Disney/Paramount +
+    demande de fermeture de sénateurs US = sujet sensible, voir ERRORS).
+  - 2 articles datés du jour préexistaient (evergreen `veo-3-generer-videos-ia`
+    et `sora-openai-creer-videos`, future-datés tombant le 22) : non touchés.
+  - 24 modifs non commitées laissées en l'état (injections de liens internes d'un
+    run précédent pointant vers des articles encore future-datés = risque 404
+    live ; ne pas committer tel quel). Voir ERRORS_AND_BLOCKERS.
+
+## 2026-06-20
+
+- `2026-06-20 | RUN #4 | loop/daily-2026-06-20 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `higgsfield-creative-os-juin-2026` (IA vidéo, news, + capture higgsfield.ai)
+  - `elevenlabs-music-v2-stable-audio-suno` (Business créatif, news, + capture elevenlabs.io)
+  - `focale-objectif-prompt-ia` (Prompting, evergreen)
+
+## 2026-06-18
+
+- `2026-06-18 | RUN #2 | loop/daily-2026-06-18 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `adobe-firefly-android-imagen-veo` (IA image, news, Firefly sur Android 17/06)
+  - `krea-2-images-2-secondes` (IA image, news, Krea 2 08/06)
+  - `image-to-video-ia-methode` (IA vidéo, evergreen)
+  - Heros Imagen 4 Fast 1K. Audit/lint/build verts. Voir DAILY_REPORT.
+
+## 2026-06-17
+
+- `2026-06-17 | RUN #1 | loop/daily-2026-06-17 → main | 3 articles | 2 news + 1 evergreen | poussé sur main`
+  - `midjourney-v8-1-mise-a-jour` (IA image, news, Midjourney V8.1)
+  - `runway-seedance-2-fast-aleph-2` (IA vidéo, news, Runway Seedance/Aleph)
+  - `comfyui-workflow-nodal-debutant` (Workflow créatif, evergreen)
+  - Heros Imagen 4 Fast (1K). Audit/lint/build verts. Voir DAILY_REPORT.
+- `2026-06-17 | BOOTSTRAP | loop/bootstrap-2026-06-17 → main | 0 article publié | infra + 2 correctifs SEO | poussé sur main (sur demande utilisateur)`
+  - Contenu publié : aucun nouvel article (pas de contenu créé ce run).
+  - Correctifs poussés live : CI lint réparée, 16 liens internes cassés repointés.
+  - Fichiers infra ajoutés : `.loop_memory/*`, `.loop_scripts/*`, `SETUP_LOOP.md`.
+  - Autopilote concurrent : avait terminé son lot (60/60) avant le commit, pas de
+    collision. Working tree ne contenait que les fichiers de ce run.
+
+> À partir du run 2 : chaque article publié doit aussi apparaître dans
+> CONTENT_LEDGER.md, et chaque push doit confirmer le statut Vercel (Ready).
+
+## 2026-08-17 : article hors plan (publication différée 2026-08-21)
+
+- **Article** : Créer un plan vidéo IA de A à Z sur Imaginode
+  - Slug : `creer-plan-video-ia-imaginode` · Catégorie : Workflow créatif
+  - Mot-clé principal : plan vidéo ia (secondaires : imaginode, canvas ia, canvas à nodes, workflow vidéo ia)
+  - **Hors run 30 jours** : article produit Imaginode (outil de Frank), demandé à part.
+    Ne touche pas RUN_30J.md ni au plan quotidien.
+  - `date: 2026-08-21` (volontaire : 3 articles Imaginode sur 3 sites à dates
+    décalées ; le repo masque les articles futurs jusqu'à leur date). Committé et
+    poussé le 2026-08-17, visible en ligne à partir du 21/08.
+  - Hero : vraie frame extraite de `SimpleAI/public/about.mp4` (t=4 s, ffmpeg,
+    1600 px, ~51 Ko), pas de génération Nano Banana pour cet article produit.
+  - CTA : formation IA gratuite. Aucun code promo mentionné (interdiction Frank).
+  - Gates : audit.mjs OK, lint OK, build OK, check-registry.py OK.
+
+## 2026-09-16 | loop 30j J29 | main | `afeeb24`
+
+- Article : `decors-cinema-ia` (« Décors de cinéma avec l'IA : un lieu qui tient
+  sur dix plans »), KW principal « décor cinéma ia », 29/36 du run, J32 du plan
+  (cluster Cinéma IA, satellite de illustration-cinema-concept-art-ia). Aucun
+  article publié le 15/09 : un run avait démarré (3 captures datées du 15/09
+  17:36 laissées non suivies dans public/images/articles/) sans module ni log ;
+  les captures ont été relues, jugées lisibles et réutilisées avec leur date.
+- Angle : un décor se juge au deuxième angle. Concept art / plate / décor
+  distingués, fiche de lieu d'une page (géographie, lumière, objets signature,
+  palette), deux routes (images de référence dans Flow avec Veo 3.1, monde 3D
+  dans Marble), matte painting comme filiation (Wikipédia FR). Tableau 4 routes
+  (ce que tu construis, angles et caméra, où ça casse, coût), méthode en 5
+  étapes, Pro Tip sourcé (Record de Marble ne persiste pas les images clés),
+  4 pièges (champ/contre-champ, lumière, splats en gros plan, droits
+  commerciaux Pro 35 $).
+- Faits sourcés : voir CONTENT_LEDGER (pricing Marble capturé, blog World Labs,
+  docs Record et export, blog Google Veo 3.1, doc API Gemini). Vérification web
+  qu'aucun « Veo 4 » officiel n'existe au 16/09 : Veo 3.1 reste la référence de
+  Flow ; Gemini Omni Flash non cité faute de vérification directe.
+- Prudence : note fondateur sans anecdote VOIDBORN inventée (première version
+  retirée) ; « abonnement Google AI Pro et Ultra » gardé comme fait courant,
+  non recapturé ; dégradation des splats en gros plan donnée comme observation.
+- Hero : Nano Banana 2 via Vercel AI Gateway (139 Ko, régénéré une fois : le
+  premier jet contenait des bribes de texte rouge sur les tirages punaisés),
+  atelier de décoration de cinéma sous verrière, femme en tablier ajustant à la
+  pince un réverbère miniature sur la maquette d'une ruelle pavée, tablette
+  affichant la même ruelle, mur de tirages du lieu sous plusieurs angles. Motif
+  distinct de J28 (projection plein air), J27 (salle vitrée), J26 (sérigraphie),
+  J25 (cuisine), J24 (canapé).
+- Images corps : 3 captures réelles (blog.google Veo 3.1 recapturée le 16/09
+  sans la bannière cookies via un script Playwright scratchpad cliquant
+  « Understood », home worldlabs.ai du 15/09, pricing Marble du 15/09), chacune
+  sous l'affirmation qu'elle prouve, légendes avec source et date.
+- Humanisation : humanizer + unslop-text (scan 1 faux positif « utilise ») +
+  antislop-copywriting. Corrections : 3 parallélismes négatifs retirés (excerpt,
+  H2 core-concepts, piège droits), promesse P2 reformulée sans « cet article »,
+  signposting « le tableau résume » et « c'est exactement pour ça » supprimés,
+  conclusion « voilà ce qui sépare » remplacée par l'instruction concrète.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (146 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, 196 pages), check-registry.py OK après git add.
+- IndexNow : 184 URLs soumises, HTTP 200.
+
+## 2026-09-14 | loop 30j J28 | main | `ba1dea4`
+
+- Article : `festivals-films-ia` (« Festivals de films IA : où montrer ton
+  travail »), KW principal « festival film ia », 28/36 du run, premier sujet de
+  la Phase 2 (J31 du plan, cluster Cinéma IA).
+- Angle : trois familles de festivals qui ne vendent pas la même chose
+  (dotation financée par les outils / frais de dépôt avec événement physique /
+  en ligne mensuel accrédité IMDb), et ce qu'un laurier rapporte dans chacune.
+  E-E-A-T : VOIDBORN cité avec les placements de lib/constants.ts uniquement.
+  Trouvaille centrale : le règlement du SIAFF écrit que la sélection officielle
+  n'est pas projetée et donne « le droit d'utiliser le logo », seuls 10 films de
+  lauréats présents passent à l'écran ; Top Shorts écrit qu'il ne diffuse pas
+  les films. Tableau 6 festivals (frais, durée, gain, échéance), ordre de dépôt
+  en 7 étapes, 4 pièges (film de 2 min 30, sélection différente de projection,
+  laurier différent de carrière, droits de la bande-son).
+- Faits sourcés : voir CONTENT_LEDGER (règlement Runway AIF, aaiff.ai, page
+  Reply, chromaawards.com, fiches FilmFreeway SIAFF et Top Shorts). Astana est
+  passé de 5 000+ films (capture ScreenWeaver du 08/09) à 8 067 films / 125 pays
+  affichés le 14/09.
+- Prudence : frais Reply et Chroma « non précisés » plutôt qu'affirmés ; aucun
+  dépôt de VOIDBORN chez Runway inventé (première version retirée) ; « deux
+  festivals sur neuf » non documenté retiré ; Chroma « Première place Silver »
+  de constants rendu par « Silver aux Chroma Awards » ; durée de VOIDBORN non
+  citée (inconnue).
+- Hero : Nano Banana 2 via Vercel AI Gateway (77 Ko, premier jet), coulisses
+  d'une projection en plein air la nuit, réalisateur en veste sombre avec badge
+  tenant un petit trophée en acrylique, écran bleu violet abstrait, public assis
+  dans l'ombre, projecteur tungstène sur pied, guirlande d'ampoules. Motif
+  distinct de J27 (salle de réunion vitrée), J26 (atelier de sérigraphie), J25
+  (table de cuisine), J24 (canapé), J23 (paperasse).
+- Images corps : 3 captures réelles (fiche FilmFreeway du SIAFF avec le
+  calendrier 2027, home aaiff.ai « Submissions closed · 8,067 films », home
+  aif.runwayml.com avec les dates des galas), chacune sous l'affirmation qu'elle
+  prouve, légendes avec source et date.
+- Outil : scripts/capture-screenshot.py réparé pour Windows (repli Pillow quand
+  sips/cwebp manquent, sortie console ASCII) ; plus besoin du script scratchpad.
+  FilmFreeway renvoie 403 à WebFetch mais accepte Playwright channel=chrome.
+- Humanisation : humanizer + unslop-text (scan 0 finding, non probant en FR) +
+  antislop-copywriting ; 10 corrections manuelles (parallélisme négatif « pas
+  une arnaque, c'est un modèle », « n'a pas de valeur en soi. Il a la valeur »,
+  paire symétrique « comptent un peu / ne comptent pas du tout », signposting
+  « le modèle est clair » et « tient en deux choses », preuve sociale vague
+  « des prix, des sélections, des finales » remplacée par les placements
+  nommés, « pas après » en queue de phrase, deux affirmations à la première
+  personne non documentées).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (145 articles, 0 erreur, 0 avertissement), lint OK,
+  build exit 0, check-registry.py OK (description ramenée de 161 à 155 car.).
+- IndexNow : 183 URLs soumises, HTTP 200.
+
+## 2026-09-13 | loop 30j J27 | main | `ac2d92a`
+
+- Article : `synthesia-vs-heygen` (« Synthesia vs HeyGen : lequel choisir pour
+  tes vidéos pro »), KW principal « synthesia vs heygen », 27/36 du run, dernier
+  comparatif de la Phase 1 ; complète J8 côté B2B.
+- Angle : deux critères décident, le coût réel de la minute selon le moteur
+  (Synthesia 120 crédits la minute quel que soit l'avatar ; HeyGen de 4 à 48
+  selon moteur et look, échelle de 1 à 12) et ce que la plateforme autorise à
+  publier (Synthesia réserve actualité et politique à Enterprise avec avatar
+  custom, vérifie chaque vidéo ; HeyGen interdit la campagne politique mais ne
+  réserve aucun sujet). Tableau verdict, tableau coût de la minute offre par
+  offre (1,90 € à 2,63 € chez Synthesia en mensuel, 0,19 $ à 2,32 $ chez HeyGen
+  selon moteur), méthode en cinq étapes, verdict par profil (L&D grande
+  entreprise, créateur solo, PME avec dirigeant, média).
+- Trouvaille : la page tarifs Synthesia vue depuis la France est en euros et
+  affiche « New lower prices » (Starter 19 €/12 €, Creator 79 €/49 €) alors que
+  WebFetch depuis les US renvoie 29 $/89 $ ; les prix euros ont été gardés,
+  vérifiés par capture. HeyGen reste en dollars depuis la France.
+- Faits sourcés : voir CONTENT_LEDGER (guide des crédits Synthesia, article
+  « Disagreeable Content » du 23/07/2026, features/avatars, responsible-ai ;
+  heygen.com/pricing, articles 15126059, 15125761, 12092609, trust-and-safety).
+- Prudence : aucune part de marché, aucun avis d'utilisateur, « Trusted by 90 %
+  of Fortune 100 » non repris, « première entreprise certifiée ISO 42001 »
+  attribuée à l'annonce de Synthesia elle-même, coûts de la minute présentés
+  comme des calculs à partir des barèmes, devises non converties.
+- Hero : Nano Banana 2 via Vercel AI Gateway (75 Ko, seconde génération : la
+  première portait un titre lisible sur le tableau blanc), salle de réunion
+  vitrée transformée en cabine d'enregistrement, homme en blazer marine lisant
+  une carte de consentement face à un téléphone sur mini trépied, panneau LED,
+  tableau blanc de flèches et cases sans texte, collègue flou derrière la vitre.
+- Images corps : 3 captures réelles (page tarifs Synthesia en euros, section
+  « Media Reporting (News) » du centre d'aide Synthesia recadrée, barème des
+  crédits HeyGen recadré), via script playwright + Pillow du scratchpad
+  (capture-screenshot.py toujours inutilisable sous Windows : sips/cwebp).
+- Humanisation : humanizer + unslop-text (scan 0 finding, non probant en FR) +
+  antislop-copywriting ; 9 corrections manuelles (2 parallélismes négatifs,
+  1 signposting « ce qui compte ici », 1 « La première : / La seconde : »,
+  1 première ligne qui répétait son H2, 1 « du marché » invérifiable, 1 date
+  non sourcée retirée, note fondateur réécrite).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (144 articles, 0 erreur, 0 avertissement après
+  description ramenée à 156 caractères), lint OK, build exit 0,
+  check-registry.py OK.
+- IndexNow : 182 URLs soumises, HTTP 200.
+
+## 2026-09-12 | loop 30j J26 | main | `b5ab2c1`
+
+- Article : `vendre-prompts-templates-ia` (« Vendre des prompts, presets et
+  templates IA : le vrai plan »), KW principal « vendre des prompts », 26/36 du run.
+- Angle : deux documents officiels que personne ne lit avant de vendre un pack.
+  Les CGU Midjourney (27/05/2026) rendent prompts et images publics et remixables
+  par défaut (Stealth Pro/Mega en « best efforts »), et le rapport Part 2 du
+  Copyright Office (29/01/2025) refuse l'authorship aux prompts seuls. Donc le
+  texte du prompt ne vaut rien ; ce qui se vend, c'est le résultat garanti pour
+  un métier, les variables, les exemples bruts et la mise à jour par version.
+  Tableau des commissions vérifiées le jour même, plan en six semaines, trois
+  formats (pack à variables, preset/LUT, template de production), quatre pièges,
+  section TVA (Merchant of Record vs OSS).
+- Faits sourcés : PromptBase (/sell : 0 % via lien, 20 % marketplace, Stripe ou
+  Zoneless ; /prompt-guidelines : anglais uniquement, refus doublons, exemples
+  retouchés, prompts générés en masse ; home : 330k+ prompts, 520 000+ utilisateurs,
+  2,99 à 6,99 $, Select 19 $/mois) ; Gumroad (/pricing : 10 % + 0,50 $ direct,
+  30 % Discover ; aide taxes : Merchant of Record) ; Etsy (règlement des frais :
+  0,20 USD par fiche, 6,5 %, paiement selon pays, frais réglementaires selon pays,
+  pub externe 15 % / 12 % au-delà de 10 000 USD) ; Notion Marketplace (8 % +
+  0,40 $, +1 % change, 14 jours, payout dès 20 $) ; impots.gouv.fr OSS (10 000 €).
+- Prudence : aucun revenu de vendeur cité ; fourchette de prix et exemple
+  « 50 clients à 19 € » donnés comme avis ; chiffre Notion pris sur la page
+  officielle (8 %) et non sur les sources tierces (10 %) ; « depuis 2023 » retiré ;
+  droit français signalé comme non tranché.
+- Hero : Nano Banana 2 via Vercel AI Gateway (103 Ko), atelier de sérigraphie au
+  crépuscule, fil de séchage avec une dizaine de variations du même portrait
+  suspendues à des pinces, jeune femme en tablier de profil attachant une
+  étiquette kraft vierge, lampes tungstène, fenêtre bleue. Réussi au premier jet.
+- Corps : 3 captures (page Sell de PromptBase, page tarifs de Gumroad avec les
+  10 % + 0,50 $ et 30 %, section Remixing and Stealth Mode des CGU Midjourney),
+  chacune collée à l'affirmation qu'elle prouve, source et date en légende.
+  Outillage : script scratchpad playwright + Pillow (options crop, scrollto,
+  wheel), Etsy et Midjourney lus via le pane navigateur (403 à WebFetch).
+- Passes humanisation : humanizer + unslop-text + antislop-copywriting appliquées
+  (détail dans RUN_30J.md). Scanner : 3 faux positifs FR, 0 tiret.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (143 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 181 URLs soumises, HTTP 200.
+
+## 2026-09-11 | loop 30j J25 | main | `546e942`
+
+- Article : `apprendre-ia-creative-parcours` (« Apprendre l'IA créative en 2026 :
+  le bon parcours »), KW principal « apprendre l'ia créative », 25/36 du run.
+- Angle : le web FR sur « apprendre l'IA » mélange deux mondes, le parcours
+  ingénieur (modèles, Python) et le parcours créateur (produire avec les outils).
+  L'article tranche pour le second, impose l'ordre image avant vidéo (l'erreur
+  coûte des centimes en image et des crédits en vidéo), et réduit la question
+  gratuit/payant à ce que le gratuit ne fournit pas : un ordre, une échéance,
+  quelqu'un qui regarde le travail. Section CPF à contre-courant des pages de vente :
+  formations certifiantes seulement, 150 € de participation, donc presque jamais
+  applicable à la création IA. Grille de sept questions avant de payer, parcours
+  en douze semaines, quatre pièges.
+- Faits sourcés : Hugging Face Diffusion Course (gratuit, 4 unités, prérequis
+  Python + PyTorch) ; Runway Academy (inscription gratuite, AI for Advertising
+  10 modules débutant, AI for Visual Effects 6 modules) ; fiche CPF F10705 de
+  service-public.gouv.fr vérifiée le 27/06/2026 (150 €, certifiantes RNCP/RS,
+  exemptions) ; « The MOOC Pivot » (Science, 2019, 3,13 % d'achèvement en
+  2017-2018 sur 12,67 millions d'inscriptions MIT/Harvard) ; contenu du challenge
+  gratuit AI Studios lu sur la page officielle (3 jours, idée/scénario/storyboard/
+  vidéo, Kling + Midjourney) ; VOIDBORN primé au Seoul International AI Film
+  Festival (lib/constants.ts) ; fermeture de l'app Sora le 26/04/2026 (J3).
+- Prudence : « après trois ans à former des gens » retiré du premier jet
+  (invérifiable) ; la date « depuis le 2 avril 2026 » pour les 150 € venait de
+  sources secondaires, remplacée par « au moment où j'écris » car la fiche
+  officielle donne le montant sans cette date ; aucune preuve sociale vague sur
+  la formation (le « 200+ créateurs » et la note Trustpilot de la page de vente
+  n'ont pas été repris), seul le contenu concret du challenge est décrit.
+- Hero : Nano Banana 2 via Vercel AI Gateway (74 Ko), table de cuisine en bois un
+  dimanche matin, personne en pull gris vue de la poitrine aux mains triant des
+  tirages photo en deux piles, croix rouges au crayon gras sur la pile des rejetés,
+  cahier à spirale ouvert sur un parcours en quatre cases fléchées, mug, tablette
+  éteinte, clémentine dans un bol, lumière rasante de fenêtre. Scène tirée de la
+  « semaine 6, pause bilan » de l'article. Réussi au premier jet.
+- Corps : 3 captures (page d'accueil du Diffusion Course avec « In this free
+  course » et les prérequis, section Explore Courses de Runway Academy recadrée,
+  fiche CPF avec l'accordéon « prise en charge des frais » ouvert sur l'onglet
+  Cas général et le « 150 € »). Outillage : script scratchpad playwright + Pillow
+  (`cap.py`, options --click répétable, --scroll-to, --crop) ; la fiche
+  service-public est en accordéons repliés avec des onglets DSFR à l'intérieur :
+  `get_by_role("button", name=...)` pour l'accordéon, `input[type=radio]` pour
+  l'onglet, bouton « Refuser » pour les cookies, et repérage du « 150 € » par
+  `evaluate` sur le DOM + `window.scrollTo` (le get_by_text tombait sur un nœud
+  masqué). `PYTHONIOENCODING=utf-8` obligatoire sinon le log playwright plante
+  sur un caractère Unicode.
+- Outillage audit : `.loop_scripts/audit.mjs` ne connaissait que les slugs des
+  modules TS et signalait en erreur bloquante le lien vers
+  `/blog/plan-apprentissage-ia-image-video-30-jours` (article du JSON débutant,
+  HTTP 200 en prod, lien prévu par le plan). Patch commité : les slugs de
+  `beginner-articles.json` sont ajoutés au set des cibles valides.
+- Passes humanisation : humanizer + unslop-text (scanner 0 hit sur 3426 mots,
+  sans valeur sur du français) + antislop-copywriting. Corrections : quatre
+  parallélismes négatifs « ce n'est pas X, c'est Y » réécrits (parti pris de
+  l'intro, argument commercial, objectif du mouvement, note fondateur), cinq
+  contrastes « X, pas Y » réduits à deux, signposting « tient en une phrase »
+  supprimé, une généralisation « ceux qui avaient attendu Sora » reformulée en
+  observation, ouverture « À la fin de cet article, tu sauras » remplacée car
+  présente dans 13 autres posts. Sur-correction rattrapée à la relecture : deux
+  « ne compte pas » en fin de phrase à trois paragraphes d'écart, le premier
+  réécrit.
+- Gates : audit 0 erreur / 0 avertissement (142 articles), lint vert, build vert
+  (page générée avec les 3 images et le JSON-LD FAQPage), check-registry OK.
+- Push : `546e942` sur main, IndexNow 180 URLs (HTTP 200).
+
+## 2026-09-10 | loop 30j J24 | main | `96a1d75`
+
+- Article : `tiktok-formats-video-ia-viraux` (« Vidéos IA virales sur TikTok : les
+  formats 2026 »), KW principal « vidéo ia virale tiktok », 24/36 du run.
+- Angle, absent du web FR où tout le corpus « vidéo IA virale TikTok » est une liste
+  de trends ou d'outils : viral et éligible sont deux choses différentes. Trois
+  filtres passent avant la viralité (label IA obligatoire dès que ça a l'air réel,
+  contenu non original inéligible au FYF, Programme de Récompenses qui exige une
+  minute et exclut les boucles), et un format ne vaut que par la mécanique qu'il
+  porte (personnage récurrent en caméra subjective, immersion, son, feuilleton).
+- Trouvaille de vérification gardée dans l'article : plusieurs blogs anglophones
+  bien classés affirment que le Programme de Récompenses « bannit entièrement le
+  contenu IA ». La page d'aide officielle (lue en français via le navigateur, elle
+  est rendue en JS et WebFetch ne renvoie que le header) ne contient pas le mot IA.
+  Elle exclut les boucles, photos simples et texte seul, ce qui touche les clips IA
+  de 8 s pour une autre raison. Deuxième trouvaille : la page des règles de la
+  communauté porte un bandeau annonçant une mise à jour au 24/09/2026 ; la version
+  `?cgversion=2026H2update` ne se charge pas (page blanche même après 15 s), donc
+  l'article annonce la date sans décrire le contenu, et le ledger prévoit une
+  relecture M+1.
+- Faits sourcés : règles de la communauté TikTok (publiées le 14/08/2025,
+  applicables depuis le 13/09/2025, section AIGC et section contenu non original) ;
+  communiqué newsroom du 19/11/2025 (curseur AIGC dans Gérer les sujets, filigrane
+  invisible, C2PA, plus de 1,3 milliard de vidéos labellisées) ; page d'aide FR du
+  Programme de Récompenses (10 000 abonnés, 100 000 vues/30 j, >= 1 min, liste des
+  exclusions, contestation sous 30 jours) ; Know Your Meme du 18/06/2025 (premier
+  vlog Bigfoot par @bigfootvlogs fin mai 2025, Veo 3) ; fermeture de Sora reprise de
+  J3 (app 26/04/2026, API 24/09/2026).
+- Prudence : aucun chiffre de vues ou de durée de vie de tendance inventé ; les
+  formats sont présentés comme observation recoupée, les durées du tableau comme
+  pratique et non comme règle ; la phrase qui attribuait à Sora le rôle d'outil
+  principal des mashups de célébrités a été supprimée faute de source.
+- Hero : Nano Banana 2 via Vercel AI Gateway (111 Ko), salon d'un petit appartement
+  la nuit, jeune créateur allongé sur un canapé en velours côtelé vert tenant son
+  téléphone au-dessus du visage, sur la table basse un carnet avec un croquis de
+  yéti à perche à selfie, un mini trépied de téléphone, un bol de nouilles et un mug,
+  fenêtre pluvieuse avec lampadaire orange, tungstène chaud contre bleu du téléphone.
+  Réussi au premier jet, croquis de créature bien lisible.
+- Corps : 3 captures de sources primaires (section AIGC des règles de la communauté,
+  communiqué newsroom sur le curseur AIGC, section contenu original de la page
+  d'aide du Programme de Récompenses). Outillage : script scratchpad playwright +
+  Pillow avec option `--find <texte>` qui fait un `scrollIntoView` sur le dernier
+  élément contenant le texte puis recule à la molette (le `window.scrollTo` ne
+  marche pas sur le centre d'aide TikTok, qui scrolle dans un conteneur interne ;
+  `.first` tombait sur le lien du sommaire, `.last` sur le vrai titre de section).
+  Le clic « Décliner les cookies facultatifs » déclenche un toast « Saved! » qui
+  reste 3 à 4 s sur la page des règles : attendre 5 s avant la capture.
+- Passes humanisation : scanner unslop 0 hit sur 3897 mots (sans valeur sur du
+  français). Passe manuelle : 4 parallélismes négatifs réécrits (« La mécanique, ce
+  n'est pas Bigfoot », « Ce n'est pas un format pour monétiser », note de fondateur,
+  « Ce n'est pas un hasard »), 2 annonces méta supprimées (« Voilà ce que je te
+  propose », « Traduction pour toi »), première ligne du H2 core-concepts qui
+  répétait son titre réécrite, aphorisme symétrique en fin de FAQ 6 remplacé par
+  deux phrases concrètes, cellule de tableau « pas une règle mais un mur » réécrite,
+  citation traduite entre guillemets d'un blog remplacée par une paraphrase. Corps
+  ramené de 3241 à environ 3040 mots (FAQ dupliquée incluse) en coupant les
+  redites. Intro P2 réécrite en phrase complète après la passe (c'était devenu une
+  liste sans verbe, sur-correction du signposting).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (141 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (191 pages, 0 worker orphelin), check-registry.py OK après git add.
+- IndexNow : 179 URLs soumises, HTTP 200.
+
+## 2026-09-09 | loop 30j J23 | main | `7bdb1dc`
+
+- Article : `musique-ia-droits-videos` (« Musique IA libre de droits : sécuriser
+  tes vidéos »), KW principal « musique ia libre de droits », 23/36 du run.
+- Angle, absent du web FR où tout le corpus « musique IA libre de droits » est un
+  classement d'outils : l'expression n'est pas une catégorie juridique et recouvre
+  trois couches distinctes (licence contractuelle de la plateforme / propriété au
+  sens du droit d'auteur / règles de la plateforme de diffusion). On peut être en
+  règle sur la première et se faire démonétiser sur la troisième.
+- Trouvaille de vérification, gardée dans l'article : plusieurs sites FR très bien
+  placés sur la requête citent un « article L112-8 du CPI » et une « loi
+  n° 2025-678 du 17 juin 2025 » qui n'existent ni l'un ni l'autre. Vérifié sur
+  Légifrance : le chapitre Œuvres protégées s'arrête à L112-4, et aucune loi de ce
+  numéro. Ces deux références fantômes sortent aussi des résumés de recherche web,
+  donc ne jamais citer un texte de loi sans ouvrir Légifrance.
+- Faits sourcés : CGU Suno (gratuit = usage personnel et non commercial ;
+  Pro/Premier = cession des droits que Suno détient ; aucune garantie qu'un droit
+  d'auteur naisse sur une sortie) ; page d'aide Suno sur les droits d'un
+  abonnement payant (même mise en garde) ; centre d'aide Udio, article sur le
+  partenariat UMG (téléchargement audio, vidéo et stems désactivé depuis l'accord
+  du 29/10/2025) ; elevenlabs.io/fr/music (entraîné uniquement sur données sous
+  licence, accords Merlin et Kobalt, usage commercial self-serve sauf films, TV et
+  jeux de grands studios) ; AI Act article 50 applicable depuis le 02/08/2026, le
+  marquage machine-readable pèse sur les FOURNISSEURS, l'obligation côté
+  utilisateur ne vise que les deepfakes ; Sénat, proposition de loi présomption
+  d'exploitation adoptée le 08/04/2026 et transmise à l'AN le 09/04/2026.
+- Prudence : aucune affirmation sur les CGU d'Epidemic ou Artlist (ligne du
+  tableau volontairement générique). Position française donnée comme lecture
+  dominante et pas comme jurisprudence, faute de décision sur un morceau généré.
+- Hero : Nano Banana 2 via Vercel AI Gateway (91 Ko), bureau d'une petite agence
+  vidéo en fin de matinée, femme debout lisant un contrat imprimé à contre-jour de
+  la fenêtre, monteur assis casque autour du cou levant les yeux vers la page,
+  panneau de liège couvert de feuilles et de post-it derrière, contrats agrafés et
+  disque dur au premier plan, chêne chaud contre lumière du jour froide. Premier
+  hero du run sur une scène de paperasse à deux personnages. Réussi au premier jet.
+- Corps : 2 captures de sources primaires (page d'aide Suno sur les droits d'un
+  abonnement payant, article 50 sur AI Act Explorer). Outillage : même contournement
+  qu'en J22, `scripts/capture-screenshot.py` échoue sous Windows (il appelle `sips`,
+  macOS only) ; script scratchpad playwright + Pillow, viewport haut puis recadrage
+  PIL pour attraper le paragraphe qui compte, souvent sous la ligne de flottaison.
+- Passes humanisation : scanner unslop 1 hit, faux positif français
+  (« conditions d'utilisation » pris pour « utilize »). Passe manuelle : 7
+  parallélismes négatifs « X, pas Y » trouvés d'un coup, ramenés à 3 (dont le titre
+  de section « La licence, c'est un contrat, pas un titre de propriété », réécrit).
+  4 signposting supprimés (« Un avertissement au passage », « Lis bien à qui
+  s'adresse le texte », « Le cas Udio mérite qu'on s'y arrête », « Le tableau
+  ci-dessous résume »). Ouverture de la section AI Act réécrite, elle répétait la
+  date de son propre H2. Attribution vague « toute la doctrine française » remplacée
+  par une formulation vérifiable plus l'aveu qu'aucune décision n'a tranché.
+  Sur-correction rattrapée : « L'objectif tient en une phrase » réintroduisait un
+  signposting là où j'en supprimais un. Incohérence numérique attrapée au dernier
+  contrôle : l'intro annonçait « trois vérifications » et le H2 « quatre ».
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (140 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 178 URLs soumises, HTTP 200.
+
+## 2026-09-08 | loop 30j J22 | main | `64230ff`
+
+- Article : `capcut-ia-fonctions` (« CapCut IA : les fonctions qui font gagner du
+  temps »), KW principal « capcut ia », 22/36 du run.
+- Angle : pas un tour des fonctions, un tri par gain de temps réel, adossé au
+  passage de CapCut aux crédits. Fait pivot sourcé sur la note d'aide officielle
+  du 25/03/2026 : plan Pro relevé (AI points 550 -> 1200, cloud 100 Go -> 1 To),
+  nouveau plan Standard, anciens tarifs retirés aux nouveaux abonnés.
+- Prudence rédactionnelle : AUCUN prix cité. CapCut ne publie ses tarifs nulle
+  part sur son site (sa propre page d'aide renvoie à l'app et dit que le prix
+  varie selon région, appareil et promotions). Tous les blogs FR qui annoncent un
+  montant ferme le tirent d'ailleurs. L'article le dit et renvoie le lecteur à son
+  app. Même prudence sur les coûts en crédits par fonction : non documentés.
+- Autres faits sourcés : règlement des crédits (crédits d'abonnement attribués au
+  début du mois d'abonnement et expirés à la fin de ce mois, exemple officiel
+  20/06 -> 19/07, crédits achetés valables 2 ans, aucun remboursement ni
+  conversion en argent, conversion des utilisations Pro en crédits irréversible) ;
+  conditions d'utilisation version du 15/04/2026 (ByteDance Pte. Ltd., licence non
+  exclusive, libre de redevance, transférable, sous-licenciable, perpétuelle et
+  mondiale sur le contenu utilisateur, CapCut ne devient pas propriétaire) ;
+  import de sous-titres réservé à Desktop et Web, SRT seul sur le web, UTF-8 ;
+  Seedance 2.0 annoncé le 26/03/2026 sur 7 marchés (TechCrunch), Seedance 2.5
+  lancé le 31/07/2026 et déployé dans CapCut en Europe pour les abonnés (page
+  fonctionnalité CapCut).
+- Hero : Nano Banana 2 via Vercel AI Gateway (76 Ko), intérieur de train régional
+  au crépuscule, femme assise près de la vitre constellée de pluie tenant son
+  téléphone à l'horizontale, écouteurs filaires, gobelet et carnet sur la
+  tablette, campagne floue et caténaires derrière la vitre, mélange lumière
+  sodium chaude et bleu froid du dehors. Premier hero du run dans un véhicule en
+  mouvement. Réussi au premier jet.
+- Corps : 2 captures de sources primaires CapCut (note d'aide sur le changement de
+  tarification, règlement des crédits). Note d'outillage : `scripts/capture-screenshot.py`
+  ne tourne pas sous Windows (il appelle `sips` et `cwebp`, absents) ; capture
+  faite avec un script scratchpad playwright + Pillow. Le popup promo « Try online
+  for free » et le toast « Saved! » de capcut.com se posent en travers, il faut
+  choisir le scroll puis recadrer.
+- Passes humanisation : scanner unslop 3 hits, tous faux positifs français
+  (« utilisation », « utilises » pris pour « utilize »). La vraie passe a été
+  manuelle : 4 parallélismes négatifs « n'est pas X, c'est Y » trouvés d'un coup
+  (intro, classement, note de fondateur, plus la variante « la bonne question
+  n'est plus... c'est... »), 3 supprimés, 1 gardé. Intro réécrite car elle
+  ouvrait sur « Cet article trie », même tell qu'en J13 et J14, la troisième fois
+  du run que l'ouverture recopie un gabarit. Signposting « la méthode tient en
+  quatre gestes » remplacé par une amorce concrète. Deux restatements de titre de
+  section supprimés. Affirmation invérifiable (« tous les articles français ont
+  recopié ») transformée en conseil de vérification. Sur-correction rattrapée :
+  « je m'en fiche » réécrit, registre anti-IA affecté.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (139 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 177 URLs soumises, HTTP 200.
+
+## 2026-09-07 | loop 30j J21 | main | `d351d98`
+
+- Article : `ugc-ia-pour-marques` (« UGC IA : monter une offre que les marques
+  signent »), KW principal « ugc ia », 21/36 du run. Publié le même jour que J20,
+  en rattrapage des runs manqués des 05 et 06/09, à la demande de Frank.
+- Angle : le business et pas la technique. Le tri des livrables se fait sur une
+  seule question, est-ce qu'un visage apparaît, parce que c'est elle qui déclenche
+  la mention « Images virtuelles » de l'article 5 de la loi influenceurs, le droit
+  à l'image et le temps de validation client.
+- Hero : Nano Banana 2 via Vercel AI Gateway (99 Ko), vue en plongée verticale sur
+  une table de travail en bois clair, grille de fiches d'accroches numérotées
+  qu'une main retire de sa rangée, flacon blanc, trépied plié, mug, ombre de
+  fenêtre en diagonale, palette gris-vert froide. Premier hero du run en plongée
+  verticale et premier sans aucun visage ni écran. Réussi au premier jet.
+- Corps : 2 captures de sources primaires, article 5 de la loi 2023-451 sur
+  Légifrance et article 50 §4 du règlement (UE) 2024/1689 sur EUR-Lex.
+- Prudence rédactionnelle : aucune grille de tarifs publiée (aucune source
+  sérieuse), méthode de calcul à la place. Les lectures juridiques discutables
+  (champ d'application pour une marque qui publie sur son propre compte, cas du
+  plan de dos) sont explicitement données comme interprétation et non comme fait.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (138 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 176 URLs soumises, HTTP 200.
+
+## 2026-09-07 | loop 30j J20 | main | `255a3dd`
+
+- Article : `midjourney-video-guide` (« Midjourney vidéo : ce que ça fait, ce que
+  ça coûte »), KW principal « midjourney video », 20/36 du run. Runs du 05 et du
+  06/09 non exécutés, reprise directe sur J20.
+- Angle : le modèle vidéo de Midjourney est toujours le V1 du 18/06/2025 alors que
+  la partie image est passée en V8.2 le 24/07/2026. L'article vend le calcul que
+  personne ne fait en français, le coût GPU d'un plan animé mis en face du coût
+  d'une génération d'images (un prompt vidéo HD = 20 générations d'images HD, une
+  extension coûte le prix d'une génération, donc un plan de 21 s vaut 5 fois un
+  plan de 5 s).
+- Hero : Nano Banana 2 via Vercel AI Gateway (120 Ko), banc-titre d'animation dans
+  un petit atelier, un tirage papier sur la vitre sous deux lampes tungstène, mains
+  gantées avec compte-fils et crayon gras, lumière froide de fin d'après-midi par
+  la fenêtre latérale, palette ambre et sarcelle. Motif choisi parce qu'un banc-titre
+  est littéralement une image fixe qu'on met en mouvement. Rupture avec J19
+  (appartement vide, hiver gris), J18 (cuisine de restaurant), J17 (salle de
+  conférence), J16 (dressing clos), J15 (studio blanc). Réussi au premier jet.
+- Corps : 2 captures d'écran réelles de docs.midjourney.com, chacune collée à
+  l'affirmation qu'elle prouve (tableau Batch Size pour les coûts GPU, tableau
+  Comparing Midjourney Plans pour le Relax vidéo réservé à Pro et Mega).
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (137 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 175 URLs soumises, HTTP 200.
+
+## 2026-09-04 | loop 30j J19 | main | `ac9eccb`
+
+- Article : `video-ia-immobilier` (« Vidéo IA immobilier : embellir sans mentir »),
+  KW principal « vidéo ia immobilier », 19/36 du run.
+- Hero : Nano Banana 2 via Vercel AI Gateway (91 Ko), appartement parisien vide un
+  matin d'hiver. Premier jet écarté (deux personnages de dos devant l'écran du
+  téléphone, trop proche du cliché banni), relancé en plan large avec les
+  personnages de profil.
+- Corps : 2 captures d'écran réelles (DGCCRF economie.gouv.fr, fiche DPE
+  service-public.gouv.fr), chacune collée à l'affirmation qu'elle prouve.
+- CTA : formation IA gratuite. Aucune mention d'essai limité dans le temps.
+- Gates : audit.mjs OK (136 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK, check-registry.py OK.
+- IndexNow : 174 URLs soumises, HTTP 200.
+
+## 2026-09-18 | loop 30j J30 | main | `59ae17c`
+
+- Article : `acteurs-ia-casting-virtuel` (« Acteur IA : ce que le casting
+  virtuel permet vraiment »), KW principal « acteur ia », 30/36 du run, J33 du
+  plan (cluster Cinéma IA, type analyse). Aucun article publié le 17/09 (pas de
+  run loggé).
+- Angle : le mot « acteur IA » recouvre trois objets (synthétique façon Tilly
+  Norwood, réplique numérique d'une personne réelle, transfert de jeu d'un
+  comédien vers un personnage). Le troisième est celui du lecteur : casting
+  d'un humain derrière un visage dessiné, contrat, prises courtes. Contrat
+  SAG-AFTRA 2026 (notification, « valeur ajoutée significative », arbitrage)
+  expliqué depuis la page officielle ; art. 226-8 CP après la loi SREN ; Act-Two
+  comme exemple de transfert de jeu avec specs officielles. Tableau 3 objets
+  (consentement, où ça casse, coût), méthode en 5 étapes, Pro Tip sur le
+  minimum facturé, 4 pièges (sosie, comédien invisible, presque humain, mention
+  oubliée).
+- Faits sourcés : voir CONTENT_LEDGER (SAG-AFTRA communiqué et page contrat lus
+  via le navigateur intégré parce que sagaftra.org bloque Playwright et
+  WebFetch, TheWrap, Wikipédia, CBS, Légifrance, Runway, OpenAI via recherche).
+- Prudence : note fondateur réécrite sans anecdote inventée (première version
+  citait une comédienne de théâtre imaginaire) ; « la plupart des festivals »
+  remplacé par le fait documenté d'Astana (modèles et pipeline déclarés au
+  dépôt, source festivals-films-ia) ; Sora cameo décrit sans chiffre ; la
+  règle « un comédien pour trois ou quatre personnages » donnée comme ma règle.
+- Hero : Nano Banana 2 via Vercel AI Gateway (62 Ko, premier jet, coût 0,14 $),
+  salle de répétition de théâtre aux rideaux noirs, comédienne en survêtement
+  gris jouant un monologue sur une marque au sol, projection murale d'un vieux
+  pêcheur en bonnet reproduisant son expression, table de casting au premier
+  plan avec photos de comédiens. Motif distinct de J29 (atelier maquette),
+  J28 (projection plein air), J27 (salle vitrée + smartphone), J26
+  (sérigraphie), J25 (cuisine).
+- Images corps : 3 captures réelles (Wikipédia Tilly Norwood recadrée sans la
+  bannière Wiki Loves Monuments, doc Act-Two de Runway, art. 226-8 sur
+  Légifrance recadré sur le texte via capture haute puis crop Pillow),
+  chacune sous l'affirmation qu'elle prouve, légendes avec source et date.
+  Capture sagaftra.org impossible (slider anti-bot même en Chrome headed),
+  remplacée par Wikipédia.
+- Humanisation : humanizer + unslop-text (scan 0 finding, 2 990 mots avec FAQ
+  doublée) + antislop-copywriting. Corrections : 5 parallélismes négatifs
+  retirés (P3, Sora, étape 3, étape 4, sosie), signposting « la règle tient
+  en trois engagements » et « Trois objets, trois questions » supprimés,
+  triade répétée notification/valeur/consentement retirée de la conclusion,
+  triade de l'excerpt réduite à deux, preuve sociale vague remplacée.
+- Gates : audit.mjs OK (147 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route présente), check-registry.py OK.
+- IndexNow : 185 URLs soumises, HTTP 200.
+
+## 2026-09-19 | loop 30j J31 | main | `98bf866`
+
+- Article : `vfx-ia-effets-speciaux` (« VFX IA : faire tes effets spéciaux
+  sans studio »), KW principal « vfx ia », 31/36 du run, J34 du plan (cluster
+  Cinéma IA, type guide).
+- Angle : le web FR liste des outils ; ici un plan VFX = quatre travaux
+  (isoler, nettoyer, ajouter, raccorder) et deux familles d'outils (édition
+  générative type Edit Studio / Aleph 2.0 et Kling Omni, vs compositing
+  assisté type Resolve Magic Mask / Fusion et Flow Studio), départagées par un
+  seul critère : ce qui doit rester identique dans l'image (visage, produit,
+  texte). Parti pris : les VFX IA se gagnent au tournage (marqueurs, clean
+  plate, boule de référence, 24-30 fps, montage verrouillé avant tout effet à
+  28 crédits/s). Tableau 4 travaux x outil x coût x où ça lâche, méthode en 6
+  étapes, Pro Tip clean plate, 4 pièges (25 s pour 2 s, visage au prompt,
+  tournage sans marqueurs, plan plus net que ses voisins). Calculs : Standard
+  625 crédits = 22 s d'Aleph, Pro 2 250 = 80 s, 14 s perdues = 392 crédits.
+- Faits sourcés : voir CONTENT_LEDGER (Runway help + pricing, Blackmagic FR,
+  Autodesk buy page, help.wonderdynamics, Wikipédia FR). help.runwayml.com et
+  autodesk.com renvoient 403 à curl/WebFetch mais passent en navigateur intégré
+  et en Playwright channel=chrome. Pas de coût par seconde connu pour Flow
+  Studio, donc non chiffré. « Neuf fois sur dix » et « dix minutes / trois
+  soirées » donnés comme observation, pas comme mesure.
+- Hero : Nano Banana 2 via Vercel AI Gateway (158 Ko, premier jet, 0,14 $),
+  ruelle pavée mouillée à l'heure bleue, jeune femme en doudoune noire tenant
+  une boule à facettes chromée et une sphère grise sur perche devant un hybride
+  sur trépied, croix de ruban orange (marqueurs de tracking) sur le mur de
+  brique, fond vert replié contre un lampadaire, panneau LED. Motif distinct de
+  J30 (salle de répétition), J29 (atelier maquette), J28 (projection plein
+  air), J27 (salle vitrée), J26 (sérigraphie).
+- Images corps : 3 captures réelles via script scratchpad Playwright + Pillow
+  (clic accordéons + scroll) : spec Edit Studio sur help.runwayml.com (28
+  crédits/s visibles), plans Flow Studio sur autodesk.com (popup géo fermée,
+  cookies refusés, le refus bascule la page en thème sombre avec sélecteur de
+  durée « 1 year »), page Resolve Studio FR (Resolve 21, 255 €, Neural
+  Engine). Chacune sous l'affirmation qu'elle prouve, légende source + date.
+- Humanisation : humanizer + unslop-text (scan : 1 vrai hit, labels gras
+  **Isoler** : réécrits en prose ; « utilise » faux positif) +
+  antislop-copywriting. Corrections manuelles : parallélisme négatif « ne porte
+  pas sur… elle porte sur » remplacé par « un seul critère », deux signposting
+  (« Pourquoi ce découpage compte : », « Maintenant la méthode. ») supprimés,
+  auto-promo « ce guide te fait économiser les deux » retirée, note fondateur
+  « par X, pas par Y » réécrite avec un fait d'observation. Description
+  ramenée de 161 à 158 caractères.
+- Gates : audit.mjs OK (148 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route présente), check-registry.py OK.
+- IndexNow : 186 URLs soumises, HTTP 200.
+
+## 2026-09-20 | loop 30j J32 | main | `21b1457`
+
+- Article : `animatique-ia-methode` (« Animatique IA : du storyboard au film
+  chronométré »), KW principal « animatique ia », 32/36 du run, J35 du plan
+  (cluster Workflow, type tutoriel), catégorie workflow-creatif.
+- Angle : le web FR s'arrête au storyboard ; ici l'étape que l'animation
+  pratique depuis toujours (Wikipédia : storyboard synchronisé sur la
+  bande-dialogues) appliquée à la vidéo IA. Parti pris : étape la moins chère
+  de la chaîne, celle qui fixe le coût de toutes les autres ; la voix passe
+  avant l'image (durée mesurée sur la voix témoin, pas devinée) ; « storyboard
+  animé » redéfini comme animatique (images fixes + temps + son), pas comme
+  génération vidéo case par case. Tableau 3 niveaux (fixe / caméra simulée /
+  images clés) x validé x outil x coût, méthode en 7 étapes (numérotation 010
+  020, voix témoin, montage sur le son, 3 visionnages, caméra simulée, shot
+  list chronométrée, remplacement in situ), Pro Tip cases > longueur de clip
+  (5 s Gen-4.5 / 8 s Veo 3.1), 4 pièges (animatique après génération,
+  chronométrer sans voix, soigner les cases avant de couper, abandonner la
+  timeline). Calcul clé : Runway Standard 7 500 crédits/an = 125 vidéos de
+  5 s (10 min 25 s) ou 3 750 images Gen-4 Image Turbo ; 1 clip Gen-4.5 = 30
+  images Turbo.
+- Faits sourcés : voir CONTENT_LEDGER (Wikipédia FR, wonderunit.com,
+  boords.com/pricing, elevenlabs.io/pricing, runway.com/pricing). Captures :
+  Storyboarder (home, 36 Ko), Boords pricing (recadrée depuis une capture
+  pleine page car la capture above-the-fold tombait sur la FAQ, 41 Ko),
+  Runway pricing tableau Compare models across plans (recadré depuis pleine
+  page, 28 Ko). runwayml.com/pricing redirige en 308 vers runway.com/pricing.
+  CapCut cité sans chiffre. « Trois soirées », « une soirée » donnés comme
+  ordre de grandeur vécu, pas comme mesure.
+- Passes : humanizer (6 corrections : paraphrase Wikipédia trop proche,
+  signposting « mon avis en deux lignes » et « un point qui découle », gloss
+  « ce tableau dit pourquoi », parallélisme négatif du piège 1, « la plupart
+  des créateurs » remplacé par observation personnelle), unslop-text (scanner
+  0 finding sur 2 831 mots, puis passe manuelle : 4 triades cassées, 3 gras
+  ajoutés), antislop-copywriting (verbes humains sur l'animatique « décide »
+  -> « fixe », unité 5 s précisée comme unité de facturation Gen-4.5). Zéro
+  tiret long.
+- Hero : Nano Banana 2 via Vercel AI Gateway (88 Ko, premier jet, 0,14 $),
+  loft en lumière du matin, femme en chemise de lin agenouillée sur un
+  plancher, longue bande de cases de storyboard scotchées bout à bout au sol,
+  chronomètre en main, enregistreur portable et casque posés à côté. Motif
+  distinct de J31 (ruelle VFX heure bleue), J30 (salle de répétition), J29
+  (atelier maquette), J28 (projection plein air), J27 (salle vitrée).
+- Gates : audit.mjs OK (149 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route /blog/animatique-ia-methode présente, 199 pages),
+  check-registry.py OK après git add.
+- IndexNow : 187 URLs soumises, HTTP 200.
+
+## 2026-09-22 | loop 30j J34 | main | `f05bdec`
+
+- Article : `video-produit-ecommerce-ia` (« Vidéo produit IA : la méthode
+  e-commerce qui vend »), KW principal « vidéo produit ia », 34/36 du run,
+  J37 du plan (cluster Métiers, type use case commercial), catégorie
+  business-creatif.
+- Angle : l'IA fabrique le monde autour du produit, jamais le produit. Quatre
+  questions que la photo laisse sans réponse (taille, matière, geste, usage
+  réel), tableau des trois formats (tour de produit, démo d'usage, pub) x ce
+  que le client vérifie x ce qui reste filmé x ce que l'IA fait x durée et
+  canal, méthode 6 étapes (cinq objections, cinq plans réels au téléphone,
+  images de référence, plans d'ambiance générés avec références Veo 3.1,
+  montage par objections, publication selon specs + label IA + mesure), Pro
+  Tip « le plan d'échelle en premier », section outils des plateformes (H2
+  id outils-plateformes : générateur Amazon Ads gratuit en France depuis le
+  11/11/2025, Product Studio de Google fermé aux marchands FR + encadré label
+  IA UE, Shopify vidéo 1 Go / 10 min / 4K et 3D GLB/USDZ), quatre erreurs
+  (produit généré en gros plan, résultat non fourni = L121-2, vidéo unique
+  pour tous les canaux, six images ou plus sur Amazon), FAQ 6, conclusion
+  planning week-end.
+- Sources primaires lues le 22/09/2026 : sell.amazon.com (page du 12/05/2025),
+  advertising.amazon.com (annonce du 11/11/2025), support.google.com
+  (Product Studio), help.shopify.com (product media types), ai.google.dev
+  (Veo 3.1), legifrance.gouv.fr (L121-2). Le chiffre +23,8 % est présenté
+  comme une donnée interne Amazon 2024, pas comme un fait indépendant.
+- Images : hero Nano Banana 2 (réserve d'une marque de céramique, femme
+  accroupie filmant un mug bleu sur plateau tournant au smartphone, panneau
+  blanc en main, porte de quai ouverte, cartons étiquetés), 3 captures
+  réelles via script Playwright scratchpad (full page + crop PIL) : specs
+  Amazon (section Technical requirements), annonce Amazon Ads (FR), page
+  d'aide Product Studio avec encadré label IA. `scripts/capture-screenshot.py`
+  ne capture que l'above-the-fold, d'où le script scratchpad pour viser une
+  section précise.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting
+  invoqués ; scanner unslop 3 hits, tous faux positifs FR (« utilisation »
+  dans la citation de L121-2) ; passe manuelle : signposting supprimé (« tient
+  en une phrase », « Le tableau dit une chose simple », « Deux choses à
+  retenir »), ouverture P2 réécrite pour ne pas recopier « À la fin de cette
+  page » de J33, contrastes « X, pas Y » réduits de 4 à 2, triade doublée dans
+  l'intro coupée, claim « Non, plus depuis 2025 » corrigée en date de page,
+  phrase Kling non sourcée retirée de la FAQ, prix inventé du plateau tournant
+  remplacé, mention « vrais élèves » retirée de la note fondateur.
+- Gates : audit.mjs 151 articles 0 erreur 0 avertissement, lint OK, build
+  OK (exit 0, route /blog/video-produit-ecommerce-ia présente),
+  check-registry OK après git add.
+- IndexNow : 189 URLs soumises, HTTP 200.
+
+## 2026-09-21 | loop 30j J33 | main | `7a74110`
+
+- Article : `mascotte-marque-ia` (« Mascotte de marque IA : la créer et la
+  protéger »), KW principal « mascotte ia », 33/36 du run, J36 du plan
+  (cluster Personnages, type use case commercial), catégorie business-creatif.
+- Angle : une mascotte est un employé dessiné qu'on recrute pour vingt ans ;
+  la génération est la partie facile, tout se joue dans les règles (bible de
+  mascotte) et la protection. Bibendum (1898, refontes 1960s / 1997 / 2003)
+  et Duo (2013 : couleur et espèce non négociables ; 2020 : 4 composantes de
+  forme) comme preuves que la mascotte tient par ses règles. Tableau bible
+  minimum (identité, palette, traits fixes, accessoire signature, formes,
+  interdits) x fixé x exemple renard de torréfaction x libre, méthode 6 étapes
+  (job avant dessin, silhouettes noires, référence unique, planche de vues via
+  Edit Model / Nano Banana, vectoriel Recraft ou main, déclinaisons), Pro Tip
+  « test du dos », section protection à part (H2 id protection) : Copyright
+  Office 29/01/2025 (prompt seul non protégeable, apports humains
+  protégeables, donc vectoriser à la main = apport daté) et INPI (marque
+  figurative, 190 € + 40 €/classe, 10 ans), 4 pièges (trop détaillé,
+  photoréalisme, mascotte vs logo, déposer le premier jet ou rien).
+- Réorientation factuelle en cours de run : la doc Omni Reference de
+  Midjourney affiche « not supported in V8.2 » et renvoie vers l'Edit Model
+  (jusqu'à 4 références, remplace Omni Reference et Character Reference). La
+  capture prévue de la page Omni Reference a été remplacée par la page Edit
+  Model. Tout tutoriel --cref / --oref est signalé comme daté dans l'article.
+- Faits sourcés : voir CONTENT_LEDGER. Captures : INPI coût d'une marque
+  (recadrée depuis une capture pleine page pour éviter la bannière cookies et
+  isoler les lignes 190 € / 40 €, 21 Ko), Copyright Office NewsNet 1060
+  (115 Ko), Midjourney Edit Model (53 Ko, bandeau « supported in V8.2 »).
+  docs.midjourney.com renvoie 403 à WebFetch et une page Cloudflare à
+  Playwright headless ; lecture faite via le navigateur intégré, capture via
+  le script (qui passe). design.duolingo.com redirige vers blog.duolingo.com,
+  faits Duo pris sur les deux billets de blog primaires.
+- Passes : humanizer (9 corrections : ouvertures « Ma position : » et « Dans
+  cet article, tu vas construire » recopiées de J32 réécrites, parallélisme
+  négatif « n'est pas une image, c'est un jeu de règles » -> « tient par ses
+  règles », « pas une promesse » supprimé, H2 conclusion « ne le génère pas »
+  coupé, aphorisme « vectoriser c'est signer » -> fait plat, « le logo
+  identifie, la mascotte incarne » -> règles de placement, signposting de la
+  section protection remplacé par le fait, triade finale réduite), unslop-text
+  (scanner 1 faux positif « utilisation » sur 3 058 mots, puis passe
+  manuelle : deux paragraphes ouvrant en répétant leur H3 réécrits, claim non
+  sourcé sur les dépôts de marque de Michelin supprimé, « quatre ou cinq
+  refontes » recalé sur « au moins trois refontes », H2 concepts reformulé),
+  antislop-copywriting (verbe « décide » sur une phrase -> « te donne la
+  liste », tournure lourde réécrite). Zéro tiret long (le grep byte-class
+  `[—–]` donne 11 faux positifs sur « œ » et « € » ; compter avec Python).
+- Hero : Nano Banana 2 via Vercel AI Gateway (95 Ko, deuxième jet, 2 x
+  0,14 $), atelier de sérigraphie au crépuscule, homme barbu en tablier taché
+  d'encre soulevant le cadre de la presse au-dessus d'un sac de café kraft
+  imprimé d'un renard en tablier vert, pile de sacs et mug identiques, planche
+  de poses face / profil / dos suspendue à un fil devant la fenêtre. Premier
+  jet écarté car la planche portait du texte lisible (CHARACTER SHEET, FRONT /
+  SIDE / BACK) ; idée initiale (femme en tablier + figurine dans un atelier)
+  abandonnée avant génération car trop proche du J29 (atelier maquette).
+  Motif distinct de J32 (loft storyboard au sol), J31 (ruelle VFX), J30
+  (salle de répétition), J29 (atelier maquette), J28 (projection plein air).
+- Gates : audit.mjs OK (150 articles, 0 erreur, 0 avertissement), lint OK,
+  build OK (exit 0, route /blog/mascotte-marque-ia présente), check-registry
+  OK après git add.
+- IndexNow : 188 URLs soumises, HTTP 200.
+
+## 2026-09-23 | loop 30j J35 | main | `9e55357`
+
+- Article : `videos-formation-en-ligne-ia` (« Vidéo formation IA : produire ton
+  cours en ligne »), KW principal « vidéo formation ia », 35/103 du run, J38 du
+  plan (cluster Métiers, type use case commercial), catégorie business-creatif.
+- Angle absent du web FR (partout des listes d'outils et des promesses d'avatar) :
+  le coût d'une formation en ligne est un coût de MAINTENANCE, pas de production.
+  Un cours se range en trois couches qui ne se périment pas à la même vitesse,
+  Toi (des années, caméra, correction chère), l'Écran (jusqu'à la prochaine mise
+  à jour de l'outil, enregistrement d'écran, correction moyenne) et l'Information
+  (quelques mois, script + avatar ou voix de synthèse, correction quasi gratuite).
+  Tout ce qui contient un prix, un numéro de version ou une capture d'interface
+  part en couche Information. Contre-pied sourcé du discours des plateformes
+  d'avatars : l'étude edX recommande explicitement le face-à-face informel plutôt
+  que le studio haut de gamme, donc l'avatar est un narrateur de service, pas un
+  remplaçant. Méthode 6 étapes (découper sous 6 min avant d'écrire, classer T/E/I,
+  scripter la seule couche I, tourner la couche Toi en une journée, enregistrer
+  écran puis information, sous-titrer et mesurer le taux de complétion par
+  capsule), section coût réel à la minute, quatre erreurs, FAQ 6.
+- Sources primaires lues le 23/09/2026 : PDF des diapositives Guo/Kim/Rubin sur
+  learningatscale.acm.org (téléchargé, texte extrait avec pypdf, pages rendues
+  avec PyMuPDF) ; synthesia.io/pricing depuis la France (euros, pas les dollars
+  de la version US) ; descript.com/pricing. Les deux €/min sont des calculs à
+  moi, annoncés comme tels dans l'article. Trouvaille gardée : chez Synthesia
+  le doublage et la génération tirent sur la MÊME réserve de crédits (« 120 min
+  de vidéo OU 580 min de doublage »), donc traduire son cours se paie en minutes
+  de génération ; et le plan cher revient plus cher à la minute (1,63 € contre
+  1,20 €), ce qu'aucun comparatif FR ne relève. Autre point utile : l'export
+  SCORM n'existe que sur Enterprise.
+- Écartés faute de source primaire solide : l'European Accessibility Act comme
+  obligation de sous-titrage pour un cours en ligne (la liste de l'article 2 de
+  la directive 2019/882 nomme les e-books et l'e-commerce, pas le e-learning ;
+  les blogs anglophones qui l'affirment surinterprètent, et EUR-Lex renvoie du
+  vide à WebFetch comme à curl). Le décret Qualiopi n° 2026-728 du 01/08/2026
+  (33 indicateurs, entrée en vigueur au 01/11/2026) existe bien sur Légifrance
+  mais ne concerne pas la cible infopreneur de l'article : piste pour un futur
+  article FOAD/organisme de formation.
+- Images : hero Nano Banana 2 (82 Ko, premier jet), motif J35 : amphithéâtre
+  vide à midi, formatrice en blazer rouille assise de profil à une petite table
+  contre les hautes fenêtres, portable surélevé sur une pile de livres, micro-
+  cravate, main levée en plein geste, bancs de bois flous derrière, minuteur
+  mécanique et liasse de pages (rupture avec J34 réserve/entrepôt, J33 atelier
+  de sérigraphie, J32 loft storyboard au sol, J31 ruelle VFX, J30 salle de
+  répétition). 3 images dans le corps : le graphique engagement/durée rendu
+  depuis le PDF de l'étude avec PyMuPDF puis recadré (30 Ko), et 2 captures
+  Playwright des pages de tarifs Synthesia et Descript. Script scratchpad
+  `shot.py` qui clique « Reject all » plutôt qu'« Accept all » (préférable au
+  comportement de `scripts/capture-screenshot.py`).
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués ;
+  scanner unslop 2 hits, tous faux positifs FR (« Utilise » lu comme « utilize ») ;
+  passe manuelle : 4 parallélismes négatifs réécrits (le thèse de l'intro, la
+  vidéo de 20 minutes dans la FAQ et son doublon, le doublage « pas un supplément
+  gratuit »), 2 signposting supprimés (« tient en une ligne de leur diapositive »,
+  « Le graphique ci-dessous est le plus utile »), « Je te propose » remplacé,
+  surclaim « la seule vraie étude » ramené à « le plus gros jeu de données »,
+  preuve sociale vague « reste la référence sur le sujet » remplacée par ce que
+  la source dit d'elle-même, « l'outil qui sert le plus souvent » (Descript)
+  retiré, « presque tous les cours » ramené à une observation assumée, trois
+  « bat/battent » d'affilée variés, quatre phrases parallèles sur le graphique
+  refondues, incohérence 5 min vs 6 min entre l'étape 1 et l'erreur 1 corrigée,
+  anecdote inventée sur un tarif refilmé retirée de la note fondateur (piège
+  déjà vu en J30), « lectures démarrées » corrigé en « capsules démarrées ».
+- Gates : audit.mjs 152 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add.
+- IndexNow : 190 URLs soumises, HTTP 200.
+
+## 2026-09-24 | loop 30j J36 | main | `a19e63b`
+
+- Article : `bande-annonce-ia` (« Bande-annonce IA : 90 secondes, 40 plans, la
+  méthode »), KW principal « bande annonce ia », 36/103 du run, J28 du plan
+  (cluster Cinéma IA, type tutoriel, intention info), catégorie workflow-creatif.
+- Reprise de ligne sautée : le J28 du run est parti sur la Phase 2 sans noter
+  qu'il enjambait les lignes 28, 29 et 30 de la Phase 1. L'étape 1 de la tâche
+  dit « toujours la première ligne dont le slug n'existe pas », donc retour sur
+  la 28. Restent `court-metrage-ia-niveau-festival` (29) et `flux-guide-complet`
+  (30) avant de reprendre la Phase 2 à la ligne 39. La ligne 96 de la Phase 4
+  porte le MÊME slug `bande-annonce-ia` : elle est consommée par cet article,
+  ne pas la republier.
+- Angle absent du web FR, qui traite le sujet en liste d'outils de montage :
+  une bande-annonce est le format le plus contraint de la vidéo, avec deux
+  plafonds chiffrés que personne ne cite côté IA. Durée : plafond MPA à
+  2 min 30, une dérogation par an et par studio ou distributeur ; recommandation
+  NATO officialisée en janvier 2014 à 2 minutes (30 s de moins que la norme
+  précédente), deux dérogations par an, applicable aux films sortant à partir
+  du 01/10/2014, diffusion limitée aux 5 mois avant la sortie et affiches aux
+  4 mois, le tout volontaire et laissé à chaque circuit de salles. Son :
+  standard TASA à Leqm 85, développé à la demande de NATO après des plaintes
+  du public, pondéré sur les fréquences agaçantes (l'exemple du site : un bris
+  de verre à 85 dB irrite plus qu'une corne de brume au même niveau), adopté
+  volontairement par tous les studios membres MPA, et la MPA n'approuve que les
+  trailers certifiés conformes pour un film classé CARA (600 $ la certification
+  chez THX, 800 $ en immersif Atmos).
+- Partie utile : conducteur en 5 blocs avec plans et longueurs moyennes par bloc
+  (accroche 1-2 plans de 4-8 s, exposition 8-12 plans de 2-3 s, bascule 3-5 plans
+  de 1,5-3 s, montée 18-25 plans de 0,8-1,5 s, bouton 2-4 plans de 2-5 s), total
+  32 à 48 plans ; 6 étapes dont le code R/U de réemploi des plans ; tableau de
+  budget calculé sur les tarifs publics Veo du 24/09 (40 plans x 3 tentatives x
+  8 s = 960 s facturées, soit 48 $ en Lite 720p, 115 $ en Fast 1080p, 384 $ en
+  3.1 standard, 576 $ en 4K ; 1,28 $ la seconde finie en Fast 1080p ; ratio
+  10 pour 1 entre secondes facturées et secondes gardées). Specs Veo sourcées :
+  durationSeconds 4/6/8 mais 8 obligatoire avec extension, images de référence,
+  1080p ou 4K ; aspectRatio 16:9 et 9:16 seulement (d'où le calcul du recadrage
+  2.39:1, 803 px de haut sur 1080, 26 % de perte) ; 3 images de référence max ;
+  extension +7 s jusqu'à 20 fois et 148 s, en 720p uniquement ; vidéos stockées
+  2 jours sur le serveur puis supprimées (devenu le Pro Tip).
+- Images : hero Nano Banana 2 (58 Ko, premier jet), motif J36 : auditorium de
+  mixage en fin de soirée, ingénieure du son en cardigan gris seule à une large
+  console posée au milieu des fauteuils rouges, faders bleus éclairés par le bas,
+  VU-mètre à aiguille dans un rack, écran du fond sur une mer sombre floue,
+  panneaux acoustiques rouges, lampe de bureau chaude (rupture avec J35
+  amphithéâtre, J34 réserve, J33 sérigraphie, J32 loft, J31 ruelle VFX ; noter
+  que J28 était une projection en plein air, donc éviter le registre salle
+  obscure pendant quelques runs). 2 captures réelles dans le corps :
+  tasatrailers.org/whatis.html via `scripts/capture-screenshot.py` (78 Ko,
+  lisible du premier coup, la page est en HTML brut sans bannière) et le tableau
+  des specs Veo de ai.google.dev via script Playwright scratchpad. Astuce à
+  réutiliser sur les longues tables de doc : `page.evaluate("document.body.style
+  .zoom='0.62'")` avant `locator.screenshot()`, sinon l'en-tête des colonnes
+  (ici les noms de modèles) sort du cadre et la capture ne prouve plus rien.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués ;
+  scanner unslop 4 hits, tous faux positifs FR (« utilise » lu comme « utilize ») ;
+  passe manuelle : 4 parallélismes négatifs réécrits (excerpt « pas douze », FAQ 2
+  et son doublon dans le corps « jamais un rythme de bande-annonce », « tu n'es
+  plus en train de donner envie, tu racontes le film », « avant de monter, pas
+  après »), 3 signposting supprimés (« Voici le découpage que j'utilise »,
+  « Deux contraintes techniques pèsent sur l'étape 5 » et son « Première
+  contrainte / Deuxième contrainte », « Traduit autrement »), première ligne du
+  H3 durée sortie de l'écho de son titre, et les 6 items de la liste `ol`
+  débarrassés de leurs en-têtes **gras** : c'est le pattern P15 du humanizer, et
+  surtout un écart au gabarit maison, les `ol` des articles existants ouvrent sur
+  une phrase simple.
+- Crédibilité : trois retraits pour cause d'invention ou de généralisation non
+  vérifiée, « les deux plafonds que le métier impose depuis vingt ans » (aucune
+  date de création de TASA vérifiée), « beaucoup de plateformes de soumission
+  demandent la bande-annonce séparément du film », et la preuve sociale vague
+  « J'ai vu des gens reprendre un projet le lundi ». Claim « Veo 3.1 Lite : pas
+  d'images de référence » retiré aussi : la colonne Lite de la doc affiche un
+  « Objet n/a » ambigu alors que la note sur durationSeconds parle bien d'images
+  de référence pour Lite, donc on ne garde que ce qui est certain (pas
+  d'extension, pas de 4K). Erreur de calcul rattrapée en relecture : l'économie
+  du réemploi de 6 plans était annoncée à « une centaine de dollars » puis
+  corrigée à tort en « une trentaine », le vrai chiffre est 17 $ en Fast 1080p
+  et 58 $ en standard (6 x 3 x 8 s x le prix à la seconde).
+- Longueur : 2 892 mots, au-dessus de la fourchette 1500-2500 de la consigne mais
+  dans la bande réelle des articles récents (2 388 à 3 141 mots sur J28 à J35),
+  donc gardé tel quel.
+- Gates : audit.mjs 153 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add.
+- IndexNow : 191 URLs soumises, HTTP 200.
+## 2026-09-25 | loop 30j J37 | main | `a466500`
+
+- Article : `court-metrage-ia-niveau-festival` (« Court-métrage IA : viser le
+  niveau festival »), KW principal « court métrage ia », 37/103 du run, J29 du
+  plan (cluster Cinéma IA, type méthode, intention info), catégorie storytelling.
+  Suite de la reprise des lignes sautées commencée au J36 : il reste la ligne 30
+  `flux-guide-complet` avant de reprendre la Phase 2 à la ligne 39
+  `ia-community-manager`.
+- Angle absent du web FR, qui traite « court métrage IA » en liste d'outils :
+  un dépôt en festival passe deux filtres, et le premier est une vérification de
+  conformité chiffrée qui écarte des films avant tout jugement artistique.
+  E-E-A-T VOIDBORN (9 festivals) assumé sans réutiliser le contenu de
+  `festivals-films-ia`, qui garde « où déposer ».
+- Faits sourcés le 25/09 :
+  - sundance.org 2026_Submissions_Rules.pdf (lu avec PyMuPDF, WebFetch ne sort
+    que le texte compressé) : court = moins de 50 minutes « including credits » ;
+    règle 11 et définitions de catégories, les courts n'ont AUCUNE exigence de
+    statut de première, contrairement aux longs ; règle 20, dialogues non
+    anglophones significatifs sans sous-titres anglais = disqualification sans
+    remboursement, avec l'exception du choix artistique ; règles 17 à 19, droits
+    d'auteur et marques sous la seule responsabilité du déposant avec clause
+    d'indemnisation ; règle 22, fichier non visionnable en entier pour un
+    problème technique « whether the fault of the Applicant or any third-party
+    system » ; règle 15, projets terminés avant le 01/01/2024 inéligibles.
+  - sundance.org Technical-Specifications-For-Festival-Presentation.pdf :
+    fichier de projection en ligne ProRes LT 82-102 Mbps, .mov, 1920x1080,
+    Rec 709 / 2.2, pixels carrés, PCM 48 kHz 24 bits, **-24 dB LUFS avec crête
+    max -2 dB**, progressif uniquement 23,98 / 24 / 25 / 29,97 / 30 im/s,
+    closed captions .srt ou .vtt avec time code à 00:00:00:00 ; DCP Interop ou
+    SMPTE 24/25/30 fps, 2K ou 4K, nommage ISDCF, 5.1 avec canaux inutilisés
+    remplis de silence numérique ; « All titles must be finished, mixed release
+    versions. We will not screen any rough cut with a temp mix. »
+  - aaiff.ai (section Rules) : 5 règles d'admission, hashtag #SpecialForAAIFF
+    obligatoire sur YouTube sous peine de non-examen, sous-titres anglais
+    INCRUSTÉS dans la vidéo, dépôts du 25/05 au 07/09/26, « Generative AI must
+    be integral to creation, not only VFX or upscaling », tous les contributeurs
+    crédités et modèles + pipeline déclarés.
+  - aif.runwayml.com/terms-film : 3 à 15 minutes, aucun frais, « a short,
+    written description of the AI techniques used in the Submission ».
+  - partnerhelp.netflixstudios.com Timed Text Style Guide General Requirements :
+    durée minimale 5/6 de seconde (20 images en 24 im/s), maximale 7 secondes,
+    2 lignes maximum, centré haut ou bas. La page ne donne PAS les caractères
+    par ligne ni la vitesse de lecture, qui renvoient aux guides par langue :
+    ne pas citer 42 caractères de mémoire.
+  - Artdocfest (via recherche) : sonie -18 à -21 LUFS et sous-titres incrustés
+    REFUSÉS, cité comme contre-exemple d'Astana. Source secondaire, présenté
+    dans l'article comme ce qu'annonce le festival.
+- Écarté faute de source : les spécifications techniques de Clermont-Ferrand
+  (la page /guidelines du site est le règlement intérieur du public, pas celui
+  des dépôts, et le vrai règlement est sur /pros/submit-a-film non consulté) ;
+  les specs Berlinale (HTTP 503 sur WebFetch). Le comparatif FR aurait été plus
+  parlant, à retenter sur un futur article distribution.
+- Partie utile : tableau de 6 seuils avec la source de chacun, liste `ol` de
+  6 étapes de préparation de dépôt, Pro Tip du master unique ProRes 1080p
+  24 im/s PCM 48/24, et conclusion qui décrit le dossier de dépôt à 6 pièces
+  réutilisable pendant deux ans.
+- 3 images dans le corps : rendu PyMuPDF du tableau de specs Sundance (page 3
+  du PDF, clip `Rect(48, 153, 566, 302)` à 260 dpi puis resize PIL en 1280 px,
+  47 Ko) ; capture Playwright de la section Rules d'aaiff.ai (clic sur
+  « REJECT NON-ESSENTIAL » puis sur le lien RULES du menu, viewport 1440x780
+  pour cadrer les 5 cartes sans le pied de page, 101 Ko) ; capture
+  `scripts/capture-screenshot.py` de la page Netflix Timed Text avec `--vh 1100`
+  pour faire entrer la section Duration (61 Ko). Les 3 relues avec Read.
+  Piège rencontré : `aaiff.ai` ne finit jamais en `networkidle` (vidéo de fond
+  en boucle), utiliser `wait_until="load"`.
+- Humanisation : skills humanizer + unslop-text + antislop-copywriting invoqués.
+  Scanner unslop : 1 hit HIGH réel, `**deux filtres successifs** :` lu comme un
+  label en gras suivi de deux-points, corrigé en gras suivi d'une virgule.
+  Passe manuelle FR : 2 parallélismes négatifs (« Ce document n'est pas une
+  formalité, il conditionne l'éligibilité », « les films qui passent et ceux qui
+  ne passent pas »), 3 signposting (« Voici les valeurs relevées », « Deux
+  d'entre eux méritent d'être lus deux fois », « La marche à suivre »),
+  1 « Autrement dit » (P43), 2 triades réduites à deux termes, tic « et c'est
+  normal » / « et c'est très bien ainsi » présent deux fois et corrigé une fois.
+- Crédibilité : deux inventions rattrapées en relecture de mes propres
+  corrections, « Sur mille tutos, aucun ne mentionne » (chiffre rhétorique
+  fabriqué) et « Une sur dix tombe assez près d'une marque existante »
+  (statistique inventée pour remplacer une répétition). Leçon : la
+  sur-correction d'un tell stylistique fabrique volontiers un faux chiffre,
+  relire les phrases retouchées avec la grille crédibilité, pas seulement avec
+  la grille style. Faute de grammaire corrigée aussi : « du premier au dernier
+  image ».
+- Longueur : 2 354 mots de corps, dans la fourchette 1500-2500 de la consigne.
+- Gates : audit.mjs 154 articles 0 erreur 0 avertissement, lint OK, build OK
+  (exit 0), check-registry OK après git add (154 imports + heros suivis).
+- IndexNow : 192 URLs soumises, HTTP 200.
+
+## 2026-09-26 | loop 30j J38 | main | `78bdb61`
+
+- Article : `flux-guide-complet` (« Flux IA : quel modèle choisir et à quel
+  prix »), KW principal « flux ia », 38/103 du run, ligne 30 du plan (cluster
+  Outils, type guide outil, intention info), catégorie ia-image. Dernière des
+  trois lignes Phase 1 sautées au J28 du run : la reprise est terminée, le
+  prochain article repart sur la Phase 2 à la ligne 39 `ia-community-manager`.
+- Réorientation par rapport au plan, écrit quand Flux voulait dire FLUX.1 : le
+  titre prévu était « Flux : le guide du modèle image qui monte ». Vérification
+  web du 26/09 : Flux n'est plus un modèle, c'est une famille de neuf entrées sur
+  trois générations. L'angle devient le tri dans la famille, le prix réel et les
+  licences, ce qu'aucun contenu FR ne fait (le web FR est resté sur les tutos
+  ComfyUI FLUX.1 dev de 2024).
+- Angle absent du web FR : la facturation a changé d'unité entre FLUX.1 (prix
+  fixe à l'image) et FLUX.2 (mégapixel, premier plus cher que les suivants,
+  images de référence facturées au tarif du MP supplémentaire), et « poids
+  ouverts » ne veut pas dire « libres » (seuls klein 4B et 4B Base sont Apache
+  2.0).
+- Faits sourcés le 26/09 sur bfl.ai, navigateur intégré :
+  - bfl.ai/models : neuf entrées (FLUX 3 Action, FLUX 3 Video, FLUX.2 Max,
+    FLUX.2, FLUX.2 Klein, FLUX Tools, FLUX.1 Kontext, FLUX 1.1 Pro Ultra,
+    FLUX 1.1 Pro).
+  - bfl.ai/blog/flux-2, 25/11/2025 : jusqu'à 10 références, sortie et édition
+    jusqu'à 4 MP, typographie, 32K tokens de prompt, world knowledge, VLM
+    Mistral-3 24B couplé à un transformeur à flux rectifié, FLUX.2 [dev] = 32B
+    à poids ouverts avec implémentation fp8 NVIDIA/ComfyUI, VAE sous Apache 2.0.
+  - bfl.ai/pricing, onglet FLUX.2 : l'onglet est un toggle capricieux, les
+    valeurs ont été lues dans le JSON-LD de la page (fetch RSC puis lecture des
+    blocs Product/UnitPriceSpecification) avant d'être confirmées par la
+    capture Playwright. max 0,07 $ le 1er MP puis 0,03 $, pro 0,03 / 0,015 $,
+    flex 0,05 $/MP sans dégressivité, klein 9B 0,015 / 0,002 $, klein 4B
+    0,014 / 0,001 $ ; colonne REF IMG = tarif du MP supplémentaire. FLUX.1
+    facturé à l'image : 1.1 pro 0,04 $, 1.1 pro Ultra 0,06 $, FLUX.1 pro
+    0,05 $, FLUX.1 dev 0,025 $. Règles : arrondi au MP entier supérieur
+    séparément pour l'entrée et la sortie, sortie plafonnée à 4 MP, références
+    multiples ramenées à 1 MP chacune.
+  - bfl.ai/models/flux-2-klein : 9B FLUX Non-Commercial License 19,6 Go ~0,5 s
+    GB200 / ~2 s RTX 5090 ; 9B Base non-commercial 21,7 Go ~6 s / ~35 s ; 4B
+    Apache 2.0 8,4 Go ~0,3 s / ~1,2 s ; 4B Base Apache 2.0 9,2 Go ~3 s / ~17 s.
+  - bfl.ai/licensing : Builder (modèles klein, 10K images/mois, 1 domaine, 10
+    utilisateurs, usage client exclu), Platform (klein Base 9B + dev, 100K/mois),
+    Professional (dev, 100K/mois, jusqu'à 3 domaines, 3 premiers clients inclus),
+    Enterprise sur mesure.
+  - bfl.ai/research : rapport FLUX.2 daté du 25/11/2025. bfl.ai/blog : FLUX 3
+    Action (7B, poids ouverts, 23/09/2026), FLUX 3 Video (04/08/2026), tarifs
+    vidéo 0,17 $/s en HD et 0,06 $/s en Draft, clips jusqu'à 20 s avec audio.
+- Calculs dérivés (vérifiables à partir de la grille, absents des pages BFL) :
+  pro 1 MP = 0,03 $ et 4 MP = 0,075 $ ; max 0,07 $ et 0,16 $ ; **flex à 4 MP
+  revient à 0,20 $, soit plus cher que max** ; 200 visuels en 1 MP = 6 $ sur pro
+  et 14 $ sur max, les mêmes en 4 MP = 15 $ et 32 $ ; 3 références sur pro =
+  0,045 $ par image.
+- Erreur rattrapée à la relecture : la note de fondateur disait « cinquante fois
+  moins cher » pour klein 4B contre max, alors que le rapport réel en 1 MP est de
+  cinq (0,014 $ contre 0,07 $). Corrigé avant commit.
+- Images : hero Nano Banana 2 (atelier de réparation informatique, carte
+  graphique posée dans un boîtier ouvert), première génération jetée parce que le
+  modèle avait écrit des chiffres lisibles sur un post-it malgré la consigne « no
+  text » ; trois captures réelles Playwright (grille de prix FLUX.2, tableau des
+  quatre klein locaux avec VRAM et licences, paliers de licence), chacune
+  légendée avec la page et la date.
+- Humanisation : humanizer + unslop-text + antislop-copywriting. Corrigés :
+  signposting (« la réponse tient en deux mots », « un détail vaut le coup
+  d'œil », « trois règles encadrent le calcul », « les paliers se lisent vite »),
+  deux parallélismes négatifs en fin de section, gras en tête de liste sur deux
+  sections consécutives (dégrassées pour casser la symétrie), titre de section
+  bancal « en mégapixels, plus en images ». Scanner unslop : 1 finding LOW, faux
+  positif français (« tu utilises » pris pour « utilize »).
+- Longueur : environ 1 950 mots de corps, dans la fourchette.
+- Gates : audit.mjs 155 articles 0 erreur 0 avertissement, lint OK, build OK,
+  check-registry OK après git add (155 imports + heros suivis).
+- IndexNow : 193 URLs soumises, HTTP 200.
+
+## 2026-09-27 | loop 30j J39 | main | `f8c949a`
+
+- Article : `ia-community-manager` (« IA community manager : la boîte à outils
+  2026 »), KW principal « ia community manager », 39/103 du run, ligne 39 du
+  plan (cluster Métiers, type liste/guide, intention commerciale), catégorie
+  business-creatif. Première ligne de la Phase 2 reprise dans l'ordre après la
+  fin du rattrapage des trois lignes Phase 1 sautées.
+- Angle absent du web FR : les listes d'outils IA pour CM ne parlent jamais de
+  provenance. L'article range les outils par tâche et ajoute la colonne « ce que
+  ça laisse dans le fichier » + « ce que tu déclares », avec l'article 50 du
+  règlement européen applicable depuis le 2 août 2026 comme charnière.
+- Faits sourcés le 27/09 :
+  - digital-strategy.ec.europa.eu, guidelines sur l'article 50 : applicable
+    depuis le 2 août 2026 ; fournisseur = marquage lisible par machine ;
+    déployeur = information dans trois cas (reconnaissance d'émotions et
+    catégorisation biométrique, deepfakes, textes d'intérêt public publiés sans
+    relecture ni contrôle éditorial humain) ; exception pour les œuvres
+    manifestement artistiques, satiriques ou de fiction.
+  - artificialintelligenceact.eu/article/99 : paragraphe 4, jusqu'à 15 M€ ou 3 %
+    du CA mondial, le plus élevé des deux, seuils réduits pour les PME.
+  - support.google.com/youtube/answer/14328491 (FR) : trois cas de déclaration ;
+    l'IA d'aide à la production (scripts, idées, sous-titres) reste hors champ.
+  - linkedin.com/help/linkedin/answer/a6282984 : icône C2PA sur les contenus
+    signés, détail au clic, limite assumée (tout n'est pas identifiable).
+  - transparency.meta.com : mention « AI Info » depuis mai 2024, déclenchée par
+    les indicateurs standards ou par la déclaration de l'utilisateur.
+  - newsroom.tiktok.com (19/11/2025) : lecture des Content Credentials, ajout aux
+    contenus faits sur TikTok, test d'un filigrane invisible, plus de 1,3
+    milliard de vidéos étiquetées.
+  - help.openai.com : Content Credentials C2PA + IPTC Digital Source Type
+    `trainedAlgorithmicMedia` (page en 403 au fetch, fait confirmé par recherche).
+  - deepmind.google/science/synthid : filigrane sur l'app Gemini, Veo, Lyria,
+    NotebookLM ; vérification possible en téléversant dans Gemini.
+  - helpx.adobe.com : Content Credentials attachés automatiquement dès qu'une
+    fonction Firefly a servi, y compris le remplissage génératif sur une photo
+    réelle.
+  - techcrunch.com (31/08/2026) : Instagram renomme l'étiquette en « profil
+    généré par IA », portée réduite pour les comptes non étiquetés, pas de
+    pénalité quand l'étiquette est posée.
+- Sora volontairement absent du tableau vidéo : app fermée le 26/04/2026 et API
+  le 24/09/2026 (fait déjà au ledger depuis J24). Remplacé par Veo, Runway, Kling.
+- Partie utile : tableau 7 lignes (tâche / outils / ce qui part dans le fichier /
+  ce que tu déclares), `ol` de 7 étapes de semaine type avec le relevé Verify à
+  l'étape 4, 4 erreurs avec fix concret.
+- 3 captures réelles : aide YouTube FR (repo script), guidelines de la Commission
+  (Playwright scratchpad, refus des cookies non essentiels + scroll 620),
+  contentcredentials.org/verify (repo script). Capture Meta abandonnée : mur de
+  cookies non cliquable par `button:has-text()` et URL `features/...` en 404.
+- Gates : audit 156 articles 0/0, lint OK, build exit 0, check-registry OK.
+  IndexNow 194 URLs HTTP 200.
+
+## 2026-10-01 | loop 30j J40 | main | `97959f7`
+
+- Article : `video-publicite-locale-ia` (« Publicité locale IA : filmer le vrai,
+  générer le reste »), KW principal « publicité locale ia », 40/103 du run,
+  ligne 40 du plan (cluster Métiers, type use case, intention commerciale),
+  catégorie business-creatif. Quatre jours sans run entre J39 (27/09) et
+  aujourd'hui, reprise sur la première ligne du plan au slug absent, sans saut.
+- Angle propre à la pub locale et absent du web FR : contrairement à une pub
+  nationale, l'audience d'un spot de quartier connaît le lieu, donc toute
+  invention visuelle sur le commerce est détectée par la cible elle-même. La
+  ligne de partage de l'article n'est pas réel/généré mais habillage/promesse,
+  ce qui donne une grille par métier des plans à filmer et des plans générables.
+- Faits sourcés le 01/10 :
+  - support.google.com/business/answer/6103862 (FR, capture) : vidéo jusqu'à
+    30 secondes, 75 Mo, au moins 720p ; photo JPG/PNG entre 10 Ko et 5 Mo, 720 px
+    recommandé, 250 px minimum, « nette et bien éclairée », pas de retouches
+    importantes ni de filtres excessifs, « l'image doit être fidèle à la
+    réalité » ; 24 à 48 h avant affichage. Cette phrase sur la fidélité est le
+    pivot de l'article, elle vient de Google et pas d'une interprétation.
+  - legifrance LEGIARTI000044563114 (L121-2) : pratique commerciale trompeuse
+    quand une allégation fausse ou de nature à induire en erreur porte sur les
+    caractéristiques essentielles, les qualités substantielles, l'origine ou les
+    résultats attendus de l'utilisation.
+  - legifrance LEGISCTA000032221101 (L132-2) : 2 ans et 300 000 €, portés à
+    5 ans et 750 000 € via un service de communication au public en ligne ;
+    majorations possibles à 10 % du CA annuel moyen ou 50 % des dépenses de
+    publicité (80 % pour les allégations environnementales).
+  - ai.google.dev/gemini-api/docs/video (capture) : Gemini Omni Flash en modèle
+    par défaut (texte + images vers vidéos courtes, édition conversationnelle
+    multitour), Veo 3.1 pour l'extension de scène, le contrôle de la dernière
+    image et la direction par l'image. C'est cette direction par l'image qui
+    permet de partir d'une photo prise sur place.
+- Partie utile : tableau 6 lignes x 4 colonnes (commerce / à filmer au téléphone
+  / générable sans mentir / le plan qui te trahit) couvrant boulangerie, garage,
+  coiffeur, restaurant, artisan du bâtiment et cabinet ; `ol` de 5 étapes pour
+  une demi-journée ; Pro Tip sur le tournage 4K pour récupérer les trois ratios ;
+  4 erreurs avec fix concret.
+- 2 captures réelles en plus du hero : aide Fiche d'établissement Google FR
+  (scroll Playwright sur « 75 Mo »), doc vidéo de l'API Gemini. Captures
+  abandonnées et pourquoi : **legifrance.gouv.fr et economie.gouv.fr sont tous
+  les deux derrière un challenge Cloudflare « Vérification de sécurité en
+  cours »** en Playwright comme en WebFetch, aucune capture possible sans
+  franchir un contrôle anti-bot, donc on cite le texte sans l'illustrer. Les
+  pages Meta (facebook.com/business/help, transparency.meta.com) répondent 404
+  au fetch, specs Meta volontairement absentes de l'article faute de source
+  officielle (les seuls chiffres trouvés venaient de blogs SEO tiers).
+- Passes humanizer + unslop-text + antislop-copywriting : **cluster de 7
+  parallélismes négatifs** au premier jet (« ne regarde pas l'outil, elle regarde
+  la promesse », « n'achète pas tes heures, il achète », « ne tient pas dans le
+  chrono, il tient », etc.), tous réécrits sauf les appositions courtes du type
+  « X, pas Y » dont il reste 3, volontairement. Cinq signposting supprimés en
+  gardant la chose (« mérite d'être lue deux fois », « la colonne de droite
+  mérite une minute d'attention », « cette dernière ligne est celle qui
+  t'intéresse », « la question tient en quelques mots », « la règle pratique
+  tient en un principe ») plus l'annonce d'opinion « Mon avis sur la question : ».
+  « Beaucoup de créateurs cherchent » (preuve sociale vague sur un groupe)
+  remplacé par « On me demande souvent ». Scanner unslop : 2 findings LOW, tous
+  deux des faux positifs français (« utilisation » dans la citation légale,
+  « j'utilise »).
+- Script de capture avec scroll vers un texte : `scratchpad/shot.py` (Playwright
+  channel=chrome + PIL), `wait_until="domcontentloaded"` obligatoire,
+  `networkidle` fait échouer les pages support.google.com.
+- Gates : audit 157 articles 0/0 (une 1re passe à 168 car. sur `description`,
+  corrigée à 155), lint OK, build exit 0 avec la route prérendue, check-registry
+  OK après `git add`. IndexNow 195 URLs HTTP 200. HTML prérendu vérifié : 3
+  images, 8 liens internes, 1 lien externe Legifrance, JSON-LD FAQPage présent,
+  0 tiret cadratin.
+
+## 2026-10-02 | loop 30j J41 | main | `36559b7`
+
+- Article : `affiche-film-ia` (« Affiche de film IA : du prompt au fichier
+  imprimable »), KW principal « affiche film ia », 41/103 du run, ligne 41 du
+  plan (cluster Image, type tutoriel, intention informationnelle), catégorie
+  ia-image. Enchaînement normal derrière J40 publié la veille.
+- Angle : le plan prévoyait « méthode complète (compo, typo, impression) » face
+  à `ideogram-typographie-affiche-cinema` qui garde l'outil. Vérification faite,
+  cet article ancien ne parle quasiment pas d'affiche (son contenu réel porte
+  sur le rendu cinématique générique), donc le risque de cannibalisation annoncé
+  comme moyen était faible. L'article prend donc tout le sujet affiche : format
+  de sortie d'abord, image ensuite. La thèse opérationnelle est que le format
+  physique fixe le ratio, la définition et l'emplacement du titre, et que
+  l'ordre inverse (générer puis chercher un format) est ce qui fait refaire
+  l'affiche trois fois.
+- Faits sourcés le 02/10 :
+  - en.wikipedia.org/wiki/Film_poster (capture écran dans l'article) : one sheet
+    US 27 x 40 pouces soit 686 x 1016 mm, contre 27 x 41 pouces avant le milieu
+    des années 1980, quand les studios ont repris la production de leurs
+    affiches au National Screen Service. Bloc de crédits en typographie ultra
+    condensée (hauteur des caractères plusieurs fois la largeur), corps à 25 ou
+    35 % de la hauteur moyenne des lettres du titre, par convention
+    contractuelle ; la typo condensée existe précisément pour tenir cette
+    hauteur imposée tout en logeant tous les noms. C'est la trouvaille de
+    l'article, aucun contenu FR sur l'affiche IA ne mentionne cette règle.
+  - mauvais-genres.com (capture écran) : formats français, 120 x 160 cm grand
+    format de base hérité de la première affiche de cinéma (Cinématographe
+    Lumière, L'Arroseur arrosé, 1896 selon le site), 40 x 60 petit format,
+    60 x 160 pantalon pour portes de salle et colonnes Morris, 400 x 300 géant
+    en 8 panneaux, 240 x 320 et 240 x 160 abandonnés. Le site précise que ces
+    tailles sont approximatives et varient de quelques centimètres d'un film à
+    l'autre, nuance reprise telle quelle dans l'article.
+  - luxvisual.lu/guide-pao-grand-format (capture écran du bloc RÉSUMÉ) : 100 dpi
+    comme résolution optimale en grand format, plancher 72 dpi au-delà de 1 m²
+    et 36 dpi au-delà de 10 m², donnés comme « base théorique » ; PDF échelle
+    1:1, CMJN profil Fogra 39, fond perdu 10 mm sur les 4 côtés, sans traits de
+    coupe ni repères, textes et logos en vectoriel.
+  - ai.google.dev/gemini-api/docs/image-generation : ratios 1:1, 3:2, 2:3, 3:4,
+    4:3, 4:5, 5:4, 9:16, 16:9, 21:9 ; Gemini 3 Pro Image en 1K, 2K, 4K. La doc
+    ne donne PAS les dimensions en pixels par palier, donc aucune équivalence
+    4K = N Mpx n'a été affirmée dans l'article.
+  - Calculs maison explicités : 120 x 160 cm à 100 dpi = 4 724 x 6 299 px
+    (29,8 Mpx, surface 1,92 m²) ; 40 x 60 cm à 300 dpi = 4 724 x 7 087 px
+    (33,5 Mpx) ; one sheet 27 x 40 in à 300 dpi = 8 100 x 12 000 px (97,2 Mpx) ;
+    60 x 160 cm à 100 dpi = 2 362 x 6 299 px ; 400 x 300 cm à 36 dpi =
+    5 669 x 4 252 px (24,1 Mpx) ; 120 x 160 à 300 dpi = 268 Mpx. Ratios :
+    120/160 = 3:4 pile, 40/60 = 2:3 pile, 27/40 = 0,675 donc 2:3 puis un
+    demi-pouce à rogner, 60/160 = 3:8 sans équivalent natif.
+  - Contre-intuition vendable et vérifiée par le calcul : le petit format
+    40 x 60 réclame plus de pixels que le 120 x 160, et le géant de 12 m² quatre
+    fois moins que le one sheet, la distance de lecture commandant la résolution.
+- Images : hero Nano Banana 2 (atelier d'impression grand format, contrôle
+  d'épreuve au compte-fils sur la bande de pastilles couleur, traceur à rouleau,
+  fin de journée) + 3 captures réelles relues avec Read avant intégration
+  (Wikipedia bloc de crédits, Mauvais Genres formats, LuxVisual résumé PAO).
+  Bannière de don Wikipedia et ancre #Billing_block non honorée par le script
+  standard : un script de capture par sélecteur a été écrit dans le scratchpad
+  (scroll_into_view + suppression JS des blocs banner/donate) plutôt que de
+  livrer une capture tronquée.
+- Humanisation : scanner unslop à 1 finding (« nuance », faux positif
+  anglophone). Passe FR manuelle : 3 parallélismes négatifs supprimés (« cette
+  taille n'est pas un choix graphique, elle sort des contrats » dans faq[] ET
+  dans content, « Pas 5 %, pas ce qui tombe bien visuellement », « la partie
+  difficile n'est pas la génération, c'est de décider » en note de fondateur) ;
+  grappe de « trois » ramenée de 5 à 4 ; 2 signposting supprimés en gardant la
+  chose (« Il donne, pour chaque format, le ratio... », « détaillés juste
+  après »). Note de fondateur réécrite pour sortir du gabarit « Les outils, tu
+  les auras pris en main en un week-end » qui fermait J40.
+- Gates : audit 158 articles 0 erreur 0 avertissement, lint OK, build exit 0
+  avec /blog/affiche-film-ia prérendue, check-registry OK après `git add`.
+  IndexNow 196 URLs HTTP 200. Vérification manuelle : 4 images présentes sur
+  disque, 4 liens internes existants, 3 liens externes d'autorité, 0 tiret
+  cadratin, title 52 car., description 150 car.
+- Non fait : vérification navigateur impossible (les serveurs de dev sont
+  bloqués dans les runs planifiés). Le prérendu du build et le contrôle statique
+  des chemins d'images et des liens tiennent lieu de preuve.
+
+## 2026-10-03 : J42 `grok-imagine-guide`
+
+- Article : `grok-imagine-guide` (« Grok Imagine : quel modèle et à quel prix »),
+  KW principal « grok imagine », 42/103 du run, ligne 42 du plan (cluster
+  Outils, type guide outil, intention informationnelle), catégorie ia-video.
+  Enchaînement normal derrière J41 publié la veille.
+- Angle : le plan prévoyait « la news 1.5 garde le KW versionné, ici l'evergreen
+  marque ». Vérification faite, le sujet avait bougé depuis la rédaction du plan
+  et depuis la news de juin : xAI a sorti Imagine Image 2.0 le 7 août 2026, et
+  la famille compte désormais SIX modèles facturés séparément (3 image, 3 vidéo)
+  là où la news ne parlait que de Video 1.5. L'angle retenu est donc le routage
+  par le prix : le nom commercial cache six tarifs, et la même séquence de 320 s
+  coûte 6,40 $ ou 25,60 $ selon la ligne appelée. La partie utile est la grille
+  complète plus les multiplications sur un volume réel, que personne ne publie
+  en français.
+- Faits sourcés le 03/10 :
+  - docs.x.ai/docs/models (capture écran dans l'article) : grok-imagine-image
+    0,02 $/image, grok-imagine-image-2.0 0,04 $, grok-imagine-image-quality
+    0,05 $, grok-imagine-video-1.5-lite 0,020 $/sec, grok-imagine-video
+    0,050 $/sec, grok-imagine-video-1.5 0,080 $/sec. Carte Imagine API : image
+    1K/2K, vidéo 480p/720p/1080p.
+  - x.ai/news/grok-imagine-image-2 (capture écran dans l'article) : Image 2.0
+    annoncé le 7 août 2026, GA comme Quality Mode sur grok.com/imagine et apps
+    iOS/Android, API `grok-imagine-image-2.0`. Baguette magique sur zone,
+    segmentation, détourage sur fond transparent, multi-ref jusqu'à 5 images
+    sources, smart resize, 16+ templates. 2e place Arena text-to-image et
+    image-edit derrière gpt-image-2, au jour de l'annonce (présenté dans
+    l'article comme un instantané d'éditeur, pas comme un fait durable).
+  - docs.x.ai/docs/guides/image-generations : 10 images max par requête, 5
+    sources max en multi-ref, tarif forfaitaire par image quelle que soit la
+    longueur du prompt, et une édition facturée sur l'image d'entrée ET sur
+    l'image de sortie. Ce dernier point est le piège numéro un de l'article,
+    absent de tout le contenu FR existant.
+  - docs.x.ai/docs/guides/video-generations : API asynchrone (requête, polling
+    de l'ID, URL finale), durée configurable jusqu'à 15 s, image-to-video,
+    reference-to-video, extension de plan, durée et définition pesant toutes
+    deux sur le coût.
+- Écarté faute de source primaire : les paliers de prix vidéo par définition
+  (0,14 $/sec en 720p et 0,25 $/sec en 1080p circulent chez des tiers, la doc
+  xAI dit seulement que la définition pèse sur le total) et le prix de
+  l'abonnement SuperGrok (x.ai/grok renvoie 403). L'article dit d'aller vérifier
+  la grille plutôt que d'avancer un chiffre non vérifié.
+- Passes humanizer + unslop-text + antislop-copywriting : SEPT parallélismes
+  négatifs au premier jet (« X, pas Y » et « plutôt que Y ») ramenés à un seul,
+  qui est une simple énumération. Un H3 dont la première ligne répétait son
+  titre (« Côté vidéo : trois vitesses » suivi de « Même logique, trois crans »)
+  corrigé en gardant la chose et en supprimant l'annonce. Deux signposting
+  supprimés (« Le discours officiel tient en une phrase : », « Ce qui change
+  concrètement, c'est... »). Tic « vrai/vraie » à 6 occurrences ramené à 0.
+  Grappe de « trois » à 15 occurrences ramenée à 13, toutes factuelles
+  désormais (il y a littéralement trois modèles image et trois modèles vidéo).
+  Burstiness ajoutée (fragments « Du simple au quadruple. », « Insister coûte
+  plus cher que changer. »). Scanner unslop : 0 finding sur 1 796 mots, ce qui
+  ne prouve rien en français, d'où la passe structurelle manuelle ci-dessus.
+  Zéro tiret cadratin vérifié par grep sur le fichier source.
+- Images : hero Nano Banana 2 (toit-terrasse en plein soleil de midi, repérage
+  avec tablette et liste de plans) plus DEUX captures réelles des sources
+  primaires, réparties dans deux sections différentes (l'annonce Image 2.0 dans
+  les concepts, la carte tarifaire xAI dans la méthode, à côté du lien vers la
+  doc). Les deux captures relues avec Read avant intégration : lisibles, 45 et
+  51 Ko, légende nommant la source et la date de capture.
+- Titre raccourci de 50 à 41 caractères après contrôle du prérendu : avec le
+  suffixe « | AI Studios Blog », TITLE_MAX = 60 tronquait le titre comme il
+  tronque celui des articles récents. À 41 caractères, le titre passe entier.
+  À reprendre pour les prochains runs : viser 42 caractères max.
+- Gates : `node .loop_scripts/audit.mjs` 159 articles 0 erreur 0 avertissement,
+  `npm run lint` vert, `npm run build` vert (209 pages), `check-registry.py` OK
+  après `git add`. Prérendu vérifié dans `.next/server/app/blog/grok-imagine-guide.html` :
+  H1 correct, 3 images présentes, 3 liens internes valides, JSON-LD FAQPage
+  généré. Push `4bb7871`, IndexNow 197 URLs HTTP 200.
+- Non fait : vérification navigateur impossible (le `.claude/launch.json` actif
+  est au niveau de ClaudeCodeGit et ne contient pas ce repo ; pas touché pour ne
+  pas modifier un fichier partagé hors périmètre). Le prérendu du build tient
+  lieu de preuve.
+
+## 2026-10-04 - J43 - higgsfield-guide
+
+- Publie : « Higgsfield : le vrai prix de ses credits », slug `higgsfield-guide`,
+  categorie `ia-video`, KW principal « higgsfield ». 2 439 mots de corps.
+- Angle : le plan prevoyait l'evergreen marque face a la news Creative OS. Retenu, inedit
+  en FR : Higgsfield est un catalogue plus un compteur, et la seule donnee qui decide est le
+  prix du credit (0,070 / 0,039 / 0,033 EUR). Tous les chiffres viennent de
+  higgsfield.ai/pricing releve le 04/10, plus des multiplications refaisables.
+- Trouvaille du jour : la grille « Compare features » raisonne en annee et pas en
+  mois, verifie deux fois par l'arithmetique (640 videos Plus = 54 par mois, 1 620 images
+  Starter = 135 par mois). Et le bas de page exclut l'illimite de Canvas, Supercomputer et
+  MCP/CLI, donc des surfaces memes du Creative OS.
+- 3 captures reelles relues avec Read (cartes de prix, grille comparative, mentions du bas
+  de page). Les accordeons de la FAQ ne s'ouvrent pas en headless malgre clic, scroll et
+  forcage CSS : la capture visee a ete remplacee par un recadrage du bloc de mentions, qui
+  prouve mieux l'affirmation. Script de capture par selecteur dans le scratchpad.
+- Humanisation : passes humanizer, unslop-text et antislop-copywriting. Supprime 3 signposting
+  (« la methode tient en une multiplication », « cette capture cache un piege »,
+  « meritent qu'on s'y arrete »), l'annonce de comptage « trois restrictions le
+  cadrent » qui repetait son propre titre de section, l'ouverture d'enumeration hedgee
+  « trois choses a lire ensemble », la preuve sociale vague « une bonne pratique
+  que peu d'editeurs appliquent » (remplacee par une opinion assumee), et la formule de
+  cloture « si tu ne retiens qu'une chose » deja utilisee en J42. Liste a en-tetes gras
+  convertie en phrases (seul hit HIGH du scanner, passe de 3 HIGH a 0). Symetrie des 4 pieges
+  cassee (labels « symptome / reflexe utile » varies, un piege ramene a un paragraphe).
+  Corrige un accord : « le nombre de generations simultanees peuvent etre reduites »
+  en « reduits », 2 occurrences. Scanner unslop final : 0 HIGH, 0 MEDIUM, 4 LOW tous
+  faux positifs francais (« utilises » lu comme « utilize »). 0 tiret long,
+  0 parallelisme negatif.
+- Metadonnees : titre 40 car. (sous le plafond de 42 retenu en J42), description portee de
+  132 a 140 car. pour rentrer dans la cible 140-158.
+- Gates : audit 0/0, lint OK, build exit 0 verifie explicitement, check-registry OK apres
+  staging. Push `39a4909`, IndexNow 198 URLs HTTP 200.
+- Non fait : verification navigateur impossible, les serveurs de dev sont bloques en session
+  planifiee non surveillee. Controle fait sur le HTML prerendu a la place (3 images du corps,
+  3 liens internes, lien externe, JSON-LD FAQPage, title et description) : tout present.
+
+## 2026-10-05 - J44 - udio-vs-suno
+
+- Article : « Udio vs Suno : un seul te laisse exporter », slug `udio-vs-suno`, categorie
+  workflow-creatif, KW principal « udio vs suno », ligne 44 du plan (cluster Comparatifs,
+  type comparatif). Environ 2 000 mots de corps, 11 min annoncees.
+- Reorientation d'angle assumee : le plan prevoyait « quelle musique IA choisir », mais Udio
+  a desactive le telechargement de l'audio, de la video et des stems le 30/10/2025, au
+  lendemain de son accord avec Universal Music Group, et la mesure tient toujours au 05/10/2026
+  (page d'aide officielle mise a jour le 17/02/2026, changelog muet depuis le 28/01/2026).
+  L'article compare donc ce que chaque service te laisse emporter, pas seulement le rendu.
+- Verifications faites avant redaction : page d'aide Udio sur le partenariat UMG, udio.com/pricing,
+  suno.com/pricing (lu en mensuel ET en annuel via le navigateur integre pour ne pas deduire les
+  prix mensuels d'un pourcentage), couts en credits chez les deux editeurs, accords Merlin et
+  Kobalt via Digital Music News, communique UMG via Music Business Worldwide.
+  Point laisse volontairement flou : l'etat exact du proces UMG contre Suno, sources contradictoires.
+- Images : hero Nano Banana 2 + 3 captures reelles (page d'aide Udio avec l'encadre « downloading
+  has been disabled », grille Suno avec les quotas de telechargement, grille Udio qui ne mentionne
+  nulle part le telechargement). Les trois captures relues avec Read avant integration, toutes
+  lisibles, 45 a 62 Ko.
+- Passes humanisation : humanizer, unslop-text (scanner : 2 findings, les deux faux positifs
+  sur « droits d'utilisation commerciale » pris pour « utilize ») puis antislop-copywriting.
+  Corrections appliquees : 1 parallelisme negatif (« l'interet de Premier n'est pas le prix
+  unitaire, c'est le volume »), 1 signposting (« elle tient en un mot : fichier »), 1 aphorisme
+  (« a sauve plus d'abonnements que tous les comparatifs du web »), 1 conclusion prophetique
+  (« prendra le marche entier »), 1 « Autrement dit » de treadmill, 1 passif sans acteur
+  (« le telechargement a ete coupe » devenu « Udio a coupe le telechargement »), 1 symetrie
+  cassee sur les vingt fichiers.
+- Gates : audit.mjs 161 articles 0 erreur 0 avertissement, lint OK, build OK exit 0,
+  check-registry OK apres git add. Zero tiret cadratin dans le HTML prerendu.
+- Push `f3ac2b1`, IndexNow 199 URLs HTTP 200.
+- Non fait : verification navigateur du site en local, les serveurs de dev sont bloques en
+  session planifiee non surveillee. Controle fait sur .next/server/app/blog/udio-vs-suno.html
+  a la place : 3 images du corps presentes, 4 liens internes valides, 2 liens externes
+  d'autorite, les 5 H2 attendus, zero tiret long.
+
+## 2026-10-06 - J45 - bruitages-sound-design-ia
+
+- Article : « Bruitage IA : donner un vrai son a tes videos », slug `bruitages-sound-design-ia`,
+  categorie workflow-creatif, KW bruitage ia (sound design ia, sfx ia), ligne 45 du plan (guide).
+- Angle : trois couches (ambiance, synchro, design), un type d'outil par couche (texte vers audio
+  ElevenLabs, video vers audio MMAudio / Kling, timing a la voix Firefly, Freesound en depannage),
+  methode en 6 etapes depuis le reperage muet jusqu'au mixage, 4 erreurs, FAQ 6.
+- Sources verifiees le jour meme : doc et pricing ElevenLabs, README MMAudio, aide Adobe Firefly,
+  FAQ Freesound, Wikipedia Bruitage. Aucun chiffre de niveau sonore (LUFS) donne, faute de source
+  officielle. Regle « 2 ou 3 effets de design par minute » presentee comme regle perso.
+- Images : hero Nano Banana 2 (126 Ko, premier jet) + 3 captures (doc ElevenLabs Sound effects,
+  depot GitHub MMAudio, aide Firefly recadree pour retirer la banniere cookies), relues avec Read.
+- Humanisation : humanizer, unslop-text (scanner 0 finding, non probant en francais), puis
+  antislop-copywriting. Corrections : 1 parallelisme negatif dans un H2 (« trois couches, pas un
+  seul fichier »), 1 signposting (« Mon avis tranche : », « Le metier a un nom et une histoire »),
+  trois paragraphes symetriques a ouverture en gras rendus asymetriques, 1 promesse exageree
+  (« deux fois plus cher »), 1 experience inventee (« le moyen le plus rapide que j'ai vu »),
+  1 aphorisme en FAQ, 1 attribution non sourcee (« les monteurs son appellent ca »).
+- Gates : audit 162 articles 0 erreur, lint OK, build OK, check-registry OK.
+- Push `554a99f`, IndexNow 200 URLs HTTP 200.
+- Non fait : verification navigateur en local (session planifiee). Controle sur
+  .next/server/app/blog/bruitages-sound-design-ia.html : H1, 3 images du corps, FAQPage presents.
+
+## 2026-10-07 - J46 - montage-automatique-ia
+
+- Article : « Montage automatique IA : ce qui marche », slug `montage-automatique-ia`, categorie
+  workflow-creatif, KW montage automatique ia, ligne 46 du plan (guide), aucune ligne sautee.
+- Angle : test unique « le critere de la coupe se mesure-t-il ? » ; tableau de 8 fonctions (tache /
+  outil / ce que la machine mesure / ce que tu verifies) ; ordre en 6 etapes (trier, assembler,
+  blancs avec duree cible, visionnage integral, recadrage APRES validation car Auto Reframe duplique
+  la sequence, chapitres en dernier) ; 4 pieges (mots rognes, multicam qui oublie l'auditeur,
+  recadrage a deux visages, chapitres auto absents) ; section dediee aux plans generes sans dialogue.
+- Sources verifiees le jour meme : Blackmagic whatsnew + page Studio, aide Adobe Auto Reframe,
+  aide Descript Shorten word gaps, forum feedback Descript, aide YouTube chapitres FR. Ecarte : la
+  page Adobe Scene Edit Detection (404), et toute affirmation « fonction X reservee a Studio ».
+- Images : hero Nano Banana 2 (89 Ko, premier jet) + 3 captures relues avec Read. Pieges : helpx.adobe.com
+  renvoie Access Denied a Playwright headless (passer headless=False + --disable-blink-features=AutomationControlled),
+  puis modale geo a fermer (clic sur la croix ~936,280), puis bouton « Don't Enable » des cookies ;
+  feedback.descript.com s'auto-traduit en locale fr-FR (« description » au lieu de « Descript »), capturer en en-US.
+- Humanisation : humanizer, unslop-text (scanner 0 finding, non probant), antislop-copywriting.
+  Corrections : 1 signposting (« Mon test tient en une question »), 1 enumeration symetrique
+  Certaines / D'autres / Les dernieres, 1 triade d'infinitifs, 1 negation formule (« bon texte ne veut
+  pas dire bon jeu »), 1 preuve sociale vague (« l'etape que tout le monde saute »), 1 claim non
+  verifie (fonctions IA reservees a Studio) adouci, 1 repetition « trois ou quatre », italiques
+  doublees retirees des legendes, alt du hero aligne sur l'image (homme penche, pas accroupi).
+- Gates : audit 163 articles 0 erreur, lint OK, build exit 0, check-registry OK.
+- Push `beb1f19`, IndexNow 201 URLs HTTP 200.
+- Non fait : verification navigateur en local (session planifiee). Controle sur
+  .next/server/app/blog/montage-automatique-ia.html : title, description, 3 images du corps presents.
+
+## 2026-10-08 : J47 prompts-suno-styles (prompt pack)
+
+- Ligne 47 du plan (Prompts Suno : décrire un style musical qui sonne). Réorientation : Suno a lancé la
+  famille v6 le 9/09/2026 et retiré tous les modèles antérieurs, le plan datait de la v5.5. Angle recalé
+  sur la v6 (v6 pour livrer, v6-wild pour chercher, v6-mini gratuit ; mode simple multi-sources vs mode
+  personnalisé pour une fiche de style réutilisable).
+- Contenu : recette en 4 temps (genre+tempo, 2-3 instruments, dynamique/structure, voix), tableau livrable /
+  familles / curseurs / voix, 22 prompts en quote blocks (voix off, pub, documentaire, tension, chantés),
+  6 étapes, Pro Tip Persona, 4 corrections (générique, nom d'artiste bloqué, négation dans le style -> Exclude,
+  morceau qui part dans tous les sens -> curseurs + édition v6 en langage courant).
+- Sources : release notes Suno (introducing-v6, exclude-styles) + 8 articles help.suno.com (voir ledger).
+  Ecarté : limites de caractères des champs et « pondération des premiers mots » (sources tierces seulement).
+- Images : hero Nano Banana 2 (125 Ko, premier jet) + 3 captures relues (release note v6, aide Creative
+  Sliders, aide modération). help.suno.com et suno.com se capturent sans souci en headless.
+- Humanisation : humanizer (5 parallélismes « X, pas Y » réduits, 3 négations retirées des prompts pour rester
+  cohérent avec le conseil Exclude), unslop-text (2 faux positifs : « underscore » terme musical, « utilise »),
+  antislop-copywriting (aphorisme « Tout le reste est du bruit » et affirmation non sourcée sur l'entraînement retirés).
+- Gates : audit 164 articles 0 erreur, lint OK, build exit 0, check-registry OK. Contrôle du HTML prérendu
+  .next/server/app/blog/prompts-suno-styles.html (H2, FAQPage, captures présents).
+- Push `a3520b7`, IndexNow 202 URLs HTTP 200.
+- A faire hors loop : suno-guide-complet décrit encore la v5.5 comme modèle courant.
+
+## 2026-10-09 : J48 prompts-photo-produit (prompt pack)
+
+- Ligne 48 du plan (satellite prompts de photos-produit-ia-shooting), 48/103 du run. Categorie prompting.
+- 20 prompts en anglais (blocs quote) en 8 familles : fond blanc, fond neutre, mises en situation, flat lay, macro, echelle, saisons, declinaisons. Tous partent d'une vraie photo du produit (edition, pas generation). Tableau emplacement -> prompts -> format, methode en 6 etapes, Pro Tip texte d'etiquette entre guillemets, 4 pieges (etiquette reecrite, taille, blanc pas blanc, decor qui promet).
+- Sources primaires : doc Gemini image-generation, blog vendeurs Amazon product-photos, aide Merchant Center image_link (FR). Captures recadrees (Gemini sans banniere cookies).
+- Passes humanizer (titre en parallelisme negatif, phrase qui repetait son H3, 2 aphorismes, triplet, 2 « X, pas Y » corriges) + unslop-text (4 « seamless » remplaces, terme photo mais banni par la charte) + antislop-copywriting (valeur de pipette presentee comme exemple).
+- Gates : audit 0 erreur (description ramenee a 152 car.), lint OK, build exit 0, HTML prerendu .next/server/app/blog/prompts-photo-produit.html verifie (3 captures + FAQPage), check-registry OK.
+- Push `792f770`, IndexNow 203 URLs HTTP 200.
+
+## 2026-10-10 : J49 monetisation-youtube-contenu-ia (guide)
+
+- Ligne 49 du plan (cluster IA pour YouTube), type guide, categorie business-creatif, KW « monétisation youtube ia ».
+- Angle : YouTube juge ce que l'examinateur voit sur la chaine, pas l'outil ; declaration IA et monetisation = deux regles distinctes. Tableau de 10 situations avec verdict appuye sur les exemples officiels, verification en 6 etapes, 4 erreurs.
+- Fait notable : la politique de monetisation a ete reorganisee mi-juillet 2026 (rubriques « decevants ou deplaisants » et « personas IA lies a des sujets sensibles »), presente par Tubefilter comme une clarification ; la version FR de la page est a jour.
+- Captures : declaration IA (14328491 EN, accordeon deplie), personas IA (1311392 EN, accordeon « Follow our program policies » ouvert puis clip viewport ; le full_page apres forçage CSS donnait une image noire), paliers YPP (youtube.com/intl/fr_fr/creators, banniere cookies fermee via « J'ai compris »). Script scratchpad Playwright + PIL.
+- Passes humanizer (ouverture « Dans cet article », 3 signposting, 1 parallelisme negatif), unslop-text (scanner 3 faux positifs FR) + 2 contrastes « pas X » retires, antislop-copywriting (details non sources retires : « dix minutes », « trois semaines », « sans appel possible », « avertissement »).
+- Gates : audit 0 erreur (description ramenee sous 160), lint OK, build exit 0, HTML prerendu verifie (3 captures), check-registry OK.
+- Push `39c62fe`, IndexNow 204 URLs HTTP 200.
+
+## 2026-10-11 : J50 carrousel-instagram-ia (tutoriel)
+
+- Ligne 50 du plan (cluster Social), type tutoriel, categorie workflow-creatif, KW « carrousel instagram ia ».
+- Angle : un carrousel se raconte comme une BD ; l'IA ecrit le decoupage et fabrique des visuels SANS texte, le texte se pose dans l'outil de mise en page ; la slide 2 est une deuxieme couverture (Mosseri, oct. 2024 : Instagram remontre le 2e element a qui n'a pas swipe). Tableau des roles de 8 slides, 7 etapes, prompt de decoupage, 4 formes de carrousel, 4 pieges.
+- Fait notable : 20 elements dans l'app depuis aout 2024 mais 10 max via l'API Meta (outils de programmation), recadrage sur la 1re image, 50 publications / 24 h.
+- Captures : doc Meta developpeurs FR section carrousel (cookies refuses via « Refuser les cookies optionnels »), article Meta labeling maj 1er juillet 2024 (AI info). Capture 9to5mac abandonnee (mur de consentement). Script scratchpad Playwright + PIL.
+- Passes humanizer (5 contrastes « pas X » / parallelismes, 1 teaser « raison que peu de gens connaissent », 1 triade), unslop-text (2 faux positifs « utilise »), antislop-copywriting (rien de fabrique).
+- Gates : audit 0 erreur (167 articles), lint OK, build exit 0, HTML prerendu verifie (2 captures), check-registry OK.
+- Push `3e761b7`, IndexNow 205 URLs HTTP 200.
+
+## 2026-10-12 : J51 video-ia-sans-filigrane (comparatif)
+
+- Angle : deux filigranes dans une vidéo IA, le logo visible (abonnement ou réglage Gemini) et le marquage invisible (SynthID, C2PA) qui reste quoi que tu paies ; et « sans logo » n'égale pas « vendable » (Pika).
+- Tableau 4 outils (Runway, Kling, Pika, Gemini/Flow), méthode en 5 étapes, 4 pièges (effaceur, recadrage, licence, étiquette + article 50 AI Act).
+- Captures : aide Gemini FR filigrane, tarifs Pika (cartes), tarifs Runway annuel (bannière Cookiebot fermée via « Deny »). Script scratchpad Playwright + PIL avec scroll sur texte.
+- Passes humanizer (signposting x3, H3 qui reprenait son titre + généralisation non sourcée, redite « vrai/vraiment »), unslop-text (2 faux positifs « utilisation »), antislop-copywriting (crédits Runway rendus concrets : 52 s de Gen-4.5).
+- Titre raccourci à 42 car. après contrôle du <title> prérendu (tronqué à 46).
+- Gates : audit 0 erreur (168 articles), lint OK, build exit 0 (x2), HTML prérendu vérifié, check-registry OK.
+- Push `21c386f`, IndexNow 206 URLs HTTP 200.
+
+## 2026-10-13 : J52 video-ia-longue-duree (méthode)
+
+- Ligne 52 du plan (cluster Vidéo IA), KW « vidéo ia longue ». Angle : même l'extension Veo plafonne à 148 s en 720p, donc 3 minutes = 36 plans montés sur une bande-son posée d'abord ; découpage type 6 séquences, 7 étapes, budget Veo 3.1 à la seconde (864 s facturées pour 180 s gardées).
+- Captures : doc Veo FR section extension, grille tarifs Veo 3.1 FR, Wikipedia Average shot length. Script scratchpad Playwright (channel chrome) avec scroll sur texte ; la doc ai.google.dev s'affiche en français, chercher les libellés FR.
+- Passes humanizer + unslop-text (1 faux positif « utilise ») + antislop-copywriting : 5 parallélismes négatifs ramenés à 0, 1 signposting, 2 aphorismes, 1 preuve sociale vague (« la plupart des créateurs ») et 1 affirmation non sourcée (« le défaut repéré le plus vite ») retirées ; 2 sur-corrections rattrapées en relecture (comparaison de prix fausse, affirmation non vérifiée sur The Mist).
+- Gates : audit 0/0 (169 articles), lint OK, build exit 0, HTML prérendu vérifié (title 33 car. + marque, 3 captures, FAQPage), check-registry OK.
+- Push `b01c236`, IndexNow 207 URLs HTTP 200.
+
+## 2026-10-14 : J53 animer-photo-ia (tutoriel)
+
+- Ligne 53 du plan (cluster Vidéo IA), KW « animer une photo ia », intention grand public (photos de famille). Angle : un mouvement discret vaut mieux qu'un grand geste ; tableau 4 outils (Google Photos Photo en vidéo, Gemini Veo, MyHeritage LiveMemory, Deep Nostalgia), 5 étapes, prompts par type de photo, 4 erreurs (vignette trop petite, J'ai de la chance sur un portrait de défunt, montrer sans prévenir, publier sans mention IA + art. 226-8).
+- Captures : aide Google Photos FR section Photo en vidéo dépliée, FAQ LiveMemory et FAQ Deep Nostalgia dépliées (bannière cookies MyHeritage : cliquer « Accepter obligatoire seulement », la retirer du DOM ne suffit pas, elle se réinjecte). Script Playwright scratchpad.
+- Passes humanizer + unslop-text (0 finding, non probant en français) + antislop-copywriting : 2 « pas une archive » (parallélisme), 1 signposting (« Ma position, posée d'entrée »), 1 aphorisme de fin, 1 affirmation non vérifiable (« que peu de gens lisent »), 3 affirmations d'expérience non testée (« qui marche bien », « qui donnent des résultats ») retirés ; attribution Google corrigée vers l'aide Gemini.
+- Hero : bandes noires latérales de Nano Banana 2 recadrées (PIL), 84 Ko.
+- Gates : audit 0/0 (170 articles), lint OK, build exit 0, HTML prérendu vérifié (H1, 3 captures, CTA), check-registry OK.
+- Push `5d7dc20`, IndexNow 208 URLs HTTP 200.
+
+## 2026-10-15 : J54 seedance-guide (guide outil)
+
+- Ligne 54 du plan (cluster Outils), KW « seedance ». Fait majeur depuis le plan : l'API Seedance 2.5 est ouverte sur BytePlus (bannière « Official Dreamina Seedance 2.5 API is now live »), donc angle « quelle version prendre, où, combien » plutôt que veille. Sources primaires BytePlus relues via Playwright (pages rendues en JS, WebFetch vide).
+- Angle : 2.0 suffit pour la majorité des plans, 2.5 pour > 15 s / > 15 références / édition ; pas de 4K en 2.5 ; français absent des 11 langues ; méthode mode Draft (480p puis finale 1080p) chiffrée.
+- 3 captures : tutoriel 2.5 BytePlus (Latest capabilities), exemples de prix 2.5 BytePlus, page vitrine seed.bytedance.com (bannière cookies refusée avant capture).
+- Passes humanizer (signposting « Mon avis tient en une ligne », 2 méta-commentaires, 2 clivées « X, c'est », cliché du Pro Tip), unslop-text (1 label gras, 1 faux positif « utilise ») + passe manuelle (parallélisme « ne permet pas de générer, elle renvoie », puces à en-tête gras), antislop-copywriting (« quatre sites » non compté, 0,60 $ de revendeur, passif sans acteur). scan-anti-ia : OK.
+- Hero Nano Banana 2 (100 Ko, premier jet).
+- Gates : audit 0/0 (171 articles), lint OK, build exit 0, check-registry OK.
+- Push `f168522`, IndexNow 209 URLs HTTP 200.
+
+## 2026-10-16 : PLAN_80 A02 freepik-magnific-spaces-avis (avis)
+
+- Ligne A02 du PLAN_80 (opération SEO multi-sites), KW « freepik ia ». Publiée à 12h59 par la session de l'opération (commit `e3e67e3`), pas par la tâche quotidienne. 11 captures magnific.com, QA 88/100, CTA Imaginode.
+- Run quotidien de 22h36 : créneau du jour déjà rempli, aucune publication supplémentaire, compteur 54/103 inchangé.
+
+## 2026-10-17 : meilleurs-outils-storyboard-ia
+- Ligne A19 du PLAN_80, KW « meilleur outil storyboard ia ». Commit `1d1c0c1`, IndexNow 211 URLs. 9 captures officielles, QA 90/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-18 : alternatives-sora
+- Ligne A07 du PLAN_80, KW « alternative sora ». Commit `f32a618`, IndexNow 212 URLs. 7 captures officielles (OpenAI x2, Flow, Kling, Dreamina, Runway, Pika), QA 91/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-19 : alternatives-storyboarder
+- Ligne A08 du PLAN_80, KW « alternative storyboarder ». Commit `f1b99e2`, IndexNow 213 URLs. 9 captures officielles (GitHub x2, Wonder Unit, Krita, Boords x2, StoryboardHero, Celtx, ScreenWeaver), QA 91/100, CTA ScreenWeaver (destination fr). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-20 : storyboard-ia-gratuit-tutoriel
+- Ligne A17 du PLAN_80, KW « storyboard ia gratuit ». Commit `e22efc1`, IndexNow 214 URLs. 6 captures officielles (Boords x3, aide Gemini, ScreenWeaver tarifs, Krita), QA 90/100, CTA ScreenWeaver (destination script). Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-21 : script-to-video-ia-tutoriel
+- Ligne A18 du PLAN_80, KW « script to video ia ». Commit `6c423a2`, IndexNow 215 URLs. 9 captures officielles (HeyGen, FlexClip, LTX Studio x2, aide Google Flow x3, ScreenWeaver x2), QA 91/100, CTA ScreenWeaver (destination script). En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement. Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-22 : meilleures-plateformes-ia-tout-en-un
+- Ligne A20 du PLAN_80, KW « plateforme ia tout en un ». Commit `2940359`, IndexNow 216 URLs. 10 captures officielles (Higgsfield, Dreamina, Magnific, Krea x2, OpenArt x2, FLORA, Imaginode x2), QA 89/100, CTA Imaginode (destination models), affiliation Higgsfield + FLORA. En ligne vérifié : HTTP 200, un H1, canonical, JSON-LD, sitemap, mobile 390 px sans débordement, images chargées. Compteur du plan habituel 54/103 inchangé.
+
+## 2026-10-23 : alternatives-boords
+- Ligne A09 du PLAN_80, KW « alternative boords ». Commit `7ae5cee`, IndexNow 217 URLs. 7 captures officielles du jour (Boords x3, LTX Studio, StoryboardHero, ScreenWeaver, Krita), QA 89/100, CTA ScreenWeaver (destination fr), aucune affiliation. Hero Nano Banana 2 (128 Ko, premier jet).
+
+## 2026-10-24 : openart-avis
+- Ligne A01 du PLAN_80, KW « openart avis ». Commit `f30b2f4`, IndexNow 219 URLs, page en ligne vérifiée (200, 1 H1, sitemap, JSON-LD, mobile 390 px sans débordement). 9 captures du jour (OpenArt x8, Trustpilot), QA 92/100, CTA Imaginode (home, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (122 Ko, premier jet).
+
+## 2026-10-25 : seedance-vs-veo
+- Ligne A13 du PLAN_80, KW « seedance vs veo ». Commit `c571180`, IndexNow 220 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 11 captures du jour (BytePlus x4, Seed, Dreamina, Gemini API x2, Gemini app, Flow x2, DeepMind), QA 92/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (154 Ko, premier jet).
+
+## 2026-10-26 : krea-ai-avis
+- Ligne A04 du PLAN_80, KW « krea ai avis ». Commit `aaf11bb`, IndexNow 221 URLs (1er essai en échec réseau, 2e OK après déploiement), page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 9 images en 200, mobile 390 px sans débordement). 7 captures du jour (Krea pricing x3, docs compute-units, Node Editor, Realtime, Trustpilot), QA 92/100, CTA Imaginode (conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (112 Ko, 2e essai après timeout réseau du Gateway).
+
+## 2026-10-27 : dreamina-vs-capcut
+- Ligne A16 du PLAN_80, KW « dreamina vs capcut ». Commit `29af16e`, IndexNow 221 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, aucune image cassée, mobile 390 px sans débordement). 8 captures du jour (Dreamina tarifs + Seedance 2.5 x2, CapCut menu, tarifs, générateur Seedance, script vers vidéo, newsroom), QA 88/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucun lien affilié. Hero : public/images/articles/dreamina-vs-capcut.webp.
+
+## 2026-10-28 : midjourney-avis-2026
+- Ligne A03 du PLAN_80, KW « midjourney avis ». Commit `2b1363c`, IndexNow 223 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, images en 200, mobile 390 px sans débordement). 9 captures du jour (doc Midjourney x7, journal updates x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (93 Ko, premier jet).
+
+## 2026-10-29 : pika-avis
+- Ligne A06 du PLAN_80, KW « avis pika ». Commit `6d8533c`, IndexNow 223 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 9 images en 200, mobile 390 px sans débordement). 9 captures du jour (tarifs x4, FAQ x3, apps, MCP), QA 93/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (99 Ko, premier jet).
+
+## 2026-10-30 : alternatives-gratuites-midjourney
+- Ligne A10 du PLAN_80, KW « alternative gratuite midjourney ». Commit `d5b786b`, IndexNow 224 URLs, page en ligne vérifiée (200, 1 H1, canonical, sitemap, 5 JSON-LD valides, 10 images en 200, mobile 390 px sans débordement). 10 captures du jour (Midjourney, Leonardo, Krea, Firefly x2, Ideogram x2, Bing, Gemini x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (95 Ko, premier jet).
+
+## 2026-10-31 : midjourney-vs-nano-banana
+- Ligne A12 du PLAN_80, KW « midjourney vs nano banana ». Commit `91f872a`, IndexNow 225 URLs. 9 captures du jour (Midjourney x4, aide Gemini x2, doc API, guide Google x2), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (102 Ko, premier jet). Vérif en ligne OK (200, 1 H1, canonical, 5 JSON-LD, 9 images, sitemap, mobile 390 px).
+
+## 2026-11-01 : leonardo-ai-avis-2026
+- Ligne A05 du PLAN_80, KW « leonardo ai avis ». Commit `d7f0ef5`, IndexNow 226 URLs. 7 captures du jour (tarifs, fonctions, actualités, usage commercial, tokens, résiliation, remboursement), QA 93/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (174 Ko, premier jet).
+
+## 2026-11-01 : robots-txt-entrainement-ia-createurs (actu Google News)
+- Premier article d'actualité (consigne du 01/11), KW « robots.txt entraînement ia ». Commit `1dbb46d`, IndexNow 227 URLs, URL 200 en prod, JSON-LD BlogPosting présent (le site ne gère pas NewsArticle ni de catégorie Actualités IA : tag « Actualités IA » à la place). 3 captures du jour (brouillon IETF, Google Search Central, Bing Blog). CTA formation. Hero Nano Banana 2 (104 Ko, premier jet).
+
+## 2026-11-02 : pika-h3-flex-disponible-pika-art (actu Google News)
+- Deuxième article d actualité, KW « pika h3 flex ». Commit `0081036`, IndexNow 228 URLs, URL 200 en prod, JSON-LD NewsArticle (datePublished 2026-11-02T09:10:00+01:00), présent dans news-sitemap.xml. 3 captures du jour (communiqué, tarifs pika-h3-flex, Hugging Face). Aucune génération lancée. Passes humanizer + unslop-text (score 0) + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (86 Ko) : studio dans une ancienne laverie, corde à linge de versions d un même plan.
+| 2026-11-05 | chatgpt-images-2-6-gif | actu | 09:03 |
+
+## 2026-11-06 : openart-vs-leonardo
+- Ligne A14 du PLAN_80, KW « openart vs leonardo ». Commit `2006a48`, IndexNow 232 URLs, prod 200, 11 images 200, sitemap OK, un H1, JSON-LD valide, pas de débordement à 390 px. 10 captures du jour, QA 91/100, CTA Imaginode (models, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (127 Ko, premier jet).
+
+## 2026-11-07 : pika-vs-pixverse
+- Ligne A15 du PLAN_80, KW « pika vs pixverse ». Commit `6552762`, IndexNow 233 URLs, prod 200, 11 images 200, sitemap OK, un H1, JSON-LD valide, pas de débordement à 390 px. 10 captures du jour, QA 91/100, CTA ScreenWeaver (seedance, conflit d'intérêts déclaré), aucune affiliation. Hero Nano Banana 2 (117 Ko, premier jet).
+
+## 2026-11-08 : alternatives-heygen-gratuit
+- Ligne A11 du PLAN_80 (dernière du site), KW « alternative heygen gratuit ». Commit `7c44ef2`, IndexNow 236 URLs. 9 captures du jour, QA 92/100, CTA formation, aucune affiliation (HeyGen suspendu). Hero Nano Banana 2 (appartement vide, agente immobilière qui se filme). Prochain run : reprise du plan habituel.
+
+## 2026-11-09 : deepfake-createur-droit
+- J55 du plan habituel (reprise après les 20 lignes PLAN_80 du site), KW « deepfake légal ». Commit `1c22357`, IndexNow 237 URLs, prod 200 (après 3 min de déploiement), HTML prérendu vérifié (1 H1, 4 captures, FAQPage). 4 captures du jour (Légifrance 226-8 et 226-8-1, CNIL, AI Act Explorer art. 50), cookies jamais acceptés ; un premier essai Légifrance 226-8-1 est tombé sur une vérification Cloudflare, non touchée, la page est passée au second chargement. Aucune jurisprudence citée (non lue en source), article 226-4-1 mentionné sans peines (Légifrance en 404 le jour même). Passes humanizer + unslop-text (score 5, faux positifs « utilises » et listes en gras) + antislop-copywriting (4 affirmations adoucies), scan-anti-ia OK, zéro tiret. Hero Nano Banana 2 (111 Ko, premier jet).
+
+## 2026-11-10 : apprendre-ecrire-scenario
+- Ligne M1 du plan (intercalée entre J55 et J56), KW « apprendre à écrire un scénario ». Commit `5ae6cad`, IndexNow 240 URLs. HTML prérendu vérifié (1 H1, captures, CTA /go/bl-academy-a, 10 blocs JSON-LD). 4 captures du jour (BBC Script Library, fiche livres-cinema.info de La Dramaturgie car le site des Impressions nouvelles est derrière Cloudflare, La Procure pour Chion, Cineuropa formation en ligne). Alison écarté (la page cours redirige vers l'accueil), Save the Cat écarté (pas d'édition française vérifiée). Hero Nano Banana 2 (111 Ko, premier jet).
+
+## 2026-11-11 : stock-footage-ia-vendre
+- J56 du plan (Monétisation, business), KW « stock footage ia ». Commit `210a8bd` (rebase sur le push actu openai-upwork, conflit articles.ts résolu en gardant les deux imports, build relancé vert), IndexNow 242 URLs. 4 captures du jour (Adobe règles IA, Adobe royalties, Getty FR, MotionElements), bannières de région et cookies retirées du DOM sans rien accepter ; Shutterstock lu dans le navigateur (capture Playwright vide), Pond5 403. Hero Nano Banana 2 108 Ko premier jet.
+
+## 2026-11-12 : final-draft-avis
+- Ligne M2 du plan (intercalée après J56), KW « final draft avis ». Commit `44b620b`, IndexNow 244 URLs, prod 200. 6 captures finaldraft.com du jour (produit, tarifs, upgrade, configuration, International, essai), popup Black Friday retirée du DOM via Playwright sans rien accepter ; registre captures mis à jour. Aucun essai lancé ni licence achetée (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (retrait d'une affirmation inventée sur les utilisateurs ScreenWeaver), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build).
+
+## 2026-11-13 : miniature-youtube-strategie-ctr
+- Ligne J57 du plan (PLAN_80 du site terminé), KW « miniature youtube ia ». Commit `c7100be`, IndexNow 246 URLs. 3 captures Aide YouTube du jour (FAQ CTR, tests A/B, miniatures personnalisées), aucun test A/B lancé (dit dans la méthodologie). Passes humanizer + unslop-text (score 1) + antislop-copywriting (affirmation non sourcée sur les modèles d'édition retirée), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build, check-registry).
+
+## 2026-11-14 : idees-scenario-court-metrage
+- Ligne M3 du plan (intercalée après J57), KW « idée scénario court métrage ». Commit `35bc525`, IndexNow 247 URLs. 2 captures du jour (atelier de logline ScreenWeaver, article Phototrend sur le thème Surprise du Nikon Film Festival 2027), bannières cookies retirées du DOM sans rien accepter ; festivalnikon.fr ne rend pas en Playwright. Passes humanizer + unslop-text (score 0) + antislop-copywriting (« sans inscription » non vérifié retiré, affirmation sur les milliers de créateurs reformulée), scan-anti-ia OK. Gates verts (audit 0 erreur, lint, build, check-registry), HTML prérendu vérifié.
+
+## 2026-11-15 : calendrier-contenu-ia
+- Ligne J58 du plan, KW « calendrier contenu ia ». Commit `0d03a8e`, IndexNow 249 URLs. 2 captures du jour (aide OpenAI tâches planifiées via Playwright, aide Meta Planificateur via le navigateur intégré, cookies optionnels refusés) ; page d'aide LinkedIn sur la programmation introuvable (404), sujet traité sans elle. Passes humanizer + unslop-text (score 1, faux positif « Utilise ») + antislop-copywriting (titre de CTA changé, estimation « 80 % » retirée, deux aphorismes réécrits), scan-anti-ia OK. Gates verts (audit, lint, build, check-registry). Hero Nano Banana 2 : premier jet refusé (texte « WEEKLY » sur le tableau), second jet retenu (159 Ko).
+
+## 2026-11-16 : chatgpt-photo-prompts
+- Ligne M4 du plan (intercalée), KW « chat gpt photo ». Commit `96d8531`, IndexNow 251 URLs, prod 200. 3 captures du jour via Playwright Chrome (aide OpenAI images, politiques d'utilisation recadrées sans bandeau, aide contrôles des données ; cookies masqués, jamais acceptés). Passes humanizer + unslop-text (score 4, faux positifs « utilisation ») + antislop-copywriting, scan-anti-ia OK après correction d'une structure « Pour toi, ça ». Hero Nano Banana 2 au second jet (le premier montrait « Departures » sur un panneau).
+
+## 2026-11-17 : traduire-chaine-youtube-ia
+- Ligne 59 du plan, KW « traduire vidéo youtube ia ». Commit `d41a99f` (rebase sur le push actu du jour 946017f, sans conflit), IndexNow 253 URLs. 3 captures du jour de l'Aide YouTube (doublage automatique, fonctionnalités multilingues, titres et descriptions), schéma HowTo 4 étapes. Passes humanizer + unslop-text (score 0) + antislop-copywriting (6 corrections : annonces supprimées, « ton seul juge », « pas seulement », « lot indivisible »), scan-anti-ia OK. Hero Nano Banana 2 au premier jet (113 Ko).
+
+## 2026-11-19 : veille-ia-creative-methode
+- Ligne 60 du plan, KW « veille ia ». Commit `db6d2e7`, IndexNow 256 URLs. 5 captures du jour (classement Artificial Analysis, journal Runway, Aide Google Alertes, tarifs Inoreader, rubrique Actualités IA du blog). Passes humanizer + unslop-text (score 4, faux positifs « utilise ») + antislop-copywriting (9 corrections : « Deux réglages changent tout », « Voilà ce que ça donne », chutes en fragments, « X, c'est Y », « Pour un créateur, ça »), scan-anti-ia OK. Hero Nano Banana 2 au premier jet (161 Ko). Pas de run loggé le 18/11.
+
+## 2026-11-25 : video-generative-definition
+- Ligne 61 du plan, KW « vidéo générative ». Commit `d7b838e`, IndexNow 264 URLs (second essai, le premier en erreur réseau). 4 captures du jour (OQLF, NVIDIA Video LDM, aide Gemini, aide YouTube) + 1 simulation de bruit faite sur une vraie image de Lost Garden (ep1_03m38s.jpg). Passes humanizer + unslop-text (score 3, faux positifs) + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 au premier jet (107 Ko). Aucun article du plan du 20 au 24/11 ; un essai du 20/11 sur ce sujet n'avait laissé que des captures, refaites ou supprimées.
+
+## 2026-11-26 : comment-ia-genere-image
+- Ligne 62 du plan, KW « comment fonctionne ia image ». Commit `0feb7b7`, IndexNow 265 URLs. 4 captures du jour (fiche HF Stable Diffusion 1.4, arXiv LDM, arXiv CFG, addendum OpenAI) + 1 schéma maison HTML capturé (pipeline en 4 étapes). Passes humanizer + unslop-text (score 6, faux positifs « 5 steps ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (88 Ko, premier jet) : chambre noire à Marseille.
+
+## 2026-11-27 : declarer-contenu-ia-plateformes
+- Ligne 63 du plan, KW « déclarer contenu ia ». Commit `f1ac126`, IndexNow 268 URLs. 5 captures du jour (Aide YouTube x3 : exemples à ne pas signaler, étapes Studio, détection et sanctions ; aide TikTok ; aide Meta) ; capture Instagram abandonnée (bandeau cookies non refusable en headless, jamais accepté). Passes humanizer + unslop-text (6 faux positifs « Utilisation ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (95 Ko, premier jet) : cave d'affinage jurassienne.
