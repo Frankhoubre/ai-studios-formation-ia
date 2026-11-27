@@ -218,6 +218,7 @@ import { bindingOfIsaacMusiqueIaSuno } from "./posts/binding-of-isaac-musique-ia
 import { grokImaginePlainteDeepfakesOregonVirginie } from "./posts/grok-imagine-plainte-deepfakes-oregon-virginie";
 import { geminiHistoriqueSansEntrainementIa } from "./posts/gemini-historique-sans-entrainement-ia";
 import { chatgptChatWorkLimitesPartagees } from "./posts/chatgpt-chat-work-limites-partagees";
+import { madeByHumansLabelFaitParHumains } from "./posts/made-by-humans-label-fait-par-humains";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -455,6 +456,7 @@ export const articles: Article[] = [
   grokImaginePlainteDeepfakesOregonVirginie,
   geminiHistoriqueSansEntrainementIa,
   chatgptChatWorkLimitesPartagees,
+  madeByHumansLabelFaitParHumains,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,

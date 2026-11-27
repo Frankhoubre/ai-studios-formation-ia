@@ -10,7 +10,7 @@ export const detecterImageGenereeIa: Article = {
   category: "ia-image",
   tags: ["détection", "authenticité", "esprit critique"],
   date: "2026-07-16",
-  updatedAt: "2026-07-16",
+  updatedAt: "2026-11-27",
   readingTime: 18,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/detecter-image-generee-ia.webp",
@@ -72,6 +72,10 @@ export const detecterImageGenereeIa: Article = {
     {
       type: "p",
       text: "Parce que la question n'est plus seulement est-ce que cette image est parfaite, mais d'où vient-elle et faut-il lui faire confiance. Et ce déplacement change toute l'approche.",
+    },
+    {
+      type: "p",
+      text: "**Mise à jour du 27 novembre 2026 :** les médias s'équipent aussi. Press Gazette passe désormais chaque texte et chaque photo au détecteur avant publication et affiche un badge « fait par des humains ». J'explique [comment marche le label Made By Humans](/blog/made-by-humans-label-fait-par-humains) et ses limites.",
     },
     {
       type: "h2",
