@@ -2054,3 +2054,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-26 : comment-ia-genere-image
 - Ligne 62 du plan, KW « comment fonctionne ia image ». Commit `0feb7b7`, IndexNow 265 URLs. 4 captures du jour (fiche HF Stable Diffusion 1.4, arXiv LDM, arXiv CFG, addendum OpenAI) + 1 schéma maison HTML capturé (pipeline en 4 étapes). Passes humanizer + unslop-text (score 6, faux positifs « 5 steps ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (88 Ko, premier jet) : chambre noire à Marseille.
+
+## 2026-11-27 : declarer-contenu-ia-plateformes
+- Ligne 63 du plan, KW « déclarer contenu ia ». Commit `f1ac126`, IndexNow 268 URLs. 5 captures du jour (Aide YouTube x3 : exemples à ne pas signaler, étapes Studio, détection et sanctions ; aide TikTok ; aide Meta) ; capture Instagram abandonnée (bandeau cookies non refusable en headless, jamais accepté). Passes humanizer + unslop-text (6 faux positifs « Utilisation ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (95 Ko, premier jet) : cave d'affinage jurassienne.
