@@ -11,7 +11,7 @@ export const creerPubliciteIa: Article = {
   category: "business-creatif",
   tags: ["publicité IA", "workflow", "montage", "brand", "création"],
   date: "2026-04-10",
-  updatedAt: "2026-04-18",
+  updatedAt: "2026-11-28",
   readingTime: 19,
   author: { name: "Frank Houbre", url: "https://www.ai-studios.fr" },
   image: "/images/articles/creer-publicite-ia.webp",
@@ -69,6 +69,10 @@ export const creerPubliciteIa: Article = {
       type: "youtube",
       videoId: "HSngiz25nsI",
       title: "Cette IA remplace les shootings photo e-commerce",
+    },
+    {
+      type: "p",
+      text: "**Mise à jour du 28 novembre 2026 :** après deux Noëls en IA générative, Coca-Cola a tourné sa pub de fin d'année 2026 avec de vrais acteurs. J'explique [pourquoi la marque revient au tournage](/blog/coca-cola-pub-noel-sans-ia) et ce que ça dit sur les bons usages de l'IA en publicité.",
     },
     {
       type: "h2",

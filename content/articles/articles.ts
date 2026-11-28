@@ -219,6 +219,7 @@ import { grokImaginePlainteDeepfakesOregonVirginie } from "./posts/grok-imagine-
 import { geminiHistoriqueSansEntrainementIa } from "./posts/gemini-historique-sans-entrainement-ia";
 import { chatgptChatWorkLimitesPartagees } from "./posts/chatgpt-chat-work-limites-partagees";
 import { madeByHumansLabelFaitParHumains } from "./posts/made-by-humans-label-fait-par-humains";
+import { cocaColaPubNoelSansIa } from "./posts/coca-cola-pub-noel-sans-ia";
 import { stockFootageIaVendre } from "@/content/articles/posts/stock-footage-ia-vendre";
 import { finalDraftAvis } from "@/content/articles/posts/final-draft-avis";
 import { miniatureYoutubeStrategieCtr } from "@/content/articles/posts/miniature-youtube-strategie-ctr";
@@ -458,6 +459,7 @@ export const articles: Article[] = [
   geminiHistoriqueSansEntrainementIa,
   chatgptChatWorkLimitesPartagees,
   madeByHumansLabelFaitParHumains,
+  cocaColaPubNoelSansIa,
   apprendreEcrireScenario,
   stockFootageIaVendre,
   finalDraftAvis,
