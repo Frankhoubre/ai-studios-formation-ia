@@ -231,6 +231,7 @@ import { videoGenerativeDefinition } from "@/content/articles/posts/video-genera
 import { veilleIaCreativeMethode } from "@/content/articles/posts/veille-ia-creative-methode";
 import { commentIaGenereImage } from "@/content/articles/posts/comment-ia-genere-image";
 import { declarerContenuIaPlateformes } from "@/content/articles/posts/declarer-contenu-ia-plateformes";
+import { iaRemplaceVideastes } from "@/content/articles/posts/ia-remplace-videastes";
 
 const beginnerArticles = JSON.parse(
   fs.readFileSync(
@@ -472,4 +473,5 @@ export const articles: Article[] = [
   veilleIaCreativeMethode,
   commentIaGenereImage,
   declarerContenuIaPlateformes,
+  iaRemplaceVideastes,
 ];
