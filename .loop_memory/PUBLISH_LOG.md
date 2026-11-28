@@ -2057,3 +2057,6 @@ Format : `DATE | TYPE | branche → main | commit | articles | déploiement`
 
 ## 2026-11-27 : declarer-contenu-ia-plateformes
 - Ligne 63 du plan, KW « déclarer contenu ia ». Commit `f1ac126`, IndexNow 268 URLs. 5 captures du jour (Aide YouTube x3 : exemples à ne pas signaler, étapes Studio, détection et sanctions ; aide TikTok ; aide Meta) ; capture Instagram abandonnée (bandeau cookies non refusable en headless, jamais accepté). Passes humanizer + unslop-text (6 faux positifs « Utilisation ») + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (95 Ko, premier jet) : cave d'affinage jurassienne.
+
+## 2026-11-28 : ia-remplace-videastes
+- Ligne 64 du plan, KW « ia remplace vidéaste ». Commit `2e68ded`, IndexNow 270 URLs, prod 200. Édito appuyé sur le baromètre CNC studios numériques (juin 2026) et l'étude Afdas Créatifs & IAG (avril 2026), PDF lus en entier. 3 images corps (pages PDF CNC p. 11 et Afdas p. 20 rendues en image, frame Lost Garden ep1_02m53s). Passes humanizer + unslop-text + antislop-copywriting, scan-anti-ia OK. Hero Nano Banana 2 (87 Ko, premier jet) : mariage dans une grange vosgienne.
